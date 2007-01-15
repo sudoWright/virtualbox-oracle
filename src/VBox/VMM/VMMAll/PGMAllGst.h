@@ -1,5 +1,5 @@
+/* $Id: PGMAllGst.h 17451 2007-01-15 14:08:28Z knut.osmundsen@oracle.com $ */
 /** @file
- *
  * VBox - Page Manager, Guest Paging Template - All context code.
  */
 

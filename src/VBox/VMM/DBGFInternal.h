@@ -1,5 +1,5 @@
+/* $Id: DBGFInternal.h 17451 2007-01-15 14:08:28Z knut.osmundsen@oracle.com $ */
 /** @file
- *
  * DBGF - Internal header file.
  */
 

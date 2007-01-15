@@ -1,5 +1,5 @@
+/* $Id: VMMDocsRawMode.cpp 17451 2007-01-15 14:08:28Z knut.osmundsen@oracle.com $ */
 /** @file
- *
  * This file contains the documentation of the raw-mode execution.
  */
 
