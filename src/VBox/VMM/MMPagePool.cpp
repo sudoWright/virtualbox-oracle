@@ -1,4 +1,4 @@
-/* $Id: MMPagePool.cpp 17451 2007-01-15 14:08:28Z knut.osmundsen@oracle.com $ */
+/* $Id: MMPagePool.cpp 17479 2007-01-15 18:29:52Z knut.osmundsen@oracle.com $ */
 /** @file
  * MM - Memory Monitor(/Manager) - Page Pool.
  */
@@ -284,7 +284,7 @@ DECLINLINE(void *) mmr3PagePoolAlloc(PMMPAGEPOOL pPool)
         {
             AssertMsg(paPhysPages[i].Phys && !(paPhysPages[i].Phys & PAGE_OFFSET_MASK),
                       ("i=%d Phys=%d\n", i, paPhysPages[i].Phys));
-            paPhysPages[i].uReserved = (unsigned)pSub;
+            paPhysPages[i].uReserved = (RTHCUINTPTR)pSub;
         }
 
         /*
