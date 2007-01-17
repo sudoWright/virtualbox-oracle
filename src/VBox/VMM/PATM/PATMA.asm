@@ -1,4 +1,4 @@
-; $Id: PATMA.asm 17556 2007-01-17 15:53:30Z noreply@oracle.com $
+; $Id: PATMA.asm 17558 2007-01-17 16:02:33Z knut.osmundsen@oracle.com $
 ;; @file
 ; PATM Assembly Routines.
 ;
@@ -39,6 +39,10 @@
 
 
 BEGINCODE
+
+ifdef __AMD64__ 
+ BITS 32 ; switch to 32-bit mode (x86).
+endif
 
 %ifdef VBOX_WITH_STATISTICS
 ;
