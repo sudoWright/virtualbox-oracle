@@ -1,4 +1,4 @@
-/* $Id: memobj.h 17691 2007-01-21 10:42:48Z knut.osmundsen@oracle.com $ */
+/* $Id: memobj.h 17709 2007-01-21 21:41:29Z knut.osmundsen@oracle.com $ */
 /** @file
  * InnoTek Portable Runtime - Ring-0 Memory Objects.
  */
@@ -184,7 +184,6 @@ typedef struct RTR0MEMOBJINTERNAL
             RTPROCESS   Process;
         } Mapping;
     } u;
-
 
 } RTR0MEMOBJINTERNAL;
 
