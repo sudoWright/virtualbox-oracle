@@ -1,4 +1,4 @@
-/* $Id: thread-posix.cpp 17774 2007-01-23 16:49:40Z noreply@oracle.com $ */
+/* $Id: thread-posix.cpp 17778 2007-01-23 17:11:08Z noreply@oracle.com $ */
 /** @file
  * InnoTek Portable Runtime - Threads, POSIX.
  */
@@ -257,8 +257,3 @@ RTR3DECL(int) RTThreadSetAffinity(uint64_t u64Mask)
     return VINF_SUCCESS;
 }
 
-
-RTR3DECL(void) RTThreadExit(void)
-{
-    AssertMsgFailed(("Unimplemented\n"));
-}
