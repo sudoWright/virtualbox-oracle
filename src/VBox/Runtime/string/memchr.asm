@@ -1,4 +1,4 @@
-; $Id: memchr.asm 17670 2007-01-19 21:56:57Z knut.osmundsen@oracle.com $
+; $Id: memchr.asm 19089 2007-03-03 23:38:42Z knut.osmundsen@oracle.com $
 ;; @file
 ; InnoTek Portable Runtime - No-CRT memchr - AMD64 & X86.
 ;
@@ -20,6 +20,8 @@
 ;
 
 %include "iprt/asmdefs.mac"
+
+BEGINCODE
 
 ;;
 ; @param    pv      gcc: rdi  msc: ecx  x86:[esp+4]
