@@ -1,4 +1,4 @@
-/* $Id: PDMLdr.cpp 18641 2007-02-14 23:23:08Z knut.osmundsen@oracle.com $ */
+/* $Id: PDMLdr.cpp 19117 2007-03-04 20:56:19Z knut.osmundsen@oracle.com $ */
 /** @file
  * PDM - Pluggable Device Manager, module loader.
  */
@@ -19,9 +19,7 @@
  * license agreement apply instead of the previous paragraph.
  */
 
-#if defined(__OS2__)
-# define PDMLDR_FAKE_MODE
-#endif
+//#define PDMLDR_FAKE_MODE
 
 /*******************************************************************************
 *   Header Files                                                               *
