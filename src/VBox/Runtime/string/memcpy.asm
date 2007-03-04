@@ -1,4 +1,4 @@
-; $Id: memcpy.asm 19088 2007-03-03 23:38:13Z knut.osmundsen@oracle.com $
+; $Id: memcpy.asm 19092 2007-03-04 00:04:10Z knut.osmundsen@oracle.com $
 ;; @file
 ; InnoTek Portable Runtime - No-CRT memcpy - AMD64 & X86.
 ;

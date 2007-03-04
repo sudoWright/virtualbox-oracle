@@ -1,4 +1,4 @@
-; $Id: memchr.asm 19089 2007-03-03 23:38:42Z knut.osmundsen@oracle.com $
+; $Id: memchr.asm 19092 2007-03-04 00:04:10Z knut.osmundsen@oracle.com $
 ;; @file
 ; InnoTek Portable Runtime - No-CRT memchr - AMD64 & X86.
 ;
