@@ -1,4 +1,4 @@
-/* $Id: HWVMXR0.h 17451 2007-01-15 14:08:28Z knut.osmundsen@oracle.com $ */
+/* $Id: HWVMXR0.h 19261 2007-03-07 14:16:35Z klaus.espenlaub@oracle.com $ */
 /** @file
  * HWACCM SVM - Internal header file.
  */

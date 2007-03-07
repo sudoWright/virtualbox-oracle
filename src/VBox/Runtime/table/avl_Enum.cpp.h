@@ -1,4 +1,4 @@
-/* $Id: avl_Enum.cpp.h 17973 2007-01-28 08:44:20Z knut.osmundsen@oracle.com $ */
+/* $Id: avl_Enum.cpp.h 19261 2007-03-07 14:16:35Z klaus.espenlaub@oracle.com $ */
 /** @file
  * Enumeration routines for AVL trees.
  */

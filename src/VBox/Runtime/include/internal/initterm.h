@@ -1,4 +1,4 @@
-/* $Id: initterm.h 17884 2007-01-25 20:47:51Z knut.osmundsen@oracle.com $ */
+/* $Id: initterm.h 19261 2007-03-07 14:16:35Z klaus.espenlaub@oracle.com $ */
 /** @file
  * InnoTek Portable Runtime - Initialization & Termination.
  */
