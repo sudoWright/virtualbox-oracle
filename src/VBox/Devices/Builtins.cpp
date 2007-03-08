@@ -1,4 +1,4 @@
-/** $Id: Builtins.cpp 19326 2007-03-08 21:21:41Z knut.osmundsen@oracle.com $ */
+/** $Id: Builtins.cpp 19327 2007-03-08 21:22:54Z knut.osmundsen@oracle.com $ */
 /** @file
  * Built-in drivers & devices (part 1)
  */
@@ -30,7 +30,6 @@
 #include <VBox/usb.h>
 
 #include <VBox/log.h>
-#include <VBox/config.h>
 #include <iprt/assert.h>
 
 #include "Builtins.h"
