@@ -1,4 +1,4 @@
-/* $Id: thread.h 17974 2007-01-28 08:45:05Z knut.osmundsen@oracle.com $ */
+/* $Id: thread.h 19936 2007-03-28 12:51:24Z klaus.espenlaub@oracle.com $ */
 /** @file
  * InnoTek Portable Runtime - Internal RTThread header.
  */
@@ -205,7 +205,7 @@ void rtThreadNativeDetach(void);
 
 
 /* thread.cpp */
-int rtThreadMain(PRTTHREADINT pThread, RTNATIVETHREAD NativeThread);
+int rtThreadMain(PRTTHREADINT pThread, RTNATIVETHREAD NativeThread, const char *pszThreadName);
 void rtThreadBlocking(PRTTHREADINT pThread, RTTHREADSTATE enmState, uint64_t u64Block,
                       const char *pszFile, unsigned uLine, RTUINTPTR uId);
 void rtThreadUnblocked(PRTTHREADINT pThread, RTTHREADSTATE enmCurState);
