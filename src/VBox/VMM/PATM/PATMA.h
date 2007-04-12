@@ -1,4 +1,4 @@
-/* $Id: PATMA.h 19472 2007-03-13 10:48:29Z noreply@oracle.com $ */
+/* $Id: PATMA.h 20345 2007-04-12 13:04:07Z noreply@oracle.com $ */
 /** @file
  * PATM macros & definitions (identical to PATMA.mac!!)
  */
@@ -182,6 +182,8 @@ extern PATCHASMRECORD PATMClearPIFRecord;
 extern PATCHASMRECORD PATMSetInhibitIRQRecord;
 extern PATCHASMRECORD PATMClearInhibitIRQFaultIF0Record;
 extern PATCHASMRECORD PATMClearInhibitIRQContIF0Record;
+
+extern PATCHASMRECORD PATMMovFromSSRecord;
 
 extern uint32_t       PATMInterruptFlag;
 #ifdef __cplusplus
