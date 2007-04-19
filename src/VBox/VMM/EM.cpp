@@ -1,4 +1,4 @@
-/* $Id: EM.cpp 20578 2007-04-19 13:52:53Z noreply@oracle.com $ */
+/* $Id: EM.cpp 20579 2007-04-19 13:54:51Z noreply@oracle.com $ */
 /** @file
  * EM - Execution Monitor/Manager.
  */
@@ -1018,7 +1018,7 @@ static int emR3HwAccStep(PVM pVM)
     return rc;
 }
 
-#if 1 //def DEBUG_sandervl
+#ifdef DEBUG
 void emR3SingleStepExecRaw(PVM pVM, uint32_t cIterations)
 {
     EMSTATE  enmOldState = pVM->em.s.enmState;
