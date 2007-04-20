@@ -1,4 +1,4 @@
-/* $Id: PDMR0Device.cpp 20630 2007-04-20 12:58:15Z noreply@oracle.com $ */
+/* $Id: PDMR0Device.cpp 20662 2007-04-20 23:51:13Z knut.osmundsen@oracle.com $ */
 /** @file
  * PDM - Pluggable Device and Driver Manager, R0 Device parts.
  */
