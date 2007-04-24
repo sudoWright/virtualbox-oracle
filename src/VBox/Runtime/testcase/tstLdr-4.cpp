@@ -1,4 +1,4 @@
-/* $Id: tstLdr-4.cpp 19113 2007-03-04 20:42:13Z knut.osmundsen@oracle.com $ */
+/* $Id: tstLdr-4.cpp 20715 2007-04-24 16:41:01Z noreply@oracle.com $ */
 /** @file
  * InnoTek Portable Runtime - Testcase for RTLdrOpen using ldrLdrObjR0.r0.
  */
@@ -84,7 +84,7 @@ static int testLdrOne(const char *pszFilename)
     {
         RTLDRMOD    hLdrMod;
         void       *pvBits;
-        char       *pszName;
+        const char *pszName;
     }   aLoads[6] =
     {
         { NULL, NULL, "foo" },
