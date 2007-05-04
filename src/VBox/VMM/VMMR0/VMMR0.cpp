@@ -1,4 +1,4 @@
-/* $Id: VMMR0.cpp 20578 2007-04-19 13:52:53Z noreply@oracle.com $ */
+/* $Id: VMMR0.cpp 20938 2007-05-04 18:23:45Z knut.osmundsen@oracle.com $ */
 /** @file
  * VMM - Host Context Ring 0.
  */
@@ -278,9 +278,6 @@ static void vmmR0RecordRC(PVM pVM, int rc)
             break;
         case VINF_IOM_HC_IOPORT_WRITE:
             STAM_COUNTER_INC(&pVM->vmm.s.StatGCRetIOWrite);
-            break;
-        case VINF_IOM_HC_IOPORT_READWRITE:
-            STAM_COUNTER_INC(&pVM->vmm.s.StatGCRetIOReadWrite);
             break;
         case VINF_IOM_HC_MMIO_READ:
             STAM_COUNTER_INC(&pVM->vmm.s.StatGCRetMMIORead);
