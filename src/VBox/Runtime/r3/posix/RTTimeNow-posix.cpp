@@ -1,4 +1,4 @@
-/* $Id: RTTimeNow-posix.cpp 19128 2007-03-05 00:01:10Z knut.osmundsen@oracle.com $ */
+/* $Id: RTTimeNow-posix.cpp 21125 2007-05-14 07:19:07Z knut.osmundsen@oracle.com $ */
 /** @file
  * InnoTek Portable Runtime - RTTimeNow, POSIX.
  */
@@ -37,7 +37,7 @@
  * @returns pTime.
  * @param   pTime   Where to store the time.
  */
-RTR3DECL(PRTTIMESPEC) RTTimeNow(PRTTIMESPEC pTime)
+RTDECL(PRTTIMESPEC) RTTimeNow(PRTTIMESPEC pTime)
 {
     struct timeval tv;
     gettimeofday(&tv, NULL);
