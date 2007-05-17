@@ -1,4 +1,4 @@
-/* $Id: HWACCMInternal.h 21013 2007-05-09 12:58:47Z noreply@oracle.com $ */
+/* $Id: HWACCMInternal.h 21278 2007-05-17 15:18:06Z noreply@oracle.com $ */
 /** @file
  * HWACCM - Internal header file.
  */
@@ -285,7 +285,8 @@ typedef struct HWACCM
     STAMCOUNTER             StatSwitchGuestIrq;
     STAMCOUNTER             StatSwitchToR3;
 
-    PSTAMCOUNTER            pStatExitReason;
+    R3PTRTYPE(PSTAMCOUNTER) pStatExitReason;
+    R0PTRTYPE(PSTAMCOUNTER) pStatExitReasonR0;
 } HWACCM;
 /** Pointer to HWACCM VM instance data. */
 typedef HWACCM *PHWACCM;
