@@ -1,6 +1,5 @@
+/* $Id: DevRTC.cpp 21388 2007-05-22 22:56:27Z knut.osmundsen@oracle.com $ */
 /** @file
- *
- * VBox basic PC devices:
  * Motorola MC146818 RTC/CMOS Device.
  */
 
