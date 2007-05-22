@@ -1,4 +1,4 @@
-/* $Id: VMMTests.cpp 19278 2007-03-07 20:22:12Z knut.osmundsen@oracle.com $ */
+/* $Id: VMMTests.cpp 21377 2007-05-22 14:13:23Z noreply@oracle.com $ */
 /** @file
  * VMM - The Virtual Machine Monitor Core, Tests.
  */
@@ -536,7 +536,7 @@ VMMR3DECL(int) VMMDoHwAccmTest(PVM pVM)
             uint64_t TickThisElapsed = ASMReadTSC() - TickThisStart;
             if (VBOX_FAILURE(rc))
             {
-                Log(("VMM: GC returned fatal %Vra in iteration %d\n", rc, i));
+                Log(("VMM: R0 returned fatal %Vrc in iteration %d\n", rc, i));
                 VMMR3FatalDump(pVM, rc);
                 return rc;
             }
