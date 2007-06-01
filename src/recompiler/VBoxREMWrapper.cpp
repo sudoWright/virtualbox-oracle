@@ -1,11 +1,11 @@
-/* $Id: VBoxREMWrapper.cpp 21571 2007-05-29 09:42:37Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxREMWrapper.cpp 21700 2007-06-01 16:01:28Z noreply@oracle.com $ */
 /** @file
  *
  * VBoxREM Win64 DLL Wrapper.
  *
- * InnoTek Systemberatung GmbH confidential
+ * innotek GmbH confidential
  *
- * Copyright (c) 2006 InnoTek Systemberatung GmbH
+ * Copyright (c) 2006 innotek GmbH
  *
  * Author: knut st. osmundsen <bird@innotek.de>
  *

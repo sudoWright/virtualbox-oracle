@@ -1,10 +1,10 @@
-/* $Id: RTLogWriteDebugger-r0drv-linux.c 17465 2007-01-15 17:23:31Z knut.osmundsen@oracle.com $ */
+/* $Id: RTLogWriteDebugger-r0drv-linux.c 21700 2007-06-01 16:01:28Z noreply@oracle.com $ */
 /** @file
- * InnoTek Portable Runtime - Log To Debugger, Ring-0 Driver, Linux.
+ * innotek Portable Runtime - Log To Debugger, Ring-0 Driver, Linux.
  */
 
 /*
- * Copyright (C) 2006 InnoTek Systemberatung GmbH
+ * Copyright (C) 2006-2007 innotek GmbH
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

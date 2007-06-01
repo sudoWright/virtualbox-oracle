@@ -1,10 +1,10 @@
-/* $Id: sched-generic.cpp 17974 2007-01-28 08:45:05Z knut.osmundsen@oracle.com $ */
+/* $Id: sched-generic.cpp 21700 2007-06-01 16:01:28Z noreply@oracle.com $ */
 /** @file
- * InnoTek Portable Runtime - Scheduling, generic stubs.
+ * innotek Portable Runtime - Scheduling, generic stubs.
  */
 
 /*
- * Copyright (C) 2006 InnoTek Systemberatung GmbH
+ * Copyright (C) 2006-2007 innotek GmbH
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

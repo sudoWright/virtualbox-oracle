@@ -1,10 +1,10 @@
-/* $Id: ldrkLdr.cpp 18613 2007-02-14 10:17:08Z knut.osmundsen@oracle.com $ */
+/* $Id: ldrkLdr.cpp 21700 2007-06-01 16:01:28Z noreply@oracle.com $ */
 /** @file
- * InnoTek Portable Runtime - Binary Image Loader, kLdr Interface.
+ * innotek Portable Runtime - Binary Image Loader, kLdr Interface.
  */
 
 /*
- * Copyright (C) 2006 InnoTek Systemberatung GmbH
+ * Copyright (C) 2006-2007 innotek GmbH
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

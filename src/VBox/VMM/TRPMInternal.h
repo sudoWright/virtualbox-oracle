@@ -1,10 +1,10 @@
-/* $Id: TRPMInternal.h 20445 2007-04-17 12:25:17Z noreply@oracle.com $ */
+/* $Id: TRPMInternal.h 21700 2007-06-01 16:01:28Z noreply@oracle.com $ */
 /** @file
  * TRPM - Internal header file.
  */
 
 /*
- * Copyright (C) 2006 InnoTek Systemberatung GmbH
+ * Copyright (C) 2006-2007 innotek GmbH
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

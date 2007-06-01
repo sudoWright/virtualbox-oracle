@@ -1,10 +1,10 @@
-/* $Id: thread-win32.cpp 19936 2007-03-28 12:51:24Z klaus.espenlaub@oracle.com $ */
+/* $Id: thread-win32.cpp 21700 2007-06-01 16:01:28Z noreply@oracle.com $ */
 /** @file
- * InnoTek Portable Runtime - Threads, Win32.
+ * innotek Portable Runtime - Threads, Win32.
  */
 
 /*
- * Copyright (C) 2006 InnoTek Systemberatung GmbH
+ * Copyright (C) 2006-2007 innotek GmbH
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

@@ -1,10 +1,10 @@
-/* $Id: thread2-r0drv-linux.c 17974 2007-01-28 08:45:05Z knut.osmundsen@oracle.com $ */
+/* $Id: thread2-r0drv-linux.c 21700 2007-06-01 16:01:28Z noreply@oracle.com $ */
 /** @file
- * InnoTek Portable Runtime - Threads (Part 2), Ring-0 Driver, Linux.
+ * innotek Portable Runtime - Threads (Part 2), Ring-0 Driver, Linux.
  */
 
 /*
- * Copyright (C) 2006 InnoTek Systemberatung GmbH
+ * Copyright (C) 2006-2007 innotek GmbH
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

@@ -1,10 +1,10 @@
-/* $Id: process-win32.cpp 19489 2007-03-13 14:20:32Z noreply@oracle.com $ */
+/* $Id: process-win32.cpp 21700 2007-06-01 16:01:28Z noreply@oracle.com $ */
 /** @file
- * InnoTek Portable Runtime - Process, Win32.
+ * innotek Portable Runtime - Process, Win32.
  */
 
 /*
- * Copyright (C) 2006 InnoTek Systemberatung GmbH
+ * Copyright (C) 2006-2007 innotek GmbH
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

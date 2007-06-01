@@ -1,10 +1,10 @@
-/* $Id: PDMDriver.cpp 19336 2007-03-09 09:39:20Z noreply@oracle.com $ */
+/* $Id: PDMDriver.cpp 21700 2007-06-01 16:01:28Z noreply@oracle.com $ */
 /** @file
  * PDM - Pluggable Device and Driver Manager, Driver parts.
  */
 
 /*
- * Copyright (C) 2006 InnoTek Systemberatung GmbH
+ * Copyright (C) 2006-2007 innotek GmbH
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

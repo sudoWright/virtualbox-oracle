@@ -1,6 +1,6 @@
-/* $Id: timer-r0drv-os2.cpp 19999 2007-03-29 18:59:35Z knut.osmundsen@oracle.com $ */
+/* $Id: timer-r0drv-os2.cpp 21700 2007-06-01 16:01:28Z noreply@oracle.com $ */
 /** @file
- * InnoTek Portable Runtime - Memory Allocation, Ring-0 Driver, OS/2.
+ * innotek Portable Runtime - Memory Allocation, Ring-0 Driver, OS/2.
  */
 
 /*

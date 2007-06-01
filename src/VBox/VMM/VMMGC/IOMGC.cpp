@@ -1,10 +1,10 @@
-/* $Id: IOMGC.cpp 20935 2007-05-04 18:12:30Z knut.osmundsen@oracle.com $ */
+/* $Id: IOMGC.cpp 21700 2007-06-01 16:01:28Z noreply@oracle.com $ */
 /** @file
  * IOM - Input / Output Monitor - Guest Context.
  */
 
 /*
- * Copyright (C) 2006 InnoTek Systemberatung GmbH
+ * Copyright (C) 2006-2007 innotek GmbH
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

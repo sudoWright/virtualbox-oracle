@@ -1,10 +1,10 @@
-/* $Id: MMHeap.cpp 18353 2007-02-06 14:56:17Z noreply@oracle.com $ */
+/* $Id: MMHeap.cpp 21700 2007-06-01 16:01:28Z noreply@oracle.com $ */
 /** @file
  * MM - Memory Monitor(/Manager) - Heap.
  */
 
 /*
- * Copyright (C) 2006 InnoTek Systemberatung GmbH
+ * Copyright (C) 2006-2007 innotek GmbH
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

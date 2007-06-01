@@ -1,10 +1,10 @@
-/* $Id: EMInternal.h 20370 2007-04-13 08:44:43Z noreply@oracle.com $ */
+/* $Id: EMInternal.h 21700 2007-06-01 16:01:28Z noreply@oracle.com $ */
 /** @file
  * EM - Internal header file.
  */
 
 /*
- * Copyright (C) 2006 InnoTek Systemberatung GmbH
+ * Copyright (C) 2006-2007 innotek GmbH
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;
