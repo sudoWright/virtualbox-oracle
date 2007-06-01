@@ -1,6 +1,6 @@
-; $Id: RTR0Os2DHQueryDOSVar.asm 19114 2007-03-04 20:46:04Z knut.osmundsen@oracle.com $
+; $Id: RTR0Os2DHQueryDOSVar.asm 21711 2007-06-01 17:36:09Z noreply@oracle.com $
 ;; @file
-; InnoTek Portable Runtime - DevHelp_GetDOSVar, Ring-0 Driver, OS/2.
+; innotek Portable Runtime - DevHelp_GetDOSVar, Ring-0 Driver, OS/2.
 ;
 
 ;

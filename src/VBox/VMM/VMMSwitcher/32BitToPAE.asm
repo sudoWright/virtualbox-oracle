@@ -1,10 +1,10 @@
-; $Id: 32BitToPAE.asm 17447 2007-01-15 13:07:05Z knut.osmundsen@oracle.com $
+; $Id: 32BitToPAE.asm 21711 2007-06-01 17:36:09Z noreply@oracle.com $
 ;; @file
 ; VMM - World Switchers, 32-Bit to 32-Bit.
 ;
 
 ;
-; Copyright (C) 2006 InnoTek Systemberatung GmbH
+; Copyright (C) 2006-2007 innotek GmbH
 ;
 ; This file is part of VirtualBox Open Source Edition (OSE), as
 ; available from http://www.virtualbox.org. This file is free software;

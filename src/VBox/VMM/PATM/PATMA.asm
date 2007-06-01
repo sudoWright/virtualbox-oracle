@@ -1,9 +1,9 @@
-; $Id: PATMA.asm 20397 2007-04-14 12:46:42Z knut.osmundsen@oracle.com $
+; $Id: PATMA.asm 21711 2007-06-01 17:36:09Z noreply@oracle.com $
 ;; @file
 ; PATM Assembly Routines.
 ;
 
-; Copyright (C) 2006 InnoTek Systemberatung GmbH
+; Copyright (C) 2006-2007 innotek GmbH
 ;
 ; This file is part of VirtualBox Open Source Edition (OSE), as
 ; available from http://www.virtualbox.org. This file is free software;
