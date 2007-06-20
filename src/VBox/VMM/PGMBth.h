@@ -1,8 +1,6 @@
-/* $Id: PGMBth.h 21700 2007-06-01 16:01:28Z noreply@oracle.com $ */
+/* $Id: PGMBth.h 22119 2007-06-20 13:43:13Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox - Page Manager / Monitor, Shadow+Guest Paging Template.
- *
- * This file is a big challenge!
  */
 
 /*
