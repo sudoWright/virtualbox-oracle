@@ -1,7 +1,6 @@
+/* $Revision: 22766 $ */
 /** @file
- *
- * VBox host drivers - Ring-0 support drivers - Shared code:
- * Driver code for all host platforms
+ * VirtualBox Support Driver - Shared code.
  */
 
 /*
