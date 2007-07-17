@@ -1,4 +1,4 @@
-/* $Id: tstIoCtl.cpp 21700 2007-06-01 16:01:28Z noreply@oracle.com $ */
+/* $Id: tstIoCtl.cpp 22950 2007-07-17 12:39:30Z noreply@oracle.com $ */
 /** @file
  * innotek Portable Runtime Testcase - file IoCtl.
  */
@@ -42,14 +42,14 @@
 #include <stdio.h>
 #include <iprt/uuid.h>
 
-#ifdef __L4ENV__
+#ifdef RT_OS_L4
 extern char **__environ;
 char *myenv[] = { "+all.e", NULL };
 #endif
 
 int main()
 {
-#ifdef __L4ENV__
+#ifdef RT_OS_L4
     __environ = myenv;
 #endif
     int         rcRet = 0;

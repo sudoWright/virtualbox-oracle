@@ -1,4 +1,4 @@
-/* $Id: memcpy_alias.c 21700 2007-06-01 16:01:28Z noreply@oracle.com $ */
+/* $Id: memcpy_alias.c 22950 2007-07-17 12:39:30Z noreply@oracle.com $ */
 /** @file
  * innotek Portable Runtime - No-CRT memcpy() alias for gcc.
  */
@@ -26,7 +26,7 @@
 #include <iprt/nocrt/string.h>
 #undef memcpy
 
-#if defined(__DARWIN__) || defined(__WIN__)
+#if defined(RT_OS_DARWIN) || defined(RT_OS_WINDOWS)
 # ifndef __MINGW32__
 #  pragma weak memcpy
 # endif
