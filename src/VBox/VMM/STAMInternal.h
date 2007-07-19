@@ -1,4 +1,4 @@
-/* $Id: STAMInternal.h 21700 2007-06-01 16:01:28Z noreply@oracle.com $ */
+/* $Id: STAMInternal.h 23022 2007-07-19 18:46:00Z knut.osmundsen@oracle.com $ */
 /** @file
  * STAM Internal Header.
  */
@@ -19,8 +19,8 @@
  * license agreement apply instead of the previous paragraph.
  */
 
-#ifndef __STAMInternal_h__
-#define __STAMInternal_h__
+#ifndef ___STAMInternal_h
+#define ___STAMInternal_h
 
 #include <VBox/cdefs.h>
 #include <VBox/types.h>

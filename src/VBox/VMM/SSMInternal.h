@@ -1,4 +1,4 @@
-/* $Id: SSMInternal.h 21700 2007-06-01 16:01:28Z noreply@oracle.com $ */
+/* $Id: SSMInternal.h 23022 2007-07-19 18:46:00Z knut.osmundsen@oracle.com $ */
 /** @file
  * SSM - Internal header file.
  */
@@ -19,8 +19,8 @@
  * license agreement apply instead of the previous paragraph.
  */
 
-#ifndef __SSMInternal_h__
-#define __SSMInternal_h__
+#ifndef ___SSMInternal_h
+#define ___SSMInternal_h
 
 #include <VBox/cdefs.h>
 #include <VBox/types.h>
@@ -190,5 +190,5 @@ typedef SSM *PSSM;
 
 __END_DECLS
 
-#endif /* !__SSMInternal_h__ */
+#endif /* !___SSMInternal_h */
 
