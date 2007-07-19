@@ -1,4 +1,4 @@
-/* $Id: VMMInternal.h 23022 2007-07-19 18:46:00Z knut.osmundsen@oracle.com $ */
+/* $Id: VMMInternal.h 23023 2007-07-19 18:57:24Z knut.osmundsen@oracle.com $ */
 /** @file
  * VMM - Internal header file.
  */
@@ -23,7 +23,6 @@
 #define ___VMMInternal_h
 
 #include <VBox/cdefs.h>
-#include <x86context.h>
 #include <VBox/stam.h>
 #include <VBox/log.h>
 #include <iprt/critsect.h>
