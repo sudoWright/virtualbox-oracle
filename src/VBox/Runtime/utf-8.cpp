@@ -1,4 +1,4 @@
-/* $Id: utf-8.cpp 22950 2007-07-17 12:39:30Z noreply@oracle.com $ */
+/* $Id: utf-8.cpp 23070 2007-07-21 11:41:19Z noreply@oracle.com $ */
 /** @file
  * innotek Portable Runtime - UTF-8 Decoding.
  */
@@ -33,7 +33,7 @@
 
 
 /**
- * Get get length in code points of a UTF-8 endcoded string.
+ * Get get length in code points of a UTF-8 encoded string.
  * The string is validated while doing this.
  *
  * @returns IPRT status code.
