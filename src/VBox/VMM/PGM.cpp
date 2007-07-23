@@ -1,4 +1,4 @@
-/* $Id: PGM.cpp 22987 2007-07-18 17:00:33Z knut.osmundsen@oracle.com $ */
+/* $Id: PGM.cpp 23105 2007-07-23 09:16:56Z noreply@oracle.com $ */
 /** @file
  * PGM - Page Manager and Monitor. (Mixing stuff here, not good?)
  */
@@ -137,7 +137,6 @@
 #include <VBox/dbg.h>
 #include <VBox/hwaccm.h>
 
-#include <VBox/log.h>
 #include <iprt/assert.h>
 #include <iprt/alloc.h>
 #include <iprt/asm.h>
