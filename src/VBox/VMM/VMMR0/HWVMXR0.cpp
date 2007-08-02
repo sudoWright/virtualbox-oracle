@@ -1,4 +1,4 @@
-/* $Id: HWVMXR0.cpp 22402 2007-06-26 14:49:19Z noreply@oracle.com $ */
+/* $Id: HWVMXR0.cpp 23426 2007-08-02 11:27:42Z noreply@oracle.com $ */
 /** @file
  * HWACCM VMX - Host Context Ring 0.
  */
@@ -60,7 +60,7 @@ static void VMXR0CheckError(PVM pVM, int rc)
     {
         Log(("VMXR0CheckError failed with %Vrc\n", rc));
     }
-    pVM->hwaccm.s.ulLastError = rc;
+    pVM->hwaccm.s.lLastError = rc;
 }
 
 /**
