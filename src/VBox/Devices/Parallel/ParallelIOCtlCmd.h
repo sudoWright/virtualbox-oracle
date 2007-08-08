@@ -1,6 +1,8 @@
-/* $Id: ParallelIOCtlCmd.h 23517 2007-08-07 17:07:59Z noreply@oracle.com $ */
+/* $Id: ParallelIOCtlCmd.h 23536 2007-08-08 09:12:59Z noreply@oracle.com $ */
 /** @file
  * VBox parallel device, Private Driver IOCtls.
+ *
+ * Contributed by: Alexander Eichner
  */
 
 /*

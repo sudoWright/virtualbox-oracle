@@ -1,6 +1,8 @@
-/* $Id: DevParallel.cpp 23517 2007-08-07 17:07:59Z noreply@oracle.com $ */
+/* $Id: DevParallel.cpp 23536 2007-08-08 09:12:59Z noreply@oracle.com $ */
 /** @file
  * VirtualBox Parallel Device Emulation.
+ *
+ * Contributed by: Alexander Eichner
  */
 
 /*

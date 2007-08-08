@@ -1,6 +1,8 @@
-/* $Id: DrvHostParallel.cpp 23517 2007-08-07 17:07:59Z noreply@oracle.com $ */
+/* $Id: DrvHostParallel.cpp 23536 2007-08-08 09:12:59Z noreply@oracle.com $ */
 /** @file
  * VirtualBox Host Parallel Port Driver.
+ *
+ * Contributed by: Alexander Eichner
  */
 
 /*
