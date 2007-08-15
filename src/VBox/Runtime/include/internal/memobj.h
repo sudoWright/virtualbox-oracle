@@ -1,4 +1,4 @@
-/* $Id: memobj.h 23645 2007-08-15 19:41:26Z knut.osmundsen@oracle.com $ */
+/* $Revision: 23649 $ */
 /** @file
  * innotek Portable Runtime - Ring-0 Memory Objects.
  */
