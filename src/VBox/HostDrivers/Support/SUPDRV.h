@@ -1,4 +1,4 @@
-/* $Revision: 23611 $ */
+/* $Revision: 23646 $ */
 /** @file
  * VirtualBox Support Driver - Internal header.
  */
@@ -424,7 +424,7 @@ typedef struct SUPDRVMEMREF
 #endif
         } mem;
 #if defined(USB_NEW_OS_INTERFACE_FOR_LOW)
-        struct 
+        struct
         {
             /** The memory object handle. */
             RTR0MEMOBJ          MemObj;
