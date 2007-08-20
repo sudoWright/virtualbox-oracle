@@ -1,4 +1,4 @@
-/** $Id: DBGConsole.cpp 23758 2007-08-20 23:53:15Z knut.osmundsen@oracle.com $ */
+/** $Id: DBGConsole.cpp 23759 2007-08-20 23:54:30Z knut.osmundsen@oracle.com $ */
 /** @file
  * DBGC - Debugger Console.
  */
@@ -8318,15 +8318,19 @@ static int dbgcProcessArguments(PDBGC pDbgc, PCDBGCCMD pCmd, char *pszArgs, PDBG
                     if (pOp)
                     {
                         if (pOp->fBinary != fBinary)
+                        {
+                            pszEnd = psz;
+                            /** @todo this is a parsing error really. */
                             break;              /* the end. */
+                        }
                         psz += pOp->cchName;
                         while (isblank(*psz))   /* skip blanks so we don't get here again */
                             psz++;
                         fBinary = false;
                         continue;
                     }
-                    fBinary = true;
                 }
+                fBinary = true;
             }
 
             /* next char */
