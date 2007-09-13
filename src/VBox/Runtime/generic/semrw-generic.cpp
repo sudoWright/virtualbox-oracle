@@ -1,4 +1,4 @@
-/* $Id: semrw-generic.cpp 23517 2007-08-07 17:07:59Z noreply@oracle.com $ */
+/* $Id: semrw-generic.cpp 24432 2007-09-13 07:05:03Z noreply@oracle.com $ */
 /** @file
  * Excerpt from kProfileR3.cpp.
  */
