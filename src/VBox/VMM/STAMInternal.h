@@ -1,4 +1,4 @@
-/* $Id: STAMInternal.h 23517 2007-08-07 17:07:59Z noreply@oracle.com $ */
+/* $Id: STAMInternal.h 24468 2007-09-13 15:29:33Z noreply@oracle.com $ */
 /** @file
  * STAM Internal Header.
  */
@@ -111,7 +111,7 @@ struct STAM
     /** Alignment padding. */
     RTUINT                  uPadding;
     /** Pointer to the first sample. */
-    HCPTRTYPE(PSTAMDESC)    pHead;
+    R3PTRTYPE(PSTAMDESC)    pHead;
     /** RW Lock for the list. */
     RTSEMRW                 RWSem;
 };
