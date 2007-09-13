@@ -1,4 +1,4 @@
-/* $Id: memobj-r0drv-nt.cpp 24400 2007-09-12 10:12:31Z noreply@oracle.com $ */
+/* $Id: memobj-r0drv-nt.cpp 24433 2007-09-13 07:10:32Z noreply@oracle.com $ */
 /** @file
  * innotek Portable Runtime - Ring-0 Memory Objects, NT.
  */
