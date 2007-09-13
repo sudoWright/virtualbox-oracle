@@ -1,4 +1,4 @@
-/* $Id: time-r0drv-nt.cpp 23726 2007-08-19 16:56:05Z knut.osmundsen@oracle.com $ */
+/* $Id: time-r0drv-nt.cpp 24474 2007-09-13 19:07:42Z noreply@oracle.com $ */
 /** @file
  * innotek Portable Runtime - Time, Ring-0 Driver, Nt.
  */
