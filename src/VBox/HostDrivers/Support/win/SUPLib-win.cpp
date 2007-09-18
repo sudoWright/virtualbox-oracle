@@ -1,4 +1,4 @@
-/** $Id: SUPLib-win.cpp 24514 2007-09-14 17:53:56Z knut.osmundsen@oracle.com $ */
+/** $Id: SUPLib-win.cpp 24607 2007-09-18 07:37:44Z knut.osmundsen@oracle.com $ */
 /** @file
  * VirtualBox Support Library - Windows NT specific parts.
  */
@@ -623,7 +623,7 @@ int suplibOsIOCtl(uintptr_t uFunction, void *pvReq, size_t cbReq)
 }
 
 
-int suplibOSIOCtlFast(uintptr_t uFunction)
+int suplibOsIOCtlFast(uintptr_t uFunction)
 {
     /*
      * Issue device I/O control.
