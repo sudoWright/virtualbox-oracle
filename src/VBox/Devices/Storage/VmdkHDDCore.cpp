@@ -1,4 +1,4 @@
-/** $Id: VmdkHDDCore.cpp 24132 2007-09-05 07:43:09Z alexander.eichner@oracle.com $ */
+/** $Id: VmdkHDDCore.cpp 24943 2007-09-28 16:13:06Z alexander.eichner@oracle.com $ */
 /** @file
  * VMDK Disk image, Core Code.
  */
@@ -3481,6 +3481,8 @@ VBOXHDDBACKEND g_VmdkBackend =
 {
     /* cbSize */
     sizeof(VBOXHDDBACKEND),
+    /* pfnCheckIfValid */
+    NULL,
     /* pfnOpen */
     vmdkOpen,
     /* pfnCreate */
