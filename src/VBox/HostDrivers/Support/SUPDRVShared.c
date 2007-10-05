@@ -1,4 +1,4 @@
-/* $Revision: 24829 $ */
+/* $Revision: 25065 $ */
 /** @file
  * VirtualBox Support Driver - Shared code.
  */
@@ -126,6 +126,7 @@ static SUPFUNC g_aFunctions[] =
     { "RTSemEventCreate",                       (void *)RTSemEventCreate },
     { "RTSemEventSignal",                       (void *)RTSemEventSignal },
     { "RTSemEventWait",                         (void *)RTSemEventWait },
+    { "RTSemEventWaitNoResume",                 (void *)RTSemEventWaitNoResume },
     { "RTSemEventDestroy",                      (void *)RTSemEventDestroy },
     { "RTSpinlockCreate",                       (void *)RTSpinlockCreate },
     { "RTSpinlockDestroy",                      (void *)RTSpinlockDestroy },
