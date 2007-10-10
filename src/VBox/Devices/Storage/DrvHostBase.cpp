@@ -1,4 +1,4 @@
-/* $Id: DrvHostBase.cpp 25140 2007-10-09 18:43:56Z knut.osmundsen@oracle.com $ */
+/* $Id: DrvHostBase.cpp 25146 2007-10-10 11:45:29Z knut.osmundsen@oracle.com $ */
 /** @file
  * DrvHostBase - Host base drive access driver.
  */
@@ -953,7 +953,7 @@ static int drvHostBaseOpen(PDRVHOSTBASE pThis, PRTFILE pBlockFileDevice, PRTFILE
     {
         rc = RTFileOpen(pFileRawDevice, pThis->pszRawDeviceOpen, fFlags);
         if (RT_FAILURE(rc))
-            RTFileClose(BlockFileDevice);
+            RTFileClose(*pBlockFileDevice);
     }
     return rc;
 }
