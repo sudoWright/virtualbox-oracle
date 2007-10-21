@@ -1,6 +1,6 @@
-; $Id: remainder.asm 23517 2007-08-07 17:07:59Z noreply@oracle.com $
+; $Id: remainderl.asm 25538 2007-10-21 21:12:03Z knut.osmundsen@oracle.com $
 ;; @file
-; innotek Portable Runtime - No-CRT remainder - AMD64 & X86.
+; innotek Portable Runtime - No-CRT remainderl - AMD64 & X86.
 ;
 
 ;
@@ -29,22 +29,18 @@ BEGINCODE
 ;;
 ; See SUS.
 ; @returns st(0)
-; @param    rd1    [ebp + 8h]  xmm0
-; @param    rd2    [ebp + 10h]  xmm1
-BEGINPROC RT_NOCRT(remainder)
+; @param    lrd1    [rbp + 10h]
+; @param    lrd2    [rbp + 20h]
+BEGINPROC RT_NOCRT(remainderl)
     push    _BP
     mov     _BP, _SP
-    sub     _SP, 20h
-;int3
 
 %ifdef RT_ARCH_AMD64
-    movsd   [rsp + 10h], xmm1
-    movsd   [rsp], xmm0
-    fld     qword [rsp + 10h]
-    fld     qword [rsp]
+    fld     tword [rbp + 10h + RTLRD_CB]
+    fld     tword [rbp + 10h]
 %else
-    fld     qword [ebp + 10h]
-    fld     qword [ebp + 8h]
+    fld     tword [ebp + 8h + RTLRD_CB]
+    fld     tword [ebp + 8h]
 %endif
 
     fprem1
@@ -54,12 +50,7 @@ BEGINPROC RT_NOCRT(remainder)
     fstp    st1
 
 .done:
-%ifdef RT_ARCH_AMD64
-    fstp    qword [rsp]
-    movsd   xmm0, [rsp]
-%endif
-
     leave
     ret
-ENDPROC   RT_NOCRT(remainder)
+ENDPROC   RT_NOCRT(remainderl)
 

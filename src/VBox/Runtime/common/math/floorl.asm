@@ -1,6 +1,6 @@
-; $Id: lrintl.asm 23517 2007-08-07 17:07:59Z noreply@oracle.com $
+; $Id: floorl.asm 25538 2007-10-21 21:12:03Z knut.osmundsen@oracle.com $
 ;; @file
-; innotek Portable Runtime - No-CRT lrintl - AMD64 & X86.
+; innotek Portable Runtime - No-CRT floorl - AMD64 & X86.
 ;
 
 ;
@@ -13,7 +13,6 @@
 ;  in version 2 as it comes in the "COPYING" file of the VirtualBox OSE
 ;  distribution. VirtualBox OSE is distributed in the hope that it will
 ;  be useful, but WITHOUT ANY WARRANTY of any kind.
-
 
 %include "iprt/asmdefs.mac"
 
@@ -30,26 +29,31 @@ BEGINCODE
 %endif
 
 ;;
-; Round rd to the nearest integer value, rounding according to the current rounding direction.
-; @returns 32-bit: eax  64-bit: rax
-; @param    lrd     [rbp + _S*2]
-BEGINPROC RT_NOCRT(lrintl)
+; Compute the largest integral value not greater than lrd.
+; @returns st(0)
+; @param    lrd     [rbp + 8]
+BEGINPROC RT_NOCRT(floorl)
     push    _BP
     mov     _BP, _SP
     sub     _SP, 10h
 
     fld     tword [_BP + _S*2]
-%ifdef RT_ARCH_AMD64
-    fistp   qword [_SP]
-    fwait
-    mov     rax, [_SP]
-%else
-    fistp   dword [_SP]
-    fwait
-    mov     eax, [_SP]
-%endif
+
+    ; Make it round down by modifying the fpu control word.
+    fstcw   [_BP - 10h]
+    mov     eax, [_BP - 10h]
+    or      eax, 00400h
+    and     eax, 0f7ffh
+    mov     [_BP - 08h], eax
+    fldcw   [_BP - 08h]
+
+    ; Round ST(0) to integer.
+    frndint
+
+    ; Restore the fpu control word.
+    fldcw   [_BP - 10h]
 
     leave
     ret
-ENDPROC   RT_NOCRT(lrintl)
+ENDPROC   RT_NOCRT(floorl)
 

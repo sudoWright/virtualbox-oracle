@@ -1,6 +1,6 @@
-; $Id: tanl.asm 23517 2007-08-07 17:07:59Z noreply@oracle.com $
+; $Id: cosl.asm 25538 2007-10-21 21:12:03Z knut.osmundsen@oracle.com $
 ;; @file
-; innotek Portable Runtime - No-CRT tanl - AMD64 & X86.
+; innotek Portable Runtime - No-CRT cosl - AMD64 & X86.
 ;
 
 ;
@@ -29,34 +29,34 @@ BEGINCODE
 %endif
 
 ;;
-; Compute the sine of lrd
+; compute the cosine of ldr, measured in radians.
 ; @returns st(0)
-; @param    lrd     [_SP + _S*2]
-BEGINPROC RT_NOCRT(tanl)
+; @param    lrd     [rbp + _S*2]
+BEGINPROC RT_NOCRT(cosl)
     push    _BP
     mov     _BP, _SP
     sub     _SP, 10h
 
     fld     tword [_BP + _S*2]
-    fptan
+    fcos
     fnstsw  ax
-    test    ah, 04h                     ; check for C2
+    test    ah, 4
     jz      .done
 
     fldpi
-    fadd    st0
+    fadd    st0, st0
     fxch    st1
 .again:
     fprem1
     fnstsw  ax
-    test    ah, 04h
+    test    ah, 4
     jnz     .again
-    fstp    st1
-    fptan
+
+    fstp    st0
+    fcos
 
 .done:
-    fstp    st0
     leave
     ret
-ENDPROC   RT_NOCRT(tanl)
+ENDPROC   RT_NOCRT(cosl)
 

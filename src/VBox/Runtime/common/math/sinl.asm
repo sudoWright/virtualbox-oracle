@@ -1,6 +1,6 @@
-; $Id: cosl.asm 23517 2007-08-07 17:07:59Z noreply@oracle.com $
+; $Id: sinl.asm 25538 2007-10-21 21:12:03Z knut.osmundsen@oracle.com $
 ;; @file
-; innotek Portable Runtime - No-CRT cosl - AMD64 & X86.
+; innotek Portable Runtime - No-CRT sinl - AMD64 & X86.
 ;
 
 ;
@@ -13,6 +13,7 @@
 ;  in version 2 as it comes in the "COPYING" file of the VirtualBox OSE
 ;  distribution. VirtualBox OSE is distributed in the hope that it will
 ;  be useful, but WITHOUT ANY WARRANTY of any kind.
+
 
 %include "iprt/asmdefs.mac"
 
@@ -29,34 +30,33 @@ BEGINCODE
 %endif
 
 ;;
-; compute the cosine of ldr, measured in radians.
+; Compute the sine of lrd
 ; @returns st(0)
-; @param    lrd     [rbp + _S*2]
-BEGINPROC RT_NOCRT(cosl)
+; @param    lrd     [_SP + _S*2]
+BEGINPROC RT_NOCRT(sinl)
     push    _BP
     mov     _BP, _SP
     sub     _SP, 10h
 
     fld     tword [_BP + _S*2]
-    fcos
+    fsin
     fnstsw  ax
-    test    ah, 4
+    test    ah, 04h
     jz      .done
 
     fldpi
-    fadd    st0, st0
+    fadd    st0
     fxch    st1
 .again:
     fprem1
     fnstsw  ax
-    test    ah, 4
+    test    ah, 04h
     jnz     .again
-
-    fstp    st0
-    fcos
+    fstp    st1
+    fsin
 
 .done:
     leave
     ret
-ENDPROC   RT_NOCRT(cosl)
+ENDPROC   RT_NOCRT(sinl)
 

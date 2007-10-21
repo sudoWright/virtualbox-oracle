@@ -1,6 +1,6 @@
-; $Id: truncl.asm 23517 2007-08-07 17:07:59Z noreply@oracle.com $
+; $Id: remainder.asm 25538 2007-10-21 21:12:03Z knut.osmundsen@oracle.com $
 ;; @file
-; innotek Portable Runtime - No-CRT truncl - AMD64 & X86.
+; innotek Portable Runtime - No-CRT remainder - AMD64 & X86.
 ;
 
 ;
@@ -14,7 +14,6 @@
 ;  distribution. VirtualBox OSE is distributed in the hope that it will
 ;  be useful, but WITHOUT ANY WARRANTY of any kind.
 
-
 %include "iprt/asmdefs.mac"
 
 BEGINCODE
@@ -22,38 +21,45 @@ BEGINCODE
 %ifdef RT_ARCH_AMD64
  %define _SP rsp
  %define _BP rbp
- %define _S  8
 %else
  %define _SP esp
  %define _BP ebp
- %define _S  4
 %endif
 
 ;;
-; Round to truncated integer value.
+; See SUS.
 ; @returns st(0)
-; @param    rd      [rbp + 8]
-BEGINPROC RT_NOCRT(truncl)
+; @param    rd1    [ebp + 8h]  xmm0
+; @param    rd2    [ebp + 10h]  xmm1
+BEGINPROC RT_NOCRT(remainder)
     push    _BP
     mov     _BP, _SP
-    sub     _SP, 10h
+    sub     _SP, 20h
+;int3
 
-    fld     tword [_BP + _S*2]
+%ifdef RT_ARCH_AMD64
+    movsd   [rsp + 10h], xmm1
+    movsd   [rsp], xmm0
+    fld     qword [rsp + 10h]
+    fld     qword [rsp]
+%else
+    fld     qword [ebp + 10h]
+    fld     qword [ebp + 8h]
+%endif
 
-    ; Make it truncate up by modifying the fpu control word.
-    fstcw   [_BP - 10h]
-    mov     eax, [_BP - 10h]
-    or      eax, 00c00h
-    mov     [_BP - 08h], eax
-    fldcw   [_BP - 08h]
+    fprem1
+    fstsw   ax
+    test    ah, 04h
+    jnz     .done
+    fstp    st1
 
-    ; Round ST(0) to integer.
-    frndint
-
-    ; Restore the fpu control word.
-    fldcw   [_BP - 10h]
+.done:
+%ifdef RT_ARCH_AMD64
+    fstp    qword [rsp]
+    movsd   xmm0, [rsp]
+%endif
 
     leave
     ret
-ENDPROC   RT_NOCRT(truncl)
+ENDPROC   RT_NOCRT(remainder)
 

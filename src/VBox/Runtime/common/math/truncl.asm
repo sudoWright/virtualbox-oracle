@@ -1,6 +1,6 @@
-; $Id: floorf.asm 23517 2007-08-07 17:07:59Z noreply@oracle.com $
+; $Id: truncl.asm 25538 2007-10-21 21:12:03Z knut.osmundsen@oracle.com $
 ;; @file
-; innotek Portable Runtime - No-CRT floorf - AMD64 & X86.
+; innotek Portable Runtime - No-CRT truncl - AMD64 & X86.
 ;
 
 ;
@@ -13,6 +13,7 @@
 ;  in version 2 as it comes in the "COPYING" file of the VirtualBox OSE
 ;  distribution. VirtualBox OSE is distributed in the hope that it will
 ;  be useful, but WITHOUT ANY WARRANTY of any kind.
+
 
 %include "iprt/asmdefs.mac"
 
@@ -29,26 +30,20 @@ BEGINCODE
 %endif
 
 ;;
-; Compute the largest integral value not greater than rf.
+; Round to truncated integer value.
 ; @returns st(0)
-; @param    rf      32-bit: [ebp + 8]   64-bit: xmm0
-BEGINPROC RT_NOCRT(floorf)
+; @param    rd      [rbp + 8]
+BEGINPROC RT_NOCRT(truncl)
     push    _BP
     mov     _BP, _SP
     sub     _SP, 10h
 
-%ifdef RT_ARCH_AMD64
-    movss   [_SP], xmm0
-    fld     dword [_SP]
-%else
-    fld     dword [_BP + _S*2]
-%endif
+    fld     tword [_BP + _S*2]
 
-    ; Make it round down by modifying the fpu control word.
+    ; Make it truncate up by modifying the fpu control word.
     fstcw   [_BP - 10h]
     mov     eax, [_BP - 10h]
-    or      eax, 00400h
-    and     eax, 0f7ffh
+    or      eax, 00c00h
     mov     [_BP - 08h], eax
     fldcw   [_BP - 08h]
 
@@ -58,11 +53,7 @@ BEGINPROC RT_NOCRT(floorf)
     ; Restore the fpu control word.
     fldcw   [_BP - 10h]
 
-%ifdef RT_ARCH_AMD64
-    fstp    dword [_SP]
-    movss   xmm0, [_SP]
-%endif
     leave
     ret
-ENDPROC   RT_NOCRT(floorf)
+ENDPROC   RT_NOCRT(truncl)
 

@@ -1,4 +1,4 @@
-; $Id: remainderf.asm 23517 2007-08-07 17:07:59Z noreply@oracle.com $
+; $Id: remainderf.asm 25538 2007-10-21 21:12:03Z knut.osmundsen@oracle.com $
 ;; @file
 ; innotek Portable Runtime - No-CRT remainderf - AMD64 & X86.
 ;
