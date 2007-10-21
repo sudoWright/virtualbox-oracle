@@ -1,6 +1,6 @@
-/* $Id: strlen.cpp 23517 2007-08-07 17:07:59Z noreply@oracle.com $ */
+/* $Id: strcmp_alias.c 25523 2007-10-21 20:35:42Z knut.osmundsen@oracle.com $ */
 /** @file
- * innotek Portable Runtime - CRT Strings, strlen().
+ * innotek Portable Runtime - No-CRT strcmp() alias for gcc.
  */
 
 /*
@@ -19,28 +19,26 @@
 /*******************************************************************************
 *   Header Files                                                               *
 *******************************************************************************/
-#include <iprt/string.h>
+#include <iprt/nocrt/string.h>
+#undef strcmp
 
-
-/**
- * Find the length of a zeroterminated byte string.
- *
- * @returns String length in bytes.
- * @param   pszString   Zero terminated string.
- */
-#ifdef _MSC_VER
-# if _MSC_VER >= 1400
-__checkReturn size_t  __cdecl strlen(__in_z  const char *pszString)
-# else
-size_t strlen(const char *pszString)
+#if defined(RT_OS_DARWIN) || defined(RT_OS_WINDOWS)
+# ifndef __MINGW32__
+#  pragma weak strcmp
 # endif
-#else
-size_t strlen(const char *pszString)
-#endif
+
+/* No alias support here (yet in the ming case). */
+extern int (strcmp)(const char *psz1, const char *psz2)
 {
-    register const char *psz = pszString;
-    while (*psz)
-        psz++;
-    return psz - pszString;
+    return RT_NOCRT(strcmp)(psz1, psz2);
 }
+
+#elif __GNUC__ >= 4
+/* create a weak alias. */
+__asm__(".weak strcmp\t\n"
+        " .set strcmp," RT_NOCRT_STR(strcmp) "\t\n");
+#else
+/* create a weak alias. */
+extern __typeof(RT_NOCRT(strcmp)) strcmp __attribute__((weak, alias(RT_NOCRT_STR(strcmp))));
+#endif
 

@@ -1,6 +1,6 @@
-/* $Id: memcmp_alias.c 23517 2007-08-07 17:07:59Z noreply@oracle.com $ */
+/* $Id: strlen.cpp 25523 2007-10-21 20:35:42Z knut.osmundsen@oracle.com $ */
 /** @file
- * innotek Portable Runtime - No-CRT memcmp() alias for gcc.
+ * innotek Portable Runtime - CRT Strings, strlen().
  */
 
 /*
@@ -19,26 +19,28 @@
 /*******************************************************************************
 *   Header Files                                                               *
 *******************************************************************************/
-#include <iprt/nocrt/string.h>
-#undef memcmp
+#include <iprt/string.h>
 
-#if defined(RT_OS_DARWIN) || defined(RT_OS_WINDOWS)
-# ifndef __MINGW32__
-#  pragma weak memcmp
+
+/**
+ * Find the length of a zeroterminated byte string.
+ *
+ * @returns String length in bytes.
+ * @param   pszString   Zero terminated string.
+ */
+#ifdef _MSC_VER
+# if _MSC_VER >= 1400
+__checkReturn size_t  __cdecl strlen(__in_z  const char *pszString)
+# else
+size_t strlen(const char *pszString)
 # endif
-
-/* No alias support here (yet in the ming case). */
-extern int (memcmp)(const void *pv1, const void *pv2, size_t cb)
-{
-    return RT_NOCRT(memcmp)(pv1, pv2, cb);
-}
-
-#elif __GNUC__ >= 4
-/* create a weak alias. */
-__asm__(".weak memcmp\t\n"
-        " .set memcmp," RT_NOCRT_STR(memcmp) "\t\n");
 #else
-/* create a weak alias. */
-extern __typeof(RT_NOCRT(memcmp)) memcmp __attribute__((weak, alias(RT_NOCRT_STR(memcmp))));
+size_t strlen(const char *pszString)
 #endif
+{
+    register const char *psz = pszString;
+    while (*psz)
+        psz++;
+    return psz - pszString;
+}
 

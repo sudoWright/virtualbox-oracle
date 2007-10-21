@@ -1,6 +1,6 @@
-/* $Id: strcmp_alias.c 23517 2007-08-07 17:07:59Z noreply@oracle.com $ */
+/* $Id: memset_alias.c 25523 2007-10-21 20:35:42Z knut.osmundsen@oracle.com $ */
 /** @file
- * innotek Portable Runtime - No-CRT strcmp() alias for gcc.
+ * innotek Portable Runtime - No-CRT memset() alias for gcc.
  */
 
 /*
@@ -20,25 +20,25 @@
 *   Header Files                                                               *
 *******************************************************************************/
 #include <iprt/nocrt/string.h>
-#undef strcmp
+#undef memset
 
 #if defined(RT_OS_DARWIN) || defined(RT_OS_WINDOWS)
 # ifndef __MINGW32__
-#  pragma weak strcmp
+#  pragma weak memset
 # endif
 
 /* No alias support here (yet in the ming case). */
-extern int (strcmp)(const char *psz1, const char *psz2)
+extern void *(memset)(void *pvDst, int ch, size_t cb)
 {
-    return RT_NOCRT(strcmp)(psz1, psz2);
+    return RT_NOCRT(memset)(pvDst, ch, cb);
 }
 
 #elif __GNUC__ >= 4
 /* create a weak alias. */
-__asm__(".weak strcmp\t\n"
-        " .set strcmp," RT_NOCRT_STR(strcmp) "\t\n");
+__asm__(".weak memset\t\n"
+        " .set memset," RT_NOCRT_STR(memset) "\t\n");
 #else
 /* create a weak alias. */
-extern __typeof(RT_NOCRT(strcmp)) strcmp __attribute__((weak, alias(RT_NOCRT_STR(strcmp))));
+extern __typeof(RT_NOCRT(memset)) memset __attribute__((weak, alias(RT_NOCRT_STR(memset))));
 #endif
 

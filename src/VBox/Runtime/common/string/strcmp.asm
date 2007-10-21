@@ -1,4 +1,4 @@
-; $Id: strcmp.asm 23517 2007-08-07 17:07:59Z noreply@oracle.com $
+; $Id: strcmp.asm 25523 2007-10-21 20:35:42Z knut.osmundsen@oracle.com $
 ;; @file
 ; innotek Portable Runtime - No-CRT strcmp - AMD64 & X86.
 ;
