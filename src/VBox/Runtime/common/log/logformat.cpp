@@ -1,4 +1,4 @@
-/* $Id: logformat.cpp 23517 2007-08-07 17:07:59Z noreply@oracle.com $ */
+/* $Id: logformat.cpp 25529 2007-10-21 20:50:07Z knut.osmundsen@oracle.com $ */
 /** @file
  * innotek Portable Runtime - Log Formatter.
  */
