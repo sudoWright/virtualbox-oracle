@@ -1,4 +1,4 @@
-; $Id: setjmp.asm 23517 2007-08-07 17:07:59Z noreply@oracle.com $
+; $Id: setjmp.asm 25530 2007-10-21 20:51:39Z knut.osmundsen@oracle.com $
 ;; @file
 ; innotek Portable Runtime - No-CRT setjmp & longjmp - AMD64 & X86.
 ;
