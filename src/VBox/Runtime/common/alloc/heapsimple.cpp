@@ -1,4 +1,4 @@
-/* $Id: heapsimple.cpp 23517 2007-08-07 17:07:59Z noreply@oracle.com $ */
+/* $Id: heapsimple.cpp 25524 2007-10-21 20:37:26Z knut.osmundsen@oracle.com $ */
 /** @file
  * innotek Portable Runtime - A Simple Heap.
  */
