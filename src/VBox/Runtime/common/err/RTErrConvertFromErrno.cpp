@@ -1,4 +1,4 @@
-/* $Id: RTErrConvertFromErrno.cpp 25393 2007-10-17 10:10:16Z knut.osmundsen@oracle.com $ */
+/* $Id: RTErrConvertFromErrno.cpp 25533 2007-10-21 20:58:59Z knut.osmundsen@oracle.com $ */
 /** @file
  * innotek Portable Runtime - Convert errno to iprt status codes.
  */

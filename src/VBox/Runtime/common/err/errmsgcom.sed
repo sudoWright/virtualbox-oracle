@@ -1,9 +1,8 @@
-# $Id: errmsgxpcom.sed 24465 2007-09-13 14:28:34Z noreply@oracle.com $
+# $Id: errmsgcom.sed 25533 2007-10-21 20:58:59Z knut.osmundsen@oracle.com $
 ## @file
-# innotek Portable Runtime - SED script for converting XPCOM errors
+# innotek Portable Runtime - SED script for converting COM errors
 #
 
-#
 #  Copyright (C) 2006-2007 innotek GmbH
 # 
 #  This file is part of VirtualBox Open Source Edition (OSE), as
@@ -14,35 +13,39 @@
 #  distribution. VirtualBox OSE is distributed in the hope that it will
 #  be useful, but WITHOUT ANY WARRANTY of any kind.
 
-# no comments
-/\*/b skip
-# we want NS_ERROR_* defines, but not all!
-/\#define NS_ERROR_SEVERITY_/b skip
-/\#define NS_ERROR_BASE/b skip
-/\#define NS_ERROR_MODULE_/b skip
-/\#define NS_ERROR_GET_/b skip
-/\#define NS_ERROR_GENERATE/b skip
-/\#define NS_ERROR_/b nserror
+# we only care about message definitions
+\/\/ MessageId: /b messageid
 d
 b end
 
-:skip
+
 # Everything else is deleted!
 d
 b end
 
 
 #
-# A good error definition
+# A message ID we care about
 #
-:nserror
+:messageid
+# concatenate the next four lines to the string
+N
+N
+N
+N
 {
     # remove DOS <CR>.
     s/\r//g
-    # remove '#define'
-    s/\#define //
+    # remove the message ID
+    s/\/\/ MessageId: //g
+    # remove the stuff in between
+    s/\/\/\n\/\/ MessageText:\n\/\/\n\/\/  //g
+    # backslashes have to be escaped
+    s/\\/\\\\/g
+    # double quotes have to be escaped, too
+    s/"/\\"/g
     # output C array entry
-    s/\([a-zA-Z0-9_]*\)[\t ]*\(.*\)[\t ]*$/{ "\1", \1 }, /
+    s/\([a-zA-Z0-9_]*\)[\t ]*\n\(.*\)[\t ]*$/{ "\2", "\1", \1 }, /
 }
 b end
 

@@ -1,4 +1,4 @@
-/* $Rev: 24889 $ */
+/* $Rev: 25533 $ */
 /** @file
  * innotek Portable Runtime - Convert iprt status codes to errno.
  */
