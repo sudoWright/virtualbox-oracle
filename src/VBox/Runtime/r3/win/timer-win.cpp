@@ -1,4 +1,4 @@
-/* $Id: timer-win32.cpp 25541 2007-10-21 21:23:00Z knut.osmundsen@oracle.com $ */
+/* $Id: timer-win.cpp 25542 2007-10-21 21:27:47Z knut.osmundsen@oracle.com $ */
 /** @file
  * innotek Portable Runtime - Timer.
  */
