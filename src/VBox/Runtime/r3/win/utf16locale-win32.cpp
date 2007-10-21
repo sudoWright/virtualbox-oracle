@@ -1,6 +1,6 @@
-/* $Id: system-win32.cpp 23517 2007-08-07 17:07:59Z noreply@oracle.com $ */
+/* $Id: utf16locale-win32.cpp 25541 2007-10-21 21:23:00Z knut.osmundsen@oracle.com $ */
 /** @file
- * innotek Portable Runtime - System, Win32.
+ * innotek Portable Runtime - UTF-16 Locale Specific Manipulation, Win32.
  */
 
 /*
@@ -19,31 +19,21 @@
 /*******************************************************************************
 *   Header Files                                                               *
 *******************************************************************************/
-#define LOG_GROUP RTLOGGROUP_SYSTEM
+#define LOG_GROUP RTLOGGROUP_UTF16
 #include <Windows.h>
-#include <iprt/system.h>
-#include <iprt/assert.h>
+
+#include <iprt/string.h>
 
 
-
-RTDECL(unsigned) RTSystemProcessorGetCount(void)
+RTDECL(int) RTUtf16LocaleICmp(PCRTUTF16 pusz1, PCRTUTF16 pusz2)
 {
-    SYSTEM_INFO SysInfo;
+    if (pusz1 == pusz2)
+        return 0;
+    if (pusz1 == NULL)
+        return -1;
+    if (pusz2 == NULL)
+        return 1;
 
-    GetSystemInfo(&SysInfo);
-
-    unsigned cCpus = (unsigned)SysInfo.dwNumberOfProcessors;
-    Assert((DWORD)cCpus == SysInfo.dwNumberOfProcessors);
-    return cCpus;
-}
-
-
-RTDECL(uint64_t) RTSystemProcessorGetActiveMask(void)
-{
-    SYSTEM_INFO SysInfo;
-
-    GetSystemInfo(&SysInfo);
-
-    return SysInfo.dwActiveProcessorMask;
+    return CompareStringW(LOCALE_USER_DEFAULT, NORM_IGNORECASE, pusz1, -1, pusz2, -1) - 2;
 }
 

@@ -1,4 +1,4 @@
-/* $Id: thread-win32.cpp 23517 2007-08-07 17:07:59Z noreply@oracle.com $ */
+/* $Id: thread-win32.cpp 25541 2007-10-21 21:23:00Z knut.osmundsen@oracle.com $ */
 /** @file
  * innotek Portable Runtime - Threads, Win32.
  */

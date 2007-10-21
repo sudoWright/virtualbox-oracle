@@ -1,4 +1,4 @@
-/* $Id: sched-win32.cpp 23517 2007-08-07 17:07:59Z noreply@oracle.com $ */
+/* $Id: sched-win32.cpp 25541 2007-10-21 21:23:00Z knut.osmundsen@oracle.com $ */
 /** @file
  * innotek Portable Runtime - Scheduling, Win32.
  */
