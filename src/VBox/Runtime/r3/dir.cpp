@@ -1,4 +1,4 @@
-/* $Id: dir.cpp 23517 2007-08-07 17:07:59Z noreply@oracle.com $ */
+/* $Id: dir.cpp 25519 2007-10-21 20:31:05Z knut.osmundsen@oracle.com $ */
 /** @file
  * innotek Portable Runtime - Directory Manipulation.
  */
