@@ -1,4 +1,4 @@
-/* $Id: uniread.cpp 24387 2007-09-11 19:44:45Z noreply@oracle.com $ */
+/* $Id: uniread.cpp 25527 2007-10-21 20:47:00Z knut.osmundsen@oracle.com $ */
 /** @file
  * innotek Portable Runtime - Unicode Specification Reader.
  */

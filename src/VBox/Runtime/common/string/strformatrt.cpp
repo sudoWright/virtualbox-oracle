@@ -1,4 +1,4 @@
-/* $Id: strformatrt.cpp 24646 2007-09-20 07:23:11Z noreply@oracle.com $ */
+/* $Id: strformatrt.cpp 25527 2007-10-21 20:47:00Z knut.osmundsen@oracle.com $ */
 /** @file
  * innotek Portable Runtime - IPRT String Formatter Extensions.
  */
