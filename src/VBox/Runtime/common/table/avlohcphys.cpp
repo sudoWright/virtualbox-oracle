@@ -1,10 +1,10 @@
-/* $Id: avlogcphys.cpp 23517 2007-08-07 17:07:59Z noreply@oracle.com $ */
+/* $Id: avlohcphys.cpp 25536 2007-10-21 21:05:10Z knut.osmundsen@oracle.com $ */
 /** @file
- * innotek Portable Runtime - AVL tree, RTGCPHYS, unique keys, offset pointers.
+ * innotek Portable Runtime - AVL tree, RTHCPHYS, unique keys, offset pointers.
  */
 
 /*
- * Copyright (C) 2006 knut st. osmundsen (bird-src-spam@anduin.net)
+ * Copyright (C) 2006-2007 knut st. osmundsen (bird-src-spam@anduin.net)
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;
@@ -25,17 +25,17 @@ static const char szFileId[] = "Id: kAVLULInt.c,v 1.4 2003/02/13 02:02:38 bird E
 /*
  * AVL configuration.
  */
-#define KAVL_FN(a)                  RTAvloGCPhys##a
+#define KAVL_FN(a)                  RTAvloHCPhys##a
 #define KAVL_MAX_STACK              27  /* Up to 2^24 nodes. */
 #define KAVL_CHECK_FOR_EQUAL_INSERT 1   /* No duplicate keys! */
-#define KAVLNODECORE                AVLOGCPHYSNODECORE
-#define PKAVLNODECORE               PAVLOGCPHYSNODECORE
-#define PPKAVLNODECORE              PPAVLOGCPHYSNODECORE
-#define KAVLKEY                     RTGCPHYS
-#define PKAVLKEY                    PRTGCPHYS
-#define KAVLENUMDATA                AVLOGCPHYSENUMDATA
-#define PKAVLENUMDATA               PAVLOGCPHYSENUMDATA
-#define PKAVLCALLBACK               PAVLOGCPHYSCALLBACK
+#define KAVLNODECORE                AVLOHCPHYSNODECORE
+#define PKAVLNODECORE               PAVLOHCPHYSNODECORE
+#define PPKAVLNODECORE              PPAVLOHCPHYSNODECORE
+#define KAVLKEY                     RTHCPHYS
+#define PKAVLKEY                    PRTHCPHYS
+#define KAVLENUMDATA                AVLOHCPHYSENUMDATA
+#define PKAVLENUMDATA               PAVLOHCPHYSENUMDATA
+#define PKAVLCALLBACK               PAVLOHCPHYSCALLBACK
 #define KAVL_OFFSET                 1
 
 

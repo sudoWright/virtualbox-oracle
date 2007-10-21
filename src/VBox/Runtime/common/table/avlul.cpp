@@ -1,6 +1,6 @@
-/* $Id: avlgcptr.cpp 23517 2007-08-07 17:07:59Z noreply@oracle.com $ */
+/* $Id: avlul.cpp 25536 2007-10-21 21:05:10Z knut.osmundsen@oracle.com $ */
 /** @file
- * innotek Portable Runtime - AVL tree, RTGCPTR, unique keys.
+ * innotek Portable Runtime - AVL tree, unsigned long, unique keys.
  */
 
 /*
@@ -16,7 +16,7 @@
  */
 
 #ifndef NOFILEID
-static const char szFileId[] = "Id: kAVLPVInt.c,v 1.5 2003/02/13 02:02:35 bird Exp $";
+static const char szFileId[] = "Id: kAVLULInt.c,v 1.4 2003/02/13 02:02:38 bird Exp $";
 #endif
 
 /*******************************************************************************
@@ -25,25 +25,25 @@ static const char szFileId[] = "Id: kAVLPVInt.c,v 1.5 2003/02/13 02:02:35 bird E
 /*
  * AVL configuration.
  */
-#define KAVL_FN(a)                  RTAvlGCPtr##a
+#define KAVL_FN(a)                  RTAvlUL##a
 #define KAVL_MAX_STACK              27  /* Up to 2^24 nodes. */
 #define KAVL_CHECK_FOR_EQUAL_INSERT 1   /* No duplicate keys! */
-#define KAVLNODECORE                AVLGCPTRNODECORE
-#define PKAVLNODECORE               PAVLGCPTRNODECORE
-#define PPKAVLNODECORE              PPAVLGCPTRNODECORE
-#define KAVLKEY                     RTGCPTR
-#define PKAVLKEY                    PRTGCPTR
-#define KAVLENUMDATA                AVLGCPTRENUMDATA
-#define PKAVLENUMDATA               PAVLGCPTRENUMDATA
-#define PKAVLCALLBACK               PAVLGCPTRCALLBACK
+#define KAVLNODECORE                AVLULNODECORE
+#define PKAVLNODECORE               PAVLULNODECORE
+#define PPKAVLNODECORE              PPAVLULNODECORE
+#define KAVLKEY                     AVLULKEY
+#define PKAVLKEY                    PAVLULKEY
+#define KAVLENUMDATA                AVLULENUMDATA
+#define PKAVLENUMDATA               PAVLULENUMDATA
+#define PKAVLCALLBACK               PAVLULCALLBACK
 
 
 /*
  * AVL Compare macros
  */
-#define KAVL_G(key1, key2)          ( (RTGCUINTPTR)(key1) >  (RTGCUINTPTR)(key2) )
-#define KAVL_E(key1, key2)          ( (RTGCUINTPTR)(key1) == (RTGCUINTPTR)(key2) )
-#define KAVL_NE(key1, key2)         ( (RTGCUINTPTR)(key1) != (RTGCUINTPTR)(key2) )
+#define KAVL_G(key1, key2)          (key1 >  key2)
+#define KAVL_E(key1, key2)          (key1 == key2)
+#define KAVL_NE(key1, key2)         (key1 != key2)
 
 
 /*******************************************************************************
@@ -51,7 +51,6 @@ static const char szFileId[] = "Id: kAVLPVInt.c,v 1.5 2003/02/13 02:02:35 bird E
 *******************************************************************************/
 #include <iprt/avl.h>
 #include <iprt/assert.h>
-
 
 /*
  * Include the code.

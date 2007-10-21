@@ -1,4 +1,4 @@
-/* $Id: avlu32.cpp 23517 2007-08-07 17:07:59Z noreply@oracle.com $ */
+/* $Id: avllu32.cpp 25536 2007-10-21 21:05:10Z knut.osmundsen@oracle.com $ */
 /** @file
  * innotek Portable Runtime - AVL tree, uint32_t, unique keys.
  */
@@ -25,17 +25,17 @@ static const char szFileId[] = "Id: kAVLULInt.c,v 1.4 2003/02/13 02:02:38 bird E
 /*
  * AVL configuration.
  */
-#define KAVL_FN(a)                  RTAvlU32##a
+#define KAVL_FN(a)                  RTAvllU32##a
 #define KAVL_MAX_STACK              27  /* Up to 2^24 nodes. */
-#define KAVL_CHECK_FOR_EQUAL_INSERT 1   /* No duplicate keys! */
-#define KAVLNODECORE                AVLU32NODECORE
-#define PKAVLNODECORE               PAVLU32NODECORE
-#define PPKAVLNODECORE              PPAVLU32NODECORE
-#define KAVLKEY                     AVLU32KEY
-#define PKAVLKEY                    PAVLU32KEY
-#define KAVLENUMDATA                AVLU32ENUMDATA
-#define PKAVLENUMDATA               PAVLU32ENUMDATA
-#define PKAVLCALLBACK               PAVLU32CALLBACK
+#define KAVL_EQUAL_ALLOWED          1   /* List duplicate keys! */
+#define KAVLNODECORE                AVLLU32NODECORE
+#define PKAVLNODECORE               PAVLLU32NODECORE
+#define PPKAVLNODECORE              PPAVLLU32NODECORE
+#define KAVLKEY                     AVLLU32KEY
+#define PKAVLKEY                    PAVLLU32KEY
+#define KAVLENUMDATA                AVLLU32ENUMDATA
+#define PKAVLENUMDATA               PAVLLU32ENUMDATA
+#define PKAVLCALLBACK               PAVLLU32CALLBACK
 
 
 /*
