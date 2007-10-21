@@ -1,4 +1,4 @@
-/* $Id: errmsgwin.cpp 23517 2007-08-07 17:07:59Z noreply@oracle.com $ */
+/* $Id: errmsgwin.cpp 25537 2007-10-21 21:08:50Z knut.osmundsen@oracle.com $ */
 /** @file
  * innotek Portable Runtime - Status code messages.
  */
