@@ -1,4 +1,4 @@
-/* $Id: tstCritSect.cpp 23517 2007-08-07 17:07:59Z noreply@oracle.com $ */
+/* $Id: tstCritSect.cpp 25746 2007-10-26 18:03:37Z knut.osmundsen@oracle.com $ */
 /** @file
  * innotek Portable Runtime Testcase - Critical Sections.
  */
@@ -23,6 +23,7 @@
 # include <Windows.h>
 #endif
 #include <iprt/critsect.h>
+#include <iprt/lock.h>
 #include <iprt/thread.h>
 #include <iprt/log.h>
 #include <iprt/semaphore.h>
