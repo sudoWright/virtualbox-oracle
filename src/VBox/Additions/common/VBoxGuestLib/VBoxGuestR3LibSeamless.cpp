@@ -1,4 +1,4 @@
-/** $Id: VBoxGuestR3LibSeamless.cpp 26360 2007-11-28 18:44:19Z noreply@oracle.com $ */
+/** $Id: VBoxGuestR3LibSeamless.cpp 26361 2007-11-28 18:46:35Z noreply@oracle.com $ */
 /** @file
  * VBoxGuestR3Lib - Ring-3 Support Library for VirtualBox guest additions, Seamless mode.
  */
@@ -55,6 +55,7 @@ VBGLR3DECL(int) VbglR3SeamlessSetCap(bool bState)
         LogRel(("Failed to enabled seamless mode on the host, rc = %Vrc.\n", rc));
     }
 #endif
+    return rc;
 }
 
 /**
