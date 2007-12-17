@@ -1,4 +1,4 @@
-/* $Id: PATM.cpp 26606 2007-12-07 15:05:06Z noreply@oracle.com $ */
+/* $Id: PATM.cpp 26820 2007-12-17 15:38:53Z noreply@oracle.com $ */
 /** @file
  * PATM - Dynamic Guest OS Patching Manager
  *
@@ -3068,7 +3068,7 @@ failure:
 }
 
 
-#ifdef DEBUG
+#ifdef LOG_ENABLED
 /**
  * Check if the instruction is patched as a common idt handler
  *
