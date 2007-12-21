@@ -1,4 +1,4 @@
-/* $Id: HardDiskImpl.h 26931 2007-12-21 18:57:02Z alexander.eichner@oracle.com $ */
+/* $Id: HardDiskImpl.h 26932 2007-12-21 19:05:37Z alexander.eichner@oracle.com $ */
 
 /** @file
  *
@@ -667,7 +667,7 @@ public:
 
     DECLARE_PROTECT_FINAL_CONSTRUCT()
 
-    BEGIN_COM_MAP(HVMDKImage)
+    BEGIN_COM_MAP(HVHDImage)
         COM_INTERFACE_ENTRY(ISupportErrorInfo)
         COM_INTERFACE_ENTRY(IHardDisk)
         COM_INTERFACE_ENTRY(IVHDImage)
