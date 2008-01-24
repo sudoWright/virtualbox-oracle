@@ -1,4 +1,4 @@
-/* $Id: CFGM.cpp 26606 2007-12-07 15:05:06Z noreply@oracle.com $ */
+/* $Id: CFGM.cpp 27472 2008-01-24 10:55:48Z noreply@oracle.com $ */
 /** @file
  * CFGM - Configuration Manager.
  *
@@ -138,7 +138,7 @@ CFGMR3DECL(int) CFGMR3Init(PVM pVM, PFNCFGMCONSTRUCTOR pfnCFGMConstructor, void 
 
     }
     else
-        AssertMsgFailed(("Constructor failed with rc=%Vrc pfnCFGMConstructor=%p\n", rc, pfnCFGMConstructor));
+        NoDmik(AssertMsgFailed(("Constructor failed with rc=%Vrc pfnCFGMConstructor=%p\n", rc, pfnCFGMConstructor)));
 
     return rc;
 }
