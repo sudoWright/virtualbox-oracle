@@ -1,4 +1,4 @@
-/* $Id: GVMMR0.cpp 27147 2008-01-09 00:47:53Z knut.osmundsen@oracle.com $ */
+/* $Id: GVMMR0.cpp 27554 2008-01-28 14:43:15Z knut.osmundsen@oracle.com $ */
 /** @file
  * GVMM - Global VM Manager.
  */
@@ -1105,6 +1105,9 @@ static int gvmmR0ByVM(PVM pVM, PGVM *ppGVM, PGVMM *ppGVMM, bool fTakeUsedLock)
  *
  * @returns The GVM pointer on success, NULL on failure.
  * @param   pVM     The shared VM structure (the ring-0 mapping).
+ *
+ * @remark  This will not take the 'used'-lock because it doesn't do
+ *          nesting and this function will be used from under the lock.
  */
 GVMMR0DECL(PGVM) GVMMR0ByVM(PVM pVM)
 {
