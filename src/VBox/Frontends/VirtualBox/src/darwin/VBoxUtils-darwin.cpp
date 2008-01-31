@@ -1,4 +1,4 @@
-/* $Id: $ */
+/* $Id: VBoxUtils-darwin.cpp 27753 2008-01-31 19:57:07Z knut.osmundsen@oracle.com $ */
 /** @file
  * Qt GUI - Utility Classes and Functions specific to Darwin.
  */
