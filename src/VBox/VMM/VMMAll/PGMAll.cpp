@@ -1,4 +1,4 @@
-/* $Id: PGMAll.cpp 28053 2008-02-11 16:51:52Z knut.osmundsen@oracle.com $ */
+/* $Id: PGMAll.cpp 28054 2008-02-11 17:07:12Z knut.osmundsen@oracle.com $ */
 /** @file
  * PGM - Page Manager and Monitor - All context code.
  */
@@ -1576,7 +1576,7 @@ PGMDECL(unsigned) PGMAssertHandlerAndFlagsInSync(PVM pVM)
                                 break;
                             unsigned uState2 = pgmHandlerPhysicalCalcState(pPhys2);
                             uState = RT_MAX(uState, uState2);
-                            pPhys2 = pPhys2;
+                            pPhys = pPhys2;
                         }
 
                         /* compare.*/
