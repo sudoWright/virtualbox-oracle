@@ -1,4 +1,4 @@
-/** $Id: VBoxHDD.cpp 27155 2008-01-09 10:57:05Z klaus.espenlaub@oracle.com $ */
+/** $Id: VBoxHDD.cpp 28433 2008-02-26 17:17:10Z klaus.espenlaub@oracle.com $ */
 /** @file
  *
  * VBox storage devices:
@@ -161,7 +161,7 @@ static DECLCALLBACK(int) vdiFlush(PPDMIMEDIA pInterface)
 {
     LogFlow(("vdiFlush:\n"));
     PVDIDISK pData = PDMIMEDIA_2_VDIDISK(pInterface);
-    vdiFlushImage(pData->pLast);
+    VDIFlushImage(pData->pLast);
     int rc = VINF_SUCCESS;
     LogFlow(("vdiFlush: returns %Vrc\n", rc));
     return rc;
