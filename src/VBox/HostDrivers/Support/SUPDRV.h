@@ -1,4 +1,4 @@
-/* $Revision: 27383 $ */
+/* $Revision: 28517 $ */
 /** @file
  * VirtualBox Support Driver - Internal header.
  */
@@ -756,6 +756,7 @@ void  VBOXCALL  supdrvOSGipSuspend(PSUPDRVDEVEXT pDevExt);
 unsigned VBOXCALL supdrvOSGetCPUCount(void);
 bool VBOXCALL   supdrvOSGetForcedAsyncTscMode(void);
 #endif
+int  VBOXCALL   supdrvOSExecuteCallback(PSUPDRVSESSION pSession, PFNSUPDRVEXECCALLBACK pfnCallback, void *pvUser, unsigned uCpu);
 
 
 /*******************************************************************************
