@@ -1,4 +1,4 @@
-/* $Revision: 28610 $ */
+/* $Revision: 28788 $ */
 /** @file
  * VirtualBox Support Driver - Internal header.
  */
@@ -699,7 +699,7 @@ typedef struct SUPDRVDEVEXT
     /** The GIP DPC object associated with GipTimer. */
     KDPC                    GipDpc;
     /** The GIP DPC objects for updating per-cpu data. */
-    KDPC                    aGipCpuDpcs[64];
+    KDPC                    aGipCpuDpcs[MAXIMUM_PROCESSORS];
     /** Pointer to the MDL for the pGip page. */
     PMDL                    pGipMdl;
     /** GIP timer interval (ms). */
