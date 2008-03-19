@@ -1,4 +1,4 @@
-/* $Id: VMMR0.cpp 28911 2008-03-17 10:50:10Z noreply@oracle.com $ */
+/* $Id: VMMR0.cpp 28954 2008-03-19 10:22:50Z noreply@oracle.com $ */
 /** @file
  * VMM - Host Context Ring 0.
  */
@@ -250,6 +250,8 @@ static int VMMR0Init(PVM pVM, unsigned uVersion)
  */
 static int VMMR0Term(PVM pVM)
 {
+    HWACCMR0TermVM(pVM);
+
     /*
      * Deregister the logger.
      */
