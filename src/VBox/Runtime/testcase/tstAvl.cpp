@@ -1,4 +1,4 @@
-/* $Id: tstAvl.cpp 26606 2007-12-07 15:05:06Z noreply@oracle.com $ */
+/* $Id: tstAvl.cpp 29121 2008-03-28 10:12:44Z noreply@oracle.com $ */
 /** @file
  * innotek Portable Runtime Testcase - Avl trees.
  */
@@ -629,6 +629,9 @@ int avlrogcphys(void)
     RTGCPHYS            j;
     RTGCPHYS            k;
     PAVLROGCPHYSTREE    pTree = (PAVLROGCPHYSTREE)calloc(sizeof(*pTree), 1);
+
+    AssertCompileSize(AVLOGCPHYSNODECORE, 24);
+    AssertCompileSize(AVLROGCPHYSNODECORE, 32);
 
     /*
      * Simple linear insert, get and remove.
