@@ -1,6 +1,6 @@
+/* $Id: VirtualBoxImpl.cpp 29607 2008-04-14 17:56:52Z knut.osmundsen@oracle.com $ */
 /** @file
- *
- * VirtualBox COM class implementation
+ * Implmentation of IVirtualBox in VBoxSVC.
  */
 
 /*
