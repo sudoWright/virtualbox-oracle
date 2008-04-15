@@ -1,4 +1,4 @@
-/* $Id: USBControllerImpl.cpp 29607 2008-04-14 17:56:52Z knut.osmundsen@oracle.com $ */
+/* $Id: USBControllerImpl.cpp 29613 2008-04-15 07:49:01Z knut.osmundsen@oracle.com $ */
 /** @file
  * Implementation of IUSBController.
  */
@@ -653,7 +653,7 @@ HRESULT USBController::saveSettings (settings::Key &aMachineNode)
     controller = aMachineNode.createKey ("USBController");
 #else
     /* don't zap it. */
-    if (!controller.isNull())
+    if (controller.isNull())
         controller = aMachineNode.createKey ("USBController");
 #endif
 
