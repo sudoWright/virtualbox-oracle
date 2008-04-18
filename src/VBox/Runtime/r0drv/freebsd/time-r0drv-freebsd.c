@@ -1,6 +1,6 @@
-/* $Id: time-r0drv-freebsd.c 23399 2007-08-02 00:37:43Z knut.osmundsen@oracle.com $ */
+/* $Id: time-r0drv-freebsd.c 29880 2008-04-18 17:52:25Z noreply@oracle.com $ */
 /** @file
- * innotek Portable Runtime - Time, Ring-0 Driver, FreeBSD.
+ * Incredibly Portable Runtime - Time, Ring-0 Driver, FreeBSD.
  */
 
 /*

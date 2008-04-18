@@ -1,6 +1,6 @@
-/* $Id: ldrFile.cpp 29865 2008-04-18 15:16:47Z noreply@oracle.com $ */
+/* $Id: ldrFile.cpp 29880 2008-04-18 17:52:25Z noreply@oracle.com $ */
 /** @file
- * innotek Portable Runtime - Binary Image Loader, The File Oriented Parts.
+ * Incredibly Portable Runtime - Binary Image Loader, The File Oriented Parts.
  */
 
 /*

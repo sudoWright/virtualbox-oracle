@@ -1,6 +1,6 @@
-/* $Id: the-freebsd-kernel.h 24161 2007-09-05 20:07:47Z knut.osmundsen@oracle.com $ */
+/* $Id: the-freebsd-kernel.h 29880 2008-04-18 17:52:25Z noreply@oracle.com $ */
 /** @file
- * innotek Portable Runtime - Ring-0 Driver, The FreeBSD Kernel Headers.
+ * Incredibly Portable Runtime - Ring-0 Driver, The FreeBSD Kernel Headers.
  */
 
 /*
