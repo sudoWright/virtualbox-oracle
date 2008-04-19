@@ -1,8 +1,7 @@
 #!/usr/bin/perl -w
-# $Revision: 29865 $
+# $Revision: 29890 $
 #
-# innotek VirtualBox
-# Start the Guest Additions X11 Client
+# Sun xVM VirtualBox
 #
 # Restore xorg.conf while removing Guest Additions.
 #
