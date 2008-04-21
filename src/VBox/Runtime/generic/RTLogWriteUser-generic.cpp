@@ -1,6 +1,6 @@
-/* $Id: RTLogWriteUser-generic.cpp 29880 2008-04-18 17:52:25Z noreply@oracle.com $ */
+/* $Id: RTLogWriteUser-generic.cpp 29978 2008-04-21 17:24:28Z noreply@oracle.com $ */
 /** @file
- * Incredibly Portable Runtime - Log User Specific Output, Generic Dummy.
+ * IPRT - Log User Specific Output, Generic Dummy.
  */
 
 /*

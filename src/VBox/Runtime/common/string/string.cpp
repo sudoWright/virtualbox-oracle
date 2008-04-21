@@ -1,6 +1,6 @@
-/* $Id: string.cpp 29880 2008-04-18 17:52:25Z noreply@oracle.com $ */
+/* $Id: string.cpp 29978 2008-04-21 17:24:28Z noreply@oracle.com $ */
 /** @file
- * Incredibly Portable Runtime - String Manipulation.
+ * IPRT - String Manipulation.
  */
 
 /*

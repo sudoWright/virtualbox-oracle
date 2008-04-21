@@ -1,6 +1,6 @@
-/* $Id: thread-win.cpp 29880 2008-04-18 17:52:25Z noreply@oracle.com $ */
+/* $Id: thread-win.cpp 29978 2008-04-21 17:24:28Z noreply@oracle.com $ */
 /** @file
- * Incredibly Portable Runtime - Threads, Win32.
+ * IPRT - Threads, Win32.
  */
 
 /*
