@@ -1,6 +1,6 @@
-; $Id: remainder.asm 29865 2008-04-18 15:16:47Z noreply@oracle.com $
+; $Id: remainder.asm 29999 2008-04-21 20:53:28Z noreply@oracle.com $
 ;; @file
-; innotek Portable Runtime - No-CRT remainder - AMD64 & X86.
+; IPRT - No-CRT remainder - AMD64 & X86.
 ;
 
 ;
