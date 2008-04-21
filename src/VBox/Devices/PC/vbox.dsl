@@ -1,9 +1,9 @@
-// $Id: vbox.dsl 27047 2007-12-30 17:06:27Z alexander.eichner@oracle.com $
+// $Id: vbox.dsl 29924 2008-04-21 07:18:14Z noreply@oracle.com $
 /// @file
 //
 // VirtualBox ACPI
 //
-// Copyright (C) 2006-2007 innotek GmbH
+// Copyright (C) 2006-2007 Sun Microsystems, Inc.
 //
 // This file is part of VirtualBox Open Source Edition (OSE), as
 // available from http://www.virtualbox.org. This file is free software;
