@@ -1,4 +1,4 @@
-/* $Id: ip.cpp 30047 2008-04-22 13:45:59Z knut.osmundsen@oracle.com $ */
+/* $Id: cidr.cpp 30049 2008-04-22 13:57:10Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - IPv4 address parsing.
  */
@@ -31,7 +31,7 @@
 /*******************************************************************************
 *   Header Files                                                               *
 *******************************************************************************/
-#include <iprt/ip.h>
+#include <iprt/cidr.h>
 #include <iprt/ctype.h>
 #include <iprt/string.h>
 #include <iprt/stream.h>
