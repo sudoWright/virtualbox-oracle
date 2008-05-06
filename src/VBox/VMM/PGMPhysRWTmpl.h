@@ -1,4 +1,4 @@
-/* $Id: PGMPhys.h 30553 2008-05-06 13:27:07Z knut.osmundsen@oracle.com $ */
+/* $Id: PGMPhysRWTmpl.h 30565 2008-05-06 17:22:43Z knut.osmundsen@oracle.com $ */
 /** @file
  * PGM - Page Manager and Monitor, Physical Memory Access Template.
  */
