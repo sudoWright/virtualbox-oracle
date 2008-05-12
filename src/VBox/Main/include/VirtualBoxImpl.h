@@ -1,4 +1,4 @@
-/* $Id: VirtualBoxImpl.h 29865 2008-04-18 15:16:47Z noreply@oracle.com $ */
+/* $Id: VirtualBoxImpl.h 30749 2008-05-12 00:59:03Z knut.osmundsen@oracle.com $ */
 
 /** @file
  *
@@ -33,7 +33,7 @@
 #include <map>
 
 #ifdef RT_OS_WINDOWS
-#include "win32/resource.h"
+# include "win/resource.h"
 #endif
 
 class Machine;
