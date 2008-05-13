@@ -1,4 +1,4 @@
-/* $Id: DBGF.cpp 29865 2008-04-18 15:16:47Z noreply@oracle.com $ */
+/* $Id: DBGF.cpp 30797 2008-05-13 23:16:03Z knut.osmundsen@oracle.com $ */
 /** @file
  * VMM DBGF - Debugger Facility.
  */
@@ -202,6 +202,7 @@ DBGFR3DECL(int) DBGFR3Term(PVM pVM)
     /*
      * Terminate the other bits.
      */
+    dbgfR3OSTerm(pVM);
     dbgfR3InfoTerm(pVM);
     return VINF_SUCCESS;
 }
