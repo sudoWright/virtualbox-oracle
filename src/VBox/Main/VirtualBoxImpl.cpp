@@ -1,4 +1,4 @@
-/* $Id: VirtualBoxImpl.cpp 30804 2008-05-14 07:49:29Z noreply@oracle.com $ */
+/* $Id: VirtualBoxImpl.cpp 30937 2008-05-16 14:52:44Z noreply@oracle.com $ */
 /** @file
  * Implmentation of IVirtualBox in VBoxSVC.
  */
@@ -1721,7 +1721,7 @@ GetNextExtraDataKey (INPTR BSTR aKey, BSTR *aNextKey, BSTR *aNextValue)
         CheckComRCReturnRC (rc);
 
         Key globalNode = tree.rootKey().key ("Global");
-        Key extraDataNode = tree.rootKey().findKey ("ExtraData");
+        Key extraDataNode = globalNode.findKey ("ExtraData");
 
         if (!extraDataNode.isNull())
         {
