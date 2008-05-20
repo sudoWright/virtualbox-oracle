@@ -1,4 +1,4 @@
-; $Id: tstAsmLock-2.asm 30998 2008-05-19 20:39:21Z knut.osmundsen@oracle.com $
+; $Id: tstAsmLock-2.asm 31001 2008-05-20 00:52:26Z knut.osmundsen@oracle.com $
 ;; @file
 ; Disassembly testcase - Invalid invariants.
 ;
@@ -22,7 +22,7 @@
 ; additional information or have any questions.
 ;
 
-    BITS 32
+    BITS TEST_BITS
 
     ; ADC
     ; ADD
