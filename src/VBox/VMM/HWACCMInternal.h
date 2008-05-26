@@ -1,4 +1,4 @@
-/* $Id: HWACCMInternal.h 31185 2008-05-23 13:14:15Z noreply@oracle.com $ */
+/* $Id: HWACCMInternal.h 31239 2008-05-26 11:21:13Z noreply@oracle.com $ */
 /** @file
  * HWACCM - Internal header file.
  */
@@ -320,6 +320,7 @@ typedef struct HWACCM
     STAMCOUNTER             StatPendingHostIrq;
 
     STAMCOUNTER             StatFlushPageManual;
+    STAMCOUNTER             StatFlushPhysPageManual;
     STAMCOUNTER             StatFlushTLBManual;
     STAMCOUNTER             StatFlushPageInvlpg;
     STAMCOUNTER             StatFlushTLBWorldSwitch;
