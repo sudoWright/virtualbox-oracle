@@ -1,4 +1,4 @@
-/* $Id: PATMA.h 29865 2008-04-18 15:16:47Z noreply@oracle.com $ */
+/* $Id: PATMA.h 31390 2008-05-29 12:34:27Z noreply@oracle.com $ */
 /** @file
  * PATM macros & definitions (identical to PATMA.mac!!)
  */
@@ -132,8 +132,8 @@ typedef struct
     uint32_t     cAddresses;
     struct
     {
-        RTGCPTR      pInstrGC;
-        RTGCUINTPTR  pRelPatchGC; /* relative to patch base */
+        RTGCPTR32      pInstrGC;
+        RTGCUINTPTR32  pRelPatchGC; /* relative to patch base */
     } Slot[1];
 } PATCHJUMPTABLE, *PPATCHJUMPTABLE;
 
