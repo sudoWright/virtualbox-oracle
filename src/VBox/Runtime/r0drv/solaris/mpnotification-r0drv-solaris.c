@@ -1,4 +1,4 @@
-/* $Id: mpnotification-r0drv-solaris.c 31530 2008-06-02 15:45:32Z knut.osmundsen@oracle.com $ */
+/* $Id: mpnotification-r0drv-solaris.c 31531 2008-06-02 16:01:04Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Multiprocessor Event Notifications, Ring-0 Driver, Solaris.
  */
@@ -32,7 +32,8 @@
 /*******************************************************************************
 *   Header Files                                                               *
 *******************************************************************************/
-#include <sys/cpuvar.h>
+#include "the-solaris-kernel.h"
+
 #include <iprt/mp.h>
 #include "r0drv/mp-r0drv.h"
 
