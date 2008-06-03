@@ -1,4 +1,4 @@
-/* $Id: Global.h 31580 2008-06-03 17:10:09Z noreply@oracle.com $ */
+/* $Id: Global.h 31581 2008-06-03 17:12:36Z noreply@oracle.com $ */
 
 /** @file
  *
@@ -40,7 +40,7 @@ class Global
 public:
 
     /** Represents OS Type <-> string mappings. */
-    const struct OSType
+    struct OSType
     {
         const char    *id;          /* utf-8 */
         const char    *description; /* utf-8 */
