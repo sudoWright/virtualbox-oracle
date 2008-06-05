@@ -1,6 +1,6 @@
-/* $Id: RTMpDoesCpuExist-generic.cpp 29978 2008-04-21 17:24:28Z noreply@oracle.com $ */
+/* $Id: RTMpIsCpuPossible-generic.cpp 31680 2008-06-05 15:22:37Z knut.osmundsen@oracle.com $ */
 /** @file
- * IPRT - Multiprocessor, Generic RTMpDoesCpuExist.
+ * IPRT - Multiprocessor, Generic RTMpIsCpuPossible.
  */
 
 /*
@@ -35,7 +35,7 @@
 #include <iprt/mp.h>
 
 
-RTDECL(bool) RTMpDoesCpuExist(RTCPUID idCpu)
+RTDECL(bool) RTMpIsCpuPossible(RTCPUID idCpu)
 {
     return RTMpCpuId() == idCpu;
 }
