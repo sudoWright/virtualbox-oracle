@@ -1,4 +1,4 @@
-/* $Id: uuid-win.cpp 32094 2008-06-16 22:38:49Z knut.osmundsen@oracle.com $ */
+/* $Id: uuid-win.cpp 32095 2008-06-16 22:43:01Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT UUID (unique identifiers) handling (win32 host).
  */
@@ -130,8 +130,8 @@ RTDECL(int)  RTUuidToStr(PCRTUUID pUuid, char *pszString, size_t cchString)
 
     /* copy it. */
     int rc = VINF_SUCCESS;
-    size_t cch = strlen((char *)pszTmpStr);
-    if (cch < cchString)
+    size_t cchTmpStr = strlen((char *)pszTmpStr);
+    if (cchTmpStr < cchString)
         memcpy(pszString, pszTmpStr, cchTmpStr + 1);
     else
         rc = ERROR_BUFFER_OVERFLOW;
