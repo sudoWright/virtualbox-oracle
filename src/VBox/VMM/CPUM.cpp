@@ -1,4 +1,4 @@
-/* $Id: CPUM.cpp 32194 2008-06-19 11:47:38Z noreply@oracle.com $ */
+/* $Id: CPUM.cpp 32195 2008-06-19 11:48:08Z noreply@oracle.com $ */
 /** @file
  * CPUM - CPU Monitor / Manager.
  */
@@ -61,7 +61,7 @@
 *   Defined Constants And Macros                                               *
 *******************************************************************************/
 /** The saved state version. */
-#define CPUM_SAVED_STATE_VERSION    7
+#define CPUM_SAVED_STATE_VERSION    8
 
 
 /*******************************************************************************
