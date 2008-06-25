@@ -1,4 +1,4 @@
-/* $Id: system-os2.cpp 32323 2008-06-25 11:03:03Z aleksey.ilyushin@oracle.com $ */
+/* $Id: system-os2.cpp 32325 2008-06-25 11:13:33Z aleksey.ilyushin@oracle.com $ */
 /** @file
  * IPRT - System, OS/2.
  */
@@ -39,6 +39,7 @@
 
 #include <iprt/system.h>
 #include <iprt/assert.h>
+#include <iprt/err.h>
 
 
 RTDECL(unsigned) RTSystemProcessorGetCount(void)
