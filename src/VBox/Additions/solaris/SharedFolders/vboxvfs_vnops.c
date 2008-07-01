@@ -1,6 +1,6 @@
-/* $Id: vboxvfs_vnops.c 31317 2008-05-27 16:14:44Z noreply@oracle.com $ */
+/* $Id: vboxvfs_vnops.c 32554 2008-07-01 11:07:51Z ramshankar.venkataraman@oracle.com $ */
 /** @file
- * VirtualBox File System Driver for Solaris Guests.
+ * VirtualBox File System Driver for Solaris Guests, VNode Operations.
  */
 
 /*
