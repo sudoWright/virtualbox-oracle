@@ -1,4 +1,4 @@
-/* $Id: SUPLib-os2.cpp 29865 2008-04-18 15:16:47Z noreply@oracle.com $ */
+/* $Id: SUPLib-os2.cpp 32857 2008-07-04 20:28:51Z knut.osmundsen@oracle.com $ */
 /** @file
  * SUPLib - Support Library, OS/2 backend.
  */
@@ -45,8 +45,8 @@
 #include <iprt/path.h>
 #include <iprt/assert.h>
 #include <iprt/err.h>
-#include "SUPLibInternal.h"
-#include "SUPDRVIOC.h"
+#include "../SUPLibInternal.h"
+#include "../SUPDrvIOC.h"
 
 #include <errno.h>
 #include <unistd.h>

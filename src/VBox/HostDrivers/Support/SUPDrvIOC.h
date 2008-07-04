@@ -1,4 +1,4 @@
-/* $Revision: 31680 $ */
+/* $Revision: 32857 $ */
 /** @file
  * VirtualBox Support Driver - IOCtl definitions.
  */
@@ -28,8 +28,8 @@
  * additional information or have any questions.
  */
 
-#ifndef ___SUPDRVIOC_h___
-#define ___SUPDRVIOC_h___
+#ifndef ___SUPDrvIOC_h___
+#define ___SUPDrvIOC_h___
 
 /*
  * Basic types.
