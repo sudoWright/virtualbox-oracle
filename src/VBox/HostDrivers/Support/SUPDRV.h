@@ -1,4 +1,4 @@
-/* $Revision: 32850 $ */
+/* $Revision: 32851 $ */
 /** @file
  * VirtualBox Support Driver - Internal header.
  */
@@ -198,7 +198,7 @@ __END_DECLS
  */
 #elif defined(RT_OS_FREEBSD)
 
-/* No log API in OS/2 only COM port. */
+/* debug printf */
 # define OSDBGPRINT(a) printf a
 
 
