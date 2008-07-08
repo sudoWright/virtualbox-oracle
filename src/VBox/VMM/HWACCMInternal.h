@@ -1,4 +1,4 @@
-/* $Id: HWACCMInternal.h 32902 2008-07-05 17:52:55Z noreply@oracle.com $ */
+/* $Id: HWACCMInternal.h 32986 2008-07-08 11:12:52Z noreply@oracle.com $ */
 /** @file
  * HWACCM - Internal header file.
  */
@@ -198,6 +198,13 @@ typedef struct HWACCM
         RTHCPHYS                    pRealModeTSSPhys;
         /** Virtual address of the TSS page used for real mode emulation. */
         R0PTRTYPE(PVBOXTSS)         pRealModeTSS;
+
+        /** R0 memory object for the virtual APIC mmio cache. */
+        RTR0MEMOBJ                  pMemObjAPIC;
+        /** Physical address of the virtual APIC mmio cache. */
+        RTHCPHYS                    pAPICPhys;
+        /** Virtual address of the virtual APIC mmio cache. */
+        R0PTRTYPE(uint8_t *)        pAPIC;
 
         /** Ring 0 handlers for VT-x. */
         DECLR0CALLBACKMEMBER(int, pfnStartVM,(RTHCUINT fResume, PCPUMCTX pCtx));
