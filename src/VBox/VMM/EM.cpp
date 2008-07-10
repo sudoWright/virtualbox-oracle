@@ -1,4 +1,4 @@
-/* $Id: EM.cpp 33068 2008-07-09 12:26:37Z noreply@oracle.com $ */
+/* $Id: EM.cpp 33127 2008-07-10 08:08:05Z noreply@oracle.com $ */
 /** @file
  * EM - Execution Monitor/Manager.
  */
@@ -3023,7 +3023,7 @@ static int emR3ForcedActions(PVM pVM, int rc)
             UPDATE_RC();
         }
 
-        /* Replays the handler notification changes. */
+        /* Replay the handler notification changes. */
         if (VM_FF_ISSET(pVM, VM_FF_REM_HANDLER_NOTIFY))
             REMR3ReplayHandlerNotifications(pVM);
 
