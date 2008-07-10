@@ -1,4 +1,4 @@
-/** $Id: RawHDDCore.cpp 29865 2008-04-18 15:16:47Z noreply@oracle.com $ */
+/** $Id: RawHDDCore.cpp 33140 2008-07-10 12:40:53Z klaus.espenlaub@oracle.com $ */
 /** @file
  * Raw Disk image, Core Code.
  */
@@ -994,7 +994,7 @@ VBOXHDDBACKEND g_RawBackend =
     /* cbSize */
     sizeof(VBOXHDDBACKEND),
     /* uBackendCaps */
-    VD_CAP_CREATE_FIXED,
+    VD_CAP_CREATE_FIXED | VD_CAP_FILE,
     /* pfnCheckIfValid */
     rawCheckIfValid,
     /* pfnOpen */
