@@ -1,4 +1,4 @@
-/* $Id: CPUMInternal.h 33262 2008-07-12 15:59:27Z noreply@oracle.com $ */
+/* $Id: CPUMInternal.h 33339 2008-07-15 09:06:33Z noreply@oracle.com $ */
 /** @file
  * CPUM - Internal header file.
  */
@@ -357,8 +357,10 @@ typedef struct CPUM
 
 __BEGIN_DECLS
 
-DECLASM(int) CPUMHandleLazyFPUAsm(PCPUM pCPUM);
-DECLASM(int) CPUMRestoreHostFPUStateAsm(PCPUM pCPUM);
+DECLASM(int)  CPUMHandleLazyFPUAsm(PCPUM pCPUM);
+DECLASM(int)  CPUMRestoreHostFPUStateAsm(PCPUM pCPUM);
+DECLASM(void) CPUMLoadFPUAsm(PCPUMCTX pCtx);
+DECLASM(void) CPUMSaveFPUAsm(PCPUMCTX pCtx);
 
 __END_DECLS
 
