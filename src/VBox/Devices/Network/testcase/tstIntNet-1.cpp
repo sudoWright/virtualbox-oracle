@@ -1,4 +1,4 @@
-/* $Id: tstIntNet-1.cpp 33375 2008-07-15 14:38:39Z knut.osmundsen@oracle.com $ */
+/* $Id: tstIntNet-1.cpp 33396 2008-07-15 20:00:27Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox - Testcase for internal networking, simple NetFlt trunk creation.
  */
@@ -122,6 +122,7 @@ int main(int argc, char **argv)
         g_cErrors++;
     }
 
+    RTThreadSleep(1000);
     SUPTerm(false /* not forced */);
 
     /*
