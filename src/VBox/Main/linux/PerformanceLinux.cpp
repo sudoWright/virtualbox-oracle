@@ -1,4 +1,4 @@
-/* $Id: PerformanceLinux.cpp 33506 2008-07-18 19:22:21Z aleksey.ilyushin@oracle.com $ */
+/* $Id: PerformanceLinux.cpp 33507 2008-07-18 19:28:59Z aleksey.ilyushin@oracle.com $ */
 
 /** @file
  *
@@ -22,6 +22,9 @@
  */
 
 #include <stdio.h>
+#include <iprt/alloc.h>
+#include <iprt/err.h>
+#include <iprt/string.h>
 #include "Performance.h"
 
 namespace pm {
