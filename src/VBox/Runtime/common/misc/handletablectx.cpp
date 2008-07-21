@@ -1,4 +1,4 @@
-/* $Id: handletablectx.cpp 33561 2008-07-21 17:22:32Z knut.osmundsen@oracle.com $ */
+/* $Id: handletablectx.cpp 33566 2008-07-21 18:43:39Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Handle Tables.
  */
@@ -158,10 +158,11 @@ RTDECL(int)     RTHandleTableAllocWithCtx(RTHANDLETABLE hHandleTable, void *pvOb
                 rtHandleTableLock(pThis, &Tmp);
             }
 
-            /* insert the table we allocated */
-            if (pThis->cCur < pThis->cMax)
+            /* insert the table we allocated. */
+            uint32_t iLevel1New = pThis->cCur / RTHT_LEVEL2_ENTRIES;
+            if (    iLevel1New < pThis->cLevel1
+                &&  pThis->cCur < pThis->cMax)
             {
-                uint32_t iLevel1New = pThis->cCur / RTHT_LEVEL2_ENTRIES;
                 pThis->papvLevel1[iLevel1New] = paTable;
 
                 /* link all entries into a free list. */
