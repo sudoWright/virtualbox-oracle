@@ -1,4 +1,4 @@
-/* $Id: tstRunTestcases.cpp 33737 2008-07-28 11:51:47Z knut.osmundsen@oracle.com $ */
+/* $Id: tstRunTestcases.cpp 33745 2008-07-28 12:59:06Z noreply@oracle.com $ */
 /** @file
  * tstRunTescases - Driver program for running VBox testcase (tst* testcase/tst*).
  */
@@ -72,7 +72,7 @@ static const char  *g_apszExclude[] =
     "./tstAnimate",
     "./tstAPI",
     "./tstHeadless",
-    "./tstHeadless-2",
+    "./tstHeadless2",
     "./tstMicro",
     "./tstMicroGC",
     "./tstVBoxDbg",
