@@ -1,4 +1,4 @@
-/* $Id: tstRunTestcases.cpp 33751 2008-07-28 14:04:02Z noreply@oracle.com $ */
+/* $Id: tstRunTestcases.cpp 33755 2008-07-28 14:38:46Z noreply@oracle.com $ */
 /** @file
  * tstRunTescases - Driver program for running VBox testcase (tst* testcase/tst*).
  */
@@ -49,6 +49,7 @@ static const char  *g_apszExclude[] =
 #if 1 // slow stuff
     "testcase/tstFile",
     "testcase/tstAvl",
+    "testcase/tstSemMutex",
     "testcase/tstVD",
 #endif
     "testcase/tstFileLock",
