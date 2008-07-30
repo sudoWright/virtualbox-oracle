@@ -1,4 +1,4 @@
-/* $Id: rand.h 29978 2008-04-21 17:24:28Z noreply@oracle.com $ */
+/* $Id: rand.h 33899 2008-07-30 22:47:04Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Internal RTRand header
  */
@@ -49,7 +49,7 @@ void rtRandLazyInitNative(void);
  */
 int rtRandGenBytesNative(void *pv, size_t cb);
 
-void rtRandGenBytesFallback(void *pv, size_t cb);
+void rtRandGenBytesFallback(void *pv, size_t cb) RT_NO_THROW;
 
 __END_DECLS
 
