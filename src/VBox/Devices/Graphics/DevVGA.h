@@ -1,6 +1,6 @@
-/* $Id: DevVGA.h 34154 2008-08-06 00:13:32Z knut.osmundsen@oracle.com $ */
+/* $Id: DevVGA.h 34157 2008-08-06 00:24:37Z knut.osmundsen@oracle.com $ */
 /** @file
- * VBox VGA/VESA device
+ * DevVGA - VBox VGA/VESA device, internal header.
  */
 
 /*
