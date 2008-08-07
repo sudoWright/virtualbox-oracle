@@ -1,4 +1,4 @@
-/* $Id: DevRTC.cpp 34260 2008-08-07 16:19:39Z knut.osmundsen@oracle.com $ */
+/* $Id: DevRTC.cpp 34265 2008-08-07 17:12:06Z noreply@oracle.com $ */
 /** @file
  * Motorola MC146818 RTC/CMOS Device.
  */
@@ -53,6 +53,8 @@
 #include <iprt/asm.h>
 #include <iprt/assert.h>
 #include <iprt/string.h>
+
+#include "Builtins.h"
 
 struct RTCState;
 typedef struct RTCState RTCState;
