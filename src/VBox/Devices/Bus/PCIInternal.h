@@ -1,6 +1,6 @@
+/* $Id: PCIInternal.h 34292 2008-08-08 02:25:34Z knut.osmundsen@oracle.com $ */
 /** @file
- *
- * PCI Internal header - Only for hiding bits of PCIDEVICE.
+ * DevPCI - PCI Internal header - Only for hiding bits of PCIDEVICE.
  */
 
 /*
