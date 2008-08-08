@@ -1,6 +1,6 @@
-/* $Id: DevDMA.cpp 34324 2008-08-08 13:53:15Z knut.osmundsen@oracle.com $ */
+/* $Id: DevDMA.cpp 34325 2008-08-08 13:53:26Z knut.osmundsen@oracle.com $ */
 /** @file
- * DMA Controller Device.
+ * DevDMA - DMA Controller Device.
  */
 
 /*
