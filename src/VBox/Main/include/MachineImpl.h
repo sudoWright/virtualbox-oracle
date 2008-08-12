@@ -1,4 +1,4 @@
-/* $Id: MachineImpl.h 33994 2008-08-03 21:14:53Z noreply@oracle.com $ */
+/* $Id: MachineImpl.h 34533 2008-08-12 14:02:08Z aleksey.ilyushin@oracle.com $ */
 
 /** @file
  *
@@ -735,7 +735,7 @@ protected:
     void copyFrom (Machine *aThat);
 
 #ifdef VBOX_WITH_RESOURCE_USAGE_API
-    void registerMetrics (PerformanceCollector *aCollector, RTPROCESS pid);
+    void registerMetrics (PerformanceCollector *aCollector, Machine *aMachine, RTPROCESS pid);
     void unregisterMetrics (PerformanceCollector *aCollector);
 #endif /* VBOX_WITH_RESOURCE_USAGE_API */
 
