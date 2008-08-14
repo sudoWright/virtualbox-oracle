@@ -1,4 +1,4 @@
-/* $Id: EMInternal.h 31619 2008-06-04 13:51:21Z noreply@oracle.com $ */
+/* $Id: EMInternal.h 34757 2008-08-14 13:46:06Z noreply@oracle.com $ */
 /** @file
  * EM - Internal header file.
  */
@@ -140,6 +140,8 @@ typedef struct EMSTATS
     STAMCOUNTER             StatHCXAdd;
     STAMCOUNTER             StatGCClts;
     STAMCOUNTER             StatHCClts;
+    STAMCOUNTER             StatGCStosWD;
+    STAMCOUNTER             StatHCStosWD;
     STAMCOUNTER             StatHCRdmsr;
     STAMCOUNTER             StatHCWrmsr;
     STAMCOUNTER             StatGCRdmsr;
