@@ -1,4 +1,4 @@
-/* $Id: VM.cpp 35488 2008-08-28 07:52:26Z noreply@oracle.com $ */
+/* $Id: VM.cpp 35604 2008-08-29 09:13:37Z knut.osmundsen@oracle.com $ */
 /** @file
  * VM - Virtual Machine
  */
@@ -196,7 +196,7 @@ VMR3DECL(int)   VMR3Create(PFNVMATERROR pfnVMAtError, void *pvUserVM, PFNCFGMCON
         /*
          * Initialize the support library creating the session for this v
          */
-        rc = SUPInit(&pUVM->vm.s.pSession, 0);
+        rc = SUPR3Init(&pUVM->vm.s.pSession);
         if (RT_SUCCESS(rc))
         {
             /*
