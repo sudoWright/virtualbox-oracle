@@ -1,4 +1,4 @@
-/* $Id: HostImpl.cpp 35714 2008-08-30 13:31:30Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: HostImpl.cpp 35715 2008-08-30 13:35:52Z ramshankar.venkataraman@oracle.com $ */
 /** @file
  * VirtualBox COM class implementation: Host
  */
@@ -46,7 +46,6 @@
 
 #ifdef RT_OS_SOLARIS
 # include <fcntl.h>
-# include <syslog.h>
 # include <unistd.h>
 # include <stropts.h>
 # include <errno.h>
