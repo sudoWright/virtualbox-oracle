@@ -1,4 +1,4 @@
-; $Id: HWACCMR0A.asm 36002 2008-09-03 16:01:25Z noreply@oracle.com $
+; $Id: HWACCMR0A.asm 36003 2008-09-03 16:01:45Z noreply@oracle.com $
 ;; @file
 ; VMXM - R0 vmx helpers
 ;
@@ -838,7 +838,7 @@ BEGINPROC VMXGetActivateVMCS
 %endif
     xor     eax, eax
     ret
-ENDPROC
+ENDPROC VMXGetActivateVMCS
 
 
 ;/**
