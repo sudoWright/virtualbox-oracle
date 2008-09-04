@@ -1,4 +1,4 @@
-/* $Rev: 35923 $ */
+/* $Rev: 36057 $ */
 /** @file
  * VBoxDrv - The VirtualBox Support Driver - Linux specifics.
  */
@@ -682,7 +682,7 @@ static int VBoxDrvLinuxCreate(struct inode *pInode, struct file *pFilp)
     PSUPDRVSESSION      pSession;
     Log(("VBoxDrvLinuxCreate: pFilp=%p pid=%d/%d %s\n", pFilp, RTProcSelf(), current->pid, current->comm));
 
-#if 0 /** @todo test this: #ifdef VBOX_WITH_HARDENING */
+#ifdef VBOX_WITH_HARDENING
     /*
      * Only root is allowed to access the device, enforce it!
      */
