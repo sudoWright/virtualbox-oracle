@@ -1,4 +1,4 @@
-/* $Id: VBoxDbgGui.h 31470 2008-05-31 14:53:24Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxDbgGui.h 36146 2008-09-06 18:31:18Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Debugger GUI - The Manager.
  */
@@ -41,7 +41,7 @@
  */
 class VBoxDbgGui : public QObject
 {
-    Q_OBJECT
+    Q_OBJECT;
 
 public:
     /**
