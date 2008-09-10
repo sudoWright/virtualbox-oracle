@@ -1,4 +1,4 @@
-/** $Id: VBoxHDD-new.cpp 36402 2008-09-10 16:00:18Z knut.osmundsen@oracle.com $ */
+/** $Id: VBoxHDD-new.cpp 36407 2008-09-10 16:46:04Z klaus.espenlaub@oracle.com $ */
 /** @file
  * VBox HDD Container implementation.
  */
@@ -613,6 +613,9 @@ static int vdWriteHelper(PVBOXHDD pDisk, PVDIMAGE pImage, uint64_t uOffset,
 
 /**
  * Lists all HDD backends and their capabilities in a caller-provided buffer.
+ *
+ * @todo this code contains memory leaks, inconsistent (and probably buggy)
+ * allocation, and it lacks documentation what the caller needs to free.
  *
  * @returns VBox status code.
  *          VERR_BUFFER_OVERFLOW if not enough space is passed.
