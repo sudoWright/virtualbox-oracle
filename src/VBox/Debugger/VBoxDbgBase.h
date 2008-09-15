@@ -1,4 +1,4 @@
-/* $Id: VBoxDbgBase.h 36154 2008-09-07 02:35:53Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxDbgBase.h 36561 2008-09-15 15:22:01Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Debugger GUI - Base class.
  */
@@ -20,8 +20,8 @@
  */
 
 
-#ifndef __VBoxDbgBase_h__
-#define __VBoxDbgBase_h__
+#ifndef ___Debugger_VBoxDbgBase_h
+#define ___Debugger_VBoxDbgBase_h
 
 
 #include <VBox/stam.h>
@@ -32,7 +32,7 @@
 # include <QString>
 #else
 # include <qstring.h>
-#endif 
+#endif
 
 
 /**
