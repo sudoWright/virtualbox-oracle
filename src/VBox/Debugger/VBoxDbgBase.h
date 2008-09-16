@@ -1,4 +1,4 @@
-/* $Id: VBoxDbgBase.h 36561 2008-09-15 15:22:01Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxDbgBase.h 36578 2008-09-16 03:12:57Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Debugger GUI - Base class.
  */
@@ -58,7 +58,6 @@ public:
     virtual ~VBoxDbgBase();
 
 
-protected:
     /**
      * Checks if the VM is OK for normal operations.
      * @returns true if ok, false if not.
