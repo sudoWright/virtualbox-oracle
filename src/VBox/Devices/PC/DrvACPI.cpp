@@ -1,6 +1,6 @@
-/** $Id: DrvACPI.cpp 34351 2008-08-08 16:24:48Z knut.osmundsen@oracle.com $ */
+/* $Id: DrvACPI.cpp 36926 2008-09-22 13:20:38Z knut.osmundsen@oracle.com $ */
 /** @file
- * ACPI Host Driver.
+ * DrvACPI - ACPI Host Driver.
  */
 
 /*
