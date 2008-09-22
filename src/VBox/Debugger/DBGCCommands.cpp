@@ -1,4 +1,4 @@
-/** $Id: DBGCCommands.cpp 30800 2008-05-14 03:03:54Z knut.osmundsen@oracle.com $ */
+/* $Id: DBGCCommands.cpp 36928 2008-09-22 13:22:07Z knut.osmundsen@oracle.com $ */
 /** @file
  * DBGC - Debugger Console, Native Commands.
  */

@@ -1,4 +1,4 @@
-/** $Id: DBGCInternal.h 36561 2008-09-15 15:22:01Z knut.osmundsen@oracle.com $ */
+/* $Id: DBGCInternal.h 36928 2008-09-22 13:22:07Z knut.osmundsen@oracle.com $ */
 /** @file
  * DBGC - Debugger Console, Internal Header File.
  */

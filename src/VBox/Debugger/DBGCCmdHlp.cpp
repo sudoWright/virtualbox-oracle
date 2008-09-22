@@ -1,4 +1,4 @@
-/** $Id: DBGCCmdHlp.cpp 29865 2008-04-18 15:16:47Z noreply@oracle.com $ */
+/* $Id: DBGCCmdHlp.cpp 36928 2008-09-22 13:22:07Z knut.osmundsen@oracle.com $ */
 /** @file
  * DBGC - Debugger Console, Command Helpers.
  */
