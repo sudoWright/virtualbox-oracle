@@ -1,6 +1,6 @@
-/** $Id: RawHDDCore.cpp 36103 2008-09-05 15:57:39Z noreply@oracle.com $ */
+/* $Id: RawHDDCore.cpp 36920 2008-09-22 13:15:00Z knut.osmundsen@oracle.com $ */
 /** @file
- * Raw Disk image, Core Code.
+ * RawHDDCore - Raw Disk image, Core Code.
  */
 
 /*
