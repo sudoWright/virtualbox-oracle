@@ -1,6 +1,8 @@
-/* $Id: DBGFR0.cpp 34406 2008-08-08 23:31:54Z knut.osmundsen@oracle.com $ */
+/* $Id: DBGFR0.cpp 36956 2008-09-23 10:16:45Z knut.osmundsen@oracle.com $ */
 /** @file
  * DBGF - Debugger Facility, R0 part.
+ *
+ * Almost identical to DBGFGC.cpp, except for the fInHyper stuff.
  */
 
 /*

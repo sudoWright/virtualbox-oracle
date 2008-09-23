@@ -1,4 +1,4 @@
-/* $Id: DBGFAddr.cpp 30826 2008-05-14 19:46:18Z knut.osmundsen@oracle.com $ */
+/* $Id: DBGFAddr.cpp 36956 2008-09-23 10:16:45Z knut.osmundsen@oracle.com $ */
 /** @file
  * VMM DBGF - Debugger Facility, Mixed Address Methods.
  */
@@ -157,3 +157,4 @@ DBGFR3DECL(bool) DBGFR3AddrIsValid(PVM pVM, PCDBGFADDRESS pAddress)
     /* more? */
     return true;
 }
+
