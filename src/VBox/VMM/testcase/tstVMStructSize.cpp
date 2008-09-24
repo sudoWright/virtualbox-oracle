@@ -1,4 +1,4 @@
-/* $Id: tstVMStructSize.cpp 36948 2008-09-22 18:29:06Z knut.osmundsen@oracle.com $ */
+/* $Id: tstVMStructSize.cpp 37009 2008-09-24 16:56:02Z knut.osmundsen@oracle.com $ */
 /** @file
  * tstVMStructSize - testcase for check structure sizes/alignment
  *                   and to verify that HC and GC uses the same
@@ -251,6 +251,12 @@ int main()
     PRINT_OFFSET(VM, StatGCToQemu);
 #endif
 
+
+    /* hwaccm - 32-bit gcc won't align uint64_t naturally, so check. */
+    CHECK_MEMBER_ALIGNMENT(HWACCM, u64RegisterMask, 8);
+    CHECK_MEMBER_ALIGNMENT(HWACCM, vmx.hostCR4, 8);
+    CHECK_MEMBER_ALIGNMENT(HWACCM, Event.intInfo, 8);
+    CHECK_MEMBER_ALIGNMENT(HWACCM, StatEntry, 8);
 
 
     /*
