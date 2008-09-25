@@ -1,4 +1,4 @@
-/* $Id: HWVMXR0.cpp 37072 2008-09-25 15:22:36Z noreply@oracle.com $ */
+/* $Id: HWVMXR0.cpp 37073 2008-09-25 15:23:55Z noreply@oracle.com $ */
 /** @file
  * HWACCM VMX - Host Context Ring 0.
  */
@@ -1857,7 +1857,7 @@ ResumeExecution:
                     STAM_PROFILE_ADV_STOP(&pVM->hwaccm.s.StatExit, x);
                     goto ResumeExecution;
                 }
-                AssertMsg(rc == VERR_EM_INTERPRETER);
+                AssertMsg(rc == VERR_EM_INTERPRETER, ("Unexpected rc=%VRc\n", rc));
                 break;
             }
 
