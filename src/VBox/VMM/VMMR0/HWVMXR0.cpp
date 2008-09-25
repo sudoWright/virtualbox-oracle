@@ -1,4 +1,4 @@
-/* $Id: HWVMXR0.cpp 37016 2008-09-25 09:14:29Z noreply@oracle.com $ */
+/* $Id: HWVMXR0.cpp 37020 2008-09-25 09:32:13Z noreply@oracle.com $ */
 /** @file
  * HWACCM VMX - Host Context Ring 0.
  */
@@ -1372,6 +1372,10 @@ ResumeExecution:
 
             VMXReadVMCS(VMX_VMCS_HOST_FIELD_CS, &val);
             Log(("VMX_VMCS_HOST_FIELD_CS %08x\n", val));
+
+            VMXReadVMCS(VMX_VMCS_GUEST_RFLAGS, &val);
+            Log(("VMX_VMCS_GUEST_RFLAGS %08x\n", val));
+
             if (val < gdtr.cbGdt)
             {
                 pDesc  = &((PX86DESCHC)gdtr.pGdt)[val >> X86_SEL_SHIFT_HC];
