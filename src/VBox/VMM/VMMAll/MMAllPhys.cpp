@@ -1,6 +1,9 @@
-/* $Id: MMAllPhys.cpp 29865 2008-04-18 15:16:47Z noreply@oracle.com $ */
+/* $Id: MMAllPhys.cpp 37169 2008-09-29 18:14:37Z knut.osmundsen@oracle.com $ */
 /** @file
  * MM - Memory Monitor(/Manager) - Physical Memory.
+ *
+ * @remarks This will will be eliminated ASAP, all physical memory management
+ *          is done by PGM now.
  */
 
 /*
