@@ -1,4 +1,4 @@
-/* $Revision: 37160 $ */
+/* $Revision: 37162 $ */
 /** @file
  * VBoxDrv - The VirtualBox Support Driver - Common code.
  */
@@ -401,7 +401,7 @@ PFNRT g_apfnVBoxDrvIPRTDeps[] =
 {
     (PFNRT)RTCrc32,
     (PFNRT)RTErrConvertFromErrno,
-    (PFNRT)RTNetIPv4IsHdrValid
+    (PFNRT)RTNetIPv4IsHdrValid,
     (PFNRT)RTNetIPv4TCPChecksum,
     (PFNRT)RTNetIPv4UDPChecksum,
     (PFNRT)RTUuidCompare,
