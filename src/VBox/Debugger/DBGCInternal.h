@@ -1,4 +1,4 @@
-/* $Id: DBGCInternal.h 36928 2008-09-22 13:22:07Z knut.osmundsen@oracle.com $ */
+/* $Id: DBGCInternal.h 37278 2008-10-01 21:45:19Z knut.osmundsen@oracle.com $ */
 /** @file
  * DBGC - Debugger Console, Internal Header File.
  */
@@ -195,7 +195,6 @@ typedef struct DBGC
     bool                fInputOverflow;
     /** Indicates whether or we're ready for input. */
     bool                fReady;
-
     /** Scratch buffer position. */
     char               *pszScratch;
     /** Scratch buffer. */
