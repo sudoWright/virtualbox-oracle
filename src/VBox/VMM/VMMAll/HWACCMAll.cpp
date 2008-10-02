@@ -1,4 +1,4 @@
-/* $Id: HWACCMAll.cpp 37009 2008-09-24 16:56:02Z knut.osmundsen@oracle.com $ */
+/* $Id: HWACCMAll.cpp 37349 2008-10-02 11:48:49Z noreply@oracle.com $ */
 /** @file
  * HWACCM - All contexts.
  */
@@ -139,6 +139,6 @@ HWACCMDECL(int) HWACCMInvalidatePhysPage(PVM pVM, RTGCPHYS GCPhys)
  */
 HWACCMDECL(bool) HWACCMHasPendingIrq(PVM pVM)
 {
-    return pVM->hwaccm.s.Event.fPending;
+    return !!pVM->hwaccm.s.Event.fPending;
 }
 
