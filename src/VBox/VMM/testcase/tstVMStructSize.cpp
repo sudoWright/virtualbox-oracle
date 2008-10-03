@@ -1,4 +1,4 @@
-/* $Id: tstVMStructSize.cpp 37009 2008-09-24 16:56:02Z knut.osmundsen@oracle.com $ */
+/* $Id: tstVMStructSize.cpp 37403 2008-10-03 07:04:11Z knut.osmundsen@oracle.com $ */
 /** @file
  * tstVMStructSize - testcase for check structure sizes/alignment
  *                   and to verify that HC and GC uses the same
@@ -223,7 +223,7 @@ int main()
     CHECK_SIZE_ALIGNMENT(CPUMHOSTCTX, 64);
 
     /* pdm */
-    CHECK_MEMBER_ALIGNMENT(PDMDEVINS, achInstanceData, 16);
+    CHECK_MEMBER_ALIGNMENT(PDMDEVINS, achInstanceData, 64);
     CHECK_PADDING(PDMDEVINS, Internal);
     CHECK_MEMBER_ALIGNMENT(PDMUSBINS, achInstanceData, 16);
     CHECK_PADDING(PDMUSBINS, Internal);
