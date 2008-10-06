@@ -1,6 +1,6 @@
-/* $Id: TM.cpp 37424 2008-10-06 02:15:39Z knut.osmundsen@oracle.com $ */
+/* $Id: TM.cpp 37443 2008-10-06 12:35:21Z knut.osmundsen@oracle.com $ */
 /** @file
- * TM - Timeout Manager.
+ * TM - Time Manager.
  */
 
 /*
@@ -24,6 +24,8 @@
  *
  * The Time Manager abstracts the CPU clocks and manages timers used by the VMM,
  * device and drivers.
+ *
+ * @see grp_tm
  *
  *
  * @section sec_tm_clocks   Clocks
