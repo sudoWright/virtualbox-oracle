@@ -1,4 +1,4 @@
-/* $Id: tstDeviceStructSizeGC.cpp 37402 2008-10-03 07:03:26Z knut.osmundsen@oracle.com $ */
+/* $Id: tstDeviceStructSizeGC.cpp 37566 2008-10-08 13:42:03Z noreply@oracle.com $ */
 /** @file
  * tstDeviceStructSizeGC - Generate structure member and size checks from the GC perspective.
  *
@@ -653,6 +653,7 @@ int main()
     GEN_CHECK_OFF(ATADevState, abATAPISense);
     GEN_CHECK_OFF(ATADevState, abATAPISense[ATAPI_SENSE_SIZE - 1]);
     GEN_CHECK_OFF(ATADevState, cNotifiedMediaChange);
+    GEN_CHECK_OFF(ATADevState, MediaEventStatus);
     GEN_CHECK_OFF(ATADevState, Led);
     GEN_CHECK_OFF(ATADevState, cbIOBuffer);
     GEN_CHECK_OFF(ATADevState, pbIOBufferR3);
