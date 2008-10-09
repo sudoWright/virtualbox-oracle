@@ -1,4 +1,4 @@
-/* $Id: SELMAll.cpp 37424 2008-10-06 02:15:39Z knut.osmundsen@oracle.com $ */
+/* $Id: SELMAll.cpp 37653 2008-10-09 22:44:11Z knut.osmundsen@oracle.com $ */
 /** @file
  * SELM All contexts.
  */
@@ -1007,7 +1007,7 @@ l_tryagain:
 
 #else /* !IN_GC */
         /* Reading too much. Could be cheaper than two seperate calls though. */
-        rc = PGMPhysReadGCPtr(pVM, &tss, GCPtrTss, sizeof(VBOXTSS));
+        rc = PGMPhysSimpleReadGCPtr(pVM, &tss, GCPtrTss, sizeof(VBOXTSS));
         if (VBOX_FAILURE(rc))
         {
             AssertReleaseMsgFailed(("Unable to read TSS structure at %08X\n", GCPtrTss));
