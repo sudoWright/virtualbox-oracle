@@ -1,4 +1,4 @@
-/* $Id: PGM.cpp 37602 2008-10-09 08:57:05Z noreply@oracle.com $ */
+/* $Id: PGM.cpp 37655 2008-10-09 22:58:12Z knut.osmundsen@oracle.com $ */
 /** @file
  * PGM - Page Manager and Monitor. (Mixing stuff here, not good?)
  */
@@ -228,7 +228,7 @@
  * unnecessary modifications.
  *
  * Allocation points:
- *      - PGMPhysWriteGCPhys and PGMPhysWrite.
+ *      - PGMPhysSimpleWriteGCPhys and PGMPhysWrite.
  *      - Replacing a zero page mapping at \#PF.
  *      - Replacing a shared page mapping at \#PF.
  *      - ROM registration (currently MMR3RomRegister).
