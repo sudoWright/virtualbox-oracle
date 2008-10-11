@@ -1,4 +1,4 @@
-/* $Id: Builtins.h 36785 2008-09-18 12:47:46Z alexander.eichner@oracle.com $ */
+/* $Id: Builtins.h 37726 2008-10-11 12:36:11Z alexander.eichner@oracle.com $ */
 /** @file
  * Built-in drivers & devices (part 1) header.
  */
@@ -65,7 +65,7 @@ extern const PDMDEVREG g_DeviceAHCI;
 #ifdef VBOX_WITH_BUSLOGIC
 extern const PDMDEVREG g_DeviceBusLogic;
 #endif
-
+extern const PDMDEVREG g_DevicePCIBridge;
 
 extern const PDMDRVREG g_DrvMouseQueue;
 extern const PDMDRVREG g_DrvKeyboardQueue;
