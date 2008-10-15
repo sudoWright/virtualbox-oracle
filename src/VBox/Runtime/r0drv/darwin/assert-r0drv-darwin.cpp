@@ -1,4 +1,4 @@
-/* $Id: assert-r0drv-darwin.cpp 37979 2008-10-15 21:17:04Z knut.osmundsen@oracle.com $ */
+/* $Id: assert-r0drv-darwin.cpp 37983 2008-10-15 21:30:44Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT -  Assertion Workers, Ring-0 Drivers, Darwin.
  */
@@ -38,6 +38,8 @@
 #include <iprt/log.h>
 #include <iprt/string.h>
 #include <iprt/stdarg.h>
+#include <iprt/asm.h>
+
 
 /*******************************************************************************
 *   Global Variables                                                           *
