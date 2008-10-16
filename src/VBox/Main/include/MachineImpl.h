@@ -1,4 +1,4 @@
-/* $Id: MachineImpl.h 37781 2008-10-13 14:43:54Z noreply@oracle.com $ */
+/* $Id: MachineImpl.h 38057 2008-10-16 18:44:34Z noreply@oracle.com $ */
 
 /** @file
  *
@@ -239,7 +239,7 @@ public:
             /** Property timestamp */
             ULONG64 mTimestamp;
             /** Property flags */
-            Bstr mFlags;
+            ULONG mFlags;
         };
 
         HWData();
