@@ -1,4 +1,4 @@
-/* $Id: VMMTests.cpp 37408 2008-10-03 22:22:37Z knut.osmundsen@oracle.com $ */
+/* $Id: VMMTests.cpp 38381 2008-10-23 12:39:48Z noreply@oracle.com $ */
 /** @file
  * VMM - The Virtual Machine Monitor Core, Tests.
  */
@@ -531,7 +531,7 @@ VMMR3DECL(int) VMMDoHwAccmTest(PVM pVM)
             CPUMSetHyperEIP(pVM, pVM->vmm.s.pfnGCCallTrampoline);
 
             CPUMQueryHyperCtxPtr(pVM, &pHyperCtx);
-            CPUMQueryGuestCtxPtr(pVM, &pGuestCtx);
+            pGuestCtx = CPUMQueryGuestCtxPtr(pVM);
 
             /* Copy the hypervisor context to make sure we have a valid guest context. */
             *pGuestCtx = *pHyperCtx;
