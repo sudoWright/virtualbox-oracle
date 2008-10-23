@@ -1,4 +1,4 @@
-/* $Id: HWACCMInternal.h 38383 2008-10-23 13:00:28Z noreply@oracle.com $ */
+/* $Id: HWACCMInternal.h 38399 2008-10-23 16:25:44Z noreply@oracle.com $ */
 /** @file
  * HWACCM - Internal header file.
  */
@@ -351,6 +351,8 @@ typedef struct HWACCM
         {
             uint64_t                u64VMCSPhys;
             uint32_t                ulVMCSRevision;
+            uint32_t                ulLastInstrError;
+            uint32_t                ulLastExitReason;
             uint32_t                padding;
         } lasterror;
     } vmx;
