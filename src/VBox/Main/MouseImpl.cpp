@@ -1,4 +1,4 @@
-/* $Id: MouseImpl.cpp 38525 2008-10-28 10:43:42Z noreply@oracle.com $ */
+/* $Id: MouseImpl.cpp 38626 2008-10-30 10:09:08Z noreply@oracle.com $ */
 
 /** @file
  *
@@ -77,7 +77,7 @@ void Mouse::FinalRelease()
  */
 HRESULT Mouse::init (Console *parent)
 {
-    LogFlow(("Mouse::init()\n"));
+    LogFlowThisFunc (("\n"));
 
     ComAssertRet (parent, E_INVALIDARG);
 
