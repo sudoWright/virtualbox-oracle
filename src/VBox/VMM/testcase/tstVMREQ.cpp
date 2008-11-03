@@ -1,4 +1,4 @@
-/* $Id: tstVMREQ.cpp 35653 2008-08-29 14:21:03Z knut.osmundsen@oracle.com $ */
+/* $Id: tstVMREQ.cpp 38714 2008-11-03 12:19:40Z noreply@oracle.com $ */
 /** @file
  * VMM Testcase.
  */
@@ -225,7 +225,7 @@ int main(int argc, char **argv)
      * Create empty VM.
      */
     PVM pVM;
-    int rc = VMR3Create(NULL, NULL, NULL, NULL, &pVM);
+    int rc = VMR3Create(1, NULL, NULL, NULL, NULL, &pVM);
     if (VBOX_SUCCESS(rc))
     {
         /*

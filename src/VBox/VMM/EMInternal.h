@@ -1,4 +1,4 @@
-/* $Id: EMInternal.h 38439 2008-10-24 17:48:59Z knut.osmundsen@oracle.com $ */
+/* $Id: EMInternal.h 38714 2008-11-03 12:19:40Z noreply@oracle.com $ */
 /** @file
  * EM - Internal header file.
  */
@@ -370,6 +370,17 @@ typedef struct EM
 typedef EM *PEM;
 
 
+/**
+ * EM VMCPU Instance data.
+ */
+typedef struct EMCPU
+{
+    /** Offset to the VM structure.
+     * See EMCPU2VM(). */
+    RTUINT                  offVMCPU;
+} EMCPU;
+/** Pointer to EM VM instance data. */
+typedef EMCPU *PEMCPU;
 
 /** @} */
 
