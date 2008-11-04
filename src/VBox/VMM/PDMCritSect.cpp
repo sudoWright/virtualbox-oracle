@@ -1,4 +1,4 @@
-/* $Id: PDMCritSect.cpp 38807 2008-11-04 22:52:12Z knut.osmundsen@oracle.com $ */
+/* $Id: PDMCritSect.cpp 38809 2008-11-04 22:59:47Z knut.osmundsen@oracle.com $ */
 /** @file
  * PDM - Critical Sections, Ring-3.
  */
@@ -301,7 +301,7 @@ VMMR3DECL(void) PDMR3CritSectFF(PVM pVM)
     {
         PPDMCRITSECT pCritSect = pVM->pdm.s.apQueuedCritSectsLeaves[i];
         int rc = RTCritSectLeave(&pCritSect->s.Core);
-        LogFlow(("PDMR3CritSectFF: %p - %Vrc\n", pCritSect, rc));
+        LogFlow(("PDMR3CritSectFF: %p - %Rrc\n", pCritSect, rc));
         AssertRC(rc);
     }
 

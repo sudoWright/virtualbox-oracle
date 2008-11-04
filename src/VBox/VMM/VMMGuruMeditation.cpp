@@ -1,4 +1,4 @@
-/* $Id: VMMGuruMeditation.cpp 38807 2008-11-04 22:52:12Z knut.osmundsen@oracle.com $ */
+/* $Id: VMMGuruMeditation.cpp 38809 2008-11-04 22:59:47Z knut.osmundsen@oracle.com $ */
 /** @file
  * VMM - The Virtual Machine Monitor, Guru Meditation Code.
  */
@@ -213,7 +213,7 @@ VMMR3DECL(void) VMMR3FatalDump(PVM pVM, int rcErr)
     pHlp->pfnPrintf(pHlp,
                     "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n"
                     "!!\n"
-                    "!!                 Guru Meditation %d (%Vrc)\n"
+                    "!!                 Guru Meditation %d (%Rrc)\n"
                     "!!\n",
                     rcErr, rcErr);
 

@@ -1,4 +1,4 @@
-/* $Id: VMMR0.cpp 38807 2008-11-04 22:52:12Z knut.osmundsen@oracle.com $ */
+/* $Id: VMMR0.cpp 38809 2008-11-04 22:59:47Z knut.osmundsen@oracle.com $ */
 /** @file
  * VMM - Host Context Ring 0.
  */
@@ -101,7 +101,7 @@ VMMR0DECL(int) ModuleInit(void)
                     return VINF_SUCCESS;
                 }
                 g_pIntNet = NULL;
-                LogFlow(("ModuleTerm: returns %Vrc\n", rc));
+                LogFlow(("ModuleTerm: returns %Rrc\n", rc));
             }
         }
     }
