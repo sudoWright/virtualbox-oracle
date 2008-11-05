@@ -1,4 +1,4 @@
-/* $Revision: 38267 $ */
+/* $Revision: 38827 $ */
 /** @file
  * VBoxDrv - The VirtualBox Support Driver - Common code.
  */
@@ -4946,7 +4946,7 @@ static void supdrvGipDoUpdateCpu(PSUPGLOBALINFOPAGE pGip, PSUPGIPCPU pGipCpu, ui
     /*
      * TSC History.
      */
-    Assert(ELEMENTS(pGipCpu->au32TSCHistory) == 8);
+    Assert(RT_ELEMENTS(pGipCpu->au32TSCHistory) == 8);
 
     iTSCHistoryHead = (pGipCpu->iTSCHistoryHead + 1) & 7;
     ASMAtomicXchgU32(&pGipCpu->iTSCHistoryHead, iTSCHistoryHead);
