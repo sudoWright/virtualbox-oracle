@@ -1,4 +1,4 @@
-/* $Id: SUPR3HardenedVerify.cpp 38567 2008-10-28 22:10:18Z noreply@oracle.com $ */
+/* $Id: SUPR3HardenedVerify.cpp 38915 2008-11-06 11:53:47Z noreply@oracle.com $ */
 /** @file
  * VirtualBox Support Library - Verification of Hardened Installation.
  */
@@ -36,6 +36,11 @@
 # define INCL_ERRORS
 # include <os2.h>
 # include <stdio.h>
+# include <stdlib.h>
+# include <unistd.h>
+# include <sys/fcntl.h>
+# include <sys/errno.h>
+# include <sys/syslimits.h>
 
 #elif defined(RT_OS_WINDOWS)
 # include <Windows.h>
