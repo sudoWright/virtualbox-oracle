@@ -1,4 +1,4 @@
-/* $Id: HWACCM.cpp 38907 2008-11-06 10:17:41Z noreply@oracle.com $ */
+/* $Id: HWACCM.cpp 38908 2008-11-06 10:52:08Z noreply@oracle.com $ */
 /** @file
  * HWACCM - Intel/AMD VM Hardware Support Manager
  */
@@ -815,7 +815,9 @@ VMMR3DECL(bool) HWACCMR3IsAllowed(PVM pVM)
  */
 VMMR3DECL(void) HWACCMR3PagingModeChanged(PVM pVM, PGMMODE enmShadowMode, PGMMODE enmGuestMode)
 {
-    pVM->hwaccm.s.enmShadowMode = enmShadowMode;
+    PVMCPU pVCpu = VMMGetCpu(pVM);
+    pVCpu->hwaccm.s.enmShadowMode = enmShadowMode;
+
     if (   pVM->hwaccm.s.vmx.fEnabled
         && pVM->fHWACCMEnabled)
     {
