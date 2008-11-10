@@ -1,4 +1,4 @@
-/* $Id: ConsoleImpl.cpp 39031 2008-11-09 14:28:38Z alexander.eichner@oracle.com $ */
+/* $Id: ConsoleImpl.cpp 39050 2008-11-10 12:10:54Z knut.osmundsen@oracle.com $ */
 
 /** @file
  *
@@ -60,8 +60,6 @@
 #include "Logging.h"
 
 #include <VBox/com/array.h>
-
-#include <iprt/types.h> /* for stdint.h constants */
 
 #include <iprt/string.h>
 #include <iprt/asm.h>
