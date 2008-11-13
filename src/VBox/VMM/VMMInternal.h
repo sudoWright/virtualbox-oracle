@@ -1,4 +1,4 @@
-/* $Id: VMMInternal.h 38877 2008-11-05 16:11:03Z noreply@oracle.com $ */
+/* $Id: VMMInternal.h 39266 2008-11-13 12:31:38Z knut.osmundsen@oracle.com $ */
 /** @file
  * VMM - Internal header file.
  */
@@ -195,6 +195,9 @@ typedef struct VMM
     RTUINT                      aoffSwitchers[VMMSWITCHER_MAX];
     /** Flag to disable the switcher permanently (VMX) (boolean) */
     bool                        fSwitcherDisabled;
+#if HC_ARCH_BITS == 64
+    uint32_t                    u32PaddingMinus1; /**< Alignment padding. */
+#endif
 
     /** Host to guest switcher entry point. */
     R0PTRTYPE(PFNVMMSWITCHERHC) pfnHostToGuestR0;
