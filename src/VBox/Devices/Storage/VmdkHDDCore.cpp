@@ -1,4 +1,4 @@
-/* $Id: VmdkHDDCore.cpp 39474 2008-11-18 12:01:42Z klaus.espenlaub@oracle.com $ */
+/* $Id: VmdkHDDCore.cpp 39490 2008-11-18 13:44:33Z klaus.espenlaub@oracle.com $ */
 /** @file
  * VMDK Disk image, Core Code.
  */
@@ -4493,7 +4493,7 @@ static uint64_t vmdkGetFileSize(void *pBackendData)
             if (RT_SUCCESS(rc))
                 cb += cbFile;
         }
-        for (unsigned i = 0; i <= pImage->cExtents; i++)
+        for (unsigned i = 0; i < pImage->cExtents; i++)
         {
             if (pImage->pExtents[i].pFile != NULL)
             {
