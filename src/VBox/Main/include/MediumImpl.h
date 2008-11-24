@@ -1,4 +1,4 @@
-/* $Id: MediumImpl.h 38479 2008-10-27 14:04:18Z noreply@oracle.com $ */
+/* $Id: MediumImpl.h 39802 2008-11-24 12:24:35Z noreply@oracle.com $ */
 /** @file
  *
  * VirtualBox COM class implementation
@@ -170,7 +170,7 @@ protected:
 
     HRESULT setStateError();
 
-    /** weak VirualBox parent */
+    /** weak VirtualBox parent */
     const ComObjPtr <VirtualBox, ComWeakRef> mVirtualBox;
 
     struct Data
