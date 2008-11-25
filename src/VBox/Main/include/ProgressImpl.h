@@ -1,4 +1,4 @@
-/* $Id: ProgressImpl.h 38479 2008-10-27 14:04:18Z noreply@oracle.com $ */
+/* $Id: ProgressImpl.h 39879 2008-11-25 15:59:35Z noreply@oracle.com $ */
 /** @file
  *
  * VirtualBox COM class implementation
@@ -297,7 +297,7 @@ public:
     {
         /* Enclose the state transition NotReady->InInit->Ready */
         AutoInitSpan autoInitSpan (this);
-        AssertReturn (autoInitSpan.isOk(), E_UNEXPECTED);
+        AssertReturn (autoInitSpan.isOk(), E_FAIL);
 
         mProgresses = ProgressVector (aFirstProgress, aLastProgress);
 
