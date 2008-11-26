@@ -1,4 +1,4 @@
-/* $Id: Global.h 39973 2008-11-26 21:19:35Z sergey.dubov@oracle.com $ */
+/* $Id: Global.h 39977 2008-11-26 23:10:02Z noreply@oracle.com $ */
 
 /** @file
  *
@@ -26,7 +26,9 @@
 
 /* generated header */
 #include "SchemaDefs.h"
-#include "VirtualBox.h"
+
+/* interface definitions */
+#include "VBox/com/VirtualBox.h"
 
 #include <VBox/ostypes.h>
 
