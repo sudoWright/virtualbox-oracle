@@ -1,4 +1,4 @@
-/* $Id: VBoxManage.cpp 39918 2008-11-26 02:06:17Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxManage.cpp 39921 2008-11-26 09:01:02Z noreply@oracle.com $ */
 /** @file
  * VBoxManage - VirtualBox's command-line interface.
  */
@@ -35,6 +35,8 @@
 
 #include <vector>
 #include <list>
+#include <cstdlib>
+#include <cctype>
 #endif /* !VBOX_ONLY_DOCS */
 
 #include <iprt/initterm.h>
