@@ -1,4 +1,4 @@
-/* $Id: SATAControllerImpl.cpp 39879 2008-11-25 15:59:35Z noreply@oracle.com $ */
+/* $Id: SATAControllerImpl.cpp 40089 2008-11-28 12:41:22Z noreply@oracle.com $ */
 
 /** @file
  *
@@ -521,4 +521,4 @@ void SATAController::copyFrom (SATAController *aThat)
 
 // private methods
 /////////////////////////////////////////////////////////////////////////////
-
+/* vi: set tabstop=4 shiftwidth=4 expandtab: */

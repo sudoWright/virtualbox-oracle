@@ -1,4 +1,4 @@
-/* $Id: MouseImpl.cpp 39879 2008-11-25 15:59:35Z noreply@oracle.com $ */
+/* $Id: MouseImpl.cpp 40089 2008-11-28 12:41:22Z noreply@oracle.com $ */
 
 /** @file
  *
@@ -464,3 +464,4 @@ const PDMDRVREG Mouse::DrvReg =
     /* pfnDetach */
     NULL
 };
+/* vi: set tabstop=4 shiftwidth=4 expandtab: */
