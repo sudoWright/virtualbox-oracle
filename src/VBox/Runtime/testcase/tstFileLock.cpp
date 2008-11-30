@@ -1,4 +1,4 @@
-/* $Id: tstFileLock.cpp 38828 2008-11-05 02:54:02Z knut.osmundsen@oracle.com $ */
+/* $Id: tstFileLock.cpp 40157 2008-11-30 10:31:16Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT Testcase - File Locks.
  */
@@ -36,7 +36,7 @@
 #include <iprt/stream.h>
 #include <iprt/err.h>
 #include <iprt/thread.h>  /* for RTThreadSleep() */
-#include <iprt/runtime.h>
+#include <iprt/initterm.h>
 #include <iprt/string.h>
 
 #include <stdio.h>

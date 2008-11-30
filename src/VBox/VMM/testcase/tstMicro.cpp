@@ -1,4 +1,4 @@
-/* $Id: tstMicro.cpp 38818 2008-11-05 01:31:18Z knut.osmundsen@oracle.com $ */
+/* $Id: tstMicro.cpp 40157 2008-11-30 10:31:16Z knut.osmundsen@oracle.com $ */
 /** @file
  * Micro Testcase, profiling special CPU operations.
  */
@@ -34,7 +34,7 @@
 
 #include <VBox/log.h>
 #include <iprt/assert.h>
-#include <iprt/runtime.h>
+#include <iprt/initterm.h>
 #include <iprt/stream.h>
 #include <iprt/string.h>
 #include <iprt/semaphore.h>

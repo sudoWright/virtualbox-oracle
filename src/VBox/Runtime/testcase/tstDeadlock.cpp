@@ -1,4 +1,4 @@
-/* $Id: tstDeadlock.cpp 29865 2008-04-18 15:16:47Z noreply@oracle.com $ */
+/* $Id: tstDeadlock.cpp 40157 2008-11-30 10:31:16Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT Testcase - deadlock detection. Will never really "work".
  */
@@ -36,7 +36,7 @@
 #include <iprt/critsect.h>
 #include <iprt/stream.h>
 #include <iprt/err.h>
-#include <iprt/runtime.h>
+#include <iprt/initterm.h>
 
 
 /*******************************************************************************

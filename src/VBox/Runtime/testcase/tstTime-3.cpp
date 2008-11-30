@@ -1,4 +1,4 @@
-/* $Id: tstTime-3.cpp 35653 2008-08-29 14:21:03Z knut.osmundsen@oracle.com $ */
+/* $Id: tstTime-3.cpp 40157 2008-11-30 10:31:16Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT Testcase - Simple RTTime test.
  */
@@ -43,7 +43,7 @@
 #include <iprt/time.h>
 #include <iprt/stream.h>
 #include <iprt/string.h>
-#include <iprt/runtime.h>
+#include <iprt/initterm.h>
 #include <iprt/thread.h>
 #include <iprt/err.h>
 
