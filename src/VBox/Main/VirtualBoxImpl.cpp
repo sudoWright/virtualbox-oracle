@@ -1,4 +1,4 @@
-/* $Id: VirtualBoxImpl.cpp 40101 2008-11-28 14:55:59Z noreply@oracle.com $ */
+/* $Id: VirtualBoxImpl.cpp 40180 2008-12-01 11:46:18Z aleksey.ilyushin@oracle.com $ */
 
 /** @file
  * Implementation of IVirtualBox in VBoxSVC.
@@ -488,6 +488,8 @@ void VirtualBox::uninit()
 #else
 # error "Port me!"
 #endif
+    /* Unload plugin backends. */
+    VDShutdown();
 
     LogFlowThisFuncLeave();
     LogFlow (("===========================================================\n"));
