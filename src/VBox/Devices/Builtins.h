@@ -1,4 +1,4 @@
-/* $Id: Builtins.h 39692 2008-11-20 21:39:01Z alexander.eichner@oracle.com $ */
+/* $Id: Builtins.h 40326 2008-12-03 22:49:27Z alexander.eichner@oracle.com $ */
 /** @file
  * Built-in drivers & devices (part 1) header.
  */
@@ -107,6 +107,10 @@ extern const PDMDRVREG g_DrvSCSI;
 #if defined(RT_OS_LINUX)
 extern const PDMDRVREG g_DrvSCSIHost;
 #endif
+#endif
+
+#ifdef VBOX_WITH_FAULT_INJECTION
+extern const PDMDRVREG g_DrvFaultInject;
 #endif
 
 __END_DECLS

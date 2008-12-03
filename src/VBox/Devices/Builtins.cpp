@@ -1,4 +1,4 @@
-/* $Id: Builtins.cpp 39692 2008-11-20 21:39:01Z alexander.eichner@oracle.com $ */
+/* $Id: Builtins.cpp 40326 2008-12-03 22:49:27Z alexander.eichner@oracle.com $ */
 /** @file
  * Built-in drivers & devices (part 1)
  */
@@ -279,6 +279,12 @@ extern "C" DECLEXPORT(int) VBoxDriversRegister(PCPDMDRVREGCB pCallbacks, uint32_
     if (RT_FAILURE(rc))
         return rc;
 #endif
+#endif
+
+#ifdef VBOX_WITH_FAULT_INJECTION
+    rc = pCallbacks->pfnRegister(pCallbacks, &g_DrvFaultInject);
+    if (RT_FAILURE(rc))
+        return rc;
 #endif
 
     return VINF_SUCCESS;
