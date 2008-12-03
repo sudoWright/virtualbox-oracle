@@ -1,4 +1,4 @@
-/* $Id: VirtualBoxXMLUtil.h 39691 2008-11-20 21:37:06Z sergey.dubov@oracle.com $ */
+/* $Id: VirtualBoxXMLUtil.h 40304 2008-12-03 15:17:16Z noreply@oracle.com $ */
 
 /** @file
  *
@@ -65,3 +65,4 @@
 #define VBOX_XML_SETTINGS_CONVERTER "SettingsConverter.xsl"
 
 #endif /* ____H_VIRTUALBOXXMLUTIL */
+/* vi: set tabstop=4 shiftwidth=4 expandtab: */

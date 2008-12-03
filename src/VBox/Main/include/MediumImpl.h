@@ -1,4 +1,4 @@
-/* $Id: MediumImpl.h 39802 2008-11-24 12:24:35Z noreply@oracle.com $ */
+/* $Id: MediumImpl.h 40304 2008-12-03 15:17:16Z noreply@oracle.com $ */
 /** @file
  *
  * VirtualBox COM class implementation
@@ -340,3 +340,4 @@ private:
 
 #endif /* ____H_MEDIUMIMPL */
 
+/* vi: set tabstop=4 shiftwidth=4 expandtab: */

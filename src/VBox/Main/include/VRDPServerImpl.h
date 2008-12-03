@@ -1,4 +1,4 @@
-/* $Id: VRDPServerImpl.h 36079 2008-09-05 12:28:36Z vitali.pelenjow@oracle.com $ */
+/* $Id: VRDPServerImpl.h 40304 2008-12-03 15:17:16Z noreply@oracle.com $ */
 
 /** @file
  *
@@ -131,3 +131,4 @@ private:
 };
 
 #endif // ____H_VRDPSERVER
+/* vi: set tabstop=4 shiftwidth=4 expandtab: */

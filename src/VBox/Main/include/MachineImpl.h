@@ -1,4 +1,4 @@
-/* $Id: MachineImpl.h 39973 2008-11-26 21:19:35Z sergey.dubov@oracle.com $ */
+/* $Id: MachineImpl.h 40304 2008-12-03 15:17:16Z noreply@oracle.com $ */
 
 /** @file
  *
@@ -1078,3 +1078,4 @@ inline Machine *Machine::machine()
 }
 
 #endif // ____H_MACHINEIMPL
+/* vi: set tabstop=4 shiftwidth=4 expandtab: */

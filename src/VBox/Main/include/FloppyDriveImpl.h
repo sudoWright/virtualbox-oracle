@@ -1,4 +1,4 @@
-/* $Id: FloppyDriveImpl.h 38479 2008-10-27 14:04:18Z noreply@oracle.com $ */
+/* $Id: FloppyDriveImpl.h 40304 2008-12-03 15:17:16Z noreply@oracle.com $ */
 
 /** @file
  *
@@ -126,3 +126,4 @@ private:
 };
 
 #endif // ____H_FLOPPYDRIVEIMPL
+/* vi: set tabstop=4 shiftwidth=4 expandtab: */

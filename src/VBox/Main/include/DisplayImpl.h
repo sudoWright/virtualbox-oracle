@@ -1,4 +1,4 @@
-/* $Id: DisplayImpl.h 38525 2008-10-28 10:43:42Z noreply@oracle.com $ */
+/* $Id: DisplayImpl.h 40304 2008-12-03 15:17:16Z noreply@oracle.com $ */
 
 /** @file
  *
@@ -298,3 +298,4 @@ private:
 };
 
 #endif // ____H_DISPLAYIMPL
+/* vi: set tabstop=4 shiftwidth=4 expandtab: */

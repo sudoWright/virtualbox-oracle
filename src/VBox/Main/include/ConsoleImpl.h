@@ -1,4 +1,4 @@
-/* $Id: ConsoleImpl.h 38876 2008-11-05 15:56:44Z noreply@oracle.com $ */
+/* $Id: ConsoleImpl.h 40304 2008-12-03 15:17:16Z noreply@oracle.com $ */
 
 /** @file
  *
@@ -607,3 +607,4 @@ private:
 };
 
 #endif // ____H_CONSOLEIMPL
+/* vi: set tabstop=4 shiftwidth=4 expandtab: */

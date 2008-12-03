@@ -1,4 +1,4 @@
-/* $Id: MachineDebuggerImpl.h 39930 2008-11-26 10:17:37Z noreply@oracle.com $ */
+/* $Id: MachineDebuggerImpl.h 40304 2008-12-03 15:17:16Z noreply@oracle.com $ */
 
 /** @file
  *
@@ -110,3 +110,4 @@ private:
 };
 
 #endif /* ____H_MACHINEDEBUGGER */
+/* vi: set tabstop=4 shiftwidth=4 expandtab: */
