@@ -1,4 +1,4 @@
-/* $Id: DisplayImpl.cpp 40089 2008-11-28 12:41:22Z noreply@oracle.com $ */
+/* $Id: DisplayImpl.cpp 40293 2008-12-03 13:36:42Z noreply@oracle.com $ */
 
 /** @file
  *
@@ -1416,7 +1416,7 @@ STDMETHODIMP Display::UnlockFramebuffer()
 
 STDMETHODIMP Display::RegisterExternalFramebuffer (IFramebuffer *frameBuf)
 {
-	LogFlowFunc (("\n"));
+    LogFlowFunc (("\n"));
 
     if (!frameBuf)
         return E_POINTER;
