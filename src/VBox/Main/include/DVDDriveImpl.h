@@ -1,4 +1,4 @@
-/* $Id: DVDDriveImpl.h 40304 2008-12-03 15:17:16Z noreply@oracle.com $ */
+/* $Id: DVDDriveImpl.h 40436 2008-12-05 17:20:00Z noreply@oracle.com $ */
 
 /** @file
  *
@@ -90,7 +90,7 @@ public:
     STDMETHOD(COMSETTER(Passthrough)) (BOOL aPassthrough);
 
     // IDVDDrive methods
-    STDMETHOD(MountImage) (INPTR GUIDPARAM aImageId);
+    STDMETHOD(MountImage) (IN_GUID aImageId);
     STDMETHOD(CaptureHostDrive) (IHostDVDDrive *aHostDVDDrive);
     STDMETHOD(Unmount)();
     STDMETHOD(GetImage) (IDVDImage2 **aDVDImage);

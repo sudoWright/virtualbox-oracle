@@ -1,4 +1,4 @@
-/* $Id: RemoteUSBDeviceImpl.cpp 40340 2008-12-04 12:10:37Z noreply@oracle.com $ */
+/* $Id: RemoteUSBDeviceImpl.cpp 40436 2008-12-05 17:20:00Z noreply@oracle.com $ */
 
 /** @file
  *
@@ -131,7 +131,7 @@ void RemoteUSBDevice::uninit()
 // IUSBDevice properties
 /////////////////////////////////////////////////////////////////////////////
 
-STDMETHODIMP RemoteUSBDevice::COMGETTER(Id) (GUIDPARAMOUT aId)
+STDMETHODIMP RemoteUSBDevice::COMGETTER(Id) (OUT_GUID aId)
 {
     CheckComArgOutPointerValid(aId);
 
