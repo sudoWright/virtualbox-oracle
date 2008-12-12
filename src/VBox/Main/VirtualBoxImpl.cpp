@@ -1,4 +1,4 @@
-/* $Id: VirtualBoxImpl.cpp 40745 2008-12-11 17:27:02Z noreply@oracle.com $ */
+/* $Id: VirtualBoxImpl.cpp 40805 2008-12-12 13:50:32Z klaus.espenlaub@oracle.com $ */
 
 /** @file
  * Implementation of IVirtualBox in VBoxSVC.
@@ -57,7 +57,6 @@
 
 #include <VBox/err.h>
 #include <VBox/param.h>
-#include <VBox/VBoxHDD.h>
 #include <VBox/VBoxHDD-new.h>
 #include <VBox/version.h>
 #include <package-generated.h>
