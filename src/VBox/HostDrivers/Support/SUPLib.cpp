@@ -1,4 +1,4 @@
-/* $Id: SUPLib.cpp 40246 2008-12-02 14:23:22Z knut.osmundsen@oracle.com $ */
+/* $Id: SUPLib.cpp 40785 2008-12-12 06:02:14Z knut.osmundsen@oracle.com $ */
 /** @file
  * VirtualBox Support Library - Common code.
  */
@@ -1827,7 +1827,7 @@ static int supR3HardenedLdrLoadIt(const char *pszFilename, PRTLDRMOD phLdrMod)
     int rc = supR3HardenedVerifyFile(pszFilename, false /* fFatal */);
     if (RT_FAILURE(rc))
     {
-        LogRel(("supR3HardenedLdrLoadIt: Verification of \"%s\" failed, rc=%Rrc\n", rc));
+        LogRel(("supR3HardenedLdrLoadIt: Verification of \"%s\" failed, rc=%Rrc\n", pszFilename, rc));
         return rc;
     }
 #endif
