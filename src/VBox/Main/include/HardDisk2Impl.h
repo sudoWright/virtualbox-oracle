@@ -1,4 +1,4 @@
-/* $Id: HardDisk2Impl.h 40745 2008-12-11 17:27:02Z noreply@oracle.com $ */
+/* $Id: HardDisk2Impl.h 40953 2008-12-15 09:57:20Z klaus.espenlaub@oracle.com $ */
 
 /** @file
  *
@@ -112,6 +112,7 @@ public:
     STDMETHOD(MergeTo) (IN_GUID aTargetId, IProgress **aProgress);
     STDMETHOD(CloneTo) (IHardDisk2 *aTarget, IProgress **aProgress);
     STDMETHOD(FlattenTo) (IHardDisk2 *aTarget, IProgress **aProgress);
+    STDMETHOD(Compact) (IProgress **aProgress);
 
     // public methods for internal purposes only
 
