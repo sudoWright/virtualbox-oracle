@@ -1,4 +1,4 @@
-/* $Id: RTThreadPreemptRestore-r0drv-linux.c 41375 2009-01-05 13:03:42Z noreply@oracle.com $ */
+/* $Id: RTThreadPreemptRestore-r0drv-linux.c 41378 2009-01-05 13:18:08Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - RTThreadPreemptRestore, Generic ring-0 driver implementation.
  */
@@ -39,5 +39,10 @@
 
 RTDECL(void) RTThreadPreemptRestore(PRTTHREADPREEMPTSTATE pState)
 {
+    AssertPtr(pState);
+    Assert(pState->uchDummy == 42);
+    pState->uchDummy = 0;
+
     preempt_enable();
 }
+
