@@ -1,4 +1,4 @@
-/* $Revision: 40246 $ */
+/* $Revision: 41430 $ */
 /** @file
  * VirtualBox Support Driver - Internal header.
  */
@@ -447,6 +447,8 @@ typedef struct SUPDRVOBJ
 
 /** Magic number for SUPDRVOBJ::u32Magic. (Dame Agatha Mary Clarissa Christie). */
 #define SUPDRVOBJ_MAGIC             0x18900915
+/** Dead number magic for SUPDRVOBJ::u32Magic. */
+#define SUPDRVOBJ_MAGIC_DEAD        0x19760112
 
 /**
  * The per-session object usage record.
