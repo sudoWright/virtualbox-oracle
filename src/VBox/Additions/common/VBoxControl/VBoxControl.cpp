@@ -1,4 +1,4 @@
-/** $Id: VBoxControl.cpp 39577 2008-11-19 16:29:31Z noreply@oracle.com $ */
+/** $Id: VBoxControl.cpp 41884 2009-01-21 17:22:59Z noreply@oracle.com $ */
 /** @file
  * VBoxControl - Guest Additions Command Line Management Interface
  */
@@ -1344,7 +1344,7 @@ int main(int argc, char **argv)
         RTPrintf("VirtualBox Guest Additions Command Line Management Interface Version "
                  VBOX_VERSION_STRING "\n"
                  "(C) 2008 Sun Microsystems, Inc.\n"
-                 "All rights reserved\n\n");
+                 "All rights reserved.\n\n");
     if (dohelp)
         usage();
 
