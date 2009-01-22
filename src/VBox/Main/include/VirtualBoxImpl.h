@@ -1,4 +1,4 @@
-/* $Id: VirtualBoxImpl.h 41944 2009-01-22 19:58:31Z noreply@oracle.com $ */
+/* $Id: VirtualBoxImpl.h 41951 2009-01-22 21:23:10Z knut.osmundsen@oracle.com $ */
 
 /** @file
  *
@@ -54,7 +54,6 @@ class Progress;
 class ProgressCollection;
 class Host;
 class SystemProperties;
-class IAppliance;
 
 #ifdef RT_OS_WINDOWS
 class SVCHlpClient;
