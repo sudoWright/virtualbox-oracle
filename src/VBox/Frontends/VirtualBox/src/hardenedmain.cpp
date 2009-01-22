@@ -1,4 +1,4 @@
-/* $Id: hardenedmain.cpp 35466 2008-08-27 22:21:47Z knut.osmundsen@oracle.com $ */
+/* $Id: hardenedmain.cpp 41920 2009-01-22 15:15:31Z noreply@oracle.com $ */
 /** @file
  * VirtualBox - Hardened main().
  */

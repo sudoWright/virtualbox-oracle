@@ -1,4 +1,4 @@
-; $Id: VBoxHlp.asm 29865 2008-04-18 15:16:47Z noreply@oracle.com $
+; $Id: VBoxHlp.asm 41920 2009-01-22 15:15:31Z noreply@oracle.com $
 ;; @file
 ;
 ; VBox frontends: Qt GUI ("VirtualBox"):
