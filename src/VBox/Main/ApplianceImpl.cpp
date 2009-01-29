@@ -1,4 +1,4 @@
-/* $Id: ApplianceImpl.cpp 42200 2009-01-29 10:51:37Z noreply@oracle.com $ */
+/* $Id: ApplianceImpl.cpp 42201 2009-01-29 10:59:19Z noreply@oracle.com $ */
 /** @file
  *
  * IAppliance and IVirtualSystem COM class implementations
@@ -1467,7 +1467,7 @@ STDMETHODIMP Appliance::ImportAppliance()
 # endif
 #elif defined(RT_OS_LINUX)
 # ifdef VBOX_WITH_ALSA
-                adt = AudioDriverType_Alsa;
+                adt = AudioDriverType_ALSA;
 # elif defined(VBOX_WITH_PULSE)
                 adt = AudioDriverType_Pulse;
 # else
