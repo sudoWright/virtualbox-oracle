@@ -1,12 +1,10 @@
+/* $Revision: 42385 $ */
 /** @file cbinding.h
- *
  * C binding for XPCOM.
- *
- * $Id: cbinding.h 42374 2009-02-03 10:52:11Z noreply@oracle.com $
  */
 
-#ifndef __cbinding_h__
-#define __cbinding_h__
+#ifndef ___cbinding_h
+#define ___cbinding_h
 
 /*
  * Copyright (C) 2009 Sun Microsystems, Inc.
@@ -57,4 +55,5 @@ VBOXXPCOMC_DECL(void) VBoxStrFree(char *pszString);
 }
 #endif
 
-#endif /* __cbinding_h__ */
+#endif /* !___cbinding_h */
+
