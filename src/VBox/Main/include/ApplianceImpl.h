@@ -1,4 +1,4 @@
-/* $Id: ApplianceImpl.h 42438 2009-02-04 15:01:28Z noreply@oracle.com $ */
+/* $Id: ApplianceImpl.h 42441 2009-02-04 16:25:29Z noreply@oracle.com $ */
 
 /** @file
  *
@@ -148,6 +148,7 @@ public:
                               ComSafeArrayOut(BSTR, aOrigValues),
                               ComSafeArrayOut(BSTR, aConfigValues),
                               ComSafeArrayOut(BSTR, aExtraConfigValues));
+    STDMETHOD(DisableItem)(ULONG index);
     STDMETHOD(SetFinalValues)(ComSafeArrayIn(IN_BSTR, aFinalValues));
 
     /* public methods only for internal purposes */
