@@ -1,4 +1,4 @@
-/* $Id: VBoxManageDisk.cpp 41882 2009-01-21 16:53:45Z klaus.espenlaub@oracle.com $ */
+/* $Id: VBoxManageDisk.cpp 42461 2009-02-05 16:08:49Z noreply@oracle.com $ */
 /** @file
  * VBoxManage - The disk delated commands.
  */
@@ -27,6 +27,7 @@
 #include <VBox/com/com.h>
 #include <VBox/com/array.h>
 #include <VBox/com/ErrorInfo.h>
+#include <VBox/com/errorprint2.h>
 #include <VBox/com/VirtualBox.h>
 
 #include <iprt/asm.h>
