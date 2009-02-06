@@ -1,3 +1,5 @@
+/* $Id: ErrorInfo.cpp 42501 2009-02-06 16:21:41Z noreply@oracle.com $ */
+
 /** @file
  *
  * ErrorInfo class definition
