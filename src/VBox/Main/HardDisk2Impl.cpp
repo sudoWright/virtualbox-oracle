@@ -1,4 +1,4 @@
-/* $Id: HardDisk2Impl.cpp 42503 2009-02-06 16:35:42Z noreply@oracle.com $ */
+/* $Id: HardDisk2Impl.cpp 42504 2009-02-06 16:41:43Z noreply@oracle.com $ */
 
 /** @file
  *
@@ -32,7 +32,6 @@
 #include <VBox/com/SupportErrorInfo.h>
 
 #include <VBox/err.h>
-#include <VBox/settings.h>
 
 #include <iprt/param.h>
 #include <iprt/path.h>
