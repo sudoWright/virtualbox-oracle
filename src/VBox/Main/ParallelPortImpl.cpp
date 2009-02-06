@@ -1,4 +1,4 @@
-/* $Id: ParallelPortImpl.cpp 40436 2008-12-05 17:20:00Z noreply@oracle.com $ */
+/* $Id: ParallelPortImpl.cpp 42503 2009-02-06 16:35:42Z noreply@oracle.com $ */
 /** @file
  * VirtualBox COM class implementation
  */
@@ -26,6 +26,8 @@
 
 #include <iprt/string.h>
 #include <iprt/cpputils.h>
+
+#include <VBox/settings.h>
 
 // constructor / destructor
 /////////////////////////////////////////////////////////////////////////////
