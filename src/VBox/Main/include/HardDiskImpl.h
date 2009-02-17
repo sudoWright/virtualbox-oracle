@@ -1,4 +1,4 @@
-/* $Id: HardDiskImpl.h 42975 2009-02-17 17:00:56Z noreply@oracle.com $ */
+/* $Id: HardDiskImpl.h 42982 2009-02-17 19:07:37Z klaus.espenlaub@oracle.com $ */
 
 /** @file
  *
@@ -32,7 +32,7 @@
 
 #include <VBox/com/SupportErrorInfo.h>
 
-#include <VBox/VBoxHDD-new.h>
+#include <VBox/VBoxHDD.h>
 
 #include <map>
 
