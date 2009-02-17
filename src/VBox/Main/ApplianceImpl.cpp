@@ -1,4 +1,4 @@
-/* $Id: ApplianceImpl.cpp 42933 2009-02-17 12:28:06Z noreply@oracle.com $ */
+/* $Id: ApplianceImpl.cpp 42934 2009-02-17 12:33:18Z noreply@oracle.com $ */
 /** @file
  *
  * IAppliance and IVirtualSystem COM class implementations
@@ -2380,7 +2380,7 @@ std::list<VirtualSystemDescriptionEntry*> VirtualSystemDescription::findByType(V
          ++it)
     {
         if (it->type == aType)
-            vsd.push_back(pThis);
+            vsd.push_back(&(*it));
     }
 
     return vsd;
