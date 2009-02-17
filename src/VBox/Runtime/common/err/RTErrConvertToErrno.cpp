@@ -1,4 +1,4 @@
-/* $Rev: 42908 $ */
+/* $Rev: 42910 $ */
 /** @file
  * IPRT - Convert iprt status codes to errno.
  */
@@ -441,7 +441,11 @@ RTDECL(int) RTErrConvertToErrno(int iErr)
 
         default:
             AssertMsgFailed(("Unhandled error code %Rrc\n", iErr));
+#ifdef EPROTO
             return EPROTO;
+#else
+            return EINVAL;
+#endif
     }
 }
 
