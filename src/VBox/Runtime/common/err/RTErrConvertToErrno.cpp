@@ -1,4 +1,4 @@
-/* $Rev: 42905 $ */
+/* $Rev: 42908 $ */
 /** @file
  * IPRT - Convert iprt status codes to errno.
  */
@@ -91,7 +91,7 @@ RTDECL(int) RTErrConvertToErrno(int iErr)
         case VERR_INVALID_HANDLE:                   return EBADF;
 #endif
 #ifdef ECHILD
-        case VERR_PROCESS_NOT_FOUND:                return ECHILD;
+        //case VERR_PROCESS_NOT_FOUND:                return ECHILD;
 #endif
 #ifdef EAGAIN
         case VERR_TRY_AGAIN:                        return EAGAIN;
