@@ -1,4 +1,4 @@
-/* $Id: HostImpl.h 41968 2009-01-23 12:46:45Z aleksey.ilyushin@oracle.com $ */
+/* $Id: HostImpl.h 43063 2009-02-18 18:27:52Z noreply@oracle.com $ */
 /** @file
  * Implemenation of IHost.
  */
@@ -98,6 +98,8 @@ public:
 
     // IHost methods
 #ifdef RT_OS_WINDOWS
+    STDMETHOD(COMGETTER(TapInterfaces))(ComSafeArrayOut (IHostNetworkInterface *, aNetworkInterfaces));
+
     STDMETHOD(CreateHostNetworkInterface) (IN_BSTR aName,
                                            IHostNetworkInterface **aHostNetworkInterface,
                                            IProgress **aProgress);
