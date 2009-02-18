@@ -1,4 +1,4 @@
-/* $Id: ApplianceImpl.h 42663 2009-02-11 14:12:11Z noreply@oracle.com $ */
+/* $Id: ApplianceImpl.h 43074 2009-02-18 20:32:10Z noreply@oracle.com $ */
 
 /** @file
  *
@@ -82,7 +82,7 @@ public:
     /* private instance data */
 private:
     /** weak VirtualBox parent */
-    const ComObjPtr <VirtualBox, ComWeakRef> mVirtualBox;
+    VirtualBox*         mVirtualBox;
 
     struct Task; /* Worker thread for import */
 
