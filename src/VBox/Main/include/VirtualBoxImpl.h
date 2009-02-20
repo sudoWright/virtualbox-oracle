@@ -1,4 +1,4 @@
-/* $Id: VirtualBoxImpl.h 42975 2009-02-17 17:00:56Z noreply@oracle.com $ */
+/* $Id: VirtualBoxImpl.h 43132 2009-02-20 09:14:28Z noreply@oracle.com $ */
 
 /** @file
  *
@@ -130,7 +130,7 @@ public:
     STDMETHOD(COMGETTER(FloppyImages)) (ComSafeArrayOut (IFloppyImage *, aFloppyImages));
     STDMETHOD(COMGETTER(ProgressOperations)) (ComSafeArrayOut (IProgress *, aOperations));
     STDMETHOD(COMGETTER(GuestOSTypes)) (IGuestOSTypeCollection **aGuestOSTypes);
-    STDMETHOD(COMGETTER(SharedFolders)) (ISharedFolderCollection **aSharedFolders);
+    STDMETHOD(COMGETTER(SharedFolders)) (ComSafeArrayOut (ISharedFolder *, aSharedFolders));
     STDMETHOD(COMGETTER(PerformanceCollector)) (IPerformanceCollector **aPerformanceCollector);
 
     /* IVirtualBox methods */

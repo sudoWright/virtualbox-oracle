@@ -1,4 +1,4 @@
-/* $Id: ConsoleImpl.h 41271 2008-12-19 18:28:27Z noreply@oracle.com $ */
+/* $Id: ConsoleImpl.h 43132 2009-02-20 09:14:28Z noreply@oracle.com $ */
 
 /** @file
  *
@@ -117,7 +117,7 @@ public:
     STDMETHOD(COMGETTER(USBDevices)) (IUSBDeviceCollection **aUSBDevices);
     STDMETHOD(COMGETTER(RemoteUSBDevices)) (IHostUSBDeviceCollection **aRemoteUSBDevices);
     STDMETHOD(COMGETTER(RemoteDisplayInfo)) (IRemoteDisplayInfo **aRemoteDisplayInfo);
-    STDMETHOD(COMGETTER(SharedFolders)) (ISharedFolderCollection **aSharedFolders);
+    STDMETHOD(COMGETTER(SharedFolders)) (ComSafeArrayOut (ISharedFolder *, aSharedFolders));
 
     // IConsole methods
     STDMETHOD(PowerUp) (IProgress **aProgress);
