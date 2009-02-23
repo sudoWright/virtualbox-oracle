@@ -1,4 +1,4 @@
-/* $Id: RTProcIsRunningByName-generic.cpp 43191 2009-02-23 09:55:20Z noreply@oracle.com $ */
+/* $Id: RTProcIsRunningByName-generic.cpp 43209 2009-02-23 12:27:38Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - RTProcIsRunningByName, generic stub.
  */
@@ -31,7 +31,6 @@
 /*******************************************************************************
 *   Header Files                                                               *
 *******************************************************************************/
-#include <iprt/string.h>
 #include <iprt/process.h>
 
 
