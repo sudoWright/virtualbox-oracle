@@ -1,4 +1,4 @@
-/* $Id: VBoxManageInfo.cpp 43608 2009-03-03 09:16:15Z noreply@oracle.com $ */
+/* $Id: VBoxManageInfo.cpp 43635 2009-03-03 13:28:12Z noreply@oracle.com $ */
 /** @file
  * VBoxManage - The 'showvminfo' command and helper routines.
  */
@@ -682,7 +682,7 @@ HRESULT showVMInfo (ComPtr<IVirtualBox> virtualBox,
                             strAttachment = "NAT";
                         break;
                     }
-                    case NetworkAttachmentType_HostInterface:
+                    case NetworkAttachmentType_Bridged:
                     {
                         Bstr strHostIfDev;
                         nic->COMGETTER(HostInterface)(strHostIfDev.asOutParam());
