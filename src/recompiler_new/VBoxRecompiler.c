@@ -1,4 +1,4 @@
-/* $Id: VBoxRecompiler.c 43584 2009-03-02 13:55:31Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxRecompiler.c 43634 2009-03-03 13:16:06Z noreply@oracle.com $ */
 /** @file
  * VBox Recompiler - QEMU.
  */
@@ -5071,4 +5071,3 @@ void *memcpy(void *dst, const void *src, size_t size)
 void cpu_smm_update(CPUState *env)
 {
 }
-
