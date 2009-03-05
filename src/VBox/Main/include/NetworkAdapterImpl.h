@@ -1,4 +1,4 @@
-/* $Id: NetworkAdapterImpl.h 43635 2009-03-03 13:28:12Z noreply@oracle.com $ */
+/* $Id: NetworkAdapterImpl.h 43789 2009-03-05 11:00:14Z noreply@oracle.com $ */
 
 /** @file
  *
@@ -126,9 +126,9 @@ public:
 
     // INetworkAdapter methods
     STDMETHOD(AttachToNAT)();
-    STDMETHOD(AttachToBridgedNetwork)();
+    STDMETHOD(AttachToBridgedInterface)();
     STDMETHOD(AttachToInternalNetwork)();
-    STDMETHOD(AttachToHostOnlyNetwork)();
+    STDMETHOD(AttachToHostOnlyInterface)();
     STDMETHOD(Detach)();
 
     // public methods only for internal purposes
