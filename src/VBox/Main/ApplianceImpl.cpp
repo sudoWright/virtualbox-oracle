@@ -1,4 +1,4 @@
-/* $Id: ApplianceImpl.cpp 44184 2009-03-11 12:14:52Z noreply@oracle.com $ */
+/* $Id: ApplianceImpl.cpp 44190 2009-03-11 12:42:20Z noreply@oracle.com $ */
 /** @file
  *
  * IAppliance and IVirtualSystem COM class implementations.
@@ -3580,3 +3580,5 @@ STDMETHODIMP Machine::Export(IAppliance *appliance)
 
     return rc;
 }
+
+/* vi: set tabstop=4 shiftwidth=4 expandtab: */
