@@ -1,4 +1,4 @@
-/* $Id: EM.cpp 44471 2009-03-16 09:45:17Z noreply@oracle.com $ */
+/* $Id: EM.cpp 44551 2009-03-16 19:03:33Z noreply@oracle.com $ */
 /** @file
  * EM - Execution Monitor / Manager.
  */
@@ -3252,7 +3252,7 @@ static int emR3ForcedActions(PVM pVM, int rc)
          * Interrupts.
          */
         if (    !VM_FF_ISSET(pVM, VM_FF_INHIBIT_INTERRUPTS)
-            &&  (!rc || rc >= VINF_EM_RESCHEDULE_RAW)
+            &&  (!rc || rc >= VINF_EM_RESCHEDULE_HWACC)
             &&  !TRPMHasTrap(pVM) /* an interrupt could already be scheduled for dispatching in the recompiler. */
             &&  PATMAreInterruptsEnabled(pVM)
             &&  !HWACCMR3IsEventPending(pVM))
