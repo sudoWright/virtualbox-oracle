@@ -1,4 +1,4 @@
-/* $Rev: 44528 $ */
+/* $Rev: 44530 $ */
 /** @file
  * IPRT - Convert iprt status codes to errno.
  */
@@ -440,8 +440,7 @@ RTDECL(int) RTErrConvertToErrno(int iErr)
 #endif
 
         default:
-            if (iErr > -1000)  /* VBox private errors */
-                AssertMsgFailed(("Unhandled error code %Rrc\n", iErr));
+            AssertMsgFailed(("Unhandled error code %Rrc\n", iErr));
 #ifdef EPROTO
             return EPROTO;
 #else
