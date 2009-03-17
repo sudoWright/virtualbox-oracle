@@ -1,4 +1,4 @@
-/* $Id: VBoxManage.cpp 44440 2009-03-15 10:20:05Z noreply@oracle.com $ */
+/* $Id: VBoxManage.cpp 44622 2009-03-17 13:48:59Z noreply@oracle.com $ */
 /** @file
  * VBoxManage - VirtualBox's command-line interface.
  */
@@ -1725,7 +1725,7 @@ int main(int argc, char *argv[])
         { "import",           handleImportAppliance },
         { "export",           handleExportAppliance },
         { "hostonlyif",       handleHostonlyIf },
-        { "dhcpserver",       handleDhcpServer},
+        { "dhcpserver",       handleDHCPServer},
         { NULL,               NULL }
     };
 

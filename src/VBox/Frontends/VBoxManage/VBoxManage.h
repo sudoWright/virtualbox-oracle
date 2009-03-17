@@ -1,4 +1,4 @@
-/* $Id: VBoxManage.h 44440 2009-03-15 10:20:05Z noreply@oracle.com $ */
+/* $Id: VBoxManage.h 44622 2009-03-17 13:48:59Z noreply@oracle.com $ */
 /** @file
  * VBoxManage - VirtualBox command-line interface, internal header file.
  */
@@ -193,7 +193,7 @@ int handleUSBFilter(HandlerArg *a);
 int handleHostonlyIf(HandlerArg *a);
 
 /* VBoxManageHostonly.cpp */
-int handleDhcpServer(HandlerArg *a);
+int handleDHCPServer(HandlerArg *a);
 
 #endif /* !VBOX_ONLY_DOCS */
 unsigned long VBoxSVNRev();
