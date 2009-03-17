@@ -1,4 +1,4 @@
-/* $Id: DrvIntNet.cpp 44547 2009-03-16 18:46:09Z noreply@oracle.com $ */
+/* $Id: DrvIntNet.cpp 44581 2009-03-17 07:51:22Z noreply@oracle.com $ */
 /** @file
  * DrvIntNet - Internal network transport driver.
  */
@@ -1117,6 +1117,9 @@ static DECLCALLBACK(int) drvIntNetConstruct(PPDMDRVINS pDrvIns, PCFGMNODE pCfgHa
                 break;
             case kIntNetTrunkType_SrvNat:
                 dhcp.setOption(DHCPCFG_TRUNKTYPE, TRUNKTYPE_SRVNAT);
+                break;
+            default:
+                AssertFailed();
                 break;
             }
         //temporary hack for testing
