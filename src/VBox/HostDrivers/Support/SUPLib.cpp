@@ -1,4 +1,4 @@
-/* $Id: SUPLib.cpp 43082 2009-02-18 23:42:57Z knut.osmundsen@oracle.com $ */
+/* $Id: SUPLib.cpp 44877 2009-03-24 10:19:11Z noreply@oracle.com $ */
 /** @file
  * VirtualBox Support Library - Common code.
  */
@@ -322,7 +322,7 @@ SUPR3DECL(int) SUPR3Init(PSUPDRVSESSION *ppSession)
                                 ASMAtomicCmpXchgPtr((void * volatile *)&g_pSUPGlobalInfoPageR0, (void *)GipMapReq.u.Out.pGipR0, NULL);
                             }
                         }
-                        return VINF_SUCCESS;
+                        return rc;
                     }
 
                     /* bailout */
