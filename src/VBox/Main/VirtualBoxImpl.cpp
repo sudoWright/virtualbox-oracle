@@ -1,4 +1,4 @@
-/* $Id: VirtualBoxImpl.cpp 44892 2009-03-24 13:21:12Z noreply@oracle.com $ */
+/* $Id: VirtualBoxImpl.cpp 44930 2009-03-24 17:01:32Z aleksey.ilyushin@oracle.com $ */
 
 /** @file
  * Implementation of IVirtualBox in VBoxSVC.
@@ -61,6 +61,7 @@
 #include "SystemPropertiesImpl.h"
 #include "GuestOSTypeImpl.h"
 #include "Version.h"
+#include "DHCPServerRunner.h"
 #include "DHCPServerImpl.h"
 
 #include "VirtualBoxXMLUtil.h"
