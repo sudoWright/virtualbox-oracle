@@ -1,4 +1,4 @@
-/* $Id: ProgressImpl.cpp 45026 2009-03-25 19:39:08Z noreply@oracle.com $ */
+/* $Id: ProgressImpl.cpp 45027 2009-03-25 19:40:58Z noreply@oracle.com $ */
 /** @file
  *
  * VirtualBox Progress COM class implementation
@@ -519,15 +519,6 @@ void Progress::FinalRelease()
  * @param bstrFirstOperationDescription Description of the first operation.
  * @param ulFirstOperationWeight Weight of first sub-operation.
  * @param aId               See ProgressBase::init().
- */
-/**
- *
- * @param aParent
- * @param aInitiator
- * @param aDescription
- * @param aCancelable
- * @param aId
- * @return
  */
 HRESULT Progress::init (
 #if !defined (VBOX_COM_INPROC)
