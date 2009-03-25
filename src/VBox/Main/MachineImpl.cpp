@@ -1,4 +1,4 @@
-/* $Id: MachineImpl.cpp 44885 2009-03-24 11:20:24Z alexander.eichner@oracle.com $ */
+/* $Id: MachineImpl.cpp 44994 2009-03-25 12:59:12Z noreply@oracle.com $ */
 
 /** @file
  * Implementation of IMachine in VBoxSVC.
@@ -56,6 +56,7 @@
 #include "VirtualBoxXMLUtil.h"
 
 #include "Logging.h"
+#include "Performance.h"
 
 #include <stdio.h>
 #include <stdlib.h>

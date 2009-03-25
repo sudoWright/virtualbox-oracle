@@ -1,4 +1,4 @@
-/* $Id: PerformanceImpl.cpp 44473 2009-03-16 10:30:55Z noreply@oracle.com $ */
+/* $Id: PerformanceImpl.cpp 44994 2009-03-25 12:59:12Z noreply@oracle.com $ */
 
 /** @file
  *
@@ -33,6 +33,8 @@
 #include <vector>
 #include <algorithm>
 #include <functional>
+
+#include "Performance.h"
 
 static Bstr gMetricNames[] =
 {
