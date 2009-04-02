@@ -1,4 +1,4 @@
-/* $Id: ConsoleImpl.h 45132 2009-03-26 19:35:20Z alexander.eichner@oracle.com $ */
+/* $Id: ConsoleImpl.h 45568 2009-04-02 15:38:31Z knut.osmundsen@oracle.com $ */
 
 /** @file
  *
@@ -457,9 +457,9 @@ private:
                         const char *pszFormat, va_list args);
 
     static DECLCALLBACK(void)
-    setVMRuntimeErrorCallback (PVM pVM, void *pvUser, bool fFatal,
-                               const char *pszErrorID,
-                               const char *pszFormat, va_list args);
+    setVMRuntimeErrorCallback (PVM pVM, void *pvUser, uint32_t fFatal,
+                               const char *pszErrorId,
+                               const char *pszFormat, va_list va);
 
     HRESULT                     captureUSBDevices (PVM pVM);
     void                        detachAllUSBDevices (bool aDone);
