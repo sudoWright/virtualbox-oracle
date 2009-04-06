@@ -1,4 +1,4 @@
-/* $Id: ConsoleImpl.cpp 45568 2009-04-02 15:38:31Z knut.osmundsen@oracle.com $ */
+/* $Id: ConsoleImpl.cpp 45731 2009-04-06 13:36:45Z knut.osmundsen@oracle.com $ */
 
 /** @file
  *
@@ -6498,6 +6498,10 @@ DECLCALLBACK (int) Console::powerUpThread (RTTHREAD Thread, void *pvUser)
                 HRESULT rc2 = console->powerDown();
                 AssertComRC (rc2);
             }
+
+            /* Deregister the VMSetError callback. */
+            VMR3AtErrorDeregister(pVM, task->mSetVMErrorCallback, task.get());
+            /** @todo register another VMSetError callback? */
         }
         else
         {
