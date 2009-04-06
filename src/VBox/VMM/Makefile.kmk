@@ -1,4 +1,4 @@
-# $Id: Makefile.kmk 45592 2009-04-02 19:44:18Z knut.osmundsen@oracle.com $
+# $Id: Makefile.kmk 45769 2009-04-06 18:40:52Z knut.osmundsen@oracle.com $
 ## @file
 # Top-level makefile for the VMM.
 #
@@ -70,6 +70,7 @@ VMMR3_SOURCES   = \
 	MMHeap.cpp \
 	MMHyper.cpp \
 	MMPagePool.cpp \
+	MMUkHeap.cpp \
 	PDM.cpp \
 	PDMDevice.cpp \
 	PDMDevHlp.cpp \
