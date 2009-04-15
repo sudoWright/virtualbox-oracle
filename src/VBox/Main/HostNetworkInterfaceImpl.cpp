@@ -1,4 +1,4 @@
-/* $Id: HostNetworkInterfaceImpl.cpp 45497 2009-04-01 12:15:40Z aleksey.ilyushin@oracle.com $ */
+/* $Id: HostNetworkInterfaceImpl.cpp 45987 2009-04-15 22:19:29Z alexander.eichner@oracle.com $ */
 
 /** @file
  *
@@ -27,6 +27,9 @@
 
 #ifndef RT_OS_WINDOWS
 #include <arpa/inet.h>
+# ifdef RT_OS_FREEBSD
+#  include <netinet/in.h> /* INADDR_NONE */
+# endif
 #endif /* RT_OS_WINDOWS */
 
 // constructor / destructor
