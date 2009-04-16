@@ -1,4 +1,4 @@
-/* $Id: PGMInternal.h 46003 2009-04-16 11:41:38Z noreply@oracle.com $ */
+/* $Id: PGMInternal.h 46011 2009-04-16 12:21:00Z noreply@oracle.com $ */
 /** @file
  * PGM - Internal header file.
  */
@@ -2147,7 +2147,7 @@ typedef struct PGM
      * Whether to preallocate all the guest RAM or not. */
     bool                            fRamPreAlloc;
     /** Alignment padding. */
-    bool                            afAlignment0[3];
+    bool                            afAlignment0[7];
 
     /** What needs syncing (PGM_SYNC_*).
      * This is used to queue operations for PGMSyncCR3, PGMInvalidatePage,
