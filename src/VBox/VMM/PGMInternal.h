@@ -1,4 +1,4 @@
-/* $Id: PGMInternal.h 46065 2009-04-17 07:33:19Z noreply@oracle.com $ */
+/* $Id: PGMInternal.h 46067 2009-04-17 08:07:08Z noreply@oracle.com $ */
 /** @file
  * PGM - Internal header file.
  */
@@ -3235,7 +3235,7 @@ DECLINLINE(int) pgmR0DynMapHCPageInlined(PPGM pPGM, RTHCPHYS HCPhys, void **ppv)
     }
     else
     {
-        STAM_COUNTER_INC(&pPGMCPU->StatR0DynMapHCPageInlMisses);
+        STAM_COUNTER_INC(&pPGM->StatR0DynMapHCPageInlMisses);
         pgmR0DynMapHCPageCommon(pVM, pSet, HCPhys, ppv);
     }
 
