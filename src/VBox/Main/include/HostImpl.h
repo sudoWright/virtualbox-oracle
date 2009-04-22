@@ -1,4 +1,4 @@
-/* $Id: HostImpl.h 44185 2009-03-11 12:15:33Z noreply@oracle.com $ */
+/* $Id: HostImpl.h 46313 2009-04-22 17:22:45Z aleksey.ilyushin@oracle.com $ */
 /** @file
  * Implemenation of IHost.
  */
@@ -93,7 +93,7 @@ public:
     STDMETHOD(COMGETTER(UTCTime))(LONG64 *aUTCTime);
 
     // IHost methods
-#ifdef RT_OS_WINDOWS
+#if defined(RT_OS_WINDOWS) || defined(RT_OS_LINUX) || defined(RT_OS_DARWIN)
 
     STDMETHOD(CreateHostOnlyNetworkInterface) (IHostNetworkInterface **aHostNetworkInterface,
                                            IProgress **aProgress);
