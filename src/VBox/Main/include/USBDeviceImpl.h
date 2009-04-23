@@ -1,4 +1,4 @@
-/* $Id: USBDeviceImpl.h 43992 2009-03-09 09:34:22Z noreply@oracle.com $ */
+/* $Id: USBDeviceImpl.h 46348 2009-04-23 09:21:43Z noreply@oracle.com $ */
 
 /** @file
  * Header file for the OUSBDevice (IUSBDevice) class, VBoxC.
@@ -35,7 +35,7 @@ class ATL_NO_VTABLE OUSBDevice :
     public VirtualBoxBaseNEXT,
     public VirtualBoxSupportErrorInfoImpl<OUSBDevice, IUSBDevice>,
     public VirtualBoxSupportTranslation<OUSBDevice>,
-    public IUSBDevice
+    VBOX_SCRIPTABLE_IMPL(IUSBDevice)
 {
 public:
 

@@ -1,4 +1,4 @@
-/* $Id: DHCPServerImpl.h 44930 2009-03-24 17:01:32Z aleksey.ilyushin@oracle.com $ */
+/* $Id: DHCPServerImpl.h 46348 2009-04-23 09:21:43Z noreply@oracle.com $ */
 
 /** @file
  *
@@ -37,7 +37,7 @@ class ATL_NO_VTABLE DHCPServer :
     public VirtualBoxBaseNEXT,
     public VirtualBoxSupportErrorInfoImpl <DHCPServer, IDHCPServer>,
     public VirtualBoxSupportTranslation <DHCPServer>,
-    public IDHCPServer
+    VBOX_SCRIPTABLE_IMPL(IDHCPServer)
 {
 public:
 

@@ -1,4 +1,4 @@
-/* $Id: HostNetworkInterfaceImpl.h 45497 2009-04-01 12:15:40Z aleksey.ilyushin@oracle.com $ */
+/* $Id: HostNetworkInterfaceImpl.h 46348 2009-04-23 09:21:43Z noreply@oracle.com $ */
 
 /** @file
  *
@@ -37,7 +37,7 @@ class ATL_NO_VTABLE HostNetworkInterface :
     public VirtualBoxBaseNEXT,
     public VirtualBoxSupportErrorInfoImpl <HostNetworkInterface, IHostNetworkInterface>,
     public VirtualBoxSupportTranslation <HostNetworkInterface>,
-    public IHostNetworkInterface
+    VBOX_SCRIPTABLE_IMPL(IHostNetworkInterface)
 {
 public:
 

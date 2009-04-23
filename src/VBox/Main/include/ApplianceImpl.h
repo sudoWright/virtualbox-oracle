@@ -1,4 +1,4 @@
-/* $Id: ApplianceImpl.h 45536 2009-04-02 10:00:48Z noreply@oracle.com $ */
+/* $Id: ApplianceImpl.h 46348 2009-04-23 09:21:43Z noreply@oracle.com $ */
 
 /** @file
  *
@@ -39,7 +39,7 @@ class ATL_NO_VTABLE Appliance :
     public VirtualBoxBaseWithChildrenNEXT,
     public VirtualBoxSupportErrorInfoImpl <Appliance, IAppliance>,
     public VirtualBoxSupportTranslation <Appliance>,
-    public IAppliance
+    VBOX_SCRIPTABLE_IMPL(IAppliance)
 {
 public:
     VIRTUALBOXBASE_ADD_ERRORINFO_SUPPORT (Appliance)
@@ -125,7 +125,7 @@ class ATL_NO_VTABLE VirtualSystemDescription :
     public VirtualBoxBaseWithChildrenNEXT,
     public VirtualBoxSupportErrorInfoImpl <VirtualSystemDescription, IVirtualSystemDescription>,
     public VirtualBoxSupportTranslation <VirtualSystemDescription>,
-    public IVirtualSystemDescription
+    VBOX_SCRIPTABLE_IMPL(IVirtualSystemDescription)
 {
     friend class Appliance;
 

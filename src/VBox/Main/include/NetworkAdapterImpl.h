@@ -1,4 +1,4 @@
-/* $Id: NetworkAdapterImpl.h 45835 2009-04-07 15:42:32Z noreply@oracle.com $ */
+/* $Id: NetworkAdapterImpl.h 46348 2009-04-23 09:21:43Z noreply@oracle.com $ */
 
 /** @file
  *
@@ -33,7 +33,7 @@ class ATL_NO_VTABLE NetworkAdapter :
     public VirtualBoxBaseNEXT,
     public VirtualBoxSupportErrorInfoImpl <NetworkAdapter, INetworkAdapter>,
     public VirtualBoxSupportTranslation <NetworkAdapter>,
-    public INetworkAdapter
+    VBOX_SCRIPTABLE_IMPL(INetworkAdapter)
 {
 public:
 

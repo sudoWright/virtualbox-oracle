@@ -1,4 +1,4 @@
-/* $Id: VRDPServerImpl.h 40436 2008-12-05 17:20:00Z noreply@oracle.com $ */
+/* $Id: VRDPServerImpl.h 46348 2009-04-23 09:21:43Z noreply@oracle.com $ */
 
 /** @file
  *
@@ -34,7 +34,7 @@ class ATL_NO_VTABLE VRDPServer :
     public VirtualBoxBaseNEXT,
     public VirtualBoxSupportErrorInfoImpl <VRDPServer, IVRDPServer>,
     public VirtualBoxSupportTranslation <VRDPServer>,
-    public IVRDPServer
+    VBOX_SCRIPTABLE_IMPL(IVRDPServer)
 {
 public:
 
