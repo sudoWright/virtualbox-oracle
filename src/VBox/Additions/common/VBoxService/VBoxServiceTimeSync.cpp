@@ -1,4 +1,4 @@
-/** $Id: VBoxServiceTimeSync.cpp 46796 2009-05-04 11:49:30Z andreas.loeffler@oracle.com $ */
+/** $Id: VBoxServiceTimeSync.cpp 46877 2009-05-05 13:23:32Z andreas.loeffler@oracle.com $ */
 /** @file
  * VBoxService - Guest Additions TimeSync Service.
  */
