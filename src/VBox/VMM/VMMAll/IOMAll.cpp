@@ -1,4 +1,4 @@
-/* $Id: IOMAll.cpp 47005 2009-05-07 10:08:32Z noreply@oracle.com $ */
+/* $Id: IOMAll.cpp 47021 2009-05-07 13:29:40Z noreply@oracle.com $ */
 /** @file
  * IOM - Input / Output Monitor - Any Context.
  */
@@ -49,7 +49,7 @@
  */
 int iomLock(PVM pVM)
 {
-    Assert(!PGMIsLockOwner(pVM));
+    Assert(pVM->cCPUs == 1 || !PGMIsLockOwner(pVM));
     int rc = PDMCritSectEnter(&pVM->iom.s.EmtLock, VERR_SEM_BUSY);
     return rc;
 }
