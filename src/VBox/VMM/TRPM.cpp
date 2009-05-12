@@ -1,4 +1,4 @@
-/* $Id: TRPM.cpp 46737 2009-05-01 12:41:07Z knut.osmundsen@oracle.com $ */
+/* $Id: TRPM.cpp 47224 2009-05-12 15:22:14Z noreply@oracle.com $ */
 /** @file
  * TRPM - The Trap Monitor.
  */
@@ -1450,7 +1450,7 @@ VMMR3DECL(int) TRPMR3InjectEvent(PVM pVM, PVMCPU pVCpu, TRPMEVENT enmEvent)
 
 # ifdef LOG_ENABLED
         DBGFR3InfoLog(pVM, "cpumguest", "TRPMInject");
-        DBGFR3DisasInstrCurrentLog(pVM, "TRPMInject");
+        DBGFR3DisasInstrCurrentLog(pVCpu, "TRPMInject");
 # endif
 
         uint8_t u8Interrupt;
