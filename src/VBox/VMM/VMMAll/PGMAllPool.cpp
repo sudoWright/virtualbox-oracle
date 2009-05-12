@@ -1,4 +1,4 @@
-/* $Id: PGMAllPool.cpp 47209 2009-05-12 14:11:47Z noreply@oracle.com $ */
+/* $Id: PGMAllPool.cpp 47211 2009-05-12 14:16:11Z noreply@oracle.com $ */
 /** @file
  * PGM Shadow Page Pool.
  */
@@ -3863,7 +3863,7 @@ static void pgmPoolFlushAllInt(PPGMPOOL pPool)
         pPage->iAgeNext  = NIL_PGMPOOL_IDX;
         pPage->iAgePrev  = NIL_PGMPOOL_IDX;
 #endif
-        pPage->fLocked   = false;
+        pPage->cLocked   = 0;
     }
     pPool->aPages[pPool->cCurPages - 1].iNext = NIL_PGMPOOL_IDX;
     pPool->iFreeHead = PGMPOOL_IDX_FIRST;
