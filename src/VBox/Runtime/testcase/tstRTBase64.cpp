@@ -1,4 +1,4 @@
-/* $Id: tstBase64.cpp 47648 2009-05-23 22:07:30Z knut.osmundsen@oracle.com $ */
+/* $Id: tstRTBase64.cpp 47649 2009-05-23 22:09:23Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT Testcase - Base64.
  */
