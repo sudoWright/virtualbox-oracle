@@ -1,4 +1,4 @@
-/* $Id: PGMInternal.h 47907 2009-05-29 07:44:12Z noreply@oracle.com $ */
+/* $Id: PGMInternal.h 47908 2009-05-29 08:12:12Z noreply@oracle.com $ */
 /** @file
  * PGM - Internal header file.
  */
@@ -1579,7 +1579,9 @@ typedef enum PGMPOOLKIND
     PGMPOOLKIND_LAST = PGMPOOLKIND_ROOT_NESTED
 } PGMPOOLKIND;
 
-
+/**
+ * The access attributes of the page; only applies to big pages.
+ */
 typedef enum
 {
     PGMPOOLACCESS_DONTCARE = 0,
