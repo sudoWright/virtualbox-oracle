@@ -1,4 +1,4 @@
-/* $Id: CPUM.cpp 48066 2009-06-03 09:04:49Z noreply@oracle.com $ */
+/* $Id: CPUM.cpp 48079 2009-06-03 12:30:46Z noreply@oracle.com $ */
 /** @file
  * CPUM - CPU Monitor / Manager.
  */
@@ -62,6 +62,8 @@
 #include <iprt/mp.h>
 #include <iprt/cpuset.h>
 
+/* Enable multi-core VCPUs. */
+#define VBOX_WITH_MULTI_CORE
 
 /*******************************************************************************
 *   Defined Constants And Macros                                               *
