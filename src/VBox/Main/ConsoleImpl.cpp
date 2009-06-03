@@ -1,4 +1,4 @@
-/* $Id: ConsoleImpl.cpp 48055 2009-06-03 08:11:42Z noreply@oracle.com $ */
+/* $Id: ConsoleImpl.cpp 48062 2009-06-03 08:40:29Z noreply@oracle.com $ */
 
 /** @file
  *
@@ -6917,7 +6917,7 @@ DECLCALLBACK (int) Console::saveStateThread (RTTHREAD Thread, void *pvUser)
         rc = task->mServerProgress->WaitForCompletion (-1);
         if (SUCCEEDED (rc))
         {
-            ULONG iRc = S_OK;
+            LONG iRc = S_OK;
             rc = task->mServerProgress->COMGETTER(ResultCode) (&iRc);
             if (SUCCEEDED (rc))
                 rc = iRc;
