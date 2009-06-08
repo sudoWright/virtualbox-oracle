@@ -1,4 +1,4 @@
-/* $Revision: 40150 $ */
+/* $Revision: 48287 $ */
 /** @file
  * IPRT - Ring-0 Memory Objects.
  */
@@ -35,7 +35,7 @@
 #include <iprt/assert.h>
 #include "internal/magics.h"
 
-__BEGIN_DECLS
+RT_BEGIN_DECLS
 
 /** @defgroup grp_rt_memobj_int Internals.
  * @ingroup grp_rt_memobj
@@ -426,7 +426,7 @@ void rtR0MemObjDelete(PRTR0MEMOBJINTERNAL pMem);
 
 /** @} */
 
-__END_DECLS
+RT_END_DECLS
 
 #endif
 
