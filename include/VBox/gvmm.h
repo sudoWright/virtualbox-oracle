@@ -1,4 +1,4 @@
-/* $Id: gvmm.h 48286 2009-06-08 00:15:05Z knut.osmundsen@oracle.com $ */
+/* $Id: gvmm.h 48298 2009-06-08 00:43:21Z knut.osmundsen@oracle.com $ */
 /** @file
  * GVMM - The Global VM Manager.
  */
@@ -35,7 +35,7 @@
 #include <VBox/types.h>
 #include <VBox/sup.h>
 
-RT_BEGIN_DECLS
+RT_C_DECLS_BEGIN
 
 /** @defgroup grp_GVMM  GVMM - The Global VM Manager.
  * @{
@@ -237,7 +237,7 @@ GVMMR0DECL(int)     GVMMR0ResetStatisticsReq(PVM pVM, PGVMMRESETSTATISTICSSREQ p
 
 /** @} */
 
-RT_END_DECLS
+RT_C_DECLS_END
 
 #endif
 

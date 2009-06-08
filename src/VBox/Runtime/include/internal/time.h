@@ -1,4 +1,4 @@
-/* $Id: time.h 48287 2009-06-08 00:17:43Z knut.osmundsen@oracle.com $ */
+/* $Id: time.h 48298 2009-06-08 00:43:21Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Internal RTTime header
  */
@@ -33,7 +33,7 @@
 
 #include <iprt/types.h>
 
-RT_BEGIN_DECLS
+RT_C_DECLS_BEGIN
 
 #if defined(IN_RING3) || defined(IN_RC)
 
@@ -43,6 +43,6 @@ extern uint64_t g_u64ProgramStartMilliTS;
 
 #endif
 
-RT_END_DECLS
+RT_C_DECLS_END
 
 #endif
