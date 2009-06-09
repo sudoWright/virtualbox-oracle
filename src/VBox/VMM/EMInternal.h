@@ -1,4 +1,4 @@
-/* $Id: EMInternal.h 48298 2009-06-08 00:43:21Z knut.osmundsen@oracle.com $ */
+/* $Id: EMInternal.h 48373 2009-06-09 11:21:44Z noreply@oracle.com $ */
 /** @file
  * EM - Internal header file.
  */
@@ -290,7 +290,7 @@ typedef struct EM
     /** Id of the VCPU that last executed code in the recompiler. */
     VMCPUID                 idLastRemCpu;
 
-    /** PGM critical section.
+    /** REM critical section.
      * This protects recompiler usage
      */
     PDMCRITSECT             CritSectREM;
