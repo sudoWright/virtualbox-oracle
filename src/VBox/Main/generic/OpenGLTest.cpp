@@ -1,4 +1,4 @@
-/* $Id: OpenGLTest.cpp 48493 2009-06-12 11:30:19Z knut.osmundsen@oracle.com $ */
+/* $Id: OpenGLTest.cpp 48496 2009-06-12 11:32:43Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox host opengl support test - generic implementation.
  */
@@ -27,6 +27,7 @@
 #include <iprt/process.h>
 #include <iprt/string.h>
 #include <iprt/time.h>
+#include <iprt/thread.h>
 
 bool is3DAccelerationSupported()
 {
