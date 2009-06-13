@@ -1,4 +1,4 @@
-/* $Id: memobj-r0drv-solaris.c 48527 2009-06-13 20:13:33Z knut.osmundsen@oracle.com $ */
+/* $Id: memobj-r0drv-solaris.c 48528 2009-06-13 20:18:20Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Ring-0 Memory Objects, Solaris.
  */
@@ -139,7 +139,6 @@ int rtR0MemObjNativeAllocLow(PPRTR0MEMOBJINTERNAL ppMem, size_t cb, bool fExecut
         rtR0MemObjDelete(&pMemSolaris->Core);
         return VERR_NO_LOW_MEMORY;
     }
-    Assert(phys < (uint64_t)1 << 32);
     pMemSolaris->Core.pv = virtAddr;
     pMemSolaris->handle = NULL;
     *ppMem = &pMemSolaris->Core;
