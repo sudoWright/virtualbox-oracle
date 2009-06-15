@@ -1,4 +1,4 @@
-/* $Id: tstFork.cpp 46083 2009-04-17 13:37:54Z knut.osmundsen@oracle.com $ */
+/* $Id: tstFork.cpp 48658 2009-06-15 23:49:07Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT Testcase - fork() issues.
  */
@@ -50,14 +50,10 @@ int main()
     /*
      * Init the runtime and stuff.
      */
-    int rc;
     RTTEST hTest;
-    if (    RT_FAILURE(rc = RTR3Init())
-        ||  RT_FAILURE(rc = RTTestCreate("tstFork", &hTest)))
-    {
-        RTPrintf("tstFork: fatal initialization error: %Rrc\n", rc);
-        return 1;
-    }
+    int rc = RTTestInitAndCreate("tstFork", &hTest);
+    if (rc)
+        return rc;
     RTTestBanner(hTest);
 
 #ifdef RT_OS_WINDOWS
