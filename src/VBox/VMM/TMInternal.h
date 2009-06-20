@@ -1,4 +1,4 @@
-/* $Id: TMInternal.h 48794 2009-06-18 12:13:14Z knut.osmundsen@oracle.com $ */
+/* $Id: TMInternal.h 48849 2009-06-20 18:25:43Z knut.osmundsen@oracle.com $ */
 /** @file
  * TM - Internal header file.
  */
@@ -483,6 +483,11 @@ typedef struct TM
      * @{ */
     STAMPROFILE                 StatTimerSetRZ;
     STAMPROFILE                 StatTimerSetR3;
+    /** @} */
+    /** TMTimerSetRelative
+     * @{ */
+    STAMPROFILE                 StatTimerSetRelativeRZ;
+    STAMPROFILE                 StatTimerSetRelativeR3;
     /** @} */
     /** TMTimerStop
      * @{ */
