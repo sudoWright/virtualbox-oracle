@@ -1,4 +1,4 @@
-; $Id: VMMGC.def 48853 2009-06-20 20:57:15Z knut.osmundsen@oracle.com $
+; $Id: VMMGC.def 48963 2009-06-23 12:52:41Z noreply@oracle.com $
 ;; @file
 ; VMM Raw-mode Context DLL - Definition file.
 
@@ -27,6 +27,7 @@ EXPORTS
     CPUMGCResumeGuestV86
     PDMCritSectEnter
     PDMCritSectLeave
+    PDMCritSectIsOwner
     PDMQueueAlloc
     PDMQueueFlush
     PDMQueueInsert
