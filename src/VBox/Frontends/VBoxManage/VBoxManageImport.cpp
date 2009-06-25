@@ -1,4 +1,4 @@
-/* $Id: VBoxManageImport.cpp 48065 2009-06-03 08:54:39Z noreply@oracle.com $ */
+/* $Id: VBoxManageImport.cpp 49096 2009-06-25 11:53:37Z klaus.espenlaub@oracle.com $ */
 /** @file
  * VBoxManage - The appliance-related commands.
  */
@@ -30,7 +30,7 @@
 #include <VBox/com/Guid.h>
 #include <VBox/com/array.h>
 #include <VBox/com/ErrorInfo.h>
-#include <VBox/com/errorprint2.h>
+#include <VBox/com/errorprint.h>
 #include <VBox/com/EventQueue.h>
 
 #include <VBox/com/VirtualBox.h>

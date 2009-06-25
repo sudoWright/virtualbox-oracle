@@ -1,4 +1,4 @@
-/* $Id: VBoxManageSnapshot.cpp 48065 2009-06-03 08:54:39Z noreply@oracle.com $ */
+/* $Id: VBoxManageSnapshot.cpp 49096 2009-06-25 11:53:37Z klaus.espenlaub@oracle.com $ */
 /** @file
  * VBoxManage - The 'snapshot' command.
  */
@@ -25,7 +25,7 @@
 #include <VBox/com/com.h>
 #include <VBox/com/string.h>
 #include <VBox/com/ErrorInfo.h>
-#include <VBox/com/errorprint2.h>
+#include <VBox/com/errorprint.h>
 
 #include <VBox/com/VirtualBox.h>
 

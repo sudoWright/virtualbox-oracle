@@ -1,4 +1,4 @@
-/* $Id: VBoxManageDHCPServer.cpp 45095 2009-03-26 15:29:16Z noreply@oracle.com $ */
+/* $Id: VBoxManageDHCPServer.cpp 49096 2009-06-25 11:53:37Z klaus.espenlaub@oracle.com $ */
 /** @file
  * VBoxManage - Implementation of dhcpserver command.
  */
@@ -26,7 +26,7 @@
 #include <VBox/com/com.h>
 #include <VBox/com/array.h>
 #include <VBox/com/ErrorInfo.h>
-#include <VBox/com/errorprint2.h>
+#include <VBox/com/errorprint.h>
 #include <VBox/com/EventQueue.h>
 
 #include <VBox/com/VirtualBox.h>
