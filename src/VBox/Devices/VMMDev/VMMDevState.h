@@ -1,4 +1,4 @@
-/* $Id: VMMDevState.h 36992 2008-09-24 14:07:47Z noreply@oracle.com $ */
+/* $Id: VMMDevState.h 49310 2009-06-30 10:14:10Z knut.osmundsen@oracle.com $ */
 /** @file
  * VMMDev - Guest <-> VMM/Host communication device, internal header.
  */
@@ -90,7 +90,7 @@ typedef struct VMMDevState
     /** GC physical address of VMMDev RAM area */
     RTGCPHYS32 GCPhysVMMDevRAM;
 
-    /** R3 pointer to VMMDev Heap RAM area 
+    /** R3 pointer to VMMDev Heap RAM area
      */
     R3PTRTYPE(VMMDevMemory *) pVMMDevHeapR3;
     /** GC physical address of VMMDev Heap RAM area */
@@ -190,6 +190,8 @@ typedef struct VMMDevState
         R3PTRTYPE(PPDMILEDCONNECTORS)       pLedsConnector;
     } SharedFolders;
 
+    /** The critical section for this device. */
+    PDMCRITSECT CritSect;
 } VMMDevState;
 
 void VMMDevNotifyGuest (VMMDevState *pVMMDevState, uint32_t u32EventMask);
