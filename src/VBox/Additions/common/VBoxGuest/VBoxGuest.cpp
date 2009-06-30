@@ -1,4 +1,4 @@
-/* $Id: VBoxGuest.cpp 49249 2009-06-29 13:35:52Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxGuest.cpp 49321 2009-06-30 14:23:40Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxGuest - Guest Additions Driver.
  */
@@ -1449,4 +1449,5 @@ bool VBoxGuestCommonISR(PVBOXGUESTDEVEXT pDevExt)
 
     return fOurIrq;
 }
+
 
