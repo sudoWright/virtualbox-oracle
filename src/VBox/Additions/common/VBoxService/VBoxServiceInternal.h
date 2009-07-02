@@ -1,4 +1,4 @@
-/* $Id: VBoxServiceInternal.h 48298 2009-06-08 00:43:21Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxServiceInternal.h 49459 2009-07-02 14:11:15Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxService - Guest Additions Services.
  */
@@ -83,6 +83,8 @@ typedef struct
 
     /**
      * Does termination cleanups.
+     *
+     * @remarks This may be called even if pfnInit hasn't been called!
      */
     DECLCALLBACKMEMBER(void, pfnTerm)(void);
 } VBOXSERVICE;
