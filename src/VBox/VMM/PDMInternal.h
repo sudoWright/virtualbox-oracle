@@ -1,4 +1,4 @@
-/* $Id: PDMInternal.h 49450 2009-07-02 13:45:03Z noreply@oracle.com $ */
+/* $Id: PDMInternal.h 49452 2009-07-02 13:52:46Z noreply@oracle.com $ */
 /** @file
  * PDM - Internal header file.
  */
@@ -229,10 +229,8 @@ typedef struct PDMCRITSECTINT
     STAMCOUNTER                     StatContentionRZUnlock;
     /** R3 lock contention. */
     STAMCOUNTER                     StatContentionR3;
-#ifdef VBOX_WITH_STATISTICS
     /** Profiling the time the section is locked. */
     STAMPROFILEADV                  StatLocked;
-#endif
 } PDMCRITSECTINT;
 typedef PDMCRITSECTINT *PPDMCRITSECTINT;
 
