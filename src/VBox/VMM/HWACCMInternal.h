@@ -1,4 +1,4 @@
-/* $Id: HWACCMInternal.h 49517 2009-07-03 14:50:36Z noreply@oracle.com $ */
+/* $Id: HWACCMInternal.h 49520 2009-07-03 15:07:16Z noreply@oracle.com $ */
 /** @file
  * HWACCM - Internal header file.
  */
@@ -607,15 +607,9 @@ typedef struct HWACCMCPU
                 unsigned        uPort;
                 unsigned        uAndVal;
                 unsigned        cbSize;
-            } Read;
-            struct
-            {
-                unsigned        uPort;
-                unsigned        uValue;
-                unsigned        cbSize;
-            } Write;
+            } Port;
             uint64_t            aRaw[2];
-        } Port;
+        } s;
     } PendingIO;
 
     /** Currenty shadow paging mode. */
