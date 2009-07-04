@@ -1,6 +1,6 @@
-/* $Id: pdmasynccompletion.h 48298 2009-06-08 00:43:21Z knut.osmundsen@oracle.com $ */
+/* $Id: pdmasynccompletion.h 49533 2009-07-04 14:26:39Z knut.osmundsen@oracle.com $ */
 /** @file
- * PDM - Pluggable Device Manager, Async I/O Completion.
+ * PDM - Pluggable Device Manager, Async I/O Completion. (VMM)
  */
 
 /*
