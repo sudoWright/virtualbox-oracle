@@ -1,4 +1,4 @@
-/* $Id: MouseImpl.cpp 49202 2009-06-26 17:08:47Z noreply@oracle.com $ */
+/* $Id: MouseImpl.cpp 49536 2009-07-05 13:44:53Z knut.osmundsen@oracle.com $ */
 
 /** @file
  *
@@ -29,7 +29,7 @@
 
 #include <VBox/pdmdrv.h>
 #include <iprt/asm.h>
-#include <VBox/VBoxDev.h>
+#include <VBox/VMMDev.h>
 
 /**
  * Mouse driver instance data.

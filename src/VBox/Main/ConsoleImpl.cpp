@@ -1,4 +1,4 @@
-/* $Id: ConsoleImpl.cpp 49488 2009-07-03 09:57:07Z alexander.eichner@oracle.com $ */
+/* $Id: ConsoleImpl.cpp 49536 2009-07-05 13:44:53Z knut.osmundsen@oracle.com $ */
 
 /** @file
  *
@@ -81,7 +81,7 @@
 #   include <VBox/pdmusb.h>
 #endif
 
-#include <VBox/VBoxDev.h>
+#include <VBox/VMMDev.h>
 
 #include <VBox/HostServices/VBoxClipboardSvc.h>
 #ifdef VBOX_WITH_GUEST_PROPS
