@@ -1,4 +1,4 @@
-/* $Id: VMMDevState.h 49310 2009-06-30 10:14:10Z knut.osmundsen@oracle.com $ */
+/* $Id: VMMDevState.h 49547 2009-07-05 19:50:18Z knut.osmundsen@oracle.com $ */
 /** @file
  * VMMDev - Guest <-> VMM/Host communication device, internal header.
  */
@@ -22,9 +22,7 @@
 #ifndef ___VMMDev_VMMDevState_h
 #define ___VMMDev_VMMDevState_h
 
-#include <VBox/cdefs.h>
-#include <VBox/types.h>
-
+#include <VBox/VMMDev.h>
 #include <VBox/pdmdev.h>
 #include <VBox/pdmifs.h>
 
