@@ -1,4 +1,4 @@
-/* $Id: EM.cpp 49517 2009-07-03 14:50:36Z noreply@oracle.com $ */
+/* $Id: EM.cpp 49541 2009-07-05 14:26:09Z knut.osmundsen@oracle.com $ */
 /** @file
  * EM - Execution Monitor / Manager.
  */
