@@ -1,4 +1,4 @@
-/* $Revision: 49590 $ */
+/* $Revision: 49591 $ */
 /** @file
  * VBoxGuestLib - Host-Guest Communication Manager.
  *
@@ -115,7 +115,7 @@ void vbglHGCMHandleFree (struct VBGLHGCMHANDLEDATA *pHandle)
     return;
 }
 
-DECLVBGL(int) VbglR0HGCMInternalConnect (VBGLHGCMHANDLE *pHandle, VBoxGuestHGCMConnectInfo *pData)
+DECLVBGL(int) VbglHGCMConnect (VBGLHGCMHANDLE *pHandle, VBoxGuestHGCMConnectInfo *pData)
 {
     int rc;
     struct VBGLHGCMHANDLEDATA *pHandleData;
