@@ -1,4 +1,4 @@
-/* $Revision: 49522 $ */
+/* $Revision: 49605 $ */
 /** @file
  * VBoxGuestLibR0 - System dependent helpers internal header.
  */
@@ -68,7 +68,7 @@ typedef struct _VBGLDRIVER
 #endif
 } VBGLDRIVER;
 
-int vbglLockLinear (void **ppvCtx, void *pv, uint32_t u32Size, bool fWriteAccess);
+int vbglLockLinear (void **ppvCtx, void *pv, uint32_t u32Size, bool fWriteAccess, uint32_t fFlags);
 void vbglUnlockLinear (void *pvCtx, void *pv, uint32_t u32Size);
 
 
