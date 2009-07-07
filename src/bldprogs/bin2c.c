@@ -1,4 +1,4 @@
-/* $Id: bin2c.c 46934 2009-05-06 08:21:39Z noreply@oracle.com $ */
+/* $Id: bin2c.c 49633 2009-07-07 08:02:28Z noreply@oracle.com $ */
 /** @file
  * bin2c - Binary 2 C Structure Converter.
  */
