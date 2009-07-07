@@ -1,10 +1,10 @@
-/* $Id: mppresent-generic.cpp 49685 2009-07-07 14:58:27Z knut.osmundsen@oracle.com $ */
+/* $Id: iprt.h 49685 2009-07-07 14:58:27Z knut.osmundsen@oracle.com $ */
 /** @file
- * IPRT - Multiprocessor, Stubs for the RTMp*Present* API.
+ * IPRT - Internal header for miscellaneous global defs and types.
  */
 
 /*
- * Copyright (C) 2008 Sun Microsystems, Inc.
+ * Copyright (C) 2009 Sun Microsystems, Inc.
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;
@@ -28,31 +28,27 @@
  * additional information or have any questions.
  */
 
+#ifndef ___internal_iprt_h
+#define ___internal_iprt_h
 
-/*******************************************************************************
-*   Header Files                                                               *
-*******************************************************************************/
-#include <iprt/mp.h>
-#include "internal/iprt.h"
+#include <iprt/cdefs.h>
+#include <iprt/types.h>
 
+/** @def RT_EXPORT_SYMBOL
+ * This define is really here just for the linux kernel.
+ * @param   Name        The symbol name.
+ */
+#if defined(RT_OS_LINUX) \
+ && defined(IN_RING0) \
+ && defined(IN_MODULE)
+# define bool linux_bool /* see r0drv/linux/the-linux-kernel.h */
+# include <linux/autoconf.h>
+# include <linux/module.h>
+# undef bool
+# define RT_EXPORT_SYMBOL(Name) EXPORT_SYMBOL(Name)
+#else
+# define RT_EXPORT_SYMBOL(Name) extern int g_rtExportSymbolDummyVariable
+#endif
 
-RTDECL(PRTCPUSET) RTMpGetPresentSet(PRTCPUSET pSet)
-{
-    return RTMpGetSet(pSet);
-}
-RT_EXPORT_SYMBOL(RTMpGetPresentSet);
-
-
-RTDECL(RTCPUID) RTMpGetPresentCount(void)
-{
-    return RTMpGetCount();
-}
-RT_EXPORT_SYMBOL(RTMpGetPresentCount);
-
-
-RTDECL(bool) RTMpIsCpuPresent(RTCPUID idCpu)
-{
-    return RTMpIsCpuPossible(idCpu);
-}
-RT_EXPORT_SYMBOL(RTMpIsCpuPresent);
+#endif
 

@@ -1,4 +1,4 @@
-/* $Id: RTProcIsRunningByName-generic.cpp 43209 2009-02-23 12:27:38Z knut.osmundsen@oracle.com $ */
+/* $Id: RTProcIsRunningByName-generic.cpp 49685 2009-07-07 14:58:27Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - RTProcIsRunningByName, generic stub.
  */
@@ -28,10 +28,12 @@
  * additional information or have any questions.
  */
 
+
 /*******************************************************************************
 *   Header Files                                                               *
 *******************************************************************************/
 #include <iprt/process.h>
+#include "internal/iprt.h"
 
 
 RTR3DECL(bool) RTProcIsRunningByName(const char *pszName)

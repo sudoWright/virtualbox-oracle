@@ -1,4 +1,4 @@
-/* $Id: RTLogWriteDebugger-generic.cpp 29978 2008-04-21 17:24:28Z noreply@oracle.com $ */
+/* $Id: RTLogWriteDebugger-generic.cpp 49685 2009-07-07 14:58:27Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Log To Debugger, Generic Dummy.
  */
@@ -28,7 +28,13 @@
  * additional information or have any questions.
  */
 
+
+/*******************************************************************************
+*   Header Files                                                               *
+*******************************************************************************/
 #include <iprt/log.h>
+#include "internal/iprt.h"
+
 
 RTDECL(void) RTLogWriteDebugger(const char *pch, size_t cb)
 {
@@ -36,5 +42,6 @@ RTDECL(void) RTLogWriteDebugger(const char *pch, size_t cb)
     NOREF(cb);
     return;
 }
+RT_EXPORT_SYMBOL(RTLogWriteDebugger);
 
 

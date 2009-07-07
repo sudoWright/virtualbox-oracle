@@ -1,4 +1,4 @@
-/* $Id: RTMpCpuIdFromSetIndex-generic.cpp 29978 2008-04-21 17:24:28Z noreply@oracle.com $ */
+/* $Id: RTMpCpuIdFromSetIndex-generic.cpp 49685 2009-07-07 14:58:27Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Multiprocessor, Generic RTMpCpuIdFromSetIndex.
  */
@@ -33,10 +33,12 @@
 *   Header Files                                                               *
 *******************************************************************************/
 #include <iprt/mp.h>
+#include "internal/iprt.h"
 
 
 RTDECL(RTCPUID) RTMpCpuIdFromSetIndex(int iCpu)
 {
     return iCpu >= 0 ? iCpu : NIL_RTCPUID;
 }
+RT_EXPORT_SYMBOL(RTMpCpuIdFromSetIndex);
 
