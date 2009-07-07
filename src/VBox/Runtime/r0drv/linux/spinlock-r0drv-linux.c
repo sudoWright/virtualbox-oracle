@@ -1,4 +1,4 @@
-/* $Id: spinlock-r0drv-linux.c 49685 2009-07-07 14:58:27Z knut.osmundsen@oracle.com $ */
+/* $Id: spinlock-r0drv-linux.c 49698 2009-07-07 15:45:56Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Spinlocks, Ring-0 Driver, Linux.
  */
@@ -33,6 +33,7 @@
 *   Header Files                                                               *
 *******************************************************************************/
 #include "the-linux-kernel.h"
+#include "internal/iprt.h"
 
 #include <iprt/spinlock.h>
 #include <iprt/err.h>
