@@ -1,4 +1,4 @@
-/* $Id: vbox.c 50026 2009-07-13 16:48:21Z noreply@oracle.com $ */
+/* $Id: vbox.c 50098 2009-07-15 08:06:37Z noreply@oracle.com $ */
 /** @file
  * Display - VirtualBox Win 2000/XP guest display driver, support functions.
  */
@@ -942,7 +942,7 @@ int vboxVHWAEnable(PPDEV ppdev)
     if (!pCmd)
     {
         DISPDBG((0, "VBoxDISP::vboxVHWAQueryHostInfo1: vboxVHWACommandCreate failed\n"));
-        return NULL;
+        return rc;
     }
 
     if(vboxVHWACommandSubmit (ppdev, pCmd))
@@ -964,7 +964,7 @@ int vboxVHWADisable(PPDEV ppdev)
     if (!pCmd)
     {
         DISPDBG((0, "VBoxDISP::vboxVHWAQueryHostInfo1: vboxVHWACommandCreate failed\n"));
-        return NULL;
+        return rc;
     }
 
     if(vboxVHWACommandSubmit (ppdev, pCmd))
