@@ -1,4 +1,4 @@
-/* $Id: VFSExplorerImpl.h 49153 2009-06-26 09:35:27Z noreply@oracle.com $ */
+/* $Id: VFSExplorerImpl.h 50147 2009-07-15 19:04:07Z noreply@oracle.com $ */
 
 /** @file
  *
@@ -29,9 +29,9 @@
 class VirtualBox;
 
 class ATL_NO_VTABLE VFSExplorer :
-    public VirtualBoxBaseNEXT,
-    public VirtualBoxSupportErrorInfoImpl <VFSExplorer, IVFSExplorer>,
-    public VirtualBoxSupportTranslation <VFSExplorer>,
+    public VirtualBoxBase,
+    public VirtualBoxSupportErrorInfoImpl<VFSExplorer, IVFSExplorer>,
+    public VirtualBoxSupportTranslation<VFSExplorer>,
     VBOX_SCRIPTABLE_IMPL(IVFSExplorer)
 {
     VIRTUALBOXBASE_ADD_ERRORINFO_SUPPORT (VFSExplorer)
