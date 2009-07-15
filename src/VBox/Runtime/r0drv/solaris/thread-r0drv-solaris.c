@@ -1,4 +1,4 @@
-/* $Id: thread-r0drv-solaris.c 50093 2009-07-15 00:08:20Z knut.osmundsen@oracle.com $ */
+/* $Id: thread-r0drv-solaris.c 50094 2009-07-15 00:19:29Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Threads, Ring-0 Driver, Solaris.
  */
@@ -158,6 +158,6 @@ RTDECL(bool) RTThreadIsInInterrupt(RTTHREAD hThread)
 {
     /* This is the best we currently can do here. :-( */
     return !RTThreadPreemptIsEnabled(hThread)
-        && getpil() > 0
+        && getpil() > 0;
 }
 
