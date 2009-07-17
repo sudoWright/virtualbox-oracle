@@ -1,4 +1,4 @@
-/* $Id: path.cpp 50222 2009-07-17 12:10:10Z knut.osmundsen@oracle.com $ */
+/* $Id: path.cpp 50226 2009-07-17 12:22:35Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Path Manipulation.
  */
@@ -38,6 +38,7 @@
 #include <iprt/err.h>
 #include <iprt/path.h>
 #include <iprt/string.h>
+#include "internal/path.h"
 #include "internal/process.h"
 
 
