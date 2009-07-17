@@ -1,4 +1,4 @@
-/* $Id: comparepaths.cpp 50222 2009-07-17 12:10:10Z knut.osmundsen@oracle.com $ */
+/* $Id: comparepaths.cpp 50225 2009-07-17 12:21:49Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Path Comparison.
  */
@@ -36,6 +36,7 @@
 #include <iprt/path.h>
 #include <iprt/err.h>
 #include <iprt/string.h>
+#include <iprt/uni.h>
 
 
 /**

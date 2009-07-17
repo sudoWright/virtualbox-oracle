@@ -1,4 +1,4 @@
-/* $Id: rtPathVolumeSpecLen.cpp 50224 2009-07-17 12:18:30Z knut.osmundsen@oracle.com $ */
+/* $Id: rtPathVolumeSpecLen.cpp 50225 2009-07-17 12:21:49Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - rtPathVolumeSpecLen
  */
@@ -34,6 +34,7 @@
 *******************************************************************************/
 #include "internal/iprt.h"
 #include <iprt/string.h>
+#include <iprt/ctype.h>
 #include "internal/path.h"
 
 
@@ -56,7 +57,7 @@ size_t rtPathVolumeSpecLen(const char *pszPath)
 
         /* Drive letter. */
         if (    pszPath[1] == ':'
-            &&  toupper(pszPath[0]) >= 'A' && toupper(pszPath[0]) <= 'Z')
+            &&  RT_C_IS_ALPHA(pszPath[0])
             return 2;
     }
     return 0;
