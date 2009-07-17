@@ -1,4 +1,4 @@
-/* $Revision: 50019 $ */
+/* $Revision: 50253 $ */
 /** @file
  * VirtualBox Support Driver - IOCtl definitions.
  */
@@ -34,7 +34,7 @@
 /*
  * Basic types.
  */
-#include <iprt/stdint.h>
+#include <iprt/types.h>
 
 /*
  * IOCtl numbers.
