@@ -1,4 +1,4 @@
-/* $Id: HWACCM.cpp 50241 2009-07-17 13:53:54Z noreply@oracle.com $ */
+/* $Id: HWACCM.cpp 50243 2009-07-17 13:55:21Z noreply@oracle.com $ */
 /** @file
  * HWACCM - Intel/AMD VM Hardware Support Manager
  */
@@ -2236,7 +2236,7 @@ static DECLCALLBACK(int) hwaccmR3Save(PVM pVM, PSSMHANDLE pSSM)
     AssertRCReturn(rc, rc);
 
     /* Store all the guest patch records too. */
-    rc = SSMR3PutU32(pSSM, &pVM->hwaccm.s.svm.cPatches);
+    rc = SSMR3PutU32(pSSM, pVM->hwaccm.s.svm.cPatches);
     AssertRCReturn(rc, rc);
 
     for (unsigned i = 0; i < pVM->hwaccm.s.svm.cPatches; i++)
