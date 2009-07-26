@@ -1,4 +1,4 @@
-/* $Id: RTFileReadAllByHandleEx-generic.cpp 49685 2009-07-07 14:58:27Z knut.osmundsen@oracle.com $ */
+/* $Id: RTFileReadAllByHandleEx-generic.cpp 50404 2009-07-26 17:45:31Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - RTFileReadAllByHandleEx, generic implementation.
  */
@@ -88,7 +88,7 @@ RTDECL(int) RTFileReadAllByHandleEx(RTFILE File, RTFOFF off, RTFOFF cbMax, uint3
                              * Success - fill in the return values.
                              */
                             *ppvFile = pvFile;
-                            *pcbFile = cbAllocFile;
+                            *pcbFile = cbAllocMem;
                         }
                     }
 
