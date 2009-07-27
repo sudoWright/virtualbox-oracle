@@ -1,4 +1,4 @@
-/* $Id: SystemPropertiesImpl.h 50237 2009-07-17 13:41:39Z noreply@oracle.com $ */
+/* $Id: SystemPropertiesImpl.h 50442 2009-07-27 18:46:11Z noreply@oracle.com $ */
 
 /** @file
  *
@@ -34,9 +34,9 @@
 class VirtualBox;
 
 class ATL_NO_VTABLE SystemProperties :
-    public VirtualBoxBaseNEXT,
-    public VirtualBoxSupportErrorInfoImpl <SystemProperties, ISystemProperties>,
-    public VirtualBoxSupportTranslation <SystemProperties>,
+    public VirtualBoxBase,
+    public VirtualBoxSupportErrorInfoImpl<SystemProperties, ISystemProperties>,
+    public VirtualBoxSupportTranslation<SystemProperties>,
     VBOX_SCRIPTABLE_IMPL(ISystemProperties)
 {
 public:
