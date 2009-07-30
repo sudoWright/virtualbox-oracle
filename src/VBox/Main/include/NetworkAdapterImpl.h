@@ -1,4 +1,4 @@
-/* $Id: NetworkAdapterImpl.h 50442 2009-07-27 18:46:11Z noreply@oracle.com $ */
+/* $Id: NetworkAdapterImpl.h 50525 2009-07-30 12:42:08Z noreply@oracle.com $ */
 
 /** @file
  *
@@ -156,8 +156,8 @@ private:
     void detach();
     void generateMACAddress();
 
-    const ComObjPtr <Machine, ComWeakRef> mParent;
-    const ComObjPtr <NetworkAdapter> mPeer;
+    const ComObjPtr<Machine, ComWeakRef> mParent;
+    const ComObjPtr<NetworkAdapter> mPeer;
 
     Backupable <Data> mData;
 };
