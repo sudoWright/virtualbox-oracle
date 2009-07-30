@@ -1,4 +1,4 @@
-/* $Id: VBoxTray.h 49549 2009-07-05 19:59:14Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxTray.h 50536 2009-07-30 13:51:20Z noreply@oracle.com $ */
 /** @file
  * VBoxTray - Guest Additions Tray, Internal Header.
  */
@@ -65,6 +65,8 @@ typedef struct _VBOXSERVICEINFO
 
 
 extern HWND  gToolWindow;
+
+extern void VBoxServiceReloadCursor(void);
 
 #endif /* !___VBOXTRAY_H */
 
