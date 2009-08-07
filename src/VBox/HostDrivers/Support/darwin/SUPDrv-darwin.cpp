@@ -1,8 +1,6 @@
-/* $Id: SUPDrv-darwin.cpp 50792 2009-08-07 10:06:15Z knut.osmundsen@oracle.com $ */
+/* $Id: SUPDrv-darwin.cpp 50824 2009-08-07 16:01:57Z knut.osmundsen@oracle.com $ */
 /** @file
- *
- * VBox host drivers - Ring-0 support drivers - Darwin host:
- * Darwin driver C code
+ * VirtualBox Support Driver - Darwin Specific Code.
  */
 
 /*

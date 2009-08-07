@@ -1,6 +1,6 @@
-/* $Id: tstContiguous.cpp 49009 2009-06-23 19:19:42Z knut.osmundsen@oracle.com $ */
+/* $Id: tstContiguous.cpp 50824 2009-08-07 16:01:57Z knut.osmundsen@oracle.com $ */
 /** @file
- * VBox Support Driver - Contiguous Memory Testcase (ring-3).
+ * SUP Testcase - Contiguous Memory Interface (ring-3).
  */
 
 /*

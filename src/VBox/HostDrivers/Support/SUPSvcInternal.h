@@ -1,4 +1,4 @@
-/* $Id: SUPSvcInternal.h 48298 2009-06-08 00:43:21Z knut.osmundsen@oracle.com $ */
+/* $Id: SUPSvcInternal.h 50824 2009-08-07 16:01:57Z knut.osmundsen@oracle.com $ */
 /** @file
  * VirtualBox Support Service - Internal header.
  */
