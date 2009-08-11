@@ -1,4 +1,4 @@
-/* $Id: thread-r0drv-solaris.c 50921 2009-08-11 09:41:58Z knut.osmundsen@oracle.com $ */
+/* $Id: thread-r0drv-solaris.c 50922 2009-08-11 09:46:23Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Threads, Ring-0 Driver, Solaris.
  */
@@ -39,6 +39,7 @@
 #include <iprt/asm.h>
 #include <iprt/assert.h>
 #include <iprt/err.h>
+#include <iprt/mp.h>
 
 
 
