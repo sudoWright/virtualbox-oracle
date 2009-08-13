@@ -1,4 +1,4 @@
-/* $Revision: 51024 $ */
+/* $Revision: 51026 $ */
 /** @file
  * VBoxDrv - The VirtualBox Support Driver - Common code.
  */
@@ -5286,9 +5286,6 @@ static void supdrvGipDoUpdateCpu(PSUPGLOBALINFOPAGE pGip, PSUPGIPCPU pGipCpu, ui
     uint32_t    u32UpdateIntervalTSCSlack;
     unsigned    iTSCHistoryHead;
     uint64_t    u64CpuHz;
-
-    /* Delta between this and the previous update. */
-    pGipCpu->u32UpdateIntervalNS = (uint32_t)(u64NanoTS - pGipCpu->u64NanoTS);
 
     /*
      * Update the NanoTS.
