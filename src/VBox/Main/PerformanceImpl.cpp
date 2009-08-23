@@ -1,4 +1,4 @@
-/* $Id: PerformanceImpl.cpp 50525 2009-07-30 12:42:08Z noreply@oracle.com $ */
+/* $Id: PerformanceImpl.cpp 51366 2009-08-23 20:38:03Z noreply@oracle.com $ */
 
 /** @file
  *
@@ -180,7 +180,8 @@ PerformanceCollector::COMGETTER(MetricNames) (ComSafeArrayOut(BSTR, theMetricNam
     com::SafeArray<BSTR> metricNames(RT_ELEMENTS(gMetricNames));
     for (size_t i = 0; i < RT_ELEMENTS(gMetricNames); i++)
     {
-        Bstr(gMetricNames[i]).cloneTo(&metricNames[i]);
+        Bstr tmp(gMetricNames[i]); /* gcc-3.3 cruft */
+        tmp.cloneTo(&metricNames[i]);
     }
     //gMetricNames.detachTo(ComSafeArrayOutArg(theMetricNames));
     metricNames.detachTo(ComSafeArrayOutArg(theMetricNames));
