@@ -1,4 +1,4 @@
-/* $Id: thread-r0drv-solaris.c 51401 2009-08-24 16:01:21Z knut.osmundsen@oracle.com $ */
+/* $Id: thread-r0drv-solaris.c 51409 2009-08-24 16:45:25Z noreply@oracle.com $ */
 /** @file
  * IPRT - Threads, Ring-0 Driver, Solaris.
  */
@@ -129,7 +129,7 @@ RTDECL(void) RTThreadPreemptDisable(PRTTHREADPREEMPTSTATE pState)
 //            pState->uOldPil = splx(DISP_LEVEL);
 //    }
 
-    Assert(pState->uOldPil != UINT32_MAX)
+    Assert(pState->uOldPil != UINT32_MAX);
     RT_ASSERT_PREEMPT_CPUID_DISABLE(pState);
 }
 
