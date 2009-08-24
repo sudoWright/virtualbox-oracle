@@ -1,4 +1,4 @@
-/* $Id: thread-r0drv-solaris.c 51334 2009-08-21 13:27:13Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: thread-r0drv-solaris.c 51379 2009-08-24 09:35:43Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Threads, Ring-0 Driver, Solaris.
  */
@@ -82,9 +82,8 @@ RTDECL(bool) RTThreadPreemptIsEnabled(RTTHREAD hThread)
 {
     Assert(hThread == NIL_RTTHREAD);
     if (    vbi_is_preempt_enabled()
-        &&  ASMIntAreEnabled())
-        return true;
-    if (getpil() < DISP_LEVEL)
+        &&  ASMIntAreEnabled()
+        &&  getpil() < DISP_LEVEL)
         return true;
     return false;
 }
