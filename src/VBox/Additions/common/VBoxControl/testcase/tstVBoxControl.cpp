@@ -1,4 +1,4 @@
-/** $Id: tstVBoxControl.cpp 49535 2009-07-05 13:31:56Z knut.osmundsen@oracle.com $ */
+/* $Id: tstVBoxControl.cpp 51589 2009-08-28 17:58:24Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxControl - Guest Additions Command Line Management Interface, test case
  */
