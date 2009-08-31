@@ -1,4 +1,4 @@
-/* $Id: MachineImpl.h 50963 2009-08-11 17:00:33Z noreply@oracle.com $ */
+/* $Id: MachineImpl.h 51691 2009-08-31 17:32:17Z noreply@oracle.com $ */
 
 /** @file
  *
@@ -916,7 +916,7 @@ public:
 
     NS_DECL_ISUPPORTS
 
-    DECLARE_EMPTY_CTOR_DTOR (SessionMachine)
+    DECLARE_EMPTY_CTOR_DTOR(SessionMachine)
 
     HRESULT FinalConstruct();
     void FinalRelease();
