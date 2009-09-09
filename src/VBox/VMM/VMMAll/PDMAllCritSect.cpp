@@ -1,4 +1,4 @@
-/* $Id: PDMAllCritSect.cpp 50777 2009-08-06 16:31:07Z knut.osmundsen@oracle.com $ */
+/* $Id: PDMAllCritSect.cpp 52146 2009-09-09 23:11:31Z knut.osmundsen@oracle.com $ */
 /** @file
  * PDM - Critical Sections, All Contexts.
  */
@@ -492,7 +492,7 @@ VMMDECL(bool) PDMCritSectIsOwnerEx(PCPDMCRITSECT pCritSect, VMCPUID idCpu)
 #else
     PVM pVM = pCritSect->s.CTX_SUFF(pVM);
     AssertPtr(pVM);
-    Assert(idCpu < pVM->cCPUs);
+    Assert(idCpu < pVM->cCpus);
     return pCritSect->s.Core.NativeThreadOwner == pVM->aCpus[idCpu].hNativeThread
         && (pCritSect->s.Core.fFlags & PDMCRITSECT_FLAGS_PENDING_UNLOCK) == 0;
 #endif
