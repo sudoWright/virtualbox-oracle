@@ -1,4 +1,4 @@
-/* $Id: uvm.h 52187 2009-09-10 21:55:22Z knut.osmundsen@oracle.com $ */
+/* $Id: uvm.h 52192 2009-09-10 22:42:21Z knut.osmundsen@oracle.com $ */
 /** @file
  * GVM - The Global VM Data. (VMM)
  */
@@ -49,6 +49,10 @@ typedef struct UVMCPU
     PVMCPU                          pVCpu;
     /** The virtual CPU ID.  */
     RTCPUID                         idCpu;
+#if HC_ARCH_BITS == 64
+    /** Alignment padding. */
+    uint32_t                        u32Alignment0;
+#endif
 
     /** The VM internal data. */
     union
