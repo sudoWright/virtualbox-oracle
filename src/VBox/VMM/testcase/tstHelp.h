@@ -1,4 +1,4 @@
-/* $Id: tstHelp.h 52141 2009-09-09 21:58:49Z knut.osmundsen@oracle.com $ */
+/* $Id: tstHelp.h 52210 2009-09-11 09:04:24Z noreply@oracle.com $ */
 /** @file
  * VMM testcase - Helper stuff.
  */
@@ -76,8 +76,8 @@ RT_C_DECLS_END
                    (unsigned)RT_OFFSETOF(strct, member), \
                    (unsigned)RT_OFFSETOF(strct, member), \
                    (unsigned)(align), \
-                   (unsigned)((align) - RT_OFFSETOF(strct, member) & ((align) - 1)), \
-                   (unsigned)((align) - RT_OFFSETOF(strct, member) & ((align) - 1)) ); \
+                   (unsigned)(((align) - RT_OFFSETOF(strct, member)) & ((align) - 1)), \
+                   (unsigned)(((align) - RT_OFFSETOF(strct, member)) & ((align) - 1)) ); \
             rc++; \
         } \
     } while (0)
