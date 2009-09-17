@@ -1,5 +1,4 @@
-
-/* $Id: VBoxHostVersion.cpp 52403 2009-09-16 13:03:17Z noreply@oracle.com $ */
+/* $Id: VBoxHostVersion.cpp 52420 2009-09-17 09:02:14Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxHostVersion - Checks the host's VirtualBox version and notifies
  *                   the user in case of an update.
