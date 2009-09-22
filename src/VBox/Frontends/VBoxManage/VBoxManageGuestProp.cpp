@@ -1,4 +1,4 @@
-/* $Id: VBoxManageGuestProp.cpp 52449 2009-09-17 13:09:36Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxManageGuestProp.cpp 52692 2009-09-22 15:50:03Z klaus.espenlaub@oracle.com $ */
 /** @file
  * VBoxManage - The 'guestproperty' command.
  */
@@ -117,8 +117,8 @@ public:
         return S_OK;
     }
 
-    STDMETHOD(OnMediaRegistered)(IN_BSTR mediaId,
-                                 DeviceType_T mediaType, BOOL registered)
+    STDMETHOD(OnMediumRegistered)(IN_BSTR mediaId,
+                                  DeviceType_T mediaType, BOOL registered)
     {
         NOREF(mediaId);
         NOREF(mediaType);

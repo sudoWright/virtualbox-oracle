@@ -1,4 +1,4 @@
-/* $Id: MachineDebuggerImpl.h 50525 2009-07-30 12:42:08Z noreply@oracle.com $ */
+/* $Id: MachineDebuggerImpl.h 52692 2009-09-22 15:50:03Z klaus.espenlaub@oracle.com $ */
 
 /** @file
  *
@@ -47,8 +47,6 @@ public:
         COM_INTERFACE_ENTRY (IMachineDebugger)
         COM_INTERFACE_ENTRY (IDispatch)
     END_COM_MAP()
-
-    NS_DECL_ISUPPORTS
 
     DECLARE_EMPTY_CTOR_DTOR (MachineDebugger)
 

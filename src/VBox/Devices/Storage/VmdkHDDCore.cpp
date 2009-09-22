@@ -1,4 +1,4 @@
-/* $Id: VmdkHDDCore.cpp 52261 2009-09-13 22:17:34Z alexander.eichner@oracle.com $ */
+/* $Id: VmdkHDDCore.cpp 52692 2009-09-22 15:50:03Z klaus.espenlaub@oracle.com $ */
 /** @file
  * VMDK Disk image, Core Code.
  */
@@ -23,7 +23,7 @@
 *   Header Files                                                               *
 *******************************************************************************/
 #define LOG_GROUP LOG_GROUP_VD_VMDK
-#include "VBoxHDD-Internal.h"
+#include <VBox/VBoxHDD-Plugin.h>
 #include <VBox/err.h>
 
 #include <VBox/log.h>
