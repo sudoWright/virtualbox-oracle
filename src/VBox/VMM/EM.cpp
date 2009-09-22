@@ -1,4 +1,4 @@
-/* $Id: EM.cpp 52615 2009-09-21 14:22:37Z knut.osmundsen@oracle.com $ */
+/* $Id: EM.cpp 52661 2009-09-22 11:43:21Z noreply@oracle.com $ */
 /** @file
  * EM - Execution Monitor / Manager.
  */
@@ -443,7 +443,7 @@ VMMR3DECL(void) EMR3Relocate(PVM pVM)
  */
 VMMR3DECL(void) EMR3Reset(PVM pVM)
 {
-    LogFlow(("EMR3Reset: \n"));
+    Log(("EMR3Reset: \n"));
     for (VMCPUID i = 0; i < pVM->cCpus; i++)
     {
         PVMCPU pVCpu = &pVM->aCpus[i];
