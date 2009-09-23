@@ -1,4 +1,4 @@
-/* $Id: USBControllerImpl.cpp 51176 2009-08-17 15:40:24Z noreply@oracle.com $ */
+/* $Id: USBControllerImpl.cpp 52755 2009-09-23 18:08:40Z klaus.espenlaub@oracle.com $ */
 /** @file
  * Implementation of IUSBController.
  */
@@ -327,8 +327,6 @@ public:
         COM_INTERFACE_ENTRY(ISupportErrorInfo)
         COM_INTERFACE_ENTRY(IUSBDeviceFilter)
     END_COM_MAP()
-
-    NS_DECL_ISUPPORTS
 
     DECLARE_EMPTY_CTOR_DTOR (USBDeviceFilter)
 
