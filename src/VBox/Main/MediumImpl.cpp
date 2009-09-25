@@ -1,4 +1,4 @@
-/* $Id: MediumImpl.cpp 52736 2009-09-23 13:30:15Z noreply@oracle.com $ */
+/* $Id: MediumImpl.cpp 52834 2009-09-25 11:36:00Z noreply@oracle.com $ */
 
 /** @file
  *
@@ -3306,7 +3306,7 @@ MediumType_T Medium::type() const
  */
 RWLockHandle* Medium::treeLock()
 {
-    return mVirtualBox->hardDiskTreeLockHandle();
+    return &mVirtualBox->hardDiskTreeLockHandle();
 }
 
 // protected methods
