@@ -1,4 +1,4 @@
-/* $Id: VBoxManageHelp.cpp 52692 2009-09-22 15:50:03Z klaus.espenlaub@oracle.com $ */
+/* $Id: VBoxManageHelp.cpp 52833 2009-09-25 11:27:23Z noreply@oracle.com $ */
 /** @file
  * VBoxManage - help and other message output.
  */
@@ -300,6 +300,8 @@ void printUsage(USAGECATEGORY u64Cmd)
                  "                            nic<1-N> null|nat|bridged|intnet\n"
                  "                                     [<devicename>] |\n"
 #endif /* !RT_OS_LINUX && !RT_OS_DARWIN  */
+                 "                            [nictrace<1-N> on|off]\n"
+                 "                            [nictracefile<1-N> <filename>]\n"
 #endif /* VBOX_DYNAMIC_NET_ATTACH */
                  "                            usbattach <uuid>|<address> |\n"
                  "                            usbdetach <uuid>|<address> |\n"
