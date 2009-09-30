@@ -1,4 +1,4 @@
-# $Id: Makefile.kmk 52131 2009-09-09 19:21:32Z alexander.eichner@oracle.com $
+# $Id: Makefile.kmk 53049 2009-09-30 20:33:08Z knut.osmundsen@oracle.com $
 ## @file
 # Sub-Makefile for the external apps.
 #
