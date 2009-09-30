@@ -1,4 +1,4 @@
-/* $Id: MediumImpl.cpp 52854 2009-09-25 15:04:23Z klaus.espenlaub@oracle.com $ */
+/* $Id: MediumImpl.cpp 53048 2009-09-30 18:59:14Z klaus.espenlaub@oracle.com $ */
 
 /** @file
  *
@@ -360,7 +360,7 @@ HRESULT Medium::Task::runNow()
  *       Medium::treeLock() is held in read mode.
  */
 class Medium::MergeChain : public Medium::List,
-                             public com::SupportErrorInfoBase
+                           public com::SupportErrorInfoBase
 {
 public:
 
