@@ -1,4 +1,4 @@
-/* $Id: MachineImpl.cpp 53034 2009-09-30 12:52:22Z klaus.espenlaub@oracle.com $ */
+/* $Id: MachineImpl.cpp 53218 2009-10-05 18:24:45Z knut.osmundsen@oracle.com $ */
 
 /** @file
  * Implementation of IMachine in VBoxSVC.
@@ -8290,14 +8290,9 @@ STDMETHODIMP SessionMachine::BeginTakingSnapshot(IConsole *aInitiator,
     /* saveSettings() needs mParent lock */
     AutoMultiWriteLock2 alock(mParent, this);
 
-#ifdef VBOX_WITH_LIVE_MIGRATION
     AssertReturn(    !Global::IsOnlineOrTransient(mData->mMachineState)
                   || mData->mMachineState == MachineState_Running
                   || mData->mMachineState == MachineState_Paused, E_FAIL);
-#else
-    AssertReturn(    !Global::IsOnlineOrTransient(mData->mMachineState)
-                  || mData->mMachineState == MachineState_Paused, E_FAIL);
-#endif
     AssertReturn(mSnapshotData.mLastState == MachineState_Null, E_FAIL);
     AssertReturn(mSnapshotData.mSnapshot.isNull(), E_FAIL);
 
