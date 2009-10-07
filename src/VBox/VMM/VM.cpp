@@ -1,4 +1,4 @@
-/* $Id: VM.cpp 52569 2009-09-18 23:44:40Z knut.osmundsen@oracle.com $ */
+/* $Id: VM.cpp 53265 2009-10-07 12:59:56Z knut.osmundsen@oracle.com $ */
 /** @file
  * VM - Virtual Machine
  */
@@ -1734,7 +1734,7 @@ static DECLCALLBACK(int) vmR3Load(PVM pVM, const char *pszFilename, PFNVMPROGRES
     if (RT_FAILURE(rc))
         return rc;
 
-    rc = SSMR3Load(pVM, pszFilename, SSMAFTER_RESUME, pfnProgress,  pvUser);
+    rc = SSMR3Load(pVM, pszFilename, NULL /*pStreamOps*/, NULL /*pStreamOpsUser*/, SSMAFTER_RESUME, pfnProgress, pvUser);
     if (RT_SUCCESS(rc))
     {
         VMR3Relocate(pVM, 0 /*offDelta*/);
