@@ -1,4 +1,4 @@
-/* $Revision: 53284 $ */
+/* $Revision: 53285 $ */
 /** @file
  * IPRT - Ring-0 Memory Objects, Linux.
  */
@@ -830,7 +830,7 @@ int rtR0MemObjNativeLockUser(PPRTR0MEMOBJINTERNAL ppMem, RTR3PTR R3Ptr, size_t c
 }
 
 
-int rtR0MemObjNativeLockKernel(PPRTR0MEMOBJINTERNAL ppMem, void *pv, size_t cb, uint32_t fFlags)
+int rtR0MemObjNativeLockKernel(PPRTR0MEMOBJINTERNAL ppMem, void *pv, size_t cb, uint32_t fAccess)
 {
     void           *pvLast = (uint8_t *)pv + cb - 1;
     size_t const    cPages = cb >> PAGE_SHIFT;
