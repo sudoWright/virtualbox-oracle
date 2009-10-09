@@ -1,4 +1,4 @@
-/* $Id: DisplayImpl.h 52692 2009-09-22 15:50:03Z klaus.espenlaub@oracle.com $ */
+/* $Id: DisplayImpl.h 53341 2009-10-09 12:23:32Z vitali.pelenjow@oracle.com $ */
 
 /** @file
  *
@@ -193,6 +193,11 @@ public:
     }
 
     STDMETHOD(OnVRDPServerChange)()
+    {
+        return S_OK;
+    }
+
+    STDMETHOD(OnRemoteDisplayInfoChange)()
     {
         return S_OK;
     }
