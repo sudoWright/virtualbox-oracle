@@ -1,4 +1,4 @@
-/* $Id: VBoxManageInfo.cpp 53663 2009-10-19 18:36:03Z noreply@oracle.com $ */
+/* $Id: VBoxManageInfo.cpp 53667 2009-10-19 18:55:38Z noreply@oracle.com $ */
 /** @file
  * VBoxManage - The 'showvminfo' command and helper routines.
  */
@@ -1844,7 +1844,7 @@ HRESULT showVMInfo (ComPtr<IVirtualBox> virtualBox,
     if (SUCCEEDED(rc) && snapshot)
     {
         ComPtr<ISnapshot> currentSnapshot;
-        rc = machine->GetCurrentSnapshot(currentSnapshot.asOutParam());
+        rc = machine->COMGETTER(CurrentSnapshot)(currentSnapshot.asOutParam());
         if (SUCCEEDED(rc))
         {
             if (details != VMINFO_MACHINEREADABLE)
