@@ -1,4 +1,4 @@
-/* $Id: DevDMA.cpp 51986 2009-09-05 01:29:24Z knut.osmundsen@oracle.com $ */
+/* $Id: DevDMA.cpp 53756 2009-10-21 15:38:18Z knut.osmundsen@oracle.com $ */
 /** @file
  * DevDMA - DMA Controller Device.
  */
@@ -55,7 +55,6 @@
 #define LOG_GROUP LOG_GROUP_DEFAULT ///@todo LOG_GROUP_DEV_DMA
 #include <VBox/log.h>
 #include <iprt/assert.h>
-#include <iprt/uuid.h>
 #include <iprt/string.h>
 
 #include <stdio.h>
