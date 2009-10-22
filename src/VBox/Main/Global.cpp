@@ -1,4 +1,4 @@
-/* $Id: Global.cpp 53659 2009-10-19 17:26:44Z noreply@oracle.com $ */
+/* $Id: Global.cpp 53837 2009-10-22 19:14:58Z klaus.espenlaub@oracle.com $ */
 
 /** @file
  *

@@ -1,4 +1,4 @@
-/* $Id$ */
+/* $Id: MediumFormatImpl.cpp 53837 2009-10-22 19:14:58Z klaus.espenlaub@oracle.com $ */
 
 /** @file
  *
