@@ -1,4 +1,4 @@
-/* $Id: OpenGLTestApp.cpp 53474 2009-10-14 08:49:02Z noreply@oracle.com $ */
+/* $Id: OpenGLTestApp.cpp 53823 2009-10-22 14:42:48Z andreas.loeffler@oracle.com $ */
 /** @file
  * VBox host opengl support test application.
  */
@@ -27,7 +27,7 @@
 #include <Windows.h>
 #endif
 
-#include <string>
+#include <string.h>
 
 #ifdef VBOX_WITH_CROGL
 
