@@ -1,4 +1,4 @@
-/* $Id: DevAHCI.cpp 53907 2009-10-23 18:12:03Z knut.osmundsen@oracle.com $ */
+/* $Id: DevAHCI.cpp 53908 2009-10-23 18:12:53Z knut.osmundsen@oracle.com $ */
 /** @file
  *
  * VBox storage devices:
@@ -6138,7 +6138,7 @@ static DECLCALLBACK(int) ahciLoadExec(PPDMDEVINS pDevIns, PSSMHANDLE pSSM, uint3
             AssertRCReturn(rc, rc);
             if (fInUse != (pThis->ahciPort[i].pDrvBase != NULL))
             {
-                LogRel(("AHCI: Port %u config mismatch: fInUse - saved=%u config=%u\n", fInUse, (pThis->ahciPort[i].pDrvBase != NULL)));
+                LogRel(("AHCI: Port %u config mismatch: fInUse - saved=%RTbool config=%RTbool\n", fInUse, (pThis->ahciPort[i].pDrvBase != NULL)));
                 return VERR_SSM_LOAD_CONFIG_MISMATCH;
             }
 
