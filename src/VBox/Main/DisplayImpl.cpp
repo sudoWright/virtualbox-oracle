@@ -1,4 +1,4 @@
-/* $Id: DisplayImpl.cpp 54104 2009-10-29 15:46:38Z noreply@oracle.com $ */
+/* $Id: DisplayImpl.cpp 54105 2009-10-29 16:09:22Z noreply@oracle.com $ */
 
 /** @file
  *
@@ -2339,7 +2339,7 @@ void Display::handleVHWACommandProcess(PPDMIDISPLAYCONNECTOR pInterface, PVBOXVH
     {
         IFramebuffer *pFramebuffer = maFramebuffers[id].pFramebuffer;
 
-        if (pFramebuffer == NULL)
+        if (pFramebuffer != NULL)
         {
             pFramebuffer->Lock();
 
