@@ -1,4 +1,4 @@
-/* $Id: VirtualBoxImpl.h 52834 2009-09-25 11:36:00Z noreply@oracle.com $ */
+/* $Id: VirtualBoxImpl.h 54246 2009-11-02 17:36:22Z noreply@oracle.com $ */
 
 /** @file
  *
@@ -276,7 +276,7 @@ public:
 
 private:
 
-    HRESULT checkMediaForConflicts2(const Guid &aId, const Bstr &aLocation,
+    HRESULT checkMediaForConflicts2(const Guid &aId, const Utf8Str &aLocation,
                                     Utf8Str &aConflictType);
 
     HRESULT registerMachine (Machine *aMachine);
