@@ -1,4 +1,4 @@
-/* $Id: VBoxGuest-os2.cpp 49732 2009-07-07 22:51:24Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxGuest-os2.cpp 54273 2009-11-03 12:34:11Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxGuest - OS/2 specifics.
  */
@@ -647,6 +647,13 @@ DECLASM(bool) VBoxGuestOS2ISR(void)
     Log(("VBoxGuestOS2ISR\n"));
 
     return VBoxGuestCommonISR(&g_DevExt);
+}
+
+
+void VBoxGuestNativeISRMousePollEvent(PVBOXGUESTDEVEXT pDevExt)
+{
+    /* No polling on OS/2 */
+    NOREF(pDevExt);
 }
 
 
