@@ -1,4 +1,4 @@
-/* $Id: thread-r0drv-solaris.c 53144 2009-10-02 11:05:03Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: thread-r0drv-solaris.c 54418 2009-11-05 14:17:10Z ramshankar.venkataraman@oracle.com $ */
 /** @file
  * IPRT - Threads, Ring-0 Driver, Solaris.
  */
@@ -32,7 +32,7 @@
 /*******************************************************************************
 *   Header Files                                                               *
 *******************************************************************************/
-#include "the-solaris-kernel.h"
+#include "../the-solaris-kernel.h"
 #include "internal/iprt.h"
 #include <iprt/thread.h>
 
