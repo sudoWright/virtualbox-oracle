@@ -1,4 +1,4 @@
-/* $Id: PDMAsyncCompletionFileCache.cpp 54382 2009-11-04 22:28:48Z alexander.eichner@oracle.com $ */
+/* $Id: PDMAsyncCompletionFileCache.cpp 54464 2009-11-05 21:07:56Z alexander.eichner@oracle.com $ */
 /** @file
  * PDM Async I/O - Transport data asynchronous in R3 using EMT.
  * File data cache.
@@ -1068,6 +1068,7 @@ int pdmacFileEpCacheRead(PPDMASYNCCOMPLETIONENDPOINTFILE pEndpoint, PPDMASYNCCOM
                         OffDiff  += cbCopy;
                         ASMAtomicSubS32(&pTask->cbTransferLeft, cbCopy);
                     }
+                    RTSemRWReleaseWrite(pEndpointCache->SemRWEntries);
                 }
                 else
                 {
