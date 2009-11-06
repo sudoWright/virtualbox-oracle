@@ -1,4 +1,4 @@
-/* $Id: ConsoleImpl.cpp 54390 2009-11-05 03:08:48Z knut.osmundsen@oracle.com $ */
+/* $Id: ConsoleImpl.cpp 54504 2009-11-06 13:39:28Z noreply@oracle.com $ */
 
 /** @file
  *
@@ -3148,7 +3148,7 @@ HRESULT Console::onNetworkAdapterChange(INetworkAdapter *aNetworkAdapter, BOOL c
             {
                 case NetworkAdapterType_Am79C970A:
                 case NetworkAdapterType_Am79C973:
-                    pszAdapterName = "e1000";
+                    pszAdapterName = "pcnet";
                     break;
 #ifdef VBOX_WITH_E1000
                 case NetworkAdapterType_I82540EM:
