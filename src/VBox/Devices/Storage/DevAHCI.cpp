@@ -1,4 +1,4 @@
-/* $Id: DevAHCI.cpp 54237 2009-11-02 15:21:30Z knut.osmundsen@oracle.com $ */
+/* $Id: DevAHCI.cpp 54723 2009-11-11 15:15:16Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox storage devices: AHCI controller device (disk and cdrom).
  *                       Implements the AHCI standard 1.1
@@ -6159,8 +6159,9 @@ static DECLCALLBACK(int) ahciLoadExec(PPDMDEVINS pDevIns, PSSMHANDLE pSSM, uint3
             rc = SSMR3GetBool(pSSM, &fInUse);
             AssertRCReturn(rc, rc);
             if (fInUse != (pThis->ahciPort[i].pDrvBase != NULL))
-                return SSMR3SetCfgError(pSSM, RT_SRC_POS, N_("Port %u config mismatch: fInUse - saved=%RTbool config=%RTbool"),
-                                        i, fInUse, (pThis->ahciPort[i].pDrvBase != NULL));
+                return SSMR3SetCfgError(pSSM, RT_SRC_POS,
+                                        N_("The %s VM is missing a device on port %u. Please make sure the source and target VMs have compatible storage configurations"),
+                                        fInUse ? "target" : "source", i );
 
             char szSerialNumber[AHCI_SERIAL_NUMBER_LENGTH+1];
             rc = SSMR3GetStrZ(pSSM, szSerialNumber,     sizeof(szSerialNumber));
