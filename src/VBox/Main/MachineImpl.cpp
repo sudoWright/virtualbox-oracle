@@ -1,4 +1,4 @@
-/* $Id: MachineImpl.cpp 54683 2009-11-10 16:44:42Z klaus.espenlaub@oracle.com $ */
+/* $Id: MachineImpl.cpp 54770 2009-11-12 18:34:53Z knut.osmundsen@oracle.com $ */
 
 /** @file
  * Implementation of IMachine in VBoxSVC.
@@ -9323,11 +9323,13 @@ STDMETHODIMP SessionMachine::PushGuestProperty(IN_BSTR aName,
                                              RTSTR_MAX,
                                              utf8Name.raw(),
                                              RTSTR_MAX, NULL)
-        )
+           )
+        {
             mParent->onGuestPropertyChange(mData->mUuid,
                                            aName,
                                            aValue,
                                            aFlags);
+        }
     }
     catch(std::bad_alloc &)
     {
