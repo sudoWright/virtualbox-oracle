@@ -1,6 +1,6 @@
 #! /bin/sh
 # Sun VirtualBox
-# Linux Additions X11 setup init script ($Revision: 54912 $)
+# Linux Additions X11 setup init script ($Revision: 54946 $)
 #
 
 #
@@ -451,8 +451,11 @@ the VirtualBox Guest Additions and were not modified:
 $generated
 
 EOF
-        echo "You may need to restart the Window System to enable the Guest Additions."
-        echo
+        cat << EOF
+You may need to restart the hal service and the Window System to enable the
+Guest Additions.
+
+EOF
     fi
 
     begin "Installing OpenGL and desktop services components"
