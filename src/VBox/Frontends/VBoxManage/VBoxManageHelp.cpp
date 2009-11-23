@@ -1,4 +1,4 @@
-/* $Id: VBoxManageHelp.cpp 55051 2009-11-20 14:56:49Z noreply@oracle.com $ */
+/* $Id: VBoxManageHelp.cpp 55104 2009-11-23 09:56:20Z noreply@oracle.com $ */
 /** @file
  * VBoxManage - help and other message output.
  */
@@ -144,7 +144,7 @@ void printUsage(USAGECATEGORY u64Cmd)
 #ifdef VBOX_WITH_VIDEOHWACCEL
                  "                            [--accelerate2dvideo <on|off>]\n"
 #endif
-                 "                            [--firmware bios|efi|efi64]\n"
+                 "                            [--firmware bios|efi|efi32|efi64]\n"
                  "                            [--bioslogofadein on|off]\n"
                  "                            [--bioslogofadeout on|off]\n"
                  "                            [--bioslogodisplaytime <msec>]\n"
