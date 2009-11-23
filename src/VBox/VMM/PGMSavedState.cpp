@@ -1,4 +1,4 @@
-/* $Id: PGMSavedState.cpp 55136 2009-11-23 16:04:20Z knut.osmundsen@oracle.com $ */
+/* $Id: PGMSavedState.cpp 55137 2009-11-23 16:07:22Z knut.osmundsen@oracle.com $ */
 /** @file
  * PGM - Page Manager and Monitor, The Saved State Part.
  */
@@ -1823,7 +1823,7 @@ static DECLCALLBACK(int)  pgmR3LiveVote(PVM pVM, PSSMHANDLE pSSM, uint32_t uPass
      */
     if (    cDirtyPagesShort <= cDirtyPagesLong
         &&  (   cDirtyNow    <= cDirtyPagesShort
-             || cDirtyNow - cDirtyPagesShort < cDirtyPagesShort / 8
+             || cDirtyNow - cDirtyPagesShort < RT_MIN(cDirtyPagesShort / 8, 16)
             )
        )
     {
