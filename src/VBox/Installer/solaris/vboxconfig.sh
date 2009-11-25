@@ -1,5 +1,5 @@
 #!/bin/sh
-# $Id: vboxconfig.sh 54964 2009-11-18 12:37:12Z ramshankar.venkataraman@oracle.com $
+# $Id: vboxconfig.sh 55237 2009-11-25 12:12:26Z ramshankar.venkataraman@oracle.com $
 
 # Sun VirtualBox
 # VirtualBox Configuration Script, Solaris host.
@@ -87,7 +87,7 @@ subprint()
 warnprint()
 {
     if test "$ISSILENT" != "$SILENTOP"; then
-        echo 1>&2 "* Warning!! $1"
+        echo 1>&2 "   * Warning!! $1"
     fi
 }
 
