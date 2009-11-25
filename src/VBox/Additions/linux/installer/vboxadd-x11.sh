@@ -1,6 +1,6 @@
 #! /bin/sh
 # Sun VirtualBox
-# Linux Additions X11 setup init script ($Revision: 55216 $)
+# Linux Additions X11 setup init script ($Revision: 55218 $)
 #
 
 #
@@ -385,9 +385,8 @@ setup()
     else
         cat << EOF
 
-You appear to be running an older version of the X Window system installed on
-your guest system.  Seamless mode and dynamic resizing will not work in
-this guest.
+You appear to be running an older version of the X Window system in your
+guest.  Seamless mode and dynamic resizing will not work!
 
 EOF
     fi
