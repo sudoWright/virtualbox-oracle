@@ -1,4 +1,4 @@
-/* $Id: NetworkAdapterImpl.h 55293 2009-11-26 11:31:46Z noreply@oracle.com $ */
+/* $Id: NetworkAdapterImpl.h 55460 2009-11-30 10:01:05Z klaus.espenlaub@oracle.com $ */
 
 /** @file
  *
@@ -44,11 +44,11 @@ public:
 
     struct Data
     {
-        Data()
-            : mSlot (0), mEnabled (FALSE)
-            , mAttachmentType (NetworkAttachmentType_Null)
-            ,  mCableConnected (TRUE), mLineSpeed (0), mTraceEnabled (FALSE)
-            , mHostInterface ("") /* cannot be null */
+        Data() : mSlot(0), mEnabled(FALSE),
+                 mAttachmentType(NetworkAttachmentType_Null),
+                 mCableConnected(TRUE), mLineSpeed(0), mTraceEnabled(FALSE),
+                 mHostInterface("") /* cannot be null */,
+                 mNATNetwork("") /* cannot be null */
         {}
 
         bool operator== (const Data &that) const
