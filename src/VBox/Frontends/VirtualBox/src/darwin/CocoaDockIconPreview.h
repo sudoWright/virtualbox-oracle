@@ -1,7 +1,8 @@
+/* $Id: CocoaDockIconPreview.h 55603 2009-12-03 15:53:14Z sergey.dubov@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt GUI ("VirtualBox"):
- * VirtualBox Qt extensions: QISplitter class declaration
+ * CocoaDockIconPreview class declaration
  */
 
 /*
@@ -20,47 +21,29 @@
  * additional information or have any questions.
  */
 
-#ifndef _QISplitter_h_
-#define _QISplitter_h_
+#ifndef ___CocoaDockIconPreview_h___
+#define ___CocoaDockIconPreview_h___
 
-/* Global includes */
-#include <QSplitter>
+/* Qt includes */
+#include "AbstractDockIconPreview.h"
 
-/* Global forwardes */
-class SplitterHandle;
+class CocoaDockIconPreviewPrivate;
 
-class QISplitter : public QSplitter
+class CocoaDockIconPreview: public AbstractDockIconPreview
 {
-    Q_OBJECT;
-
 public:
+    CocoaDockIconPreview (VBoxConsoleWnd *aMainWnd, const QPixmap& aOverlayImage);
+    ~CocoaDockIconPreview();
 
-    QISplitter (QWidget *aParent);
+    virtual void updateDockOverlay();
+    virtual void updateDockPreview (CGImageRef aVMImage);
+    virtual void updateDockPreview (VBoxFrameBuffer *aFrameBuffer);
+
+    virtual void setOriginalSize (int aWidth, int aHeight);
 
 private:
-
-    bool eventFilter (QObject *aWatched, QEvent *aEvent);
-    void showEvent (QShowEvent *aEvent);
-
-    QSplitterHandle* createHandle();
-
-    QByteArray mBaseState;
-
-    bool mPolished;
+    CocoaDockIconPreviewPrivate *d;
 };
 
-class QISplitterHandle : public QSplitterHandle
-{
-    Q_OBJECT;
-
-public:
-
-    QISplitterHandle (Qt::Orientation aOrientation, QISplitter *aParent);
-
-private:
-
-    void paintEvent (QPaintEvent *aEvent);
-};
-
-#endif /* _QISplitter_h_ */
+#endif /* ___CocoaDockIconPreview_h___ */
 
