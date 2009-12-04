@@ -1,4 +1,4 @@
-/* $Id: VirtualBoxImpl.cpp 55652 2009-12-04 11:37:03Z noreply@oracle.com $ */
+/* $Id: VirtualBoxImpl.cpp 55674 2009-12-04 15:59:34Z noreply@oracle.com $ */
 
 /** @file
  * Implementation of IVirtualBox in VBoxSVC.
@@ -138,7 +138,7 @@ private:
 
 ////////////////////////////////////////////////////////////////////////////////
 //
-// VirtualBox data definition
+// VirtualBox private member data definition
 //
 ////////////////////////////////////////////////////////////////////////////////
 
