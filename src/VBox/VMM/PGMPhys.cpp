@@ -1,4 +1,4 @@
-/* $Id: PGMPhys.cpp 55203 2009-11-24 16:16:49Z knut.osmundsen@oracle.com $ */
+/* $Id: PGMPhys.cpp 55741 2009-12-08 11:11:45Z knut.osmundsen@oracle.com $ */
 /** @file
  * PGM - Page Manager and Monitor, Physical Memory Addressing.
  */
@@ -2735,12 +2735,12 @@ VMMR3DECL(int) PGMR3PhysRomProtect(PVM pVM, RTGCPHYS GCPhys, RTGCPHYS cb, PGMROM
              */
             if (fChanges)
             {
-                int rc = PGMHandlerPhysicalReset(pVM, pRom->GCPhys);
-                if (RT_FAILURE(rc))
+                int rc2 = PGMHandlerPhysicalReset(pVM, pRom->GCPhys);
+                if (RT_FAILURE(rc2))
                 {
                     pgmUnlock(pVM);
                     AssertRC(rc);
-                    return rc;
+                    return rc2;
                 }
             }
 
