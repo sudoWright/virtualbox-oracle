@@ -1,4 +1,4 @@
-; $Id: SUPDrvA-win.asm 53865 2009-10-23 11:31:34Z noreply@oracle.com $
+; $Id: SUPDrvA-win.asm 55815 2009-12-09 15:55:27Z knut.osmundsen@oracle.com $
 ;; @file
 ; VirtualBox Support Driver - Windows NT specific assembly parts.
 ;
@@ -42,6 +42,7 @@ extern _DbgPrint
 %if 1 ; see alternative in SUPDrv-win.cpp
 ;;
 ; Kind of alias for DbgPrint
+export NAME(SUPR0Printf)
 BEGINPROC SUPR0Printf
         jmp     _DbgPrint
 ENDPROC SUPR0Printf
