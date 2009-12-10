@@ -1,4 +1,4 @@
-/* $Id: AudioAdapterImpl.h 55293 2009-11-26 11:31:46Z noreply@oracle.com $ */
+/* $Id: AudioAdapterImpl.h 55876 2009-12-10 17:06:44Z noreply@oracle.com $ */
 
 /** @file
  *
@@ -93,8 +93,8 @@ public:
     HRESULT loadSettings(const settings::AudioAdapter &data);
     HRESULT saveSettings(settings::AudioAdapter &data);
 
-    bool isModified() { AutoWriteLock alock (this); return mData.isBackedUp(); }
-    bool isReallyModified() { AutoWriteLock alock (this); return mData.hasActualChanges(); }
+    bool isModified() { AutoWriteLock alock(this COMMA_LOCKVAL_SRC_POS); return mData.isBackedUp(); }
+    bool isReallyModified() { AutoWriteLock alock(this COMMA_LOCKVAL_SRC_POS); return mData.hasActualChanges(); }
     bool rollback();
     void commit();
     void copyFrom (AudioAdapter *aThat);
