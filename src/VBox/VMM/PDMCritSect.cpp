@@ -1,4 +1,4 @@
-/* $Id: PDMCritSect.cpp 55985 2009-12-14 16:31:40Z knut.osmundsen@oracle.com $ */
+/* $Id: PDMCritSect.cpp 56035 2009-12-15 14:23:53Z knut.osmundsen@oracle.com $ */
 /** @file
  * PDM - Critical Sections, Ring-3.
  */
@@ -34,6 +34,7 @@
 #include <VBox/sup.h>
 #include <iprt/asm.h>
 #include <iprt/assert.h>
+#include <iprt/lockvalidator.h>
 #include <iprt/string.h>
 #include <iprt/thread.h>
 
