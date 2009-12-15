@@ -1,4 +1,4 @@
-/* $Id: PerformanceSolaris.cpp 56050 2009-12-15 17:04:40Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: PerformanceSolaris.cpp 56051 2009-12-15 17:20:45Z ramshankar.venkataraman@oracle.com $ */
 
 /** @file
  *
@@ -189,7 +189,6 @@ int CollectorSolaris::getHostMemoryUsage(ULONG *total, ULONG *used, ULONG *avail
     }
     *available = kn->value.ul * (PAGE_SIZE/1024);
 
-    // Optional don't fail if kstat is missing; as ZFS kstats are not be available for SunOS < 5.10 U8
     if (kstat_read(mKC, mZFSCache, 0) != -1)
     {
         if (mZFSCache)
