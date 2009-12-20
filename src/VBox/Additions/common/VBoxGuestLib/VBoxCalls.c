@@ -1,4 +1,4 @@
-/* $Revision: 49961 $ */
+/* $Revision: 56201 $ */
 /** @file
  * VBoxGuestLibR0 - Central calls.
  */
@@ -24,7 +24,7 @@
 
 #ifdef RT_OS_LINUX
 # include "VBoxCalls.h"
-# define DbgPrint AssertMsg2
+# define DbgPrint RTAssertMsg2Weak
 #else
 # include "VBoxCalls.h"
 #endif
