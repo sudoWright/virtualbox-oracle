@@ -1,4 +1,4 @@
-/* $Id: assert-r0drv-darwin.cpp 56201 2009-12-20 23:24:59Z knut.osmundsen@oracle.com $ */
+/* $Id: assert-r0drv-darwin.cpp 56209 2009-12-21 11:06:08Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT -  Assertion Workers, Ring-0 Drivers, Darwin.
  */
@@ -53,13 +53,15 @@ void rtR0AssertNativeMsg1(const char *pszExpr, unsigned uLine, const char *pszFi
 }
 
 
-void rtR0AssertNativeMsg2V(const char *pszFormat, va_list va)
+void rtR0AssertNativeMsg2V(bool fInitial, const char *pszFormat, va_list va)
 {
     char szMsg[256];
 
     RTStrPrintfV(szMsg, sizeof(szMsg) - 1, pszFormat, va);
     szMsg[sizeof(szMsg) - 1] = '\0';
     printf("%s", szMsg);
+
+    NOREF(fInitial);
 }
 
 

@@ -1,10 +1,10 @@
-/* $Id: assert.h 56209 2009-12-21 11:06:08Z knut.osmundsen@oracle.com $ */
+/* $Id: RTAssertMsg2Add.cpp 56209 2009-12-21 11:06:08Z knut.osmundsen@oracle.com $ */
 /** @file
- * IPRT - Internal RTAssert header
+ * IPRT - RTAssertMsg2Add.
  */
 
 /*
- * Copyright (C) 2009 Sun Microsystems, Inc.
+ * Copyright (C) 2008-2009 Sun Microsystems, Inc.
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;
@@ -28,40 +28,22 @@
  * additional information or have any questions.
  */
 
-#ifndef ___internal_assert_h
-#define ___internal_assert_h
 
-#include <iprt/types.h>
+/*******************************************************************************
+*   Header Files                                                               *
+*******************************************************************************/
+#include <iprt/assert.h>
+#include "internal/iprt.h"
 
-RT_C_DECLS_BEGIN
+#include <iprt/stdarg.h>
 
-#ifdef IN_RING0
 
-/**
- * Print the 1st part of an assert message to whatever native facility is best
- * fitting.
- *
- * @param   pszExpr     Expression. Can be NULL.
- * @param   uLine       Location line number.
- * @param   pszFile     Location file name.
- * @param   pszFunction Location function name.
- */
-void rtR0AssertNativeMsg1(const char *pszExpr, unsigned uLine, const char *pszFile, const char *pszFunction);
-
-/**
- * Print the 2nd (optional) part of an assert message to whatever native
- * facility is best fitting.
- *
- * @param   fInitial    Whether it's the initial (true) or an additional (false)
- *                      message.
- * @param   pszFormat   Printf like format string.
- * @param   va          Arguments to that string.
- */
-void rtR0AssertNativeMsg2V(bool fInitial, const char *pszFormat, va_list va);
-
-#endif
-
-RT_C_DECLS_END
-
-#endif
+RTDECL(void) RTAssertMsg2Add(const char *pszFormat, ...)
+{
+    va_list va;
+    va_start(va, pszFormat);
+    RTAssertMsg2AddV(pszFormat, va);
+    va_end(va);
+}
+RT_EXPORT_SYMBOL(RTAssertMsg2Add);
 
