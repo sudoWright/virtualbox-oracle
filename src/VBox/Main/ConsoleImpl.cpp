@@ -1,4 +1,4 @@
-/* $Id: ConsoleImpl.cpp 56252 2009-12-22 16:32:56Z vitali.pelenjow@oracle.com $ */
+/* $Id: ConsoleImpl.cpp 56277 2009-12-28 21:40:51Z alexander.eichner@oracle.com $ */
 
 /** @file
  *
@@ -2849,6 +2849,7 @@ const char *Console::convertControllerTypeToDev(StorageControllerType_T enmCtrlT
     switch (enmCtrlType)
     {
         case StorageControllerType_LsiLogic:
+        case StorageControllerType_LsiLogicSas:
             return "lsilogicscsi";
         case StorageControllerType_BusLogic:
             return "buslogic";
@@ -2879,6 +2880,7 @@ HRESULT Console::convertBusPortDeviceToLun(StorageBus_T enmBus, LONG port, LONG 
         }
         case StorageBus_SATA:
         case StorageBus_SCSI:
+        case StorageBus_SAS:
         {
             uLun = port;
             return S_OK;
