@@ -1,4 +1,4 @@
-/** @file $Id: vboxvideo_drm.c 51623 2009-08-31 09:30:13Z noreply@oracle.com $
+/** @file $Id: vboxvideo_drm.c 56282 2009-12-29 19:11:46Z noreply@oracle.com $
  *
  * VirtualBox Additions Linux kernel driver, DRM support
  */
@@ -53,7 +53,9 @@
  *    Gareth Hughes <gareth@valinux.com>
  */
 
-#include <linux/autoconf.h>
+#ifndef AUTOCONF_INCLUDED
+# include <linux/autoconf.h>
+#endif
 #include <linux/version.h>
 #include <linux/module.h>
 
