@@ -1,4 +1,4 @@
-/** $Id: RTTimerLRCreate-generic.cpp 49685 2009-07-07 14:58:27Z knut.osmundsen@oracle.com $ */
+/* $Id: RTTimerLRCreate-generic.cpp 56347 2010-01-05 08:08:44Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Low Resolution Timers, Generic RTTimerLRCreate() Implementation.
  */
