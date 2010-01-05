@@ -1,4 +1,4 @@
-/* $Id: fileaio-win.cpp 49943 2009-07-10 20:11:26Z alexander.eichner@oracle.com $ */
+/* $Id: fileaio-win.cpp 56352 2010-01-05 09:29:31Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - File async I/O, native implementation for the Windows host platform.
  */
@@ -211,10 +211,10 @@ RTDECL(int) RTFileAioReqPrepareRead(RTFILEAIOREQ hReq, RTFILE hFile, RTFOFF off,
 }
 
 RTDECL(int) RTFileAioReqPrepareWrite(RTFILEAIOREQ hReq, RTFILE hFile, RTFOFF off,
-                                     void *pvBuf, size_t cbWrite, void *pvUser)
+                                     void const *pvBuf, size_t cbWrite, void *pvUser)
 {
     return rtFileAioReqPrepareTransfer(hReq, hFile, TRANSFERDIRECTION_WRITE,
-                                       off, pvBuf, cbWrite, pvUser);
+                                       off, (void *)pvBuf, cbWrite, pvUser);
 }
 
 RTDECL(int) RTFileAioReqPrepareFlush(RTFILEAIOREQ hReq, RTFILE hFile, void *pvUser)
