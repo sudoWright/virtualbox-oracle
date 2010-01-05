@@ -1,4 +1,4 @@
-/* $Id: PATMGC.cpp 50923 2009-08-11 10:02:17Z noreply@oracle.com $ */
+/* $Id: PATMGC.cpp 56357 2010-01-05 09:59:19Z knut.osmundsen@oracle.com $ */
 /** @file
  * PATM - Dynamic Guest OS Patching Manager - Guest Context
  */
@@ -49,7 +49,7 @@
 
 
 /**
- * #PF Virtual Handler callback for Guest access a page monitored by PATM
+ * \#PF Virtual Handler callback for Guest access a page monitored by PATM
  *
  * @returns VBox status code (appropritate for trap handling and GC return).
  * @param   pVM         VM Handle.
