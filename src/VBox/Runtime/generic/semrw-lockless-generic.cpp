@@ -1,4 +1,4 @@
-/* $Id: semrw-lockless-generic.cpp 56405 2010-01-07 22:03:06Z knut.osmundsen@oracle.com $ */
+/* $Id: semrw-lockless-generic.cpp 56439 2010-01-10 20:12:30Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT Testcase - RTSemXRoads, generic implementation.
  */
@@ -133,8 +133,10 @@ RTDECL(int) RTSemRWCreate(PRTSEMRW phRWSem)
             pThis->cWriteRecursions     = 0;
             pThis->fNeedReset           = false;
 #ifdef RTSEMRW_STRICT
-            RTLockValidatorRecExclInit(&pThis->ValidatorWrite, NIL_RTLOCKVALCLASS, RTLOCKVAL_SUB_CLASS_NONE, "RTSemRW", pThis, true);
-            RTLockValidatorRecSharedInit(&pThis->ValidatorRead,  NIL_RTLOCKVALCLASS, RTLOCKVAL_SUB_CLASS_NONE, "RTSemRW", pThis, false /*fSignaller*/, true);
+            RTLockValidatorRecExclInit(&pThis->ValidatorWrite, NIL_RTLOCKVALCLASS, RTLOCKVAL_SUB_CLASS_NONE, pThis,
+                                       true /*fEnabled*/, "RTSemRW");
+            RTLockValidatorRecSharedInit(&pThis->ValidatorRead,  NIL_RTLOCKVALCLASS, RTLOCKVAL_SUB_CLASS_NONE, pThis,
+                                         false /*fSignaller*/, true /*fEnabled*/, "RTSemEvent");
             RTLockValidatorRecMakeSiblings(&pThis->ValidatorWrite.Core, &pThis->ValidatorRead.Core);
 #endif
 
