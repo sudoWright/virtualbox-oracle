@@ -1,4 +1,4 @@
-/* $Id: thread-r0drv-solaris.c 55651 2009-12-04 11:03:05Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: thread-r0drv-solaris.c 56467 2010-01-11 14:45:34Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Threads, Ring-0 Driver, Solaris.
  */
@@ -49,7 +49,7 @@ RTDECL(RTNATIVETHREAD) RTThreadNativeSelf(void)
 }
 
 
-RTDECL(int) RTThreadSleep(unsigned cMillies)
+RTDECL(int) RTThreadSleep(RTMSINTERVAL cMillies)
 {
     clock_t cTicks;
     RT_ASSERT_PREEMPTIBLE();

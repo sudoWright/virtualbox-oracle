@@ -1,4 +1,4 @@
-/* $Id: thread-posix.cpp 56338 2010-01-04 16:08:04Z knut.osmundsen@oracle.com $ */
+/* $Id: thread-posix.cpp 56467 2010-01-11 14:45:34Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Threads, POSIX.
  */
@@ -265,7 +265,7 @@ RTDECL(RTNATIVETHREAD) RTThreadNativeSelf(void)
 }
 
 
-RTDECL(int) RTThreadSleep(unsigned cMillies)
+RTDECL(int) RTThreadSleep(RTMSINTERVAL cMillies)
 {
     LogFlow(("RTThreadSleep: cMillies=%d\n", cMillies));
     if (!cMillies)

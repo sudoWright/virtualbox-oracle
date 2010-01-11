@@ -1,4 +1,4 @@
-/* $Id: thread-win.cpp 38828 2008-11-05 02:54:02Z knut.osmundsen@oracle.com $ */
+/* $Id: thread-win.cpp 56467 2010-01-11 14:45:34Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Threads, Win32.
  */
@@ -145,7 +145,7 @@ RTDECL(RTNATIVETHREAD) RTThreadNativeSelf(void)
 }
 
 
-RTR3DECL(int)   RTThreadSleep(unsigned cMillies)
+RTR3DECL(int)   RTThreadSleep(RTMSINTERVAL cMillies)
 {
     LogFlow(("RTThreadSleep: cMillies=%d\n", cMillies));
     Sleep(cMillies);
