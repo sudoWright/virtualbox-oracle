@@ -1,4 +1,4 @@
-/* $Revision: 56207 $ */
+/* $Revision: 56495 $ */
 /** @file
  * VBoxDrv - The VirtualBox Support Driver - Common code.
  */
@@ -507,9 +507,7 @@ void VBOXCALL supdrvDeleteDevExt(PSUPDRVDEVEXT pDevExt)
      */
     /* objects. */
     pObj = pDevExt->pObjs;
-#if !defined(DEBUG_bird) || !defined(RT_OS_LINUX) /* breaks unloading, temporary, remove me! */
     Assert(!pObj);                      /* (can trigger on forced unloads) */
-#endif
     pDevExt->pObjs = NULL;
     while (pObj)
     {
