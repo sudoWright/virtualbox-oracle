@@ -1,4 +1,4 @@
-/* $Id: MachineImpl.cpp 56387 2010-01-06 21:23:07Z noreply@oracle.com $ */
+/* $Id: MachineImpl.cpp 56580 2010-01-13 16:40:02Z noreply@oracle.com $ */
 
 /** @file
  * Implementation of IMachine in VBoxSVC.
@@ -95,6 +95,7 @@
 /////////////////////////////////////////////////////////////////////////////
 
 Machine::Data::Data()
+    : mSnapshotsTreeLockHandle(LOCKCLASS_OTHERLIST)
 {
     mRegistered = FALSE;
     mAccessible = FALSE;
