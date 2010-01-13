@@ -1,4 +1,4 @@
-/* $Id: Builtins.h 52117 2009-09-09 14:39:46Z aleksey.ilyushin@oracle.com $ */
+/* $Id: Builtins.h 56594 2010-01-13 22:08:17Z alexander.eichner@oracle.com $ */
 /** @file
  * Built-in drivers & devices (part 1) header.
  */
@@ -111,6 +111,7 @@ extern const PDMDRVREG g_DrvNAT;
 extern const PDMDRVREG g_DrvNetSniffer;
 extern const PDMDRVREG g_DrvAUDIO;
 extern const PDMDRVREG g_DrvACPI;
+extern const PDMDRVREG g_DrvAcpiCpu;
 extern const PDMDRVREG g_DrvVUSBRootHub;
 extern const PDMDRVREG g_DrvChar;
 extern const PDMDRVREG g_DrvNamedPipe;
