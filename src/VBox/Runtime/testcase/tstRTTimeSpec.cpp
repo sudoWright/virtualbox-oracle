@@ -1,4 +1,4 @@
-/* $Id: tstTimeSpec.cpp 56654 2010-01-15 13:16:29Z knut.osmundsen@oracle.com $ */
+/* $Id: tstRTTimeSpec.cpp 56664 2010-01-15 14:09:02Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - RTTimeSpec and PRTTIME tests.
  */
@@ -35,6 +35,7 @@
 # define RTTIME_INCL_TIMEVAL
 # define RTTIME_INCL_TIMESPEC
 # include <time.h>
+# include <sys/time.h>
 #endif
 #include <iprt/time.h>
 
