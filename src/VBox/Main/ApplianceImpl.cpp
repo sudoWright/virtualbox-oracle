@@ -1,4 +1,4 @@
-/* $Id: ApplianceImpl.cpp 56550 2010-01-12 18:33:33Z noreply@oracle.com $ */
+/* $Id: ApplianceImpl.cpp 56659 2010-01-15 13:27:26Z noreply@oracle.com $ */
 /** @file
  *
  * IAppliance and IVirtualSystem COM class implementations.
@@ -41,6 +41,7 @@
 
 #include "HostNetworkInterfaceImpl.h"
 
+#include "AutoCaller.h"
 #include "Logging.h"
 
 using namespace std;

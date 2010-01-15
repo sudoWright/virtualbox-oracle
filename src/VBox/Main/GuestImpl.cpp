@@ -1,4 +1,4 @@
-/* $Id: GuestImpl.cpp 55944 2009-12-13 16:21:19Z knut.osmundsen@oracle.com $ */
+/* $Id: GuestImpl.cpp 56659 2010-01-15 13:27:26Z noreply@oracle.com $ */
 
 /** @file
  *
@@ -27,6 +27,7 @@
 #include "ConsoleImpl.h"
 #include "VMMDev.h"
 
+#include "AutoCaller.h"
 #include "Logging.h"
 
 #include <VBox/VMMDev.h>

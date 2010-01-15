@@ -1,4 +1,4 @@
-/* $Id: HostNetworkInterfaceImpl.cpp 56623 2010-01-14 18:35:33Z aleksey.ilyushin@oracle.com $ */
+/* $Id: HostNetworkInterfaceImpl.cpp 56659 2010-01-15 13:27:26Z noreply@oracle.com $ */
 
 /** @file
  *
@@ -22,6 +22,7 @@
  */
 
 #include "HostNetworkInterfaceImpl.h"
+#include "AutoCaller.h"
 #include "Logging.h"
 #include "netif.h"
 
