@@ -1,4 +1,4 @@
-/* $Id: DrvHostParallel.cpp 56849 2010-01-23 00:19:47Z knut.osmundsen@oracle.com $ */
+/* $Id: DrvHostParallel.cpp 56850 2010-01-23 00:51:04Z knut.osmundsen@oracle.com $ */
 /** @file
  * VirtualBox Host Parallel Port Driver.
  *
@@ -90,8 +90,7 @@ static DECLCALLBACK(void *) drvHostParallelQueryInterface(PPDMIBASE pInterface, 
     PPDMDRVINS          pDrvIns = PDMIBASE_2_PDMDRV(pInterface);
     PDRVHOSTPARALLEL    pThis   = PDMINS_2_DATA(pDrvIns, PDRVHOSTPARALLEL);
 
-    if (RTUuidCompare2Strs(pszIID, PDMIBASE_IID) == 0)
-        return &pDrvIns->IBase;
+    PDMIBASE_RETURN_INTERFACE(pszIID, PDMIBASE, &pDrvIns->IBase);
     PDMIBASE_RETURN_INTERFACE(pszIID, PDMIHOSTPARALLELCONNECTOR, &pThis->IHostParallelConnector);
     return NULL;
 }
