@@ -1,4 +1,4 @@
-/* $Id: DevSB16.cpp 56850 2010-01-23 00:51:04Z knut.osmundsen@oracle.com $ */
+/* $Id: DevSB16.cpp 56881 2010-01-25 14:21:13Z knut.osmundsen@oracle.com $ */
 /** @file
  * DevSB16 - VBox SB16 Audio Controller.
  *
@@ -1793,6 +1793,7 @@ static DECLCALLBACK(int) sb16Construct (PPDMDEVINS pDevIns, int iInstance, PCFGM
      * Validations.
      */
     Assert(iInstance == 0);
+    PDMDEV_CHECK_VERSIONS_RETURN(pDevIns);
     if (!CFGMR3AreValuesValid(pCfgHandle,
                               "IRQ\0"
                               "DMA\0"
