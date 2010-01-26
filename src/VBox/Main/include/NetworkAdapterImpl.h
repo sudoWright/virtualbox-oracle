@@ -1,4 +1,4 @@
-/* $Id: NetworkAdapterImpl.h 55876 2009-12-10 17:06:44Z noreply@oracle.com $ */
+/* $Id: NetworkAdapterImpl.h 56955 2010-01-26 12:21:34Z noreply@oracle.com $ */
 
 /** @file
  *
@@ -26,7 +26,6 @@
 
 #include "VirtualBoxBase.h"
 
-class Machine;
 class GuestOSType;
 
 namespace settings

@@ -1,4 +1,4 @@
-/* $Id: USBControllerImpl.h 55678 2009-12-04 17:32:03Z noreply@oracle.com $ */
+/* $Id: USBControllerImpl.h 56955 2010-01-26 12:21:34Z noreply@oracle.com $ */
 
 /** @file
  *
@@ -26,7 +26,6 @@
 
 #include "VirtualBoxBase.h"
 
-class Machine;
 class HostUSBDevice;
 class USBDeviceFilter;
 

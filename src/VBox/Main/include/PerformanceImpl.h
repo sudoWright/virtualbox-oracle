@@ -1,4 +1,4 @@
-/* $Id: PerformanceImpl.h 52692 2009-09-22 15:50:03Z klaus.espenlaub@oracle.com $ */
+/* $Id: PerformanceImpl.h 56955 2010-01-26 12:21:34Z noreply@oracle.com $ */
 
 /** @file
  *
@@ -47,7 +47,6 @@ namespace pm
 /* Each second we obtain new CPU load stats. */
 #define VBOX_USAGE_SAMPLER_MIN_INTERVAL 1000
 
-class Machine;
 class HostUSBDevice;
 
 class ATL_NO_VTABLE PerformanceMetric :
