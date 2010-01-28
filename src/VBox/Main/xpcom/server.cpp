@@ -1,4 +1,4 @@
-/* $Id: server.cpp 56931 2010-01-25 20:31:39Z noreply@oracle.com $ */
+/* $Id: server.cpp 57056 2010-01-28 17:08:19Z noreply@oracle.com $ */
 /** @file
  * XPCOM server process (VBoxSVC) start point.
  */
@@ -1022,7 +1022,7 @@ int main(int argc, char **argv)
             for (int i = iSize; i > 0; i--)
                 putchar('*');
             RTPrintf("\n%s\n", szBuf);
-            RTPrintf("(C) 2008-2010 " VBOX_VENDOR "\n"
+            RTPrintf("(C) 2008-" VBOX_C_YEAR " " VBOX_VENDOR "\n"
                      "All rights reserved.\n");
 #ifdef DEBUG
             RTPrintf("Debug version.\n");
