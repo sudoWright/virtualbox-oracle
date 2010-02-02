@@ -1,4 +1,4 @@
-/* $Id: display.cpp 54986 2009-11-18 23:38:40Z noreply@oracle.com $ */
+/* $Id: display.cpp 57177 2010-02-02 18:58:33Z knut.osmundsen@oracle.com $ */
 /** @file
  * X11 guest client - display management.
  */

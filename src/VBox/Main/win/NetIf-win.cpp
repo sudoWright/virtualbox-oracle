@@ -1,4 +1,4 @@
-/* $Id: NetIf-win.cpp 56497 2010-01-12 10:17:29Z knut.osmundsen@oracle.com $ */
+/* $Id: NetIf-win.cpp 57177 2010-02-02 18:58:33Z knut.osmundsen@oracle.com $ */
 /** @file
  * Main - NetIfList, Windows implementation.
  */

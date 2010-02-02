@@ -1,4 +1,4 @@
-/* $Id: ParallelsHDDCore.cpp 53801 2009-10-22 12:34:22Z knut.osmundsen@oracle.com $ */
+/* $Id: ParallelsHDDCore.cpp 57177 2010-02-02 18:58:33Z knut.osmundsen@oracle.com $ */
 /** @file
  *
  * Parallels hdd disk image, core code.

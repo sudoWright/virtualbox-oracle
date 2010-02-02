@@ -1,4 +1,4 @@
-/* $Id: tstHostHardwareLinux.cpp 53164 2009-10-02 23:27:33Z noreply@oracle.com $ */
+/* $Id: tstHostHardwareLinux.cpp 57177 2010-02-02 18:58:33Z knut.osmundsen@oracle.com $ */
 /** @file
  *
  * Test executable for quickly excercising/debugging the Linux host hardware

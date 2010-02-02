@@ -1,4 +1,4 @@
-/* $Id: sysfs.h 56352 2010-01-05 09:29:31Z knut.osmundsen@oracle.com $ */
+/* $Id: sysfs.h 57177 2010-02-02 18:58:33Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Linux sysfs access.
  */
