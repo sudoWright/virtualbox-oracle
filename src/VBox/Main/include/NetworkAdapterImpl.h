@@ -1,4 +1,4 @@
-/* $Id: NetworkAdapterImpl.h 56955 2010-01-26 12:21:34Z noreply@oracle.com $ */
+/* $Id: NetworkAdapterImpl.h 57170 2010-02-02 16:30:28Z noreply@oracle.com $ */
 
 /** @file
  *
@@ -139,7 +139,6 @@ public:
     HRESULT saveSettings(settings::NetworkAdapter &data);
 
     bool isModified() { AutoWriteLock alock(this COMMA_LOCKVAL_SRC_POS); return mData.isBackedUp(); }
-    bool isReallyModified() { AutoWriteLock alock(this COMMA_LOCKVAL_SRC_POS); return mData.hasActualChanges(); }
     bool rollback();
     void commit();
     void copyFrom (NetworkAdapter *aThat);

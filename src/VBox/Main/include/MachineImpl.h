@@ -1,4 +1,4 @@
-/* $Id: MachineImpl.h 56959 2010-01-26 14:06:05Z noreply@oracle.com $ */
+/* $Id: MachineImpl.h 57170 2010-02-02 16:30:28Z noreply@oracle.com $ */
 
 /** @file
  *
@@ -745,7 +745,6 @@ protected:
     bool isInOwnDir(Utf8Str *aSettingsDir = NULL);
 
     bool isModified();
-    bool isReallyModified(bool aIgnoreUserData = false);
     void rollback(bool aNotify);
     void commit();
     void copyFrom(Machine *aThat);

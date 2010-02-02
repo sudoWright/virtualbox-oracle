@@ -1,4 +1,4 @@
-/* $Id: AudioAdapterImpl.h 57051 2010-01-28 16:50:32Z noreply@oracle.com $ */
+/* $Id: AudioAdapterImpl.h 57170 2010-02-02 16:30:28Z noreply@oracle.com $ */
 
 /** @file
  *
@@ -92,7 +92,6 @@ public:
     HRESULT saveSettings(settings::AudioAdapter &data);
 
     bool isModified();
-    bool isReallyModified();
     bool rollback();
     void commit();
     void copyFrom(AudioAdapter *aThat);
