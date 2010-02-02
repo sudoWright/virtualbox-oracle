@@ -1,4 +1,4 @@
-/* $Id: DevPcArch.c 57178 2010-02-02 19:44:51Z knut.osmundsen@oracle.com $ */
+/* $Id: DevPcArch.c 57179 2010-02-02 19:50:31Z knut.osmundsen@oracle.com $ */
 /** @file
  * DevPcArch - PC Architechture Device.
  */
@@ -254,7 +254,7 @@ const PDMDEVREG g_DevicePcArch =
 {
     /* u32Version */
     PDM_DEVREG_VERSION,
-    /* szDeviceName */
+    /* szName */
     "pcarch",
     /* szRCMod */
     "",
