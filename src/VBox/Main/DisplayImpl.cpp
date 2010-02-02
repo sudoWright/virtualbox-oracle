@@ -1,4 +1,4 @@
-/* $Id: DisplayImpl.cpp 56885 2010-01-25 14:36:17Z knut.osmundsen@oracle.com $ */
+/* $Id: DisplayImpl.cpp 57180 2010-02-02 19:54:23Z knut.osmundsen@oracle.com $ */
 /** @file
  * VirtualBox COM class implementation
  */
@@ -3498,7 +3498,7 @@ const PDMDRVREG Display::DrvReg =
 {
     /* u32Version */
     PDM_DRVREG_VERSION,
-    /* szDriverName */
+    /* szName */
     "MainDisplay",
     /* szRCMod */
     "",

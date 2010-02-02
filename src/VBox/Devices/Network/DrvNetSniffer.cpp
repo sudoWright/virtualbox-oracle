@@ -1,4 +1,4 @@
-/* $Id: DrvNetSniffer.cpp 56881 2010-01-25 14:21:13Z knut.osmundsen@oracle.com $ */
+/* $Id: DrvNetSniffer.cpp 57180 2010-02-02 19:54:23Z knut.osmundsen@oracle.com $ */
 /** @file
  * DrvNetSniffer - Network sniffer filter driver.
  */
@@ -479,7 +479,7 @@ const PDMDRVREG g_DrvNetSniffer =
 {
     /* u32Version */
     PDM_DRVREG_VERSION,
-    /* szDriverName */
+    /* szName */
     "NetSniffer",
     /* szRCMod */
     "",

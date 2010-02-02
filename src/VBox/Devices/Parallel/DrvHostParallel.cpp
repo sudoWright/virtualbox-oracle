@@ -1,4 +1,4 @@
-/* $Id: DrvHostParallel.cpp 56881 2010-01-25 14:21:13Z knut.osmundsen@oracle.com $ */
+/* $Id: DrvHostParallel.cpp 57180 2010-02-02 19:54:23Z knut.osmundsen@oracle.com $ */
 /** @file
  * VirtualBox Host Parallel Port Driver.
  *
@@ -393,7 +393,7 @@ const PDMDRVREG g_DrvHostParallel =
 {
     /* u32Version */
     PDM_DRVREG_VERSION,
-    /* szDriverName */
+    /* szName */
     "HostParallel",
     /* szRCMod */
     "",

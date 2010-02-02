@@ -1,4 +1,4 @@
-/* $Id: VMMDevInterface.cpp 56850 2010-01-23 00:51:04Z knut.osmundsen@oracle.com $ */
+/* $Id: VMMDevInterface.cpp 57180 2010-02-02 19:54:23Z knut.osmundsen@oracle.com $ */
 /** @file
  * VirtualBox Driver Interface to VMM device.
  */
@@ -818,7 +818,7 @@ const PDMDRVREG VMMDev::DrvReg =
 {
     /* u32Version */
     PDM_DRVREG_VERSION,
-    /* szDriverName */
+    /* szName */
     "HGCM",
     /* szRCMod */
     "",

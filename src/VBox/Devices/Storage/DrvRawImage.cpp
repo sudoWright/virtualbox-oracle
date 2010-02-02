@@ -1,4 +1,4 @@
-/* $Id: DrvRawImage.cpp 56881 2010-01-25 14:21:13Z knut.osmundsen@oracle.com $ */
+/* $Id: DrvRawImage.cpp 57180 2010-02-02 19:54:23Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox storage devices: Raw image driver
  */
@@ -344,7 +344,7 @@ const PDMDRVREG g_DrvRawImage =
 {
     /* u32Version */
     PDM_DRVREG_VERSION,
-    /* szDriverName */
+    /* szName */
     "RawImage",
     /* szRCMod */
     "",

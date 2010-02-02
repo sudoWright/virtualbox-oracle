@@ -1,4 +1,4 @@
-/* $Id: MouseImpl.cpp 56822 2010-01-22 12:22:38Z knut.osmundsen@oracle.com $ */
+/* $Id: MouseImpl.cpp 57180 2010-02-02 19:54:23Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox frontends: Basic Frontend (BFE):
  * Implementation of Mouse class
@@ -261,7 +261,7 @@ const PDMDRVREG Mouse::DrvReg =
 {
     /* u32Version */
     PDM_DRVREG_VERSION,
-    /* szDriverName */
+    /* szName */
     "MainMouse",
     /* szRCMod */
     "",

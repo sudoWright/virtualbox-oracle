@@ -1,4 +1,4 @@
-/* $Id: VMMDevInterface.cpp 56849 2010-01-23 00:19:47Z knut.osmundsen@oracle.com $ */
+/* $Id: VMMDevInterface.cpp 57180 2010-02-02 19:54:23Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox frontends: Basic Frontend (BFE):
  * Implementation of VMMDev: driver interface to VMM device
@@ -476,7 +476,7 @@ const PDMDRVREG VMMDev::DrvReg =
 {
     /* u32Version */
     PDM_DRVREG_VERSION,
-    /* szDriverName */
+    /* szName */
     "HGCM",
     /* szRCMod */
     "",

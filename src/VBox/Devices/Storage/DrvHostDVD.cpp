@@ -1,4 +1,4 @@
-/* $Id: DrvHostDVD.cpp 56705 2010-01-18 14:08:39Z knut.osmundsen@oracle.com $ */
+/* $Id: DrvHostDVD.cpp 57180 2010-02-02 19:54:23Z knut.osmundsen@oracle.com $ */
 /** @file
  * DrvHostDVD - Host DVD block driver.
  */
@@ -827,7 +827,7 @@ const PDMDRVREG g_DrvHostDVD =
 {
     /* u32Version */
     PDM_DRVREG_VERSION,
-    /* szDriverName */
+    /* szName */
     "HostDVD",
     /* szRCMod */
     "",
