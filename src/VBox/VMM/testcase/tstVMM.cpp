@@ -1,4 +1,4 @@
-/* $Id: tstVMM.cpp 55780 2009-12-08 18:29:06Z knut.osmundsen@oracle.com $ */
+/* $Id: tstVMM.cpp 57165 2010-02-02 16:00:35Z knut.osmundsen@oracle.com $ */
 /** @file
  * VMM Testcase.
  */
@@ -26,7 +26,8 @@
 #include <VBox/vm.h>
 #include <VBox/vmm.h>
 #include <VBox/cpum.h>
-#include <VBox/pdm.h>
+#include <VBox/tm.h>
+#include <VBox/pdmapi.h>
 #include <VBox/err.h>
 #include <VBox/log.h>
 #include <iprt/assert.h>
