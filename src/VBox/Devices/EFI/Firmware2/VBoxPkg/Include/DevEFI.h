@@ -1,4 +1,4 @@
-/* $Id: DevEFI.h 57097 2010-01-31 10:29:08Z noreply@oracle.com $ */
+/* $Id: DevEFI.h 57225 2010-02-03 15:22:42Z noreply@oracle.com $ */
 /** @file
  * EFI for VirtualBox Common Definitions.
  *
@@ -54,6 +54,10 @@ typedef enum
     EFI_INFO_INDEX_STACK_BASE,
     EFI_INFO_INDEX_STACK_SIZE,
     EFI_INFO_INDEX_BOOT_ARGS,
+    EFI_INFO_INDEX_DEVICE_PROPS,
+    EFI_INFO_INDEX_FSB_FREQUENCY,
+    EFI_INFO_INDEX_CPU_FREQUENCY,
+    EFI_INFO_INDEX_TSC_FREQUENCY,
     EFI_INFO_INDEX_END
 } EfiInfoIndex;
 
