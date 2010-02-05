@@ -1,4 +1,4 @@
-/* $Id: TRPMAll.cpp 56668 2010-01-15 14:26:49Z knut.osmundsen@oracle.com $ */
+/* $Id: TRPMAll.cpp 57321 2010-02-05 02:24:13Z knut.osmundsen@oracle.com $ */
 /** @file
  * TRPM - Trap Monitor - Any Context.
  */
@@ -492,7 +492,7 @@ VMMDECL(int) TRPMForwardTrap(PVMCPU pVCpu, PCPUMCTXCORE pRegFrame, uint32_t iGat
             rc = SELMValidateAndConvertCSAddr(pVM, fakeflags, 0, GuestIdte.Gen.u16SegSel, NULL, pHandler, &dummy);
             if (rc == VINF_SUCCESS)
             {
-                VBOXGDTR gdtr = {0};
+                VBOXGDTR gdtr = {0, 0};
                 bool     fConforming = false;
                 int      idx = 0;
                 uint32_t dpl;
