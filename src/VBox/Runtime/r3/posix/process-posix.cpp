@@ -1,4 +1,4 @@
-/* $Id: process-posix.cpp 57388 2010-02-07 21:35:45Z noreply@oracle.com $ */
+/* $Id: process-posix.cpp 57389 2010-02-07 21:37:44Z noreply@oracle.com $ */
 /** @file
  * IPRT - Process, POSIX.
  */
@@ -381,6 +381,6 @@ RTR3DECL(int)   RTProcDaemonize(bool fNoChDir, bool fNoClose, const char *pszPid
         exit(0);
     }
 
-    return rc;
+    return VINF_SUCCESS;
 }
 
