@@ -1,4 +1,4 @@
-/* $Id: tstRTSemXRoads.cpp 56304 2010-01-01 13:47:28Z knut.osmundsen@oracle.com $ */
+/* $Id: tstRTSemXRoads.cpp 57432 2010-02-09 03:39:45Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT Testcase - RTSemXRoads.
  */
@@ -205,5 +205,4 @@ int main()
 
     return RTTestSummaryAndDestroy(g_hTest);
 }
-
 
