@@ -1,4 +1,4 @@
-/* $Revision: 57124 $ */
+/* $Revision: 57448 $ */
 /** @file
  * VBoxGuestLib - Host-Guest Communication Manager internal functions, implemented by VBoxGuest
  */
@@ -895,7 +895,10 @@ DECLR0VBGL(int) VbglR0HGCMInternalCall(VBoxGuestHGCMCallInfo *pCallInfo, uint32_
                 rc = vbglR0HGCMInternalCopyBackResult(pCallInfo, pHGCMCall, &ParmInfo, fIsUser, rc);
             }
             else
-                LogRel(("VbglR0HGCMInternalCall: vbglR0HGCMInternalDoCall failed. rc=%Rrc\n", rc));
+            {
+                if (rc != VERR_INTERRUPTED)
+                    LogRel(("VbglR0HGCMInternalCall: vbglR0HGCMInternalDoCall failed. rc=%Rrc\n", rc));
+            }
 
             if (!fLeakIt)
                 VbglGRFree(&pHGCMCall->header.header);
