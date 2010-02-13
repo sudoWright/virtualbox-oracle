@@ -1,4 +1,4 @@
-/* $Id: string.cpp 57432 2010-02-09 03:39:45Z knut.osmundsen@oracle.com $ */
+/* $Id: stringalloc.cpp 57647 2010-02-13 23:08:49Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - String Manipulation.
  */
