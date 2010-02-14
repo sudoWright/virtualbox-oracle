@@ -1,4 +1,4 @@
-/* $Id: PGMAllPhys.cpp 57320 2010-02-05 02:11:21Z knut.osmundsen@oracle.com $ */
+/* $Id: PGMAllPhys.cpp 57661 2010-02-14 07:47:12Z knut.osmundsen@oracle.com $ */
 /** @file
  * PGM - Page Manager and Monitor, Physical Memory Addressing.
  */
@@ -3423,5 +3423,4 @@ VMMDECL(int) PGMPhysInterpretedWriteNoHandlers(PVMCPU pVCpu, PCPUMCTXCORE pCtxCo
     Log(("PGMPhysInterpretedWriteNoHandlers: GCPtrDst=%RGv cb=%#x -> #PF(%#x) [!raised]\n", GCPtrDst, cb, uErr));
     return rc;
 }
-
 

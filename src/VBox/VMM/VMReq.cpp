@@ -1,4 +1,4 @@
-/* $Id: VMReq.cpp 56513 2010-01-12 13:06:06Z knut.osmundsen@oracle.com $ */
+/* $Id: VMReq.cpp 57661 2010-02-14 07:47:12Z knut.osmundsen@oracle.com $ */
 /** @file
  * VM - Virtual Machine
  */
@@ -1268,7 +1268,4 @@ static int  vmR3ReqProcessOneU(PUVM pUVM, PVMREQ pReq)
     }
     return rcRet;
 }
-
-
-
 
