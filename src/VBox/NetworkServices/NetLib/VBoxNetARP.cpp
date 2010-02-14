@@ -1,4 +1,4 @@
-/* $Id: VBoxNetARP.cpp 44316 2009-03-12 23:59:57Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxNetARP.cpp 57668 2010-02-14 08:18:26Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxNetARP - IntNet ARP Client Routines.
  */
@@ -153,5 +153,4 @@ bool VBoxNetArpHandleIt(PSUPDRVSESSION pSession, INTNETIFHANDLE hIf, PINTNETBUF 
 
     return true;
 }
-
 

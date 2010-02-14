@@ -1,4 +1,4 @@
-/* $Id: SUPLoggerCtl.cpp 44982 2009-03-25 11:36:34Z noreply@oracle.com $ */
+/* $Id: SUPLoggerCtl.cpp 57668 2010-02-14 08:18:26Z knut.osmundsen@oracle.com $ */
 /** @file
  * SUPLoggerCtl - Support Driver Logger Control.
  */
@@ -188,5 +188,4 @@ int main(int argc, char **argv)
 
     return RT_SUCCESS(rc) ? 0 : 1;
 }
-
 

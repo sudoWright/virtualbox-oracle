@@ -1,4 +1,4 @@
-/* $Id: SUPR3HardenedMain.cpp 56235 2009-12-22 12:45:27Z knut.osmundsen@oracle.com $ */
+/* $Id: SUPR3HardenedMain.cpp 57668 2010-02-14 08:18:26Z knut.osmundsen@oracle.com $ */
 /** @file
  * VirtualBox Support Library - Hardened main().
  */
@@ -1084,5 +1084,4 @@ DECLHIDDEN(int) SUPR3HardenedMain(const char *pszProgName, uint32_t fFlags, int 
     PFNSUPTRUSTEDMAIN pfnTrustedMain = supR3HardenedMainGetTrustedMain(pszProgName);
     return pfnTrustedMain(argc, argv, envp);
 }
-
 
