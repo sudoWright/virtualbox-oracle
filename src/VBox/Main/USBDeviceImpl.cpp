@@ -1,4 +1,4 @@
-/* $Id: USBDeviceImpl.cpp 57728 2010-02-15 17:14:18Z noreply@oracle.com $ */
+/* $Id: USBDeviceImpl.cpp 57732 2010-02-15 17:34:29Z noreply@oracle.com $ */
 
 /** @file
  *
@@ -154,7 +154,7 @@ STDMETHODIMP OUSBDevice::COMGETTER(Id)(BSTR *aId)
     if (FAILED(autoCaller.rc())) return autoCaller.rc();
 
     /* this is const, no need to lock */
-    Guid(mData.id).toUtf16().cloneTo(aId);
+    Guid(mData.id).toString().cloneTo(aId);
 
     return S_OK;
 }
