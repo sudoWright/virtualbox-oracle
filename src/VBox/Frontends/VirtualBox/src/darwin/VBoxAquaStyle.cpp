@@ -1,4 +1,4 @@
-/** $Id: $ */
+/** $Id: VBoxAquaStyle.cpp 57742 2010-02-16 01:05:49Z knut.osmundsen@oracle.com $ */
 /** @file
  * Qt GUI - VBox Variation on the QAquaStyle.
  */
