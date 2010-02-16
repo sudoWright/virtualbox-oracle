@@ -1,6 +1,5 @@
-/* $Id: VBoxManageHelp.cpp 57726 2010-02-15 15:26:04Z noreply@oracle.com $ */
+/* $Id: VBoxManageHelp.cpp 57751 2010-02-16 12:12:21Z knut.osmundsen@oracle.com $ */
 /** @file
-
  * VBoxManage - help and other message output.
  */
 
