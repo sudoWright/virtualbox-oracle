@@ -1,4 +1,4 @@
-/* $Revision: 57543 $ */
+/* $Revision: 57851 $ */
 /** @file
  * VBoxGuestLibR0 - Physical memory heap.
  */
@@ -318,6 +318,7 @@ static VBGLPHYSHEAPBLOCK *vbglPhysHeapChunkAlloc (uint32_t cbSize)
 
     if (!pChunk)
     {
+        LogRel(("vbglPhysHeapChunkAlloc: failed to alloc %u contiguous bytes.\n", cbSize));
         return NULL;
     }
 
