@@ -1,4 +1,4 @@
-/* $Id: PDMAsyncCompletionFileNormal.cpp 57888 2010-02-22 07:21:34Z alexander.eichner@oracle.com $ */
+/* $Id: PDMAsyncCompletionFileNormal.cpp 57889 2010-02-22 07:25:02Z alexander.eichner@oracle.com $ */
 /** @file
  * PDM Async I/O - Transport data asynchronous in R3 using EMT.
  * Async File I/O manager.
@@ -711,7 +711,7 @@ static int pdmacFileAioMgrNormalProcessTaskList(PPDMACTASKFILE pTaskHead,
     {
         PPDMACTASKFILE pCurr = pTaskHead;
 
-        if (!pdmacFileBwMgrIsTransferAllowed(pEndpoint->pBwMgr, pCurr->DataSeg.cbSeg))
+        if (!pdmacFileBwMgrIsTransferAllowed(pEndpoint->pBwMgr, (uint32_t)pCurr->DataSeg.cbSeg))
         {
             pAioMgr->fBwLimitReached = true;
             break;
