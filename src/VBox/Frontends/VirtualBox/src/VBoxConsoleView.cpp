@@ -1,3 +1,4 @@
+/* $Id: VBoxConsoleView.cpp 57965 2010-02-23 16:20:04Z noreply@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt GUI ("VirtualBox"):
