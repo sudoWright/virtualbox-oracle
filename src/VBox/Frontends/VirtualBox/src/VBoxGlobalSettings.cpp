@@ -1,3 +1,4 @@
+/* $Id: VBoxGlobalSettings.cpp 57964 2010-02-23 16:18:14Z noreply@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt GUI ("VirtualBox"):
