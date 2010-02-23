@@ -1,3 +1,4 @@
+/* $Id: UIMachineWindowNormal.cpp 57947 2010-02-23 14:21:18Z noreply@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt GUI ("VirtualBox"):
@@ -820,3 +821,4 @@ void UIMachineWindowNormal::cleanupStatusBar()
     m_pIdleTimer->stop();
     m_pIdleTimer->disconnect(SIGNAL(timeout()), this, SLOT(sltUpdateIndicators()));
 }
+

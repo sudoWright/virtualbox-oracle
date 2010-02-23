@@ -1,3 +1,4 @@
+/* $Id: UIIndicatorsPool.cpp 57947 2010-02-23 14:21:18Z noreply@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt GUI ("VirtualBox"):
