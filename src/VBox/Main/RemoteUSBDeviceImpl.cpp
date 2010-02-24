@@ -1,4 +1,4 @@
-/* $Id: RemoteUSBDeviceImpl.cpp 57796 2010-02-17 12:24:34Z noreply@oracle.com $ */
+/* $Id: RemoteUSBDeviceImpl.cpp 58004 2010-02-24 16:24:33Z noreply@oracle.com $ */
 
 /** @file
  *
@@ -141,7 +141,7 @@ STDMETHODIMP RemoteUSBDevice::COMGETTER(Id) (BSTR *aId)
     if (FAILED(autoCaller.rc())) return autoCaller.rc();
 
     /* this is const, no need to lock */
-    Bstr(mData.id).cloneTo(aId);
+    mData.id.toUtf16().detachTo(aId);
 
     return S_OK;
 }
