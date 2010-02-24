@@ -1,4 +1,4 @@
-/* $Id: pipe-win.cpp 58020 2010-02-24 19:15:20Z knut.osmundsen@oracle.com $ */
+/* $Id: pipe-win.cpp 58022 2010-02-24 19:25:21Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Anonymouse Pipes, Windows Implementation.
  */
@@ -55,7 +55,7 @@ RTDECL(int)  RTPipeClose(RTPIPE hPipe)
 
 RTDECL(RTHCINTPTR) RTPipeToNative(RTPIPE hPipe)
 {
-    return INVALID_HANDLE_VALUE;
+    return (RTHCINTPTR)INVALID_HANDLE_VALUE;
 }
 
 
