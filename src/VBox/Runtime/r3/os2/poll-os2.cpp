@@ -1,4 +1,4 @@
-/* $Id: poll-os2.cpp 58101 2010-02-26 10:59:04Z andreas.loeffler@oracle.com $ */
+/* $Id: poll-os2.cpp 58122 2010-02-26 13:03:11Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Polling I/O Handles, OS/2 Implementation.
  */
@@ -82,7 +82,7 @@ RTDECL(int) RTPollSetQueryHandle(RTPOLLSET hPollSet, uint32_t id, PRTHANDLE pHan
 }
 
 
-RTDECL(uint32_t) RTPollGetCount(RTPOLLSET hPollSet)
+RTDECL(uint32_t) RTPollSetCount(RTPOLLSET hPollSet)
 {
     return UINT32_MAX;
 }
