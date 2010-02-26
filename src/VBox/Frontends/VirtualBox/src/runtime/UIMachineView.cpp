@@ -1,4 +1,4 @@
-/* $Id: UIMachineView.cpp 58137 2010-02-26 14:49:29Z noreply@oracle.com $ */
+/* $Id: UIMachineView.cpp 58140 2010-02-26 15:20:27Z noreply@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt GUI ("VirtualBox"):
@@ -369,11 +369,9 @@ void UIMachineView::prepareFrameBuffer()
     QWidget *pViewport;
     switch (mode())
     {
-#if 0 // TODO: Create Open GL viewport!
         case VBoxDefs::QGLMode:
-            pViewport = new VBoxGLWidget(this, this, NULL);
+            pViewport = new VBoxGLWidget(session().GetConsole(), this, NULL);
             break;
-#endif
         default:
             pViewport = new VBoxViewport(this);
     }
