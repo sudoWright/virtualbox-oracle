@@ -1,4 +1,4 @@
-/* $Id: UISession.cpp 58132 2010-02-26 14:01:05Z noreply@oracle.com $ */
+/* $Id: UISession.cpp 58157 2010-02-26 23:13:01Z sergey.dubov@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt GUI ("VirtualBox"):
@@ -534,6 +534,7 @@ UISession::UISession(UIMachine *pMachine, const CSession &session)
     /* Common flags: */
     , m_fIsFirstTimeStarted(false)
     , m_fIsIgnoreRutimeMediumsChanging(false)
+    , m_fIsGuestResizeIgnored(false)
     /* Guest additions flags: */
     , m_fIsGuestAdditionsActive(false)
     , m_fIsGuestSupportsGraphics(false)
