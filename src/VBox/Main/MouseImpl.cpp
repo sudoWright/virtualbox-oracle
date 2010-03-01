@@ -1,4 +1,4 @@
-/* $Id: MouseImpl.cpp 58047 2010-02-25 11:17:30Z noreply@oracle.com $ */
+/* $Id: MouseImpl.cpp 58209 2010-03-01 16:40:01Z noreply@oracle.com $ */
 /** @file
  * VirtualBox COM class implementation
  */
@@ -95,7 +95,6 @@ HRESULT Mouse::init (Console *parent)
 #else
     uHostCaps = 0;
 #endif
-    uDevCaps = 0;
 
     /* Confirm a successful initialization */
     autoInitSpan.setSucceeded();
