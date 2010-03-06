@@ -1,4 +1,4 @@
-/* $Id: pipe-os2.cpp 58097 2010-02-26 10:36:08Z knut.osmundsen@oracle.com $ */
+/* $Id: pipe-os2.cpp 58465 2010-03-06 00:16:08Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Anonymous Pipes, OS/2 Implementation.
  */
@@ -91,5 +91,4 @@ RTDECL(int) RTPipeSelectOne(RTPIPE hPipe, RTMSINTERVAL cMillies)
 {
     return VERR_NOT_IMPLEMENTED;
 }
-
 

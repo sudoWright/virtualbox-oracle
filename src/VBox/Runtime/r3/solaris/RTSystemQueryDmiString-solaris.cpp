@@ -1,4 +1,4 @@
-/* $Id: RTSystemQueryDmiString-solaris.cpp 57877 2010-02-19 15:18:49Z knut.osmundsen@oracle.com $ */
+/* $Id: RTSystemQueryDmiString-solaris.cpp 58465 2010-03-06 00:16:08Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - RTSystemQueryDmiString, solaris ring-3.
  */
@@ -107,5 +107,4 @@ RTDECL(int) RTSystemQueryDmiString(RTSYSDMISTR enmString, char *pszBuf, size_t c
         rc = VERR_ACCESS_DENIED;
     return rc;
 }
-
 
