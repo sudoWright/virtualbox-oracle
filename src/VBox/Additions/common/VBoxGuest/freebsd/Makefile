@@ -1,4 +1,4 @@
-# $Id: Makefile 57197 2010-02-02 22:52:04Z knut.osmundsen@oracle.com $
+# $Id: Makefile 58488 2010-03-07 17:04:23Z alexander.eichner@oracle.com $
 ## @file
 # VirtualBox Guest Additions Module Makefile.
 #
@@ -84,8 +84,7 @@ SRCS += \
 	strformattype.c \
 	strprintf.c \
 	strtonum.c \
-	memchr.c \
-	string.c
+	memchr.c
 
 .PATH:	${.CURDIR}/common/rand
 SRCS += \
