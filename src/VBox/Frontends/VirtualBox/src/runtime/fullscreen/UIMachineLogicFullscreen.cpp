@@ -1,4 +1,4 @@
-/* $Id: UIMachineLogicFullscreen.cpp 58483 2010-03-07 16:48:14Z sergey.dubov@oracle.com $ */
+/* $Id: UIMachineLogicFullscreen.cpp 58588 2010-03-09 13:34:53Z noreply@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt GUI ("VirtualBox"):
@@ -153,6 +153,8 @@ void UIMachineLogicFullscreen::initialize()
         sltMachineStateChanged();
         sltAdditionsStateChanged();
         sltMouseCapabilityChanged();
+
+        retranslateUi();
     }
 }
 
