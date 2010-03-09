@@ -1,4 +1,4 @@
-/* $Id: UIMachineLogicNormal.cpp 58588 2010-03-09 13:34:53Z noreply@oracle.com $ */
+/* $Id: UIMachineLogicNormal.cpp 58616 2010-03-09 21:53:24Z sergey.dubov@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt GUI ("VirtualBox"):
@@ -78,6 +78,7 @@ void UIMachineLogicNormal::initialize()
         sltAdditionsStateChanged();
         sltMouseCapabilityChanged();
 
+        /* Retranslate logic part: */
         retranslateUi();
     }
 }
