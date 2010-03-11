@@ -1,7 +1,7 @@
-/* $Id: PDMAsyncCompletionFileFailsafe.cpp 57156 2010-02-02 13:55:20Z alexander.eichner@oracle.com $ */
+/* $Id: PDMAsyncCompletionFileFailsafe.cpp 58709 2010-03-11 19:19:59Z alexander.eichner@oracle.com $ */
 /** @file
  * PDM Async I/O - Transport data asynchronous in R3 using EMT.
- * Failsafe File I/O manager.
+ * Simple File I/O manager.
  */
 
 /*
