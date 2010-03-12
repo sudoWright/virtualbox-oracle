@@ -1,6 +1,6 @@
 #! /bin/sh
 # Sun VirtualBox
-# Linux Additions kernel module init script ($Revision: 56408 $)
+# Linux Additions kernel module init script ($Revision: 58775 $)
 #
 
 #
@@ -20,7 +20,7 @@
 #
 
 
-# chkconfig: 35 30 70
+# chkconfig: 357 30 70
 # description: VirtualBox Linux Additions kernel modules
 #
 ### BEGIN INIT INFO
