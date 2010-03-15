@@ -1,4 +1,4 @@
-/* $Id: PGMAllPool.cpp 58684 2010-03-11 14:09:57Z noreply@oracle.com $ */
+/* $Id: PGMAllPool.cpp 58802 2010-03-15 13:36:29Z noreply@oracle.com $ */
 /** @file
  * PGM Shadow Page Pool.
  */
@@ -3447,7 +3447,8 @@ int pgmPoolTrackFlushGCPhysPTsSlow(PVM pVM, PPGMPAGE pPhysPage)
     while (--iPage >= PGMPOOL_IDX_FIRST)
     {
         PPGMPOOLPAGE pPage = &pPool->aPages[iPage];
-        if (pPage->GCPhys != NIL_RTGCPHYS)
+        if (    pPage->GCPhys != NIL_RTGCPHYS
+            &&  pPage->cPresent)
         {
             switch (pPage->enmKind)
             {
