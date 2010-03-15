@@ -1,4 +1,4 @@
-/* $Id: UIMachineWindow.cpp 58756 2010-03-12 14:07:13Z sergey.dubov@oracle.com $ */
+/* $Id: UIMachineWindow.cpp 58823 2010-03-15 16:42:37Z noreply@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt GUI ("VirtualBox"):
@@ -356,6 +356,10 @@ void UIMachineWindow::prepareConsoleConnections()
 {
     /* Machine state-change updater: */
     QObject::connect(uisession(), SIGNAL(sigMachineStateChange()), machineWindow(), SLOT(sltMachineStateChanged()));
+}
+
+void UIMachineWindow::prepareAdditionsDownloader()
+{
 }
 
 void UIMachineWindow::prepareMachineViewContainer()
