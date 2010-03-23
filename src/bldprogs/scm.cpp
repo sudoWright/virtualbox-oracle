@@ -1,4 +1,4 @@
-/* $Id: scm.cpp 57970 2010-02-23 17:27:55Z noreply@oracle.com $ */
+/* $Id: scm.cpp 59169 2010-03-23 08:41:28Z noreply@oracle.com $ */
 /** @file
  * IPRT Testcase / Tool - Source Code Massager.
  */
@@ -1152,9 +1152,9 @@ static const char *ScmStreamGetLine(PSCMSTREAM pStream, size_t *pcchLine, PSCMEO
  */
 static int ScmStreamRead(PSCMSTREAM pStream, void *pvBuf, size_t cbToRead)
 {
-    AssertReturn(!pStream->fWriteOrRead, NULL);
+    AssertReturn(!pStream->fWriteOrRead, VERR_PERMISSION_DENIED);
     if (RT_FAILURE(pStream->rc))
-        return NULL;
+        return pStream->rc;
 
     /* If there isn't enough stream left, fail already. */
     if (RT_UNLIKELY(pStream->cb - pStream->cb < cbToRead))
@@ -4101,7 +4101,7 @@ int main(int argc, char **argv)
             case 'V':
             {
                 /* The following is assuming that svn does it's job here. */
-                static const char s_szRev[] = "$Revision: 57970 $";
+                static const char s_szRev[] = "$Revision: 59169 $";
                 const char *psz = RTStrStripL(strchr(s_szRev, ' '));
                 RTPrintf("r%.*s\n", strchr(psz, ' ') - psz, psz);
                 return 0;
