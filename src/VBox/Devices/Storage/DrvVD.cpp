@@ -1,4 +1,4 @@
-/* $Id: DrvVD.cpp 59468 2010-03-29 20:52:56Z alexander.eichner@oracle.com $ */
+/* $Id: DrvVD.cpp 59469 2010-03-29 20:55:16Z alexander.eichner@oracle.com $ */
 /** @file
  * DrvVD - Generic VBox disk media driver.
  */
@@ -1477,7 +1477,7 @@ static DECLCALLBACK(int) drvvdConstruct(PPDMDRVINS pDrvIns,
         }
     }
 
-#if 0 /* Temporary disabled. WIP
+#if 0 /* Temporary disabled. WIP */
     if (pThis->pDrvMediaAsyncPort)
         pThis->fAsyncIOSupported = true;
 #else
