@@ -1,4 +1,4 @@
-/* $Id: tstIntNet-1.cpp 57756 2010-02-16 12:44:10Z knut.osmundsen@oracle.com $ */
+/* $Id: tstIntNet-1.cpp 59515 2010-03-30 21:00:51Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox - Testcase for internal networking, simple NetFlt trunk creation.
  */
@@ -542,7 +542,7 @@ static void doPacketSniffing(INTNETIFHANDLE hIf, PSUPDRVSESSION pSession, PINTNE
                     }
                 }
             }
-            else
+            else if (pHdr->u16Type != INTNETHDR_TYPE_PADDING)
             {
                 RTPrintf("tstIntNet-1: Unknown frame type %d\n", pHdr->u16Type);
                 STAM_REL_COUNTER_INC(&pBuf->cStatBadFrames);
@@ -724,7 +724,7 @@ int main(int argc, char **argv)
                 return 1;
 
             case 'V':
-                RTPrintf("$Revision: 57756 $\n");
+                RTPrintf("$Revision: 59515 $\n");
                 return 0;
 
             default:
