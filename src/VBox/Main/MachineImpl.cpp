@@ -1,4 +1,4 @@
-/* $Id: MachineImpl.cpp 59529 2010-03-31 07:33:59Z noreply@oracle.com $ */
+/* $Id: MachineImpl.cpp 59542 2010-03-31 09:08:23Z noreply@oracle.com $ */
 
 /** @file
  * Implementation of IMachine in VBoxSVC.
@@ -7344,7 +7344,7 @@ HRESULT Machine::saveSettings(bool *pfNeedsGlobalSaveSettings,
 
     // keep a pointer to the current settings structures
     settings::MachineConfigFile *pOldConfig = mData->m_pMachineConfigFile;
-    settings::MachineConfigFile *pNewConfig;
+    settings::MachineConfigFile *pNewConfig = NULL;
 
     try
     {
