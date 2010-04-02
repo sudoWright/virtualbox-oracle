@@ -1,4 +1,4 @@
-/* $Id: VBoxServiceInternal.h 59621 2010-04-01 08:58:39Z andreas.loeffler@oracle.com $ */
+/* $Id: VBoxServiceInternal.h 59678 2010-04-02 22:59:54Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxService - Guest Additions Services.
  */
@@ -215,7 +215,7 @@ extern int  VBoxServiceControlExecProcess(PVBOXSERVICECTRLPROCDATA pExecData,
 #endif
 
 #ifdef VBOXSERVICE_MANAGEMENT
-extern uint32_t VBoxServiceBalloonQueryChunks(void);
+extern uint32_t VBoxServiceBalloonQueryPages(uint32_t cbPage);
 #endif
 
 RT_C_DECLS_END
