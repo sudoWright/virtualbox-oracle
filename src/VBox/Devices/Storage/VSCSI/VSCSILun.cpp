@@ -1,4 +1,4 @@
-/* $Id: VSCSILun.cpp 59245 2010-03-24 12:33:33Z alexander.eichner@oracle.com $ */
+/* $Id: VSCSILun.cpp 59682 2010-04-04 14:16:32Z knut.osmundsen@oracle.com $ */
 /** @file
  * Virtual SCSI driver: LUN handling
  */
@@ -36,7 +36,7 @@ extern VSCSILUNDESC g_VScsiLunTypeSbc;
 /**
  * Array of supported SCSI LUN types.
  */
-static PVSCSILUNDESC g_aVScsiLunTypesSupported[] = 
+static PVSCSILUNDESC g_aVScsiLunTypesSupported[] =
 {
     &g_VScsiLunTypeSbc
 };
