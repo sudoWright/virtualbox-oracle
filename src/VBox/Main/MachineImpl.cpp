@@ -1,4 +1,4 @@
-/* $Id: MachineImpl.cpp 59705 2010-04-06 11:39:20Z noreply@oracle.com $ */
+/* $Id: MachineImpl.cpp 59712 2010-04-06 13:52:45Z noreply@oracle.com $ */
 
 /** @file
  * Implementation of IMachine in VBoxSVC.
@@ -8944,7 +8944,7 @@ void Machine::registerMetrics(PerformanceCollector *aCollector, Machine *aMachin
 
 
     /* Guest metrics */
-    mGuestHAL = new pm::CollectorGuestHAL(this);
+    mGuestHAL = new pm::CollectorGuestHAL(this, hal);
 
     /* Create sub metrics */
     pm::SubMetric *guestLoadUser = new pm::SubMetric("Guest/Cpu/Load/User",
