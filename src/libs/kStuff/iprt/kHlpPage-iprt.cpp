@@ -1,4 +1,4 @@
-/* $Id: kHlpPage-iprt.cpp 60080 2010-04-14 18:27:10Z knut.osmundsen@oracle.com $ */
+/* $Id: kHlpPage-iprt.cpp 60093 2010-04-14 21:57:57Z knut.osmundsen@oracle.com $ */
 /** @file
  * kHlpPage - Page Memory Allocation, IPRT based implementation.
  */
@@ -59,7 +59,7 @@ KHLP_DECL(int) kHlpPageAlloc(void **ppv, KSIZE cb, KPROT enmProt, KBOOL fFixed)
         if (RT_SUCCESS(rc))
             *ppv = pv;
         else
-            RTMemPageFree(pv);
+            RTMemPageFree(pv, cb);
     }
     return rc;
 }
