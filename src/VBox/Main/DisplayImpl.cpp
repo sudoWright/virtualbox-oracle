@@ -1,4 +1,4 @@
-/* $Id: DisplayImpl.cpp 60066 2010-04-14 15:17:04Z noreply@oracle.com $ */
+/* $Id: DisplayImpl.cpp 60068 2010-04-14 15:32:30Z noreply@oracle.com $ */
 /** @file
  * VirtualBox COM class implementation
  */
@@ -23,7 +23,6 @@
 #include "ConsoleImpl.h"
 #include "ConsoleVRDPServer.h"
 #include "VMMDev.h"
-#include <iprt/stream.h>
 
 #include "AutoCaller.h"
 #include "Logging.h"
