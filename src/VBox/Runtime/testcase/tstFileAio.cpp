@@ -1,4 +1,4 @@
-/* $Id: tstFileAio.cpp 55308 2009-11-26 14:22:44Z knut.osmundsen@oracle.com $ */
+/* $Id: tstFileAio.cpp 60076 2010-04-14 18:06:05Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT Testcase - File Async I/O.
  */
@@ -171,7 +171,7 @@ void tstFileAioTestReadWriteBasic(RTFILE File, bool fWrite, void *pvTestBuf, siz
 
                         /* Free buffers. */
                         for (unsigned i = 0; i < cMaxReqsInFlight; i++)
-                            RTMemPageFree(papvBuf[i]);
+                            RTMemPageFree(papvBuf[i], cbTestBuf);
 
                         /* Free requests. */
                         for (unsigned i = 0; i < cMaxReqsInFlight; i++)
