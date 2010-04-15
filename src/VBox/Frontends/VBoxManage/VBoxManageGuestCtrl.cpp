@@ -1,4 +1,4 @@
-/* $Id: VBoxManageGuestCtrl.cpp 60115 2010-04-15 12:37:18Z andreas.loeffler@oracle.com $ */
+/* $Id: VBoxManageGuestCtrl.cpp 60118 2010-04-15 13:26:07Z andreas.loeffler@oracle.com $ */
 /** @file
  * VBoxManage - The 'guestcontrol' command.
  */
@@ -308,7 +308,7 @@ static int handleExecProgram(HandlerArg *a)
                         || waitForStdErr)
                     {
                         Bstr strOutput;
-                        CHECK_ERROR_BREAK(guest, GetProcessOutput(strOutput.asOutParam(), 0 /* @todo */));
+                        CHECK_ERROR_BREAK(guest, GetProcessOutput(uPID, 0 /* @todo */, strOutput.asOutParam()));
                         if (verbose) 
                             RTPrintf("Output is:\n");
                         //RTPrintf(strOutput.raw());
