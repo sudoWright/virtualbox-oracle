@@ -1,4 +1,4 @@
-/* $Id: HostHardwareLinux.h 60109 2010-04-15 09:18:31Z noreply@oracle.com $ */
+/* $Id: HostHardwareLinux.h 60159 2010-04-16 08:38:37Z klaus.espenlaub@oracle.com $ */
 /** @file
  * Classes for handling hardware detection under Linux.
  *
