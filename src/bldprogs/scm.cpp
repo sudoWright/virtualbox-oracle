@@ -1,4 +1,4 @@
-/* $Id: scm.cpp 59169 2010-03-23 08:41:28Z noreply@oracle.com $ */
+/* $Id: scm.cpp 60202 2010-04-17 18:01:52Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT Testcase / Tool - Source Code Massager.
  */
@@ -2887,7 +2887,6 @@ static int scmSvnQueryProperty(PSCMRWSTATE pState, const char *pszName, char **p
                     || pchLine[0] != 'V'
                     || pchLine[1] != ' '
                     || !scmSvnReadNumber(&pchLine[2], cchLine - 2, &cchValue)
-                    || cchValue == 0
                     || cchValue > _1M)
                 {
                     RTMsgError("%s:%u: Unexpected data '%.*s'\n", szPath, ScmStreamTellLine(&Stream), cchLine, pchLine);
@@ -4101,7 +4100,7 @@ int main(int argc, char **argv)
             case 'V':
             {
                 /* The following is assuming that svn does it's job here. */
-                static const char s_szRev[] = "$Revision: 59169 $";
+                static const char s_szRev[] = "$Revision: 60202 $";
                 const char *psz = RTStrStripL(strchr(s_szRev, ' '));
                 RTPrintf("r%.*s\n", strchr(psz, ' ') - psz, psz);
                 return 0;
