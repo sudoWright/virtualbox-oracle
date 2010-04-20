@@ -1,4 +1,4 @@
-/* $Id: VBoxManageControlVM.cpp 59756 2010-04-07 12:46:52Z noreply@oracle.com $ */
+/* $Id: VBoxManageControlVM.cpp 60333 2010-04-20 14:16:20Z noreply@oracle.com $ */
 /** @file
  * VBoxManage - VirtualBox's command-line interface.
  */
@@ -782,7 +782,11 @@ int handleControlVM(HandlerArg *a)
                 rc = E_FAIL;
                 break;
             }
-            CHECK_ERROR(machine, COMSETTER(MemoryBalloonSize)(uVal));
+            /* guest is running; update IGuest */
+            ComPtr <IGuest> guest;
+            rc = console->COMGETTER(Guest)(guest.asOutParam());
+            if (SUCCEEDED(rc))
+                CHECK_ERROR(guest, COMSETTER(MemoryBalloonSize)(uVal));
         }
         else if (!strcmp(a->argv[1], "teleport"))
         {
