@@ -1,4 +1,4 @@
-/* $Id: MediumLock.h 60159 2010-04-16 08:38:37Z klaus.espenlaub@oracle.com $ */
+/* $Id: MediumLock.h 60366 2010-04-21 11:09:34Z klaus.espenlaub@oracle.com $ */
 
 /** @file
  *
@@ -86,6 +86,11 @@ public:
      * Get medium object reference.
      */
     const ComObjPtr<Medium> &GetMedium() const;
+
+    /**
+     * Get medium object lock request type.
+     */
+    bool GetLockRequest() const;
 
     /**
      * Acquire a medium lock.
