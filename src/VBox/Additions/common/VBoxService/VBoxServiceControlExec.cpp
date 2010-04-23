@@ -1,5 +1,5 @@
 
-/* $Id: VBoxServiceControlExec.cpp 60506 2010-04-23 13:39:58Z andreas.loeffler@oracle.com $ */
+/* $Id: VBoxServiceControlExec.cpp 60507 2010-04-23 13:43:45Z andreas.loeffler@oracle.com $ */
 /** @file
  * VBoxServiceControlExec - Utility functions for process execution.
  */
@@ -624,8 +624,6 @@ int VBoxServiceControlExecAllocateThreadData(PVBOXSERVICECTRLTHREAD pThread,
                                     pszArgsTemp, NULL);
         RTStrFree(pszArgsTemp);
     }
-    else
-        rc = VERR_NO_MEMORY;
 
     /* Did we get the same result? Also count in the added argv[0] above! */
     Assert((uNumArgs + 1) == pData->uNumArgs);
