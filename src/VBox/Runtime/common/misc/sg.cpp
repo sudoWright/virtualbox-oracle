@@ -1,4 +1,4 @@
-/* $Id: sg.cpp 59874 2010-04-09 13:54:29Z alexander.eichner@oracle.com $ */
+/* $Id: sg.cpp 60559 2010-04-24 15:06:02Z alexander.eichner@oracle.com $ */
 /** @file
  * IPRT - S/G buffer handling.
  */
@@ -357,6 +357,12 @@ RTDECL(size_t) RTSgBufSegArrayCreate(PRTSGBUF pSgBuf, PRTSGSEG paSeg, unsigned *
         void   *pvSeg     = NULL;
 
         pvSeg = sgBufGet(pSgBuf, &cbThisSeg);
+
+        if (!cbThisSeg)
+        {
+            Assert(!pvSeg);
+            break;
+        }
 
         AssertMsg(cbThisSeg <= cbData, ("Impossible!\n"));
 
