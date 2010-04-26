@@ -1,4 +1,4 @@
-/* $Id: UIMultiScreenLayout.cpp 60010 2010-04-13 17:16:54Z noreply@oracle.com $ */
+/* $Id: UIMultiScreenLayout.cpp 60605 2010-04-26 08:11:58Z klaus.espenlaub@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt GUI ("VirtualBox"):
@@ -155,7 +155,7 @@ void UIMultiScreenLayout::sltScreenLayoutChanged(QAction *pAction)
     if (m_pMachineLogic->uisession()->isGuestAdditionsActive())
     {
         quint64 availBits = machine.GetVRAMSize() /* VRAM */
-            * _1M /* MB to bytes */
+            * _1M /* MiB to bytes */
             * 8; /* to bits */
         quint64 usedBits = memoryRequirements(pTmpMap);
 
