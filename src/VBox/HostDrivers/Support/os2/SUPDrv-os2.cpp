@@ -1,4 +1,4 @@
-/* $Id: SUPDrv-os2.cpp 56153 2009-12-18 14:04:56Z knut.osmundsen@oracle.com $ */
+/* $Id: SUPDrv-os2.cpp 60782 2010-04-27 19:41:12Z noreply@oracle.com $ */
 /** @file
  * VBoxDrv - The VirtualBox Support Driver - OS/2 specifics.
  */
@@ -124,7 +124,7 @@ DECLASM(int) VBoxDrvInit(const char *pszArgs)
                            "\r\n"
                            "VirtualBox.org Support Driver for OS/2 version " VBOX_VERSION_STRING "\r\n"
                            "Copyright (C) 2007 Knut St. Osmundsen\r\n"
-                           "Copyright (C) 2007 Sun Microsystems, Inc.\r\n");
+                           "Copyright (C) 2007 Oracle Corporation\r\n");
                     g_cchInitText = strlen(&g_szInitText[0]);
                 }
                 return VINF_SUCCESS;
