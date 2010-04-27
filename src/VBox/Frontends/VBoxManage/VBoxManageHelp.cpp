@@ -1,4 +1,4 @@
-/* $Id: VBoxManageHelp.cpp 60760 2010-04-27 15:08:21Z vitali.pelenjow@oracle.com $ */
+/* $Id: VBoxManageHelp.cpp 60763 2010-04-27 15:13:15Z vitali.pelenjow@oracle.com $ */
 /** @file
  * VBoxManage - help and other message output.
  */
@@ -286,7 +286,7 @@ void printUsage(USAGECATEGORY u64Cmd)
                      "                            [--vrdpmulticon on|off]\n"
                      "                            [--vrdpreusecon on|off]\n"
                      "                            [--vrdpvideochannel on|off]\n"
-                     "                            [--vrdpvideochannelquality <percents>]\n");
+                     "                            [--vrdpvideochannelquality <percent>]\n");
         }
         RTPrintf("                            [--usb on|off]\n"
                  "                            [--usbehci on|off]\n"
