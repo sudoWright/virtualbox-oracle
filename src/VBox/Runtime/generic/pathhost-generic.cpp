@@ -1,4 +1,4 @@
-/* $Id: pathhost-generic.cpp 60812 2010-04-28 19:10:47Z knut.osmundsen@oracle.com $ */
+/* $Id: pathhost-generic.cpp 60815 2010-04-28 20:36:16Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Path Convertions, generic.
  */
@@ -53,15 +53,15 @@ void rtPathFreeNative(char *pszNativePath, const char *pszPath)
 }
 
 
-int rtPathFromNative(char **pszPath, const char *pszNativePath)
+int rtPathFromNative(char **ppszPath, const char *pszNativePath)
 {
-    return RTStrCurrentCPToUtf8(pszPath, pszNativePath);
+    return RTStrCurrentCPToUtf8(ppszPath, pszNativePath);
 }
 
 
-int rtPathFromNativeEx(char **pszPath, const char *pszNativePath, const char *pszBasePath)
+int rtPathFromNativeEx(char **ppszPath, const char *pszNativePath, const char *pszBasePath)
 {
     NOREF(pszBasePath);
-    return RTStrCurrentCPToUtf8(pszPath, pszNativePath);
+    return RTStrCurrentCPToUtf8(ppszPath, pszNativePath);
 }
 
