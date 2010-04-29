@@ -1,4 +1,4 @@
-/* $Revision: 60833 $ */
+/* $Revision: 60852 $ */
 /** @file
  * VBoxDrv - The VirtualBox Support Driver - Common code.
  */
@@ -43,9 +43,9 @@
 #include <iprt/spinlock.h>
 #include <iprt/thread.h>
 #include <iprt/uuid.h>
-#include <iprt/net.h>
-#include <iprt/crc32.h>
-#if defined(RT_OS_DARWIN) || defined(RT_OS_SOLARIS) || defined(RT_OS_FREEBSD)
+#if defined(RT_OS_DARWIN) || defined(RT_OS_SOLARIS) || defined(RT_OS_FREEBSD) || defined(RT_OS_WINDOWS)
+# include <iprt/net.h>
+# include <iprt/crc32.h>
 # include <iprt/string.h>
 # include <iprt/rand.h>
 # include <iprt/path.h>
