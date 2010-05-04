@@ -1,5 +1,4 @@
-
-/* $Id: VBoxServiceControl.cpp 60981 2010-05-03 11:44:28Z andreas.loeffler@oracle.com $ */
+/* $Id: VBoxServiceControl.cpp 61061 2010-05-04 13:58:34Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxServiceControl - Host-driven Guest Control.
  */
