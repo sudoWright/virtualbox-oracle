@@ -1,4 +1,4 @@
-/* $Id: REMAll.cpp 60692 2010-04-27 08:22:32Z noreply@oracle.com $ */
+/* $Id: REMAll.cpp 61332 2010-05-09 17:53:58Z knut.osmundsen@oracle.com $ */
 /** @file
  * REM - Recompiled Execution Monitor, all Contexts part.
  */
@@ -28,6 +28,7 @@
 #include <VBox/err.h>
 #include <VBox/log.h>
 
+#include <iprt/asm.h>
 #include <iprt/assert.h>
 
 
