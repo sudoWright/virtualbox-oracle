@@ -1,4 +1,4 @@
-/* $Id: DrvDiskIntegrity.cpp 60938 2010-04-30 21:19:04Z alexander.eichner@oracle.com $ */
+/* $Id: DrvDiskIntegrity.cpp 61394 2010-05-10 15:08:10Z alexander.eichner@oracle.com $ */
 /** @file
  * VBox storage devices: Disk integrity check.
  */
@@ -30,6 +30,7 @@
 #include <iprt/sg.h>
 #include <iprt/time.h>
 #include <iprt/semaphore.h>
+#include <iprt/asm.h>
 
 #include "Builtins.h"
 
