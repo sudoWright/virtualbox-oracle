@@ -1,4 +1,4 @@
-/* $Id: ConsoleVRDPServer.cpp 60695 2010-04-27 09:23:16Z vitali.pelenjow@oracle.com $ */
+/* $Id: ConsoleVRDPServer.cpp 61408 2010-05-11 02:59:56Z knut.osmundsen@oracle.com $ */
 
 /** @file
  *
@@ -1236,7 +1236,7 @@ int ConsoleVRDPServer::Launch (void)
                 remoteUSBThreadStart ();
 #endif /* VBOX_WITH_USB */
             }
-            else
+            else if (rc != VERR_NET_ADDRESS_IN_USE)
                 AssertMsgFailed(("Could not start VRDP server: rc = %Rrc\n", rc));
         }
         else
