@@ -1,7 +1,5 @@
-/* $Id: USBDeviceImpl.cpp 60692 2010-04-27 08:22:32Z noreply@oracle.com $ */
-
+/* $Id: USBDeviceImpl.cpp 61496 2010-05-11 18:07:09Z knut.osmundsen@oracle.com $ */
 /** @file
- *
  * VirtualBox COM class implementation
  */
 
