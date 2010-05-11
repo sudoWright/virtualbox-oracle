@@ -1,4 +1,4 @@
-/* $Id: VBoxCocoaSpecialControls.mm 61277 2010-05-07 12:14:18Z noreply@oracle.com $ */
+/* $Id: VBoxCocoaSpecialControls.mm 61486 2010-05-11 16:40:49Z knut.osmundsen@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt GUI ("VirtualBox"):
@@ -19,6 +19,7 @@
 
 /* VBox includes */
 #include "VBoxCocoaSpecialControls.h"
+#include <VBox/cdefs.h>
 
 /* System includes */
 #import <AppKit/NSButton.h>
@@ -183,7 +184,7 @@
         NSRect frame = cellFrame;
         frame.size.height -= 1;
         frame.origin.y += 1;
-        double radius = MIN(frame.size.width, frame.size.height) / 2.0;
+        double radius = RT_MIN(frame.size.width, frame.size.height) / 2.0;
         [[NSBezierPath bezierPathWithRoundedRect:frame xRadius:radius yRadius:radius] fill];
     }
 
