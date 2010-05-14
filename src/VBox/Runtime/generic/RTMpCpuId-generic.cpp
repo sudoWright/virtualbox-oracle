@@ -1,4 +1,4 @@
-/* $Id: RTMpCpuId-generic.cpp 60692 2010-04-27 08:22:32Z noreply@oracle.com $ */
+/* $Id: RTMpCpuId-generic.cpp 61637 2010-05-14 21:43:06Z alexander.eichner@oracle.com $ */
 /** @file
  * IPRT - Multiprocessor, Generic RTMpCpuId.
  */
@@ -32,6 +32,7 @@
 #include "internal/iprt.h"
 
 #include <iprt/asm.h>
+#include <iprt/asm-amd64-x86.h>
 
 
 RTDECL(RTCPUID) RTMpCpuId(void)
