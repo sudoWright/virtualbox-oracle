@@ -1,4 +1,4 @@
-/* $Id: VBoxServicePageSharing.cpp 61601 2010-05-14 14:20:01Z noreply@oracle.com $ */
+/* $Id: VBoxServicePageSharing.cpp 61607 2010-05-14 15:10:29Z noreply@oracle.com $ */
 /** @file
  * VBoxService - Guest page sharing.
  */
@@ -232,6 +232,7 @@ void VBoxServicePageSharingInspectModules(DWORD dwProcessId, PAVLPVNODECORE *ppN
     bRet = Module32First(hSnapshot, &ModuleInfo);
     do
     {
+        /** todo when changing this make sure VBoxService.exe is excluded! */
         char *pszDot = strrchr(ModuleInfo.szModule, '.');
         if (    pszDot 
             &&  (pszDot[1] == 'e' || pszDot[1] == 'E'))
