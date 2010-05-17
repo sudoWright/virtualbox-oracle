@@ -1,6 +1,8 @@
-/* $Id: Builtins2.h 61663 2010-05-17 10:15:58Z knut.osmundsen@oracle.com $ */
+/* $Id: Builtins2.h 61705 2010-05-17 15:15:02Z knut.osmundsen@oracle.com $ */
 /** @file
  * Built-in drivers & devices part 2 header.
+ *
+ * These drivers and devices are in separate modules because of LGPL.
  */
 
 /*
