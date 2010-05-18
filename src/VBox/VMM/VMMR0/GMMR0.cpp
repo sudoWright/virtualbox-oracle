@@ -1,4 +1,4 @@
-/* $Id: GMMR0.cpp 61749 2010-05-18 08:38:11Z noreply@oracle.com $ */
+/* $Id: GMMR0.cpp 61750 2010-05-18 08:39:41Z noreply@oracle.com $ */
 /** @file
  * GMM - Global Memory Manager.
  */
@@ -3909,7 +3909,7 @@ static DECLCALLBACK(int) gmmR0CleanupSharedModule(PAVLGCPTRNODECORE pNode, void 
     PGMM pGMM;
     GMM_GET_VALID_INSTANCE(pGMM, VERR_INTERNAL_ERROR);
 
-    Assert(pRecVM->pGlobalModule);
+    Assert(pRecVM->pGlobalModule || pRecVM->fCollision);
     if (pRecVM->pGlobalModule)
     {
         PGMMSHAREDMODULE pRec = pRecVM->pGlobalModule;
