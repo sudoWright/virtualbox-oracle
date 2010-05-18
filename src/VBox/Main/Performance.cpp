@@ -1,4 +1,4 @@
-/* $Id: Performance.cpp 61782 2010-05-18 12:49:18Z noreply@oracle.com $ */
+/* $Id: Performance.cpp 61784 2010-05-18 12:59:09Z noreply@oracle.com $ */
 
 /** @file
  *
@@ -163,10 +163,10 @@ int CollectorGuestHAL::preCollect(const CollectorHints& /* hints */, uint64_t iT
     if (    mGuest
         &&  iTick != mLastTick)
     {
-        ULONG ulMemAllocTotal, ulMemFreeTotal, ulMemBalloonTotal, ulMemSharedTotal, ulMemShared;
+        ULONG ulMemAllocTotal, ulMemFreeTotal, ulMemBalloonTotal, ulMemSharedTotal;
 
         mGuest->InternalGetStatistics(&mCpuUser, &mCpuKernel, &mCpuIdle,
-                                      &mMemTotal, &mMemFree, &mMemBalloon, &ulMemShared, &mMemCache,
+                                      &mMemTotal, &mMemFree, &mMemBalloon, &mMemShared, &mMemCache,
                                       &mPageTotal, &ulMemAllocTotal, &ulMemFreeTotal, &ulMemBalloonTotal, &ulMemSharedTotal);
 
         if (mHostHAL)
