@@ -1,4 +1,4 @@
-/* $Id: main.cpp 61117 2010-05-05 11:55:48Z klaus.espenlaub@oracle.com $ */
+/* $Id: main.cpp 62000 2010-05-25 16:06:59Z noreply@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt GUI ("VirtualBox"):
@@ -26,7 +26,6 @@
 #include "VBoxGlobal.h"
 #include "VBoxProblemReporter.h"
 #include "VBoxSelectorWnd.h"
-#include "VBoxConsoleWnd.h"
 #include "VBoxUtils.h"
 #ifdef QT_MAC_USE_COCOA
 # include "darwin/VBoxCocoaApplication.h"
