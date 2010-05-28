@@ -1,4 +1,4 @@
-/* $Id: VBoxServiceVMInfo-win.cpp 62101 2010-05-28 13:17:54Z andreas.loeffler@oracle.com $ */
+/* $Id: VBoxServiceVMInfo-win.cpp 62117 2010-05-28 15:40:39Z andreas.loeffler@oracle.com $ */
 /** @file
  * VBoxService - Virtual Machine Information for the Host, Windows specifics.
  */
@@ -569,7 +569,7 @@ int VBoxServiceWinGetComponentVersions(uint32_t uClientID)
         { szSysDir, "VBoxControl.exe" },
         { szSysDir, "VBoxHook.dll" },
         { szSysDir, "VBoxDisp.dll" },
-        { szSysDir, "VBoxService.exe" },
+        { szSysDir, "VBoxServiceNT.exe" },
         { szSysDir, "VBoxTray.exe" },
 
         { szDriversDir, "VBoxGuestNT.sys" },
