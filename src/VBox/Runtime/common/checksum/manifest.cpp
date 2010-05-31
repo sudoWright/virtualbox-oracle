@@ -1,4 +1,4 @@
-/* $Id: manifest.cpp 62167 2010-05-31 12:53:25Z noreply@oracle.com $ */
+/* $Id: manifest.cpp 62170 2010-05-31 12:57:38Z noreply@oracle.com $ */
 /** @file
  * IPRT - Manifest file handling.
  */
@@ -61,8 +61,8 @@ typedef struct RTMANIFESTCALLBACKDATA
 {
     PFNRTMANIFESTPROGRESS pfnProgressCallback;
     void *pvUser;
-    uint32_t cMaxFiles;
-    uint32_t cCurrentFile;
+    size_t cMaxFiles;
+    size_t cCurrentFile;
 } RTMANIFESTCALLBACKDATA;
 typedef RTMANIFESTCALLBACKDATA* PRTMANIFESTCALLBACKDATA;
 
