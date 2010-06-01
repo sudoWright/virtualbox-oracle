@@ -1,4 +1,4 @@
-/* $Id: tcp.cpp 60692 2010-04-27 08:22:32Z noreply@oracle.com $ */
+/* $Id: tcp.cpp 62232 2010-06-01 13:27:25Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - TCP/IP.
  */
@@ -337,7 +337,6 @@ RTR3DECL(int) RTTcpServerCreateEx(const char *pszAddress, uint32_t uPort, PPRTTC
             if (!pHostEnt)
             {
                 rc = rtSocketResolverError();
-                AssertMsgFailed(("Could not get host address rc=%Rrc\n", rc));
                 return rc;
             }
         }
