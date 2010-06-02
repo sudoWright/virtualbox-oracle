@@ -1,4 +1,4 @@
-/* $Id: ApplianceImpl.cpp 62192 2010-05-31 18:33:15Z noreply@oracle.com $ */
+/* $Id: ApplianceImpl.cpp 62279 2010-06-02 12:22:39Z noreply@oracle.com $ */
 /** @file
  *
  * IAppliance and IVirtualSystem COM class implementations.
@@ -1323,6 +1323,7 @@ const VirtualSystemDescriptionEntry* VirtualSystemDescription::findControllerFro
             case VirtualSystemDescriptionType_HardDiskControllerIDE:
             case VirtualSystemDescriptionType_HardDiskControllerSATA:
             case VirtualSystemDescriptionType_HardDiskControllerSCSI:
+            case VirtualSystemDescriptionType_HardDiskControllerSAS:
                 if (d.strRef == strRef)
                     return &d;
             break;
