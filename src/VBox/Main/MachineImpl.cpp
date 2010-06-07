@@ -1,4 +1,4 @@
-/* $Id: MachineImpl.cpp 62260 2010-06-02 08:51:13Z noreply@oracle.com $ */
+/* $Id: MachineImpl.cpp 62412 2010-06-07 08:27:00Z knut.osmundsen@oracle.com $ */
 /** @file
  * Implementation of IMachine in VBoxSVC.
  */
@@ -9753,8 +9753,13 @@ void SessionMachine::uninit(Uninit::Reason aReason)
     /* free the essential data structure last */
     mData.free();
 
+#if 1 /** @todo Please review this change! (bird) */
+    /* drop the exclusive lock before setting the below two to NULL */
+    multilock.release();
+#else
     /* leave the exclusive lock before setting the below two to NULL */
     multilock.leave();
+#endif
 
     unconst(mParent) = NULL;
     unconst(mPeer) = NULL;
