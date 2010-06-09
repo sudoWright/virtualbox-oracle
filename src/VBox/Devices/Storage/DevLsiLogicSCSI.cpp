@@ -1,4 +1,4 @@
-/* $Id: DevLsiLogicSCSI.cpp 62179 2010-05-31 14:51:38Z knut.osmundsen@oracle.com $ */
+/* $Id: DevLsiLogicSCSI.cpp 62526 2010-06-09 16:06:37Z alexander.eichner@oracle.com $ */
 /** @file
  * VBox storage devices: LsiLogic LSI53c1030 SCSI controller.
  */
@@ -985,8 +985,7 @@ static int lsilogicRegisterWrite(PLSILOGICSCSI pThis, uint32_t uOffset, void *pv
                     {
                         pThis->enmState = LSILOGICSTATE_RESET;
 
-                        /* Reset interrupt states. */
-                        pThis->uInterruptMask   = 0;
+                        /* Reset interrupt status. */
                         pThis->uInterruptStatus = 0;
                         lsilogicUpdateInterrupt(pThis);
 
