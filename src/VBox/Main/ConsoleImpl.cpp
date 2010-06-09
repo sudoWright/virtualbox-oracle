@@ -1,4 +1,4 @@
-/* $Id: ConsoleImpl.cpp 62505 2010-06-09 12:14:59Z knut.osmundsen@oracle.com $ */
+/* $Id: ConsoleImpl.cpp 62507 2010-06-09 12:31:50Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Console COM Class implementation
  */
@@ -8122,7 +8122,7 @@ DECLCALLBACK(void) Console::drvStatus_Destruct(PPDMDRVINS pDrvIns)
     {
         unsigned iLed = pData->iLastLUN - pData->iFirstLUN + 1;
         while (iLed-- > 0)
-            ASMAtomicWritePtr(&pData->papLeds[iLed], NULL);
+            ASMAtomicWriteNullPtr(&pData->papLeds[iLed]);
     }
 }
 
