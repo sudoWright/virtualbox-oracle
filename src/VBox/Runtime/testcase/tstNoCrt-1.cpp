@@ -1,4 +1,4 @@
-/* $Id: tstNoCrt-1.cpp 60692 2010-04-27 08:22:32Z noreply@oracle.com $ */
+/* $Id: tstNoCrt-1.cpp 62757 2010-06-16 14:55:17Z aleksey.ilyushin@oracle.com $ */
 /** @file
  * IPRT Testcase - Testcase for the No-CRT assembly bits.
  */
@@ -457,6 +457,7 @@ int main()
     iDiff = RT_NOCRT(memcmp)(s_szTest3, s_szTest3, sizeof(s_szTest1)); CHECK_DIFF( == );
     iDiff = RT_NOCRT(memcmp)(s_szTest1, s_szTest3, sizeof(s_szTest1)); CHECK_DIFF( < );
     iDiff = RT_NOCRT(memcmp)(s_szTest3, s_szTest1, sizeof(s_szTest1)); CHECK_DIFF( > );
+    iDiff = RT_NOCRT(memcmp)("1234", "1a34", 4); CHECK_DIFF( < );
 
     RTPrintf("tstNoCrt-1: strcmp\n");
     iDiff = RT_NOCRT(strcmp)(s_szTest1, s_szTest1); CHECK_DIFF( == );
