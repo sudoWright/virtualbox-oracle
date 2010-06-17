@@ -1,4 +1,4 @@
-/* $Id $ */
+/* $Id: tstVBoxAPIWin.cpp 62783 2010-06-17 06:54:58Z noreply@oracle.com $ */
 /** @file
  *
  * tstVBoxAPIWin - sample program to illustrate the VirtualBox
