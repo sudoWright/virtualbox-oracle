@@ -1,4 +1,4 @@
-/* $Id: tcp.cpp 62232 2010-06-01 13:27:25Z knut.osmundsen@oracle.com $ */
+/* $Id: tcp.cpp 62784 2010-06-17 06:56:26Z klaus.espenlaub@oracle.com $ */
 /** @file
  * IPRT - TCP/IP.
  */
@@ -1011,5 +1011,11 @@ RTR3DECL(int) RTTcpGetLocalAddress(RTSOCKET Sock, PRTNETADDR pAddr)
 RTR3DECL(int) RTTcpGetPeerAddress(RTSOCKET Sock, PRTNETADDR pAddr)
 {
     return RTSocketGetPeerAddress(Sock, pAddr);
+}
+
+
+RTR3DECL(int)  RTTcpSgWrite(RTSOCKET Sock, PCRTSGBUF pSgBuf)
+{
+    return RTSocketSgWrite(Sock, pSgBuf);
 }
 
