@@ -1,4 +1,4 @@
-/* $Id: tcp_input.c 62400 2010-06-04 20:38:56Z noreply@oracle.com $ */
+/* $Id: tcp_input.c 62929 2010-06-22 02:39:23Z noreply@oracle.com $ */
 /** @file
  * NAT - TCP input.
  */
@@ -797,7 +797,6 @@ findso:
                     tp->t_socket->so_m = NULL;
                 }
                 tp = tcp_close(pData, tp);
-                m_freem(pData, m);
             }
             else
             {
