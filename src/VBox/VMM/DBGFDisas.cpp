@@ -1,4 +1,4 @@
-/* $Id: DBGFDisas.cpp 63125 2010-06-27 20:00:33Z knut.osmundsen@oracle.com $ */
+/* $Id: DBGFDisas.cpp 63184 2010-06-29 11:59:47Z noreply@oracle.com $ */
 /** @file
  * DBGF - Debugger Facility, Disassembler.
  */
@@ -29,6 +29,7 @@
 #include <VBox/err.h>
 #include <VBox/param.h>
 #include <VBox/vm.h>
+#include <include/internal/pgm.h>
 
 #include <VBox/log.h>
 #include <iprt/assert.h>
