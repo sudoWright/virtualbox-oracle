@@ -1,4 +1,4 @@
-/* $Id$ */
+/* $Id: pgm.h 63237 2010-06-30 14:18:14Z knut.osmundsen@oracle.com $ */
 /** @file
  * PGM - Internal VMM header file.
  */
