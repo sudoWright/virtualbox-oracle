@@ -1,4 +1,4 @@
-/* $Id: VUSBUrb.cpp 60692 2010-04-27 08:22:32Z noreply@oracle.com $ */
+/* $Id: VUSBUrb.cpp 63233 2010-06-30 12:15:01Z noreply@oracle.com $ */
 /** @file
  * Virtual USB - URBs.
  */
@@ -72,7 +72,9 @@ DECLINLINE(const char *) vusbUrbStatusName(VUSBSTATUS enmStatus)
 
     return enmStatus < (int)RT_ELEMENTS(s_apszNames)
         ? s_apszNames[enmStatus]
-        : "??";
+        : enmStatus == VUSBSTATUS_INVALID
+            ? "INVALID"
+            : "??";
 }
 
 DECLINLINE(const char *) vusbUrbDirName(VUSBDIRECTION enmDir)
