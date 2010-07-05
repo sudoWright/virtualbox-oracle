@@ -1,4 +1,4 @@
-/* $Id: ConsoleVRDPServer.h 60692 2010-04-27 08:22:32Z noreply@oracle.com $ */
+/* $Id: ConsoleVRDPServer.h 63362 2010-07-05 17:08:55Z noreply@oracle.com $ */
 
 /** @file
  *
@@ -177,7 +177,7 @@ private:
 
     IFramebuffer *maFramebuffers[SchemaDefs::MaxGuestMonitors];
 
-    IConsoleCallback *mConsoleCallback;
+    IEventListener *mConsoleListener;
 
     VRDPInputSynch m_InputSynch;
 
