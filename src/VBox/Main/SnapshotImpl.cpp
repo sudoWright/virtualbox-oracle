@@ -1,4 +1,4 @@
-/* $Id: SnapshotImpl.cpp 63437 2010-07-06 16:36:43Z noreply@oracle.com $ */
+/* $Id: SnapshotImpl.cpp 63442 2010-07-06 17:20:20Z noreply@oracle.com $ */
 
 /** @file
  *
@@ -35,6 +35,8 @@
 #include "AutoCaller.h"
 
 #include <iprt/path.h>
+#include <iprt/cpp/utils.h>
+
 #include <VBox/param.h>
 #include <VBox/err.h>
 
