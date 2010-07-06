@@ -1,4 +1,4 @@
-/* $Id: DHCPServerImpl.cpp 63429 2010-07-06 14:37:09Z noreply@oracle.com $ */
+/* $Id: DHCPServerImpl.cpp 63437 2010-07-06 16:36:43Z noreply@oracle.com $ */
 
 /** @file
  *
@@ -21,8 +21,6 @@
 #include "DHCPServerImpl.h"
 #include "AutoCaller.h"
 #include "Logging.h"
-
-#include <iprt/cpp/utils.h>
 
 #include <VBox/settings.h>
 
