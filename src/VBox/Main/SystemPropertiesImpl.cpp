@@ -1,4 +1,4 @@
-/* $Id: SystemPropertiesImpl.cpp 63057 2010-06-24 12:01:36Z noreply@oracle.com $ */
+/* $Id: SystemPropertiesImpl.cpp 63429 2010-07-06 14:37:09Z noreply@oracle.com $ */
 
 /** @file
  *
@@ -30,6 +30,7 @@
 #include <iprt/dir.h>
 #include <iprt/process.h>
 #include <iprt/ldr.h>
+#include <iprt/cpp/utils.h>
 
 #include <VBox/err.h>
 #include <VBox/param.h>

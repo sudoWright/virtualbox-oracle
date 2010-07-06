@@ -1,4 +1,4 @@
-/* $Id: ApplianceImpl.cpp 62580 2010-06-10 20:11:14Z noreply@oracle.com $ */
+/* $Id: ApplianceImpl.cpp 63429 2010-07-06 14:37:09Z noreply@oracle.com $ */
 /** @file
  *
  * IAppliance and IVirtualSystem COM class implementations.
@@ -17,6 +17,7 @@
  */
 
 #include <iprt/path.h>
+#include <iprt/cpp/utils.h>
 
 #include <VBox/com/array.h>
 

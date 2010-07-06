@@ -1,4 +1,4 @@
-/* $Id: Guid.h 62118 2010-05-28 17:14:53Z noreply@oracle.com $ */
+/* $Id: Guid.h 63429 2010-07-06 14:37:09Z noreply@oracle.com $ */
 
 /** @file
  * MS COM / XPCOM Abstraction Layer:
@@ -43,7 +43,6 @@
 
 #include "VBox/com/string.h"
 
-#include <iprt/cpp/utils.h>
 #include <iprt/uuid.h>
 
 namespace com

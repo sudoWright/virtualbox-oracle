@@ -1,4 +1,4 @@
-/* $Id: ConsoleVRDPServer.cpp 63363 2010-07-05 17:26:09Z noreply@oracle.com $ */
+/* $Id: ConsoleVRDPServer.cpp 63429 2010-07-06 14:37:09Z noreply@oracle.com $ */
 /** @file
  * VBox Console VRDP Helper class
  */
@@ -29,6 +29,7 @@
 #include <iprt/param.h>
 #include <iprt/path.h>
 #include <iprt/alloca.h>
+#include <iprt/cpp/utils.h>
 
 #include <VBox/err.h>
 #ifdef VBOX_WITH_VRDP
