@@ -1,4 +1,4 @@
-/* $Id: HostImpl.h 63479 2010-07-07 16:20:03Z noreply@oracle.com $ */
+/* $Id: HostImpl.h 63508 2010-07-08 12:27:42Z noreply@oracle.com $ */
 /** @file
  * Implemenation of IHost.
  */
@@ -35,7 +35,6 @@ namespace settings
 
 class ATL_NO_VTABLE Host :
     public VirtualBoxBase,
-    public VirtualBoxSupportTranslation<Host>,
     VBOX_SCRIPTABLE_IMPL(IHost)
 {
 public:

@@ -1,4 +1,4 @@
-/* $Id: NATEngineImpl.h 63479 2010-07-07 16:20:03Z noreply@oracle.com $ */
+/* $Id: NATEngineImpl.h 63508 2010-07-08 12:27:42Z noreply@oracle.com $ */
 
 /** @file
  *
@@ -31,7 +31,6 @@ namespace settings
 
 class ATL_NO_VTABLE NATEngine :
     public VirtualBoxBase,
-    public VirtualBoxSupportTranslation<NATEngine>,
     VBOX_SCRIPTABLE_IMPL(INATEngine)
 {
     public:
