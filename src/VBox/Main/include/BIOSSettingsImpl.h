@@ -1,4 +1,4 @@
-/* $Id: BIOSSettingsImpl.h 63543 2010-07-09 13:12:04Z noreply@oracle.com $ */
+/* $Id: BIOSSettingsImpl.h 63552 2010-07-09 14:12:12Z noreply@oracle.com $ */
 
 /** @file
  *
@@ -21,6 +21,8 @@
 #define ____H_BIOSSETTINGS
 
 #include "VirtualBoxBase.h"
+
+class GuestOSType;
 
 namespace settings
 {
