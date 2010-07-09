@@ -1,4 +1,4 @@
-/* $Id: Performance.cpp 61784 2010-05-18 12:59:09Z noreply@oracle.com $ */
+/* $Id: Performance.cpp 63543 2010-07-09 13:12:04Z noreply@oracle.com $ */
 
 /** @file
  *
@@ -132,7 +132,7 @@ int CollectorGuestHAL::enable()
     {
         ComPtr<IInternalSessionControl> directControl;
 
-        ret = mMachine->getDirectControl(&directControl);
+        ret = mMachine->getDirectControl(directControl);
         if (ret != S_OK)
             return ret;
 
