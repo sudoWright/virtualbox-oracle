@@ -1,4 +1,4 @@
-/* $Id: PGMInternal.h 63659 2010-07-14 14:19:44Z noreply@oracle.com $ */
+/* $Id: PGMInternal.h 63660 2010-07-14 14:29:41Z noreply@oracle.com $ */
 /** @file
  * PGM - Internal header file.
  */
@@ -2891,6 +2891,11 @@ typedef struct PGM
     STAMPROFILE                 StatR3IsValidLargePage;
     /** pgmPhysIsValidLargePage profiling - RZ*/
     STAMPROFILE                 StatRZIsValidLargePage;
+
+    STAMPROFILE                 StatChunkAging;
+    STAMPROFILE                 StatChunkFindCandidate;
+    STAMPROFILE                 StatChunkUnmap;
+    STAMPROFILE                 StatChunkMap;
 #endif
 } PGM;
 #ifndef IN_TSTVMSTRUCTGC /* HACK */
