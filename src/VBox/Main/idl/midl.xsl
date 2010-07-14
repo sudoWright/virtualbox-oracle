@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!-- $Id: midl.xsl 62120 2010-05-28 18:14:44Z noreply@oracle.com $ -->
+<!-- $Id: midl.xsl 63641 2010-07-14 12:44:14Z noreply@oracle.com $ -->
 
 <!--
  *  A template to generate a MS IDL compatible interface definition file
@@ -837,4 +837,3 @@
 </xsl:template>
 
 </xsl:stylesheet>
-
