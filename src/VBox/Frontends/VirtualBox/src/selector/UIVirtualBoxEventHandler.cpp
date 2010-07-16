@@ -1,4 +1,4 @@
-/* $Id: UIVirtualBoxEventHandler.cpp 63467 2010-07-07 12:34:22Z noreply@oracle.com $ */
+/* $Id: UIVirtualBoxEventHandler.cpp 63699 2010-07-16 09:42:12Z noreply@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt GUI ("VirtualBox"):
