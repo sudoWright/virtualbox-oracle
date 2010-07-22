@@ -1,4 +1,4 @@
-/* $Id: UIVMPreviewWindow.cpp 63710 2010-07-16 12:44:00Z noreply@oracle.com $ */
+/* $Id: UIVMPreviewWindow.cpp 63889 2010-07-22 11:58:58Z noreply@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt GUI ("VirtualBox"):
@@ -62,7 +62,7 @@ UIVMPreviewWindow::UIVMPreviewWindow(QWidget *pParent)
     }
     m_pUpdateTimerMenu->insertSeparator(m_actions[static_cast<UpdateInterval>(Update1Sec)]);
     /* Default value */
-    UpdateInterval interval = Update5Sec;
+    UpdateInterval interval = Update1Sec;
     QString strInterval = vboxGlobal().virtualBox().GetExtraData(VBoxDefs::GUI_PreviewUpdate);
     if (strInterval == "disabled")
         interval = UpdateDisabled;
