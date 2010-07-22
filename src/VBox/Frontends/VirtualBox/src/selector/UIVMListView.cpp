@@ -1,4 +1,4 @@
-/* $Id: UIVMListView.cpp 63699 2010-07-16 09:42:12Z noreply@oracle.com $ */
+/* $Id: UIVMListView.cpp 63924 2010-07-22 15:24:27Z noreply@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt GUI ("VirtualBox"):
@@ -214,7 +214,7 @@ QVariant UIVMItemModel::data(const QModelIndex &aIndex, int aRole) const
         {
             QFont f = qApp->font();
             f.setPointSize(f.pointSize());
-            if (m_VMItemList.at(aIndex.row())->sessionState() != KSessionState_Closed)
+            if (m_VMItemList.at(aIndex.row())->sessionState() != KSessionState_Unlocked)
                 f.setItalic(true);
             v = f;
             break;
