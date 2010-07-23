@@ -1,4 +1,4 @@
-/* $Revision: 63924 $ */
+/* $Revision: 64005 $ */
 /** @file tstXPCOMCGlue.c
  * Demonstrator program to illustrate use of C bindings of Main API.
  *
@@ -364,7 +364,7 @@ int main(int argc, char **argv)
     }
 
     listVMs(vbox, session);
-    session->vtbl->Close(session);
+    session->vtbl->UnlockMachine(session);
 
     printf("----------------------------------------------------\n");
 

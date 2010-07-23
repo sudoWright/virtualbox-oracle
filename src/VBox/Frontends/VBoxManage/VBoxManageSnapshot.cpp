@@ -1,4 +1,4 @@
-/* $Id: VBoxManageSnapshot.cpp 63938 2010-07-22 17:48:18Z noreply@oracle.com $ */
+/* $Id: VBoxManageSnapshot.cpp 64005 2010-07-23 16:00:09Z noreply@oracle.com $ */
 /** @file
  * VBoxManage - The 'snapshot' command.
  */
@@ -498,7 +498,7 @@ int handleSnapshot(HandlerArg *a)
         }
     } while (0);
 
-    a->session->Close();
+    a->session->UnlockMachine();
 
     return SUCCEEDED(rc) ? 0 : 1;
 }
