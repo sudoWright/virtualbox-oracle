@@ -1,4 +1,4 @@
-/* $Id: socket.cpp 64058 2010-07-26 11:04:01Z alexander.eichner@oracle.com $ */
+/* $Id: socket.cpp 64059 2010-07-26 11:06:10Z alexander.eichner@oracle.com $ */
 /** @file
  * IPRT - Network Sockets.
  */
@@ -813,7 +813,7 @@ RTDECL(int) RTSocketWriteNB(RTSOCKET hSocket, const void *pvBuffer, size_t cbBuf
     {
         rtSocketErrorReset();
 #ifdef RT_OS_WINDOWS
-        int    cbNow = RT_MIN(cbToWrite, INT_MAX/2);
+        int    cbNow = RT_MIN((int)cbToWrite, INT_MAX/2);
 #else
         size_t cbNow = cbToWrite;
 #endif
