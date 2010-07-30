@@ -1,4 +1,4 @@
-/* $Id: UIMachineView.cpp 63770 2010-07-19 15:29:30Z sergey.dubov@oracle.com $ */
+/* $Id: UIMachineView.cpp 64262 2010-07-30 13:46:04Z noreply@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt GUI ("VirtualBox"):
@@ -762,7 +762,7 @@ bool UIMachineView::event(QEvent *pEvent)
         case VBoxDefs::RepaintEventType:
         {
             UIRepaintEvent *pPaintEvent = static_cast<UIRepaintEvent*>(pEvent);
-            viewport()->repaint(pPaintEvent->x() - contentsX(), pPaintEvent->y() - contentsY(),
+            viewport()->update(pPaintEvent->x() - contentsX(), pPaintEvent->y() - contentsY(),
                                 pPaintEvent->width(), pPaintEvent->height());
             return true;
         }
