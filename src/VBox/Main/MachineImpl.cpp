@@ -1,4 +1,4 @@
-/* $Id: MachineImpl.cpp 64328 2010-08-02 13:33:24Z noreply@oracle.com $ */
+/* $Id: MachineImpl.cpp 64333 2010-08-02 14:16:12Z noreply@oracle.com $ */
 /** @file
  * Implementation of IMachine in VBoxSVC.
  */
@@ -8080,11 +8080,7 @@ HRESULT Machine::saveStorageDevices(ComObjPtr<StorageController> aStorageControl
         dev.lDevice = pAttach->getDevice();
         if (pMedium)
         {
-            BOOL fHostDrive = FALSE;
-            rc = pMedium->COMGETTER(HostDrive)(&fHostDrive);
-            if (FAILED(rc))
-                return rc;
-            if (fHostDrive)
+            if (pMedium->isHostDrive())
                 dev.strHostDriveSrc = pMedium->getLocation();
             else
                 dev.uuid = pMedium->getId();
