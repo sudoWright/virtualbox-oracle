@@ -1,4 +1,4 @@
-/* $Id: MachineImpl.h 64334 2010-08-02 14:22:15Z noreply@oracle.com $ */
+/* $Id: MachineImpl.h 64335 2010-08-02 14:55:22Z noreply@oracle.com $ */
 /** @file
  * VirtualBox COM class implementation
  */
@@ -820,7 +820,7 @@ protected:
 
     Machine* const          mPeer;
 
-    VirtualBox* const       mParent;
+    VirtualBox * const      mParent;
 
     Shareable<Data>         mData;
     Shareable<SSData>       mSSData;
