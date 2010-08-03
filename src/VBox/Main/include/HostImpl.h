@@ -1,4 +1,4 @@
-/* $Id: HostImpl.h 64323 2010-08-02 13:13:14Z noreply@oracle.com $ */
+/* $Id: HostImpl.h 64376 2010-08-03 14:05:05Z ramshankar.venkataraman@oracle.com $ */
 /** @file
  * Implemenation of IHost.
  */
@@ -136,6 +136,7 @@ private:
 #endif
 
 #if defined(RT_OS_SOLARIS)
+    void getDVDInfoFromDevTree(std::list< ComObjPtr<Medium> > &list);
     void parseMountTable(char *mountTable, std::list< ComObjPtr<Medium> > &list);
     bool validateDevice(const char *deviceNode, bool isCDROM);
 #endif
