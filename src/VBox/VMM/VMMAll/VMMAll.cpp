@@ -1,4 +1,4 @@
-/* $Id: VMMAll.cpp 64395 2010-08-04 09:45:01Z noreply@oracle.com $ */
+/* $Id: VMMAll.cpp 64398 2010-08-04 09:58:34Z noreply@oracle.com $ */
 /** @file
  * VMM All Contexts.
  */
@@ -25,7 +25,7 @@
 #include <VBox/vm.h>
 #include <VBox/vmm.h>
 #include <VBox/param.h>
-#include <iprt/mp.h>
+#include <iprt/thread.h>
 
 
 /**
