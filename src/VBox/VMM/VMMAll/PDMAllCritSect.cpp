@@ -1,4 +1,4 @@
-/* $Id: PDMAllCritSect.cpp 64454 2010-08-05 11:41:45Z knut.osmundsen@oracle.com $ */
+/* $Id: PDMAllCritSect.cpp 64456 2010-08-05 11:44:39Z knut.osmundsen@oracle.com $ */
 /** @file
  * PDM - Critical Sections, All Contexts.
  */
@@ -35,6 +35,9 @@
 #ifdef IN_RING3
 # include <iprt/lockvalidator.h>
 # include <iprt/semaphore.h>
+#endif
+#if defined(IN_RING3) || defined(IN_RING0)
+# include <iprt/thread.h>
 #endif
 
 
