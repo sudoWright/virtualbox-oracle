@@ -1,4 +1,4 @@
-/* $Id: USBProxyDevice.h 64261 2010-07-30 13:37:49Z noreply@oracle.com $ */
+/* $Id: USBProxyDevice.h 64661 2010-08-11 09:15:04Z noreply@oracle.com $ */
 /** @file
  * USBPROXY - USB proxy header
  */
