@@ -1,4 +1,4 @@
-/* $Id: tstRTCoreDump.h 65021 2010-08-20 13:53:41Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: coredumper-solaris.h 65022 2010-08-20 13:55:37Z ramshankar.venkataraman@oracle.com $ */
 /** @file
  * IPRT Testcase - Core dump, header.
  */
