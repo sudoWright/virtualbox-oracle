@@ -1,4 +1,4 @@
-/* $Id: SSM.cpp 63016 2010-06-23 15:26:41Z knut.osmundsen@oracle.com $ */
+/* $Id: SSM.cpp 65049 2010-08-21 20:33:07Z knut.osmundsen@oracle.com $ */
 /** @file
  * SSM - Saved State Manager.
  */
@@ -155,7 +155,7 @@
 
 #include <iprt/asm.h>
 #include <iprt/assert.h>
-#include <iprt/crc32.h>
+#include <iprt/crc.h>
 #include <iprt/file.h>
 #include <iprt/mem.h>
 #include <iprt/param.h>
