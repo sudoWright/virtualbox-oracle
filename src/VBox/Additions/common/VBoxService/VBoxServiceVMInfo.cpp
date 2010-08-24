@@ -1,4 +1,4 @@
-/* $Id: VBoxServiceVMInfo.cpp 65122 2010-08-24 12:12:15Z andreas.loeffler@oracle.com $ */
+/* $Id: VBoxServiceVMInfo.cpp 65126 2010-08-24 12:21:49Z andreas.loeffler@oracle.com $ */
 /** @file
  * VBoxService - Virtual Machine Information for the Host.
  */
@@ -646,7 +646,7 @@ static int vboxserviceVMInfoWriteNetwork(void)
 
     close(sd);
     if (RT_FAILURE(rc))
-        VBoxServiceError("VMInfo/Network: Network enumeration for interface %d failed with error %Rrc\n", i, rc);
+        VBoxServiceError("VMInfo/Network: Network enumeration for interface %u failed with error %Rrc\n", cIfacesReport, rc);
 
 #endif /* !RT_OS_WINDOWS */
 
