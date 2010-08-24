@@ -1,4 +1,4 @@
-/* $Id: tstRTCoreDump.cpp 65068 2010-08-23 13:56:17Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: tstRTCoreDump.cpp 65123 2010-08-24 12:16:54Z ramshankar.venkataraman@oracle.com $ */
 /** @file
  * IPRT Testcase - Core Dumper.
  */
@@ -85,6 +85,7 @@ int main()
             g_cErrors++;
             RTPrintf("RTCoreDumperTakeDump failed. rc=%Rrc\n", rc);
         }
+        RTCoreDumperDisable();
     }
     else
     {
