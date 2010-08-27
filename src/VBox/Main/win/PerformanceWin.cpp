@@ -1,4 +1,4 @@
-/* $Id: PerformanceWin.cpp 60692 2010-04-27 08:22:32Z noreply@oracle.com $ */
+/* $Id: PerformanceWin.cpp 65313 2010-08-27 16:04:23Z vitali.pelenjow@oracle.com $ */
 
 /** @file
  *
@@ -34,7 +34,9 @@ extern "C" {
 
 #include <iprt/err.h>
 #include <iprt/mp.h>
+#ifndef VBOX_WITH_VRDP_MEMLEAK_DETECTOR
 #include <iprt/mem.h>
+#endif /* !VBOX_WITH_VRDP_MEMLEAK_DETECTOR */
 
 #include <map>
 
