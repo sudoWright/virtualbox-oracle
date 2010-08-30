@@ -1,4 +1,4 @@
-/* $Id: VBoxManageInfo.cpp 65273 2010-08-27 07:08:38Z andreas.loeffler@oracle.com $ */
+/* $Id: VBoxManageInfo.cpp 65354 2010-08-30 12:08:30Z andreas.loeffler@oracle.com $ */
 /** @file
  * VBoxManage - The 'showvminfo' command and helper routines.
  */
@@ -1932,7 +1932,7 @@ HRESULT showVMInfo (ComPtr<IVirtualBox> virtualBox,
                     RTPrintf("OS type:                             %lS\n", guestString.raw());
             }
 
-            ULONG guestRunLevel;
+            AdditionsRunLevelType_T guestRunLevel; /** @todo Add a runlevel-to-string (e.g. 0 = "None") method? */
             rc = guest->COMGETTER(AdditionsRunLevel)(&guestRunLevel);
             if (SUCCEEDED(rc))
             {
