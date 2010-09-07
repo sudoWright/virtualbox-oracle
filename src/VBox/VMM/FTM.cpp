@@ -1,4 +1,4 @@
-/* $Id: FTM.cpp 65615 2010-09-07 12:38:55Z noreply@oracle.com $ */
+/* $Id: FTM.cpp 65619 2010-09-07 13:32:18Z noreply@oracle.com $ */
 /** @file
  * FTM - Fault Tolerance Manager
  */
@@ -859,7 +859,8 @@ static int ftmR3SyncMem(PVM pVM)
                 break;
             }
             pVM->ftm.s.StatReceivedMem.c += PAGE_SIZE;
-            Hdr.cbPageRange -= PAGE_SIZE;
+            Hdr.cbPageRange              -= PAGE_SIZE;
+            GCPhys                       += PAGE_SIZE;
         }
     }
     return VINF_SUCCESS;
