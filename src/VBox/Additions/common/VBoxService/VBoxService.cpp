@@ -1,4 +1,4 @@
-/* $Id: VBoxService.cpp 64204 2010-07-29 12:41:03Z andreas.loeffler@oracle.com $ */
+/* $Id: VBoxService.cpp 65693 2010-09-09 12:34:56Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxService - Guest Additions Service Skeleton.
  */
@@ -101,7 +101,7 @@ static struct
 # endif
     { &g_VMStatistics, NIL_RTTHREAD, false, false, false, true },
 #endif
-#ifdef VBOX_WITH_PAGE_SHARING
+#if defined(VBOX_WITH_PAGE_SHARING) && defined(RT_OS_WINDOWS)
     { &g_PageSharing, NIL_RTTHREAD, false, false, false, true },
 #endif
 #ifdef VBOX_WITH_SHARED_FOLDERS
