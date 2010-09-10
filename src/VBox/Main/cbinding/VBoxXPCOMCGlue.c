@@ -1,10 +1,10 @@
-/* $Revision: 63368 $ */
+/* $Revision: 65753 $ */
 /** @file
  * Glue code for dynamically linking to VBoxXPCOMC.
  */
 
 /*
- * Copyright (C) 2008-2010 Sun Microsystems, Inc.
+ * Copyright (C) 2008-2010 Oracle Corporation
  *
  * Permission is hereby granted, free of charge, to any person
  * obtaining a copy of this software and associated documentation
