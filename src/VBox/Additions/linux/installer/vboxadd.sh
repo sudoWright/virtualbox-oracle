@@ -1,6 +1,6 @@
 #! /bin/sh
-# Sun VirtualBox
-# Linux Additions kernel module init script ($Revision: 65545 $)
+#
+# Linux Additions kernel module init script ($Revision: 65744 $)
 #
 
 #
