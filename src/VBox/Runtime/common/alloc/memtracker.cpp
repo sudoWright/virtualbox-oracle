@@ -1,4 +1,4 @@
-/* $Id: memtracker.cpp 65400 2010-08-31 10:16:05Z knut.osmundsen@oracle.com $ */
+/* $Id: memtracker.cpp 65796 2010-09-11 18:02:17Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Memory Tracker & Leak Detector.
  */
@@ -36,5 +36,4 @@
 #include <iprt/param.h>
 
 #include "internal/magics.h"
-
 

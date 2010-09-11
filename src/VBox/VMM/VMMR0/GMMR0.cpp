@@ -1,4 +1,4 @@
-/* $Id: GMMR0.cpp 64440 2010-08-05 08:22:44Z noreply@oracle.com $ */
+/* $Id: GMMR0.cpp 65796 2010-09-11 18:02:17Z knut.osmundsen@oracle.com $ */
 /** @file
  * GMM - Global Memory Manager.
  */
@@ -3764,7 +3764,7 @@ GMMR0DECL(int) GMMR0UnregisterSharedModule(PVM pVM, VMCPUID idCpu, char *pszModu
                             if (pRec->aRegions[i].paHCPhysPageID)
                                 RTMemFree(pRec->aRegions[i].paHCPhysPageID);
 
-                        Assert(pRec->Core.Key == GCBaseAddr || pRec->enmGuestOS == VBOXOSFAMILY_Windows64);                        
+                        Assert(pRec->Core.Key == GCBaseAddr || pRec->enmGuestOS == VBOXOSFAMILY_Windows64);
                         Assert(pRec->cRegions == pRecVM->cRegions);
 #ifdef VBOX_STRICT
                         for (unsigned i = 0; i < pRecVM->cRegions; i++)
