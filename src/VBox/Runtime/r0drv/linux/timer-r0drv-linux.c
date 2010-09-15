@@ -1,4 +1,4 @@
-/* $Id: timer-r0drv-linux.c 65859 2010-09-14 14:02:19Z knut.osmundsen@oracle.com $ */
+/* $Id: timer-r0drv-linux.c 65880 2010-09-15 10:12:38Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Timers, Ring-0 Driver, Linux.
  */
@@ -970,4 +970,15 @@ RTDECL(int) RTTimerReleaseSystemGranularity(uint32_t u32Granted)
     return VERR_NOT_SUPPORTED;
 }
 RT_EXPORT_SYMBOL(RTTimerReleaseSystemGranularity);
+
+
+RTDECL(bool) RTTimerCanDoHighResolution(void)
+{
+#ifdef RT_USE_LINUX_HRTIMER
+    return true;
+#else
+    return false;
+#endif
+}
+RT_EXPORT_SYMBOL(RTTimerCanDoHighResolution);
 
