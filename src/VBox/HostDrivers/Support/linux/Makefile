@@ -1,4 +1,4 @@
-# $Revision: 65919 $
+# $Revision: 65965 $
 ## @file
 # Makefile for the VirtualBox Linux Host Driver.
 #
@@ -129,6 +129,7 @@ OBJS   = \
 	generic/RTLogWriteStdErr-stub-generic.o \
 	generic/RTLogWriteStdOut-stub-generic.o \
 	generic/RTLogWriteUser-generic.o \
+	generic/RTMpGetArraySize-generic.o \
 	generic/RTTimerCreate-generic.o \
 	generic/uuid-generic.o \
 	VBox/log-vbox.o
