@@ -1,4 +1,4 @@
-/* $Id: VBoxInternalManage.cpp 66128 2010-09-22 17:12:01Z klaus.espenlaub@oracle.com $ */
+/* $Id: VBoxInternalManage.cpp 66138 2010-09-23 11:29:12Z noreply@oracle.com $ */
 /** @file
  * VBoxManage - The 'internalcommands' command.
  *
@@ -129,9 +129,9 @@ bool g_fInternalMode;
 /**
  * Print the usage info.
  */
-void printUsageInternal(USAGECATEGORY u64Cmd)
+void printUsageInternal(USAGECATEGORY u64Cmd, PRTSTREAM pStrm)
 {
-    RTStrmPrintf(g_pStdErr,
+    RTStrmPrintf(pStrm,
         "Usage: VBoxManage internalcommands <command> [command arguments]\n"
         "\n"
         "Commands:\n"
