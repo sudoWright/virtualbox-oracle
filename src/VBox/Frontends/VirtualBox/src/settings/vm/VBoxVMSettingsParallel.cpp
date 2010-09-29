@@ -1,4 +1,4 @@
-/* $Id: VBoxVMSettingsParallel.cpp 62261 2010-06-02 09:03:45Z noreply@oracle.com $ */
+/* $Id: VBoxVMSettingsParallel.cpp 66267 2010-09-29 12:34:52Z sergey.dubov@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt4 GUI ("VirtualBox"):
@@ -163,8 +163,8 @@ VBoxVMSettingsParallelPage::VBoxVMSettingsParallelPage()
 
 void VBoxVMSettingsParallelPage::getFrom (const CMachine &aMachine)
 {
-    Assert (mFirstWidget);
-    setTabOrder (mFirstWidget, mTabWidget->focusProxy());
+    Assert (m_pFirstWidget);
+    setTabOrder (m_pFirstWidget, mTabWidget->focusProxy());
     QWidget *lastFocusWidget = mTabWidget->focusProxy();
 
     /* Tab pages loading */

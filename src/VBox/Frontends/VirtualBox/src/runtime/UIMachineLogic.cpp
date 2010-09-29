@@ -1,4 +1,4 @@
-/* $Id: UIMachineLogic.cpp 66181 2010-09-23 23:21:52Z knut.osmundsen@oracle.com $ */
+/* $Id: UIMachineLogic.cpp 66267 2010-09-29 12:34:52Z sergey.dubov@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt GUI ("VirtualBox"):
@@ -159,7 +159,7 @@ protected:
 
 private:
 
-    VBoxSettingsPage *m_pSettings;
+    UISettingsPage *m_pSettings;
     CSession &m_session;
 };
 

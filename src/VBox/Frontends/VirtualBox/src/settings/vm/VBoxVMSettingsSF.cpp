@@ -1,4 +1,4 @@
-/* $Id: VBoxVMSettingsSF.cpp 64037 2010-07-26 06:31:01Z noreply@oracle.com $ */
+/* $Id: VBoxVMSettingsSF.cpp 66267 2010-09-29 12:34:52Z sergey.dubov@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt4 GUI ("VirtualBox"):
@@ -165,7 +165,7 @@ private:
 };
 
 VBoxVMSettingsSF::VBoxVMSettingsSF (int aType, QWidget *aParent)
-    : VBoxSettingsPage (aParent)
+    : UISettingsPage (aParent)
     , mDialogType (aType)
     , mIsListViewChanged (false)
 {
