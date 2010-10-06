@@ -1,4 +1,4 @@
-/* $Id: VBoxManageHelp.cpp 66368 2010-10-04 13:31:58Z noreply@oracle.com $ */
+/* $Id: VBoxManageHelp.cpp 66443 2010-10-06 14:28:27Z noreply@oracle.com $ */
 /** @file
  * VBoxManage - help and other message output.
  */
@@ -171,6 +171,7 @@ void printUsage(USAGECATEGORY u64Cmd, PRTSTREAM pStrm)
                      "                            [--pae on|off]\n"
                      "                            [--hpet on|off]\n"
                      "                            [--hwvirtex on|off]\n"
+                     "                            [--hwvirtexexcl on|off]\n"
                      "                            [--nestedpaging on|off]\n"
                      "                            [--largepages on|off]\n"
                      "                            [--vtxvpid on|off]\n"
