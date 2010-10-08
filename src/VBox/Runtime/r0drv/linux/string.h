@@ -1,4 +1,4 @@
-/* $Id: string.h 60692 2010-04-27 08:22:32Z noreply@oracle.com $ */
+/* $Id: string.h 66527 2010-10-08 15:46:40Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - wrapper for the linux kernel asm/string.h.
  */
