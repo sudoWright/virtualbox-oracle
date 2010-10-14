@@ -1,4 +1,4 @@
-/* $Id: tstInlineAsm.cpp 64477 2010-08-05 15:19:09Z noreply@oracle.com $ */
+/* $Id: tstRTInlineAsm.cpp 66662 2010-10-14 13:11:33Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT Testcase - inline assembly.
  */
@@ -1328,7 +1328,7 @@ void tstASMBench(void)
 int main(int argc, char *argv[])
 {
     RTTEST hTest;
-    int rc = RTTestInitAndCreate("tstInlineAsm", &hTest);
+    int rc = RTTestInitAndCreate("tstRTInlineAsm", &hTest);
     if (rc)
         return rc;
     RTTestBanner(hTest);
