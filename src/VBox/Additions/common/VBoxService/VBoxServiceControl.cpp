@@ -1,4 +1,4 @@
-/* $Id: VBoxServiceControl.cpp 66591 2010-10-12 13:20:50Z andreas.loeffler@oracle.com $ */
+/* $Id: VBoxServiceControl.cpp 66695 2010-10-15 13:44:34Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxServiceControl - Host-driven Guest Control.
  */
@@ -233,7 +233,7 @@ static DECLCALLBACK(void) VBoxServiceControlTerm(void)
         /* Destroy thread specific data. */
         switch (pNode->enmType)
         {
-            case VBoxServiceCtrlThreadDataExec:
+            case kVBoxServiceCtrlThreadDataExec:
                 VBoxServiceControlExecDestroyThreadData((PVBOXSERVICECTRLTHREADDATAEXEC)pNode->pvData);
                 break;
 
