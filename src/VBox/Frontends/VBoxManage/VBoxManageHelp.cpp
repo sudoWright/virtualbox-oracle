@@ -1,4 +1,4 @@
-/* $Id: VBoxManageHelp.cpp 66740 2010-10-18 14:37:33Z noreply@oracle.com $ */
+/* $Id: VBoxManageHelp.cpp 66741 2010-10-18 14:43:09Z noreply@oracle.com $ */
 /** @file
  * VBoxManage - help and other message output.
  */
@@ -806,7 +806,7 @@ int errorArgument(const char *pszFormat, ...)
 {
     va_list args;
     va_start(args, pszFormat);
-    RTMsgError(pszFormat, args);
+    RTMsgErrorV(pszFormat, args);
     va_end(args);
     return 1;
 }
