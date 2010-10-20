@@ -1,6 +1,6 @@
-/* $Id: alloc-darwin.cpp 66829 2010-10-20 15:42:28Z knut.osmundsen@oracle.com $ */
+/* $Id: RTMemProtect-posix.cpp 66829 2010-10-20 15:42:28Z knut.osmundsen@oracle.com $ */
 /** @file
- * IPRT - Memory Allocation, Darwin.
+ * IPRT - Memory Allocation, POSIX.
  */
 
 /*
@@ -34,66 +34,8 @@
 #include <iprt/err.h>
 #include <iprt/string.h>
 
-#include <stdlib.h>
 #include <errno.h>
 #include <sys/mman.h>
-
-
-RTDECL(void *) RTMemExecAllocTag(size_t cb, const char *pszTag) RT_NO_THROW
-{
-    /*
-     * Allocate first.
-     */
-    AssertMsg(cb, ("Allocating ZERO bytes is really not a good idea! Good luck with the next assertion!\n"));
-    cb = RT_ALIGN_Z(cb, PAGE_SIZE);
-    void *pv = valloc(cb);
-    AssertMsg(pv, ("posix_memalign(%d) failed!!! errno=%d\n", cb, errno));
-    if (pv)
-    {
-        /*
-         * Add PROT_EXEC flag to the page(s).
-         */
-        memset(pv, 0xcc, cb);
-        int rc = mprotect(pv, cb, PROT_READ | PROT_WRITE | PROT_EXEC);
-        if (rc)
-        {
-            AssertMsgFailed(("mprotect(%p, %#x,,) -> rc=%d, errno=%d\n", pv, cb, rc, errno));
-            free(pv);
-            pv = NULL;
-        }
-    }
-    return pv;
-}
-
-
-RTDECL(void)    RTMemExecFree(void *pv, size_t cb) RT_NO_THROW
-{
-    if (pv)
-        free(pv);
-}
-
-
-RTDECL(void *) RTMemPageAllocTag(size_t cb, const char *pszTag) RT_NO_THROW
-{
-    return valloc(RT_ALIGN_Z(cb, PAGE_SIZE));
-}
-
-
-RTDECL(void *) RTMemPageAllocZTag(size_t cb, const char *pszTag) RT_NO_THROW
-{
-    cb = RT_ALIGN_Z(cb, PAGE_SIZE);
-    void *pv = valloc(cb);
-    if (pv)
-        bzero(pv, RT_ALIGN_Z(cb, PAGE_SIZE));
-    return pv;
-}
-
-
-RTDECL(void) RTMemPageFree(void *pv, size_t cb) RT_NO_THROW
-{
-    if (pv)
-        free(pv);
-}
 
 
 RTDECL(int) RTMemProtect(void *pv, size_t cb, unsigned fProtect) RT_NO_THROW
@@ -151,4 +93,3 @@ RTDECL(int) RTMemProtect(void *pv, size_t cb, unsigned fProtect) RT_NO_THROW
         return rc;
     return RTErrConvertFromErrno(errno);
 }
-
