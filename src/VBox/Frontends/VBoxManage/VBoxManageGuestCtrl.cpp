@@ -1,4 +1,4 @@
-/* $Id: VBoxManageGuestCtrl.cpp 66869 2010-10-21 11:41:49Z andreas.loeffler@oracle.com $ */
+/* $Id: VBoxManageGuestCtrl.cpp 66870 2010-10-21 11:51:11Z andreas.loeffler@oracle.com $ */
 /** @file
  * VBoxManage - Implementation of guestcontrol command.
  */
@@ -441,7 +441,7 @@ static int handleCtrlExecProgram(HandlerArg *a)
                         }
                     }
 
-#if 1
+#if 0
                     static int sent = 0;
                     if (sent < 1)
                     {
