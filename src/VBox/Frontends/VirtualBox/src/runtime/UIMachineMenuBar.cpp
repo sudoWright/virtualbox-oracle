@@ -1,4 +1,4 @@
-/* $Id: UIMachineMenuBar.cpp 66181 2010-09-23 23:21:52Z knut.osmundsen@oracle.com $ */
+/* $Id: UIMachineMenuBar.cpp 66973 2010-10-24 15:57:55Z vitali.pelenjow@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt GUI ("VirtualBox"):
@@ -185,7 +185,7 @@ void UIMachineMenuBar::prepareMenuDevices(QMenu *pMenu, UIActionsPool *pActionsP
     pMenu->addAction(pActionsPool->action(UIActionIndex_Simple_NetworkAdaptersDialog));
     pMenu->addAction(pActionsPool->action(UIActionIndex_Simple_SharedFoldersDialog));
     pMenu->addSeparator();
-    pMenu->addAction(pActionsPool->action(UIActionIndex_Toggle_VRDP));
+    pMenu->addAction(pActionsPool->action(UIActionIndex_Toggle_VRDEServer));
     pMenu->addSeparator();
     pMenu->addAction(pActionsPool->action(UIActionIndex_Simple_InstallGuestTools));
 }
