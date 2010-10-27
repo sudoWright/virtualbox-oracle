@@ -1,4 +1,4 @@
-/* $Id: VHDHDDCore.cpp 67070 2010-10-26 20:56:38Z noreply@oracle.com $ */
+/* $Id: VHDHDDCore.cpp 67087 2010-10-27 11:53:50Z noreply@oracle.com $ */
 /** @file
  * VHD Disk image, Core Code.
  */
@@ -519,7 +519,7 @@ static int vhdLocatorUpdate(PVHDIMAGE pImage, PVHDPLE pLocator, const char *pszF
         case VHD_PLATFORM_CODE_W2KU:
             /* Update unicode absolute name. */
             pszTmp = (char*)RTMemTmpAllocZ(cbMaxLen);
-            if (!pvBuf)
+            if (!pszTmp)
             {
                 rc = VERR_NO_MEMORY;
                 goto out;
