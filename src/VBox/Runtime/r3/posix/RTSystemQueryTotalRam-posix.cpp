@@ -1,4 +1,4 @@
-/* $Id: RTSystemQueryTotalRam-win.cpp 67090 2010-10-27 12:51:19Z noreply@oracle.com $ */
+/* $Id: RTSystemQueryTotalRam-posix.cpp 67091 2010-10-27 12:54:29Z noreply@oracle.com $ */
 /** @file
  * IPRT - RTSystemQueryTotalRam, windows ring-3.
  */
