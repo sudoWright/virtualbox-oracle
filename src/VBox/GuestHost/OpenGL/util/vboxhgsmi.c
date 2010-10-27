@@ -1,4 +1,4 @@
-/* $Id: vboxhgsmi.c 66950 2010-10-22 16:28:07Z noreply@oracle.com $ */
+/* $Id: vboxhgsmi.c 67127 2010-10-27 19:59:36Z noreply@oracle.com $ */
 
 /** @file
  * VBox HGCM connection
@@ -1462,8 +1462,6 @@ bool crVBoxHGSMIInit(CRNetReceiveFuncList *rfl, CRNetCloseFuncList *cfl, unsigne
 #endif
         return false;
     }
-
-    return false;
 
     g_crvboxhgsmi.recv_list = rfl;
     g_crvboxhgsmi.close_list = cfl;
