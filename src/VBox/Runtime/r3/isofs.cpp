@@ -1,4 +1,4 @@
-/* $Id: isofs.cpp 67140 2010-10-28 09:27:05Z noreply@oracle.com $ */
+/* $Id: isofs.cpp 67172 2010-10-28 15:30:47Z andreas.loeffler@oracle.com $ */
 /** @file
  * IPRT - ISO 9660 file system handling.
  */
@@ -416,7 +416,8 @@ static int rtIsoFsResolvePath(PRTISOFSFILE pFile, const char *pszPath, uint32_t 
         if (!RTStrCmp(pszTemp, ".")) /* Root directory? Use first node! */
         {
             pNode = RTListNodeGetFirst(&pFile->listPaths, RTISOFSPATHTABLEENTRY, Node);
-            bFound = true;
+            if (pNode)
+                bFound = true;
         }
         else
         {
@@ -432,9 +433,12 @@ static int rtIsoFsResolvePath(PRTISOFSFILE pFile, const char *pszPath, uint32_t 
         }
         if (bFound)
         {
+            AssertPtr(pNode);
             *puSector = pNode->header.sector_dir_table;
             rc = VINF_SUCCESS;
         }
+        else
+            rc = VERR_FILE_NOT_FOUND;
         RTStrFree(pszTemp);
     }
     else
