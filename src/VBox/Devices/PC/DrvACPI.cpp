@@ -1,4 +1,4 @@
-/* $Id: DrvACPI.cpp 61332 2010-05-09 17:53:58Z knut.osmundsen@oracle.com $ */
+/* $Id: DrvACPI.cpp 67140 2010-10-28 09:27:05Z noreply@oracle.com $ */
 /** @file
  * DrvACPI - ACPI Host Driver.
  */
@@ -91,7 +91,7 @@ typedef struct DRVACPI
     /** The poller thread. */
     PPDMTHREAD          pPollerThread;
     /** Synchronize access to the above fields.
-     * XXX A spinlock is probaly cheaper ... */
+     * XXX A spinlock is probably cheaper ... */
     RTCRITSECT          CritSect;
     /** Event semaphore the poller thread is sleeping on. */
     RTSEMEVENT          hPollerSleepEvent;

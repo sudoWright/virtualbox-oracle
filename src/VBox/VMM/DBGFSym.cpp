@@ -1,4 +1,4 @@
-/* $Id: DBGFSym.cpp 60692 2010-04-27 08:22:32Z noreply@oracle.com $ */
+/* $Id: DBGFSym.cpp 67140 2010-10-28 09:27:05Z noreply@oracle.com $ */
 /** @file
  * DBGF - Debugger Facility, Symbol Management.
  */
@@ -67,7 +67,7 @@ static int win32Error(PVM pVM);
 typedef struct DBGFMOD *PDBGFMOD;
 
 /**
- * Internal represenation of a symbol.
+ * Internal representation of a symbol.
  */
 typedef struct DBGFSYM
 {

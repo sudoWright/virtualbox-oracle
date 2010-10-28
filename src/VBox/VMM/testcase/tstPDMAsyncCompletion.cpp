@@ -1,4 +1,4 @@
-/* $Id: tstPDMAsyncCompletion.cpp 65494 2010-09-02 12:20:06Z knut.osmundsen@oracle.com $ */
+/* $Id: tstPDMAsyncCompletion.cpp 67140 2010-10-28 09:27:05Z noreply@oracle.com $ */
 /** @file
  * PDM Asynchronous Completion Testcase.
  *
@@ -109,7 +109,7 @@ int main(int argc, char *argv[])
         }
 
         /*
-         * Create event semaphor.
+         * Create event semaphore.
          */
         rc = RTSemEventCreate(&g_FinishedEventSem);
         AssertRC(rc);

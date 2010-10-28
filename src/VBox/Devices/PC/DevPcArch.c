@@ -1,6 +1,6 @@
-/* $Id: DevPcArch.c 60692 2010-04-27 08:22:32Z noreply@oracle.com $ */
+/* $Id: DevPcArch.c 67140 2010-10-28 09:27:05Z noreply@oracle.com $ */
 /** @file
- * DevPcArch - PC Architechture Device.
+ * DevPcArch - PC Architecture Device.
  */
 
 /*

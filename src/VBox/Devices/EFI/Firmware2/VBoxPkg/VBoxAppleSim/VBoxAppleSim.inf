@@ -1,6 +1,6 @@
-# $Id: VBoxAppleSim.inf 61120 2010-05-05 12:32:52Z noreply@oracle.com $
+# $Id: VBoxAppleSim.inf 67140 2010-10-28 09:27:05Z noreply@oracle.com $
 ## @file
-# VBoxAppleSim - VBox Apple intrefaces simulation support.
+# VBoxAppleSim - VBox Apple interfaces simulation support.
 #
 
 #

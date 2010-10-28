@@ -1,4 +1,4 @@
-/* $Id: DrvChar.cpp 62069 2010-05-27 16:25:28Z noreply@oracle.com $ */
+/* $Id: DrvChar.cpp 67140 2010-10-28 09:27:05Z noreply@oracle.com $ */
 /** @file
  * Driver that adapts PDMISTREAM into PDMICHARCONNECTOR / PDMICHARPORT.
  *
@@ -67,7 +67,7 @@ typedef struct DRVCHAR
     RTTHREAD                    ReceiveThread;
     /** Send thread ID. */
     RTTHREAD                    SendThread;
-    /** Send event semephore */
+    /** Send event semaphore */
     RTSEMEVENT                  SendSem;
 
     /** Internal send FIFO queue */

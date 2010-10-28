@@ -1,4 +1,4 @@
-/* $Id: tstRTPrfIO.cpp 66504 2010-10-07 22:59:42Z knut.osmundsen@oracle.com $ */
+/* $Id: tstRTPrfIO.cpp 67140 2010-10-28 09:27:05Z noreply@oracle.com $ */
 /** @file
  * IPRT Testcase - Profile IPRT I/O APIs.
  */
@@ -72,7 +72,7 @@ static char         g_szNotExitingDirFile[RTPATH_MAX];
 /**
  * Benchmark an operation.
  * @param   stmt        Statement to benchmark.
- * @param   what        String litteral describing what's being benchmarked..
+ * @param   what        String literal describing what's being benchmarked..
  */
 #define TIME_OP(stmt, what) \
     do \
@@ -210,7 +210,7 @@ int main(int argc, char **argv)
                 break;
 
             case 'V':
-                RTTestPrintf(g_hTest, RTTESTLVL_ALWAYS, "$Revision: 66504 $\n");
+                RTTestPrintf(g_hTest, RTTESTLVL_ALWAYS, "$Revision: 67140 $\n");
                 return RTTestSummaryAndDestroy(g_hTest);
 
             case 'h':

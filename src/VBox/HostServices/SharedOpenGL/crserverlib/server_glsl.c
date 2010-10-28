@@ -1,7 +1,7 @@
-/* $Id: server_glsl.c 65002 2010-08-20 09:40:40Z noreply@oracle.com $ */
+/* $Id: server_glsl.c 67140 2010-10-28 09:27:05Z noreply@oracle.com $ */
 
 /** @file
- * VBox OpenGL: GLSL related fucntions
+ * VBox OpenGL: GLSL related functions
  */
 
 /*

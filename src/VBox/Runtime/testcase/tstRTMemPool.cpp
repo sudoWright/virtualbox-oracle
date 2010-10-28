@@ -1,4 +1,4 @@
-/* $Id: tstRTMemPool.cpp 60692 2010-04-27 08:22:32Z noreply@oracle.com $ */
+/* $Id: tstRTMemPool.cpp 67140 2010-10-28 09:27:05Z noreply@oracle.com $ */
 /** @file
  * IPRT Testcase - MemPool.
  */
@@ -176,7 +176,7 @@ static void tst3(void)
     RTTESTI_CHECK_RC_RETV(RTMemPoolDestroy(hMemPool), VINF_SUCCESS);
 
     /*
-     * Pseudo random freeing to test list maintaince.
+     * Pseudo random freeing to test list maintenance.
      */
     RTRAND hRand;
     RTTESTI_CHECK_RC_OK_RETV(RTRandAdvCreateParkMiller(&hRand));

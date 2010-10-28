@@ -1,6 +1,6 @@
-/* $Id: pathhost-generic.cpp 67016 2010-10-25 14:32:38Z knut.osmundsen@oracle.com $ */
+/* $Id: pathhost-generic.cpp 67140 2010-10-28 09:27:05Z noreply@oracle.com $ */
 /** @file
- * IPRT - Path Convertions, generic pass through.
+ * IPRT - Path Conversions, generic pass through.
  */
 
 /*

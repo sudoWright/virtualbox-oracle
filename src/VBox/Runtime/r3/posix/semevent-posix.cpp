@@ -1,4 +1,4 @@
-/* $Id: semevent-posix.cpp 66829 2010-10-20 15:42:28Z knut.osmundsen@oracle.com $ */
+/* $Id: semevent-posix.cpp 67140 2010-10-28 09:27:05Z noreply@oracle.com $ */
 /** @file
  * IPRT - Event Semaphore, POSIX.
  */
@@ -83,7 +83,7 @@ struct RTSEMEVENTINTERNAL
     uint32_t            fFlags;
 };
 
-/** The valus of the u32State variable in a RTSEMEVENTINTERNAL.
+/** The values of the u32State variable in a RTSEMEVENTINTERNAL.
  * @{ */
 /** The object isn't initialized. */
 #define EVENT_STATE_UNINITIALIZED   0

@@ -1,4 +1,4 @@
-/* $Id: MachineImpl.h 67049 2010-10-26 11:18:04Z noreply@oracle.com $ */
+/* $Id: MachineImpl.h 67140 2010-10-28 09:27:05Z noreply@oracle.com $ */
 /** @file
  * VirtualBox COM class implementation
  */
@@ -1136,7 +1136,7 @@ private:
     friend class Snapshot;
 };
 
-// third party methods that depend on SnapshotMachine definiton
+// third party methods that depend on SnapshotMachine definition
 
 inline const Guid &Machine::getSnapshotId() const
 {

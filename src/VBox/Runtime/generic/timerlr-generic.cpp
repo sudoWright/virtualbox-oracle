@@ -1,8 +1,8 @@
-/* $Id: timerlr-generic.cpp 60692 2010-04-27 08:22:32Z noreply@oracle.com $ */
+/* $Id: timerlr-generic.cpp 67140 2010-10-28 09:27:05Z noreply@oracle.com $ */
 /** @file
  * IPRT - Low Resolution Timers, Generic.
  *
- * This code is more or less identicial to timer-generic.cpp, so
+ * This code is more or less identical to timer-generic.cpp, so
  * bugfixes goes into both files.
  */
 

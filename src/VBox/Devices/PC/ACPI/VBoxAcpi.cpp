@@ -1,6 +1,6 @@
-/* $Id: VBoxAcpi.cpp 60692 2010-04-27 08:22:32Z noreply@oracle.com $ */
+/* $Id: VBoxAcpi.cpp 67140 2010-10-28 09:27:05Z noreply@oracle.com $ */
 /** @file
- * VBoxAcpi - VirtualBox ACPI maniputation functionality.
+ * VBoxAcpi - VirtualBox ACPI manipulation functionality.
  */
 
 /*

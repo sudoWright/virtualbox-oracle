@@ -1,6 +1,6 @@
-/* $Id: HostImpl.h 64376 2010-08-03 14:05:05Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: HostImpl.h 67140 2010-10-28 09:27:05Z noreply@oracle.com $ */
 /** @file
- * Implemenation of IHost.
+ * Implementation of IHost.
  */
 
 /*

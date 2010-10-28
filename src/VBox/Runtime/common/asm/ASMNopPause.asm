@@ -1,4 +1,4 @@
-; $Id: ASMNopPause.asm 60692 2010-04-27 08:22:32Z noreply@oracle.com $
+; $Id: ASMNopPause.asm 67140 2010-10-28 09:27:05Z noreply@oracle.com $
 ;; @file
 ; IPRT - ASMNopPause().
 ;
@@ -32,7 +32,7 @@
 BEGINCODE
 
 ;;
-; The PAUSE variant of NOP for helping hyperthreaded CPUs detecing spin locks.
+; The PAUSE variant of NOP for helping hyperthreaded CPUs detecting spin locks.
 ;
 BEGINPROC_EXPORTED ASMNopPause
         pause

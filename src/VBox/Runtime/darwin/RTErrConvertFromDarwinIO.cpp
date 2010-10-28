@@ -1,4 +1,4 @@
-/* $Id: RTErrConvertFromDarwinIO.cpp 60692 2010-04-27 08:22:32Z noreply@oracle.com $ */
+/* $Id: RTErrConvertFromDarwinIO.cpp 67140 2010-10-28 09:27:05Z noreply@oracle.com $ */
 /** @file
  * IPRT - Convert Darwin IOKit returns codes to iprt status codes.
  */
@@ -36,7 +36,7 @@
 RTDECL(int) RTErrConvertFromDarwinIO(int iNativeCode)
 {
     /*
-     * 'optimzied' success case.
+     * 'optimized' success case.
      */
     if (iNativeCode == kIOReturnSuccess)
         return VINF_SUCCESS;

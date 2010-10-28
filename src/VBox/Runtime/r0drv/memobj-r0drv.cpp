@@ -1,4 +1,4 @@
-/* $Revision: 64135 $ */
+/* $Revision: 67140 $ */
 /** @file
  * IPRT - Ring-0 Memory Objects, Common Code.
  */
@@ -318,7 +318,7 @@ RTR0DECL(int) RTR0MemObjFree(RTR0MEMOBJ MemObj, bool fFreeMappings)
     RT_ASSERT_PREEMPTIBLE();
 
     /*
-     * Deal with mapings according to fFreeMappings.
+     * Deal with mappings according to fFreeMappings.
      */
     if (    !rtR0MemObjIsMapping(pMem)
         &&  pMem->uRel.Parent.cMappings > 0)

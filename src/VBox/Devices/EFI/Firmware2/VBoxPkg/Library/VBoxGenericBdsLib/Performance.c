@@ -1,4 +1,4 @@
-/* $Id: Performance.c 61188 2010-05-06 09:43:05Z noreply@oracle.com $ */
+/* $Id: Performance.c 67140 2010-10-28 09:27:05Z noreply@oracle.com $ */
 /** @file
  * Performance.c - This file include the file which can help to get the
  * system performance, all the function will only include if the performance
@@ -39,7 +39,7 @@ PERF_DATA                 mPerfData;
 EFI_PHYSICAL_ADDRESS      mAcpiLowMemoryBase = 0x0FFFFFFFFULL;
 
 /**
-  Get the short verion of PDB file name to be
+  Get the short version of PDB file name to be
   used in performance data logging.
 
   @param PdbFileName     The long PDB file name.
