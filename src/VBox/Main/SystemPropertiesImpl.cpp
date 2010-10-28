@@ -1,4 +1,4 @@
-/* $Id: SystemPropertiesImpl.cpp 67163 2010-10-28 13:27:45Z vitali.pelenjow@oracle.com $ */
+/* $Id: SystemPropertiesImpl.cpp 67173 2010-10-28 15:37:21Z alexander.eichner@oracle.com $ */
 
 /** @file
  *
@@ -33,7 +33,7 @@
 #include <VBox/err.h>
 #include <VBox/param.h>
 #include <VBox/settings.h>
-#include <VBox/VBoxHDD.h>
+#include <VBox/vd.h>
 
 // defines
 /////////////////////////////////////////////////////////////////////////////

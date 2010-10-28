@@ -1,4 +1,4 @@
-/* $Id: VBoxManageDisk.cpp 67140 2010-10-28 09:27:05Z noreply@oracle.com $ */
+/* $Id: VBoxManageDisk.cpp 67173 2010-10-28 15:37:21Z alexander.eichner@oracle.com $ */
 /** @file
  * VBoxManage - The disk related commands.
  */
@@ -35,7 +35,7 @@
 #include <iprt/ctype.h>
 #include <iprt/getopt.h>
 #include <VBox/log.h>
-#include <VBox/VBoxHDD.h>
+#include <VBox/vd.h>
 
 #include "VBoxManage.h"
 using namespace com;

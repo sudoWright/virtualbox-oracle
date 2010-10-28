@@ -1,4 +1,4 @@
-/* $Id: vbox-img.cpp 67121 2010-10-27 16:44:37Z alexander.eichner@oracle.com $ */
+/* $Id: vbox-img.cpp 67173 2010-10-28 15:37:21Z alexander.eichner@oracle.com $ */
 /** @file
  * Standalone image manipulation tool
  */
@@ -18,7 +18,7 @@
 /*******************************************************************************
 *   Header Files                                                               *
 *******************************************************************************/
-#include <VBox/VBoxHDD.h>
+#include <VBox/vd.h>
 #include <VBox/err.h>
 #include <VBox/version.h>
 #include <iprt/initterm.h>

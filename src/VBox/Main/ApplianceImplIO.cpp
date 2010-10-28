@@ -1,4 +1,4 @@
-/* $Id: ApplianceImplIO.cpp 67136 2010-10-28 08:30:48Z noreply@oracle.com $ */
+/* $Id: ApplianceImplIO.cpp 67173 2010-10-28 15:37:21Z alexander.eichner@oracle.com $ */
 /** @file
  *
  * IO helper for IAppliance COM class implementations.
@@ -30,7 +30,7 @@
 #include <iprt/asm.h>
 #include <iprt/stream.h>
 #include <iprt/circbuf.h>
-#include <VBox/VBoxHDD.h>
+#include <VBox/vd.h>
 
 /******************************************************************************
  *   Structures and Typedefs                                                  *
