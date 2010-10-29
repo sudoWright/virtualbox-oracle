@@ -1,4 +1,4 @@
-/* $Id: VBoxVMSettingsGeneral.cpp 67210 2010-10-29 11:14:14Z noreply@oracle.com $ */
+/* $Id: VBoxVMSettingsGeneral.cpp 67228 2010-10-29 15:08:08Z noreply@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt4 GUI ("VirtualBox"):
@@ -60,10 +60,13 @@ bool VBoxVMSettingsGeneral::isWindowsOSTypeSelected() const
 #endif
 
 #ifdef VBOX_WITH_CRHGSMI
+#include <stdio.h>
 bool VBoxVMSettingsGeneral::isWddmSupportedForOSType() const
 {
-    return mOSTypeSelector->type().GetId() == "Windows Vista"
-            || mOSTypeSelector->type().GetId() == "Windows 7";
+    const QString & id = mOSTypeSelector->type().GetId();
+    printf("%S\n", id.utf16());
+    bool bWddm = id == "WindowsVista" || id == "Windows7";
+    return bWddm;
 }
 #endif
 
