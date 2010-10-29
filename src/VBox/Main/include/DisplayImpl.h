@@ -1,4 +1,4 @@
-/* $Id: DisplayImpl.h 66679 2010-10-15 10:34:58Z noreply@oracle.com $ */
+/* $Id: DisplayImpl.h 67200 2010-10-29 08:55:09Z vitali.pelenjow@oracle.com $ */
 /** @file
  * VirtualBox COM class implementation
  */
@@ -147,9 +147,7 @@ public:
 
     bool VideoAccelAllowed (void);
 
-#ifdef VBOX_WITH_VRDP
     void VideoAccelVRDP (bool fEnable);
-#endif /* VBOX_WITH_VRDP */
 
     // IEventListener methods
     STDMETHOD(HandleEvent)(IEvent * aEvent);

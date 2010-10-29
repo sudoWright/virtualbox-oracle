@@ -1,4 +1,4 @@
-/* $Id: Performance.cpp 65313 2010-08-27 16:04:23Z vitali.pelenjow@oracle.com $ */
+/* $Id: Performance.cpp 67200 2010-10-29 08:55:09Z vitali.pelenjow@oracle.com $ */
 
 /** @file
  *
@@ -34,9 +34,7 @@
 #include <VBox/com/string.h>
 #include <VBox/err.h>
 #include <iprt/string.h>
-#ifndef VBOX_WITH_VRDP_MEMLEAK_DETECTOR
 #include <iprt/mem.h>
-#endif /* !VBOX_WITH_VRDP_MEMLEAK_DETECTOR */
 #include <iprt/cpuset.h>
 
 #include <algorithm>
