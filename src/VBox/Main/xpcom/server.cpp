@@ -1,4 +1,4 @@
-/* $Id: server.cpp 67202 2010-10-29 09:36:56Z vitali.pelenjow@oracle.com $ */
+/* $Id: server.cpp 67205 2010-10-29 10:35:00Z noreply@oracle.com $ */
 /** @file
  * XPCOM server process (VBoxSVC) start point.
  */
@@ -565,7 +565,7 @@ public:
 
             if (count == 2)
             {
-                LogFlowFunc(("Another client has requested a reference to VirtualBox, canceling detruction...\n"));
+                LogFlowFunc(("Another client has requested a reference to VirtualBox, canceling destruction...\n"));
 
                 /* make sure the previous timer is stopped */
                 gAllowSigUsrQuit = PR_FALSE;

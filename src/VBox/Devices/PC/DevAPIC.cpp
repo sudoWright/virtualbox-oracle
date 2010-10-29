@@ -1,4 +1,4 @@
-/* $Id: DevAPIC.cpp 67140 2010-10-28 09:27:05Z noreply@oracle.com $ */
+/* $Id: DevAPIC.cpp 67205 2010-10-29 10:35:00Z noreply@oracle.com $ */
 /** @file
  * Advanced Programmable Interrupt Controller (APIC) Device and
  * I/O Advanced Programmable Interrupt Controller (IO-APIC) Device.
@@ -443,7 +443,7 @@ DECLINLINE(uint32_t) getApicEnableBits(APICDeviceInfo* dev)
         case PDMAPICVERSION_X2APIC:
             return MSR_IA32_APICBASE_ENABLE | MSR_IA32_APICBASE_X2ENABLE ;
         default:
-            AssertMsgFailed(("Unsuported APIC version %d\n", dev->enmVersion));
+            AssertMsgFailed(("Unsupported APIC version %d\n", dev->enmVersion));
             return 0;
     }
 }

@@ -1,4 +1,4 @@
-/* $Id: HWVMXR0.cpp 66317 2010-09-30 14:18:37Z noreply@oracle.com $ */
+/* $Id: HWVMXR0.cpp 67205 2010-10-29 10:35:00Z noreply@oracle.com $ */
 /** @file
  * HWACCM VMX - Host Context Ring 0.
  */
@@ -3395,7 +3395,7 @@ ResumeExecution:
 
         default:
             rc = VERR_VMX_UNEXPECTED_INTERRUPTION_EXIT_CODE;
-            AssertMsgFailed(("Unexpected interuption code %x\n", intInfo));
+            AssertMsgFailed(("Unexpected interruption code %x\n", intInfo));
             break;
         }
 
