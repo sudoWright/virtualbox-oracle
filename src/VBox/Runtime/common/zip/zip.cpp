@@ -1,4 +1,4 @@
-/* $Id: zip.cpp 67140 2010-10-28 09:27:05Z noreply@oracle.com $ */
+/* $Id: zip.cpp 67644 2010-11-11 12:37:18Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Compression.
  */
