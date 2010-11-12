@@ -1,4 +1,4 @@
-/* $Id: ConsoleImpl.cpp 67687 2010-11-12 09:26:40Z klaus.espenlaub@oracle.com $ */
+/* $Id: ConsoleImpl.cpp 67688 2010-11-12 09:30:23Z klaus.espenlaub@oracle.com $ */
 /** @file
  * VBox Console COM Class implementation
  */
@@ -5581,7 +5581,7 @@ HRESULT Console::powerUp(IProgress **aProgress, bool aPaused)
             fCoreFlags |= RTCOREDUMPER_FLAGS_LIVE_CORE;
         }
 
-        Utf8Str strCoreDir(coreDumpDir);
+        Utf8Str strDumpDir(coreDumpDir);
         const char *pszDumpDir = strDumpDir.c_str();
         if (   pszDumpDir
             && *pszDumpDir == '\0')
