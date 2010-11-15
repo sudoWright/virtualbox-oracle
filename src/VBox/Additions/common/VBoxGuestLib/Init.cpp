@@ -1,4 +1,4 @@
-/* $Revision: 67140 $ */
+/* $Revision: 67748 $ */
 /** @file
  * VBoxGuestLibR0 - Library initialization.
  */
@@ -251,11 +251,11 @@ DECLVBGL(int) VbglInit (void)
 
 DECLVBGL(void) VbglTerminate (void)
 {
-    vbglTerminateCommon ();
-
 # ifdef VBOX_WITH_HGCM
     vbglR0HGCMTerminate ();
 # endif
+
+    vbglTerminateCommon ();
 
     return;
 }
