@@ -1,4 +1,4 @@
-/* $Id: RTPathChangeToDosSlashes.cpp 67140 2010-10-28 09:27:05Z noreply@oracle.com $ */
+/* $Id: RTPathChangeToDosSlashes.cpp 67947 2010-11-19 15:09:08Z andreas.loeffler@oracle.com $ */
 /** @file
  * IPRT - RTPathChangeToDosSlashes
  */
@@ -52,8 +52,8 @@ RTDECL(char *) RTPathChangeToDosSlashes(char *pszPath, bool fForce)
         char   *psz = pszPath;
         while ((ch = *psz) != '\0')
         {
-            if (ch == '\\')
-                *psz = '/';
+            if (ch == '/')
+                *psz = '\\';
             psz++;
         }
     }
