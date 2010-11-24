@@ -1,4 +1,4 @@
-/* $Id: UIMachineSettingsStorage.cpp 68097 2010-11-24 17:32:43Z sergey.dubov@oracle.com $ */
+/* $Id: UIMachineSettingsStorage.cpp 68106 2010-11-24 21:17:02Z noreply@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt4 GUI ("VirtualBox"):
@@ -2427,7 +2427,7 @@ void UIMachineSettingsStorage::sltPrepareOpenMediumMenu()
             case VBoxDefs::MediumType_DVD:
             {
                 /* Add "Choose a virtual CD/DVD disk file" action: */
-                addChooseExistingMediumAction(pOpenMediumMenu, tr("Choose a CD/DVD disk image..."));
+                addChooseExistingMediumAction(pOpenMediumMenu, tr("Choose a virtual CD/DVD disk file..."));
                 /* Add "Choose a physical drive" actions: */
                 addChooseHostDriveActions(pOpenMediumMenu);
                 /* Add "Eject current medium" action: */
@@ -2442,7 +2442,7 @@ void UIMachineSettingsStorage::sltPrepareOpenMediumMenu()
             case VBoxDefs::MediumType_Floppy:
             {
                 /* Add "Choose a virtual floppy disk file" action: */
-                addChooseExistingMediumAction(pOpenMediumMenu, tr("Choose a floppy disk image..."));
+                addChooseExistingMediumAction(pOpenMediumMenu, tr("Choose a virtual floppy disk file..."));
                 /* Add "Choose a physical drive" actions: */
                 addChooseHostDriveActions(pOpenMediumMenu);
                 /* Add "Eject current medium" action: */
