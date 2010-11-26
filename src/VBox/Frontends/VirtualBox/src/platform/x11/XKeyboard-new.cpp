@@ -1,4 +1,4 @@
-/* $Id: XKeyboard-new.cpp 67140 2010-10-28 09:27:05Z noreply@oracle.com $ */
+/* $Id: XKeyboard-new.cpp 68172 2010-11-26 16:37:51Z noreply@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt GUI ("VirtualBox"):

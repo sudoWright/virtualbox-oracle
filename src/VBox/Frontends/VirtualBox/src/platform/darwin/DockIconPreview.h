@@ -1,4 +1,4 @@
-/* $Id: DockIconPreview.h 62021 2010-05-26 11:46:22Z noreply@oracle.com $ */
+/* $Id: DockIconPreview.h 68172 2010-11-26 16:37:51Z noreply@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt GUI ("VirtualBox"):

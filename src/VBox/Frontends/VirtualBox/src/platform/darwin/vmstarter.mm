@@ -1,4 +1,4 @@
-/* $Id: vmstarter.mm 68023 2010-11-23 11:08:52Z noreply@oracle.com $ */
+/* $Id: vmstarter.mm 68172 2010-11-26 16:37:51Z noreply@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt GUI ("VirtualBox"):
