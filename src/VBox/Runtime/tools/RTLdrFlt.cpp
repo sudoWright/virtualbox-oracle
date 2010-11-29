@@ -1,4 +1,4 @@
-/* $Id: RTLdrFlt.cpp 64363 2010-08-03 09:44:30Z knut.osmundsen@oracle.com $ */
+/* $Id: RTLdrFlt.cpp 68240 2010-11-29 13:45:37Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Utility for translating addresses into symbols+offset.
  */
@@ -149,7 +149,7 @@ int main(int argc, char **argv)
                 break;
 
             case 'V':
-                RTPrintf("$Revision: 64363 $");
+                RTPrintf("$Revision: 68240 $");
                 return RTEXITCODE_SUCCESS;
 
             case VINF_GETOPT_NOT_OPTION:
