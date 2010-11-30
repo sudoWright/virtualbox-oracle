@@ -1,4 +1,4 @@
-/* $Id: UIMouseHandler.cpp 68254 2010-11-29 15:44:39Z sergey.dubov@oracle.com $ */
+/* $Id: UIMouseHandler.cpp 68313 2010-11-30 15:17:06Z noreply@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt GUI ("VirtualBox"):
@@ -117,7 +117,7 @@ void UIMouseHandler::prepareListener(ulong uIndex, UIMachineWindow *pMachineWind
 void UIMouseHandler::cleanupListener(ulong uIndex)
 {
     /* Check if we should release mouse first: */
-    if (uIndex == m_iMouseCaptureViewIndex)
+    if ((int)uIndex == m_iMouseCaptureViewIndex)
         releaseMouse();
 
     /* If that window still registered: */
