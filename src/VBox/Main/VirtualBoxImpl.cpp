@@ -1,4 +1,4 @@
-/* $Id: VirtualBoxImpl.cpp 68162 2010-11-26 14:13:35Z noreply@oracle.com $ */
+/* $Id: VirtualBoxImpl.cpp 68436 2010-12-02 17:21:40Z noreply@oracle.com $ */
 
 /** @file
  * Implementation of IVirtualBox in VBoxSVC.
@@ -1549,6 +1549,7 @@ STDMETHODIMP VirtualBox::FindMedium(IN_BSTR   aLocation,
                                     DeviceType_T aDeviceType,
                                     IMedium **aMedium)
 {
+    CheckComArgStrNotEmptyOrNull(aLocation);
     CheckComArgOutSafeArrayPointerValid(aMedium);
 
     AutoCaller autoCaller(this);
