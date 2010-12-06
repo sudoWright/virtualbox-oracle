@@ -1,4 +1,4 @@
-/* $Id: DisplayImpl.h 67200 2010-10-29 08:55:09Z vitali.pelenjow@oracle.com $ */
+/* $Id: DisplayImpl.h 68544 2010-12-06 11:54:46Z vitali.pelenjow@oracle.com $ */
 /** @file
  * VirtualBox COM class implementation
  */
@@ -122,7 +122,8 @@ public:
 
     // public methods only for internal purposes
     int handleDisplayResize (unsigned uScreenId, uint32_t bpp, void *pvVRAM, uint32_t cbLine, int w, int h);
-    void handleDisplayUpdate (int x, int y, int cx, int cy);
+    void handleDisplayUpdateLegacy (int x, int y, int cx, int cy);
+    void handleDisplayUpdate (unsigned uScreenId, int x, int y, int w, int h);
 #ifdef VBOX_WITH_VIDEOHWACCEL
     void handleVHWACommandProcess(PPDMIDISPLAYCONNECTOR pInterface, PVBOXVHWACMD pCommand);
 #endif
