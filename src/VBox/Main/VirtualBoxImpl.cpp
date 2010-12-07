@@ -1,4 +1,4 @@
-/* $Id: VirtualBoxImpl.cpp 68604 2010-12-07 15:28:17Z knut.osmundsen@oracle.com $ */
+/* $Id: VirtualBoxImpl.cpp 68605 2010-12-07 15:28:38Z knut.osmundsen@oracle.com $ */
 
 /** @file
  * Implementation of IVirtualBox in VBoxSVC.
@@ -503,7 +503,6 @@ HRESULT VirtualBox::init()
         /* extension manager */
         rc = unconst(m->ptrExtPackManager).createObject();
         if (SUCCEEDED(rc))
-            /** @todo Define drop zone location. */
             rc = m->ptrExtPackManager->initExtPackManager(this, VBOXEXTPACKCTX_PER_USER_DAEMON);
         if (FAILED(rc))
             throw rc;
