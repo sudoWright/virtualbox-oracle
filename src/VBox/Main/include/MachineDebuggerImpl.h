@@ -1,4 +1,4 @@
-/* $Id: MachineDebuggerImpl.h 64842 2010-08-16 15:00:05Z noreply@oracle.com $ */
+/* $Id: MachineDebuggerImpl.h 68719 2010-12-09 16:16:51Z knut.osmundsen@oracle.com $ */
 
 /** @file
  *
@@ -72,6 +72,7 @@ public:
     STDMETHOD(COMSETTER(VirtualTimeRate)) (ULONG aPct);
     STDMETHOD(COMGETTER(VM)) (LONG64 *aVm);
     STDMETHOD(InjectNMI)();
+    STDMETHOD(DumpGuestCore)(IN_BSTR a_bstrFilename);
 
     // IMachineDebugger methods
     STDMETHOD(ResetStats (IN_BSTR aPattern));
