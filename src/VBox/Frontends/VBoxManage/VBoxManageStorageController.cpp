@@ -1,4 +1,4 @@
-/* $Id: VBoxManageStorageController.cpp 68436 2010-12-02 17:21:40Z noreply@oracle.com $ */
+/* $Id: VBoxManageStorageController.cpp 68687 2010-12-09 11:15:05Z klaus.espenlaub@oracle.com $ */
 /** @file
  * VBoxManage - The storage controller related commands.
  */
@@ -400,7 +400,7 @@ int handleStorageAttach(HandlerArg *a)
                             if (    (deviceType == DeviceType_DVD)
                                  || (deviceType == DeviceType_HardDisk)
                                )
-                                devTypeRequested == deviceType;
+                                devTypeRequested = deviceType;
                         }
                     }
                 }
