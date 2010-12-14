@@ -1,4 +1,4 @@
-/* $Revision: 68795 $ */
+/* $Revision: 68881 $ */
 /** @file
  * VBoxDrv - The VirtualBox Support Driver - Common code.
  */
@@ -3371,7 +3371,8 @@ SUPR0DECL(int) SUPR0GipUnmap(PSUPDRVSESSION pSession)
 
             if (pDevExt->u32SystemTimerGranularityGrant)
             {
-                int rc2 = RTTimerReleaseSystemGranularity(pDevExt->u32SystemTimerGranularityGrant); AssertRC(rc);
+                int rc2 = RTTimerReleaseSystemGranularity(pDevExt->u32SystemTimerGranularityGrant);
+                AssertRC(rc2);
                 pDevExt->u32SystemTimerGranularityGrant = 0;
             }
         }
