@@ -1,4 +1,4 @@
-/* $Id: VBoxManageGuestCtrl.cpp 68674 2010-12-09 10:02:15Z andreas.loeffler@oracle.com $ */
+/* $Id: VBoxManageGuestCtrl.cpp 68888 2010-12-14 09:52:23Z noreply@oracle.com $ */
 /** @file
  * VBoxManage - Implementation of guestcontrol command.
  */
@@ -100,7 +100,7 @@ void usageGuestControl(PRTSTREAM pStrm)
                  "                            [--parents] [--mode <mode>] [--verbose]\n"
                  "\n"
                  "                            updateadditions <vmname>|<uuid>\n"
-                 "                            [--source <guest additions .ISO file to use>] [--verbose]\n"
+                 "                            [--source <guest additions .ISO>] [--verbose]\n"
                  "\n");
 }
 
