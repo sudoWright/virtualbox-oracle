@@ -1,4 +1,4 @@
-/* $Id: UISettingsDialog.cpp 68968 2010-12-15 13:19:00Z sergey.dubov@oracle.com $ */
+/* $Id: UISettingsDialog.cpp 68969 2010-12-15 13:23:25Z sergey.dubov@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt GUI ("VirtualBox"):
@@ -524,7 +524,10 @@ void UISettingsDialog::showEvent(QShowEvent *pEvent)
 
 void UISettingsDialog::closeEvent(QCloseEvent *pEvent)
 {
-    m_fProcessed ? pEvent->accept() : pEvent->ignore();
+    if (m_fProcessed)
+        QIMainDialog::closeEvent(pEvent);
+    else
+        pEvent->ignore();
 }
 
 void UISettingsDialog::assignValidator(UISettingsPage *pPage)
