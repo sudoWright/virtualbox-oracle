@@ -1,4 +1,4 @@
-/* $Id: GuestCtrlImpl.cpp 69009 2010-12-16 10:40:53Z andreas.loeffler@oracle.com $ */
+/* $Id: GuestCtrlImpl.cpp 69076 2010-12-20 08:20:44Z noreply@oracle.com $ */
 /** @file
  * VirtualBox COM class implementation: Guest
  */
@@ -345,7 +345,7 @@ HRESULT Guest::taskCopyFile(TaskGuest *aTask)
 
                             cbTransfered += uBytesWritten;
                             Assert(cbTransfered <= cbSize);
-                            aTask->progress->SetCurrentOperationProgress(cbTransfered / (cbSize / 100));
+                            aTask->progress->SetCurrentOperationProgress(cbTransfered / (cbSize / 100.0));
 
                             /* End of file reached? */
                             if (cbToRead == 0)
