@@ -1,4 +1,4 @@
-# $Id: Makefile 66964 2010-10-24 13:20:43Z alexander.eichner@oracle.com $
+# $Id: Makefile 69214 2010-12-27 18:05:02Z alexander.eichner@oracle.com $
 ## @file
 # VirtualBox Guest Additions Module Makefile.
 #
@@ -102,6 +102,10 @@ SRCS += \
 .PATH:	${.CURDIR}/common/table
 SRCS += \
 	avlpv.c
+
+.PATH:	${.CURDIR}/common/time
+SRCS += \
+	time.c
 
 .PATH:	${.CURDIR}/generic
 SRCS += \
