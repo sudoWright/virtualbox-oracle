@@ -1,4 +1,4 @@
-; $Id: VMMGC99.asm 60692 2010-04-27 08:22:32Z noreply@oracle.com $
+; $Id: VMMRC99.asm 69195 2010-12-27 12:34:40Z knut.osmundsen@oracle.com $
 ;; @file
 ; VMMGC99 - The last object module in the link.
 ;
@@ -14,7 +14,7 @@
 ; hope that it will be useful, but WITHOUT ANY WARRANTY of any kind.
 ;
 
-%include "VMMGC.mac"
+%include "VMMRC.mac"
 
 
 ;;

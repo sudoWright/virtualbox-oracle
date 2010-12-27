@@ -1,6 +1,6 @@
-; $Id: EMGCA.asm 65764 2010-09-10 13:17:42Z noreply@oracle.com $
+; $Id: VMMRC0.asm 69195 2010-12-27 12:34:40Z knut.osmundsen@oracle.com $
 ;; @file
-; EM Assembly Routines.
+; VMMGC0 - The first object module in the link.
 ;
 
 ;
@@ -15,12 +15,22 @@
 ; hope that it will be useful, but WITHOUT ANY WARRANTY of any kind.
 ;
 
-;*******************************************************************************
-;* Header Files                                                                *
-;*******************************************************************************
-%include "VBox/asmdefs.mac"
-%include "VBox/err.mac"
-%include "VBox/x86.mac"
+%include "VMMRC.mac"
 
-BEGINCODE
+
+;;
+; Start the Trap0b segment.
+VMMR0_SEG Trap0b
+GLOBALNAME g_aTrap0bHandlers
+
+;;
+; Start the Trap0d segment.
+VMMR0_SEG Trap0d
+GLOBALNAME g_aTrap0dHandlers
+
+;;
+; Start the Trap0e segment.
+VMMR0_SEG Trap0e
+GLOBALNAME g_aTrap0eHandlers
+
 

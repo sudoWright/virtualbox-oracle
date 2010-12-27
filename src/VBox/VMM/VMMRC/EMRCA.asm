@@ -1,8 +1,9 @@
-; $Id: VMMGCBuiltin.def 60692 2010-04-27 08:22:32Z noreply@oracle.com $
+; $Id: EMRCA.asm 69195 2010-12-27 12:34:40Z knut.osmundsen@oracle.com $
 ;; @file
-; VMM Raw-mode Context Builtin DLL - Definition file for generating import library.
+; EM Assembly Routines.
 ;
 
+;
 ; Copyright (C) 2006-2007 Oracle Corporation
 ;
 ; This file is part of VirtualBox Open Source Edition (OSE), as
@@ -14,15 +15,12 @@
 ; hope that it will be useful, but WITHOUT ANY WARRANTY of any kind.
 ;
 
-LIBRARY VMMGCBuiltin.gc
-EXPORTS
-    ; data
-    g_VM                            DATA
-    g_CPUM                          DATA
-    g_TRPM                          DATA
-    g_TRPMCPU                       DATA
-    g_Logger                        DATA
-    g_RelLogger                     DATA
-    g_pSUPGlobalInfoPage            DATA
+;*******************************************************************************
+;* Header Files                                                                *
+;*******************************************************************************
+%include "VBox/asmdefs.mac"
+%include "VBox/err.mac"
+%include "VBox/x86.mac"
 
-    ; code
+BEGINCODE
+

@@ -1,4 +1,4 @@
-/* $Id: PGMGCGst.h 65290 2010-08-27 10:14:39Z knut.osmundsen@oracle.com $ */
+/* $Id: PGMRCGst.h 69195 2010-12-27 12:34:40Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox - Page Manager, Guest Paging Template - Guest Context.
  */
