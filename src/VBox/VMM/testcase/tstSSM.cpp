@@ -1,4 +1,4 @@
-/* $Id: tstSSM.cpp 65105 2010-08-24 09:00:14Z noreply@oracle.com $ */
+/* $Id: tstSSM.cpp 69193 2010-12-27 12:10:56Z knut.osmundsen@oracle.com $ */
 /** @file
  * Saved State Manager Testcase.
  */
@@ -20,7 +20,7 @@
 *   Header Files                                                               *
 *******************************************************************************/
 #include <VBox/ssm.h>
-#include "../VMInternal.h" /* createFakeVM */
+#include "VMInternal.h" /* createFakeVM */
 #include <VBox/vm.h>
 #include <VBox/uvm.h>
 #include <VBox/mm.h>
