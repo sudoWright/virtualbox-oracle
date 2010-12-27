@@ -1,4 +1,4 @@
-; $Id: PATMA.asm 69206 2010-12-27 16:13:13Z knut.osmundsen@oracle.com $
+; $Id: PATMA.asm 69208 2010-12-27 16:35:23Z knut.osmundsen@oracle.com $
 ;; @file
 ; PATM Assembly Routines.
 ;

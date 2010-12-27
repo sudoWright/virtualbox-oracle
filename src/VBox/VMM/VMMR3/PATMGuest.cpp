@@ -1,4 +1,4 @@
-/* $Id: PATMGuest.cpp 69206 2010-12-27 16:13:13Z knut.osmundsen@oracle.com $ */
+/* $Id: PATMGuest.cpp 69208 2010-12-27 16:35:23Z knut.osmundsen@oracle.com $ */
 /** @file
  * PATMGuest - Guest OS Patching Manager (non-generic)
  */
