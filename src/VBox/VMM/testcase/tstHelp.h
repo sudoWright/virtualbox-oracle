@@ -1,4 +1,4 @@
-/* $Id: tstHelp.h 62701 2010-06-16 01:43:23Z knut.osmundsen@oracle.com $ */
+/* $Id: tstHelp.h 69206 2010-12-27 16:13:13Z knut.osmundsen@oracle.com $ */
 /** @file
  * VMM testcase - Helper stuff.
  */
@@ -19,7 +19,7 @@
 #define ___tstHelp_h
 
 #include <VBox/cdefs.h>
-#include <VBox/cpum.h>
+#include <VBox/vmm/cpum.h>
 
 RT_C_DECLS_BEGIN
 void tstDumpCtx(PCPUMCTX pCtx, const char *pszComment);

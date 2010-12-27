@@ -1,4 +1,4 @@
-/* $Id: vm.h 65513 2010-09-02 14:13:13Z noreply@oracle.com $ */
+/* $Id: vm.h 69206 2010-12-27 16:13:13Z knut.osmundsen@oracle.com $ */
 /** @file
  * VM - Internal VMM header file.
  */
@@ -18,7 +18,7 @@
 #ifndef ___VM_include_internal_h
 #define ___VM_include_internal_h
 
-#include <VBox/vm.h>
+#include <VBox/vmm/vm.h>
 
 VMMR3DECL(int) VMR3SaveFT(PVM pVM, PCSSMSTRMOPS pStreamOps, void *pvStreamOpsUser, bool *pfSuspended, bool fSkipStateChanges);
 VMMR3DECL(int) VMR3LoadFromStreamFT(PVM pVM, PCSSMSTRMOPS pStreamOps, void *pvStreamOpsUser);

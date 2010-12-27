@@ -1,4 +1,4 @@
-/* $Id: tstGlobalConfig.cpp 60692 2010-04-27 08:22:32Z noreply@oracle.com $ */
+/* $Id: tstGlobalConfig.cpp 69206 2010-12-27 16:13:13Z knut.osmundsen@oracle.com $ */
 /** @file
  * Ring-3 Management program for the GCFGM mock-up.
  */
@@ -19,7 +19,7 @@
 /*******************************************************************************
 *   Header Files                                                               *
 *******************************************************************************/
-#include <VBox/vmm.h>
+#include <VBox/vmm/vmm.h>
 #include <VBox/err.h>
 #include <iprt/assert.h>
 #include <iprt/initterm.h>

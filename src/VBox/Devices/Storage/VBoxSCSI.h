@@ -1,4 +1,4 @@
-/* $Id: VBoxSCSI.h 66493 2010-10-07 15:14:54Z alexander.eichner@oracle.com $ */
+/* $Id: VBoxSCSI.h 69206 2010-12-27 16:13:13Z knut.osmundsen@oracle.com $ */
 /** @file
  *
  * VBox storage devices:
@@ -64,7 +64,7 @@
 *   Header Files                                                               *
 *******************************************************************************/
 //#define DEBUG
-#include <VBox/pdmdev.h>
+#include <VBox/vmm/pdmdev.h>
 
 typedef enum VBOXSCSISTATE
 {

@@ -1,4 +1,4 @@
-/* $Id: VMMAll.cpp 67140 2010-10-28 09:27:05Z noreply@oracle.com $ */
+/* $Id: VMMAll.cpp 69206 2010-12-27 16:13:13Z knut.osmundsen@oracle.com $ */
 /** @file
  * VMM All Contexts.
  */
@@ -20,10 +20,10 @@
 *   Header Files                                                               *
 *******************************************************************************/
 #define LOG_GROUP LOG_GROUP_VMM
-#include <VBox/vmm.h>
+#include <VBox/vmm/vmm.h>
 #include "VMMInternal.h"
-#include <VBox/vm.h>
-#include <VBox/vmm.h>
+#include <VBox/vmm/vm.h>
+#include <VBox/vmm/vmm.h>
 #include <VBox/param.h>
 #include <iprt/thread.h>
 #include <iprt/mp.h>

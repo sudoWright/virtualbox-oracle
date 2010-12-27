@@ -1,4 +1,4 @@
-/* $Id: DBGFModule.cpp 69193 2010-12-27 12:10:56Z knut.osmundsen@oracle.com $ */
+/* $Id: DBGFModule.cpp 69206 2010-12-27 16:13:13Z knut.osmundsen@oracle.com $ */
 /** @file
  * DBGF - Debugger Facility, Module & Segment Management.
  */
@@ -34,7 +34,7 @@
  */
 
 #if 0
-#include <VBox/dbgf.h>
+#include <VBox/vmm/dbgf.h>
 
 
 /** Special segment number that indicates that the offset is a relative

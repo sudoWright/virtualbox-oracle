@@ -1,4 +1,4 @@
-/* $Id: DrvKeyboardQueue.cpp 67140 2010-10-28 09:27:05Z noreply@oracle.com $ */
+/* $Id: DrvKeyboardQueue.cpp 69206 2010-12-27 16:13:13Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox input devices: Keyboard queue driver
  */
@@ -20,7 +20,7 @@
 *   Header Files                                                               *
 *******************************************************************************/
 #define LOG_GROUP LOG_GROUP_DRV_KBD_QUEUE
-#include <VBox/pdmdrv.h>
+#include <VBox/vmm/pdmdrv.h>
 #include <iprt/assert.h>
 #include <iprt/uuid.h>
 

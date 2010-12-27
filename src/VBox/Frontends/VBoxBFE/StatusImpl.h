@@ -1,4 +1,4 @@
-/* $Id: StatusImpl.h 60692 2010-04-27 08:22:32Z noreply@oracle.com $ */
+/* $Id: StatusImpl.h 69206 2010-12-27 16:13:13Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox frontends: Basic Frontend (BFE):
  * Declaration of VMStatus class
@@ -19,7 +19,7 @@
 #ifndef ____H_STATUSIMPL
 #define ____H_STATUSIMPL
 
-#include <VBox/pdm.h>
+#include <VBox/vmm/pdm.h>
 
 class VMStatus
 {

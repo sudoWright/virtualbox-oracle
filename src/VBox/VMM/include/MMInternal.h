@@ -1,4 +1,4 @@
-/* $Id: MMInternal.h 69193 2010-12-27 12:10:56Z knut.osmundsen@oracle.com $ */
+/* $Id: MMInternal.h 69206 2010-12-27 16:13:13Z knut.osmundsen@oracle.com $ */
 /** @file
  * MM - Internal header file.
  */
@@ -21,8 +21,8 @@
 #include <VBox/cdefs.h>
 #include <VBox/types.h>
 #include <VBox/sup.h>
-#include <VBox/stam.h>
-#include <VBox/pdmcritsect.h>
+#include <VBox/vmm/stam.h>
+#include <VBox/vmm/pdmcritsect.h>
 #include <iprt/assert.h>
 #include <iprt/avl.h>
 #include <iprt/critsect.h>

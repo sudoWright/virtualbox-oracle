@@ -1,4 +1,4 @@
-/* $Id: tstVBoxDbg.cpp 67140 2010-10-28 09:27:05Z noreply@oracle.com $ */
+/* $Id: tstVBoxDbg.cpp 69206 2010-12-27 16:13:13Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Debugger GUI, dummy testcase.
  */
@@ -21,7 +21,7 @@
 *******************************************************************************/
 #include <qapplication.h>
 #include <VBox/dbggui.h>
-#include <VBox/vm.h>
+#include <VBox/vmm/vm.h>
 #include <VBox/err.h>
 #include <iprt/initterm.h>
 #include <VBox/log.h>

@@ -1,4 +1,4 @@
-/* $Id: USBProxyDevice-linux.cpp 67140 2010-10-28 09:27:05Z noreply@oracle.com $ */
+/* $Id: USBProxyDevice-linux.cpp 69206 2010-12-27 16:13:13Z knut.osmundsen@oracle.com $ */
 /** @file
  * USB device proxy - the Linux backend.
  */
@@ -70,7 +70,7 @@
 #endif
 
 #ifndef RDESKTOP
-# include <VBox/pdm.h>
+# include <VBox/vmm/pdm.h>
 #else
 # define RTCRITSECT          void *
 static inline int rtcsNoop() { return VINF_SUCCESS; }

@@ -1,4 +1,4 @@
-/* $Id: VBoxNetDHCP.cpp 67140 2010-10-28 09:27:05Z noreply@oracle.com $ */
+/* $Id: VBoxNetDHCP.cpp 69206 2010-12-27 16:13:13Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxNetDHCP - DHCP Service for connecting to IntNet.
  */
@@ -39,7 +39,7 @@
 #include <VBox/sup.h>
 #include <VBox/intnet.h>
 #include <VBox/intnetinline.h>
-#include <VBox/vmm.h>
+#include <VBox/vmm/vmm.h>
 #include <VBox/version.h>
 
 #include "../NetLib/VBoxNetLib.h"

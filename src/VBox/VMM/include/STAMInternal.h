@@ -1,4 +1,4 @@
-/* $Id: STAMInternal.h 69193 2010-12-27 12:10:56Z knut.osmundsen@oracle.com $ */
+/* $Id: STAMInternal.h 69206 2010-12-27 16:13:13Z knut.osmundsen@oracle.com $ */
 /** @file
  * STAM Internal Header.
  */
@@ -20,8 +20,8 @@
 
 #include <VBox/cdefs.h>
 #include <VBox/types.h>
-#include <VBox/stam.h>
-#include <VBox/gvmm.h>
+#include <VBox/vmm/stam.h>
+#include <VBox/vmm/gvmm.h>
 #include <iprt/semaphore.h>
 
 

@@ -1,4 +1,4 @@
-/* $Id: DevLPC.cpp 69135 2010-12-22 08:22:33Z noreply@oracle.com $ */
+/* $Id: DevLPC.cpp 69206 2010-12-27 16:13:13Z knut.osmundsen@oracle.com $ */
 /** @file
  * DevLPC - LPC device emulation
  */
@@ -47,9 +47,9 @@
 *   Header Files                                                               *
 *******************************************************************************/
 #define LOG_GROUP LOG_GROUP_DEV_LPC
-#include <VBox/pdmdev.h>
+#include <VBox/vmm/pdmdev.h>
 #include <VBox/log.h>
-#include <VBox/stam.h>
+#include <VBox/vmm/stam.h>
 #include <iprt/assert.h>
 #include <iprt/string.h>
 

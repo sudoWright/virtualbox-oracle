@@ -1,4 +1,4 @@
-/* $Id: MsiCommon.cpp 67009 2010-10-25 12:45:01Z noreply@oracle.com $ */
+/* $Id: MsiCommon.cpp 69206 2010-12-27 16:13:13Z knut.osmundsen@oracle.com $ */
 /** @file
  * MSI support routines
  */
@@ -19,7 +19,7 @@
 #define PCI_INCLUDE_PRIVATE
 #include <VBox/pci.h>
 #include <VBox/msi.h>
-#include <VBox/pdmdev.h>
+#include <VBox/vmm/pdmdev.h>
 #include <VBox/log.h>
 
 #include "MsiCommon.h"

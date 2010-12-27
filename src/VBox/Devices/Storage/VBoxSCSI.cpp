@@ -1,4 +1,4 @@
-/* $Id: VBoxSCSI.cpp 67140 2010-10-28 09:27:05Z noreply@oracle.com $ */
+/* $Id: VBoxSCSI.cpp 69206 2010-12-27 16:13:13Z knut.osmundsen@oracle.com $ */
 /** @file
  *
  * VBox storage devices:
@@ -27,8 +27,8 @@
 # error This device has no R0 or GC components
 #endif
 
-#include <VBox/pdmdev.h>
-#include <VBox/pgm.h>
+#include <VBox/vmm/pdmdev.h>
+#include <VBox/vmm/pgm.h>
 #include <iprt/asm.h>
 #include <iprt/mem.h>
 #include <iprt/thread.h>

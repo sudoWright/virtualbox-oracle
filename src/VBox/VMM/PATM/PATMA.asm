@@ -1,4 +1,4 @@
-; $Id: PATMA.asm 67140 2010-10-28 09:27:05Z noreply@oracle.com $
+; $Id: PATMA.asm 69206 2010-12-27 16:13:13Z knut.osmundsen@oracle.com $
 ;; @file
 ; PATM Assembly Routines.
 ;
@@ -31,7 +31,7 @@
 %include "VBox/asmdefs.mac"
 %include "VBox/err.mac"
 %include "VBox/x86.mac"
-%include "VBox/vm.mac"
+%include "VBox/vmm/vm.mac"
 %include "PATMA.mac"
 
 %ifdef DEBUG
