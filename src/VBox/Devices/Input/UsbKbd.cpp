@@ -1,4 +1,4 @@
-/* $Id: UsbKbd.cpp 69206 2010-12-27 16:13:13Z knut.osmundsen@oracle.com $ */
+/* $Id: UsbKbd.cpp 69213 2010-12-27 17:25:52Z knut.osmundsen@oracle.com $ */
 /** @file
  * UsbKbd - USB Human Interface Device Emulation, Keyboard.
  */
@@ -28,7 +28,7 @@
 #include <iprt/semaphore.h>
 #include <iprt/string.h>
 #include <iprt/uuid.h>
-#include "../Builtins.h"
+#include "VBoxDD.h"
 
 
 /*******************************************************************************

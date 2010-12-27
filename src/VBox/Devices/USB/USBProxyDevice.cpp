@@ -1,4 +1,4 @@
-/* $Id: USBProxyDevice.cpp 69206 2010-12-27 16:13:13Z knut.osmundsen@oracle.com $ */
+/* $Id: USBProxyDevice.cpp 69213 2010-12-27 17:25:52Z knut.osmundsen@oracle.com $ */
 /** @file
  * USBProxy - USB device proxy.
  */
@@ -30,7 +30,7 @@
 #include <iprt/assert.h>
 #include "USBProxyDevice.h"
 #include "VUSBInternal.h"
-#include "Builtins.h"
+#include "VBoxDD.h"
 
 
 /*******************************************************************************

@@ -1,4 +1,4 @@
-/* $Id: DevPS2.cpp 69206 2010-12-27 16:13:13Z knut.osmundsen@oracle.com $ */
+/* $Id: DevPS2.cpp 69213 2010-12-27 17:25:52Z knut.osmundsen@oracle.com $ */
 /** @file
  * DevPS2 - PS/2 keyboard & mouse controller device.
  */
@@ -50,7 +50,7 @@
 #include <iprt/assert.h>
 #include <iprt/uuid.h>
 
-#include "../Builtins.h"
+#include "VBoxDD.h"
 
 #define PCKBD_SAVED_STATE_VERSION 5
 

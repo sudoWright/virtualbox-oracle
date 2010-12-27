@@ -1,4 +1,4 @@
-/* $Id: DrvAcpiCpu.cpp 69206 2010-12-27 16:13:13Z knut.osmundsen@oracle.com $ */
+/* $Id: DrvAcpiCpu.cpp 69213 2010-12-27 17:25:52Z knut.osmundsen@oracle.com $ */
 /** @file
  * DrvAcpiCpu - ACPI CPU dummy driver for hotplugging.
  */
@@ -26,7 +26,7 @@
 #include <iprt/string.h>
 #include <iprt/uuid.h>
 
-#include "Builtins.h"
+#include "VBoxDD.h"
 
 
 /**
