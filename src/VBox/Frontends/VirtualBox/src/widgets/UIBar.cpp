@@ -1,4 +1,4 @@
-/* $Id: UIBar.cpp 69282 2011-01-06 17:33:14Z noreply@oracle.com $ */
+/* $Id: UIBar.cpp 69283 2011-01-06 17:39:53Z noreply@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt GUI ("VirtualBox"):
@@ -128,7 +128,7 @@ void UIMainBar::paintEvent(QPaintEvent *pEvent)
     {
         QPixmap betaLabel;
         const QString key("vbox:betaLabel");
-        if (!QPixmapCache::find(key, &betaLabel))
+        if (!QPixmapCache::find(key, betaLabel))
         {
             betaLabel = ::betaLabel();
             QPixmapCache::insert(key, betaLabel);
