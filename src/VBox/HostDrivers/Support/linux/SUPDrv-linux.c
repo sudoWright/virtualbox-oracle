@@ -1,4 +1,4 @@
-/* $Rev: 69143 $ */
+/* $Rev: 69377 $ */
 /** @file
  * VBoxDrv - The VirtualBox Support Driver - Linux specifics.
  */
@@ -59,8 +59,6 @@
 #ifdef VBOX_WITH_SUSPEND_NOTIFICATION
 # include <linux/platform_device.h>
 #endif
-
-#include <iprt/mem.h>
 
 
 /*******************************************************************************
