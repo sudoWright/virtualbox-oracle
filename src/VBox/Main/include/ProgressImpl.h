@@ -1,4 +1,4 @@
-/* $Id: ProgressImpl.h 67140 2010-10-28 09:27:05Z noreply@oracle.com $ */
+/* $Id: ProgressImpl.h 69546 2011-01-19 19:10:49Z noreply@oracle.com $ */
 /** @file
  *
  * VirtualBox COM class implementation
@@ -142,9 +142,7 @@ public:
     DECLARE_PROTECT_FINAL_CONSTRUCT()
 
     BEGIN_COM_MAP (Progress)
-        COM_INTERFACE_ENTRY  (ISupportErrorInfo)
-        COM_INTERFACE_ENTRY  (IProgress)
-        COM_INTERFACE_ENTRY2 (IDispatch, IProgress)
+        VBOX_DEFAULT_INTERFACE_ENTRIES (IProgress)
     END_COM_MAP()
 
     HRESULT FinalConstruct();

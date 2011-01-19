@@ -1,4 +1,4 @@
-/* $Id: VirtualBoxImpl.cpp 69505 2011-01-18 14:19:31Z noreply@oracle.com $ */
+/* $Id: VirtualBoxImpl.cpp 69546 2011-01-19 19:10:49Z noreply@oracle.com $ */
 
 /** @file
  * Implementation of IVirtualBox in VBoxSVC.
@@ -343,7 +343,11 @@ HRESULT VirtualBox::FinalConstruct()
 {
     LogFlowThisFunc(("\n"));
 
-    return init();
+    HRESULT rc = init();
+   
+    BaseFinalConstruct();
+
+    return rc;
 }
 
 void VirtualBox::FinalRelease()
@@ -351,6 +355,8 @@ void VirtualBox::FinalRelease()
     LogFlowThisFunc(("\n"));
 
     uninit();
+
+    BaseFinalRelease();
 }
 
 // public initializer/uninitializer for internal purposes only
