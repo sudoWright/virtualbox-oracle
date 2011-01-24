@@ -1,4 +1,4 @@
-/* $Id: PCIInternal.h 69218 2010-12-28 07:58:40Z noreply@oracle.com $ */
+/* $Id: PCIInternal.h 69600 2011-01-24 14:24:34Z noreply@oracle.com $ */
 /** @file
  * DevPCI - PCI Internal header - Only for hiding bits of PCIDEVICE.
  */
@@ -86,7 +86,9 @@ enum {
     PCIDEV_FLAG_MSI_CAPABLE        = 1<<3,
     /** Flag whether the device is capable of MSI-X.
      * This one is set by MsixInit().  */
-    PCIDEV_FLAG_MSIX_CAPABLE       = 1<<4
+    PCIDEV_FLAG_MSIX_CAPABLE       = 1<<4,
+    /** Flag if device represents real physical device in passthrough mode. */
+    PCIDEV_FLAG_PASSTHROUGH        = 1<<5
 };
 
 /**
