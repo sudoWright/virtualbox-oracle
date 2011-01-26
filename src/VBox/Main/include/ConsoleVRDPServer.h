@@ -1,4 +1,4 @@
-/* $Id: ConsoleVRDPServer.h 69546 2011-01-19 19:10:49Z noreply@oracle.com $ */
+/* $Id: ConsoleVRDPServer.h 69665 2011-01-26 16:37:16Z noreply@oracle.com $ */
 /** @file
  * VBox Console VRDE Server Helper class and implementation of IVRDEServerInfo
  */
@@ -174,7 +174,7 @@ private:
 
     IFramebuffer *maFramebuffers[SchemaDefs::MaxGuestMonitors];
 
-    IEventListener *mConsoleListener;
+    ComPtr<IEventListener> mConsoleListener;
 
     VRDPInputSynch m_InputSynch;
 

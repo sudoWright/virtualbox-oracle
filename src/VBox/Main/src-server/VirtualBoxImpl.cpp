@@ -1,4 +1,4 @@
-/* $Id: VirtualBoxImpl.cpp 69546 2011-01-19 19:10:49Z noreply@oracle.com $ */
+/* $Id: VirtualBoxImpl.cpp 69665 2011-01-26 16:37:16Z noreply@oracle.com $ */
 
 /** @file
  * Implementation of IVirtualBox in VBoxSVC.
@@ -4391,6 +4391,8 @@ DECLCALLBACK(int) VirtualBox::AsyncEventHandler(RTTHREAD thread, void *pvUser)
     LogFlowFuncEnter();
 
     AssertReturn(pvUser, VERR_INVALID_POINTER);
+    
+    com::Initialize();
 
     // create an event queue for the current thread
     EventQueue *eventQ = new EventQueue();
@@ -4405,6 +4407,9 @@ DECLCALLBACK(int) VirtualBox::AsyncEventHandler(RTTHREAD thread, void *pvUser)
         /* nothing */ ;
 
     delete eventQ;
+
+    com::Shutdown();
+
 
     LogFlowFuncLeave();
 

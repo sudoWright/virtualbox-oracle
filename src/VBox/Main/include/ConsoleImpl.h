@@ -1,4 +1,4 @@
-/* $Id: ConsoleImpl.h 69546 2011-01-19 19:10:49Z noreply@oracle.com $ */
+/* $Id: ConsoleImpl.h 69665 2011-01-26 16:37:16Z noreply@oracle.com $ */
 /** @file
  * VBox Console COM Class definition
  */
@@ -753,7 +753,7 @@ private:
         }
     }
     mCallbackData;
-    COM_STRUCT_OR_CLASS(IEventListener) *mVmListener;
+    ComPtr<IEventListener> mVmListener;
 
     friend struct VMTask;
 };
