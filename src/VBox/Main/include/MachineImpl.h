@@ -1,4 +1,4 @@
-/* $Id: MachineImpl.h 69715 2011-01-28 11:36:42Z noreply@oracle.com $ */
+/* $Id: MachineImpl.h 69829 2011-02-03 14:55:17Z noreply@oracle.com $ */
 /** @file
  * VirtualBox COM class implementation
  */
@@ -780,6 +780,10 @@ protected:
     HRESULT saveStorageDevices(ComObjPtr<StorageController> aStorageController,
                                settings::StorageController &data);
     HRESULT saveStateSettings(int aFlags);
+
+    void addMediumToRegistry(ComObjPtr<Medium> &pMedium,
+                             GuidList &llRegistriesThatNeedSaving,
+                             Guid *puuid);
 
     HRESULT createImplicitDiffs(IProgress *aProgress,
                                 ULONG aWeight,
