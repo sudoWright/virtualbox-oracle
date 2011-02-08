@@ -1,4 +1,4 @@
-/* $Id: MediumImpl.h 69829 2011-02-03 14:55:17Z noreply@oracle.com $ */
+/* $Id: MediumImpl.h 69920 2011-02-08 16:46:25Z noreply@oracle.com $ */
 
 /** @file
  *
@@ -175,6 +175,7 @@ public:
     Utf8Str getName();
 
     bool addRegistry(const Guid& id);
+    bool removeRegistry(const Guid& id);
     bool isInRegistry(const Guid& id);
     bool getFirstRegistryMachineId(Guid &uuid) const;
     HRESULT addToRegistryIDList(GuidList &llRegistryIDs);
