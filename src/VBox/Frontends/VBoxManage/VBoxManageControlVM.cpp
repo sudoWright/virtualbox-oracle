@@ -1,4 +1,4 @@
-/* $Id: VBoxManageControlVM.cpp 69726 2011-01-28 13:56:15Z noreply@oracle.com $ */
+/* $Id: VBoxManageControlVM.cpp 69930 2011-02-09 11:20:31Z andreas.loeffler@oracle.com $ */
 /** @file
  * VBoxManage - Implementation of the controlvm command.
  */
@@ -190,7 +190,7 @@ int handleControlVM(HandlerArg *a)
                     if (machineState != MachineState_Paused)
                     {
                         RTMsgError("Machine in invalid state %d -- %s\n",
-                                   machineState, stateToName(machineState, false));
+                                   machineState, machineStateToName(machineState, false));
                         break;
                     }
                 }
