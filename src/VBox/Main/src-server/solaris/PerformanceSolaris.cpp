@@ -1,4 +1,4 @@
-/* $Id: PerformanceSolaris.cpp 70192 2011-02-24 15:02:10Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: PerformanceSolaris.cpp 70195 2011-02-24 15:28:45Z ramshankar.venkataraman@oracle.com $ */
 
 /** @file
  *
@@ -260,4 +260,4 @@ int CollectorSolaris::getProcessMemoryUsage(RTPROCESS process, ULONG *used)
     return rc;
 }
 
-
+}
