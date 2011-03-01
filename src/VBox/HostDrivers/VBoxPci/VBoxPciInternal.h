@@ -1,4 +1,4 @@
-/* $Id: VBoxPciInternal.h 70167 2011-02-22 16:15:17Z noreply@oracle.com $ */
+/* $Id: VBoxPciInternal.h 70289 2011-03-01 16:44:58Z noreply@oracle.com $ */
 /** @file
  * VBoxPci - PCI driver (Host), Internal Header.
  */
@@ -91,6 +91,10 @@ typedef struct VBOXRAWPCIGLOBALS
     bool fIDCOpen;
     /** The SUPDRV IDC handle (opaque struct). */
     SUPDRVIDCHANDLE SupDrvIDC;
+#ifdef RT_OS_LINUX
+    struct module    * pciStubModule;
+#endif
+
 } VBOXRAWPCIGLOBALS;
 
 DECLHIDDEN(int)  vboxPciInit(PVBOXRAWPCIGLOBALS pGlobals);
