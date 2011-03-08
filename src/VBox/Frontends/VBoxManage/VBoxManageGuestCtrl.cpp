@@ -1,4 +1,4 @@
-/* $Id: VBoxManageGuestCtrl.cpp 70420 2011-03-08 17:13:47Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxManageGuestCtrl.cpp 70421 2011-03-08 17:14:36Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxManage - Implementation of guestcontrol command.
  */
@@ -79,6 +79,8 @@ typedef struct DIRECTORYENTRY
  * Special exit codes for returning errors/information of a
  * started guest process to the command line VBoxManage was started from.
  * Useful for e.g. scripting.
+ *
+ * @note    These are frozen as of 4.1.0.
  */
 enum EXITCODEEXEC
 {
