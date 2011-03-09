@@ -1,4 +1,4 @@
-/* $Id: thread2-r0drv-linux.c 70464 2011-03-09 17:48:07Z noreply@oracle.com $ */
+/* $Id: thread2-r0drv-linux.c 70465 2011-03-09 18:31:54Z noreply@oracle.com $ */
 /** @file
  * IPRT - Threads (Part 2), Ring-0 Driver, Linux.
  */
@@ -103,7 +103,10 @@ int rtThreadNativeSetPriority(PRTTHREADINT pThread, RTTHREADTYPE enmType)
             AssertMsgFailed(("enmType=%d\n", enmType));
             return VERR_INVALID_PARAMETER;
     }
+
+#if LINUX_VERSION_CODE >= KERNEL_VERSION(2,6,11)
     sched_setscheduler(current, sched_class, &param);
+#endif
 
     return VINF_SUCCESS;
 }
