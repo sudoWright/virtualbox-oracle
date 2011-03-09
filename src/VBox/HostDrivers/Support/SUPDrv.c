@@ -1,4 +1,4 @@
-/* $Revision: 70430 $ */
+/* $Revision: 70438 $ */
 /** @file
  * VBoxDrv - The VirtualBox Support Driver - Common code.
  */
@@ -288,13 +288,6 @@ static SUPFUNC g_aFunctions[] =
     { "RTThreadUserReset",                      (void *)RTThreadUserReset },
     { "RTThreadUserWait",                       (void *)RTThreadUserWait },
     { "RTThreadUserWaitNoResume",               (void *)RTThreadUserWaitNoResume },
-#else
-    /** 
-     * @todo: remove me, once above code enabled. 
-     * We need RTThreadCreate/RTThreadWait in the PCI driver.
-     */
-    { "RTThreadCreate",                         (void *)RTThreadCreate },
-    { "RTThreadWait",                           (void *)RTThreadWait },
 #endif
     { "RTThreadPreemptIsEnabled",               (void *)RTThreadPreemptIsEnabled },
     { "RTThreadPreemptIsPending",               (void *)RTThreadPreemptIsPending },
