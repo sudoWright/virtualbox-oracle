@@ -1,4 +1,4 @@
-# $Id: Makefile 66965 2010-10-24 13:22:25Z alexander.eichner@oracle.com $
+# $Id: Makefile 70492 2011-03-10 17:22:08Z knut.osmundsen@oracle.com $
 ## @file
 # Makefile for the VirtualBox FreeBSD Host Driver.
 #
@@ -132,8 +132,8 @@ SRCS += \
 	RTSemEventMultiWait-2-ex-generic.c \
 	RTSemEventMultiWaitNoResume-2-ex-generic.c \
 	RTTimerCreate-generic.c \
-	timer-generic.c \
-	mppresent-generic.c
+	mppresent-generic.c \
+	timer-generic.c
 
 .PATH:	${.CURDIR}/r0drv
 SRCS += \
