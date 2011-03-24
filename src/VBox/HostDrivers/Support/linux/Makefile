@@ -1,4 +1,4 @@
-# $Revision: 70596 $
+# $Revision: 70763 $
 ## @file
 # Makefile for the VirtualBox Linux Host Driver.
 #
@@ -119,6 +119,7 @@ OBJS   = \
 	common/misc/handletable.o \
 	common/misc/handletablectx.o \
 	common/misc/thread.o \
+	common/string/RTStrCopyP.o \
 	common/string/strformat.o \
 	common/string/strformatrt.o \
 	common/string/strformattype.o \
