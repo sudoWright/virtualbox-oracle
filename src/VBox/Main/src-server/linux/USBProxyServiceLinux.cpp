@@ -1,4 +1,4 @@
-/* $Id: USBProxyServiceLinux.cpp 70795 2011-03-25 14:14:21Z noreply@oracle.com $ */
+/* $Id: USBProxyServiceLinux.cpp 70897 2011-04-01 12:38:26Z knut.osmundsen@oracle.com $ */
 /** @file
  * VirtualBox USB Proxy Service, Linux Specialization.
  */
@@ -120,12 +120,12 @@ HRESULT USBProxyServiceLinux::init(void)
     }
     if (!pcszUsbRoot)
     {
-        PCUSBDEVTREELOCATION pcLocation;
-        pcLocation = USBProxyLinuxGetDeviceRoot(fUseSysfs);
-        if (pcLocation)
+        PCUSBDEVTREELOCATION pLocation;
+        pLocation = USBProxyLinuxGetDeviceRoot(fUseSysfs);
+        if (pLocation)
         {
-            pcszUsbRoot = pcLocation->szDevicesRoot;
-            fUseSysfs = pcLocation->fUseSysfs;
+            pcszUsbRoot = pLocation->szDevicesRoot;
+            fUseSysfs = pLocation->fUseSysfs;
         }
     }
     if (pcszUsbRoot)
