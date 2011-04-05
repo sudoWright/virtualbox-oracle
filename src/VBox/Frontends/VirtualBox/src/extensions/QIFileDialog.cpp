@@ -1,4 +1,4 @@
-/* $Id: QIFileDialog.cpp 67140 2010-10-28 09:27:05Z noreply@oracle.com $ */
+/* $Id: QIFileDialog.cpp 70981 2011-04-05 10:38:33Z sergey.dubov@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt GUI ("VirtualBox"):
@@ -858,6 +858,8 @@ QString QIFileDialog::getFirstExistingDir (const QString &aStartDir)
     while (!dir.exists() && !dir.isRoot())
     {
         QFileInfo dirInfo (dir.absolutePath());
+        if (dir == QDir(dirInfo.absolutePath()))
+            break;
         dir = dirInfo.absolutePath();
     }
     if (dir.exists() && !dir.isRoot())
