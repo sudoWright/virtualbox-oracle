@@ -1,4 +1,4 @@
-/* $Id: time.cpp 68822 2010-12-13 12:58:47Z andreas.loeffler@oracle.com $ */
+/* $Id: time.cpp 70988 2011-04-05 12:34:09Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Time.
  */
@@ -419,7 +419,7 @@ RT_EXPORT_SYMBOL(RTTimeImplode);
  * Internal worker for RTTimeNormalize and RTTimeLocalNormalize.
  * It doesn't adjust the UCT offset but leaves that for RTTimeLocalNormalize.
  */
-PRTTIME rtTimeNormalizeInternal(PRTTIME pTime)
+static PRTTIME rtTimeNormalizeInternal(PRTTIME pTime)
 {
     unsigned    uSecond;
     unsigned    uMinute;
