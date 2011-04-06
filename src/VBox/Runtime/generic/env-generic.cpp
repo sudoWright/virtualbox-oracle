@@ -1,4 +1,4 @@
-/* $Id: env-generic.cpp 67140 2010-10-28 09:27:05Z noreply@oracle.com $ */
+/* $Id: env-generic.cpp 71016 2011-04-06 13:28:12Z noreply@oracle.com $ */
 /** @file
  * IPRT - Environment, Generic.
  */
@@ -508,6 +508,7 @@ RTDECL(int) RTEnvGetEx(RTENV Env, const char *pszVar, char *pszValue, size_t cbV
                         else
                             rc = VERR_BUFFER_OVERFLOW;
                     }
+                    RTStrFree(pszValueUtf8);
                 }
             }
             else
