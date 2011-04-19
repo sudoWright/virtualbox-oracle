@@ -1,4 +1,4 @@
-/* $Revision: 70763 $ */
+/* $Revision: 71256 $ */
 /** @file
  * VBoxDrv - The VirtualBox Support Driver - Common code.
  */
@@ -394,6 +394,8 @@ PFNRT g_apfnVBoxDrvIPRTDeps[] =
     (PFNRT)RTUuidFromStr,
     (PFNRT)RTStrDupTag,
     (PFNRT)RTStrFree,
+    (PFNRT)RTStrCopy,
+    (PFNRT)RTStrNCmp,
     /* VBoxNetAdp */
     (PFNRT)RTRandBytes,
     /* VBoxUSB */
