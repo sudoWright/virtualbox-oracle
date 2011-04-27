@@ -1,4 +1,4 @@
-/* $Id: CPUM.cpp 71433 2011-04-27 15:05:06Z knut.osmundsen@oracle.com $ */
+/* $Id: CPUM.cpp 71440 2011-04-27 18:34:01Z alexander.eichner@oracle.com $ */
 /** @file
  * CPUM - CPU Monitor / Manager.
  */
@@ -999,7 +999,8 @@ VMMR3DECL(void) CPUMR3SetHWVirtEx(PVM pVM, bool fHWVirtExEnabled)
      */
     if (!fHWVirtExEnabled)
     {
-        Assert(pVM->cpum.s.aGuestCpuIdStd[4].eax == 0);
+        Assert(   pVM->cpum.s.aGuestCpuIdStd[4].eax == 0
+               || pVM->cpum.s.aGuestCpuIdStd[0].eax < 0x4);
         pVM->cpum.s.aGuestCpuIdStd[4].eax = 0;
     }
 }
