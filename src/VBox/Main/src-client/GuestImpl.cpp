@@ -1,4 +1,4 @@
-/* $Id: GuestImpl.cpp 70296 2011-03-02 05:44:04Z aleksey.ilyushin@oracle.com $ */
+/* $Id: GuestImpl.cpp 71469 2011-04-29 13:22:57Z knut.osmundsen@oracle.com $ */
 /** @file
  * VirtualBox COM class implementation: Guest
  */
@@ -382,7 +382,7 @@ STDMETHODIMP Guest::InternalGetStatistics(ULONG *aCpuUser, ULONG *aCpuKernel, UL
     {
         uint64_t uFreeTotal, uAllocTotal, uBalloonedTotal, uSharedTotal;
         *aMemFreeTotal = 0;
-        int rc = PGMR3QueryVMMMemoryStats(pVM.raw(), &uAllocTotal, &uFreeTotal, &uBalloonedTotal, &uSharedTotal);
+        int rc = PGMR3QueryGlobalMemoryStats(pVM.raw(), &uAllocTotal, &uFreeTotal, &uBalloonedTotal, &uSharedTotal);
         AssertRC(rc);
         if (rc == VINF_SUCCESS)
         {
