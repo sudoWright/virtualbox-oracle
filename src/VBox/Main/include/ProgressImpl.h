@@ -1,4 +1,4 @@
-/* $Id: ProgressImpl.h 69546 2011-01-19 19:10:49Z noreply@oracle.com $ */
+/* $Id: ProgressImpl.h 71707 2011-05-13 12:41:38Z noreply@oracle.com $ */
 /** @file
  *
  * VirtualBox COM class implementation
@@ -241,6 +241,7 @@ public:
     // IProgress methods
     STDMETHOD(WaitForCompletion)(LONG aTimeout);
     STDMETHOD(WaitForOperationCompletion)(ULONG aOperation, LONG aTimeout);
+    STDMETHOD(WaitForAsyncProgressCompletion)(IProgress *pProgressAsync);
     STDMETHOD(Cancel)();
 
     STDMETHOD(SetCurrentOperationProgress)(ULONG aPercent);
