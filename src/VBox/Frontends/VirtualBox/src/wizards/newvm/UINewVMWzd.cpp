@@ -1,4 +1,4 @@
-/* $Id: UINewVMWzd.cpp 70666 2011-03-21 21:58:05Z noreply@oracle.com $ */
+/* $Id: UINewVMWzd.cpp 71857 2011-05-20 16:56:46Z sergey.dubov@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt4 GUI ("VirtualBox"):
@@ -739,7 +739,7 @@ bool UINewVMWzdPage5::constructMachine()
 
     /* VRAM size - select maximum between recommended and minimum for fullscreen */
     m_Machine.SetVRAMSize (qMax (type.GetRecommendedVRAM(),
-                                (ULONG) (VBoxGlobal::requiredVideoMemory(&m_Machine) / _1M)));
+                                (ULONG) (VBoxGlobal::requiredVideoMemory(typeId) / _1M)));
 
     /* Selecting recommended chipset type */
     m_Machine.SetChipsetType(type.GetRecommendedChipset());
