@@ -1,4 +1,4 @@
-/* $Id: VBoxNetFltRt-win.cpp 70387 2011-03-07 10:57:04Z noreply@oracle.com $ */
+/* $Id: VBoxNetFltRt-win.cpp 71846 2011-05-20 07:28:21Z noreply@oracle.com $ */
 /** @file
  * VBoxNetFltRt-win.cpp - Bridged Networking Driver, Windows Specific Code.
  * NetFlt Runtime
@@ -2962,6 +2962,7 @@ static NDIS_STATUS vboxNetFltWinDevDestroy(PVBOXNETFLTGLOBALS_WIN pGlobals)
     if (Status == NDIS_STATUS_SUCCESS)
     {
         pGlobals->hDevice = NULL;
+        pGlobals->pDevObj = NULL;
     }
     return Status;
 }
