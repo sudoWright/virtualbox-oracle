@@ -1,4 +1,4 @@
-/* $Id: ConsoleImpl.cpp 72028 2011-06-01 09:13:18Z noreply@oracle.com $ */
+/* $Id: ConsoleImpl.cpp 72084 2011-06-06 10:43:14Z alexander.eichner@oracle.com $ */
 /** @file
  * VBox Console COM Class implementation
  */
@@ -7875,7 +7875,7 @@ HRESULT Console::attachToTapInterface(INetworkAdapter *networkAdapter)
      */
     /* The name of the TAP interface we are using */
     Bstr tapDeviceName;
-    rc = networkAdapter->COMGETTER(HostInterface)(tapDeviceName.asOutParam());
+    rc = networkAdapter->COMGETTER(BridgedInterface)(tapDeviceName.asOutParam());
     if (FAILED(rc))
         tapDeviceName.setNull(); /* Is this necessary? */
     if (tapDeviceName.isEmpty())
