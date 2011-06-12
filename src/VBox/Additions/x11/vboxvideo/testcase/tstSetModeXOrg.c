@@ -1,4 +1,4 @@
-/* $Id: tstSetModeXOrg.c 70120 2011-02-18 14:18:51Z noreply@oracle.com $ */
+/* $Id: tstSetModeXOrg.c 72222 2011-06-12 18:37:56Z knut.osmundsen@oracle.com $ */
 /** @file
  * vboxvideo unit test - modesetting.
  */
@@ -73,7 +73,7 @@ RTDECL(void) VBoxVideoSetModeRegisters(uint16_t cWidth, uint16_t cHeight,
     s_ModeRegs.cy         = cy;
 }
 
-static struct 
+static struct
 {
     PHGSMIGUESTCOMMANDCONTEXT pCtx;
     uint32_t cDisplay;

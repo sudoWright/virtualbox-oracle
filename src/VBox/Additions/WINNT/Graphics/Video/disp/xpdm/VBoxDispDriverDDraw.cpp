@@ -1,4 +1,4 @@
-/* $Id: VBoxDispDriverDDraw.cpp 71444 2011-04-28 07:27:03Z noreply@oracle.com $ */
+/* $Id: VBoxDispDriverDDraw.cpp 72222 2011-06-12 18:37:56Z knut.osmundsen@oracle.com $ */
 
 /** @file
  * VBox XPDM Display driver interface functions related to DirectDraw
@@ -62,7 +62,7 @@ static void VBoxDispGetDDHalInfo(PVBOXDISPDEV pDev, DD_HALINFO *pHalInfo)
 
 /* Called to get supported DirectDraw caps */
 BOOL APIENTRY
-VBoxDispDrvGetDirectDrawInfo(DHPDEV dhpdev, DD_HALINFO *pHalInfo, DWORD *pdwNumHeaps, 
+VBoxDispDrvGetDirectDrawInfo(DHPDEV dhpdev, DD_HALINFO *pHalInfo, DWORD *pdwNumHeaps,
                              VIDEOMEMORY *pvmList, DWORD *pdwNumFourCCCodes, DWORD *pdwFourCC)
 {
     PVBOXDISPDEV pDev = (PVBOXDISPDEV)dhpdev;
@@ -180,7 +180,7 @@ VBoxDispDrvEnableDirectDraw(DHPDEV dhpdev, DD_CALLBACKS *pCallBacks, DD_SURFACEC
             pSurfaceCallBacks->SetOverlayPosition = VBoxDispDDSetOverlayPosition;
             pSurfaceCallBacks->dwFlags |= DDHAL_SURFCB32_UPDATEOVERLAY|DDHAL_SURFCB32_SETOVERLAYPOSITION;
         }
-    }   
+    }
 #endif
 
     LOGF_LEAVE();

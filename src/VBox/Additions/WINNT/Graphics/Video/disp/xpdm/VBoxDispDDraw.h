@@ -1,4 +1,4 @@
-/* $Id: VBoxDispDDraw.h 71444 2011-04-28 07:27:03Z noreply@oracle.com $ */
+/* $Id: VBoxDispDDraw.h 72222 2011-06-12 18:37:56Z knut.osmundsen@oracle.com $ */
 
 /** @file
  * VBox XPDM Display driver, direct draw callbacks

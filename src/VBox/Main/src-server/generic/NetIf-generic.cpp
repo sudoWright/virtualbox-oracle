@@ -1,4 +1,4 @@
-/* $Id: NetIf-generic.cpp 69756 2011-01-31 12:45:37Z aleksey.ilyushin@oracle.com $ */
+/* $Id: NetIf-generic.cpp 72222 2011-06-12 18:37:56Z knut.osmundsen@oracle.com $ */
 /** @file
  * VirtualBox Main - Generic NetIf implementation.
  */
@@ -127,7 +127,7 @@ int NetIfEnableDynamicIpConfig(VirtualBox * /* vBox */, HostNetworkInterface * /
 
 
 int NetIfCreateHostOnlyNetworkInterface(VirtualBox *pVBox,
-                                        IHostNetworkInterface **aHostNetworkInterface, 
+                                        IHostNetworkInterface **aHostNetworkInterface,
                                         IProgress **aProgress,
                                         const char *pcszName)
 {

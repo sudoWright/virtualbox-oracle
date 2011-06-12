@@ -1,4 +1,4 @@
-/* $Id: dvmbsdlabel.cpp 72003 2011-05-30 21:25:42Z alexander.eichner@oracle.com $ */
+/* $Id: dvmbsdlabel.cpp 72222 2011-06-12 18:37:56Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT Disk Volume Management API (DVM) - BSD disklabel format backend.
  */
@@ -479,7 +479,7 @@ DECLCALLBACK(int) rtDvmFmtBsdLblVolumeWrite(RTDVMVOLUMEFMT hVolFmt, uint64_t off
     return rtDvmDiskWrite(pVol->pVolMgr->pDisk, pVol->offStart + off, pvBuf, cbWrite);
 }
 
-DECLHIDDEN(RTDVMFMTOPS) g_rtDvmFmtBsdLbl = 
+DECLHIDDEN(RTDVMFMTOPS) g_rtDvmFmtBsdLbl =
 {
     /* pcszFmt */
     "BsdLabel",

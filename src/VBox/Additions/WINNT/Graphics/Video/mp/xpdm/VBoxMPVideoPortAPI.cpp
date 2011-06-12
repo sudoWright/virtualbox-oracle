@@ -1,4 +1,4 @@
-/* $Id: VBoxMPVideoPortAPI.cpp 71474 2011-04-29 14:15:44Z noreply@oracle.com $ */
+/* $Id: VBoxMPVideoPortAPI.cpp 72222 2011-06-12 18:37:56Z knut.osmundsen@oracle.com $ */
 
 /** @file
  * VBox XPDM Miniport video port api
@@ -63,7 +63,7 @@ static VOID vboxFreePoolVoid(IN PVOID  HwDeviceExtension, IN PVOID  Ptr)
     WARN(("stub called"));
 }
 
-static BOOLEAN 
+static BOOLEAN
 vboxQueueDpcVoid(IN PVOID  HwDeviceExtension, IN PMINIPORT_DPC_ROUTINE  CallbackRoutine, IN PVOID  Context)
 {
     WARN(("stub called"));
