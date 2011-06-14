@@ -1,4 +1,4 @@
-/* $Id: VMMInternal.h 69206 2010-12-27 16:13:13Z knut.osmundsen@oracle.com $ */
+/* $Id: VMMInternal.h 72259 2011-06-14 18:13:48Z knut.osmundsen@oracle.com $ */
 /** @file
  * VMM - Internal header file.
  */
@@ -378,6 +378,7 @@ typedef struct VMM
     STAMCOUNTER                 StatRZRetPendingRequest;
     STAMCOUNTER                 StatRZRetPGMFlushPending;
     STAMCOUNTER                 StatRZRetPatchTPR;
+    STAMCOUNTER                 StatRZCallPDMCritSectEnter;
     STAMCOUNTER                 StatRZCallPDMLock;
     STAMCOUNTER                 StatRZCallLogFlush;
     STAMCOUNTER                 StatRZCallPGMPoolGrow;
