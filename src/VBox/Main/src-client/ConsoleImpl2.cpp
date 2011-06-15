@@ -1,4 +1,4 @@
-/* $Id: ConsoleImpl2.cpp 72026 2011-06-01 03:04:10Z noreply@oracle.com $ */
+/* $Id: ConsoleImpl2.cpp 72287 2011-06-15 16:13:46Z noreply@oracle.com $ */
 /** @file
  * VBox Console COM Class implementation
  *
@@ -2421,6 +2421,10 @@ int Console::configConstructorInner(PVM pVM, AutoWriteLock *pAlock)
                     }
 
                     pVMMDev->hgcmHostCall("VBoxSharedClipboard", VBOX_SHARED_CLIPBOARD_HOST_FN_SET_MODE, 1, &parm);
+
+                    parm.setUInt32(!useHostClipboard());
+                    
+                    pVMMDev->hgcmHostCall("VBoxSharedClipboard", VBOX_SHARED_CLIPBOARD_HOST_FN_SET_HEADLESS, 1, &parm);
 
                     Log(("Set VBoxSharedClipboard mode\n"));
                 }
