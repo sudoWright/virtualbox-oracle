@@ -1,4 +1,4 @@
-/* $Id: MachineImpl.h 72306 2011-06-16 08:37:49Z noreply@oracle.com $ */
+/* $Id: MachineImpl.h 72316 2011-06-16 12:23:34Z noreply@oracle.com $ */
 /** @file
  * VirtualBox COM class implementation
  */
@@ -907,6 +907,8 @@ protected:
     friend class SnapshotMachine;
     friend class Appliance;
     friend class VirtualBox;
+
+    friend class MachineCloneVM;
 };
 
 // SessionMachine class
