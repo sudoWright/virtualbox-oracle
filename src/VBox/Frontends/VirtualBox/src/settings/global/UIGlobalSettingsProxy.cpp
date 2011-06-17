@@ -1,4 +1,4 @@
-/* $Id: UIGlobalSettingsProxy.cpp 72380 2011-06-17 13:54:47Z sergey.dubov@oracle.com $ */
+/* $Id: UIGlobalSettingsProxy.cpp 72383 2011-06-17 14:23:39Z sergey.dubov@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt4 GUI ("VirtualBox"):
@@ -16,6 +16,9 @@
  * VirtualBox OSE distribution. VirtualBox OSE is distributed in the
  * hope that it will be useful, but WITHOUT ANY WARRANTY of any kind.
  */
+
+/* Global includes */
+#include <QRegExpValidator>
 
 /* Local includes */
 #include "UIGlobalSettingsProxy.h"
