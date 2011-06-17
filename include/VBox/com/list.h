@@ -1,4 +1,4 @@
-/* $Id: list.h 72378 2011-06-17 13:35:43Z noreply@oracle.com $ */
+/* $Id: list.h 72381 2011-06-17 14:04:16Z noreply@oracle.com $ */
 /** @file
  * MS COM / XPCOM Abstraction Layer - List classes declaration.
  */
@@ -195,11 +195,7 @@ public:
     RTMEMEF_NEW_AND_DELETE_OPERATORS();
 };
 
-#if !defined (VBOX_WITH_XPCOM)
-template <typename T> RTCList<T> SafeArrayToRTCList(SAFEARRAY *other)
-#else
-template <typename T> RTCList<T> SafeArrayToRTCList(ComSafeArrayIn(T, other))
-#endif
+template <typename T> RTCList<T> SafeArrayToRTCList(ComSafeArrayIn(T, other), T* = 0)
 {
     com::SafeArray<T> sfaOther(ComSafeArrayInArg(other));
     RTCList<T> list(sfaOther.size());
