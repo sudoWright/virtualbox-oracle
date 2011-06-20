@@ -1,4 +1,4 @@
-/* $Id: ldrELF.h 65511 2010-09-02 14:06:26Z noreply@oracle.com $ */
+/* $Id: ldrELF.h 72401 2011-06-20 14:48:32Z knut.osmundsen@oracle.com $ */
 /** @file
  * ELF types, current architecture.
  */
@@ -82,5 +82,5 @@ typedef	Elf32_Sym           Elf_Sym;
 # error Unknown arch!
 #endif
 
-#endif  /* ___internal_ldrELF_h */
+#endif /* !___internal_ldrELF_h */
 
