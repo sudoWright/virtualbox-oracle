@@ -1,4 +1,4 @@
-/* $Id: MediumImpl.h 72358 2011-06-17 10:09:21Z klaus.espenlaub@oracle.com $ */
+/* $Id: MediumImpl.h 72640 2011-07-04 14:49:46Z noreply@oracle.com $ */
 
 /** @file
  *
@@ -192,6 +192,7 @@ public:
     const Guid* getFirstMachineBackrefId() const;
     const Guid* getAnyMachineBackref() const;
     const Guid* getFirstMachineBackrefSnapshotId() const;
+    size_t getMachineBackRefCount() const;
 
 #ifdef DEBUG
     void dumpBackRefs();
