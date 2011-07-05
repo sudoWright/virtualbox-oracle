@@ -1,4 +1,4 @@
-/* $Id: ConsoleImpl.cpp 72597 2011-07-01 14:11:06Z noreply@oracle.com $ */
+/* $Id: ConsoleImpl.cpp 72656 2011-07-05 12:55:13Z klaus.espenlaub@oracle.com $ */
 /** @file
  * VBox Console COM Class implementation
  */
@@ -3511,7 +3511,7 @@ HRESULT Console::doMediumChange(IMediumAttachment *aMediumAttachment, bool fForc
         return S_OK;
     }
 
-    if (!pMedium)
+    if (pMedium)
         return setError(E_FAIL,
                         tr("Could not mount the media/drive '%ls' (%Rrc)"),
                         mediumLocation.raw(), vrc);
