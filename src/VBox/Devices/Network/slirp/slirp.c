@@ -1,4 +1,4 @@
-/* $Id: slirp.c 72615 2011-07-04 06:07:37Z noreply@oracle.com $ */
+/* $Id: slirp.c 72846 2011-07-13 23:12:42Z knut.osmundsen@oracle.com $ */
 /** @file
  * NAT - slirp glue.
  */
@@ -579,7 +579,7 @@ int slirp_init(PNATState *ppData, uint32_t u32NetAddr, uint32_t u32Netmask,
 {
     int fNATfailed = 0;
     int rc;
-    PNATState pData = RTMemAllocZ(sizeof(NATState));
+    PNATState pData = RTMemAllocZ(RT_ALIGN_Z(sizeof(NATState), sizeof(uint64_t)));
     *ppData = pData;
     if (!pData)
         return VERR_NO_MEMORY;
