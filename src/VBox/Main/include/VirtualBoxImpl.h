@@ -1,4 +1,4 @@
-/* $Id: VirtualBoxImpl.h 72655 2011-07-05 12:13:15Z klaus.espenlaub@oracle.com $ */
+/* $Id: VirtualBoxImpl.h 72838 2011-07-13 15:54:30Z klaus.espenlaub@oracle.com $ */
 /** @file
  * VirtualBox COM class implementation
  */
@@ -192,7 +192,7 @@ public:
     void updateClientWatcher();
 
     void onMachineStateChange(const Guid &aId, MachineState_T aState);
-    void onMachineDataChange(const Guid &aId);
+    void onMachineDataChange(const Guid &aId, BOOL aTemporary = FALSE);
     BOOL onExtraDataCanChange(const Guid &aId, IN_BSTR aKey, IN_BSTR aValue,
                               Bstr &aError);
     void onExtraDataChange(const Guid &aId, IN_BSTR aKey, IN_BSTR aValue);
