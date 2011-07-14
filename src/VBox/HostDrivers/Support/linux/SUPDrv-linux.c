@@ -1,4 +1,4 @@
-/* $Rev: 72883 $ */
+/* $Rev: 72885 $ */
 /** @file
  * VBoxDrv - The VirtualBox Support Driver - Linux specifics.
  */
@@ -785,7 +785,7 @@ RTDECL(int) SUPR0Printf(const char *pszFormat, ...)
     char    szMsg[512];
 
     va_start(va, pszFormat);
-    SUPR0Printf(szMsg, sizeof(szMsg) - 1, pszFormat, va);
+    RTStrPrintfV(szMsg, sizeof(szMsg) - 1, pszFormat, va);
     va_end(va);
     szMsg[sizeof(szMsg) - 1] = '\0';
 
