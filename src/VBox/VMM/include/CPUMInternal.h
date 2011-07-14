@@ -1,4 +1,4 @@
-/* $Id: CPUMInternal.h 69370 2011-01-11 15:17:10Z knut.osmundsen@oracle.com $ */
+/* $Id: CPUMInternal.h 72868 2011-07-14 12:23:02Z knut.osmundsen@oracle.com $ */
 /** @file
  * CPUM - Internal header file.
  */
@@ -20,7 +20,7 @@
 
 #include <VBox/cdefs.h>
 #include <VBox/types.h>
-#include <VBox/x86.h>
+#include <iprt/x86.h>
 
 
 

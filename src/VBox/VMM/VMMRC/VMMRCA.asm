@@ -1,4 +1,4 @@
-; $Id: VMMRCA.asm 69195 2010-12-27 12:34:40Z knut.osmundsen@oracle.com $
+; $Id: VMMRCA.asm 72868 2011-07-14 12:23:02Z knut.osmundsen@oracle.com $
 ;; @file
 ; VMMGC - Raw-mode Context Virtual Machine Monitor assembly routines.
 ;
@@ -18,7 +18,7 @@
 ;* Header Files                                                                *
 ;*******************************************************************************
 %include "VBox/asmdefs.mac"
-%include "VBox/x86.mac"
+%include "iprt/x86.mac"
 
 
 ;*******************************************************************************

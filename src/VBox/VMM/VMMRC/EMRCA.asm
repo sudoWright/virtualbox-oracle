@@ -1,4 +1,4 @@
-; $Id: EMRCA.asm 69195 2010-12-27 12:34:40Z knut.osmundsen@oracle.com $
+; $Id: EMRCA.asm 72868 2011-07-14 12:23:02Z knut.osmundsen@oracle.com $
 ;; @file
 ; EM Assembly Routines.
 ;
@@ -20,7 +20,7 @@
 ;*******************************************************************************
 %include "VBox/asmdefs.mac"
 %include "VBox/err.mac"
-%include "VBox/x86.mac"
+%include "iprt/x86.mac"
 
 BEGINCODE
 

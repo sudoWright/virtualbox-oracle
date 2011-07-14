@@ -1,4 +1,4 @@
-; $Id: TRPMR0A.asm 60692 2010-04-27 08:22:32Z noreply@oracle.com $
+; $Id: TRPMR0A.asm 72868 2011-07-14 12:23:02Z knut.osmundsen@oracle.com $
 ;; @file
 ; TRPM - Host Context Ring-0
 ;
@@ -19,7 +19,7 @@
 ;* Header Files                                                                *
 ;*******************************************************************************
 %include "VBox/asmdefs.mac"
-%include "VBox/x86.mac"
+%include "iprt/x86.mac"
 
 
 BEGINCODE
