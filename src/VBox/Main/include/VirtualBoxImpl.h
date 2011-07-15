@@ -1,4 +1,4 @@
-/* $Id: VirtualBoxImpl.h 72838 2011-07-13 15:54:30Z klaus.espenlaub@oracle.com $ */
+/* $Id: VirtualBoxImpl.h 72914 2011-07-15 15:04:39Z klaus.espenlaub@oracle.com $ */
 /** @file
  * VirtualBox COM class implementation
  */
@@ -278,7 +278,7 @@ public:
                            const Utf8Str &strMachineFolder);
     HRESULT saveSettings();
 
-    void addGuidToListUniquely(GuidList &llRegistriesThatNeedSaving, const Guid &uuid);
+    static void addGuidToListUniquely(GuidList &llRegistriesThatNeedSaving, const Guid &uuid);
     HRESULT saveRegistries(const GuidList &llRegistriesThatNeedSaving);
 
     static HRESULT ensureFilePathExists(const Utf8Str &strFileName);
