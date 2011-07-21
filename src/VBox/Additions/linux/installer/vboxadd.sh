@@ -1,6 +1,6 @@
 #! /bin/sh
 #
-# Linux Additions kernel module init script ($Revision: 71845 $)
+# Linux Additions kernel module init script ($Revision: 73042 $)
 #
 
 #
