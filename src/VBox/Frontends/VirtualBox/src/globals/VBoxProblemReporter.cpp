@@ -1,4 +1,4 @@
-/* $Id: VBoxProblemReporter.cpp 72822 2011-07-13 12:46:11Z noreply@oracle.com $ */
+/* $Id: VBoxProblemReporter.cpp 73123 2011-07-25 20:53:29Z noreply@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt GUI ("VirtualBox"):
@@ -748,9 +748,9 @@ void VBoxProblemReporter::warnAboutStateChange(QWidget *pParent)
     setShownStatus("warnAboutStateChange");
 
     message(pParent ? pParent : mainWindowShown(), Warning,
-            tr("The state of the virtual machine you currently edit has changed. "
-               "Only settings which are editable at runtime are saved when you press OK. "
-               "All changes to other settings will be lost."));
+            tr("The virtual machine that you are changing has been started. "
+               "Only certain settings can be changed while a machine is running. "
+               "All other changes will be lost if you close this window now."));
 
     clearShownStatus("warnAboutStateChange");
 }
