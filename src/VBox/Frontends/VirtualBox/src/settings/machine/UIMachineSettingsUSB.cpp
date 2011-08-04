@@ -1,4 +1,4 @@
-/* $Id: UIMachineSettingsUSB.cpp 72822 2011-07-13 12:46:11Z noreply@oracle.com $ */
+/* $Id: UIMachineSettingsUSB.cpp 73323 2011-08-04 13:08:39Z noreply@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt4 GUI ("VirtualBox"):
@@ -21,7 +21,7 @@
 #include "QIWidgetValidator.h"
 #include "UIIconPool.h"
 #include "VBoxGlobal.h"
-#include "VBoxProblemReporter.h"
+#include "UIMessageCenter.h"
 #include "UIToolBar.h"
 #include "UIMachineSettingsUSB.h"
 #include "UIMachineSettingsUSBFilterDetails.h"
@@ -476,7 +476,7 @@ bool UIMachineSettingsUSB::revalidate(QString &strWarningText, QString& /* strTi
                             "After this you will be able to re-enable USB 2.0. "
                             "It will be disabled in the meantime unless you cancel the current settings changes.")
                             .arg(strExtPackName);
-        vboxProblem().remindAboutUnsupportedUSB2(strExtPackName, this);
+        msgCenter().remindAboutUnsupportedUSB2(strExtPackName, this);
         return true;
     }
     return true;

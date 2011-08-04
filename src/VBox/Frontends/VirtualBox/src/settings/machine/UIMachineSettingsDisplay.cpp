@@ -1,4 +1,4 @@
-/* $Id: UIMachineSettingsDisplay.cpp 72601 2011-07-02 13:24:54Z noreply@oracle.com $ */
+/* $Id: UIMachineSettingsDisplay.cpp 73323 2011-08-04 13:08:39Z noreply@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt4 GUI ("VirtualBox"):
@@ -20,7 +20,7 @@
 #include "QIWidgetValidator.h"
 #include "UIMachineSettingsDisplay.h"
 #include "VBoxGlobal.h"
-#include "VBoxProblemReporter.h"
+#include "UIMessageCenter.h"
 
 #include <QDesktopWidget>
 

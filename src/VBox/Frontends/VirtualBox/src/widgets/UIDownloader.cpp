@@ -1,4 +1,4 @@
-/* $Id: UIDownloader.cpp 73195 2011-07-28 14:22:17Z sergey.dubov@oracle.com $ */
+/* $Id: UIDownloader.cpp 73323 2011-08-04 13:08:39Z noreply@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt GUI ("VirtualBox"):
@@ -24,7 +24,7 @@
 /* Local includes: */
 #include "UIDownloader.h"
 #include "VBoxGlobal.h"
-#include "VBoxProblemReporter.h"
+#include "UIMessageCenter.h"
 #include "UISpecialControls.h"
 #include "VBoxUtils.h"
 
