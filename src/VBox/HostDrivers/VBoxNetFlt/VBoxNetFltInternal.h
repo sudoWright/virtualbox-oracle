@@ -1,4 +1,4 @@
-/* $Id: VBoxNetFltInternal.h 73095 2011-07-25 10:01:03Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: VBoxNetFltInternal.h 73396 2011-08-09 08:37:03Z aleksey.ilyushin@oracle.com $ */
 /** @file
  * VBoxNetFlt - Network Filter Driver (Host), Internal Header.
  */
@@ -23,6 +23,8 @@
 #include <iprt/semaphore.h>
 #include <iprt/assert.h>
 
+/* Copied from VBoxNetAdp/VBoxNetAdpInternal.h */
+#define VBOXNETADP_MAGIC           0x56424e41
 
 RT_C_DECLS_BEGIN
 
