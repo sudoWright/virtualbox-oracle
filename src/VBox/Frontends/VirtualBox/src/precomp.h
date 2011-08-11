@@ -1,4 +1,4 @@
-/* $Id: precomp.h 73418 2011-08-09 16:07:54Z noreply@oracle.com $*/
+/* $Id: precomp.h 73447 2011-08-11 09:34:18Z noreply@oracle.com $*/
 /** @file
  * Header used if VBOX_WITH_PRECOMPILED_HEADERS is active.
  */
@@ -200,7 +200,7 @@
 #endif
 #include "VBoxDefs.h"
 #include "VBoxDownloaderWgt.h"
-#include "VBoxExportApplianceWgt.h"
+#include "UIApplianceExportEditorWidget.h"
 #include "VBoxExportApplianceWzd.h"
 #include "VBoxFBOverlay.h"
 #include "VBoxFBOverlayCommon.h"
