@@ -1,4 +1,4 @@
-/* $Id: dbgmodnm.cpp 70988 2011-04-05 12:34:09Z knut.osmundsen@oracle.com $ */
+/* $Id: dbgmodnm.cpp 73640 2011-08-24 14:33:32Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Debug Map Reader For NM Like Mapfiles.
  */
@@ -462,6 +462,13 @@ static int rtDbgModNmScanFile(PRTDBGMODNM pThis, PRTSTREAM pStrm, bool fAddSymbo
 /** @interface_method_impl{RTDBGMODVTDBG,pfnTryOpen} */
 static DECLCALLBACK(int) rtDbgModNm_TryOpen(PRTDBGMODINT pMod)
 {
+    /*
+     * Fend off images.
+     */
+    if (   !pMod->pszDbgFile
+        || pMod->pImgVt)
+        return VERR_DBG_NO_MATCHING_INTERPRETER;
+
     /*
      * Try open the file and create an instance.
      */

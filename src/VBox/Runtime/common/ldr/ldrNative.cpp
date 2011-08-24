@@ -1,4 +1,4 @@
-/* $Id: ldrNative.cpp 69030 2010-12-16 15:25:20Z knut.osmundsen@oracle.com $ */
+/* $Id: ldrNative.cpp 73640 2011-08-24 14:33:32Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Binary Image Loader, Native interface.
  */
@@ -68,6 +68,7 @@ static const RTLDROPS s_rtldrNativeOps =
     rtldrNativeDone,
     rtldrNativeEnumSymbols,
     /* ext: */
+    NULL,
     NULL,
     NULL,
     NULL,
