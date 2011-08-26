@@ -1,4 +1,4 @@
-/* $Id: dbgmod.cpp 73640 2011-08-24 14:33:32Z knut.osmundsen@oracle.com $ */
+/* $Id: dbgmod.cpp 73709 2011-08-26 14:34:38Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Debug Module Interpreter.
  */
@@ -1476,7 +1476,6 @@ RTDECL(int) RTDbgModLineByAddr(RTDBGMOD hDbgMod, RTDBGSEGIDX iSeg, RTUINTPTR off
      */
     PRTDBGMODINT pDbgMod = hDbgMod;
     RTDBGMOD_VALID_RETURN_RC(pDbgMod, VERR_INVALID_HANDLE);
-    RTDBGMOD_LOCK(pDbgMod);
     AssertPtrNull(poffDisp);
     AssertPtr(pLineInfo);
 
