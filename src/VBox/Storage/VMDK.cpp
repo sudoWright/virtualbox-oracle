@@ -1,4 +1,4 @@
-/* $Id: VMDK.cpp 73520 2011-08-16 10:34:32Z alexander.eichner@oracle.com $ */
+/* $Id: VMDK.cpp 73828 2011-09-04 16:56:56Z alexander.eichner@oracle.com $ */
 /** @file
  * VMDK disk image, core code.
  */
@@ -7177,5 +7177,7 @@ VBOXHDDBACKEND g_VmdkBackend =
     /* pfnCompact */
     NULL,
     /* pfnResize */
+    NULL,
+    /* pfnDiscard */
     NULL
 };
