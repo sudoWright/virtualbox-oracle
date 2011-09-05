@@ -1,4 +1,4 @@
-/* $Id: tstGlobalConfig.cpp 69206 2010-12-27 16:13:13Z knut.osmundsen@oracle.com $ */
+/* $Id: tstGlobalConfig.cpp 73843 2011-09-05 13:49:45Z knut.osmundsen@oracle.com $ */
 /** @file
  * Ring-3 Management program for the GCFGM mock-up.
  */
@@ -40,7 +40,7 @@ static int Usage(void)
 
 int main(int argc, char **argv)
 {
-    RTR3Init();
+    RTR3InitExe(argc, &argv, 0);
 
     /*
      * Parse args, building the request as we do so.

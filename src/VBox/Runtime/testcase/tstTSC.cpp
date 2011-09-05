@@ -1,4 +1,4 @@
-/* $Id: tstTSC.cpp 67140 2010-10-28 09:27:05Z noreply@oracle.com $ */
+/* $Id: tstTSC.cpp 73843 2011-09-05 13:49:45Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT Testcase - SMP TSC testcase.
  */
@@ -405,7 +405,7 @@ static int tstTSCCalcFrequency(uint32_t cMsDuration)
 
 int main(int argc, char **argv)
 {
-    RTR3Init();
+    RTR3InitExe(argc, &argv, 0);
 
     /*
      * Parse arguments.

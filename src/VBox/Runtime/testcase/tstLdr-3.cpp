@@ -1,4 +1,4 @@
-/* $Id: tstLdr-3.cpp 66356 2010-10-03 20:30:49Z noreply@oracle.com $ */
+/* $Id: tstLdr-3.cpp 73843 2011-09-05 13:49:45Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Testcase for parts of RTLdr*, manual inspection.
  */
@@ -165,7 +165,7 @@ static DECLCALLBACK(int) testEnumSymbol2(RTLDRMOD hLdrMod, const char *pszSymbol
 
 int main(int argc, char **argv)
 {
-    RTR3Init();
+    RTR3InitExe(argc, &argv, 0);
 
     int rcRet = 0;
     if (argc <= 2)

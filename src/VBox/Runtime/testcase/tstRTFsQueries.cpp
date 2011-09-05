@@ -1,4 +1,4 @@
-/* $Id: tstRTFsQueries.cpp 62957 2010-06-22 12:08:20Z knut.osmundsen@oracle.com $ */
+/* $Id: tstRTFsQueries.cpp 73843 2011-09-05 13:49:45Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT Testcase - RTFs Queries..
  */
@@ -35,7 +35,7 @@
 
 int main(int argc, char **argv)
 {
-    RTR3Init();
+    RTR3InitExe(argc, &argv, 0);
 
     /*
      * Process all arguments (including the executable).

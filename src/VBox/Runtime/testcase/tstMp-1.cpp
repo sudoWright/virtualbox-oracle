@@ -1,4 +1,4 @@
-/* $Id: tstMp-1.cpp 67459 2010-11-05 21:28:14Z alexander.eichner@oracle.com $ */
+/* $Id: tstMp-1.cpp 73843 2011-09-05 13:49:45Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT Testcase - RTMp.
  */
@@ -43,7 +43,7 @@ static unsigned g_cErrors = 0;
 
 int main()
 {
-    RTR3Init();
+    RTR3InitExeNoArguments(0);
     RTPrintf("tstMp-1: TESTING...\n");
 
     /*
