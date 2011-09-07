@@ -1,4 +1,4 @@
-/* $Id: VBoxServiceControlExec.cpp 73841 2011-09-05 11:54:18Z andreas.loeffler@oracle.com $ */
+/* $Id: VBoxServiceControlExec.cpp 73882 2011-09-07 09:19:05Z noreply@oracle.com $ */
 /** @file
  * VBoxServiceControlExec - Utility functions for process execution.
  */
@@ -612,7 +612,7 @@ static int VBoxServiceControlExecProcLoop(PVBOXSERVICECTRLTHREAD pThread,
                    && cbRead)
             {
 #ifdef DEBUG
-                int rc2 = RTCritSectEnter(&g_csLog);
+                rc2 = RTCritSectEnter(&g_csLog);
                 if (RT_SUCCESS(rc2))
                 {
 #endif
