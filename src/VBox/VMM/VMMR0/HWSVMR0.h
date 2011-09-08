@@ -1,6 +1,6 @@
-/* $Id: HWSVMR0.h 72075 2011-06-03 15:05:36Z knut.osmundsen@oracle.com $ */
+/* $Id: HWSVMR0.h 73902 2011-09-08 08:36:48Z knut.osmundsen@oracle.com $ */
 /** @file
- * HWACCM AMD-V - Internal header file.
+ * HM SVM (AMD-V) - Internal header file.
  */
 
 /*

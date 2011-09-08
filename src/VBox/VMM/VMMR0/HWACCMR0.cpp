@@ -1,6 +1,6 @@
-/* $Id: HWACCMR0.cpp 72868 2011-07-14 12:23:02Z knut.osmundsen@oracle.com $ */
+/* $Id: HWACCMR0.cpp 73902 2011-09-08 08:36:48Z knut.osmundsen@oracle.com $ */
 /** @file
- * Hardware Assisted Virtualization Manager - Host Context Ring-0.
+ * Hardware Assisted Virtualization Manager (HM) - Host Context Ring-0.
  */
 
 /*
