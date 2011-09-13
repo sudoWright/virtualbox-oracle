@@ -1,4 +1,4 @@
-/* $Id: DBGFCoreWrite.cpp 69206 2010-12-27 16:13:13Z knut.osmundsen@oracle.com $ */
+/* $Id: DBGFCoreWrite.cpp 74007 2011-09-13 13:58:47Z knut.osmundsen@oracle.com $ */
 /** @file
  * DBGF - Debugger Facility, Guest Core Dump.
  */
@@ -70,10 +70,6 @@
 /*******************************************************************************
 *   Defined Constants And Macros                                               *
 *******************************************************************************/
-#ifdef DEBUG_ramshankar
-# undef Log
-# define Log LogRel
-#endif
 #define DBGFLOG_NAME           "DBGFCoreWrite"
 
 
