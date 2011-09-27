@@ -1,4 +1,4 @@
-/* $Id: MachineImpl.cpp 74195 2011-09-27 08:58:22Z alexander.eichner@oracle.com $ */
+/* $Id: MachineImpl.cpp 74209 2011-09-27 12:08:50Z alexander.eichner@oracle.com $ */
 /** @file
  * Implementation of IMachine in VBoxSVC.
  */
@@ -4049,8 +4049,8 @@ STDMETHODIMP Machine::NonRotationalDevice(IN_BSTR aControllerName, LONG aControl
     return S_OK;
 }
 
-STDMETHODIMP Machine::DiscardDevice(IN_BSTR aControllerName, LONG aControllerPort,
-                                    LONG aDevice, BOOL aDiscard)
+STDMETHODIMP Machine::SetAutoDiscardForDevice(IN_BSTR aControllerName, LONG aControllerPort,
+                                              LONG aDevice, BOOL aDiscard)
 {
     CheckComArgStrNotEmptyOrNull(aControllerName);
 
