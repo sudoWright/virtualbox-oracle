@@ -1,4 +1,4 @@
-/* $Id: precomp.h 74345 2011-10-10 11:16:08Z sergey.dubov@oracle.com $*/
+/* $Id: precomp.h 74362 2011-10-12 11:44:56Z sergey.dubov@oracle.com $*/
 /** @file
  * Header used if VBOX_WITH_PRECOMPILED_HEADERS is active.
  */
@@ -231,7 +231,7 @@
 #include "VBoxOSTypeSelectorWidget.h"
 #include "UIMessageCenter.h"
 #include "VBoxProgressDialog.h"
-#include "VBoxSelectorWnd.h"
+#include "UISelectorWindow.h"
 #include "UISettingsDialog.h"
 #include "UISettingsDialogSpecific.h"
 #include "UISettingsPage.h"
