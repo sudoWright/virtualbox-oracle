@@ -1,4 +1,4 @@
-/* $Id: PGMRZDynMap.cpp 71083 2011-04-08 15:38:47Z alexander.eichner@oracle.com $ */
+/* $Id: PGMRZDynMap.cpp 74454 2011-10-19 11:43:52Z knut.osmundsen@oracle.com $ */
 /** @file
  * PGM - Page Manager and Monitor, dynamic mapping cache.
  */
@@ -1566,8 +1566,6 @@ static int pgmRZDynMapAssertIntegrity(PPGMRZDYNMAP pThis)
     if (!pThis->cUsers)
         return VERR_INVALID_PARAMETER;
 
-
-    int                 rc          = VINF_SUCCESS;
     PGMRZDYNMAP_SPINLOCK_ACQUIRE(pThis);
 
 #define CHECK_RET(expr, a) \

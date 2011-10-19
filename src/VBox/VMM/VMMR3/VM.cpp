@@ -1,4 +1,4 @@
-/* $Id: VM.cpp 74134 2011-09-23 11:21:55Z knut.osmundsen@oracle.com $ */
+/* $Id: VM.cpp 74454 2011-10-19 11:43:52Z knut.osmundsen@oracle.com $ */
 /** @file
  * VM - Virtual Machine
  */
@@ -1766,7 +1766,7 @@ static int vmR3SaveTeleport(PVM pVM, uint32_t cMsMaxDowntime,
             else
             {
                 int rc2 = VMR3ReqCallWait(pVM, 0 /*idDstCpu*/, (PFNRT)SSMR3LiveDone, 1, pSSM);
-                AssertMsg(rc2 == rc, ("%Rrc != %Rrc\n", rc2, rc));
+                AssertMsg(rc2 == rc, ("%Rrc != %Rrc\n", rc2, rc)); NOREF(rc2);
             }
         }
         else
