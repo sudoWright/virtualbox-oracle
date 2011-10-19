@@ -1,4 +1,4 @@
-/* $Id: req.cpp 67205 2010-10-29 10:35:00Z noreply@oracle.com $ */
+/* $Id: req.cpp 74450 2011-10-19 11:08:50Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Request packets
  */
@@ -452,7 +452,6 @@ static void vmr3ReqJoinFree(PRTREQQUEUE pQueue, PRTREQ pList)
  */
 RTDECL(int) RTReqAlloc(PRTREQQUEUE pQueue, PRTREQ *ppReq, RTREQTYPE enmType)
 {
-    RT_EXPORT_SYMBOL(RTReqAlloc);
     /*
      * Validate input.
      */
@@ -572,6 +571,7 @@ RTDECL(int) RTReqAlloc(PRTREQQUEUE pQueue, PRTREQ *ppReq, RTREQTYPE enmType)
     LogFlow(("RTReqAlloc: returns VINF_SUCCESS *ppReq=%p new\n", pReq));
     return VINF_SUCCESS;
 }
+RT_EXPORT_SYMBOL(RTReqAlloc);
 
 
 /**
