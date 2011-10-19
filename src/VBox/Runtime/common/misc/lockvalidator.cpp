@@ -1,4 +1,4 @@
-/* $Id: lockvalidator.cpp 71042 2011-04-06 19:46:15Z knut.osmundsen@oracle.com $ */
+/* $Id: lockvalidator.cpp 74444 2011-10-19 10:08:23Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Lock Validator.
  */
@@ -3462,7 +3462,7 @@ RTDECL(void) RTLockValidatorRecSharedDelete(PRTLOCKVALRECSHRD pRec)
         ASMAtomicUoWriteNullPtr(&pRec->papOwners);
         ASMAtomicUoWriteU32(&pRec->cAllocated, 0);
 
-        RTMemFree((void *)pRec->papOwners);
+        RTMemFree((void *)papOwners);
     }
     if (pRec->pSibling)
         rtLockValidatorUnlinkAllSiblings(&pRec->Core);
