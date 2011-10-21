@@ -1,4 +1,4 @@
-/* $Id: lockvalidator.cpp 74492 2011-10-21 09:41:18Z knut.osmundsen@oracle.com $ */
+/* $Id: lockvalidator.cpp 74493 2011-10-21 10:21:06Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Lock Validator.
  */
@@ -1845,7 +1845,7 @@ static uint32_t rtLockValidatorStackDepth(PRTTHREADINT pThread)
 }
 
 
-#ifdef VBOX_STRICT
+#ifdef RT_STRICT
 /**
  * Checks if the stack contains @a pRec.
  *
@@ -1884,7 +1884,7 @@ static bool rtLockValidatorStackContainsRec(PRTTHREADINT pThreadSelf, PRTLOCKVAL
     }
     return false;
 }
-#endif /* VBOX_STRICT */
+#endif /* RT_STRICT */
 
 
 /**
