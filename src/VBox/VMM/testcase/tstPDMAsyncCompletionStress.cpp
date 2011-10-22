@@ -1,4 +1,4 @@
-/* $Id: tstPDMAsyncCompletionStress.cpp 73843 2011-09-05 13:49:45Z knut.osmundsen@oracle.com $ */
+/* $Id: tstPDMAsyncCompletionStress.cpp 74516 2011-10-22 00:37:15Z knut.osmundsen@oracle.com $ */
 /** @file
  * PDM Asynchronous Completion Stresstest.
  *
@@ -391,6 +391,7 @@ static void tstPDMACStressTestFileTaskCompleted(PVM pVM, void *pvUser, void *pvU
 {
     PPDMACTESTFILE pTestFile = (PPDMACTESTFILE)pvUser2;
     PPDMACTESTFILETASK pTestTask = (PPDMACTESTFILETASK)pvUser;
+    NOREF(pVM); NOREF(rcReq);
 
     if (pTestTask->fWrite)
     {
