@@ -1,4 +1,4 @@
-/* $Id: ldrFile.cpp 72442 2011-06-22 19:30:06Z knut.osmundsen@oracle.com $ */
+/* $Id: ldrFile.cpp 74515 2011-10-22 00:28:46Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Binary Image Loader, The File Oriented Parts.
  */
@@ -175,6 +175,7 @@ static DECLCALLBACK(int) rtldrFileUnmap(PRTLDRREADER pReader, const void *pvBits
         pFileReader->pvMapping = NULL;
     }
 
+    NOREF(pvBits);
     return VINF_SUCCESS;
 }
 

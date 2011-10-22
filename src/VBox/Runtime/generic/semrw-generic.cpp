@@ -1,4 +1,4 @@
-/* $Id: semrw-generic.cpp 70394 2011-03-07 16:28:50Z knut.osmundsen@oracle.com $ */
+/* $Id: semrw-generic.cpp 74515 2011-10-22 00:28:46Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Read-Write Semaphore, Generic.
  *
@@ -902,6 +902,7 @@ RTDECL(bool)  RTSemRWIsReadOwner(RTSEMRW hRWSem, bool fWannaHear)
     /*
      * Ask the lock validator.
      */
+    NOREF(fWannaHear);
     return RTLockValidatorRecSharedIsOwner(&pThis->ValidatorRead, NIL_RTTHREAD);
 #else
     /*
