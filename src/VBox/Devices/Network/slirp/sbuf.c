@@ -1,4 +1,4 @@
-/* $Id: sbuf.c 72847 2011-07-14 03:54:41Z noreply@oracle.com $ */
+/* $Id: sbuf.c 74533 2011-10-25 02:44:01Z noreply@oracle.com $ */
 /** @file
  * NAT - sbuf implemenation.
  */
@@ -73,6 +73,7 @@ sbdrop(struct sbuf *sb, int num)
 void
 sbreserve(PNATState pData, struct sbuf *sb, int size)
 {
+    NOREF(pData);
     if (sb->sb_data)
     {
         /* Already alloced, realloc if necessary */
