@@ -1,4 +1,4 @@
-/* $Id: QILabel.cpp 67140 2010-10-28 09:27:05Z noreply@oracle.com $ */
+/* $Id: QILabel.cpp 74751 2011-11-08 10:31:52Z sergey.dubov@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt GUI ("VirtualBox"):
@@ -236,12 +236,6 @@ void QILabel::paintEvent (QPaintEvent *aEvent)
         option.initFrom (this);
         style()->drawPrimitive (QStyle::PE_FrameFocusRect, &option, &painter, this);
     }
-}
-
-void QILabel::showEvent(QShowEvent *pEvent)
-{
-    QLabel::showEvent(pEvent);
-    emit shown();
 }
 
 void QILabel::init()
