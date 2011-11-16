@@ -1,4 +1,4 @@
-/* $Id: tstRTFileGetSize-1.cpp 74447 2011-10-19 10:58:43Z knut.osmundsen@oracle.com $ */
+/* $Id: tstRTFileGetSize-1.cpp 74897 2011-11-16 10:52:07Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT Testcase - RTFileGetSize.
  */
@@ -102,5 +102,4 @@ int main(int argc, char **argv)
      */
     return RTTestSummaryAndDestroy(hTest);
 }
-
 
