@@ -1,4 +1,4 @@
-/* $Id: stream.cpp 74983 2011-11-21 14:51:02Z andreas.loeffler@oracle.com $ */
+/* $Id: stream.cpp 74988 2011-11-21 15:54:36Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - I/O Stream.
  */
@@ -442,16 +442,13 @@ RTR3DECL(int) RTStrmSetMode(PRTSTREAM pStream, int fBinary, int fCurrentCodeSet)
     rtStrmLock(pStream);
 
     if (fBinary != -1)
-        pStream->fBinary = RT_BOOL(fBinary);
-    if (fCurrentCodeSet != -1)
-        pStream->fCurrentCodeSet = RT_BOOL(fCurrentCodeSet);
-
-    /* Re-check mode on next operation. */
-    if (   fBinary         != -1
-        || fCurrentCodeSet != -1)
     {
+        pStream->fBinary      = RT_BOOL(fBinary);
         pStream->fRecheckMode = true;
     }
+
+    if (fCurrentCodeSet != -1)
+        pStream->fCurrentCodeSet = RT_BOOL(fCurrentCodeSet);
 
     rtStrmUnlock(pStream);
 
