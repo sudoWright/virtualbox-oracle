@@ -1,4 +1,4 @@
-/* $Id: stream.cpp 74988 2011-11-21 15:54:36Z knut.osmundsen@oracle.com $ */
+/* $Id: stream.cpp 75003 2011-11-22 13:19:22Z andreas.loeffler@oracle.com $ */
 /** @file
  * IPRT - I/O Stream.
  */
@@ -683,7 +683,7 @@ static int rtStrmWriteLocked(PRTSTREAM pStream, const void *pvBuf, size_t cbWrit
                                 rc = RTErrConvertFromErrno(GetLastError());
                             break;
                         }
-                        if (cwcThis != 0)
+                        if (cwcThis != 1) /* Unable to write current char (amount)? */
                             break;
                         cwcWritten++;
                     }
