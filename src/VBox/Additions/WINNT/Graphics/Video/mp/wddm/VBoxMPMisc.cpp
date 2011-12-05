@@ -1,4 +1,4 @@
-/* $Id: VBoxMPMisc.cpp 75209 2011-12-05 12:59:05Z noreply@oracle.com $ */
+/* $Id: VBoxMPMisc.cpp 75217 2011-12-05 15:41:01Z noreply@oracle.com $ */
 
 /** @file
  * VBox WDDM Miniport driver
@@ -414,9 +414,9 @@ NTSTATUS vboxWddmSwapchainCtxEscape(PVBOXMP_DEVEXT pDevExt, PVBOXWDDM_CONTEXT pC
         if (pSwapchainInfo->SwapchainInfo.cAllocs)
         {
             /* ensure we do not overflow the 32bit buffer size value */
-            if (VBOXWDDM_ARRAY_MAXELEMENTSU32(PVBOXWDDM_ALLOCATION) < pSwapchainInfo->SwapchainInfo.cAllocs)
+            if (VBOXWDDM_ARRAY_MAXELEMENTSU32(VBOXWDDM_ALLOCATION) < pSwapchainInfo->SwapchainInfo.cAllocs)
             {
-                WARN(("number of allocations passed in too big (%d), max is (%d)", pSwapchainInfo->SwapchainInfo.cAllocs, VBOXWDDM_ARRAY_MAXELEMENTSU32(PVBOXWDDM_ALLOCATION)));
+                WARN(("number of allocations passed in too big (%d), max is (%d)", pSwapchainInfo->SwapchainInfo.cAllocs, VBOXWDDM_ARRAY_MAXELEMENTSU32(VBOXWDDM_ALLOCATION)));
                 Status = STATUS_INVALID_PARAMETER;
                 break;
             }
