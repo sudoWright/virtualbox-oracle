@@ -1,4 +1,4 @@
-/* $Id: scm.cpp 73843 2011-09-05 13:49:45Z knut.osmundsen@oracle.com $ */
+/* $Id: scm.cpp 75392 2011-12-14 14:19:55Z noreply@oracle.com $ */
 /** @file
  * IPRT Testcase / Tool - Source Code Massager.
  */
@@ -3817,7 +3817,7 @@ static int scmProcessDirTreeRecursion(char *pszBuf, size_t cchDir, PRTDIRENTRY p
      * Try open and read the directory.
      */
     PRTDIR pDir;
-    rc = RTDirOpenFiltered(&pDir, pszBuf, RTDIRFILTER_NONE);
+    rc = RTDirOpenFiltered(&pDir, pszBuf, RTDIRFILTER_NONE, 0);
     if (RT_FAILURE(rc))
     {
         RTMsgError("Failed to enumerate directory '%s': %Rrc", pszBuf, rc);
@@ -4090,7 +4090,7 @@ int main(int argc, char **argv)
             case 'V':
             {
                 /* The following is assuming that svn does it's job here. */
-                static const char s_szRev[] = "$Revision: 73843 $";
+                static const char s_szRev[] = "$Revision: 75392 $";
                 const char *psz = RTStrStripL(strchr(s_szRev, ' '));
                 RTPrintf("r%.*s\n", strchr(psz, ' ') - psz, psz);
                 return 0;
