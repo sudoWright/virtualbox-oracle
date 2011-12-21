@@ -1,4 +1,4 @@
-/* $Revision: 70720 $ */
+/* $Revision: 75495 $ */
 /** @file
  * VBoxGuestLib - Host-Guest Communication Manager internal functions, implemented by VBoxGuest
  */
@@ -40,6 +40,7 @@
 #include <iprt/thread.h>
 #include <iprt/time.h>
 
+#define LOG_GROUP LOG_GROUP_HGCM
 
 /*******************************************************************************
 *   Defined Constants And Macros                                               *
