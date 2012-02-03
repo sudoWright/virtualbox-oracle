@@ -1,4 +1,4 @@
-/* $Id: VBoxMPWddm.h 74010 2011-09-13 14:36:55Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxMPWddm.h 76080 2012-02-03 12:13:33Z noreply@oracle.com $ */
 /** @file
  * VBox WDDM Miniport driver
  */
@@ -26,6 +26,7 @@
 #endif
 #include "common/VBoxMPUtils.h"
 #include "common/VBoxMPDevExt.h"
+#include "../../common/VBoxVideoTools.h"
 
 //#define VBOXWDDM_DEBUG_VIDPN
 
