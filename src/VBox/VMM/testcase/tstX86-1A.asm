@@ -1,6 +1,6 @@
-; $Id: tstX86-1A.asm 76107 2012-02-04 15:55:51Z knut.osmundsen@oracle.com $
+; $Id: tstX86-1A.asm 76108 2012-02-04 15:56:18Z knut.osmundsen@oracle.com $
 ;; @file
-; X86 instruction set testcase #1.
+; X86 instruction set exploration/testcase #1.
 ;
 
 ;
