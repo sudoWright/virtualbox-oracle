@@ -1,4 +1,4 @@
-/* $Id: IEMInternal.h 76145 2012-02-07 20:29:04Z knut.osmundsen@oracle.com $ */
+/* $Id: IEMInternal.h 76168 2012-02-08 21:16:33Z knut.osmundsen@oracle.com $ */
 /** @file
  * IEM - Internal header file.
  */
@@ -31,6 +31,15 @@ RT_C_DECLS_BEGIN
  * @internal
  * @{
  */
+
+
+/** Finish and move to types.h */
+typedef union
+{
+    uint32_t u32;
+} RTFLOAT32U;
+typedef RTFLOAT32U *PRTFLOAT32U;
+typedef RTFLOAT32U const *PCRTFLOAT32U;
 
 
 /**
