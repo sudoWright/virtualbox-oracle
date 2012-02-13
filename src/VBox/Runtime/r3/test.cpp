@@ -1,4 +1,4 @@
-/* $Id: test.cpp 73843 2011-09-05 13:49:45Z knut.osmundsen@oracle.com $ */
+/* $Id: test.cpp 76246 2012-02-13 18:45:32Z alexander.eichner@oracle.com $ */
 /** @file
  * IPRT - Testcase Framework.
  */
@@ -625,7 +625,7 @@ RTR3DECL(int) RTTestGuardedFree(RTTEST hTest, void *pv)
     }
     RTCritSectLeave(&pTest->Lock);
 
-    return VINF_SUCCESS;
+    return rc;
 }
 
 
