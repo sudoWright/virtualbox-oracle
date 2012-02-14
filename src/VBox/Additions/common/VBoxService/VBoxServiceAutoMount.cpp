@@ -1,4 +1,4 @@
-/* $Id: VBoxServiceAutoMount.cpp 74224 2011-09-28 15:17:01Z noreply@oracle.com $ */
+/* $Id: VBoxServiceAutoMount.cpp 76272 2012-02-14 12:56:40Z andreas.loeffler@oracle.com $ */
 /** @file
  * VBoxService - Auto-mounting for Shared Folders.
  */
@@ -82,7 +82,8 @@ static DECLCALLBACK(int) VBoxServiceAutoMountOption(const char **ppszShort, int 
     NOREF(argc);
     NOREF(argv);
     NOREF(pi);
-    return VINF_SUCCESS;
+
+    return -1;
 }
 
 

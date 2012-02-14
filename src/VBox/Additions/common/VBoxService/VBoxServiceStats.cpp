@@ -1,4 +1,4 @@
-/* $Id: VBoxServiceStats.cpp 66266 2010-09-29 11:50:19Z andreas.loeffler@oracle.com $ */
+/* $Id: VBoxServiceStats.cpp 76272 2012-02-14 12:56:40Z andreas.loeffler@oracle.com $ */
 /** @file
  * VBoxStats - Guest statistics notification
  */
@@ -97,7 +97,8 @@ static DECLCALLBACK(int) VBoxServiceVMStatsOption(const char **ppszShort, int ar
     NOREF(argc);
     NOREF(argv);
     NOREF(pi);
-    return VINF_SUCCESS;
+
+    return -1;
 }
 
 
