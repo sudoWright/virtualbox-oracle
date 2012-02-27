@@ -1,4 +1,4 @@
-/* $Id: MediumImpl.h 73608 2011-08-19 12:02:55Z klaus.espenlaub@oracle.com $ */
+/* $Id: MediumImpl.h 76471 2012-02-27 09:25:12Z klaus.espenlaub@oracle.com $ */
 
 /** @file
  *
@@ -268,6 +268,8 @@ public:
 private:
 
     HRESULT queryInfo(bool fSetImageId, bool fSetParentId);
+    HRESULT lockRead(MediumState_T *aState, bool fWithinQueryInfo);
+    HRESULT lockWrite(MediumState_T *aState, bool fWithinQueryInfo);
 
     HRESULT canClose();
     HRESULT unregisterWithVirtualBox(GuidList *pllRegistriesThatNeedSaving);
