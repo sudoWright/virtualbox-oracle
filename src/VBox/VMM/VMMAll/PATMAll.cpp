@@ -1,4 +1,4 @@
-/* $Id: PATMAll.cpp 69208 2010-12-27 16:35:23Z knut.osmundsen@oracle.com $ */
+/* $Id: PATMAll.cpp 76509 2012-02-28 19:47:00Z knut.osmundsen@oracle.com $ */
 /** @file
  * PATM - The Patch Manager, all contexts.
  */
@@ -136,8 +136,8 @@ VMMDECL(void) PATMRawLeave(PVM pVM, PCPUMCTXCORE pCtxCore, int rawRC)
         &&  fPatchCode
        )
     {
-        if (    rawRC < VINF_PATM_LEAVEGC_FIRST
-            ||  rawRC > VINF_PATM_LEAVEGC_LAST)
+        if (    rawRC < VINF_PATM_LEAVE_RC_FIRST
+            ||  rawRC > VINF_PATM_LEAVE_RC_LAST)
         {
             /*
              * Golden rules:
