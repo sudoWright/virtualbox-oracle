@@ -1,4 +1,4 @@
-/* $Id: PDMQueue.cpp 74588 2011-10-28 10:16:33Z knut.osmundsen@oracle.com $ */
+/* $Id: PDMQueue.cpp 76500 2012-02-28 13:17:35Z knut.osmundsen@oracle.com $ */
 /** @file
  * PDM Queue - Transport data and tasks to EMT and R3.
  */
@@ -23,7 +23,9 @@
 #include "PDMInternal.h"
 #include <VBox/vmm/pdm.h>
 #include <VBox/vmm/mm.h>
-#include <VBox/vmm/rem.h>
+#ifdef VBOX_WITH_REM
+# include <VBox/vmm/rem.h>
+#endif
 #include <VBox/vmm/vm.h>
 #include <VBox/vmm/uvm.h>
 #include <VBox/err.h>

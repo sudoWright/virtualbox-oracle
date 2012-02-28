@@ -1,4 +1,4 @@
-/* $Id: PGMRC.cpp 69206 2010-12-27 16:13:13Z knut.osmundsen@oracle.com $ */
+/* $Id: PGMRC.cpp 76500 2012-02-28 13:17:35Z knut.osmundsen@oracle.com $ */
 /** @file
  * PGM - Page Monitor, Guest Context.
  */
@@ -27,7 +27,9 @@
 #include <VBox/vmm/selm.h>
 #include <VBox/vmm/iom.h>
 #include <VBox/vmm/trpm.h>
-#include <VBox/vmm/rem.h>
+#ifdef VBOX_WITH_REM
+# include <VBox/vmm/rem.h>
+#endif
 #include "PGMInternal.h"
 #include <VBox/vmm/vm.h>
 #include "PGMInline.h"
