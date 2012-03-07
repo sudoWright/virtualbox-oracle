@@ -1,4 +1,4 @@
-/* $Id: VBoxCredProvFactory.h 76493 2012-02-28 11:22:04Z noreply@oracle.com $ */
+/* $Id: VBoxCredProvFactory.h 76703 2012-03-07 14:41:37Z andreas.loeffler@oracle.com $ */
 /** @file
  * VBoxCredentialProvFactory - The VirtualBox Credential Provider factory.
  */
@@ -46,7 +46,7 @@ class VBoxCredProvFactory : public IClassFactory
 
     private:
 
-        ULONG m_cRefCount;
+        LONG m_cRefCount;
         friend HRESULT VBoxCredentialProviderCreate(REFCLSID rclsid, REFIID riid, void** ppv);
 };
 #endif /* !__VBOX_CREDPROV_FACTORY_H__ */
