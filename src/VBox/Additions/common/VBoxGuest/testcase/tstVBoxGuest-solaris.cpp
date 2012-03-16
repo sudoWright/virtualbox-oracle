@@ -1,4 +1,4 @@
-/* $Id: tstVBoxGuest-solaris.cpp 76863 2012-03-15 16:57:11Z noreply@oracle.com $ */
+/* $Id: tstVBoxGuest-solaris.cpp 76885 2012-03-16 15:04:26Z noreply@oracle.com $ */
 /** @file
  *
  * Test cases for VBoxGuest-solaris.
@@ -26,6 +26,7 @@ int main()
         return rc;
     RTTestBanner(hTest);
     test_init(hTest);
+    testOpenClose(hTest);
 
     /*
      * Summary.
