@@ -1,4 +1,4 @@
-/* $Revision: 77014 $ */
+/* $Revision: 77023 $ */
 /** @file
  * VirtualBox Support Driver - Internal header.
  */
@@ -618,6 +618,13 @@ void VBOXCALL   supdrvDeleteDevExt(PSUPDRVDEVEXT pDevExt);
 int  VBOXCALL   supdrvCreateSession(PSUPDRVDEVEXT pDevExt, bool fUser, PSUPDRVSESSION *ppSession);
 void VBOXCALL   supdrvCloseSession(PSUPDRVDEVEXT pDevExt, PSUPDRVSESSION pSession);
 void VBOXCALL   supdrvCleanupSession(PSUPDRVDEVEXT pDevExt, PSUPDRVSESSION pSession);
+
+#ifdef VBOX_WITH_DTRACE_R0DRV
+int  VBOXCALL   supdrvDTraceTerm(PSUPDRVDEVEXT pDevExt);
+int  VBOXCALL   supdrvDTraceInit(PSUPDRVDEVEXT pDevExt);
+#endif
+
+
 
 RT_C_DECLS_END
 
