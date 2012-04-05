@@ -1,4 +1,4 @@
-# $Revision: 75014 $
+# $Revision: 77280 $
 ## @file
 # Makefile for the VirtualBox Linux Host Driver.
 #
@@ -73,6 +73,7 @@ OBJS   = \
 	linux/SUPDrv-linux.o \
 	SUPDrv.o \
 	SUPDrvSem.o \
+	SUPDrvTracer.o \
 	r0drv/alloc-r0drv.o \
 	r0drv/initterm-r0drv.o \
 	r0drv/memobj-r0drv.o \
