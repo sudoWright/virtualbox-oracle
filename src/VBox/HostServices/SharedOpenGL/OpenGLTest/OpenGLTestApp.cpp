@@ -1,4 +1,4 @@
-/* $Id: OpenGLTestApp.cpp 73843 2011-09-05 13:49:45Z knut.osmundsen@oracle.com $ */
+/* $Id: OpenGLTestApp.cpp 77366 2012-04-10 13:07:39Z noreply@oracle.com $ */
 /** @file
  * VBox host opengl support test application.
  */
