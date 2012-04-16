@@ -1,4 +1,4 @@
-/* $Id: VDICore.h 77457 2012-04-13 19:38:21Z alexander.eichner@oracle.com $ */
+/* $Id: VDICore.h 77486 2012-04-16 08:55:15Z noreply@oracle.com $ */
 /** @file
  * Virtual Disk Image (VDI), Core Code Header (internal).
  */
@@ -603,17 +603,6 @@ typedef struct VDIASYNCBLOCKALLOC
     /** Block index to allocate. */
     unsigned                uBlock;
 } VDIASYNCBLOCKALLOC, *PVDIASYNCBLOCKALLOC;
-
-/**
- * Endianess conversion direction.
- */
-typedef enum VDIECONV
-{
-    /** Host to file endianess. */
-    VDIECONV_H2F = 0,
-    /** File to host endianess. */
-    VDIECONV_F2H
-} VDIECONV;
 
 #endif
 
