@@ -1,4 +1,4 @@
-/* $Id: memobj-r0drv-solaris.c 77522 2012-04-17 17:17:10Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: memobj-r0drv-solaris.c 77523 2012-04-17 17:35:53Z ramshankar.venkataraman@oracle.com $ */
 /** @file
  * IPRT - Ring-0 Memory Objects, Solaris.
  */
@@ -28,7 +28,7 @@
 /*******************************************************************************
 *   Header Files                                                               *
 *******************************************************************************/
-#include "../the-solaris-kernel.h"
+#include "the-solaris-kernel.h"
 #include "internal/iprt.h"
 #include <iprt/memobj.h>
 

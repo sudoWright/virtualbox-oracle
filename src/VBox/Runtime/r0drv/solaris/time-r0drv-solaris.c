@@ -1,4 +1,4 @@
-/* $Id: time-r0drv-solaris.c 77521 2012-04-17 16:43:28Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: time-r0drv-solaris.c 77523 2012-04-17 17:35:53Z ramshankar.venkataraman@oracle.com $ */
 /** @file
  * IPRT - Time, Ring-0 Driver, Solaris.
  */
@@ -29,7 +29,7 @@
 *   Header Files                                                               *
 *******************************************************************************/
 #define RTTIME_INCL_TIMESPEC
-#include "../the-solaris-kernel.h"
+#include "the-solaris-kernel.h"
 #include "internal/iprt.h"
 #include <iprt/time.h>
 
