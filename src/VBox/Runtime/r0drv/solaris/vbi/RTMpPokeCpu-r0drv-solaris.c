@@ -1,4 +1,4 @@
-/* $Id: RTMpPokeCpu-r0drv-solaris.c 61388 2010-05-10 12:30:43Z knut.osmundsen@oracle.com $ */
+/* $Id: RTMpPokeCpu-r0drv-solaris.c 77521 2012-04-17 16:43:28Z ramshankar.venkataraman@oracle.com $ */
 /** @file
  * IPRT - RTMpPokeCpu, Solaris Implementation.
  */
@@ -43,7 +43,8 @@
 RTDECL(int) RTMpPokeCpu(RTCPUID idCpu)
 {
     RT_ASSERT_INTS_ON();
-    vbi_poke_cpu(idCpu);
+    if (idCpu < ncpus)
+        poke_cpu(idCpu);
     return VINF_SUCCESS;
 }
 
