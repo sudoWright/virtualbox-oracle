@@ -1,6 +1,6 @@
-/* $Id: initterm-r0drv-solaris.c 77521 2012-04-17 16:43:28Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: initterm-r0drv-solaris.c 77530 2012-04-18 13:30:14Z ramshankar.venkataraman@oracle.com $ */
 /** @file
- * IPRT - Initialization & Termination, R0 Driver, Solaris.
+ * IPRT - Initialization & Termination, Ring-0 Driver, Solaris.
  */
 
 /*
