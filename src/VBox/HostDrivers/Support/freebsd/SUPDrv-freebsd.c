@@ -1,4 +1,4 @@
-/* $Id: SUPDrv-freebsd.c 75200 2011-12-05 10:19:31Z alexander.eichner@oracle.com $ */
+/* $Id: SUPDrv-freebsd.c 77635 2012-04-26 11:36:57Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxDrv - The VirtualBox Support Driver - FreeBSD specifics.
  */
@@ -494,6 +494,12 @@ int  VBOXCALL   supdrvOSLdrOpen(PSUPDRVDEVEXT pDevExt, PSUPDRVLDRIMAGE pImage, c
 {
     NOREF(pDevExt); NOREF(pImage); NOREF(pszFilename);
     return VERR_NOT_SUPPORTED;
+}
+
+
+void VBOXCALL   supdrvOSLdrNotifyOpened(PSUPDRVDEVEXT pDevExt, PSUPDRVLDRIMAGE pImage)
+{
+    NOREF(pDevExt); NOREF(pImage);
 }
 
 

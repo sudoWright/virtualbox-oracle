@@ -1,4 +1,4 @@
-/* $Id: SUPDrv-os2.cpp 77321 2012-04-06 21:05:19Z knut.osmundsen@oracle.com $ */
+/* $Id: SUPDrv-os2.cpp 77635 2012-04-26 11:36:57Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxDrv - The VirtualBox Support Driver - OS/2 specifics.
  */
@@ -382,6 +382,12 @@ int  VBOXCALL   supdrvOSLdrOpen(PSUPDRVDEVEXT pDevExt, PSUPDRVLDRIMAGE pImage, c
 {
     NOREF(pDevExt); NOREF(pImage); NOREF(pszFilename);
     return VERR_NOT_SUPPORTED;
+}
+
+
+void VBOXCALL   supdrvOSLdrNotifyOpened(PSUPDRVDEVEXT pDevExt, PSUPDRVLDRIMAGE pImage)
+{
+    NOREF(pDevExt); NOREF(pImage);
 }
 
 

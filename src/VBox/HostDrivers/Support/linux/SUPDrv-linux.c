@@ -1,4 +1,4 @@
-/* $Rev: 77439 $ */
+/* $Rev: 77635 $ */
 /** @file
  * VBoxDrv - The VirtualBox Support Driver - Linux specifics.
  */
@@ -730,6 +730,12 @@ int  VBOXCALL   supdrvOSLdrOpen(PSUPDRVDEVEXT pDevExt, PSUPDRVLDRIMAGE pImage, c
 {
     NOREF(pDevExt); NOREF(pImage); NOREF(pszFilename);
     return VERR_NOT_SUPPORTED;
+}
+
+
+void VBOXCALL   supdrvOSLdrNotifyOpened(PSUPDRVDEVEXT pDevExt, PSUPDRVLDRIMAGE pImage)
+{
+    NOREF(pDevExt); NOREF(pImage);
 }
 
 
