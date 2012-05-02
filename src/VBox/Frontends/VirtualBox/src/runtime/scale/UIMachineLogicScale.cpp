@@ -1,4 +1,4 @@
-/* $Id: UIMachineLogicScale.cpp 77707 2012-05-02 00:14:21Z sergey.dubov@oracle.com $ */
+/* $Id: UIMachineLogicScale.cpp 77722 2012-05-02 13:07:55Z sergey.dubov@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt GUI ("VirtualBox"):
@@ -80,7 +80,7 @@ void UIMachineLogicScale::prepareMachineWindows()
     ulong uMonitorCount = session().GetMachine().GetMonitorCount();
     /* Create machine window(s): */
     for (ulong uScreenId = 0; uScreenId < uMonitorCount; ++ uScreenId)
-        addMachineWindow(UIMachineWindow::create(this, visualStateType(), uScreenId));
+        addMachineWindow(UIMachineWindow::create(this, uScreenId));
     /* Order machine window(s): */
     for (ulong uScreenId = uMonitorCount; uScreenId > 0; -- uScreenId)
         machineWindows()[uScreenId - 1]->raise();
