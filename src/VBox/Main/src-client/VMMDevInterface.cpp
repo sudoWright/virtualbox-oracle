@@ -1,4 +1,4 @@
-/* $Id: VMMDevInterface.cpp 76511 2012-02-28 21:02:40Z noreply@oracle.com $ */
+/* $Id: VMMDevInterface.cpp 77741 2012-05-03 11:43:01Z noreply@oracle.com $ */
 /** @file
  * VirtualBox Driver Interface to VMM device.
  */
@@ -115,7 +115,8 @@ VMMDev::~VMMDev()
 
 PPDMIVMMDEVPORT VMMDev::getVMMDevPort()
 {
-    AssertReturn(mpDrv, NULL);
+    if (!mpDrv)
+        return NULL;
     return mpDrv->pUpPort;
 }
 
