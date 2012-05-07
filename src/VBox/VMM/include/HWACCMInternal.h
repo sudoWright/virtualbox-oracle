@@ -1,4 +1,4 @@
-/* $Id: HWACCMInternal.h 77088 2012-03-26 20:07:36Z michal.necasek@oracle.com $ */
+/* $Id: HWACCMInternal.h 77816 2012-05-07 15:39:30Z ramshankar.venkataraman@oracle.com $ */
 /** @file
  * HM - Internal header file.
  */
@@ -418,8 +418,8 @@ typedef struct HWACCM
         } msr;
 
         /** Flush types for invept & invvpid; they depend on capabilities. */
-        VMX_FLUSH                   enmFlushPage;
-        VMX_FLUSH                   enmFlushContext;
+        VMX_FLUSH_EPT               enmFlushEPT;
+        VMX_FLUSH_VPID              enmFlushVPID;
     } vmx;
 
     struct
