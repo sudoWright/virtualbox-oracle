@@ -1,4 +1,4 @@
-/** $Id: clipboard.cpp 72238 2011-06-14 13:14:57Z noreply@oracle.com $ */
+/** $Id: clipboard.cpp 77840 2012-05-08 13:52:54Z noreply@oracle.com $ */
 /** @file
  * Guest Additions - X11 Shared Clipboard.
  */
@@ -33,7 +33,6 @@
 #include <VBox/GuestHost/SharedClipboard.h>
 
 #include "VBoxClient.h"
-#include "clipboard.h"
 
 /****************************************************************************
 *   Global Variables                                                        *
