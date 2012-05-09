@@ -1,4 +1,4 @@
-/* $Id: MachineImpl.cpp 77853 2012-05-08 17:59:43Z klaus.espenlaub@oracle.com $ */
+/* $Id: MachineImpl.cpp 77868 2012-05-09 15:50:25Z klaus.espenlaub@oracle.com $ */
 /** @file
  * Implementation of IMachine in VBoxSVC.
  */
@@ -239,6 +239,8 @@ Machine::Machine()
     : mCollectorGuest(NULL),
       mPeer(NULL),
       mParent(NULL),
+      mSerialPorts(),
+      mParallelPorts(),
       uRegistryNeedsSaving(0)
 {}
 
