@@ -1,4 +1,4 @@
-/* $Id: VBoxNetAdp-linux.c 75046 2011-11-25 10:16:27Z noreply@oracle.com $ */
+/* $Id: VBoxNetAdp-linux.c 77932 2012-05-14 09:02:00Z aleksey.ilyushin@oracle.com $ */
 /** @file
  * VBoxNetAdp - Virtual Network Adapter Driver (Host), Linux Specific Code.
  */
@@ -314,7 +314,7 @@ static long VBoxNetAdpLinuxIOCtlUnlocked(struct file *pFilp,
             if (RT_FAILURE(rc))
             {
                 Log(("VBoxNetAdpLinuxIOCtl: vboxNetAdpCreate -> %Rrc\n", rc));
-                return -EINVAL;
+                return -(rc == VERR_OUT_OF_RESOURCES ? ENOMEM : EINVAL);
             }
 
             Assert(strlen(pAdp->szName) < sizeof(Req.szName));
