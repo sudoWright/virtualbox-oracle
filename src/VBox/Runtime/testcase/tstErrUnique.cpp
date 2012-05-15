@@ -1,4 +1,4 @@
-/* $Id: tstErrUnique.cpp 73843 2011-09-05 13:49:45Z knut.osmundsen@oracle.com $ */
+/* $Id: tstErrUnique.cpp 77962 2012-05-15 09:25:23Z noreply@oracle.com $ */
 /** @file
  * IPRT Testcase - Error Messages.
  */
@@ -77,7 +77,7 @@ int main()
 
             if (g_aErrorMessages[i].iCode == g_aErrorMessages[j].iCode)
             {
-                RTPrintf("tstErrUnique: status code %d can mean '%s' or '%s'\n", g_aErrorMessages[i].iCode, g_aErrorMessages[i].pszMsgShort, g_aErrorMessages[j]);
+                RTPrintf("tstErrUnique: status code %d\n  can mean '%s'\n  or '%s'\n", g_aErrorMessages[i].iCode, g_aErrorMessages[i].pszMsgShort, g_aErrorMessages[j].pszMsgShort);
                 cErrors++;
             }
         }
