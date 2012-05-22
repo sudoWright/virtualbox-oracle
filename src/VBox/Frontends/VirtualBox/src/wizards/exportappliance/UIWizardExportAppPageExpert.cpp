@@ -1,4 +1,4 @@
-/* $Id: UIWizardExportAppPageExpert.cpp 78066 2012-05-21 16:53:33Z sergey.dubov@oracle.com $ */
+/* $Id: UIWizardExportAppPageExpert.cpp 78114 2012-05-22 16:31:55Z sergey.dubov@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt4 GUI ("VirtualBox"):
@@ -52,6 +52,7 @@ UIWizardExportAppPageExpert::UIWizardExportAppPageExpert(const QStringList &sele
         m_pVMApplianceLabel = new QILabelSeparator(this);
         m_pApplianceWidget = new UIApplianceExportEditorWidget(this);
         {
+            m_pApplianceWidget->setMinimumHeight(250);
             m_pApplianceWidget->setSizePolicy(QSizePolicy::Preferred, QSizePolicy::MinimumExpanding);
             m_pVMApplianceLabel->setBuddy(m_pApplianceWidget);
         }
