@@ -1,4 +1,4 @@
-/* $Id: tstErrUnique.cpp 78324 2012-06-03 22:44:09Z knut.osmundsen@oracle.com $ */
+/* $Id: tstRTErrUnique.cpp 78325 2012-06-03 22:45:44Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT Testcase - Error Messages.
  */
