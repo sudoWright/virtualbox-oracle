@@ -1,4 +1,4 @@
-/* $Id: UIMachineSettingsParallel.cpp 71794 2011-05-17 13:56:50Z sergey.dubov@oracle.com $ */
+/* $Id: UIMachineSettingsParallel.cpp 78371 2012-06-06 04:19:03Z sergey.dubov@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt4 GUI ("VirtualBox"):
@@ -17,12 +17,17 @@
  * hope that it will be useful, but WITHOUT ANY WARRANTY of any kind.
  */
 
+/* Qt includes: */
+#include <QDir>
+
+/* GUI includes: */
 #include "UIMachineSettingsParallel.h"
 #include "QIWidgetValidator.h"
 #include "VBoxGlobal.h"
 #include "QITabWidget.h"
 
-#include <QDir>
+/* COM includes: */
+#include "CParallelPort.h"
 
 /* UIMachineSettingsParallel stuff */
 UIMachineSettingsParallel::UIMachineSettingsParallel(UIMachineSettingsParallelPage *pParent)
