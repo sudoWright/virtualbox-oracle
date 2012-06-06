@@ -1,4 +1,4 @@
-/* $Id: VBoxFBOverlay.cpp 78371 2012-06-06 04:19:03Z sergey.dubov@oracle.com $ */
+/* $Id: VBoxFBOverlay.cpp 78375 2012-06-06 07:04:53Z sergey.dubov@oracle.com $ */
 /** @file
  * VBoxFBOverlay implementation
  */
@@ -33,6 +33,7 @@
 #include "VBoxGlobal.h"
 
 /* COM includes: */
+#include "CConsole.h"
 #include "CDisplay.h"
 
 /* Other VBox includes: */
