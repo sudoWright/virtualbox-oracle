@@ -1,4 +1,4 @@
-/* $Id: VBoxMediaManagerDlg.cpp 78371 2012-06-06 04:19:03Z sergey.dubov@oracle.com $ */
+/* $Id: VBoxMediaManagerDlg.cpp 78405 2012-06-07 13:01:57Z sergey.dubov@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt4 GUI ("VirtualBox"):
@@ -49,6 +49,7 @@
 
 /* COM includes: */
 #include "COMEnums.h"
+#include "CMediumFormat.h"
 #include "CStorageController.h"
 #include "CMediumAttachment.h"
 
