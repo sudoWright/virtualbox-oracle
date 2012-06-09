@@ -1,4 +1,4 @@
-/* $Id: VBoxMPTypes.h 77623 2012-04-25 21:42:29Z noreply@oracle.com $ */
+/* $Id: VBoxMPTypes.h 78437 2012-06-09 16:58:09Z noreply@oracle.com $ */
 
 /** @file
  * VBox WDDM Miniport driver
@@ -103,6 +103,7 @@ typedef struct VBOXWDDM_SOURCE
     LIST_ENTRY OverlayList;
     KSPIN_LOCK OverlayListLock;
 #endif
+    KSPIN_LOCK AllocationLock;
     POINT VScreenPos;
     VBOXWDDM_POINTER_INFO PointerInfo;
 } VBOXWDDM_SOURCE, *PVBOXWDDM_SOURCE;
