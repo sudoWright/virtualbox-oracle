@@ -1,4 +1,4 @@
-/* $Id: HWSVMR0.cpp 78445 2012-06-11 11:17:14Z noreply@oracle.com $ */
+/* $Id: HWSVMR0.cpp 78482 2012-06-12 20:27:37Z knut.osmundsen@oracle.com $ */
 /** @file
  * HM SVM (AMD-V) - Host Context Ring-0.
  */
@@ -2971,7 +2971,7 @@ static int hmR0SvmInterpretInvpg(PVM pVM, PVMCPU pVCpu, PCPUMCTXCORE pRegFrame, 
      * Only allow 32 & 64 bit code.
      */
     DISCPUMODE enmMode = SELMGetCpuModeFromSelector(pVCpu, pRegFrame->eflags, pRegFrame->cs, &pRegFrame->csHid);
-    if (enmMode != CPUMODE_16BIT)
+    if (enmMode != DISCPUMODE_16BIT)
     {
         RTGCPTR pbCode;
         int rc = SELMValidateAndConvertCSAddr(pVCpu, pRegFrame->eflags, pRegFrame->ss, pRegFrame->cs,

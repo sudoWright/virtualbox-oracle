@@ -1,4 +1,4 @@
-/* $Id: tstLdrObj.cpp 78481 2012-06-12 20:16:31Z knut.osmundsen@oracle.com $ */
+/* $Id: tstLdrObj.cpp 78482 2012-06-12 20:27:37Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - RTLdr test object.
  *
@@ -97,7 +97,7 @@ extern "C" DECLEXPORT(void *) SomeExportFunction4(void)
 {
     static unsigned cb;
     DISCPUSTATE Cpu;
-    DISInstr((void *)(uintptr_t)SomeExportFunction3, CPUMODE_32BIT, &Cpu, &cb);
+    DISInstr((void *)(uintptr_t)SomeExportFunction3, DISCPUMODE_32BIT, &Cpu, &cb);
     return (void *)(uintptr_t)&SomeExportFunction1;
 }
 
