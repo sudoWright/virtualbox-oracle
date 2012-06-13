@@ -1,4 +1,4 @@
-/* $Id: PATMPatch.cpp 78485 2012-06-13 09:37:47Z knut.osmundsen@oracle.com $ */
+/* $Id: PATMPatch.cpp 78499 2012-06-13 19:32:54Z knut.osmundsen@oracle.com $ */
 /** @file
  * PATMPatch - Dynamic Guest OS Instruction patches
  *
@@ -420,9 +420,10 @@ int patmPatchGenDuplicate(PVM pVM, PPATCHINFO pPatch, DISCPUSTATE *pCpu, RCPTRTY
     int rc = VINF_SUCCESS;
     PATCHGEN_PROLOG(pVM, pPatch);
 
-    rc = patmPatchReadBytes(pVM, pPB, pCurInstrGC, pCpu->opsize);
+    uint32_t const cbInstrShutUpGcc = pCpu->opsize;
+    rc = patmPatchReadBytes(pVM, pPB, pCurInstrGC, cbInstrShutUpGcc);
     AssertRC(rc);
-    PATCHGEN_EPILOG(pPatch, pCpu->opsize);
+    PATCHGEN_EPILOG(pPatch, cbInstrShutUpGcc); 
     return rc;
 }
 
