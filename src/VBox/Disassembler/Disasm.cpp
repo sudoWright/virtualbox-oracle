@@ -1,4 +1,4 @@
-/* $Id: Disasm.cpp 78483 2012-06-12 20:53:40Z knut.osmundsen@oracle.com $ */
+/* $Id: Disasm.cpp 78497 2012-06-13 18:12:25Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox disassembler - Disassemble and optionally format.
  */
@@ -26,7 +26,6 @@
 #include <iprt/assert.h>
 #include <iprt/string.h>
 #include "DisasmInternal.h"
-#include "DisasmTables.h"
 
 
 /**
