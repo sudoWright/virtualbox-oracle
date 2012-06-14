@@ -1,4 +1,4 @@
-/* $Id: CPUM.cpp 78482 2012-06-12 20:27:37Z knut.osmundsen@oracle.com $ */
+/* $Id: CPUM.cpp 78539 2012-06-14 23:41:13Z knut.osmundsen@oracle.com $ */
 /** @file
  * CPUM - CPU Monitor / Manager.
  */
@@ -3528,7 +3528,7 @@ typedef struct CPUMDISASSTATE
  */
 static DECLCALLBACK(int) cpumR3DisasInstrRead(PDISCPUSTATE pDisState, uint8_t *pbDst, RTUINTPTR uSrcAddr, uint32_t cbToRead)
 {
-    PCPUMDISASSTATE pState = (PCPUMDISASSTATE)pDisState->apvUserData[0];
+    PCPUMDISASSTATE pState = (PCPUMDISASSTATE)pDisState->pvUser;
     Assert(cbToRead > 0);
     for (;;)
     {
