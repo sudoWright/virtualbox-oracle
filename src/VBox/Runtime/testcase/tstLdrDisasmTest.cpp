@@ -1,4 +1,4 @@
-/* $Id: tstLdrDisasmTest.cpp 78544 2012-06-15 00:39:37Z knut.osmundsen@oracle.com $ */
+/* $Id: tstLdrDisasmTest.cpp 78545 2012-06-15 01:01:49Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - RTLdr test object.
  *
@@ -127,7 +127,7 @@ extern "C" DECLEXPORT(int) DisasmTest1(void)
             rc = MyDisasm(CodeIndex, &Cpu, &cb); \
             if (RT_FAILURE(rc)) \
                 return CodeIndex | 0xf000; \
-            if (Cpu.pCurInstr->opcode != (enmOp)) \
+            if (Cpu.pCurInstr->uOpcode != (enmOp)) \
                 return CodeIndex| 0xe000; \
             if (cb != (cbInstr)) \
                 return CodeIndex | 0xd000; \
