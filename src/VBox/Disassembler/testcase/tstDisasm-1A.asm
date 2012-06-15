@@ -1,4 +1,4 @@
-; $Id: DisasmTestA.asm 78527 2012-06-14 18:15:56Z knut.osmundsen@oracle.com $
+; $Id: tstDisasm-1A.asm 78560 2012-06-15 10:36:07Z knut.osmundsen@oracle.com $
 ;; @file
 ; VBox disassembler: Assembler test routines
 ;
