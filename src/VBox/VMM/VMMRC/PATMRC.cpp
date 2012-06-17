@@ -1,4 +1,4 @@
-/* $Id: PATMRC.cpp 78617 2012-06-17 02:53:52Z knut.osmundsen@oracle.com $ */
+/* $Id: PATMRC.cpp 78618 2012-06-17 16:18:26Z ramshankar.venkataraman@oracle.com $ */
 /** @file
  * PATM - Dynamic Guest OS Patching Manager - Raw-mode Context.
  */
@@ -48,7 +48,7 @@
  * \#PF Virtual Handler callback for Guest access a page monitored by PATM
  *
  * @returns VBox status code (appropriate for trap handling and GC return).
- * @param   pVM         VM Handle.
+ * @param   pVM         Pointer to the VM.
  * @param   uErrorCode   CPU Error code.
  * @param   pRegFrame   Trap register frame.
  * @param   pvFault     The fault address (cr2).
