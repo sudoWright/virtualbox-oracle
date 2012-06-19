@@ -1,4 +1,4 @@
-/* $Id: VMMInternal.h 78601 2012-06-16 19:24:15Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: VMMInternal.h 78662 2012-06-19 16:20:52Z ramshankar.venkataraman@oracle.com $ */
 /** @file
  * VMM - Internal header file.
  */
@@ -529,7 +529,7 @@ void vmmR3SwitcherRelocate(PVM pVM, RTGCINTPTR offDelta);
  * It will call VMMGCEntry().
  *
  * @returns return code from VMMGCEntry().
- * @param   pVM     The VM in question.
+ * @param   pVM     Pointer to the VM.
  * @param   uArg    See VMMGCEntry().
  * @internal
  */
