@@ -1,4 +1,4 @@
-/* $Id: VBoxManageBandwidthControl.cpp 78736 2012-06-22 11:44:18Z noreply@oracle.com $ */
+/* $Id: VBoxManageBandwidthControl.cpp 78737 2012-06-22 12:13:12Z noreply@oracle.com $ */
 /** @file
  * VBoxManage - The bandwidth control related commands.
  */
@@ -50,7 +50,7 @@ using namespace com;
  * @param   pcszLimit       The string to parse.
  * @param   pLimit          Where to store the result.
  */
-static const char *parseLimit(const char *pcszLimit, LONG64 *pLimit)
+static const char *parseLimit(const char *pcszLimit, int64_t *pLimit)
 {
     int iMultiplier = _1M;
     char *pszNext = NULL;
