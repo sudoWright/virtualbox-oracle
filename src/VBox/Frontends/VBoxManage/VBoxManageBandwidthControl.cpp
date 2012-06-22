@@ -1,4 +1,4 @@
-/* $Id: VBoxManageBandwidthControl.cpp 78670 2012-06-20 11:46:31Z aleksey.ilyushin@oracle.com $ */
+/* $Id: VBoxManageBandwidthControl.cpp 78735 2012-06-22 10:58:47Z aleksey.ilyushin@oracle.com $ */
 /** @file
  * VBoxManage - The bandwidth control related commands.
  */
@@ -81,8 +81,8 @@ static const char *parseLimit(const char *pcszLimit, LONG64 *pLimit)
         default:
             return "Invalid limit specifier\n";
     }
-    if (*pLimit <= 0)
-        return "Limit must be positive\n";
+    if (*pLimit < 0)
+        return "Limit cannot be negative\n";
     if (*pLimit > INT64_MAX / iMultiplier)
         return "Limit is too big\n";
     *pLimit *= iMultiplier;
