@@ -1,4 +1,4 @@
-/* $Id: IOMAll.cpp 78807 2012-06-27 23:59:46Z knut.osmundsen@oracle.com $ */
+/* $Id: IOMAll.cpp 78808 2012-06-28 00:07:43Z knut.osmundsen@oracle.com $ */
 /** @file
  * IOM - Input / Output Monitor - Any Context.
  */
@@ -852,7 +852,7 @@ VMMDECL(VBOXSTRICTRC) IOMInterpretCheckPortIOAccess(PVM pVM, PCPUMCTXCORE pCtxCo
     /*
      * If this isn't ring-0, we have to check for I/O privileges.
      */
-    uint32_t efl = CPUMRawGetEFlags(pVCpu, pCtxCore);
+    uint32_t efl = CPUMRawGetEFlags(pVCpu);
     uint32_t cpl = CPUMGetGuestCPL(pVCpu);
 
     if (    (    cpl > 0
