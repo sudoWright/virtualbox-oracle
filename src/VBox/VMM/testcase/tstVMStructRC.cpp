@@ -1,4 +1,4 @@
-/* $Id: tstVMStructRC.cpp 77914 2012-05-11 20:18:18Z knut.osmundsen@oracle.com $ */
+/* $Id: tstVMStructRC.cpp 78835 2012-06-29 02:52:49Z knut.osmundsen@oracle.com $ */
 /** @file
  * tstVMMStructRC - Generate structure member and size checks from the
  *                  RC perspective.

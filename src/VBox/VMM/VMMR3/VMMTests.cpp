@@ -1,4 +1,4 @@
-/* $Id: VMMTests.cpp 78796 2012-06-27 16:12:16Z knut.osmundsen@oracle.com $ */
+/* $Id: VMMTests.cpp 78835 2012-06-29 02:52:49Z knut.osmundsen@oracle.com $ */
 /** @file
  * VMM - The Virtual Machine Monitor Core, Tests.
  */

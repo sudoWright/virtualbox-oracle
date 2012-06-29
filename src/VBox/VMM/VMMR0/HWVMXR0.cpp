@@ -1,4 +1,4 @@
-/* $Id: HWVMXR0.cpp 78807 2012-06-27 23:59:46Z knut.osmundsen@oracle.com $ */
+/* $Id: HWVMXR0.cpp 78835 2012-06-29 02:52:49Z knut.osmundsen@oracle.com $ */
 /** @file
  * HM VMX (VT-x) - Host Context Ring-0.
  */

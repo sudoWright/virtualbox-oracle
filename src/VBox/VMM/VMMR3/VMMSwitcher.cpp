@@ -1,4 +1,4 @@
-/* $Id: VMMSwitcher.cpp 78801 2012-06-27 18:37:33Z knut.osmundsen@oracle.com $ */
+/* $Id: VMMSwitcher.cpp 78835 2012-06-29 02:52:49Z knut.osmundsen@oracle.com $ */
 /** @file
  * VMM - The Virtual Machine Monitor, World Switcher(s).
  */

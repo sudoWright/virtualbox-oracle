@@ -1,4 +1,4 @@
-/* $Id: tstAsmStructs.cpp 77772 2012-05-03 23:33:24Z knut.osmundsen@oracle.com $ */
+/* $Id: tstAsmStructs.cpp 78835 2012-06-29 02:52:49Z knut.osmundsen@oracle.com $ */
 /** @file
  * Testcase for checking offsets in the assembly structures shared with C/C++.
  */

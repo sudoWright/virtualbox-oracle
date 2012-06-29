@@ -1,4 +1,4 @@
-/* $Id: VMMRCDeps.cpp 69195 2010-12-27 12:34:40Z knut.osmundsen@oracle.com $ */
+/* $Id: VMMRCDeps.cpp 78835 2012-06-29 02:52:49Z knut.osmundsen@oracle.com $ */
 /** @file
  * VMMGC Runtime Dependencies.
  */

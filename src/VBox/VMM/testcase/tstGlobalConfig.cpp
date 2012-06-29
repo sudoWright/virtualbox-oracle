@@ -1,4 +1,4 @@
-/* $Id: tstGlobalConfig.cpp 73843 2011-09-05 13:49:45Z knut.osmundsen@oracle.com $ */
+/* $Id: tstGlobalConfig.cpp 78835 2012-06-29 02:52:49Z knut.osmundsen@oracle.com $ */
 /** @file
  * Ring-3 Management program for the GCFGM mock-up.
  */

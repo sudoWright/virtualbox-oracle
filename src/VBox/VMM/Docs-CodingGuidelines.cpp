@@ -1,4 +1,4 @@
-/* $Id: Docs-CodingGuidelines.cpp 69210 2010-12-27 16:57:10Z knut.osmundsen@oracle.com $ */
+/* $Id: Docs-CodingGuidelines.cpp 78835 2012-06-29 02:52:49Z knut.osmundsen@oracle.com $ */
 /** @file
  * VMM - Coding Guidelines.
  */
