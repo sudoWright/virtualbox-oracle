@@ -1,4 +1,4 @@
-/* $Id: slirp_dns.c 78852 2012-07-02 09:16:39Z noreply@oracle.com $ */
+/* $Id: slirp_dns.c 78853 2012-07-02 09:20:28Z noreply@oracle.com $ */
 /** @file
  * NAT - dns initialization.
  */
@@ -26,6 +26,10 @@
 #include <iprt/file.h>
 
 #ifdef RT_OS_WINDOWS
+# include <Winnls.h>
+# define _WINSOCK2API_
+# include <IPHlpApi.h>
+
 static int get_dns_addr_domain(PNATState pData,
                                const char **ppszDomain)
 {
