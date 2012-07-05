@@ -1,4 +1,4 @@
-/* $Id: HWSVMR0.cpp 78835 2012-06-29 02:52:49Z knut.osmundsen@oracle.com $ */
+/* $Id: HWSVMR0.cpp 78914 2012-07-05 12:10:53Z ramshankar.venkataraman@oracle.com $ */
 /** @file
  * HM SVM (AMD-V) - Host Context Ring-0.
  */
@@ -2218,7 +2218,7 @@ ResumeExecution:
     case SVM_EXIT_RDTSCP:                /* Guest software attempted to execute RDTSCP. */
     {
         Log2(("SVM: Rdtscp\n"));
-        STAM_COUNTER_INC(&pVCpu->hwaccm.s.StatExitRdtsc);
+        STAM_COUNTER_INC(&pVCpu->hwaccm.s.StatExitRdtscp);
         rc = EMInterpretRdtscp(pVM, pVCpu, pCtx);
         if (rc == VINF_SUCCESS)
         {
