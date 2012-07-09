@@ -1,4 +1,4 @@
-; $Id: support.asm 78460 2012-06-11 15:15:09Z michal.necasek@oracle.com $
+; $Id: support.asm 78976 2012-07-09 12:54:37Z knut.osmundsen@oracle.com $
 ;; @file
 ; Compiler support routines.
 ;

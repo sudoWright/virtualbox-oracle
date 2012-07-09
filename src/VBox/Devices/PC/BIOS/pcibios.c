@@ -1,4 +1,4 @@
-/* $Id: pcibios.c 78922 2012-07-05 15:58:14Z michal.necasek@oracle.com $ */
+/* $Id: pcibios.c 78976 2012-07-09 12:54:37Z knut.osmundsen@oracle.com $ */
 /** @file
  * PCI BIOS support.
  */

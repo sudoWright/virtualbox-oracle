@@ -1,4 +1,4 @@
-/* $Id: scsi.c 78306 2012-06-01 13:33:40Z noreply@oracle.com $ */
+/* $Id: scsi.c 78976 2012-07-09 12:54:37Z knut.osmundsen@oracle.com $ */
 /** @file
  * SCSI host adapter driver to boot from SCSI disks
  */
