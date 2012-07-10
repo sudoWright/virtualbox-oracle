@@ -1,10 +1,10 @@
-/* $Id: ctl.h 78840 2012-06-29 05:55:17Z noreply@oracle.com $ */
+/* $Id: ctl.h 79006 2012-07-10 05:02:49Z noreply@oracle.com $ */
 /** @file
  * NAT - IP subnet constants.
  */
 
 /*
- * Copyright (C) 2006-2010 Oracle Corporation
+ * Copyright (C) 2006-2012 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;
