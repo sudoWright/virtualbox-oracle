@@ -1,5 +1,5 @@
 
-/* $Id: GuestDirectoryImpl.cpp 79025 2012-07-10 10:17:20Z andreas.loeffler@oracle.com $ */
+/* $Id: GuestDirectoryImpl.cpp 79039 2012-07-10 12:58:13Z andreas.loeffler@oracle.com $ */
 /** @file
  * VirtualBox Main - XXX.
  */
@@ -34,7 +34,7 @@
 
 DEFINE_EMPTY_CTOR_DTOR(GuestDirectory)
 
-HRESULT GuestDirectory::FinalConstruct()
+HRESULT GuestDirectory::FinalConstruct(void)
 {
     LogFlowThisFunc(("\n"));
     return BaseFinalConstruct();
