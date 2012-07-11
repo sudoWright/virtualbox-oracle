@@ -1,5 +1,5 @@
 
-/* $Id: GuestProcessImpl.cpp 79053 2012-07-11 11:53:22Z andreas.loeffler@oracle.com $ */
+/* $Id: GuestProcessImpl.cpp 79054 2012-07-11 12:08:25Z andreas.loeffler@oracle.com $ */
 /** @file
  * VirtualBox Main - XXX.
  */
@@ -66,7 +66,7 @@ int GuestProcess::init(GuestSession *pSession,
     if (RT_SUCCESS(rc))
         autoInitSpan.setSucceeded();
 
-    return S_OK;
+    return rc;
 }
 
 /**
