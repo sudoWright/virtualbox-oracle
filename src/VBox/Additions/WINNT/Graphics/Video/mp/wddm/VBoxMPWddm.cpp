@@ -1,5 +1,4 @@
-/* $Id: VBoxMPWddm.cpp 79122 2012-07-13 16:45:06Z noreply@oracle.com $ */
-
+/* $Id: VBoxMPWddm.cpp 79125 2012-07-13 23:00:53Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox WDDM Miniport driver
  */
