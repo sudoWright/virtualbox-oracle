@@ -1,4 +1,4 @@
-/* $Id: IEMAll.cpp 78807 2012-06-27 23:59:46Z knut.osmundsen@oracle.com $ */
+/* $Id: IEMAll.cpp 79144 2012-07-16 13:36:01Z knut.osmundsen@oracle.com $ */
 /** @file
  * IEM - Interpreted Execution Manager - All Contexts.
  */
@@ -628,6 +628,7 @@ DECLINLINE(void) iemInitDecoder(PIEMCPU pIemCpu)
 {
     PCPUMCTX pCtx = pIemCpu->CTX_SUFF(pCtx);
 
+    CPUMGuestLazyLoadHiddenCsAndSs(IEMCPU_TO_VMCPU(pIemCpu));
     pIemCpu->uCpl               = CPUMGetGuestCPL(IEMCPU_TO_VMCPU(pIemCpu));
     IEMMODE enmMode = CPUMIsGuestIn64BitCodeEx(pCtx)
                     ? IEMMODE_64BIT
