@@ -1,4 +1,4 @@
-# $Id: Makefile 71955 2011-05-27 13:31:57Z knut.osmundsen@oracle.com $
+# $Id: Makefile 79403 2012-07-23 15:29:57Z noreply@oracle.com $
 ## @file
 # VirtualBox Guest Additions Module Makefile.
 #
@@ -145,6 +145,7 @@ SRCS += \
 	semevent-r0drv-freebsd.c \
 	semeventmulti-r0drv-freebsd.c \
 	semfastmutex-r0drv-freebsd.c \
+	semmutex-r0drv-freebsd.c \
 	spinlock-r0drv-freebsd.c \
 	thread-r0drv-freebsd.c \
 	thread2-r0drv-freebsd.c \
