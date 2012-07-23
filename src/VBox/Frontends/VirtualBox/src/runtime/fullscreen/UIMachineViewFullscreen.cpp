@@ -1,4 +1,4 @@
-/* $Id: UIMachineViewFullscreen.cpp 78496 2012-06-13 17:13:36Z sergey.dubov@oracle.com $ */
+/* $Id: UIMachineViewFullscreen.cpp 79386 2012-07-23 09:27:05Z noreply@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt GUI ("VirtualBox"):
@@ -66,6 +66,9 @@ UIMachineViewFullscreen::UIMachineViewFullscreen(  UIMachineWindow *pMachineWind
 
     /* Prepare event-filters: */
     prepareFilters();
+
+    /* Prepare connections: */
+    prepareConnections();
 
     /* Prepare console connections: */
     prepareConsoleConnections();
