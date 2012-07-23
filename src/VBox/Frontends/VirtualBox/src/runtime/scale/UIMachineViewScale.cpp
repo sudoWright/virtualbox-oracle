@@ -1,4 +1,4 @@
-/* $Id: UIMachineViewScale.cpp 79386 2012-07-23 09:27:05Z noreply@oracle.com $ */
+/* $Id: UIMachineViewScale.cpp 79395 2012-07-23 12:33:32Z noreply@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt GUI ("VirtualBox"):
@@ -52,29 +52,6 @@ UIMachineViewScale::UIMachineViewScale(  UIMachineWindow *pMachineWindow
                     )
     , m_pPauseImage(0)
 {
-    /* Load machine view settings: */
-    loadMachineViewSettings();
-
-    /* Prepare viewport: */
-    prepareViewport();
-
-    /* Prepare frame buffer: */
-    prepareFrameBuffer();
-
-    /* Prepare common things: */
-    prepareCommon();
-
-    /* Prepare event-filters: */
-    prepareFilters();
-
-    /* Prepare connections: */
-    prepareConnections();
-
-    /* Prepare console connections: */
-    prepareConsoleConnections();
-
-    /* Initialization: */
-    sltMachineStateChanged();
 }
 
 UIMachineViewScale::~UIMachineViewScale()
