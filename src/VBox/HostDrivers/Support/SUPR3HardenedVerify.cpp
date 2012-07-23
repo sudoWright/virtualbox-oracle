@@ -1,4 +1,4 @@
-/* $Id: SUPR3HardenedVerify.cpp 76669 2012-03-06 08:23:32Z noreply@oracle.com $ */
+/* $Id: SUPR3HardenedVerify.cpp 79404 2012-07-23 15:51:05Z noreply@oracle.com $ */
 /** @file
  * VirtualBox Support Library - Verification of Hardened Installation.
  */
@@ -131,6 +131,9 @@ static SUPINSTFILE const    g_aSupInstallFiles[] =
 //#endif
 //#ifdef VBOX_WITH_SHARED_FOLDERS
     {   kSupIFT_Dll,  kSupID_AppPrivArch,        true, "VBoxSharedFolders" SUPLIB_DLL_SUFF },
+//#endif
+//#ifdef VBOX_WITH_DRAG_AND_DROP
+    {   kSupIFT_Dll,  kSupID_AppPrivArch,        true, "VBoxDragAndDropSvc" SUPLIB_DLL_SUFF },
 //#endif
 //#ifdef VBOX_WITH_GUEST_PROPS
     {   kSupIFT_Dll,  kSupID_AppPrivArch,        true, "VBoxGuestPropSvc" SUPLIB_DLL_SUFF },
