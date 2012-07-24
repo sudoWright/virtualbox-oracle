@@ -1,4 +1,4 @@
-/* $Id: GuestCtrlPrivate.cpp 79433 2012-07-24 12:13:00Z andreas.loeffler@oracle.com $ */
+/* $Id: GuestCtrlPrivate.cpp 79435 2012-07-24 12:26:37Z noreply@oracle.com $ */
 /** @file
  *
  * Internal helpers/structures for guest control functionality.
@@ -62,7 +62,7 @@ int GuestCtrlEvent::Cancel(void)
         }
     }
 
-    LogFlowThisFuncLeave(rc);
+    LogFlowThisFuncLeaveRC(rc);
     return rc;
 }
 
