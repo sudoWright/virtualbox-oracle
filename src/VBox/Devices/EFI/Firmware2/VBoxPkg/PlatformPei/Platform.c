@@ -1,4 +1,4 @@
-/* $Id: Platform.c 79496 2012-07-26 07:04:37Z noreply@oracle.com $ */
+/* $Id: Platform.c 79497 2012-07-26 08:22:51Z noreply@oracle.com $ */
 /** @file
  * Platform.c
  */
@@ -119,6 +119,7 @@ AddRomMemoryBaseSizeHob (
     (
       EFI_RESOURCE_ATTRIBUTE_PRESENT     |
       EFI_RESOURCE_ATTRIBUTE_WRITE_PROTECTED |
+      EFI_RESOURCE_ATTRIBUTE_WRITE_PROTECTABLE |
       EFI_RESOURCE_ATTRIBUTE_INITIALIZED |
       EFI_RESOURCE_ATTRIBUTE_UNCACHEABLE
     );
