@@ -1,4 +1,4 @@
-/* $Id: UINetworkManagerDialog.cpp 78199 2012-05-28 10:22:45Z sergey.dubov@oracle.com $ */
+/* $Id: UINetworkManagerDialog.cpp 79696 2012-08-02 10:31:28Z sergey.dubov@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt GUI ("VirtualBox"):

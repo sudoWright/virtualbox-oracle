@@ -1,4 +1,4 @@
-/* $Id: QIProcess.cpp 78374 2012-06-06 06:15:39Z sergey.dubov@oracle.com $ */
+/* $Id: QIProcess.cpp 79696 2012-08-02 10:31:28Z sergey.dubov@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt GUI ("VirtualBox"):

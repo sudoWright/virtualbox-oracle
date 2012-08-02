@@ -1,4 +1,4 @@
-/* $Id: UINetworkRequestWidget.cpp 78169 2012-05-24 16:37:17Z sergey.dubov@oracle.com $ */
+/* $Id: UINetworkRequestWidget.cpp 79696 2012-08-02 10:31:28Z sergey.dubov@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt GUI ("VirtualBox"):

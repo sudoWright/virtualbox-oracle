@@ -1,4 +1,4 @@
-/* $Id: UIMediumDefs.cpp 78453 2012-06-11 13:12:44Z noreply@oracle.com $ */
+/* $Id: UIMediumDefs.cpp 79696 2012-08-02 10:31:28Z sergey.dubov@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt GUI ("VirtualBox"):
