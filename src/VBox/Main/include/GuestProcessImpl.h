@@ -1,5 +1,5 @@
 
-/* $Id: GuestProcessImpl.h 79798 2012-08-06 08:42:23Z andreas.loeffler@oracle.com $ */
+/* $Id: GuestProcessImpl.h 79830 2012-08-06 17:29:38Z andreas.loeffler@oracle.com $ */
 /** @file
  * VirtualBox Main - XXX.
  */
@@ -76,6 +76,7 @@ public:
     void close(void);
     bool isReady(void);
     ULONG getPID(void) { return mData.mPID; }
+    ULONG getProcessID(void) { return mData.mProcessID; }
     int readData(uint32_t uHandle, uint32_t uSize, uint32_t uTimeoutMS, void *pvData, size_t cbData, size_t *pcbRead);
     int startProcess(void);
     int startProcessAsync(void);
