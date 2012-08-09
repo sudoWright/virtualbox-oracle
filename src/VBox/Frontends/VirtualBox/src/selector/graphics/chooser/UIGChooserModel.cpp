@@ -1,4 +1,4 @@
-/* $Id: UIGChooserModel.cpp 79931 2012-08-09 18:26:14Z sergey.dubov@oracle.com $ */
+/* $Id: UIGChooserModel.cpp 79943 2012-08-09 23:51:30Z sergey.dubov@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt GUI ("VirtualBox"):
@@ -340,7 +340,7 @@ void UIGChooserModel::setFocusItem(UIGChooserItem *pItem, bool fWithSelection /*
         /* Update previous focus item (if any): */
         if (pPreviousFocusItem)
         {
-            pPreviousFocusItem->disconnect(this);
+            disconnect(pPreviousFocusItem, SIGNAL(destroyed(QObject*)), this, SLOT(sltFocusItemDestroyed()));
             pPreviousFocusItem->update();
         }
         /* Update new focus item (if any): */
