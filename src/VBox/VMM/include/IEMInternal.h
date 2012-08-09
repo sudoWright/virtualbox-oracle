@@ -1,4 +1,4 @@
-/* $Id: IEMInternal.h 79860 2012-08-07 14:12:04Z knut.osmundsen@oracle.com $ */
+/* $Id: IEMInternal.h 79910 2012-08-09 08:03:21Z knut.osmundsen@oracle.com $ */
 /** @file
  * IEM - Internal header file.
  */
@@ -204,7 +204,7 @@ typedef struct IEMCPU
     int32_t                 offVM;
 
     /** Whether to bypass access handlers or not. */
-    bool                    fByPassHandlers;
+    bool                    fBypassHandlers;
     /** Explicit alignment padding. */
     bool                    afAlignment0[3];
 
