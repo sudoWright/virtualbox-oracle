@@ -1,4 +1,4 @@
-/* $Id: DBGFBp.cpp 78835 2012-06-29 02:52:49Z knut.osmundsen@oracle.com $ */
+/* $Id: DBGFBp.cpp 80090 2012-08-16 00:23:20Z noreply@oracle.com $ */
 /** @file
  * DBGF - Debugger Facility, Breakpoint Management.
  */
@@ -79,6 +79,12 @@ int dbgfR3BpInit(PVM pVM)
     {
         pVM->dbgf.s.aBreakpoints[i].iBp = i + RT_ELEMENTS(pVM->dbgf.s.aHwBreakpoints);
         pVM->dbgf.s.aBreakpoints[i].enmType = DBGFBPTYPE_FREE;
+    }
+
+    for (VMCPUID idCpu = 0; idCpu < pVM->cCpus; idCpu++)
+    {
+        PVMCPU pVCpu = &pVM->aCpus[idCpu];
+        pVCpu->dbgf.s.iActiveBp = ~0U;
     }
 
     /*
