@@ -1,4 +1,4 @@
-/* $Id: UIVMDesktop.cpp 79696 2012-08-02 10:31:28Z sergey.dubov@oracle.com $ */
+/* $Id: UIVMDesktop.cpp 80117 2012-08-16 18:36:24Z sergey.dubov@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt GUI ("VirtualBox"):
@@ -2058,11 +2058,15 @@ void UIVMDesktop::updateSnapshots(UIVMItem *pVMItem, const CMachine& machine)
     {
         m_pHeaderBtn->setEnabled(Snap, true);
         m_pSnapshotsPage->setMachine(machine);
-    } else
-    {
-        m_pHeaderBtn->animateClick(Dtls);
-        m_pHeaderBtn->setEnabled(Snap, false);
     }
+    else
+        lockSnapshots();
+}
+
+void UIVMDesktop::lockSnapshots()
+{
+    m_pHeaderBtn->animateClick(Dtls);
+    m_pHeaderBtn->setEnabled(Snap, false);
 }
 
 int UIVMDesktop::widgetIndex() const
