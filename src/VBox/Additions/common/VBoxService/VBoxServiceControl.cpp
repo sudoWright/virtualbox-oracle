@@ -1,4 +1,4 @@
-/* $Id: VBoxServiceControl.cpp 80104 2012-08-16 13:35:28Z andreas.loeffler@oracle.com $ */
+/* $Id: VBoxServiceControl.cpp 80246 2012-08-22 18:58:22Z noreply@oracle.com $ */
 /** @file
  * VBoxServiceControl - Host-driven Guest Control.
  */
@@ -318,7 +318,7 @@ DECLCALLBACK(int) VBoxServiceControlWorker(bool volatile *pfShutdown)
 
         /* Do we need to shutdown? */
         if (   *pfShutdown
-            || uMsg == HOST_CANCEL_PENDING_WAITS)
+            || (RT_SUCCESS(rc) && uMsg == HOST_CANCEL_PENDING_WAITS))
         {
             rc = VINF_SUCCESS;
             break;
