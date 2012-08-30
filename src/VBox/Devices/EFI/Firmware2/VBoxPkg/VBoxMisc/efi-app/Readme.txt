@@ -1,4 +1,4 @@
-# $Id: Readme.txt 67140 2010-10-28 09:27:05Z noreply@oracle.com $ */
+# $Id: Readme.txt 80495 2012-08-30 20:27:50Z klaus.espenlaub@oracle.com $ */
 #* @file
 # Readme.txt - Some description about using this module.
 
