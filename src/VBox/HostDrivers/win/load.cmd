@@ -1,5 +1,5 @@
 @echo off
-rem $Id: load.cmd 78668 2012-06-20 07:34:27Z knut.osmundsen@oracle.com $
+rem $Id: load.cmd 80509 2012-08-31 12:25:53Z klaus.espenlaub@oracle.com $
 rem rem @file
 rem Windows NT batch script for launching load.sh
 rem

@@ -1,5 +1,5 @@
 @echo off
-rem $Id: loadall.cmd 77329 2012-04-07 19:20:23Z knut.osmundsen@oracle.com $
+rem $Id: loadall.cmd 80509 2012-08-31 12:25:53Z klaus.espenlaub@oracle.com $
 rem rem @file
 rem Windows NT batch script for launching loadall.sh
 rem
