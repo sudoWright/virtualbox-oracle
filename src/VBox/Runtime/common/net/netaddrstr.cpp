@@ -1,4 +1,4 @@
-/* $Id: RTStrIPv6.cpp 80610 2012-09-06 10:13:14Z knut.osmundsen@oracle.com $ */
+/* $Id: netaddrstr.cpp 80611 2012-09-06 10:16:14Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Network Address String Handling.
  */
