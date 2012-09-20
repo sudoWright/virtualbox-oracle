@@ -1,4 +1,4 @@
-/* $Id: initterm-r0drv-haiku.c 80827 2012-09-20 09:56:07Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: initterm-r0drv-haiku.c 80830 2012-09-20 12:31:54Z ramshankar.venkataraman@oracle.com $ */
 /** @file
  * IPRT - Initialization & Termination, R0 Driver, Haiku.
  */
@@ -38,7 +38,7 @@
 
 int rtR0InitNative(void)
 {
-	return VINF_SUCCESS;
+    return VINF_SUCCESS;
 }
 
 
