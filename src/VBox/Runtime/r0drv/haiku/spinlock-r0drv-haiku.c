@@ -1,4 +1,4 @@
-/* $Id: spinlock-r0drv-haiku.c 80830 2012-09-20 12:31:54Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: spinlock-r0drv-haiku.c 80889 2012-09-22 11:48:24Z ramshankar.venkataraman@oracle.com $ */
 /** @file
  * IPRT - Spinlocks, Ring-0 Driver, Haiku.
  */
@@ -143,3 +143,4 @@ RTDECL(void) RTSpinlockReleaseNoInts(RTSPINLOCK Spinlock)
         RTAssertMsg2("RTSpinlockReleaseNoInts: p=%p (magic=%#x)\n", Spinlock, Spinlock->u32Magic);
     RTSpinlockRelease(Spinlock);
 }
+

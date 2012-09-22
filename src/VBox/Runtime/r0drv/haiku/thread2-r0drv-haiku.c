@@ -1,4 +1,4 @@
-/* $Id: thread2-r0drv-haiku.c 80830 2012-09-20 12:31:54Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: thread2-r0drv-haiku.c 80889 2012-09-22 11:48:24Z ramshankar.venkataraman@oracle.com $ */
 /** @file
  * IPRT - Threads (Part 2), Ring-0 Driver, Haiku.
  */
@@ -128,3 +128,4 @@ int rtThreadNativeCreate(PRTTHREADINT pThreadInt, PRTNATIVETHREAD pNativeThread)
     }
     return RTErrConvertFromHaikuKernReturn(NativeThread);
 }
+
