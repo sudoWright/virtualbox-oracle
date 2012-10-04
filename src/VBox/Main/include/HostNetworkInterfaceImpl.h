@@ -1,4 +1,4 @@
-/* $Id: HostNetworkInterfaceImpl.h 81089 2012-10-02 13:22:31Z aleksey.ilyushin@oracle.com $ */
+/* $Id: HostNetworkInterfaceImpl.h 81139 2012-10-04 12:24:20Z aleksey.ilyushin@oracle.com $ */
 
 /** @file
  *
@@ -87,6 +87,7 @@ private:
     const Bstr mInterfaceName;
     const Guid mGuid;
     const Bstr mNetworkName;
+    const Bstr mShortName;
     HostNetworkInterfaceType_T mIfType;
 
     VirtualBox * const  mVBox;
@@ -109,7 +110,7 @@ private:
         Bstr hardwareAddress;
         HostNetworkInterfaceMediumType_T mediumType;
         HostNetworkInterfaceStatus_T status;
-        ULONG speedMbytes;
+        ULONG speedMbits;
     } m;
 
 };
