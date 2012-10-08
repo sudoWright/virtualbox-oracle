@@ -1,4 +1,4 @@
-/* $Id: UIGChooserModel.cpp 81195 2012-10-08 11:12:35Z sergey.dubov@oracle.com $ */
+/* $Id: UIGChooserModel.cpp 81196 2012-10-08 11:20:40Z sergey.dubov@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt GUI ("VirtualBox"):
@@ -502,7 +502,7 @@ QString UIGChooserModel::uniqueGroupName(UIGChooserItem *pRoot)
     return strResult;
 }
 
-void UIGChooserModel::startEditing()
+void UIGChooserModel::startEditingGroupItemName()
 {
     sltStartEditingSelectedGroup();
 }
@@ -512,7 +512,7 @@ void UIGChooserModel::updateGroupTree()
     updateGroupTree(mainRoot());
 }
 
-void UIGChooserModel::activate()
+void UIGChooserModel::activateMachineItem()
 {
     gActionPool->action(UIActionIndexSelector_State_Common_StartOrShow)->activate(QAction::Trigger);
 }
