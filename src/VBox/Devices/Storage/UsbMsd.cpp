@@ -1,4 +1,4 @@
-/* $Id: UsbMsd.cpp 81762 2012-10-31 18:30:35Z michal.necasek@oracle.com $ */
+/* $Id: UsbMsd.cpp 81765 2012-10-31 21:08:52Z michal.necasek@oracle.com $ */
 /** @file
  * UsbMSD - USB Mass Storage Device Emulation.
  */
@@ -1142,7 +1142,7 @@ static int usbMsdHandleBulkHostToDev(PUSBMSD pThis, PUSBMSDEP pEp, PVUSBURB pUrb
                 }
             }
 
-            return usbMsdCompleteOk(pThis, pUrb, 0);
+            return usbMsdCompleteOk(pThis, pUrb, pUrb->cbData);
         }
 
         /*
