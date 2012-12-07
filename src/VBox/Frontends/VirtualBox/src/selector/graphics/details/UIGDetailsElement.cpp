@@ -1,4 +1,4 @@
-/* $Id: UIGDetailsElement.cpp 82546 2012-12-07 13:43:35Z sergey.dubov@oracle.com $ */
+/* $Id: UIGDetailsElement.cpp 82550 2012-12-07 15:10:02Z sergey.dubov@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt GUI ("VirtualBox"):
@@ -565,9 +565,11 @@ void UIGDetailsElement::paintElementInfo(QPainter *pPainter, const QStyleOptionG
     paintText(/* Painter: */
               pPainter,
               /* Rectangle to paint in: */
-              QRect(QPoint(iMachineNameX, iMachineNameY), m_nameSize),
+              QPoint(iMachineNameX, iMachineNameY),
               /* Font to paint text: */
               m_nameFont,
+              /* Paint device: */
+              model()->paintDevice(),
               /* Text to paint: */
               m_strName,
               /* Name hovered? */
