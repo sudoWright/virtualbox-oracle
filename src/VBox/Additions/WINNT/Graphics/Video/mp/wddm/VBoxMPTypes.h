@@ -1,4 +1,4 @@
-/* $Id: VBoxMPTypes.h 81049 2012-10-01 11:55:58Z noreply@oracle.com $ */
+/* $Id: VBoxMPTypes.h 83277 2013-01-22 18:54:28Z noreply@oracle.com $ */
 
 /** @file
  * VBox WDDM Miniport driver
@@ -110,7 +110,7 @@ typedef struct VBOXWDDM_SOURCE
 #endif
     VBOXWDDM_ALLOC_DATA AllocData;
     BOOLEAN bVisible;
-    BOOLEAN bGhSynced;
+    char fGhSynced;
     VBOXVBVAINFO Vbva;
 #ifdef VBOX_WITH_VIDEOHWACCEL
     /* @todo: in our case this seems more like a target property,
