@@ -1,4 +1,4 @@
-﻿/* $Id: PDMAllNetShaper.cpp 83324 2013-01-24 15:32:12Z knut.osmundsen@oracle.com $ */
+/* $Id: PDMAllNetShaper.cpp 83326 2013-01-24 17:12:12Z knut.osmundsen@oracle.com $ */
 /** @file
  * PDM Network Shaper - Limit network traffic according to bandwidth group settings.
  */
