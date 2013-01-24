@@ -1,4 +1,4 @@
-/* $Id: tstVMM.cpp 83296 2013-01-23 16:20:07Z knut.osmundsen@oracle.com $ */
+/* $Id: tstVMM.cpp 83305 2013-01-24 00:27:56Z knut.osmundsen@oracle.com $ */
 /** @file
  * VMM Testcase.
  */
@@ -234,7 +234,7 @@ int main(int argc, char **argv)
                 return 1;
 
             case 'V':
-                RTPrintf("$Revision: 83296 $\n");
+                RTPrintf("$Revision: 83305 $\n");
                 return 0;
 
             default:
@@ -286,7 +286,7 @@ int main(int argc, char **argv)
             }
         }
 
-        STAMR3Dump(pVM, "*");
+        STAMR3Dump(pUVM, "*");
 
         /*
          * Cleanup.
