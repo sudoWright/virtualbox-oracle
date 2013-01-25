@@ -1,4 +1,4 @@
-/* $Id: log.cpp 79784 2012-08-05 13:46:40Z knut.osmundsen@oracle.com $ */
+/* $Id: log.cpp 83338 2013-01-25 11:18:35Z knut.osmundsen@oracle.com $ */
 /** @file
  * Runtime VBox - Logger.
  */
@@ -1492,6 +1492,7 @@ static unsigned rtlogGroupFlags(const char *psz)
                 }
             } /* strincmp */
         } /* for each flags */
+        AssertMsg(fFound, ("%.15s...", psz));
     }
 
     /*
