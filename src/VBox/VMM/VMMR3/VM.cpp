@@ -1,4 +1,4 @@
-/* $Id: VM.cpp 83373 2013-01-27 21:12:53Z knut.osmundsen@oracle.com $ */
+/* $Id: VM.cpp 83375 2013-01-27 22:44:54Z knut.osmundsen@oracle.com $ */
 /** @file
  * VM - Virtual Machine
  */
@@ -2402,9 +2402,9 @@ DECLCALLBACK(int) vmR3Destroy(PVM pVM)
         AssertRC(rc);
         rc = FTMR3Term(pVM);
         AssertRC(rc);
-        rc = DBGFR3Term(pVM);
-        AssertRC(rc);
         rc = PDMR3Term(pVM);
+        AssertRC(rc);
+        rc = DBGFR3Term(pVM);
         AssertRC(rc);
         rc = IEMR3Term(pVM);
         AssertRC(rc);
