@@ -1,4 +1,4 @@
-/* $Id: UIKeyboardHandlerFullscreen.cpp 83417 2013-01-28 16:48:34Z sergey.dubov@oracle.com $ */
+/* $Id: UIKeyboardHandlerFullscreen.cpp 83419 2013-01-28 18:21:14Z sergey.dubov@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt GUI ("VirtualBox"):
@@ -25,7 +25,7 @@
 /* Local includes */
 #include "UIKeyboardHandlerFullscreen.h"
 #include "UIMachineWindow.h"
-#include "UIShortcuts.h"
+#include "UIShortcutPool.h"
 
 /* Fullscreen keyboard-handler constructor: */
 UIKeyboardHandlerFullscreen::UIKeyboardHandlerFullscreen(UIMachineLogic* pMachineLogic)
