@@ -1,4 +1,4 @@
-/* $Id: SSMInternal.h 69206 2010-12-27 16:13:13Z knut.osmundsen@oracle.com $ */
+/* $Id: SSMInternal.h 83541 2013-02-01 10:26:12Z knut.osmundsen@oracle.com $ */
 /** @file
  * SSM - Internal header file.
  */
@@ -199,6 +199,8 @@ typedef struct SSMUNIT
     /** The offset of the final data unit.
      * This is used for constructing the directory. */
     RTFOFF                  offStream;
+    /** Critical section to be taken before working any of the callbacks. */
+    PPDMCRITSECT            pCritSect;
     /** The guessed size of the data unit - used only for progress indication. */
     size_t                  cbGuess;
     /** Name size. (bytes) */
