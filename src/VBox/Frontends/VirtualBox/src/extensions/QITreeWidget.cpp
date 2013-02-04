@@ -1,4 +1,4 @@
-/* $Id: QITreeWidget.cpp 72456 2011-06-23 12:26:14Z sergey.dubov@oracle.com $ */
+/* $Id: QITreeWidget.cpp 83575 2013-02-04 14:27:54Z noreply@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt GUI ("VirtualBox"):
@@ -6,7 +6,7 @@
  */
 
 /*
- * Copyright (C) 2008-2009 Oracle Corporation
+ * Copyright (C) 2008-2011 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

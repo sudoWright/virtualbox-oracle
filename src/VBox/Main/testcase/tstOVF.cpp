@@ -1,11 +1,11 @@
-/* $Id: tstOVF.cpp 73843 2011-09-05 13:49:45Z knut.osmundsen@oracle.com $ */
+/* $Id: tstOVF.cpp 83575 2013-02-04 14:27:54Z noreply@oracle.com $ */
 /** @file
  *
  * tstOVF - testcases for OVF import and export
  */
 
 /*
- * Copyright (C) 2010 Oracle Corporation
+ * Copyright (C) 2011 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

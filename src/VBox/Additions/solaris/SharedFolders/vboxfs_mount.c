@@ -1,4 +1,4 @@
-/* $Id: vboxfs_mount.c 74494 2011-10-21 10:21:11Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: vboxfs_mount.c 83575 2013-02-04 14:27:54Z noreply@oracle.com $ */
 /** @file
  * VirtualBox File System Mount Helper, Solaris host.
  * Userspace mount wrapper that parses mount (or user-specified) options
@@ -6,7 +6,7 @@
  */
 
 /*
- * Copyright (C) 2009-2010 Oracle Corporation
+ * Copyright (C) 2009-2011 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

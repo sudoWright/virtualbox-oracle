@@ -1,10 +1,10 @@
-/* $Id: VBoxMouseLog.h 79124 2012-07-13 20:02:41Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxMouseLog.h 83575 2013-02-04 14:27:54Z noreply@oracle.com $ */
 /** @file
  * VBox Mouse drivers, logging helper
  */
 
 /*
- * Copyright (C) 2011 Oracle Corporation
+ * Copyright (C) 2012 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

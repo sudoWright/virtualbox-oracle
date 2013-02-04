@@ -1,4 +1,4 @@
-/* $Id: vl_vbox.h 74523 2011-10-24 13:58:22Z knut.osmundsen@oracle.com $ */
+/* $Id: vl_vbox.h 83575 2013-02-04 14:27:54Z noreply@oracle.com $ */
 /** @file
  * VBox vl.h Replacement.
  *
@@ -6,7 +6,7 @@
  */
 
 /*
- * Copyright (C) 2006-2007 Oracle Corporation
+ * Copyright (C) 2006-2011 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

@@ -1,9 +1,9 @@
-; $Id: PATMA.asm 76118 2012-02-06 11:16:59Z noreply@oracle.com $
+; $Id: PATMA.asm 83575 2013-02-04 14:27:54Z noreply@oracle.com $
 ;; @file
 ; PATM Assembly Routines.
 ;
 
-; Copyright (C) 2006-2007 Oracle Corporation
+; Copyright (C) 2006-2012 Oracle Corporation
 ;
 ; This file is part of VirtualBox Open Source Edition (OSE), as
 ; available from http://www.virtualbox.org. This file is free software;

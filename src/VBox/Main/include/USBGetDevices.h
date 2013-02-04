@@ -1,10 +1,10 @@
-/* $Id: USBGetDevices.h 72470 2011-06-24 08:57:35Z noreply@oracle.com $ */
+/* $Id: USBGetDevices.h 83575 2013-02-04 14:27:54Z noreply@oracle.com $ */
 /** @file
  * VirtualBox Linux host USB device enumeration.
  */
 
 /*
- * Copyright (C) 2006-2010 Oracle Corporation
+ * Copyright (C) 2006-2011 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

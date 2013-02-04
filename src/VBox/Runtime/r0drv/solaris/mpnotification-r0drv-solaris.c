@@ -1,10 +1,10 @@
-/* $Id: mpnotification-r0drv-solaris.c 77523 2012-04-17 17:35:53Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: mpnotification-r0drv-solaris.c 83575 2013-02-04 14:27:54Z noreply@oracle.com $ */
 /** @file
  * IPRT - Multiprocessor Event Notifications, Ring-0 Driver, Solaris.
  */
 
 /*
- * Copyright (C) 2008 Oracle Corporation
+ * Copyright (C) 2012 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

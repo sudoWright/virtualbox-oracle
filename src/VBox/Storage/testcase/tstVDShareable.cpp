@@ -1,10 +1,10 @@
-/* $Id: tstVDShareable.cpp 75392 2011-12-14 14:19:55Z noreply@oracle.com $ */
+/* $Id: tstVDShareable.cpp 83575 2013-02-04 14:27:54Z noreply@oracle.com $ */
 /** @file
  * Simple VBox HDD container test utility for shareable images.
  */
 
 /*
- * Copyright (C) 2010 Oracle Corporation
+ * Copyright (C) 2011 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

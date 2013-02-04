@@ -1,10 +1,10 @@
-/* $Id: precomp.h 83243 2013-01-21 08:24:44Z sergey.dubov@oracle.com $*/
+/* $Id: precomp.h 83575 2013-02-04 14:27:54Z noreply@oracle.com $*/
 /** @file
  * Header used if VBOX_WITH_PRECOMPILED_HEADERS is active.
  */
 
 /*
- * Copyright (C) 2009-2010 Oracle Corporation
+ * Copyright (C) 2009-2013 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

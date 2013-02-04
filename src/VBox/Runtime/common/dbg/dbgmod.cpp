@@ -1,10 +1,10 @@
-/* $Id: dbgmod.cpp 82091 2012-11-15 14:49:23Z knut.osmundsen@oracle.com $ */
+/* $Id: dbgmod.cpp 83575 2013-02-04 14:27:54Z noreply@oracle.com $ */
 /** @file
  * IPRT - Debug Module Interpreter.
  */
 
 /*
- * Copyright (C) 2009 Oracle Corporation
+ * Copyright (C) 2012 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

@@ -1,10 +1,10 @@
-/* $Id: DevIchIntelHDA.cpp 81707 2012-10-29 18:11:20Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: DevIchIntelHDA.cpp 83575 2013-02-04 14:27:54Z noreply@oracle.com $ */
 /** @file
  * DevIchIntelHD - VBox ICH Intel HD Audio Controller.
  */
 
 /*
- * Copyright (C) 2006-2010 Oracle Corporation
+ * Copyright (C) 2006-2012 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

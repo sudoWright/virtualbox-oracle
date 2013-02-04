@@ -1,10 +1,10 @@
-/* $Id: dbgmodcontainer.cpp 79444 2012-07-24 13:31:36Z knut.osmundsen@oracle.com $ */
+/* $Id: dbgmodcontainer.cpp 83575 2013-02-04 14:27:54Z noreply@oracle.com $ */
 /** @file
  * IPRT - Debug Info Container.
  */
 
 /*
- * Copyright (C) 2009 Oracle Corporation
+ * Copyright (C) 2012 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

@@ -1,10 +1,10 @@
-/* $Id: DevCodec.h 74964 2011-11-18 15:19:35Z knut.osmundsen@oracle.com $ */
+/* $Id: DevCodec.h 83575 2013-02-04 14:27:54Z noreply@oracle.com $ */
 /** @file
  * DevCodec - VBox ICH Intel HD Audio Codec.
  */
 
 /*
- * Copyright (C) 2006-2008 Oracle Corporation
+ * Copyright (C) 2006-2011 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

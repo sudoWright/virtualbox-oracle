@@ -1,10 +1,10 @@
-/* $Id: VBoxManageControlVM.cpp 83551 2013-02-01 14:04:48Z noreply@oracle.com $ */
+/* $Id: VBoxManageControlVM.cpp 83575 2013-02-04 14:27:54Z noreply@oracle.com $ */
 /** @file
  * VBoxManage - Implementation of the controlvm command.
  */
 
 /*
- * Copyright (C) 2006-2012 Oracle Corporation
+ * Copyright (C) 2006-2013 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

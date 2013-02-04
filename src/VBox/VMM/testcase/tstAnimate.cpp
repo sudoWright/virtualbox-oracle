@@ -1,10 +1,10 @@
-/* $Id: tstAnimate.cpp 83373 2013-01-27 21:12:53Z knut.osmundsen@oracle.com $ */
+/* $Id: tstAnimate.cpp 83575 2013-02-04 14:27:54Z noreply@oracle.com $ */
 /** @file
  * VBox Animation Testcase / Tool.
  */
 
 /*
- * Copyright (C) 2006-2011 Oracle Corporation
+ * Copyright (C) 2006-2013 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

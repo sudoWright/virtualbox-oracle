@@ -1,10 +1,10 @@
-/* $Id: PDMDevice.cpp 83471 2013-01-30 13:00:08Z knut.osmundsen@oracle.com $ */
+/* $Id: PDMDevice.cpp 83575 2013-02-04 14:27:54Z noreply@oracle.com $ */
 /** @file
  * PDM - Pluggable Device and Driver Manager, Device parts.
  */
 
 /*
- * Copyright (C) 2006-2010 Oracle Corporation
+ * Copyright (C) 2006-2013 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

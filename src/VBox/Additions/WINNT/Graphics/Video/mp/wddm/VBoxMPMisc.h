@@ -1,11 +1,11 @@
-/* $Id: VBoxMPMisc.h 79087 2012-07-12 16:31:42Z noreply@oracle.com $ */
+/* $Id: VBoxMPMisc.h 83575 2013-02-04 14:27:54Z noreply@oracle.com $ */
 
 /** @file
  * VBox WDDM Miniport driver
  */
 
 /*
- * Copyright (C) 2011 Oracle Corporation
+ * Copyright (C) 2012 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

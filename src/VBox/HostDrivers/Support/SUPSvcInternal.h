@@ -1,10 +1,10 @@
-/* $Id: SUPSvcInternal.h 67140 2010-10-28 09:27:05Z noreply@oracle.com $ */
+/* $Id: SUPSvcInternal.h 83575 2013-02-04 14:27:54Z noreply@oracle.com $ */
 /** @file
  * VirtualBox Support Service - Internal header.
  */
 
 /*
- * Copyright (C) 2008 Oracle Corporation
+ * Copyright (C) 2010 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

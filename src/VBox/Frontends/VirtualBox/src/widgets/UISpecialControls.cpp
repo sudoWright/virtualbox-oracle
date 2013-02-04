@@ -1,4 +1,4 @@
-/* $Id: UISpecialControls.cpp 76011 2012-02-01 13:33:09Z sergey.dubov@oracle.com $ */
+/* $Id: UISpecialControls.cpp 83575 2013-02-04 14:27:54Z noreply@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt GUI ("VirtualBox"):
@@ -6,7 +6,7 @@
  */
 
 /*
- * Copyright (C) 2009-2010 Oracle Corporation
+ * Copyright (C) 2009-2012 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

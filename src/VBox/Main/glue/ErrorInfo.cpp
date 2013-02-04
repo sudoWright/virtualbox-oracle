@@ -1,4 +1,4 @@
-/* $Id: ErrorInfo.cpp 73630 2011-08-23 14:48:39Z noreply@oracle.com $ */
+/* $Id: ErrorInfo.cpp 83575 2013-02-04 14:27:54Z noreply@oracle.com $ */
 
 /** @file
  *
@@ -6,7 +6,7 @@
  */
 
 /*
- * Copyright (C) 2006-2010 Oracle Corporation
+ * Copyright (C) 2006-2011 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

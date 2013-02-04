@@ -1,4 +1,4 @@
-/* $Id: QIFileDialog.cpp 81691 2012-10-29 07:44:54Z sergey.dubov@oracle.com $ */
+/* $Id: QIFileDialog.cpp 83575 2013-02-04 14:27:54Z noreply@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt GUI ("VirtualBox"):
@@ -6,7 +6,7 @@
  */
 
 /*
- * Copyright (C) 2009 Oracle Corporation
+ * Copyright (C) 2012 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

@@ -1,10 +1,10 @@
-/* $Id: DevLPC.cpp 74586 2011-10-28 09:47:55Z knut.osmundsen@oracle.com $ */
+/* $Id: DevLPC.cpp 83575 2013-02-04 14:27:54Z noreply@oracle.com $ */
 /** @file
  * DevLPC - LPC device emulation
  */
 
 /*
- * Copyright (C) 2006-2010 Oracle Corporation
+ * Copyright (C) 2006-2011 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

@@ -1,10 +1,10 @@
-/* $Id: VSCSIDevice.cpp 81504 2012-10-18 17:45:35Z alexander.eichner@oracle.com $ */
+/* $Id: VSCSIDevice.cpp 83575 2013-02-04 14:27:54Z noreply@oracle.com $ */
 /** @file
  * Virtual SCSI driver: Device handling
  */
 
 /*
- * Copyright (C) 2006-2011 Oracle Corporation
+ * Copyright (C) 2006-2012 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

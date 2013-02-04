@@ -1,10 +1,10 @@
-/* $Id: FTM.cpp 83344 2013-01-25 12:29:24Z knut.osmundsen@oracle.com $ */
+/* $Id: FTM.cpp 83575 2013-02-04 14:27:54Z noreply@oracle.com $ */
 /** @file
  * FTM - Fault Tolerance Manager
  */
 
 /*
- * Copyright (C) 2010 Oracle Corporation
+ * Copyright (C) 2013 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

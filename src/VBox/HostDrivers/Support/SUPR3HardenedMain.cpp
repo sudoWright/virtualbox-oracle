@@ -1,10 +1,10 @@
-/* $Id: SUPR3HardenedMain.cpp 82883 2012-12-19 18:12:31Z knut.osmundsen@oracle.com $ */
+/* $Id: SUPR3HardenedMain.cpp 83575 2013-02-04 14:27:54Z noreply@oracle.com $ */
 /** @file
  * VirtualBox Support Library - Hardened main().
  */
 
 /*
- * Copyright (C) 2006-2010 Oracle Corporation
+ * Copyright (C) 2006-2012 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

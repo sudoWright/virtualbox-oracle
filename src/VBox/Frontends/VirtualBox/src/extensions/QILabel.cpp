@@ -1,4 +1,4 @@
-/* $Id: QILabel.cpp 74751 2011-11-08 10:31:52Z sergey.dubov@oracle.com $ */
+/* $Id: QILabel.cpp 83575 2013-02-04 14:27:54Z noreply@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt GUI ("VirtualBox"):
@@ -6,7 +6,7 @@
  */
 
 /*
- * Copyright (C) 2006-2008 Oracle Corporation
+ * Copyright (C) 2006-2011 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

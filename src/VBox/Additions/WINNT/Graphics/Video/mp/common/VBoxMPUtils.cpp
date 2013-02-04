@@ -1,11 +1,11 @@
-/* $Id: VBoxMPUtils.cpp 79122 2012-07-13 16:45:06Z noreply@oracle.com $ */
+/* $Id: VBoxMPUtils.cpp 83575 2013-02-04 14:27:54Z noreply@oracle.com $ */
 
 /** @file
  * VBox Miniport utils
  */
 
 /*
- * Copyright (C) 2011 Oracle Corporation
+ * Copyright (C) 2012 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;
