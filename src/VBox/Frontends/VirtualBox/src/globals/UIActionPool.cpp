@@ -1,4 +1,4 @@
-/* $Id: UIActionPool.cpp 83676 2013-02-08 11:44:48Z sergey.dubov@oracle.com $ */
+/* $Id: UIActionPool.cpp 83810 2013-02-15 12:29:57Z sergey.dubov@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt GUI ("VirtualBox"):
@@ -552,6 +552,24 @@ void UIActionPool::destroy()
 
     /* Delete instance: */
     delete m_pInstance;
+}
+
+/* static */
+void UIActionPool::createTemporary(UIActionPoolType type)
+{
+    UIActionPool *pHelperPool = 0;
+    switch (type)
+    {
+        case UIActionPoolType_Selector: pHelperPool = new UIActionPoolSelector; break;
+        case UIActionPoolType_Runtime: pHelperPool = new UIActionPoolRuntime; break;
+        default: break;
+    }
+    if (pHelperPool)
+    {
+        pHelperPool->prepare();
+        pHelperPool->cleanup();
+        delete pHelperPool;
+    }
 }
 
 UIActionPool::UIActionPool(UIActionPoolType type)
