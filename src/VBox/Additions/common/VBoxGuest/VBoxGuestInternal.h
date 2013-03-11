@@ -1,4 +1,4 @@
-/* $Id: VBoxGuestInternal.h 78530 2012-06-14 19:49:31Z noreply@oracle.com $ */
+/* $Id: VBoxGuestInternal.h 84204 2013-03-11 13:34:31Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxGuest - Guest Additions Driver.
  */
@@ -181,7 +181,10 @@ typedef struct VBOXGUESTDEVEXT
     /** Callback and user data for a kernel mouse handler. */
     VBoxGuestMouseSetNotifyCallback MouseNotifyCallback;
 
-    /** Windows part. */
+    /** Windows part.
+     * @todo r=bird: Entirely wrong approach. You should create
+     *       VBOXGUESTDEVEXTWIN as a super structure to VBOXGUESTDEVEXT. If they
+     *       were classes, class VBOXGUESTDEVEXTWIN : public VBOXGUESTDEVEXT ... */
     union
     {
 #ifdef ___VBoxGuest_win_h
