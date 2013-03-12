@@ -1,4 +1,4 @@
-/* $Id: GuestSessionImplTasks.cpp 84137 2013-03-06 16:40:36Z andreas.loeffler@oracle.com $ */
+/* $Id: GuestSessionImplTasks.cpp 84242 2013-03-12 17:47:56Z andreas.loeffler@oracle.com $ */
 /** @file
  * VirtualBox Main - Guest session tasks.
  */
@@ -185,7 +185,7 @@ int SessionTaskOpen::Run(int *pGuestRc)
     AutoCaller autoCaller(pSession);
     if (FAILED(autoCaller.rc())) return autoCaller.rc();
 
-    int vrc = pSession->openSession(pGuestRc);
+    int vrc = pSession->startSessionIntenal(pGuestRc);
     /* Nothing to do here anymore. */
 
     LogFlowFuncLeaveRC(vrc);
