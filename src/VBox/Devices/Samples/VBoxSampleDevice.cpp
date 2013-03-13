@@ -1,4 +1,4 @@
-/* $Id: VBoxSampleDevice.cpp 83576 2013-02-04 15:54:15Z noreply@oracle.com $ */
+/* $Id: VBoxSampleDevice.cpp 84266 2013-03-13 16:45:15Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Sample Device.
  */
@@ -115,7 +115,7 @@ static const PDMDEVREG g_DeviceSample =
     devSampleDestruct,
     /* pfnRelocate */
     NULL,
-    /* pfnIOCtl */
+    /* pfnMemSetup */
     NULL,
     /* pfnPowerOn */
     NULL,

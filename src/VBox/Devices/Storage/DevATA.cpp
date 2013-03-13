@@ -1,4 +1,4 @@
-/* $Id: DevATA.cpp 84067 2013-03-01 21:44:24Z knut.osmundsen@oracle.com $ */
+/* $Id: DevATA.cpp 84266 2013-03-13 16:45:15Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox storage devices: ATA/ATAPI controller device (disk and cdrom).
  */
@@ -7573,7 +7573,7 @@ const PDMDEVREG g_DevicePIIX3IDE =
     ataR3Destruct,
     /* pfnRelocate */
     ataR3Relocate,
-    /* pfnIOCtl */
+    /* pfnMemSetup */
     NULL,
     /* pfnPowerOn */
     NULL,

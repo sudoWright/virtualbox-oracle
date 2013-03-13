@@ -1,4 +1,4 @@
-/* $Id: DevAHCI.cpp 84072 2013-03-02 02:28:37Z knut.osmundsen@oracle.com $ */
+/* $Id: DevAHCI.cpp 84266 2013-03-13 16:45:15Z knut.osmundsen@oracle.com $ */
 /** @file
  * DevAHCI - AHCI controller device (disk and cdrom).
  *
@@ -8211,7 +8211,7 @@ const PDMDEVREG g_DeviceAHCI =
     ahciR3Destruct,
     /* pfnRelocate */
     ahciR3Relocate,
-    /* pfnIOCtl */
+    /* pfnMemSetup */
     NULL,
     /* pfnPowerOn */
     NULL,

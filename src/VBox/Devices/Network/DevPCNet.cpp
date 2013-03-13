@@ -1,4 +1,4 @@
-/* $Id: DevPCNet.cpp 84072 2013-03-02 02:28:37Z knut.osmundsen@oracle.com $ */
+/* $Id: DevPCNet.cpp 84266 2013-03-13 16:45:15Z knut.osmundsen@oracle.com $ */
 /** @file
  * DevPCNet - AMD PCnet-PCI II / PCnet-FAST III (Am79C970A / Am79C973) Ethernet Controller Emulation.
  *
@@ -5312,7 +5312,7 @@ const PDMDEVREG g_DevicePCNet =
     pcnetDestruct,
     /* pfnRelocate */
     pcnetRelocate,
-    /* pfnIOCtl */
+    /* pfnMemSetup */
     NULL,
     /* pfnPowerOn */
     NULL,
