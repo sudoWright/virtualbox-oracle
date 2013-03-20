@@ -1,4 +1,4 @@
-/* $Id: cdrom-generic.cpp 75591 2012-01-08 21:16:59Z knut.osmundsen@oracle.com $ */
+/* $Id: cdrom-generic.cpp 84403 2013-03-20 18:17:29Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - CD/DVD/BD-ROM Drive, Generic.
  */
@@ -28,7 +28,6 @@
 /*******************************************************************************
 *   Header Files                                                               *
 *******************************************************************************/
-#define RTCRITSECT_WITHOUT_REMAPPING
 #include <iprt/cdrom.h>
 #include "internal/iprt.h"
 
