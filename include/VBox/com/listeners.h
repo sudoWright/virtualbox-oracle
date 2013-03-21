@@ -1,6 +1,6 @@
-/* $Id: listeners.h 70962 2011-04-04 15:43:40Z knut.osmundsen@oracle.com $ */
+/* $Id: listeners.h 84426 2013-03-21 14:09:06Z knut.osmundsen@oracle.com $ */
 /** @file
- * Listeners helpers.
+ * MS COM / XPCOM Abstraction Layer - Listeners helpers.
  */
 
 /*
@@ -169,3 +169,4 @@ public:
 #endif
 
 #endif
+
