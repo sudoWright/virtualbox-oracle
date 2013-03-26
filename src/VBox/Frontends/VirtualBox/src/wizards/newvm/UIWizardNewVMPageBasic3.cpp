@@ -1,4 +1,4 @@
-/* $Id: UIWizardNewVMPageBasic3.cpp 80922 2012-09-25 09:01:47Z sergey.dubov@oracle.com $ */
+/* $Id: UIWizardNewVMPageBasic3.cpp 84539 2013-03-26 14:00:34Z sergey.dubov@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt4 GUI ("VirtualBox"):
@@ -112,7 +112,7 @@ void UIWizardNewVMPage3::ensureNewVirtualDiskDeleted()
     /* 2nd step: show delete-storage progress: */
     if (fSuccess)
     {
-        msgCenter().showModalProgressDialog(progress, thisImp()->windowTitle(), ":/progress_media_delete_90px.png", thisImp(), true);
+        msgCenter().showModalProgressDialog(progress, thisImp()->windowTitle(), ":/progress_media_delete_90px.png", thisImp());
         fSuccess = progress.isOk() && progress.GetResultCode() == S_OK;
     }
 
