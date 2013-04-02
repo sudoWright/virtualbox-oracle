@@ -1,4 +1,4 @@
-/* $Id: EMHM.cpp 83575 2013-02-04 14:27:54Z noreply@oracle.com $ */
+/* $Id: EMHM.cpp 84670 2013-04-02 08:17:11Z knut.osmundsen@oracle.com $ */
 /** @file
  * EM - Execution Monitor / Manager - hardware virtualization
  */
@@ -136,7 +136,7 @@ static int emR3SingleStepExecHm(PVM pVM, PVMCPU pVCpu, uint32_t cIterations)
     for (uint32_t i = 0; i < cIterations; i++)
     {
         DBGFR3PrgStep(pVCpu);
-        DBGFR3_DISAS_INSTR_CUR_LOG(pVCpu, "RSS: ");
+        DBGFR3_DISAS_INSTR_CUR_LOG(pVCpu, "RSS");
         rc = emR3HmStep(pVM, pVCpu);
         if (    rc != VINF_SUCCESS
             ||  !HMR3CanExecuteGuest(pVM, pVCpu->em.s.pCtx))

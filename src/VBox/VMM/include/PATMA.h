@@ -1,4 +1,4 @@
-/* $Id: PATMA.h 83575 2013-02-04 14:27:54Z noreply@oracle.com $ */
+/* $Id: PATMA.h 84670 2013-04-02 08:17:11Z knut.osmundsen@oracle.com $ */
 /** @file
  * PATM macros & definitions (identical to PATMA.mac!!)
  */
@@ -145,6 +145,7 @@ extern PATCHASMRECORD PATMPopf32Record_NoExit;
 extern PATCHASMRECORD PATMPushf32Record;
 extern PATCHASMRECORD PATMPushf16Record;
 extern PATCHASMRECORD PATMIretRecord;
+extern PATCHASMRECORD PATMIretRing1Record;
 extern PATCHASMRECORD PATMCpuidRecord;
 extern PATCHASMRECORD PATMLoopRecord;
 extern PATCHASMRECORD PATMLoopZRecord;
