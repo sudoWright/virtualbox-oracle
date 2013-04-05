@@ -1,4 +1,4 @@
-/* $Id: UIMessageCenter.cpp 84793 2013-04-05 13:46:55Z sergey.dubov@oracle.com $ */
+/* $Id: UIMessageCenter.cpp 84802 2013-04-05 14:41:52Z sergey.dubov@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt GUI ("VirtualBox"):
@@ -324,9 +324,9 @@ QWidget* UIMessageCenter::mainWindowShown() const
     /* For VM console process: */
     if (vboxGlobal().isVMConsoleProcess())
     {
-        /* It will be currently active machine window if visible: */
-        if (vboxGlobal().vmWindow()->isVisible())
-            return vboxGlobal().vmWindow();
+        /* It will be currently active machine-window if visible: */
+        if (vboxGlobal().activeMachineWindow()->isVisible())
+            return vboxGlobal().activeMachineWindow();
     }
     /* Otherwise: */
     else
