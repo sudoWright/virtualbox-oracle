@@ -1,4 +1,4 @@
-/* $Id: UIDownloaderAdditions.cpp 84757 2013-04-04 17:21:13Z sergey.dubov@oracle.com $ */
+/* $Id: UIDownloaderAdditions.cpp 84793 2013-04-05 13:46:55Z sergey.dubov@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt GUI ("VirtualBox"):
@@ -102,7 +102,7 @@ void UIDownloaderAdditions::handleDownloadedObject(UINetworkReply *pReply)
 
         /* Ask the user for another location for the additions-image file: */
         QString strTarget = QIFileDialog::getExistingDirectory(QFileInfo(target()).absolutePath(),
-                                                               msgCenter().networkManagerOrMainMachineWindowShown(),
+                                                               msgCenter().networkManagerOrMainWindowShown(),
                                                                tr("Select folder to save Guest Additions image to"), true);
 
         /* Check if user had really set a new target: */
