@@ -1,4 +1,4 @@
-/* $Id: EMHandleRCTmpl.h 83329 2013-01-24 21:11:05Z knut.osmundsen@oracle.com $ */
+/* $Id: EMHandleRCTmpl.h 84919 2013-04-10 20:25:33Z ramshankar.venkataraman@oracle.com $ */
 /** @file
  * EM - emR3[Raw|Hm]HandleRC template.
  */
@@ -345,7 +345,6 @@ int emR3HmHandleRC(PVM pVM, PVMCPU pVCpu, PCPUMCTX pCtx, int rc)
         case VERR_VMX_UNEXPECTED_EXIT_CODE:
         case VERR_VMX_INVALID_GUEST_STATE:
         case VERR_VMX_UNABLE_TO_START_VM:
-        case VERR_VMX_UNABLE_TO_RESUME_VM:
             HMR3CheckError(pVM, rc);
             break;
 
