@@ -1,4 +1,4 @@
-/* $Id: tstR0ThreadPreemption.cpp 85020 2013-04-14 01:21:56Z knut.osmundsen@oracle.com $ */
+/* $Id: tstR0ThreadPreemption.cpp 85021 2013-04-14 11:02:12Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT R0 Testcase - Thread Preemption.
  */
@@ -92,7 +92,7 @@ DECLEXPORT(int) TSTR0ThreadPreemptionSrvReqHandler(PSUPDRVSESSION pSession, uint
         }
 
         case TSTR0THREADPREMEPTION_IS_TRUSTY:
-            if (RTThreadPreemptIsPendingTrusty())
+            if (!RTThreadPreemptIsPendingTrusty())
                 RTStrPrintf(pszErr, cchErr, "!Untrusty");
             break;
 
