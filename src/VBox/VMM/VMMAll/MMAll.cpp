@@ -1,4 +1,4 @@
-/* $Id: MMAll.cpp 85118 2013-04-18 18:41:07Z knut.osmundsen@oracle.com $ */
+/* $Id: MMAll.cpp 85150 2013-04-19 12:28:21Z noreply@oracle.com $ */
 /** @file
  * MM - Memory Manager - Any Context.
  */
@@ -24,6 +24,7 @@
 #include <VBox/vmm/vmm.h>
 #include "MMInternal.h"
 #include <VBox/vmm/vm.h>
+#include <VBox/vmm/hm.h>
 #include <VBox/log.h>
 #include <iprt/assert.h>
 #include <iprt/string.h>
