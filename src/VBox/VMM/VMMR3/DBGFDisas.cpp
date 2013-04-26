@@ -1,4 +1,4 @@
-/* $Id: DBGFDisas.cpp 85310 2013-04-26 01:32:02Z knut.osmundsen@oracle.com $ */
+/* $Id: DBGFDisas.cpp 85311 2013-04-26 01:33:30Z knut.osmundsen@oracle.com $ */
 /** @file
  * DBGF - Debugger Facility, Disassembler.
  */
@@ -22,6 +22,7 @@
 #include <VBox/vmm/dbgf.h>
 #include <VBox/vmm/selm.h>
 #include <VBox/vmm/mm.h>
+#include <VBox/vmm/hm.h>
 #include <VBox/vmm/pgm.h>
 #include <VBox/vmm/cpum.h>
 #include "DBGFInternal.h"
