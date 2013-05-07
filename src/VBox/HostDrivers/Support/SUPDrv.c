@@ -1,4 +1,4 @@
-/* $Id: SUPDrv.c 84532 2013-03-26 09:30:23Z knut.osmundsen@oracle.com $ */
+/* $Id: SUPDrv.c 85575 2013-05-07 13:18:04Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxDrv - The VirtualBox Support Driver - Common code.
  */
@@ -235,6 +235,7 @@ static SUPFUNC g_aFunctions[] =
     { "RTHandleTableFreeWithCtx",               (void *)RTHandleTableFreeWithCtx },
     { "RTHandleTableLookupWithCtx",             (void *)RTHandleTableLookupWithCtx },
     { "RTLogDefaultInstance",                   (void *)RTLogDefaultInstance },
+    { "RTLogGetDefaultInstance",                (void *)RTLogGetDefaultInstance },
     { "RTLogLoggerExV",                         (void *)RTLogLoggerExV },
     { "RTLogPrintfV",                           (void *)RTLogPrintfV },
     { "RTLogRelDefaultInstance",                (void *)RTLogRelDefaultInstance },
