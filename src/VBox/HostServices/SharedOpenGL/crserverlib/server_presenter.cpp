@@ -1,4 +1,4 @@
-/* $Id: server_presenter.cpp 84435 2013-03-21 16:11:28Z noreply@oracle.com $ */
+/* $Id: server_presenter.cpp 85733 2013-05-14 12:22:03Z noreply@oracle.com $ */
 
 /** @file
  * Presenter API
@@ -363,7 +363,6 @@ void* CrHlpGetTexImage(CRContext *pCurCtx, PVBOXVR_TEXTURE pTexture, GLuint idPB
         crStateGetTextureObjectAndImage(pCurCtx, pTexture->target, 0, &pTObj, &pTImg);
 
         GLuint uid = pTObj->hwid;
-        CRASSERT(uid);
         cr_server.head_spu->dispatch_table.BindTexture(pTexture->target, uid);
     }
     else
