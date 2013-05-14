@@ -1,4 +1,4 @@
-/* $Id: DBGFAddrSpace.cpp 85654 2013-05-12 19:12:25Z knut.osmundsen@oracle.com $ */
+/* $Id: DBGFAddrSpace.cpp 85721 2013-05-14 08:41:11Z knut.osmundsen@oracle.com $ */
 /** @file
  * DBGF - Debugger Facility, Address Space Management.
  */
@@ -149,7 +149,7 @@ int dbgfR3AsInit(PUVM pUVM)
     /*
      * Create the debugging config instance and set it up.
      */
-    rc = RTDbgCfgCreate(&pUVM->dbgf.s.hDbgCfg, NULL);
+    rc = RTDbgCfgCreate(&pUVM->dbgf.s.hDbgCfg, NULL, true /*fNativePaths*/);
     AssertRCReturn(rc, rc);
 
     static struct
