@@ -1,4 +1,4 @@
-/* $Id: filesystemext.cpp 78317 2012-06-01 18:03:46Z alexander.eichner@oracle.com $ */
+/* $Id: filesystemext.cpp 85896 2013-05-21 06:30:21Z alexander.eichner@oracle.com $ */
 /** @file
  * IPRT Filesystem API (FileSys) - ext2/3 format.
  */
@@ -325,6 +325,8 @@ static DECLCALLBACK(void) rtFsExtDestroy(void *pvThis)
 
 static DECLCALLBACK(int) rtFsExtOpenRoot(void *pvThis, PRTVFSDIR phVfsDir)
 {
+    NOREF(pvThis);
+    NOREF(phVfsDir);
     return VERR_NOT_IMPLEMENTED;
 }
 
