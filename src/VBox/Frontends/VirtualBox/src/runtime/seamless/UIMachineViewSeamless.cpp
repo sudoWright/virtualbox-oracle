@@ -1,4 +1,4 @@
-/* $Id: UIMachineViewSeamless.cpp 84161 2013-03-07 13:18:14Z sergey.dubov@oracle.com $ */
+/* $Id: UIMachineViewSeamless.cpp 85954 2013-05-22 19:32:28Z sergey.dubov@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt GUI ("VirtualBox"):
@@ -83,15 +83,10 @@ bool UIMachineViewSeamless::event(QEvent *pEvent)
     {
         case SetRegionEventType:
         {
-            /* Get region-update event: */
+            /* Apply new seamless-region: */
             UISetRegionEvent *pSetRegionEvent = static_cast<UISetRegionEvent*>(pEvent);
-
-            /* Apply new region: */
-            if (pSetRegionEvent->region() != m_lastVisibleRegion)
-            {
-                m_lastVisibleRegion = pSetRegionEvent->region();
-                machineWindow()->setMask(m_lastVisibleRegion);
-            }
+            m_lastVisibleRegion = pSetRegionEvent->region();
+            machineWindow()->setMask(m_lastVisibleRegion);
             return true;
         }
 
