@@ -1,4 +1,4 @@
-/* $Id: tstDeviceStructSize.cpp 85364 2013-04-28 22:23:18Z knut.osmundsen@oracle.com $ */
+/* $Id: tstDeviceStructSize.cpp 86011 2013-05-26 18:02:48Z alexander.eichner@oracle.com $ */
 /** @file
  * tstDeviceStructSize - testcase for check structure sizes/alignment
  *                       and to verify that HC and RC uses the same
@@ -96,6 +96,9 @@
 # undef LOG_GROUP
 # include "../Bus/DevPciRaw.cpp"
 #endif
+
+#undef LOG_GROUP
+#include "../Audio/DevIchHda.cpp"
 
 #include <stdio.h>
 
