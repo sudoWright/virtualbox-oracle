@@ -1,4 +1,4 @@
-/* $Id: ovfreader.cpp 86374 2013-06-13 10:07:09Z valery.portnyagin@oracle.com $ */
+/* $Id: ovfreader.cpp 86392 2013-06-13 14:06:54Z valery.portnyagin@oracle.com $ */
 /** @file
  * OVF reader declarations.
  *
@@ -856,7 +856,7 @@ void VirtualHardwareItem::fillItem(const xml::ElementNode *item)
             resourceType = (ResourceType_T)ulType;
             fResourceRequired = true;
             const char *pcszAttValue;
-            if (pelmItemChild->getAttributeValue("required", pcszAttValue))
+            if (item->getAttributeValue("required", pcszAttValue))
             {
                 if (!strcmp(pcszAttValue, "false"))
                     fResourceRequired = false;
