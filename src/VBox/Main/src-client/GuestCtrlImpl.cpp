@@ -1,4 +1,4 @@
-/* $Id: GuestCtrlImpl.cpp 86380 2013-06-13 12:10:23Z andreas.loeffler@oracle.com $ */
+/* $Id: GuestCtrlImpl.cpp 86382 2013-06-13 12:24:29Z noreply@oracle.com $ */
 /** @file
  * VirtualBox COM class implementation: Guest
  */
@@ -114,8 +114,8 @@ DECLCALLBACK(int) Guest::notifyCtrlDispatcher(void    *pvExtension,
 }
 #endif /* VBOX_WITH_GUEST_CONTROL */
 
-STDMETHODIMP Guest::UpdateGuestAdditions(IN_BSTR aSource, ComSafeArrayIn(AdditionsUpdateFlag_T, aFlags),
-                                         ComSafeArrayIn(IN_BSTR, aArguments), IProgress **aProgress)
+STDMETHODIMP Guest::UpdateGuestAdditions(IN_BSTR aSource, ComSafeArrayIn(IN_BSTR, aArguments), 
+                                         ComSafeArrayIn(AdditionsUpdateFlag_T, aFlags), IProgress **aProgress)
 {
 #ifndef VBOX_WITH_GUEST_CONTROL
     ReturnComNotImplemented();
