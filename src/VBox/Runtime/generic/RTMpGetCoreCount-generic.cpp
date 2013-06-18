@@ -1,4 +1,4 @@
-/* $Id: RTMpGetCoreCount-generic.cpp 85844 2013-05-17 15:00:39Z noreply@oracle.com $ */
+/* $Id: RTMpGetCoreCount-generic.cpp 86523 2013-06-18 17:33:09Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Multiprocessor, Generic RTMpGetCoreCount.
  */
@@ -29,7 +29,7 @@
 *   Header Files                                                               *
 *******************************************************************************/
 #include <iprt/mp.h>
-#include <internal/iprt.h>
+#include "internal/iprt.h"
 
 
 RTDECL(RTCPUID) RTMpGetCoreCount(void)
@@ -37,3 +37,4 @@ RTDECL(RTCPUID) RTMpGetCoreCount(void)
     return RTMpGetCount();
 }
 RT_EXPORT_SYMBOL(RTMpGetCoreCount);
+

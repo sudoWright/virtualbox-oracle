@@ -1,4 +1,4 @@
-/* $Id: mp-win.cpp 86521 2013-06-18 17:11:17Z knut.osmundsen@oracle.com $ */
+/* $Id: mp-win.cpp 86523 2013-06-18 17:33:09Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Multiprocessor, Windows.
  */
@@ -163,5 +163,12 @@ RTDECL(RTCPUID) RTMpGetOnlineCount(void)
     RTCPUSET Set;
     RTMpGetOnlineSet(&Set);
     return RTCpuSetCount(&Set);
+}
+
+
+RTDECL(RTCPUID) RTMpGetOnlineCoreCount(void)
+{
+    /** @todo this isn't entirely correct. */
+    return RTMpGetCoreCount();
 }
 

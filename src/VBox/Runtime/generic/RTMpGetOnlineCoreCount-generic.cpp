@@ -1,10 +1,10 @@
-/* $Id: mppresent-generic.cpp 86523 2013-06-18 17:33:09Z knut.osmundsen@oracle.com $ */
+/* $Id: RTMpGetOnlineCoreCount-generic.cpp 86523 2013-06-18 17:33:09Z knut.osmundsen@oracle.com $ */
 /** @file
- * IPRT - Multiprocessor, Stubs for the RTMp*Present* API.
+ * IPRT - Multiprocessor, Generic RTMpGetCoreCount.
  */
 
 /*
- * Copyright (C) 2008-2010 Oracle Corporation
+ * Copyright (C) 2013 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;
@@ -32,30 +32,9 @@
 #include "internal/iprt.h"
 
 
-RTDECL(PRTCPUSET) RTMpGetPresentSet(PRTCPUSET pSet)
+RTDECL(RTCPUID) RTMpGetOnlineCoreCount(void)
 {
-    return RTMpGetSet(pSet);
+    return RTMpGetOnlineCount();
 }
-RT_EXPORT_SYMBOL(RTMpGetPresentSet);
-
-
-RTDECL(RTCPUID) RTMpGetPresentCount(void)
-{
-    return RTMpGetCount();
-}
-RT_EXPORT_SYMBOL(RTMpGetPresentCount);
-
-
-RTDECL(RTCPUID) RTMpGetPresentCoreCount(void)
-{
-    return RTMpGetCoreCount();
-}
-RT_EXPORT_SYMBOL(RTMpGetPresentCoreCount);
-
-
-RTDECL(bool) RTMpIsCpuPresent(RTCPUID idCpu)
-{
-    return RTMpIsCpuPossible(idCpu);
-}
-RT_EXPORT_SYMBOL(RTMpIsCpuPresent);
+RT_EXPORT_SYMBOL(RTMpGetOnlineCoreCount);
 
