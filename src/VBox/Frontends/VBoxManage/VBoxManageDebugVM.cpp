@@ -1,4 +1,4 @@
-/* $Id: VBoxManageDebugVM.cpp 78567 2012-06-15 13:03:05Z andreas.loeffler@oracle.com $ */
+/* $Id: VBoxManageDebugVM.cpp 86548 2013-06-19 13:21:08Z noreply@oracle.com $ */
 /** @file
  * VBoxManage - Implementation of the debugvm command.
  */
@@ -25,8 +25,6 @@
 #include <VBox/com/array.h>
 #include <VBox/com/ErrorInfo.h>
 #include <VBox/com/errorprint.h>
-#include <VBox/com/EventQueue.h>
-
 #include <VBox/com/VirtualBox.h>
 
 #include <iprt/ctype.h>
