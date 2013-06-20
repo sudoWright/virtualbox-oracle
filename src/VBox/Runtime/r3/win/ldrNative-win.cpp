@@ -1,4 +1,4 @@
-/* $Id: ldrNative-win.cpp 86612 2013-06-20 11:05:39Z knut.osmundsen@oracle.com $ */
+/* $Id: ldrNative-win.cpp 86613 2013-06-20 11:07:30Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Binary Image Loader, Win32 native.
  */
@@ -66,8 +66,6 @@ int rtldrNativeLoad(const char *pszFilename, uintptr_t *phHandle, uint32_t fFlag
         memcpy(psz + cch, ".DLL", sizeof(".DLL"));
         pszFilename = psz;
     }
-
-    AssertMsg(RTPathStartsWithRoot(pszFilename), ("pszFilename='%s'\n", pszFilename));
 
     /*
      * Attempt load.
