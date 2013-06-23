@@ -1,4 +1,4 @@
-/* $Id: allocex-r3-posix.cpp 86665 2013-06-23 16:10:25Z knut.osmundsen@oracle.com $ */
+/* $Id: allocex-r3-posix.cpp 86667 2013-06-23 16:44:18Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Memory Allocation, Extended Alloc Workers, posix.
  */
@@ -33,6 +33,7 @@
 #include "internal/iprt.h"
 
 #include <iprt/assert.h>
+#include <iprt/err.h>
 #include <iprt/string.h>
 #include "../allocex.h"
 
