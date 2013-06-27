@@ -1,10 +1,10 @@
-/* $Id: USBControllerImpl.cpp 84789 2013-04-05 13:02:06Z noreply@oracle.com $ */
+/* $Id: USBControllerImpl.cpp 86761 2013-06-27 07:58:37Z klaus.espenlaub@oracle.com $ */
 /** @file
  * Implementation of IUSBController.
  */
 
 /*
- * Copyright (C) 2005-2012 Oracle Corporation
+ * Copyright (C) 2005-2013 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;
@@ -33,6 +33,7 @@
 
 #include <VBox/err.h>
 #include <VBox/settings.h>
+#include <VBox/com/array.h>
 
 #include <algorithm>
 
