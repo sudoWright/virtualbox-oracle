@@ -1,4 +1,4 @@
-/* $Id: VMMDevTesting.cpp 86194 2013-06-04 11:46:07Z knut.osmundsen@oracle.com $ */
+/* $Id: VMMDevTesting.cpp 86917 2013-07-02 18:46:43Z knut.osmundsen@oracle.com $ */
 /** @file
  * VMMDev - Testing Extensions.
  *
@@ -479,6 +479,7 @@ void vmmdevTestingTerminate(PPDMDEVINS pDevIns)
 
     if (pThis->hTestingTest != NIL_RTTEST)
     {
+        RTTestFailed(pThis->hTestingTest, "Still open at vmmdev destruction.");
         RTTestSummaryAndDestroy(pThis->hTestingTest);
         pThis->hTestingTest = NIL_RTTEST;
     }
