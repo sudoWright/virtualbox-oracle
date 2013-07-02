@@ -1,4 +1,4 @@
-/* $Id: tstVMM.cpp 86047 2013-05-28 15:29:28Z knut.osmundsen@oracle.com $ */
+/* $Id: tstVMM.cpp 86910 2013-07-02 17:21:32Z knut.osmundsen@oracle.com $ */
 /** @file
  * VMM Testcase.
  */
@@ -139,9 +139,10 @@ DECLCALLBACK(int) tstTMWorker(PVM pVM, RTTEST hTest)
 
 /** PDMR3LdrEnumModules callback, see FNPDMR3ENUM. */
 static DECLCALLBACK(int)
-tstVMMLdrEnum(PVM pVM, const char *pszFilename, const char *pszName, RTUINTPTR ImageBase, size_t cbImage, bool fGC, void *pvUser)
+tstVMMLdrEnum(PVM pVM, const char *pszFilename, const char *pszName, RTUINTPTR ImageBase, size_t cbImage,
+              PDMLDRCTX enmCtx, void *pvUser)
 {
-    NOREF(pVM); NOREF(pszFilename); NOREF(fGC); NOREF(pvUser); NOREF(cbImage);
+    NOREF(pVM); NOREF(pszFilename); NOREF(enmCtx); NOREF(pvUser); NOREF(cbImage);
     RTPrintf("tstVMM: %RTptr %s\n", ImageBase, pszName);
     return VINF_SUCCESS;
 }
@@ -240,7 +241,7 @@ int main(int argc, char **argv)
                 return 1;
 
             case 'V':
-                RTPrintf("$Revision: 86047 $\n");
+                RTPrintf("$Revision: 86910 $\n");
                 return 0;
 
             default:
