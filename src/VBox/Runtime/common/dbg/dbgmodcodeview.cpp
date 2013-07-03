@@ -1,4 +1,4 @@
-/* $Id: dbgmodcodeview.cpp 86939 2013-07-03 13:26:47Z knut.osmundsen@oracle.com $ */
+/* $Id: dbgmodcodeview.cpp 86941 2013-07-03 13:28:53Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Debug Module Reader For Microsoft CodeView and COFF.
  *
@@ -1071,7 +1071,7 @@ static int rtDbgModCvLoadSegmentMap(PRTDBGMODCV pThis)
                 && (paDescs[i].fFlags & (RTCVSEGMAPDESC_F_SEL | RTCVSEGMAPDESC_F_ABS))
                 && paDescs[i].iOverlay == 0
                 && enmImgFmt != RTLDRFMT_PE
-                && enmImgFmt != RTCVFILETYPE_DBG)
+                && pThis->enmType != RTCVFILETYPE_DBG)
                 fHaveDosFrames = true; /* BIOS, only groups with frames. */
         }
     }
