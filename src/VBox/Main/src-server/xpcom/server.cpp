@@ -1,4 +1,4 @@
-/* $Id: server.cpp 86977 2013-07-04 06:35:01Z noreply@oracle.com $ */
+/* $Id: server.cpp 87049 2013-07-06 17:31:11Z noreply@oracle.com $ */
 /** @file
  * XPCOM server process (VBoxSVC) start point.
  */
@@ -66,7 +66,7 @@
 #include "AudioAdapterImpl.h"
 #include "BandwidthControlImpl.h"
 #include "BandwidthGroupImpl.h"
-#include "DHCPServerRunner.h"
+#include "NetworkServiceRunner.h"
 #include "DHCPServerImpl.h"
 #include "GuestOSTypeImpl.h"
 #include "HostImpl.h"
