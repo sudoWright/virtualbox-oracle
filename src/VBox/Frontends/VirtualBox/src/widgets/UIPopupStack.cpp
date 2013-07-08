@@ -1,4 +1,4 @@
-/* $Id: UIPopupStack.cpp 87044 2013-07-05 16:41:57Z sergey.dubov@oracle.com $ */
+/* $Id: UIPopupStack.cpp 87061 2013-07-08 08:53:09Z sergey.dubov@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt GUI ("VirtualBox"):
@@ -173,6 +173,10 @@ void UIPopupStack::sltPopupPaneDone(int iResultCode)
     /* Cleanup the popup-pane: */
     m_panes.remove(strPopupPaneID);
     delete pPopupPane;
+
+    /* Give focus back to parent: */
+    if (parentWidget())
+        parentWidget()->setFocus();
 
     /* Layout content: */
     layoutContent();
