@@ -1,4 +1,4 @@
-/* $Id: fs-posix.cpp 83575 2013-02-04 14:27:54Z noreply@oracle.com $ */
+/* $Id: fs-posix.cpp 87121 2013-07-10 11:52:41Z noreply@oracle.com $ */
 /** @file
  * IPRT - File System, Linux.
  */
@@ -216,6 +216,8 @@ RTR3DECL(int) RTFsQueryType(const char *pszFsPath, PRTFSTYPE penmType)
                                 *penmType = RTFSTYPE_JFS;
                             else if (!strcmp("xfs", mntEnt.mnt_type))
                                 *penmType = RTFSTYPE_XFS;
+                            else if (!strcmp("btrfs", mntEnt.mnt_type))
+                                *penmType = RTFSTYPE_BTRFS;
                             else if (   !strcmp("vfat", mntEnt.mnt_type)
                                      || !strcmp("msdos", mntEnt.mnt_type))
                                 *penmType = RTFSTYPE_FAT;
