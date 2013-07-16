@@ -1,4 +1,4 @@
-/* $Id: UIFilmContainer.cpp 86484 2013-06-17 18:25:40Z sergey.dubov@oracle.com $ */
+/* $Id: UIFilmContainer.cpp 87311 2013-07-16 17:52:28Z ramshankar.venkataraman@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt4 GUI ("VirtualBox"):
@@ -194,7 +194,7 @@ QSize UIFilm::minimumSizeHint() const
 {
     /* Return 16:9 aspect-ratio msh: */
     QSize msh = QWidget::minimumSizeHint();
-    return QSize(msh.width(), (double)9 / (double)16 * msh.width());
+    return QSize(msh.width(), (int)((double)9 / 16 * msh.width()));
 }
 
 void UIFilm::paintEvent(QPaintEvent*)
