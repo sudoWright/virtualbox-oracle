@@ -1,4 +1,4 @@
-/* $Id: UIMachineSettingsSystem.cpp 87409 2013-07-19 18:12:03Z sergey.dubov@oracle.com $ */
+/* $Id: UIMachineSettingsSystem.cpp 87424 2013-07-21 19:49:04Z noreply@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt4 GUI ("VirtualBox"):
@@ -662,7 +662,7 @@ void UIMachineSettingsSystem::prepareTabProcessor()
     CSystemProperties properties = vboxGlobal().virtualBox().GetSystemProperties();
     uint hostCPUs = vboxGlobal().host().GetProcessorCount();
     m_uMinGuestCPU = properties.GetMinGuestCPUCount();
-    m_uMaxGuestCPU = qMin(2 * hostCPUs, properties.GetMaxGuestCPUCount());
+    m_uMaxGuestCPU = qMin(2 * hostCPUs, (uint)properties.GetMaxGuestCPUCount());
     m_uMinGuestCPUExecCap = 1;
     m_uMedGuestCPUExecCap = 40;
     m_uMaxGuestCPUExecCap = 100;
