@@ -1,4 +1,4 @@
-/** @file $Id: vboxvideo.h 84772 2013-04-05 07:01:27Z noreply@oracle.com $
+/** @file $Id: vboxvideo.h 87537 2013-07-25 12:12:10Z noreply@oracle.com $
  *
  * VirtualBox Additions Linux kernel video driver
  */
@@ -52,6 +52,7 @@ struct vboxvideo_mc
 {
     resource_size_t    aper_size;
     resource_size_t    aper_base;
+    char __iomem      *vram;
     u32                vram_size;
 };
 
