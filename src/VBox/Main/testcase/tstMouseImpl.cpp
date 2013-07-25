@@ -1,4 +1,4 @@
-/* $Id: tstMouseImpl.cpp 87533 2013-07-25 09:17:50Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: tstMouseImpl.cpp 87554 2013-07-25 19:36:06Z alexander.eichner@oracle.com $ */
 /** @file
  * Main unit test - Mouse class.
  */
@@ -193,12 +193,16 @@ static struct PDMDRVINS pdmdrvInsCore =
     0,                       /* fTracing */
     0,                       /* idTracing */
 #if HC_ARCH_BITS == 32
-    0,                       /* au32Padding */
+    {
+        0
+    }                        /* au32Padding */
 #endif
     {
         0                    /* Padding */
     },                       /* Internal */
-    0                        /* achInstanceData */
+    {
+        0                    /* achInstanceData */
+    }
 };
 
 static struct PDMDRVINS *ppdmdrvIns = NULL;
