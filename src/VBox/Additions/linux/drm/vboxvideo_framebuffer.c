@@ -1,10 +1,10 @@
-/** @file $Id: vboxvideo_mode.h 87567 2013-07-26 08:36:22Z noreply@oracle.com $
+/** @file $Id: vboxvideo_framebuffer.c 87567 2013-07-26 08:36:22Z noreply@oracle.com $
  *
  * VirtualBox Additions Linux kernel video driver
  */
 
 /*
- * Copyright (C) 2011 Oracle Corporation
+ * Copyright (C) 2013 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;
@@ -16,7 +16,7 @@
  * --------------------------------------------------------------------
  *
  * This code is based on
- * glint_mode.h
+ * glint_framebuffer.c
  * with the following copyright and permission notice:
  *
  * Copyright 2010 Matt Turner.
@@ -41,57 +41,40 @@
  *
  * Authors: Matt Turner
  */
-
-#ifndef __DRM_VBOXVIDEO_MODE_H__
-#define __DRM_VBOXVIDEO_MODE_H__
-
-#include <VBox/Hardware/VBoxVideoVBE.h>
 #include "drm/drmP.h"
-#include <linux/version.h>
+#include "drm/drm.h"
+#include "drm/drm_crtc_helper.h"
 
-#define VBOXVIDEO_MAX_FB_HEIGHT VBE_DISPI_MAX_YRES
-#define VBOXVIDEO_MAX_FB_WIDTH  VBE_DISPI_MAX_XRES
+#include "vboxvideo.h"
+#include "vboxvideo_drv.h"
 
-#define to_vboxvideo_crtc(x)    container_of(x, struct vboxvideo_crtc, base)
-#define to_vboxvideo_encoder(x) container_of(x, struct vboxvideo_encoder, base)
-#define to_vboxvideo_framebuffer(x) container_of(x, struct vboxvideo_framebuffer, base)
-
-#define VBOXVIDEO_DPMS_CLEARED (-1)
-
-#if LINUX_VERSION_CODE < KERNEL_VERSION(3, 3, 0)
-# define DRM_MODE_FB_CMD drm_mode_fb_cmd
-#else
-# define DRM_MODE_FB_CMD drm_mode_fb_cmd2
-#endif
-
-struct vboxvideo_crtc
+static void vboxvideo_user_framebuffer_destroy(struct drm_framebuffer *fb)
 {
-    struct drm_crtc   base;
-    int               crtc_id;
-    int               last_dpms;
-    bool              enabled;
-};
+    drm_framebuffer_cleanup(fb);
+}
 
-struct vboxvideo_mode_info
+static int vboxvideo_user_framebuffer_create_handle(struct drm_framebuffer *fb,
+                                                    struct drm_file *file_priv,
+                                                    unsigned int *handle)
 {
-    bool                    mode_config_initialized;
-    struct vboxvideo_crtc  *crtcs[1]; /* FIXME: how many CRTCs? */
-    /* pointer to fbdev info structure */
-    struct vboxvideo_fbdev *gfbdev;
+    return 0;
+}
+
+static const struct drm_framebuffer_funcs vboxvideo_fb_funcs = {
+    .destroy = vboxvideo_user_framebuffer_destroy,
+    .create_handle = vboxvideo_user_framebuffer_create_handle,
 };
 
-struct vboxvideo_encoder
+int vboxvideo_framebuffer_init(struct drm_device *dev,
+                               struct vboxvideo_framebuffer *gfb,
+                               struct DRM_MODE_FB_CMD *mode_cmd)
 {
-    struct drm_encoder base;
-    int                last_dpms;
-};
+    int ret = drm_framebuffer_init(dev, &gfb->base, &vboxvideo_fb_funcs);
+    if (ret) {
+        VBOXVIDEO_ERROR("drm_framebuffer_init failed: %d\n", ret);
+        return ret;
+    }
+    drm_helper_mode_fill_fb_struct(&gfb->base, mode_cmd);
 
-struct vboxvideo_connector {
-    struct drm_connector  base;
-};
-
-struct vboxvideo_framebuffer {
-    struct drm_framebuffer    base;
-};
-
-#endif                /* __DRM_VBOXVIDEO_H__ */
+    return 0;
+}
