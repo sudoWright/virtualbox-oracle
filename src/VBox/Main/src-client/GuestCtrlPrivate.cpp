@@ -1,4 +1,4 @@
-/* $Id: GuestCtrlPrivate.cpp 87634 2013-07-30 09:43:14Z andreas.loeffler@oracle.com $ */
+/* $Id: GuestCtrlPrivate.cpp 87636 2013-07-30 10:14:53Z andreas.loeffler@oracle.com $ */
 /** @file
  *
  * Internal helpers/structures for guest control functionality.
@@ -832,7 +832,8 @@ int GuestBase::cancelWaitEvents(void)
                 itEvents = itEventTypes->second.erase(itEvents);
             }
 
-            itEventTypes = mWaitEvents.erase(itEventTypes);
+            mWaitEvents.erase(itEventTypes);
+            itEventTypes = mWaitEvents.begin();
         }
 
         int rc2 = RTCritSectLeave(&mWaitEventCritSect);
