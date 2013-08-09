@@ -1,4 +1,4 @@
-/* $Id: Wrapper.h 84995 2013-04-12 12:01:02Z klaus.espenlaub@oracle.com $ */
+/* $Id: Wrapper.h 87851 2013-08-09 14:27:21Z klaus.espenlaub@oracle.com $ */
 
 /** @file
  *
@@ -23,6 +23,9 @@
 #include <vector>
 #include <VBox/com/ptr.h>
 #include <VBox/com/array.h>
+
+#include "AutoCaller.h"
+
 
 /**
  * Checks that the given pointer to an output argument is valid and throws
