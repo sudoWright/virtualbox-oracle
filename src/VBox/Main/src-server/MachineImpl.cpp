@@ -1,4 +1,4 @@
-/* $Id: MachineImpl.cpp 87761 2013-08-06 15:18:17Z klaus.espenlaub@oracle.com $ */
+/* $Id: MachineImpl.cpp 88035 2013-08-15 15:51:51Z ramshankar.venkataraman@oracle.com $ */
 /** @file
  * Implementation of IMachine in VBoxSVC.
  */
@@ -13020,7 +13020,7 @@ void SessionMachine::uninit(Uninit::Reason aReason)
     RTThreadSleep(500);
     mParent->AddRef();
     LONG c = mParent->Release();
-    LogFlowThisFunc(("vbox ref=%d\n", c));
+    LogFlowThisFunc(("vbox ref=%d\n", c)); NOREF(c);
     unconst(mParent) = NULL;
     unconst(mPeer) = NULL;
 
