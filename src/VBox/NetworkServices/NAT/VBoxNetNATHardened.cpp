@@ -1,4 +1,4 @@
-/* $Id: VBoxNetNATHardened.cpp 88160 2013-08-20 03:44:39Z noreply@oracle.com $ */
+/* $Id: VBoxNetNATHardened.cpp 88182 2013-08-20 09:50:55Z noreply@oracle.com $ */
 /** @file
  * VBoxNetNAT - Hardened main().
  */
@@ -23,5 +23,5 @@
 
 int main(int argc, char **argv, char **envp)
 {
-    return SUPR3HardenedMain(RT_STR(SERVICE_NAME), 0 /* fFlags */, argc, argv, envp);
+    return SUPR3HardenedMain(SERVICE_NAME, 0 /* fFlags */, argc, argv, envp);
 }
