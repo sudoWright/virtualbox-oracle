@@ -1,4 +1,4 @@
-/* $Id: UIWizardFirstRunPageBasic.cpp 88674 2013-09-04 10:22:19Z sergey.dubov@oracle.com $ */
+/* $Id: UIWizardFirstRunPageBasic.cpp 88741 2013-09-05 15:54:32Z sergey.dubov@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt4 GUI ("VirtualBox"):
@@ -30,6 +30,7 @@
 #include "VBoxMediaComboBox.h"
 #include "QIToolButton.h"
 #include "QIRichTextLabel.h"
+#include "UIMedium.h"
 
 UIWizardFirstRunPage::UIWizardFirstRunPage(bool fBootHardDiskWasSet)
     : m_fBootHardDiskWasSet(fBootHardDiskWasSet)
