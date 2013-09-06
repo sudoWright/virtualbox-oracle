@@ -1,6 +1,6 @@
-/* $Id: VBoxPortForwardString.h 85048 2013-04-16 06:11:59Z noreply@oracle.com $ */
+/* $Id: VBoxPortForwardString.h 88774 2013-09-06 09:50:19Z noreply@oracle.com $ */
 /** @file
- * VBoxPortForwardString 
+ * VBoxPortForwardString
  */
 
 /*
