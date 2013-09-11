@@ -1,4 +1,4 @@
-/* $Id: Config.h 88862 2013-09-11 05:04:47Z noreply@oracle.com $ */
+/* $Id: Config.h 88880 2013-09-11 14:14:37Z noreply@oracle.com $ */
 /**
  * This file contains declarations of DHCP config.
  */
@@ -229,7 +229,8 @@ class ConfigEntity: public BaseConfigEntity
                  int matchingLevel = 0):
       BaseConfigEntity(criteria, matchingLevel),
       m_name(name),
-      m_parentCfg(cfg)
+      m_parentCfg(cfg),
+      m_u32ExpirationPeriod(0)
     {
         unconst(m_parentCfg)->add(this);
     }
