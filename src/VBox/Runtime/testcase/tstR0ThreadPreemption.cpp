@@ -1,4 +1,4 @@
-/* $Id: tstR0ThreadPreemption.cpp 88203 2013-08-20 12:24:49Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: tstR0ThreadPreemption.cpp 88921 2013-09-12 22:36:08Z ramshankar.venkataraman@oracle.com $ */
 /** @file
  * IPRT R0 Testcase - Thread Preemption.
  */
@@ -383,6 +383,7 @@ DECLEXPORT(int) TSTR0ThreadPreemptionSrvReqHandler(PSUPDRVSESSION pSession, uint
 
                 RTThreadSleep(cMsSleepGranularity);
                 cMsSlept += cMsSleepGranularity;
+                RTThreadYield();
             }
 
             if (!ASMAtomicReadBool(&pCtxData->fPreemptingInvoked))
