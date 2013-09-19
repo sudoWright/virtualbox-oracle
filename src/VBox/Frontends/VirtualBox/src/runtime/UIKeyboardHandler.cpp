@@ -1,4 +1,4 @@
-/* $Id: UIKeyboardHandler.cpp 88992 2013-09-16 16:55:57Z vadim.galitsyn@oracle.com $ */
+/* $Id: UIKeyboardHandler.cpp 89078 2013-09-19 14:40:56Z noreply@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt GUI ("VirtualBox"):
@@ -341,7 +341,7 @@ int UIKeyboardHandler::keyboardState() const
 }
 
 #ifdef VBOX_WITH_DEBUGGER_GUI
-void UIKeyboardHandler::setDebuggerActive(bool aActive /*= true*/)
+void UIKeyboardHandler::setDebuggerActive(bool aActive /* = true*/)
 {
     if (aActive)
     {
