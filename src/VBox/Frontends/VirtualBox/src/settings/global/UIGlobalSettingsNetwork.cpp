@@ -1,4 +1,4 @@
-/* $Id: UIGlobalSettingsNetwork.cpp 89099 2013-09-19 16:33:44Z sergey.dubov@oracle.com $ */
+/* $Id: UIGlobalSettingsNetwork.cpp 89101 2013-09-19 16:46:04Z sergey.dubov@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt4 GUI ("VirtualBox"):
@@ -948,7 +948,7 @@ UIDataNetworkNAT UIGlobalSettingsNetwork::generateDataNetworkNAT(const CNATNetwo
         /* Replace all ':' with ',' first: */
         strIPv6Rule.replace(':', ',');
         /* But replace ',' back with ':' for addresses: */
-        QRegExp re("\\[[^:]+\\]");
+        QRegExp re("\\[[^:\\[\\]]+\\]");
         re.setMinimal(true);
         while (re.indexIn(strIPv6Rule) != -1)
         {
