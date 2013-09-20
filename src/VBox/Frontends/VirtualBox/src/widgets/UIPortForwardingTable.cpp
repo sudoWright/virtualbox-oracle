@@ -1,4 +1,4 @@
-/* $Id: UIPortForwardingTable.cpp 89098 2013-09-19 16:31:07Z sergey.dubov@oracle.com $ */
+/* $Id: UIPortForwardingTable.cpp 89136 2013-09-20 10:55:37Z sergey.dubov@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt4 GUI ("VirtualBox"):
@@ -109,7 +109,7 @@ public:
     {
         setFrame(false);
         setAlignment(Qt::AlignLeft | Qt::AlignVCenter);
-        setValidator(new QRegExpValidator(QRegExp("[^,]*"), this));
+        setValidator(new QRegExpValidator(QRegExp("[^,:]*"), this));
     }
 
 private:
