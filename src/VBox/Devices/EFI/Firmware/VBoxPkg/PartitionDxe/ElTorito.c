@@ -1,4 +1,4 @@
-/* $Id: ElTorito.c 89295 2013-09-25 08:26:15Z knut.osmundsen@oracle.com $ */
+/* $Id: ElTorito.c 89365 2013-09-27 12:28:22Z knut.osmundsen@oracle.com $ */
 /** @file
  * ElTorito.c
  */
@@ -85,7 +85,7 @@ PartitionInstallElToritoChildHandles (
   EFI_STATUS              Found;
   UINT32                  VolSpaceSize;
 
-  LogFlowFuncMarkDP(DevicePath);
+  VBoxLogFlowFuncMarkDP(DevicePath);
   Found         = EFI_NOT_FOUND;
   Media         = BlockIo->Media;
 

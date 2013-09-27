@@ -1,4 +1,4 @@
-/* $Id: Mbr.c 89295 2013-09-25 08:26:15Z knut.osmundsen@oracle.com $ */
+/* $Id: Mbr.c 89365 2013-09-27 12:28:22Z knut.osmundsen@oracle.com $ */
 /** @file
  * Mbr.c
  */
@@ -169,7 +169,7 @@ PartitionInstallMbrChildHandles (
   MediaId   = BlockIo->Media->MediaId;
   LastBlock = BlockIo->Media->LastBlock;
 
-  LogFlowFuncMarkDP(DevicePath);
+  VBoxLogFlowFuncMarkDP(DevicePath);
   Mbr = AllocatePool (BlockSize);
   if (Mbr == NULL) {
     return Found;
