@@ -1,4 +1,4 @@
-/* $Id: MachineImpl.h 89083 2013-09-19 15:17:43Z klaus.espenlaub@oracle.com $ */
+/* $Id: MachineImpl.h 89551 2013-10-04 08:37:50Z klaus.espenlaub@oracle.com $ */
 /** @file
  * Implementation of IMachine in VBoxSVC - Header.
  */
@@ -542,6 +542,7 @@ public:
     STDMETHOD(TemporaryEjectDevice)(IN_BSTR aControllerName, LONG aControllerPort, LONG aDevice, BOOL aTempEject);
     STDMETHOD(NonRotationalDevice)(IN_BSTR aControllerName, LONG aControllerPort, LONG aDevice, BOOL aNonRotational);
     STDMETHOD(SetAutoDiscardForDevice)(IN_BSTR aControllerName, LONG aControllerPort, LONG aDevice, BOOL aDiscard);
+    STDMETHOD(SetHotPluggableForDevice)(IN_BSTR aControllerName, LONG aControllerPort, LONG aDevice, BOOL aHotPluggable);
     STDMETHOD(SetNoBandwidthGroupForDevice)(IN_BSTR aControllerName, LONG aControllerPort,
                                             LONG aDevice);
     STDMETHOD(SetBandwidthGroupForDevice)(IN_BSTR aControllerName, LONG aControllerPort,
