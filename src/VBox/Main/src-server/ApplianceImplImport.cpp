@@ -1,4 +1,4 @@
-/* $Id: ApplianceImplImport.cpp 89083 2013-09-19 15:17:43Z klaus.espenlaub@oracle.com $ */
+/* $Id: ApplianceImplImport.cpp 89652 2013-10-07 21:59:25Z knut.osmundsen@oracle.com $ */
 /** @file
  *
  * IAppliance and IVirtualSystem COM class implementations.
@@ -3840,5 +3840,4 @@ void Appliance::importMachines(ImportStack &stack,
 
     } // for (it = pAppliance->m->llVirtualSystems.begin() ...
 }
-
 

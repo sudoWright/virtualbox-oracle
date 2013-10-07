@@ -1,4 +1,4 @@
-/* $Id: TokenImpl.h 88879 2013-09-11 14:08:36Z klaus.espenlaub@oracle.com $ */
+/* $Id: TokenImpl.h 89652 2013-10-07 21:59:25Z knut.osmundsen@oracle.com $ */
 
 /** @file
  *
@@ -51,8 +51,8 @@ private:
     struct Data
     {
         Data()
-	{
-	}
+        {
+        }
 
         ComObjPtr<SessionMachine> pSessionMachine;
     };

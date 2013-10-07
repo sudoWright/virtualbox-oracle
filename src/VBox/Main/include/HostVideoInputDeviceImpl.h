@@ -1,4 +1,4 @@
-/* $Id: HostVideoInputDeviceImpl.h 89180 2013-09-20 15:47:37Z vitali.pelenjow@oracle.com $ */
+/* $Id: HostVideoInputDeviceImpl.h 89652 2013-10-07 21:59:25Z knut.osmundsen@oracle.com $ */
 
 /** @file
  *
@@ -55,8 +55,8 @@ private:
     struct Data
     {
         Data()
-	{
-	}
+        {
+        }
 
         com::Utf8Str name;
         com::Utf8Str path;
