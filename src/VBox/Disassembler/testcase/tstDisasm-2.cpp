@@ -1,4 +1,4 @@
-/* $Id: tstDisasm-2.cpp 83576 2013-02-04 15:54:15Z noreply@oracle.com $ */
+/* $Id: tstDisasm-2.cpp 89645 2013-10-07 21:41:26Z knut.osmundsen@oracle.com $ */
 /** @file
  * Testcase - Generic Disassembler Tool.
  */
@@ -570,7 +570,7 @@ int main(int argc, char **argv)
                 break;
 
             case 'V':
-                RTPrintf("$Revision: $\n");
+                RTPrintf("$Revision: 89645 $\n");
                 return 0;
 
             default:
