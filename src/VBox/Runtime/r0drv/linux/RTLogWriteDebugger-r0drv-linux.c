@@ -1,4 +1,4 @@
-/* $Id: RTLogWriteDebugger-r0drv-linux.c 83575 2013-02-04 14:27:54Z noreply@oracle.com $ */
+/* $Id: RTLogWriteDebugger-r0drv-linux.c 89632 2013-10-07 21:19:37Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Log To Debugger, Ring-0 Driver, Linux.
  */

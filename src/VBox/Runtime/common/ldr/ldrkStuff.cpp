@@ -1,4 +1,4 @@
-/* $Id: ldrkStuff.cpp 87484 2013-07-23 11:57:38Z knut.osmundsen@oracle.com $ */
+/* $Id: ldrkStuff.cpp 89632 2013-10-07 21:19:37Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Binary Image Loader, kLdr Interface.
  */

@@ -1,4 +1,4 @@
-/* $Id: thread2-posix.cpp 80827 2012-09-20 09:56:07Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: thread2-posix.cpp 89632 2013-10-07 21:19:37Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Threads part 2, POSIX.
  */

@@ -1,4 +1,4 @@
-/* $Id: mppresent-generic.cpp 86523 2013-06-18 17:33:09Z knut.osmundsen@oracle.com $ */
+/* $Id: mppresent-generic.cpp 89632 2013-10-07 21:19:37Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Multiprocessor, Stubs for the RTMp*Present* API.
  */

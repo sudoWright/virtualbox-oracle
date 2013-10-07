@@ -1,4 +1,4 @@
-/* $Id: tstRTGetOpt.cpp 68333 2010-11-30 22:57:21Z knut.osmundsen@oracle.com $ */
+/* $Id: tstRTGetOpt.cpp 89632 2013-10-07 21:19:37Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT Testcase - RTGetOpt
  */

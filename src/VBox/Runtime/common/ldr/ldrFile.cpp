@@ -1,4 +1,4 @@
-/* $Id: ldrFile.cpp 85690 2013-05-13 15:34:54Z knut.osmundsen@oracle.com $ */
+/* $Id: ldrFile.cpp 89632 2013-10-07 21:19:37Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Binary Image Loader, The File Oriented Parts.
  */

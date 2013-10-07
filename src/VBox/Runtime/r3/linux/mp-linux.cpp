@@ -1,4 +1,4 @@
-/* $Id: mp-linux.cpp 86524 2013-06-18 17:37:03Z knut.osmundsen@oracle.com $ */
+/* $Id: mp-linux.cpp 89632 2013-10-07 21:19:37Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Multiprocessor, Linux.
  */

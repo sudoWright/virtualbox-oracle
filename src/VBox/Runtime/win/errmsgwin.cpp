@@ -1,4 +1,4 @@
-/* $Id: errmsgwin.cpp 69316 2011-01-10 11:05:23Z klaus.espenlaub@oracle.com $ */
+/* $Id: errmsgwin.cpp 89632 2013-10-07 21:19:37Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Status code messages.
  */

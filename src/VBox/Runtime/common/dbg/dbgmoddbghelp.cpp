@@ -1,4 +1,4 @@
-/* $Id: dbgmoddbghelp.cpp 86000 2013-05-25 19:51:19Z knut.osmundsen@oracle.com $ */
+/* $Id: dbgmoddbghelp.cpp 89632 2013-10-07 21:19:37Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Debug Info Reader Using DbgHelp.dll if Present.
  */
@@ -499,5 +499,4 @@ DECL_HIDDEN_CONST(RTDBGMODVTDBG) const g_rtDbgModVtDbgDbgHelp =
 
     /*.u32EndMagic = */         RTDBGMODVTDBG_MAGIC
 };
-
 

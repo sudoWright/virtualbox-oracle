@@ -1,4 +1,4 @@
-/* $Id: tstLdr-4.cpp 86097 2013-05-30 12:16:53Z noreply@oracle.com $ */
+/* $Id: tstLdr-4.cpp 89632 2013-10-07 21:19:37Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Testcase for RTLdrOpen using ldrLdrObjR0.r0.
  */

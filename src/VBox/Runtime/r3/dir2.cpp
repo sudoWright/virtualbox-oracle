@@ -1,4 +1,4 @@
-/* $Id: dir2.cpp 83575 2013-02-04 14:27:54Z noreply@oracle.com $ */
+/* $Id: dir2.cpp 89632 2013-10-07 21:19:37Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Directory Manipulation, Part 2.
  */

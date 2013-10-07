@@ -1,4 +1,4 @@
-/* $Id: ldrELF.cpp 85636 2013-05-10 12:36:39Z knut.osmundsen@oracle.com $ */
+/* $Id: ldrELF.cpp 89632 2013-10-07 21:19:37Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Binary Image Loader, Executable and Linker Format (ELF).
  */

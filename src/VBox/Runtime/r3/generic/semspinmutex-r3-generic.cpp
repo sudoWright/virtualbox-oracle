@@ -1,4 +1,4 @@
-/* $Id: semspinmutex-r3-generic.cpp 83575 2013-02-04 14:27:54Z noreply@oracle.com $ */
+/* $Id: semspinmutex-r3-generic.cpp 89632 2013-10-07 21:19:37Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Spinning Mutex Semaphores, Ring-3, Generic.
  */

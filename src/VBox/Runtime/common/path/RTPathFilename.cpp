@@ -1,4 +1,4 @@
-/* $Id: RTPathFilename.cpp 85792 2013-05-15 17:12:14Z knut.osmundsen@oracle.com $ */
+/* $Id: RTPathFilename.cpp 89632 2013-10-07 21:19:37Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - RTPathFilename
  */
@@ -96,5 +96,4 @@ RTDECL(char *) RTPathFilenameEx(const char *pszPath, uint32_t fFlags)
     /* not reached */
 }
 RT_EXPORT_SYMBOL(RTPathFilenameEx);
-
 

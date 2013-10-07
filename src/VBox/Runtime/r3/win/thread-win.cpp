@@ -1,4 +1,4 @@
-/* $Id: thread-win.cpp 86509 2013-06-18 13:28:52Z noreply@oracle.com $ */
+/* $Id: thread-win.cpp 89632 2013-10-07 21:19:37Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Threads, Windows.
  */

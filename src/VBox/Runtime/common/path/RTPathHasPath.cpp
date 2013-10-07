@@ -1,4 +1,4 @@
-/* $Id: RTPathHasPath.cpp 77537 2012-04-18 18:14:03Z knut.osmundsen@oracle.com $ */
+/* $Id: RTPathHasPath.cpp 89632 2013-10-07 21:19:37Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - RTPathHasPath
  */

@@ -1,4 +1,4 @@
-/* $Id: rand-posix.cpp 84652 2013-03-31 04:29:57Z knut.osmundsen@oracle.com $ */
+/* $Id: rand-posix.cpp 89632 2013-10-07 21:19:37Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Random Numbers and Byte Streams, POSIX.
  */

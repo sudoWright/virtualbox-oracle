@@ -1,4 +1,4 @@
-/* $Id: semmutex-r0drv-nt.cpp 83575 2013-02-04 14:27:54Z noreply@oracle.com $ */
+/* $Id: semmutex-r0drv-nt.cpp 89632 2013-10-07 21:19:37Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Mutex Semaphores, Ring-0 Driver, NT.
  */

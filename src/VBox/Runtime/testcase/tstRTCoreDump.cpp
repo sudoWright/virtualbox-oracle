@@ -1,4 +1,4 @@
-/* $Id: tstRTCoreDump.cpp 72480 2011-06-24 13:25:07Z knut.osmundsen@oracle.com $ */
+/* $Id: tstRTCoreDump.cpp 89632 2013-10-07 21:19:37Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT Testcase - Core Dumper.
  */

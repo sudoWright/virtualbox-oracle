@@ -1,4 +1,4 @@
-/* $Id: vfsstdfile.cpp 87502 2013-07-23 17:45:07Z knut.osmundsen@oracle.com $ */
+/* $Id: vfsstdfile.cpp 89632 2013-10-07 21:19:37Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Virtual File System, Standard File Implementation.
  */
@@ -501,5 +501,4 @@ RTDECL(int) RTVfsIoStrmOpenNormal(const char *pszFilename, uint64_t fOpen, PRTVF
         *phVfsIos = RTVfsFileToIoStream(hVfsFile);
     return rc;
 }
-
 

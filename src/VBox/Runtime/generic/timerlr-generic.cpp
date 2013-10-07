@@ -1,4 +1,4 @@
-/* $Id: timerlr-generic.cpp 81131 2012-10-04 09:45:31Z noreply@oracle.com $ */
+/* $Id: timerlr-generic.cpp 89632 2013-10-07 21:19:37Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Low Resolution Timers, Generic.
  *

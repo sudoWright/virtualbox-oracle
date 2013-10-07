@@ -1,4 +1,4 @@
-/* $Id: ldrEx.cpp 85849 2013-05-17 17:21:23Z knut.osmundsen@oracle.com $ */
+/* $Id: ldrEx.cpp 89632 2013-10-07 21:19:37Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Binary Image Loader, Extended Features.
  */

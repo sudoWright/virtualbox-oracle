@@ -1,4 +1,4 @@
-/* $Id: assert.cpp 88088 2013-08-18 00:00:44Z knut.osmundsen@oracle.com $ */
+/* $Id: assert.cpp 89632 2013-10-07 21:19:37Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Assertions, common code.
  */
