@@ -1,4 +1,4 @@
-/* $Id: DBGPlugInSolaris.cpp 85478 2013-05-02 15:08:48Z michal.necasek@oracle.com $ */
+/* $Id: DBGPlugInSolaris.cpp 89643 2013-10-07 21:34:16Z knut.osmundsen@oracle.com $ */
 /** @file
  * DBGPlugInSolaris - Debugger and Guest OS Digger Plugin For Solaris.
  */

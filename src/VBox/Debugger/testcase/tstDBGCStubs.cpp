@@ -1,4 +1,4 @@
-/* $Id: tstDBGCStubs.cpp 89321 2013-09-26 00:22:48Z knut.osmundsen@oracle.com $ */
+/* $Id: tstDBGCStubs.cpp 89643 2013-10-07 21:34:16Z knut.osmundsen@oracle.com $ */
 /** @file
  * DBGC Testcase - Command Parser, VMM Stub Functions.
  */
