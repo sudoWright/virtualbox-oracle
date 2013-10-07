@@ -1,4 +1,4 @@
-/* $Id: VBoxGuestR3LibAdditions.cpp 71992 2011-05-30 14:13:17Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxGuestR3LibAdditions.cpp 89635 2013-10-07 21:23:57Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxGuestR3Lib - Ring-3 Support Library for VirtualBox guest additions, Additions Info.
  */
