@@ -1,4 +1,4 @@
-/* $Id: HostImpl.cpp 89652 2013-10-07 21:59:25Z knut.osmundsen@oracle.com $ */
+/* $Id: HostImpl.cpp 89985 2013-10-16 12:09:56Z vitali.pelenjow@oracle.com $ */
 /** @file
  * VirtualBox COM class implementation: Host
  */
@@ -1759,7 +1759,7 @@ STDMETHODIMP Host::COMGETTER(VideoInputDevices)(ComSafeArrayOut(IHostVideoInputD
     AutoReadLock alock(this COMMA_LOCKVAL_SRC_POS);
     HostVideoInputDeviceList list;
 
-    HRESULT hr = HostVideoInputDevice::queryHostDevices(&list);
+    HRESULT hr = HostVideoInputDevice::queryHostDevices(m->pParent, &list);
 
     if (SUCCEEDED(hr))
     {
