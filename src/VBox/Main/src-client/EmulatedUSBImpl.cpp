@@ -1,4 +1,4 @@
-/* $Id: EmulatedUSBImpl.cpp 89966 2013-10-15 15:12:06Z vitali.pelenjow@oracle.com $ */
+/* $Id: EmulatedUSBImpl.cpp 90028 2013-10-17 12:34:47Z ramshankar.venkataraman@oracle.com $ */
 /** @file
  *
  * Emulated USB manager implementation.
@@ -69,8 +69,8 @@ class EUSBWEBCAM /* : public EUSBDEVICE */
             :
             mcRefs(1),
             mpEmulatedUSB(NULL),
-            enmStatus(EUSBDEVICE_CREATED),
-            mpvObject(NULL)
+            mpvObject(NULL),
+            enmStatus(EUSBDEVICE_CREATED)
         {
             RT_ZERO(mUuid);
             RT_ZERO(mszUuid);
