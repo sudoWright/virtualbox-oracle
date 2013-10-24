@@ -1,4 +1,4 @@
-/* $Id: UIActionPoolRuntime.cpp 90189 2013-10-23 18:54:12Z noreply@oracle.com $ */
+/* $Id: UIActionPoolRuntime.cpp 90207 2013-10-24 11:54:09Z noreply@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt GUI ("VirtualBox"):
@@ -980,7 +980,7 @@ protected:
 
     void retranslateUi()
     {
-        setName(QApplication::translate("UIActionPool", "&Insert Guest Additions installer..."));
+        setName(QApplication::translate("UIActionPool", "&Insert Guest Additions CD image..."));
         setStatusTip(QApplication::translate("UIActionPool", "Insert the Guest Additions disk file into the virtual drive"));
     }
 };
