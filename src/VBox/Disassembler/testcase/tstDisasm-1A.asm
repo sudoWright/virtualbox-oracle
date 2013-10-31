@@ -1,4 +1,4 @@
-; $Id: tstDisasm-1A.asm 86825 2013-06-28 12:22:45Z knut.osmundsen@oracle.com $
+; $Id: tstDisasm-1A.asm 90354 2013-10-31 11:49:09Z knut.osmundsen@oracle.com $
 ;; @file
 ; VBox disassembler: Assembler test routines
 ;
@@ -26,7 +26,7 @@
 
 BITS 32
 
-%if __YASM_MAJOR__ > 1 || (__YASM_MAJOR__ == 1 && __YASM_MINOR__ >= 2)
+%if __YASM_VERSION_ID__ >= 001020001h ; v1.2.0.1 and greater, make sure to exclude v1.2.0.0.
  %define pmulhrwa pmulhrw
 %endif
 
