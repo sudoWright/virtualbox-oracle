@@ -1,4 +1,4 @@
-/* $Id: server.cpp 88547 2013-08-29 16:35:14Z klaus.espenlaub@oracle.com $ */
+/* $Id: server.cpp 90654 2013-11-15 11:39:00Z noreply@oracle.com $ */
 /** @file
  * XPCOM server process (VBoxSVC) start point.
  */
@@ -50,6 +50,8 @@
 #include <fcntl.h>
 #include <sys/stat.h>
 #include <sys/resource.h>
+
+#include <string>
 
 /////////////////////////////////////////////////////////////////////////////
 // VirtualBox component instantiation
