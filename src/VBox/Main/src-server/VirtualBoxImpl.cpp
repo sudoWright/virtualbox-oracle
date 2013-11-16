@@ -1,4 +1,4 @@
-/* $Id: VirtualBoxImpl.cpp 90653 2013-11-15 11:29:34Z noreply@oracle.com $ */
+/* $Id: VirtualBoxImpl.cpp 90687 2013-11-16 07:23:21Z noreply@oracle.com $ */
 /** @file
  * Implementation of IVirtualBox in VBoxSVC.
  */
@@ -46,7 +46,6 @@
 
 #include <algorithm>
 #include <set>
-#include <string>
 #include <vector>
 #include <memory> // for auto_ptr
 
