@@ -1,4 +1,4 @@
-/* $Id: Wrapper.h 87851 2013-08-09 14:27:21Z klaus.espenlaub@oracle.com $ */
+/* $Id: Wrapper.h 90899 2013-11-26 09:28:02Z klaus.espenlaub@oracle.com $ */
 
 /** @file
  *
@@ -305,7 +305,7 @@ public:
     {
     }
 
-    ComTypeInConverter(A *aSrc) : mSrc(mSrc)
+    ComTypeInConverter(A *aSrc) : mSrc(aSrc)
     {
     }
 
