@@ -1,4 +1,4 @@
-/* $Id: HMInternal.h 91060 2013-12-03 14:09:51Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: HMInternal.h 91083 2013-12-04 10:51:06Z ramshankar.venkataraman@oracle.com $ */
 /** @file
  * HM - Internal header file.
  */
@@ -327,7 +327,7 @@ typedef struct HM
     bool                        fHasIoApic;
 
     /** Set when TPR patching is allowed. */
-    bool                        fTRPPatchingAllowed;
+    bool                        fTprPatchingAllowed;
 
     /** Set when we initialize VT-x or AMD-V once for all CPUs. */
     bool                        fGlobalInit;
