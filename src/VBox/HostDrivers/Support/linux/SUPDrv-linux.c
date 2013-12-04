@@ -1,4 +1,4 @@
-/* $Rev: 91024 $ */
+/* $Rev: 91075 $ */
 /** @file
  * VBoxDrv - The VirtualBox Support Driver - Linux specifics.
  */
@@ -965,7 +965,6 @@ static DECLCALLBACK(void) supdrvLnxMsrProberModifyOnCpu(RTCPUID idCpu, void *pvU
     pReq->u.Out.uResults.Modify.fRestoreGp = rcRestore != 0;
     RT_ZERO(pReq->u.Out.uResults.Modify.afReserved);
 }
-
 # endif
 
 
