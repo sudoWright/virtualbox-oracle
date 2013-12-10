@@ -1,4 +1,4 @@
-/* $Id: VideoRec.h 85598 2013-05-08 13:00:13Z noreply@oracle.com $ */
+/* $Id: VideoRec.h 91228 2013-12-10 14:49:04Z noreply@oracle.com $ */
 /** @file
  * Encodes the screen content in VPX format.
  */

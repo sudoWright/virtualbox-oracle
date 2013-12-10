@@ -1,4 +1,4 @@
-/* $Id: EbmlWriter.cpp 85556 2013-05-06 19:34:30Z noreply@oracle.com $ */
+/* $Id: EbmlWriter.cpp 91228 2013-12-10 14:49:04Z noreply@oracle.com $ */
 /** @file
  * EbmlWriter.cpp - EBML writer + WebM container
  */
