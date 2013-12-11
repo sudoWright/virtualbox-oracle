@@ -1,4 +1,4 @@
-/* $Id: VD.cpp 90433 2013-11-04 22:46:38Z alexander.eichner@oracle.com $ */
+/* $Id: VD.cpp 91247 2013-12-11 23:56:41Z alexander.eichner@oracle.com $ */
 /** @file
  * VBoxHDD - VBox HDD Container implementation.
  */
@@ -2420,7 +2420,8 @@ static int vdWriteHelperOptimizedPreReadAsync(PVDIOCTX pIoCtx)
 
     pIoCtx->fFlags |= VDIOCTX_FLAGS_ZERO_FREE_BLOCKS;
 
-    if (pIoCtx->Req.Io.cbTransferLeft)
+    if (   pIoCtx->Req.Io.cbTransferLeft
+        && !pIoCtx->cDataTransfersPending)
         rc = vdReadHelperAsync(pIoCtx);
 
     if (   RT_SUCCESS(rc)
