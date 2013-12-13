@@ -1,4 +1,4 @@
-/* $Id: VM.cpp 89057 2013-09-18 20:39:01Z alexander.eichner@oracle.com $ */
+/* $Id: VM.cpp 91271 2013-12-13 00:40:20Z knut.osmundsen@oracle.com $ */
 /** @file
  * VM - Virtual Machine
  */
@@ -4379,7 +4379,7 @@ static DECLCALLBACK(int) vmR3HotUnplugCpu(PVM pVM, VMCPUID idCpu)
     PGMR3ResetCpu(pVM, pVCpu);
     PDMR3ResetCpu(pVCpu);
     TRPMR3ResetCpu(pVCpu);
-    CPUMR3ResetCpu(pVCpu);
+    CPUMR3ResetCpu(pVM, pVCpu);
     EMR3ResetCpu(pVCpu);
     HMR3ResetCpu(pVCpu);
     return VINF_EM_WAIT_SIPI;
