@@ -1,4 +1,4 @@
-/* $Id: CPUM.cpp 91271 2013-12-13 00:40:20Z knut.osmundsen@oracle.com $ */
+/* $Id: CPUM.cpp 91298 2013-12-15 20:36:23Z knut.osmundsen@oracle.com $ */
 /** @file
  * CPUM - CPU Monitor / Manager.
  */
@@ -1455,7 +1455,7 @@ static int cpumR3CpuIdInit(PVM pVM)
      * VIA:   Reserved
      * Safe to expose
      */
-    pCurLeaf = cpumR3CpuIdGetLeaf(pCPUM->GuestInfo.paCpuIdLeavesR3, pCPUM->GuestInfo.cCpuIdLeaves, 4, 0);
+    pCurLeaf = cpumR3CpuIdGetLeaf(pCPUM->GuestInfo.paCpuIdLeavesR3, pCPUM->GuestInfo.cCpuIdLeaves, 5, 0);
     if (pCurLeaf)
     {
         if (!(pStdFeatureLeaf->uEcx & X86_CPUID_FEATURE_ECX_MONITOR))
