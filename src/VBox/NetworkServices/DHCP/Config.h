@@ -1,4 +1,4 @@
-/* $Id: Config.h 91304 2013-12-16 07:58:01Z noreply@oracle.com $ */
+/* $Id: Config.h 91317 2013-12-16 11:20:42Z noreply@oracle.com $ */
 /** @file
  * Config.h
  */
@@ -76,7 +76,7 @@ class Client
     void dump();
 
     Lease lease();
-    const Lease lease() const; 
+    const Lease lease() const;
 
     public:
     static const Client NullClient;
