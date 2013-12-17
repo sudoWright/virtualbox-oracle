@@ -1,4 +1,4 @@
-/* $Id: SUPDrv-darwin.cpp 91300 2013-12-15 23:21:17Z knut.osmundsen@oracle.com $ */
+/* $Id: SUPDrv-darwin.cpp 91368 2013-12-17 14:49:31Z vadim.galitsyn@oracle.com $ */
 /** @file
  * VirtualBox Support Driver - Darwin Specific Code.
  */
@@ -1166,7 +1166,8 @@ int VBOXCALL    supdrvDarwinResumeBuiltinKbd(void)
         if (pIter)
         {
             while ((pDriver = (IOUSBHIDDriver *)pIter->getNextObject()))
-                pDriver->SuspendPort(false, 0);
+                if (pDriver->IsPortSuspended())
+                    pDriver->SuspendPort(false, 0);
 
             pIter->release();
         }
