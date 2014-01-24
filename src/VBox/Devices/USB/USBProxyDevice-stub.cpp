@@ -1,4 +1,4 @@
-/* $Id: USBProxyDevice-stub.cpp 83576 2013-02-04 15:54:15Z noreply@oracle.com $ */
+/* $Id: USBProxyDevice-stub.cpp 91829 2014-01-24 21:16:37Z alexander.eichner@oracle.com $ */
 /** @file
  * USB device proxy - Stub.
  */
@@ -32,6 +32,7 @@
 extern const USBPROXYBACK g_USBProxyDeviceHost =
 {
     "host",
+    0,          /* cbBackend */
     NULL,       /* Open */
     NULL,       /* Init */
     NULL,       /* Close */
