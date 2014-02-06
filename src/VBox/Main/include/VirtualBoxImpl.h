@@ -1,4 +1,4 @@
-/* $Id: VirtualBoxImpl.h 92099 2014-02-06 20:12:51Z klaus.espenlaub@oracle.com $ */
+/* $Id: VirtualBoxImpl.h 92100 2014-02-06 20:18:34Z klaus.espenlaub@oracle.com $ */
 /** @file
  * VirtualBox COM class implementation
  */
@@ -60,7 +60,7 @@ namespace settings
 class ATL_NO_VTABLE VirtualBox :
     public VirtualBoxWrap
 #ifdef RT_OS_WINDOWS
-//     , public CComCoClass<VirtualBox, &CLSID_VirtualBox>
+     , public CComCoClass<VirtualBox, &CLSID_VirtualBox>
 #endif
 {
 
