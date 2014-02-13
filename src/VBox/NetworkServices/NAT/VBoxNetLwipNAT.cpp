@@ -1,4 +1,4 @@
-/* $Id: VBoxNetLwipNAT.cpp 92106 2014-02-07 02:54:38Z noreply@oracle.com $ */
+/* $Id: VBoxNetLwipNAT.cpp 92265 2014-02-13 15:52:07Z vadim.galitsyn@oracle.com $ */
 /** @file
  * VBoxNetNAT - NAT Service for connecting to IntNet.
  */
@@ -72,6 +72,8 @@
 #include <map>
 #include <vector>
 #include <string>
+
+#include <stdio.h>
 
 #include "../NetLib/VBoxNetLib.h"
 #include "../NetLib/VBoxNetBaseService.h"
