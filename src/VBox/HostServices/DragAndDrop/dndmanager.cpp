@@ -1,4 +1,4 @@
-/* $Id: dndmanager.cpp 92300 2014-02-14 10:29:32Z noreply@oracle.com $ */
+/* $Id: dndmanager.cpp 92318 2014-02-17 11:28:34Z alexander.eichner@oracle.com $ */
 /** @file
  * Drag and Drop manager.
  */
@@ -464,7 +464,7 @@ int DnDHGSendDataMessage::currentMessage(uint32_t uMsg,
                                                           this /* pvProgressUser */);
             else
                 AssertMsgFailedReturn(("fMode=0x%x is not supported for srcPath=%s, dstPath=%s\n",
-                                       nextPath.m_fMode, nextPath.m_strSrcPath.c_str(), nextPath.m_strDstPath),
+                                       nextPath.m_fMode, nextPath.m_strSrcPath.c_str(), nextPath.m_strDstPath.c_str()),
                                        VERR_NO_DATA);
 
             m_lstURI.RemoveFirst();
