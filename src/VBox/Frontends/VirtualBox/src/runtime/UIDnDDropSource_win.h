@@ -1,4 +1,4 @@
-/* $Id: UIDnDDropSource_win.h 92475 2014-02-26 12:50:39Z andreas.loeffler@oracle.com $ */
+/* $Id: UIDnDDropSource_win.h 92477 2014-02-26 12:56:01Z andreas.loeffler@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt GUI ("VirtualBox"):
@@ -19,8 +19,6 @@
 
 #ifndef ___UIDnDDropSource_win_h___
 #define ___UIDnDDropSource_win_h___
-
-#include "UIDnDDrag.h"
 
 class UIDnDDropSource : public IDropSource
 {
