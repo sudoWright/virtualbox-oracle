@@ -1,4 +1,4 @@
-/* $Id: server_presenter.cpp 92907 2014-03-20 17:40:50Z noreply@oracle.com $ */
+/* $Id: server_presenter.cpp 93041 2014-03-27 17:56:50Z noreply@oracle.com $ */
 
 /** @file
  * Presenter API
@@ -371,7 +371,7 @@ static void crFbBltImgScaledRects(const CR_BLITTER_IMG *pSrc, const RTPOINT *pSr
                         pCopyRect->xRight - pCopyRect->xLeft,
                         pCopyRect->yBottom - pCopyRect->yTop,
                         pu8Src,
-                        fSrcInvert ? -pSrc->pitch : pSrc->pitch,
+                        fSrcInvert ? -((GLint)pSrc->pitch) : pSrc->pitch,
                         UnscaledSrcWidth,
                         UnscaledSrcHeight
                         );
