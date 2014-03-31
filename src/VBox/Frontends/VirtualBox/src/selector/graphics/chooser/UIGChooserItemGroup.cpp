@@ -1,4 +1,4 @@
-/* $Id: UIGChooserItemGroup.cpp 86507 2013-06-18 13:01:59Z sergey.dubov@oracle.com $ */
+/* $Id: UIGChooserItemGroup.cpp 93077 2014-03-31 16:01:12Z sergey.dubov@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt GUI ("VirtualBox"):
@@ -1734,8 +1734,8 @@ void UIGChooserItemGroup::paintHeader(QPainter *pPainter, const QRect &rect)
                                   iVerticalMargin : iVerticalMargin + (iFullHeaderHeight - m_pixmapSizeMachines.height()) / 2;
             paintPixmap(/* Painter: */
                         pPainter,
-                        /* Rectangle to paint in: */
-                        QRect(QPoint(iMachinePixmapX, iMachinePixmapY), m_pixmapSizeMachines),
+                        /* Point to paint in: */
+                        QPoint(iMachinePixmapX, iMachinePixmapY),
                         /* Pixmap to paint: */
                         m_machinesPixmap);
         }
@@ -1764,8 +1764,8 @@ void UIGChooserItemGroup::paintHeader(QPainter *pPainter, const QRect &rect)
                                 iVerticalMargin : iVerticalMargin + (iFullHeaderHeight - m_pixmapSizeGroups.height()) / 2;
             paintPixmap(/* Painter: */
                         pPainter,
-                        /* Rectangle to paint in: */
-                        QRect(QPoint(iGroupPixmapX, iGroupPixmapY), m_pixmapSizeGroups),
+                        /* Point to paint in: */
+                        QPoint(iGroupPixmapX, iGroupPixmapY),
                         /* Pixmap to paint: */
                         m_groupsPixmap);
         }
