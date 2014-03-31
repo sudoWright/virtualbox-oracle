@@ -1,4 +1,4 @@
-/* $Id: UISpecialControls.cpp 83575 2013-02-04 14:27:54Z noreply@oracle.com $ */
+/* $Id: UISpecialControls.cpp 93076 2014-03-31 15:56:57Z sergey.dubov@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt GUI ("VirtualBox"):
@@ -124,7 +124,7 @@ UIMiniCancelButton::UIMiniCancelButton(QWidget *pParent /* = 0 */)
     setAutoRaise(true);
     setFocusPolicy(Qt::TabFocus);
     setShortcut(QKeySequence(Qt::Key_Escape));
-    setIcon(UIIconPool::defaultIcon(UIIconPool::DialogCancelIcon));
+    setIcon(UIIconPool::defaultIcon(UIIconPool::UIDefaultIconType_DialogCancel));
 }
 
 /********************************************************************************
