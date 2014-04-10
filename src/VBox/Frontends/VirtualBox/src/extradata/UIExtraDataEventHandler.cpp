@@ -1,4 +1,4 @@
-/* $Id: UIExtraDataEventHandler.cpp 92631 2014-03-04 19:36:08Z vadim.galitsyn@oracle.com $ */
+/* $Id: UIExtraDataEventHandler.cpp 93250 2014-04-10 12:23:35Z sergey.dubov@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt GUI ("VirtualBox"):
