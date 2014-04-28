@@ -1,4 +1,4 @@
-/* $Id: UIDefs.cpp 93474 2014-04-26 16:07:34Z sergey.dubov@oracle.com $ */
+/* $Id: UIDefs.cpp 93493 2014-04-28 17:33:21Z sergey.dubov@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt GUI ("VirtualBox"):
@@ -52,6 +52,7 @@ const char* UIDefs::GUI_HideDetails = "GUI/HideDetails";
 /* Machine-window definitions: */
 #ifndef Q_WS_MAC
 const char* UIDefs::GUI_MachineWindowIcons = "GUI/MachineWindowIcons";
+const char* UIDefs::GUI_MachineWindowNamePostfix = "GUI/MachineWindowNamePostfix";
 #endif /* !Q_WS_MAC */
 const char* UIDefs::GUI_RestrictedRuntimeMenus = "GUI/RestrictedRuntimeMenus";
 #ifdef Q_WS_MAC
