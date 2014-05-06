@@ -1,6 +1,6 @@
 #! /bin/sh
 #
-# Linux Additions kernel module init script ($Revision: 93066 $)
+# Linux Additions kernel module init script ($Revision: 93573 $)
 #
 
 #
@@ -34,7 +34,7 @@ LOG="/var/log/vboxadd-install.log"
 MODPROBE=/sbin/modprobe
 OLDMODULES="vboxguest vboxadd vboxsf vboxvfs vboxvideo"
 
-if $MODPROBE -c | grep -q '^allow_unsupported_modules  *0'; then
+if $MODPROBE -c 2>/dev/null | grep -q '^allow_unsupported_modules  *0'; then
   MODPROBE="$MODPROBE --allow-unsupported-modules"
 fi
 
