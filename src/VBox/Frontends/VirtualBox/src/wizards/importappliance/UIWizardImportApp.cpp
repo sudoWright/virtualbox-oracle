@@ -1,4 +1,4 @@
-/* $Id: UIWizardImportApp.cpp 87030 2013-07-05 13:43:03Z noreply@oracle.com $ */
+/* $Id: UIWizardImportApp.cpp 93613 2014-05-08 13:23:04Z sergey.dubov@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt4 GUI ("VirtualBox"):
@@ -135,7 +135,7 @@ private:
 };
 
 UIWizardImportApp::UIWizardImportApp(QWidget *pParent, const QString &strFileName)
-    : UIWizard(pParent, UIWizardType_ImportAppliance)
+    : UIWizard(pParent, WizardType_ImportAppliance)
     , m_strFileName(strFileName)
 {
 #ifndef Q_WS_MAC
