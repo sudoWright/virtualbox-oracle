@@ -1,4 +1,4 @@
-/* $Id: UIMachineLogicFullscreen.cpp 93686 2014-05-13 16:41:52Z sergey.dubov@oracle.com $ */
+/* $Id: UIMachineLogicFullscreen.cpp 93705 2014-05-14 12:51:25Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIMachineLogicFullscreen class implementation.
  */
@@ -257,6 +257,10 @@ void UIMachineLogicFullscreen::sltHandleNativeFullscreenFailToEnter()
 
         /* Ask session to change 'fullscreen' mode to 'normal': */
         uisession()->setRequestedVisualState(UIVisualStateType_Normal);
+
+        /* If session started already => push mode-change directly: */
+        if (uisession()->isStarted())
+            sltCheckForRequestedVisualStateType();
     }
 }
 
