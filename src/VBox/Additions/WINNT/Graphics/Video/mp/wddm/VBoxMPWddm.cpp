@@ -1,4 +1,4 @@
-/* $Id: VBoxMPWddm.cpp 93846 2014-05-22 17:11:17Z noreply@oracle.com $ */
+/* $Id: VBoxMPWddm.cpp 93853 2014-05-22 21:29:44Z noreply@oracle.com $ */
 /** @file
  * VBox WDDM Miniport driver
  */
@@ -1323,6 +1323,9 @@ NTSTATUS DxgkDdiStopDevice(
     NTSTATUS Status = STATUS_SUCCESS;
 
 #ifdef VBOX_WITH_CROGL
+    if (pDevExt->u32CrConDefaultClientID)
+        VBoxMpCrCtlConDisconnect(pDevExt, &pDevExt->CrCtlCon, pDevExt->u32CrConDefaultClientID);
+
     VBoxMpCrShgsmiTransportTerm(&pDevExt->CrHgsmiTransport);
 #endif
 
