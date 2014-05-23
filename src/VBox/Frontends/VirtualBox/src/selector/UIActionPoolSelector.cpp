@@ -1,4 +1,4 @@
-/* $Id: UIActionPoolSelector.cpp 93727 2014-05-15 19:01:07Z sergey.dubov@oracle.com $ */
+/* $Id: UIActionPoolSelector.cpp 93881 2014-05-23 15:59:40Z sergey.dubov@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt GUI ("VirtualBox"):
@@ -978,6 +978,15 @@ UIActionPoolSelector::UIActionPoolSelector()
 {
     /* Prepare connections: */
     connect(gShortcutPool, SIGNAL(sigSelectorShortcutsReloaded()), this, SLOT(sltApplyShortcuts()));
+}
+
+void UIActionPoolSelector::retranslateUi()
+{
+    /* Translate all the actions: */
+    foreach (const int iActionPoolKey, m_pool.keys())
+        m_pool[iActionPoolKey]->retranslateUi();
+    /* Re-apply shortcuts: */
+    sltApplyShortcuts();
 }
 
 QString UIActionPoolSelector::shortcutsExtraDataID() const
