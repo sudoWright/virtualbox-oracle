@@ -1,4 +1,4 @@
-/* $Id: VBoxFBOverlay.cpp 91347 2013-12-16 18:16:26Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxFBOverlay.cpp 93930 2014-05-26 16:45:43Z sergey.dubov@oracle.com $ */
 /** @file
  * VBoxFBOverlay implementation
  */
@@ -31,6 +31,7 @@
 #include "VBoxFBOverlay.h"
 #include "UIMessageCenter.h"
 #include "UIPopupCenter.h"
+#include "UIExtraDataDefs.h"
 #include "VBoxGlobal.h"
 
 /* COM includes: */
