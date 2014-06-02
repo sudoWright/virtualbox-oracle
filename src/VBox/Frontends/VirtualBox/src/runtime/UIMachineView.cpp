@@ -1,4 +1,4 @@
-/* $Id: UIMachineView.cpp 94107 2014-06-02 18:47:05Z andreas.loeffler@oracle.com $ */
+/* $Id: UIMachineView.cpp 94108 2014-06-02 18:51:53Z andreas.loeffler@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt GUI ("VirtualBox"):
@@ -217,8 +217,6 @@ void UIMachineView::sltPerformGuestResize(const QSize &toSize)
 
 void UIMachineView::sltHandleNotifyChange(int iWidth, int iHeight)
 {
-    NOREF(uScreenId);
-
     LogRelFlow(("UIMachineView::HandleNotifyChange: Screen=%d, Size=%dx%d.\n",
                 (unsigned long)m_uScreenId, iWidth, iHeight));
 
