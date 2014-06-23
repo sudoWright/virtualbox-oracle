@@ -1,4 +1,4 @@
-/* $Id: UISession.cpp 94450 2014-06-20 17:15:36Z sergey.dubov@oracle.com $ */
+/* $Id: UISession.cpp 94475 2014-06-23 16:04:07Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UISession class implementation.
  */
@@ -69,7 +69,6 @@
 #include "CStorageController.h"
 #include "CMediumAttachment.h"
 #include "CDisplay.h"
-#include "CFramebuffer.h"
 #include "CNetworkAdapter.h"
 #include "CHostNetworkInterface.h"
 #include "CVRDEServer.h"
