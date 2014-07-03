@@ -1,6 +1,6 @@
-/* $Id: sha1.cpp 83576 2013-02-04 15:54:15Z noreply@oracle.com $ */
+/* $Id: openssl-sha512.cpp 94702 2014-07-03 14:01:28Z knut.osmundsen@oracle.com $ */
 /** @file
- * IPRT - SHA-1 hash functions.
+ * IPRT - SHA-512 hash functions.
  */
 
 /*
@@ -32,41 +32,41 @@
 
 #include <openssl/sha.h>
 
-#define RT_SHA1_PRIVATE_CONTEXT
+#define RT_SHA512_PRIVATE_CONTEXT
 #include <iprt/sha.h>
 
 #include <iprt/assert.h>
 
-AssertCompile(RT_SIZEOFMEMB(RTSHA1CONTEXT, abPadding) >= RT_SIZEOFMEMB(RTSHA1CONTEXT, Private));
+AssertCompile(RT_SIZEOFMEMB(RTSHA512CONTEXT, abPadding) >= RT_SIZEOFMEMB(RTSHA512CONTEXT, Private));
 
 
-RTDECL(void) RTSha1(const void *pvBuf, size_t cbBuf, uint8_t pabDigest[RTSHA1_HASH_SIZE])
+RTDECL(void) RTSha512(const void *pvBuf, size_t cbBuf, uint8_t pabDigest[RTSHA512_HASH_SIZE])
 {
-    RTSHA1CONTEXT Ctx;
-    RTSha1Init(&Ctx);
-    RTSha1Update(&Ctx, pvBuf, cbBuf);
-    RTSha1Final(&Ctx, pabDigest);
+    RTSHA512CONTEXT Ctx;
+    RTSha512Init(&Ctx);
+    RTSha512Update(&Ctx, pvBuf, cbBuf);
+    RTSha512Final(&Ctx, pabDigest);
 }
-RT_EXPORT_SYMBOL(RTSha1);
+RT_EXPORT_SYMBOL(RTSha512);
 
 
-RTDECL(void) RTSha1Init(PRTSHA1CONTEXT pCtx)
+RTDECL(void) RTSha512Init(PRTSHA512CONTEXT pCtx)
 {
-    SHA1_Init(&pCtx->Private);
+    SHA512_Init(&pCtx->Private);
 }
-RT_EXPORT_SYMBOL(RTSha1Init);
+RT_EXPORT_SYMBOL(RTSha512Init);
 
 
-RTDECL(void) RTSha1Update(PRTSHA1CONTEXT pCtx, const void *pvBuf, size_t cbBuf)
+RTDECL(void) RTSha512Update(PRTSHA512CONTEXT pCtx, const void *pvBuf, size_t cbBuf)
 {
-    SHA1_Update(&pCtx->Private, pvBuf, cbBuf);
+    SHA512_Update(&pCtx->Private, pvBuf, cbBuf);
 }
-RT_EXPORT_SYMBOL(RTSha1Update);
+RT_EXPORT_SYMBOL(RTSha512Update);
 
 
-RTDECL(void) RTSha1Final(PRTSHA1CONTEXT pCtx, uint8_t pabDigest[32])
+RTDECL(void) RTSha512Final(PRTSHA512CONTEXT pCtx, uint8_t pabDigest[32])
 {
-    SHA1_Final((unsigned char *)&pabDigest[0], &pCtx->Private);
+    SHA512_Final((unsigned char *)&pabDigest[0], &pCtx->Private);
 }
-RT_EXPORT_SYMBOL(RTSha1Final);
+RT_EXPORT_SYMBOL(RTSha512Final);
 

@@ -1,10 +1,10 @@
-/* $Id: sha256.cpp 83576 2013-02-04 15:54:15Z noreply@oracle.com $ */
+/* $Id: openssl-md2.cpp 94702 2014-07-03 14:01:28Z knut.osmundsen@oracle.com $ */
 /** @file
- * IPRT - SHA-256 hash functions.
+ * IPRT - Message-Digest Algorithm 2.
  */
 
 /*
- * Copyright (C) 2009-2010 Oracle Corporation
+ * Copyright (C) 2009-2014 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;
@@ -30,43 +30,43 @@
 *******************************************************************************/
 #include "internal/iprt.h"
 
-#include <openssl/sha.h>
+#include <openssl/md2.h>
 
-#define RT_SHA256_PRIVATE_CONTEXT
-#include <iprt/sha.h>
+#define RT_MD2_PRIVATE_CONTEXT
+#include <iprt/md2.h>
 
 #include <iprt/assert.h>
 
-AssertCompile(RT_SIZEOFMEMB(RTSHA256CONTEXT, abPadding) >= RT_SIZEOFMEMB(RTSHA256CONTEXT, Private));
+AssertCompile(RT_SIZEOFMEMB(RTMD2CONTEXT, abPadding) >= RT_SIZEOFMEMB(RTMD2CONTEXT, Private));
 
 
-RTDECL(void) RTSha256(const void *pvBuf, size_t cbBuf, uint8_t pabDigest[RTSHA256_HASH_SIZE])
+RTDECL(void) RTMd2(const void *pvBuf, size_t cbBuf, uint8_t pabDigest[RTMD2_HASH_SIZE])
 {
-    RTSHA256CONTEXT Ctx;
-    RTSha256Init(&Ctx);
-    RTSha256Update(&Ctx, pvBuf, cbBuf);
-    RTSha256Final(&Ctx, pabDigest);
+    RTMD2CONTEXT Ctx;
+    RTMd2Init(&Ctx);
+    RTMd2Update(&Ctx, pvBuf, cbBuf);
+    RTMd2Final(&Ctx, pabDigest);
 }
-RT_EXPORT_SYMBOL(RTSha256);
+RT_EXPORT_SYMBOL(RTMd2);
 
 
-RTDECL(void) RTSha256Init(PRTSHA256CONTEXT pCtx)
+RTDECL(void) RTMd2Init(PRTMD2CONTEXT pCtx)
 {
-    SHA256_Init(&pCtx->Private);
+    MD2_Init(&pCtx->Private);
 }
-RT_EXPORT_SYMBOL(RTSha256Init);
+RT_EXPORT_SYMBOL(RTMd2Init);
 
 
-RTDECL(void) RTSha256Update(PRTSHA256CONTEXT pCtx, const void *pvBuf, size_t cbBuf)
+RTDECL(void) RTMd2Update(PRTMD2CONTEXT pCtx, const void *pvBuf, size_t cbBuf)
 {
-    SHA256_Update(&pCtx->Private, pvBuf, cbBuf);
+    MD2_Update(&pCtx->Private, (const unsigned char *)pvBuf, cbBuf);
 }
-RT_EXPORT_SYMBOL(RTSha256Update);
+RT_EXPORT_SYMBOL(RTMd2Update);
 
 
-RTDECL(void) RTSha256Final(PRTSHA256CONTEXT pCtx, uint8_t pabDigest[32])
+RTDECL(void) RTMd2Final(PRTMD2CONTEXT pCtx, uint8_t pabDigest[RTMD2_HASH_SIZE])
 {
-    SHA256_Final((unsigned char *)&pabDigest[0], &pCtx->Private);
+    MD2_Final((unsigned char *)&pabDigest[0], &pCtx->Private);
 }
-RT_EXPORT_SYMBOL(RTSha256Final);
+RT_EXPORT_SYMBOL(RTMd2Final);
 

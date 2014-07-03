@@ -1,4 +1,4 @@
-/* $Id: sha256-alt.cpp 94689 2014-07-03 11:05:50Z knut.osmundsen@oracle.com $ */
+/* $Id: alt-sha256.cpp 94702 2014-07-03 14:01:28Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - SHA-256 and SHA-224 hash functions, Alternative Implementation.
  */

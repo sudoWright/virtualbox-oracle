@@ -1,4 +1,4 @@
-/* $Id: sha1-alt.cpp 94675 2014-07-03 03:04:39Z knut.osmundsen@oracle.com $ */
+/* $Id: alt-sha1.cpp 94702 2014-07-03 14:01:28Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - SHA-1 hash functions, Alternative Implementation.
  */
