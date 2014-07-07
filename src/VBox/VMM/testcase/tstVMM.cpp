@@ -1,4 +1,4 @@
-/* $Id: tstVMM.cpp 90410 2013-11-02 16:30:06Z knut.osmundsen@oracle.com $ */
+/* $Id: tstVMM.cpp 94786 2014-07-07 16:28:37Z knut.osmundsen@oracle.com $ */
 /** @file
  * VMM Testcase.
  */
@@ -192,7 +192,10 @@ tstVMMConfigConstructor(PUVM pUVM, PVM pVM, void *pvUser)
 }
 
 
-int main(int argc, char **argv)
+/**
+ * Entry point.
+ */
+extern "C" DECLEXPORT(int) TrustedMain(int argc, char **argv, char **envp)
 {
     /*
      * Init runtime and the test environment.
@@ -250,7 +253,7 @@ int main(int argc, char **argv)
                 return 1;
 
             case 'V':
-                RTPrintf("$Revision: 90410 $\n");
+                RTPrintf("$Revision: 94786 $\n");
                 return 0;
 
             default:
@@ -363,3 +366,15 @@ int main(int argc, char **argv)
 
     return RTTestSummaryAndDestroy(hTest);
 }
+
+
+#if !defined(VBOX_WITH_HARDENING) || !defined(RT_OS_WINDOWS)
+/**
+ * Main entry point.
+ */
+int main(int argc, char **argv, char **envp)
+{
+    return TrustedMain(argc, argv, envp);
+}
+#endif
+
