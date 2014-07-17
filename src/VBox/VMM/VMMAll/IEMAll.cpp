@@ -1,4 +1,4 @@
-/* $Id: IEMAll.cpp 95082 2014-07-17 13:03:19Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: IEMAll.cpp 95086 2014-07-17 14:46:47Z michal.necasek@oracle.com $ */
 /** @file
  * IEM - Interpreted Execution Manager - All Contexts.
  */
@@ -75,7 +75,7 @@
  * context. */
 //#define IEM_VERIFICATION_MODE_MINIMAL
 //#define IEM_LOG_MEMORY_WRITES
-//#define IEM_IMPLEMENTS_TASKSWITCH
+#define IEM_IMPLEMENTS_TASKSWITCH
 
 /*******************************************************************************
 *   Header Files                                                               *
