@@ -1,4 +1,4 @@
-/* $Id: UIMachineLogicFullscreen.cpp 95157 2014-07-22 15:17:21Z sergey.dubov@oracle.com $ */
+/* $Id: UIMachineLogicFullscreen.cpp 95159 2014-07-22 15:52:00Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIMachineLogicFullscreen class implementation.
  */
@@ -27,7 +27,7 @@
 #include "UIMachineLogicFullscreen.h"
 #include "UIMachineWindowFullscreen.h"
 #include "UIMultiScreenLayout.h"
-#include "UIMachineMenuBar.h"
+#include "QIMenu.h"
 #ifdef Q_WS_MAC
 # include "UIExtraDataManager.h"
 # include "VBoxUtils.h"
