@@ -1,4 +1,4 @@
-/* $Id: UIMachineView.cpp 95260 2014-07-25 20:00:49Z vitali.pelenjow@oracle.com $ */
+/* $Id: UIMachineView.cpp 95262 2014-07-25 20:34:38Z sergey.dubov@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt GUI ("VirtualBox"):
@@ -543,6 +543,11 @@ void UIMachineView::cleanupFrameBuffer()
 
     /* Detach framebuffer from view: */
     m_pFrameBuffer->setView(NULL);
+}
+
+UIActionPool* UIMachineView::actionPool() const
+{
+    return machineWindow()->actionPool();
 }
 
 UIMachineLogic* UIMachineView::machineLogic() const
