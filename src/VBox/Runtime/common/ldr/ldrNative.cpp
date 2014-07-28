@@ -1,4 +1,4 @@
-/* $Id: ldrNative.cpp 94611 2014-07-01 18:14:02Z knut.osmundsen@oracle.com $ */
+/* $Id: ldrNative.cpp 95276 2014-07-28 17:52:58Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Binary Image Loader, Native interface.
  */
@@ -74,6 +74,7 @@ static const RTLDROPS g_rtldrNativeOps =
     NULL,
     NULL,
     NULL,
+    NULL /*pfnQueryForwarderInfo*/,
     NULL,
     NULL,
     NULL,
