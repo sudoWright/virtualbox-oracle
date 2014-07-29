@@ -1,4 +1,4 @@
-/* $Id: VBoxGlobal.cpp 95263 2014-07-25 23:46:23Z sergey.dubov@oracle.com $ */
+/* $Id: VBoxGlobal.cpp 95288 2014-07-29 04:12:21Z ramshankar.venkataraman@oracle.com $ */
 /** @file
  * VBox Qt GUI - VBoxGlobal class implementation.
  */
@@ -1210,7 +1210,7 @@ QString VBoxGlobal::detailsReport (const CMachine &aMachine, bool aWithLinks)
             iRowCount += 2; /* VT-x/AMD-V items. */
 
         /* Paravirtualization Interface: */
-        const QString strParavirtProvider = gpConverter->toString(aMachine.GetEffectiveParavirtProvider());
+        const QString strParavirtProvider = gpConverter->toString(aMachine.GetParavirtProvider());
 
         iRowCount += 1; /* Paravirtualization Interface. */
 
