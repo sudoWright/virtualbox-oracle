@@ -1,4 +1,4 @@
-/* $Id: VUSBInternal.h 95413 2014-08-06 17:12:53Z alexander.eichner@oracle.com $ */
+/* $Id: VUSBInternal.h 95414 2014-08-06 17:15:33Z alexander.eichner@oracle.com $ */
 /** @file
  * Virtual USB - Internal header.
  *
@@ -220,7 +220,7 @@ typedef struct VUSBDEV
     bool volatile       fWokenUp;
 #if HC_ARCH_BITS == 32
     /** Align the size to a 8 byte boundary. */
-    bool                afAlignment0[2];
+    bool                afAlignment0[6];
 #endif
 } VUSBDEV;
 
