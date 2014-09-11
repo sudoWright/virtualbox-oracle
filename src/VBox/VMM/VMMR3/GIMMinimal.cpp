@@ -1,4 +1,4 @@
-/* $Id: GIMMinimal.cpp 96034 2014-09-11 13:31:23Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: GIMMinimal.cpp 96043 2014-09-11 15:24:27Z ramshankar.venkataraman@oracle.com $ */
 /** @file
  * GIM - Guest Interface Manager, Minimal implementation.
  */
@@ -68,7 +68,7 @@ VMMR3_INT_DECL(int) GIMR3MinimalInitCompleted(PVM pVM)
      * Expose a generic hypervisor-agnostic leaf (originally defined VMware).
      * The leaves range from  0x40000010 to 0x400000FF.
      *
-     * This is done in the finalize routine as we need PDM to be
+     * This is done in the init. completed routine as we need PDM to be
      * initialized (otherwise PDMApicGetTimerFreq() would fail).
      */
     CPUMCPUIDLEAF HyperLeaf;
