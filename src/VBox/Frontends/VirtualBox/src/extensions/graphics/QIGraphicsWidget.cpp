@@ -1,4 +1,4 @@
-/* $Id: QIGraphicsWidget.cpp 96068 2014-09-12 14:09:27Z knut.osmundsen@oracle.com $ */
+/* $Id: QIGraphicsWidget.cpp 96071 2014-09-12 16:19:53Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Qt GUI - QIGraphicsWidget class definition.
  */
@@ -15,8 +15,15 @@
  * hope that it will be useful, but WITHOUT ANY WARRANTY of any kind.
  */
 
+#ifdef VBOX_WITH_PRECOMPILED_HEADERS
+# include <precomp.h>
+#else  /* !VBOX_WITH_PRECOMPILED_HEADERS */
+
 /* GUI includes: */
-#include "QIGraphicsWidget.h"
+# include "QIGraphicsWidget.h"
+
+#endif /* !VBOX_WITH_PRECOMPILED_HEADERS */
+
 
 QIGraphicsWidget::QIGraphicsWidget(QGraphicsWidget *pParent)
     : QGraphicsWidget(pParent)

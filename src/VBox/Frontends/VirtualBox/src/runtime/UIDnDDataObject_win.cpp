@@ -1,4 +1,4 @@
-/* $Id: UIDnDDataObject_win.cpp 96068 2014-09-12 14:09:27Z knut.osmundsen@oracle.com $ */
+/* $Id: UIDnDDataObject_win.cpp 96071 2014-09-12 16:19:53Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIDnDDrag class implementation. This class implements the
  * IDataObject interface.
@@ -36,6 +36,7 @@
 
 #include "UIDnDDataObject_win.h"
 #include "UIDnDEnumFormat_win.h"
+
 
 UIDnDDataObject::UIDnDDataObject(CSession &session,
                                  CDnDSource &dndSource,
