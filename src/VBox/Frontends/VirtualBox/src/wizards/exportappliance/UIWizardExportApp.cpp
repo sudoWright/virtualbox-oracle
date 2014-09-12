@@ -1,8 +1,6 @@
-/* $Id: UIWizardExportApp.cpp 94009 2014-05-28 13:22:45Z sergey.dubov@oracle.com $ */
+/* $Id: UIWizardExportApp.cpp 96062 2014-09-12 13:39:22Z knut.osmundsen@oracle.com $ */
 /** @file
- *
- * VBox frontends: Qt4 GUI ("VirtualBox"):
- * UIWizardExportApp class implementation
+ * VBox Qt GUI - UIWizardExportApp class implementation.
  */
 
 /*

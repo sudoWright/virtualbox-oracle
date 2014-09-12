@@ -1,8 +1,6 @@
-/* $Id: UIWizardCloneVD.cpp 93619 2014-05-08 14:06:55Z sergey.dubov@oracle.com $ */
+/* $Id: UIWizardCloneVD.cpp 96062 2014-09-12 13:39:22Z knut.osmundsen@oracle.com $ */
 /** @file
- *
- * VBox frontends: Qt4 GUI ("VirtualBox"):
- * UIWizardCloneVD class implementation
+ * VBox Qt GUI - UIWizardCloneVD class implementation.
  */
 
 /*

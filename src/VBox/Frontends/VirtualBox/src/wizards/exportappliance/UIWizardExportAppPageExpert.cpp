@@ -1,8 +1,6 @@
-/* $Id: UIWizardExportAppPageExpert.cpp 89152 2013-09-20 13:44:09Z noreply@oracle.com $ */
+/* $Id: UIWizardExportAppPageExpert.cpp 96062 2014-09-12 13:39:22Z knut.osmundsen@oracle.com $ */
 /** @file
- *
- * VBox frontends: Qt4 GUI ("VirtualBox"):
- * UIWizardExportAppPageExpert class implementation
+ * VBox Qt GUI - UIWizardExportAppPageExpert class implementation.
  */
 
 /*

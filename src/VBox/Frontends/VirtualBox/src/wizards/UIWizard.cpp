@@ -1,8 +1,6 @@
-/* $Id: UIWizard.cpp 94450 2014-06-20 17:15:36Z sergey.dubov@oracle.com $ */
+/* $Id: UIWizard.cpp 96062 2014-09-12 13:39:22Z knut.osmundsen@oracle.com $ */
 /** @file
- *
- * VBox frontends: Qt4 GUI ("VirtualBox"):
- * UIWizard class implementation
+ * VBox Qt GUI - UIWizard class implementation.
  */
 
 /*
