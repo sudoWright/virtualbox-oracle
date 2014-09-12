@@ -1,8 +1,6 @@
-/* $Id: UIGraphicsZoomButton.cpp 80032 2012-08-13 17:24:30Z sergey.dubov@oracle.com $ */
+/* $Id: UIGraphicsZoomButton.cpp 96068 2014-09-12 14:09:27Z knut.osmundsen@oracle.com $ */
 /** @file
- *
- * VBox frontends: Qt GUI ("VirtualBox"):
- * UIGraphicsZoomButton class definition
+ * VBox Qt GUI - UIGraphicsZoomButton class definition.
  */
 
 /*

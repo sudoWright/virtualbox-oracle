@@ -1,8 +1,6 @@
-/* $Id: UIMachineSettingsParallel.cpp 88257 2013-08-21 07:36:55Z sergey.dubov@oracle.com $ */
+/* $Id: UIMachineSettingsParallel.cpp 96068 2014-09-12 14:09:27Z knut.osmundsen@oracle.com $ */
 /** @file
- *
- * VBox frontends: Qt4 GUI ("VirtualBox"):
- * UIMachineSettingsParallel class implementation
+ * VBox Qt GUI - UIMachineSettingsParallel class implementation.
  */
 
 /*

@@ -1,8 +1,6 @@
-/* $Id: UIFilmContainer.cpp 89143 2013-09-20 12:57:03Z sergey.dubov@oracle.com $ */
+/* $Id: UIFilmContainer.cpp 96068 2014-09-12 14:09:27Z knut.osmundsen@oracle.com $ */
 /** @file
- *
- * VBox frontends: Qt4 GUI ("VirtualBox"):
- * UIFilmContainer class implementation
+ * VBox Qt GUI - UIFilmContainer class implementation.
  */
 
 /*

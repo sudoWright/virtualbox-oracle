@@ -1,8 +1,6 @@
-/* $Id: UINetworkManager.cpp 95062 2014-07-16 18:42:45Z sergey.dubov@oracle.com $ */
+/* $Id: UINetworkManager.cpp 96068 2014-09-12 14:09:27Z knut.osmundsen@oracle.com $ */
 /** @file
- *
- * VBox frontends: Qt GUI ("VirtualBox"):
- * UINetworkManager stuff implementation
+ * VBox Qt GUI - UINetworkManager stuff implementation.
  */
 
 /*

@@ -1,8 +1,6 @@
-/* $Id: UISelectorWindow.cpp 95851 2014-09-03 11:56:06Z sergey.dubov@oracle.com $ */
+/* $Id: UISelectorWindow.cpp 96068 2014-09-12 14:09:27Z knut.osmundsen@oracle.com $ */
 /** @file
- *
- * VBox frontends: Qt GUI ("VirtualBox"):
- * UISelectorWindow class implementation
+ * VBox Qt GUI - UISelectorWindow class implementation.
  */
 
 /*

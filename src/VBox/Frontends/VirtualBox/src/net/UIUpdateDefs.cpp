@@ -1,8 +1,6 @@
-/* $Id: UIUpdateDefs.cpp 77758 2012-05-03 16:00:11Z sergey.dubov@oracle.com $ */
+/* $Id: UIUpdateDefs.cpp 96068 2014-09-12 14:09:27Z knut.osmundsen@oracle.com $ */
 /** @file
- *
- * VBox frontends: Qt4 GUI ("VirtualBox"):
- * Update routine related implementations
+ * VBox Qt GUI - Update routine related implementations.
  */
 
 /*

@@ -1,8 +1,6 @@
-/* $Id: QIMainDialog.cpp 93189 2014-04-08 15:10:01Z sergey.dubov@oracle.com $ */
+/* $Id: QIMainDialog.cpp 96068 2014-09-12 14:09:27Z knut.osmundsen@oracle.com $ */
 /** @file
- *
- * VBox frontends: Qt GUI ("VirtualBox"):
- * VirtualBox Qt extensions: QIMainDialog class implementation
+ * VBox Qt GUI - VirtualBox Qt extensions: QIMainDialog class implementation.
  */
 
 /*

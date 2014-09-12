@@ -1,8 +1,6 @@
-/* $Id: XKeyboard-new.cpp 83912 2013-02-21 20:40:14Z noreply@oracle.com $ */
+/* $Id: XKeyboard-new.cpp 96068 2014-09-12 14:09:27Z knut.osmundsen@oracle.com $ */
 /** @file
- *
- * VBox frontends: Qt GUI ("VirtualBox"):
- * Implementation of Linux-specific keyboard functions
+ * VBox Qt GUI - Implementation of Linux-specific keyboard functions.
  */
 
 /*

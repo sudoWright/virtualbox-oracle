@@ -1,8 +1,6 @@
-/* $Id: UINetworkCustomer.cpp 77770 2012-05-03 22:23:07Z sergey.dubov@oracle.com $ */
+/* $Id: UINetworkCustomer.cpp 96068 2014-09-12 14:09:27Z knut.osmundsen@oracle.com $ */
 /** @file
- *
- * VBox frontends: Qt GUI ("VirtualBox"):
- * UINetworkCustomer class implementation
+ * VBox Qt GUI - UINetworkCustomer class implementation.
  */
 
 /*

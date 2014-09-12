@@ -1,8 +1,6 @@
-/* $Id: UIDesktopServices_win.cpp 68186 2010-11-26 17:09:29Z noreply@oracle.com $ */
+/* $Id: UIDesktopServices_win.cpp 96068 2014-09-12 14:09:27Z knut.osmundsen@oracle.com $ */
 /** @file
- *
- * VBox frontends: Qt GUI ("VirtualBox"):
- * Qt GUI - Utility Classes and Functions specific to Windows.
+ * VBox Qt GUI - Qt GUI - Utility Classes and Functions specific to Windows..
  */
 
 /*

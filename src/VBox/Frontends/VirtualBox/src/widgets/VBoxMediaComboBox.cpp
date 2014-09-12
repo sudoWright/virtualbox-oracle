@@ -1,8 +1,6 @@
-/* $Id: VBoxMediaComboBox.cpp 93167 2014-04-07 11:46:17Z sergey.dubov@oracle.com $ */
+/* $Id: VBoxMediaComboBox.cpp 96068 2014-09-12 14:09:27Z knut.osmundsen@oracle.com $ */
 /** @file
- *
- * VBox frontends: Qt GUI ("VirtualBox"):
- * VBoxMediaComboBox class implementation
+ * VBox Qt GUI - VBoxMediaComboBox class implementation.
  */
 
 /*

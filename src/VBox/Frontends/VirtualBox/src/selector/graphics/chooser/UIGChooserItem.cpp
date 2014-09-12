@@ -1,8 +1,6 @@
-/* $Id: UIGChooserItem.cpp 95262 2014-07-25 20:34:38Z sergey.dubov@oracle.com $ */
+/* $Id: UIGChooserItem.cpp 96068 2014-09-12 14:09:27Z knut.osmundsen@oracle.com $ */
 /** @file
- *
- * VBox frontends: Qt GUI ("VirtualBox"):
- * UIGChooserItem class definition
+ * VBox Qt GUI - UIGChooserItem class definition.
  */
 
 /*

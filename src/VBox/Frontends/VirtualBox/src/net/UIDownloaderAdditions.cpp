@@ -1,8 +1,6 @@
-/* $Id: UIDownloaderAdditions.cpp 84863 2013-04-09 13:03:52Z sergey.dubov@oracle.com $ */
+/* $Id: UIDownloaderAdditions.cpp 96068 2014-09-12 14:09:27Z knut.osmundsen@oracle.com $ */
 /** @file
- *
- * VBox frontends: Qt GUI ("VirtualBox"):
- * UIDownloaderAdditions class implementation
+ * VBox Qt GUI - UIDownloaderAdditions class implementation.
  */
 
 /*

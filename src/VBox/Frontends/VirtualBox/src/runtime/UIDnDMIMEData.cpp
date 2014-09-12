@@ -1,8 +1,6 @@
-/* $Id: UIDnDMIMEData.cpp 94064 2014-05-30 14:58:02Z andreas.loeffler@oracle.com $ */
+/* $Id: UIDnDMIMEData.cpp 96068 2014-09-12 14:09:27Z knut.osmundsen@oracle.com $ */
 /** @file
- *
- * VBox frontends: Qt GUI ("VirtualBox"):
- * UIDnDMIMEData class implementation
+ * VBox Qt GUI - UIDnDMIMEData class implementation.
  */
 
 /*

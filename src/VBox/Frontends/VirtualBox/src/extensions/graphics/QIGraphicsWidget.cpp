@@ -1,8 +1,6 @@
-/* $Id: QIGraphicsWidget.cpp 79696 2012-08-02 10:31:28Z sergey.dubov@oracle.com $ */
+/* $Id: QIGraphicsWidget.cpp 96068 2014-09-12 14:09:27Z knut.osmundsen@oracle.com $ */
 /** @file
- *
- * VBox frontends: Qt GUI ("VirtualBox"):
- * QIGraphicsWidget class definition
+ * VBox Qt GUI - QIGraphicsWidget class definition.
  */
 
 /*

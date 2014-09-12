@@ -1,8 +1,6 @@
-/* $Id: UIMainEventListener.cpp 90888 2013-11-25 18:03:38Z sergey.dubov@oracle.com $ */
+/* $Id: UIMainEventListener.cpp 96068 2014-09-12 14:09:27Z knut.osmundsen@oracle.com $ */
 /** @file
- *
- * VBox frontends: Qt GUI ("VirtualBox"):
- * UIMainEventListener class implementation
+ * VBox Qt GUI - UIMainEventListener class implementation.
  */
 
 /*

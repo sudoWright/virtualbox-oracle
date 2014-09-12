@@ -1,8 +1,6 @@
-/* $Id: UIGraphicsRotatorButton.cpp 84590 2013-03-28 07:43:38Z sergey.dubov@oracle.com $ */
+/* $Id: UIGraphicsRotatorButton.cpp 96068 2014-09-12 14:09:27Z knut.osmundsen@oracle.com $ */
 /** @file
- *
- * VBox frontends: Qt GUI ("VirtualBox"):
- * UIGraphicsRotatorButton class definition
+ * VBox Qt GUI - UIGraphicsRotatorButton class definition.
  */
 
 /*

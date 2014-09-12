@@ -1,8 +1,6 @@
-/* $Id: VBoxOSTypeSelectorButton.cpp 83576 2013-02-04 15:54:15Z noreply@oracle.com $ */
+/* $Id: VBoxOSTypeSelectorButton.cpp 96068 2014-09-12 14:09:27Z knut.osmundsen@oracle.com $ */
 /** @file
- *
- * VBox frontends: Qt GUI ("VirtualBox"):
- * VBoxOSTypeSelectorButton class implementation
+ * VBox Qt GUI - VBoxOSTypeSelectorButton class implementation.
  */
 
 /*

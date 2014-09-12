@@ -1,8 +1,6 @@
-/* $Id: UICocoaDockIconPreview.mm 68172 2010-11-26 16:37:51Z noreply@oracle.com $ */
+/* $Id: UICocoaDockIconPreview.mm 96068 2014-09-12 14:09:27Z knut.osmundsen@oracle.com $ */
 /** @file
- *
- * VBox frontends: Qt GUI ("VirtualBox"):
- * Cocoa helper for the dock icon preview
+ * VBox Qt GUI - Cocoa helper for the dock icon preview.
  */
 
 /*

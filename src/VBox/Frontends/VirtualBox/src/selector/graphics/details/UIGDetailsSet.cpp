@@ -1,8 +1,6 @@
-/* $Id: UIGDetailsSet.cpp 94169 2014-06-04 15:07:21Z sergey.dubov@oracle.com $ */
+/* $Id: UIGDetailsSet.cpp 96068 2014-09-12 14:09:27Z knut.osmundsen@oracle.com $ */
 /** @file
- *
- * VBox frontends: Qt GUI ("VirtualBox"):
- * UIGDetailsSet class implementation
+ * VBox Qt GUI - UIGDetailsSet class implementation.
  */
 
 /*

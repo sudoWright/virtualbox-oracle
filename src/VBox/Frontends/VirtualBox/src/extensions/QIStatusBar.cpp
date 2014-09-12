@@ -1,8 +1,6 @@
-/* $Id: QIStatusBar.cpp 83575 2013-02-04 14:27:54Z noreply@oracle.com $ */
+/* $Id: QIStatusBar.cpp 96068 2014-09-12 14:09:27Z knut.osmundsen@oracle.com $ */
 /** @file
- *
- * VBox frontends: Qt GUI ("VirtualBox"):
- * VirtualBox Qt extensions: QIStatusBar class implementation
+ * VBox Qt GUI - VirtualBox Qt extensions: QIStatusBar class implementation.
  */
 
 /*

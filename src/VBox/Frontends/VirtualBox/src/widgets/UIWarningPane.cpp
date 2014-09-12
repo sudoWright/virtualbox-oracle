@@ -1,8 +1,6 @@
-/* $Id: UIWarningPane.cpp 88264 2013-08-21 08:38:18Z sergey.dubov@oracle.com $ */
+/* $Id: UIWarningPane.cpp 96068 2014-09-12 14:09:27Z knut.osmundsen@oracle.com $ */
 /** @file
- *
- * VBox frontends: Qt4 GUI ("VirtualBox"):
- * UIWarningPane class implementation
+ * VBox Qt GUI - UIWarningPane class implementation.
  */
 
 /*

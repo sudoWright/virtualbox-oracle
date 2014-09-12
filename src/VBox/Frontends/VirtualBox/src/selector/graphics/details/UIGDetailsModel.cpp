@@ -1,8 +1,6 @@
-/* $Id: UIGDetailsModel.cpp 94598 2014-07-01 13:11:22Z sergey.dubov@oracle.com $ */
+/* $Id: UIGDetailsModel.cpp 96068 2014-09-12 14:09:27Z knut.osmundsen@oracle.com $ */
 /** @file
- *
- * VBox frontends: Qt GUI ("VirtualBox"):
- * UIGDetailsModel class implementation
+ * VBox Qt GUI - UIGDetailsModel class implementation.
  */
 
 /*

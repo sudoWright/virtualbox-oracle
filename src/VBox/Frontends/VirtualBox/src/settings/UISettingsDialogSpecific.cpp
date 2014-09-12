@@ -1,8 +1,6 @@
-/* $Id: UISettingsDialogSpecific.cpp 94450 2014-06-20 17:15:36Z sergey.dubov@oracle.com $ */
+/* $Id: UISettingsDialogSpecific.cpp 96068 2014-09-12 14:09:27Z knut.osmundsen@oracle.com $ */
 /** @file
- *
- * VBox frontends: Qt GUI ("VirtualBox"):
- * UISettingsDialogSpecific class implementation
+ * VBox Qt GUI - UISettingsDialogSpecific class implementation.
  */
 
 /*

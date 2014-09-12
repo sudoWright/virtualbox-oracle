@@ -1,8 +1,6 @@
-/* $Id: UIPortForwardingTable.cpp 89498 2013-10-03 10:52:25Z sergey.dubov@oracle.com $ */
+/* $Id: UIPortForwardingTable.cpp 96068 2014-09-12 14:09:27Z knut.osmundsen@oracle.com $ */
 /** @file
- *
- * VBox frontends: Qt4 GUI ("VirtualBox"):
- * UIPortForwardingTable class implementation
+ * VBox Qt GUI - UIPortForwardingTable class implementation.
  */
 
 /*

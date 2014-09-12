@@ -1,8 +1,6 @@
-/* $Id: UIMessageCenter.cpp 94450 2014-06-20 17:15:36Z sergey.dubov@oracle.com $ */
+/* $Id: UIMessageCenter.cpp 96068 2014-09-12 14:09:27Z knut.osmundsen@oracle.com $ */
 /** @file
- *
- * VBox frontends: Qt GUI ("VirtualBox"):
- * UIMessageCenter class implementation
+ * VBox Qt GUI - UIMessageCenter class implementation.
  */
 
 /*

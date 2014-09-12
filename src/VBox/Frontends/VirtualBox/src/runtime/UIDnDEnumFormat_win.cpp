@@ -1,8 +1,6 @@
-/* $Id: UIDnDEnumFormat_win.cpp 92295 2014-02-14 09:46:58Z andreas.loeffler@oracle.com $ */
+/* $Id: UIDnDEnumFormat_win.cpp 96068 2014-09-12 14:09:27Z knut.osmundsen@oracle.com $ */
 /** @file
- *
- * VBox frontends: Qt GUI ("VirtualBox"):
- * UIDnDEnumFormat class implementation. This class implements the
+ * VBox Qt GUI -  UIDnDEnumFormat class implementation. This class implements the
  * IEnumFORMATETC ("Format et cetera") interface.
  */
 

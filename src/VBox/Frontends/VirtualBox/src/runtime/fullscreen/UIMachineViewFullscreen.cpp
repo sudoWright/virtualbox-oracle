@@ -1,8 +1,6 @@
-/* $Id: UIMachineViewFullscreen.cpp 96041 2014-09-11 15:12:06Z sergey.dubov@oracle.com $ */
+/* $Id: UIMachineViewFullscreen.cpp 96068 2014-09-12 14:09:27Z knut.osmundsen@oracle.com $ */
 /** @file
- *
- * VBox frontends: Qt GUI ("VirtualBox"):
- * UIMachineViewFullscreen class implementation
+ * VBox Qt GUI - UIMachineViewFullscreen class implementation.
  */
 
 /*

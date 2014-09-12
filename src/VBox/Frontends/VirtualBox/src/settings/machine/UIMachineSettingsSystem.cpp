@@ -1,8 +1,6 @@
-/* $Id: UIMachineSettingsSystem.cpp 94921 2014-07-11 13:30:19Z sergey.dubov@oracle.com $ */
+/* $Id: UIMachineSettingsSystem.cpp 96068 2014-09-12 14:09:27Z knut.osmundsen@oracle.com $ */
 /** @file
- *
- * VBox frontends: Qt4 GUI ("VirtualBox"):
- * UIMachineSettingsSystem class implementation
+ * VBox Qt GUI - UIMachineSettingsSystem class implementation.
  */
 
 /*

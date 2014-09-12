@@ -1,8 +1,6 @@
-/* $Id: UIDnDDataObject_win.h 94064 2014-05-30 14:58:02Z andreas.loeffler@oracle.com $ */
+/* $Id: UIDnDDataObject_win.h 96068 2014-09-12 14:09:27Z knut.osmundsen@oracle.com $ */
 /** @file
- *
- * VBox frontends: Qt GUI ("VirtualBox"):
- * UIDnDDataObject class declaration
+ * VBox Qt GUI - UIDnDDataObject class declaration.
  */
 
 /*

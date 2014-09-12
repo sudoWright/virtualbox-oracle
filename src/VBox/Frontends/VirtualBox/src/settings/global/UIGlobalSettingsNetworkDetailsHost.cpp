@@ -1,8 +1,6 @@
-/* $Id: UIGlobalSettingsNetworkDetailsHost.cpp 88914 2013-09-12 16:26:07Z sergey.dubov@oracle.com $ */
+/* $Id: UIGlobalSettingsNetworkDetailsHost.cpp 96068 2014-09-12 14:09:27Z knut.osmundsen@oracle.com $ */
 /** @file
- *
- * VBox frontends: Qt4 GUI ("VirtualBox"):
- * UIGlobalSettingsNetworkDetailsHost class implementation
+ * VBox Qt GUI - UIGlobalSettingsNetworkDetailsHost class implementation.
  */
 
 /*

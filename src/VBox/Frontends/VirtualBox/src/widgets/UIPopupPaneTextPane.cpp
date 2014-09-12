@@ -1,8 +1,6 @@
-/* $Id: UIPopupPaneTextPane.cpp 91686 2014-01-21 13:00:00Z sergey.dubov@oracle.com $ */
+/* $Id: UIPopupPaneTextPane.cpp 96068 2014-09-12 14:09:27Z knut.osmundsen@oracle.com $ */
 /** @file
- *
- * VBox frontends: Qt GUI ("VirtualBox"):
- * UIPopupPaneTextPane class implementation
+ * VBox Qt GUI - UIPopupPaneTextPane class implementation.
  */
 
 /*

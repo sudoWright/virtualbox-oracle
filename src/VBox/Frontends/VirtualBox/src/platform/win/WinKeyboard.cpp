@@ -1,8 +1,6 @@
-/* $Id: WinKeyboard.cpp 92091 2014-02-06 15:49:58Z vadim.galitsyn@oracle.com $ */
+/* $Id: WinKeyboard.cpp 96068 2014-09-12 14:09:27Z knut.osmundsen@oracle.com $ */
 /** @file
- *
- * VBox frontends: Qt GUI ("VirtualBox"):
- * Windows keyboard handling.
+ * VBox Qt GUI - Windows keyboard handling..
  */
 
 /*

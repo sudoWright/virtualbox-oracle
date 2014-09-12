@@ -1,8 +1,6 @@
-/* $Id: UIGlobalSettingsGeneral.cpp 87234 2013-07-14 14:18:13Z sergey.dubov@oracle.com $ */
+/* $Id: UIGlobalSettingsGeneral.cpp 96068 2014-09-12 14:09:27Z knut.osmundsen@oracle.com $ */
 /** @file
- *
- * VBox frontends: Qt4 GUI ("VirtualBox"):
- * UIGlobalSettingsGeneral class implementation
+ * VBox Qt GUI - UIGlobalSettingsGeneral class implementation.
  */
 
 /*
