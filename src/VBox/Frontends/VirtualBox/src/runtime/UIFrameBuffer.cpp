@@ -1,4 +1,4 @@
-/* $Id: UIFrameBuffer.cpp 96071 2014-09-12 16:19:53Z knut.osmundsen@oracle.com $ */
+/* $Id: UIFrameBuffer.cpp 96074 2014-09-12 17:57:50Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIFrameBuffer class implementation.
  */
@@ -34,10 +34,11 @@
 /* COM includes: */
 # include "CConsole.h"
 # include "CDisplay.h"
-/* Other VBox includes: */
-# include <VBox/VBoxVideo3D.h>
 
 #endif /* !VBOX_WITH_PRECOMPILED_HEADERS */
+
+/* Other VBox includes: */
+#include <VBox/VBoxVideo3D.h>
 
 
 /* COM stuff: */
