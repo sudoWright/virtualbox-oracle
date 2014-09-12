@@ -1,6 +1,6 @@
-/* $Id: hardenedmain.cpp 95604 2014-08-20 03:25:37Z knut.osmundsen@oracle.com $ */
+/* $Id: hardenedmain.cpp 96063 2014-09-12 13:41:01Z knut.osmundsen@oracle.com $ */
 /** @file
- * VirtualBox - Hardened main().
+ * VBox Qt GUI - Hardened main().
  */
 
 /*
