@@ -1,4 +1,4 @@
-/* $Id: GIMInternal.h 96130 2014-09-16 15:49:57Z knut.osmundsen@oracle.com $ */
+/* $Id: GIMInternal.h 96135 2014-09-16 16:19:32Z ramshankar.venkataraman@oracle.com $ */
 /** @file
  * GIM - Internal header file.
  */
@@ -103,5 +103,5 @@ VMMR3_INT_DECL(bool)          GIMR3IsOSXGuest(PVM pVM);
 
 RT_C_DECLS_END
 
-#endif /* ___GIMInternal_h */
+#endif
 
