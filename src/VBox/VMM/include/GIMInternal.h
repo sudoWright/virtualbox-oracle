@@ -1,4 +1,4 @@
-/* $Id: GIMInternal.h 96135 2014-09-16 16:19:32Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: GIMInternal.h 96137 2014-09-16 16:51:51Z ramshankar.venkataraman@oracle.com $ */
 /** @file
  * GIM - Internal header file.
  */
@@ -39,8 +39,6 @@ RT_C_DECLS_BEGIN
  */
 typedef struct GIM
 {
-    /** Whether GIM is enabled for this VM or not. */
-    bool                             fEnabled;
     /** The provider that is active for this VM. */
     GIMPROVIDERID                    enmProviderId;
     /** The interface implementation version. */
