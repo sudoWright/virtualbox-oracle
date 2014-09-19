@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!-- $Id: capiidl.xsl 96171 2014-09-18 14:13:38Z klaus.espenlaub@oracle.com $ -->
+<!-- $Id: capiidl.xsl 96182 2014-09-19 09:42:52Z klaus.espenlaub@oracle.com $ -->
 
 <!--
  *  A template to generate a C header file for all relevant XPCOM interfaces
@@ -197,6 +197,7 @@ typedef const BSTR CBSTR;
 
 #define ComSafeArrayAsInParam(f) (f)
 #define ComSafeArrayAsOutParam(f) (&amp;(f))
+#define ComSafeArrayAsOutTypeParam(f,t) (&amp;(f))
 #define ComSafeArrayAsOutIfaceParam(f,t) (&amp;(f))
 
 #else /* !WIN32 */
@@ -867,6 +868,7 @@ typedef struct SAFEARRAY
 
 #define ComSafeArrayAsInParam(f) ((f)->c), ((f)->pv)
 #define ComSafeArrayAsOutParam(f) (&amp;((f)->c)), (&amp;((f)->pv))
+#define ComSafeArrayAsOutTypeParam(f,t) (&amp;((f)->c)), (t**)(&amp;((f)->pv))
 #define ComSafeArrayAsOutIfaceParam(f,t) (&amp;((f)->c)), (t**)(&amp;((f)->pv))
 
 /* Glossing over differences between COM and XPCOM */
