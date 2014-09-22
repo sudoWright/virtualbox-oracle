@@ -1,4 +1,4 @@
-/* $Id: server_getshaders.c 93582 2014-05-06 17:21:16Z noreply@oracle.com $ */
+/* $Id: server_getshaders.c 96203 2014-09-22 08:40:59Z noreply@oracle.com $ */
 
 /** @file
  * VBox OpenGL GLSL related get functions
@@ -89,7 +89,7 @@ void SERVER_DISPATCH_APIENTRY crServerDispatchGetAttachedShaders(GLuint program,
         GLsizei i;
         GLuint *ids=(GLuint*)&pLocal[1];
 
-        for (i=0; i<*pLocal; ++i);
+        for (i=0; i<*pLocal; ++i)
           ids[i] = crStateGLSLShaderHWIDtoID(ids[i]);
     }
 
