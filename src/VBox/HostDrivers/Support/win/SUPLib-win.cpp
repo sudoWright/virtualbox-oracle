@@ -1,4 +1,4 @@
-/* $Id: SUPLib-win.cpp 95485 2014-08-11 19:24:00Z knut.osmundsen@oracle.com $ */
+/* $Id: SUPLib-win.cpp 96255 2014-09-24 13:53:45Z knut.osmundsen@oracle.com $ */
 /** @file
  * VirtualBox Support Library - Windows NT specific parts.
  */
@@ -364,6 +364,8 @@ static int suplibOsStopService(void)
         }
         CloseServiceHandle(hSMgr);
     }
+    else
+        rc = RTErrConvertFromWin32(dwErr);
     return rc;
 }
 
