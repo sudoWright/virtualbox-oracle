@@ -1,4 +1,4 @@
-/* $Id: DBGPlugInSolaris.cpp 89643 2013-10-07 21:34:16Z knut.osmundsen@oracle.com $ */
+/* $Id: DBGPlugInSolaris.cpp 96248 2014-09-24 13:06:58Z knut.osmundsen@oracle.com $ */
 /** @file
  * DBGPlugInSolaris - Debugger and Guest OS Digger Plugin For Solaris.
  */
@@ -516,7 +516,7 @@ static void dbgDiggerSolarisProcessModCtl32(PUVM pUVM, PDBGDIGGERSOLARIS pThis, 
         return;
 
     /* Ignore modules without symbols. */
-    if (!Module.symtbl || !Module.strings || !Module.symspace || !Module.symspace)
+    if (!Module.symtbl || !Module.strings || !Module.symspace || !Module.symsize)
         return;
 
     /* Check that the symtbl and strings points inside the symspace. */
@@ -662,7 +662,7 @@ static void dbgDiggerSolarisProcessModCtl64(PUVM pUVM, PDBGDIGGERSOLARIS pThis, 
         return;
 
     /* Ignore modules without symbols. */
-    if (!Module.symtbl || !Module.strings || !Module.symspace || !Module.symspace)
+    if (!Module.symtbl || !Module.strings || !Module.symspace || !Module.symsize)
         return;
 
     /* Check that the symtbl and strings points inside the symspace. */
