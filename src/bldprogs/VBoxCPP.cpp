@@ -1,4 +1,4 @@
-/* $Id: VBoxCPP.cpp 79724 2012-08-02 15:30:49Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxCPP.cpp 96254 2014-09-24 13:51:26Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Build Tool - A mini C Preprocessor.
  *
@@ -1132,7 +1132,7 @@ static void vbcppProcessSkipWhiteAndEscapedEol(PSCMSTREAM pStrmInput)
         }
         else if (RT_C_IS_SPACE(ch))
         {
-            ch = chPrev;
+            chPrev = ch;
             ch = ScmStreamGetCh(pStrmInput);
             Assert(ch == chPrev);
         }
@@ -5359,7 +5359,7 @@ static RTEXITCODE vbcppParseOptions(PVBCPP pThis, int argc, char **argv, bool *p
             case 'V':
             {
                 /* The following is assuming that svn does it's job here. */
-                static const char s_szRev[] = "$Revision: 79724 $";
+                static const char s_szRev[] = "$Revision: 96254 $";
                 const char *psz = RTStrStripL(strchr(s_szRev, ' '));
                 RTPrintf("r%.*s\n", strchr(psz, ' ') - psz, psz);
                 *pfExit = true;
