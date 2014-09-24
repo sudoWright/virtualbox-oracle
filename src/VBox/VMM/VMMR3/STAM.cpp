@@ -1,4 +1,4 @@
-/* $Id: STAM.cpp 94143 2014-06-04 04:52:30Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: STAM.cpp 96252 2014-09-24 13:41:13Z knut.osmundsen@oracle.com $ */
 /** @file
  * STAM - The Statistics Manager.
  */
@@ -1129,7 +1129,7 @@ static void stamR3LookupMaybeFree(PSTAMLOOKUP pLookup)
     if (pCur->cDescsInTree > 0)
         return;
     PSTAMLOOKUP pParent = pCur->pParent;
-    if (pParent)
+    if (!pParent)
         return;
 
     if (pParent->cDescsInTree == 0 && pParent->pParent)
