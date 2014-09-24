@@ -1,4 +1,4 @@
-/* $Id: scmdiff.cpp 76917 2012-03-19 11:13:17Z knut.osmundsen@oracle.com $ */
+/* $Id: scmdiff.cpp 96246 2014-09-24 13:02:36Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT Testcase / Tool - Source Code Massager.
  */
@@ -236,7 +236,7 @@ DECLINLINE(bool) scmDiffCompare(PSCMDIFFSTATE pState,
         || memcmp(pchLeft, pchRight, cchLeft))
     {
         if (   pState->fIgnoreTrailingWhite
-            || pState->fIgnoreTrailingWhite)
+            || pState->fIgnoreLeadingWhite)
             return scmDiffCompareSlow(pState,
                                       pchLeft, cchLeft, enmEolLeft,
                                       pchRight, cchRight, enmEolRight);
