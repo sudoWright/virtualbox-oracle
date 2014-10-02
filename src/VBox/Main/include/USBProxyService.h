@@ -1,4 +1,4 @@
-/* $Id: USBProxyService.h 78291 2012-05-31 16:48:33Z klaus.espenlaub@oracle.com $ */
+/* $Id: USBProxyService.h 96372 2014-10-02 13:53:30Z vitali.pelenjow@oracle.com $ */
 /** @file
  * VirtualBox USB Proxy Service (base) class.
  */
@@ -57,7 +57,7 @@ public:
 
     /** @name Host Interfaces
      * @{ */
-    HRESULT getDeviceCollection(ComSafeArrayOut(IHostUSBDevice *, aUSBDevices));
+    HRESULT getDeviceCollection(std::vector<ComPtr<IHostUSBDevice> > &aUSBDevices);
     /** @} */
 
     /** @name SessionMachine Interfaces
