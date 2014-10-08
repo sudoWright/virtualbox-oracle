@@ -1,4 +1,4 @@
-/* $Id: SUPLib-freebsd.cpp 83575 2013-02-04 14:27:54Z noreply@oracle.com $ */
+/* $Id: SUPLib-freebsd.cpp 96464 2014-10-08 23:46:15Z knut.osmundsen@oracle.com $ */
 /** @file
  * VirtualBox Support Library - FreeBSD specific parts.
  */
@@ -67,7 +67,7 @@
 
 
 
-int suplibOsInit(PSUPLIBDATA pThis, bool fPreInited, bool fUnrestricted)
+int suplibOsInit(PSUPLIBDATA pThis, bool fPreInited, bool fUnrestricted, SUPINITOP *penmWhat, PRTERRINFO pErrInfo)
 {
     /*
      * Nothing to do if pre-inited.
