@@ -1,4 +1,4 @@
-/* $Id: VBoxGlobal.cpp 96454 2014-10-08 13:55:16Z sergey.dubov@oracle.com $ */
+/* $Id: VBoxGlobal.cpp 96484 2014-10-09 17:40:56Z vitali.pelenjow@oracle.com $ */
 /** @file
  * VBox Qt GUI - VBoxGlobal class implementation.
  */
@@ -3555,6 +3555,7 @@ bool VBoxGlobal::isWddmCompatibleOsType(const QString &strGuestOSTypeId)
            || strGuestOSTypeId.startsWith("Windows7")
            || strGuestOSTypeId.startsWith("Windows8")
            || strGuestOSTypeId.startsWith("Windows81")
+           || strGuestOSTypeId.startsWith("Windows10")
            || strGuestOSTypeId.startsWith("Windows2008")
            || strGuestOSTypeId.startsWith("Windows2012");
 }
