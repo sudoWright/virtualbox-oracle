@@ -1,4 +1,4 @@
-/* $Id: SUPHardenedVerifyProcess-win.cpp 96498 2014-10-10 09:58:30Z knut.osmundsen@oracle.com $ */
+/* $Id: SUPHardenedVerifyProcess-win.cpp 96504 2014-10-10 11:01:28Z knut.osmundsen@oracle.com $ */
 /** @file
  * VirtualBox Support Library/Driver - Hardened Process Verification, Windows.
  */
@@ -1522,6 +1522,9 @@ static int supHardNtVpScanVirtualMemory(PSUPHNTVPSTATE pThis, HANDLE hProcess)
                             rcNt = NtFreeVirtualMemory(pThis->hProcess, &pvFree, &cbFree, MEM_RELEASE);
                             if (NT_SUCCESS(rcNt))
                             {
+                                pvFree = MemInfo.BaseAddress; cbFree = MemInfo.RegionSize;              /* fudge */
+                                NtFreeVirtualMemory(pThis->hProcess, &pvFree, &cbFree, MEM_RELEASE);    /* fudge */
+
                                 pvFree = MemInfo.BaseAddress;
                                 cbFree = MemInfo.RegionSize;
                                 rcNt = NtAllocateVirtualMemory(pThis->hProcess, &pvFree, 0, &cbFree, MEM_COMMIT, PAGE_READWRITE);
