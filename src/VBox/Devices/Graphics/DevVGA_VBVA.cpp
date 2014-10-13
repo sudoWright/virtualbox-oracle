@@ -1,4 +1,4 @@
-/* $Id: DevVGA_VBVA.cpp 96264 2014-09-24 19:15:46Z noreply@oracle.com $ */
+/* $Id: DevVGA_VBVA.cpp 96537 2014-10-13 14:30:17Z vitali.pelenjow@oracle.com $ */
 /** @file
  * VirtualBox Video Acceleration (VBVA).
  */
@@ -536,6 +536,16 @@ static int vbvaDisable (unsigned uScreenId, PVGASTATE pVGAState, VBVACONTEXT *pC
     vbvaFlush (pVGAState, pCtx);
 
     VBVAVIEW *pView = &pCtx->aViews[uScreenId];
+
+    if (uScreenId != 0)
+    {
+        /* Disable secondary screens. They only work in VBVA mode. */
+        VBVAINFOSCREEN screen;
+        RT_ZERO(screen);
+        screen.u16Flags = VBVA_SCREEN_F_DISABLED;
+        screen.u32ViewIndex = uScreenId;
+        vbvaResize(pVGAState, pView, &screen);
+    }
 
     if (pView->pVBVA)
     {
