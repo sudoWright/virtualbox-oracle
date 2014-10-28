@@ -1,7 +1,7 @@
-/* $Id: display_window_rootvr.cpp 96689 2014-10-27 14:52:20Z vadim.galitsyn@oracle.com $ */
+/* $Id: display_window_rootvr.cpp 96694 2014-10-28 12:09:57Z vadim.galitsyn@oracle.com $ */
 
 /** @file
- * Presenter API: CrFbDisplayWindowRootVr class implementation -- display seamless content.
+ * Presenter API: CrFbDisplayWindowRootVr class implementation -- display seamless content (visible regions).
  */
 
 /*
