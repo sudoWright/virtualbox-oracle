@@ -1,4 +1,4 @@
-/* $Id: tstUsbMouse.cpp 88150 2013-08-19 18:48:51Z noreply@oracle.com $ */
+/* $Id: tstUsbMouse.cpp 96750 2014-11-04 15:48:42Z michal.necasek@oracle.com $ */
 /** @file
  * tstUsbMouse.cpp - testcase USB mouse and tablet devices.
  */
@@ -306,7 +306,6 @@ int main()
      * Init the runtime, test and say hello.
      */
     RTTEST hTest;
-    PDRVTSTMOUSE pThis;
     int rc = RTTestInitAndCreate("tstUsbMouse", &hTest);
     if (rc)
         return rc;
