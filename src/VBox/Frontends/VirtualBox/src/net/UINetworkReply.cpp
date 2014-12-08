@@ -1,4 +1,4 @@
-/* $Id: UINetworkReply.cpp 97168 2014-12-05 09:48:21Z noreply@oracle.com $ */
+/* $Id: UINetworkReply.cpp 97205 2014-12-08 10:28:49Z noreply@oracle.com $ */
 /** @file
  * VBox Qt GUI - UINetworkReply stuff implementation.
  */
@@ -243,7 +243,7 @@ int UINetworkReplyPrivateThread::applyCertificates(RTHTTP pHttp, const QString &
         return VERR_INVALID_POINTER;
 
     /* Apply HTTPs certificates: */
-    return RTHttpSetCAFile(pHttp, strFullCertificateFileName.toAscii().constData());
+    return RTHttpSetCAFile(pHttp, strFullCertificateFileName.toUtf8().constData());
 }
 
 /* static */
