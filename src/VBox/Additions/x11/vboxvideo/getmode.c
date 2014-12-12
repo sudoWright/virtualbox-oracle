@@ -1,4 +1,4 @@
-/* $Id: vboxutils.c 97172 2014-12-05 10:56:35Z noreply@oracle.com $ */
+/* $Id: getmode.c 97256 2014-12-12 10:21:54Z noreply@oracle.com $ */
 /** @file
  * VirtualBox X11 Additions graphics driver utility functions
  */
