@@ -1,4 +1,4 @@
-/* $Id: cidet-core.cpp 97323 2014-12-18 02:31:37Z knut.osmundsen@oracle.com $ */
+/* $Id: cidet-core.cpp 97324 2014-12-18 02:48:14Z knut.osmundsen@oracle.com $ */
 /** @file
  * CPU Instruction Decoding & Execution Tests - Simple Instructions.
  */
@@ -60,7 +60,7 @@
 
 /** @def CIDET_DPRINTF
  * Debug printf. */
-#if 0 //def DEBUG_bird
+#ifdef DEBUG_bird
 # define CIDET_DPRINTF(a)   do { RTPrintf a; } while (0)
 #else
 # define CIDET_DPRINTF(a)   do { } while (0)
