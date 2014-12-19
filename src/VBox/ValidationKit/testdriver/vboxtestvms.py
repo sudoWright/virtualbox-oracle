@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# $Id: vboxtestvms.py 97342 2014-12-19 20:57:54Z knut.osmundsen@oracle.com $
+# $Id: vboxtestvms.py 97343 2014-12-19 23:10:02Z knut.osmundsen@oracle.com $
 
 """
 VirtualBox Test VMs
@@ -26,7 +26,7 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 97342 $"
+__version__ = "$Revision: 97343 $"
 
 # Standard Python imports.
 import re;
@@ -703,8 +703,8 @@ class TestVmSet(object):
                 asParavirtModes = [sPvMode for sPvMode in oTestVm.asParavirtModesSup if sPvMode in self.asParavirtModes];
                 assert None not in asParavirtModes;
             elif oTestDrv.fpApiVer >= 4.4:
-                asParavirtModes = oTestVm.asParavirtModesSup[0];
-                assert None not in asParavirtModes;
+                asParavirtModes = (oTestVm.asParavirtModesSup[0],);
+                assert asParavirtModes[0] is not None;
             else:
                 asParavirtModes = (None,);
 
