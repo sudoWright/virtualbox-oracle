@@ -1,4 +1,4 @@
-/* $Id: rsa-internal.h 94611 2014-07-01 18:14:02Z knut.osmundsen@oracle.com $ */
+/* $Id: rsa-internal.h 97393 2014-12-31 14:59:44Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Crypto - RSA, Internal Header.
  */
@@ -35,5 +35,4 @@
 #include <iprt/asn1-generator-internal-header.h>
 
 #endif
-
 

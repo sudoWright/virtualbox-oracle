@@ -1,4 +1,4 @@
-/* $Id: tsp-core.cpp 95876 2014-09-04 22:59:00Z knut.osmundsen@oracle.com $ */
+/* $Id: tsp-core.cpp 97393 2014-12-31 14:59:44Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Crypto - Time-Stamp Protocol (RFC-3161), Core API.
  */
@@ -38,5 +38,4 @@
  * Generate the code.
  */
 #include <iprt/asn1-generator-core.h>
-
 

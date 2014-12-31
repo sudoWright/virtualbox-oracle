@@ -1,4 +1,4 @@
-/* $Id: x509-core.cpp 95792 2014-08-31 19:28:17Z knut.osmundsen@oracle.com $ */
+/* $Id: x509-core.cpp 97393 2014-12-31 14:59:44Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Crypto - X.509, Core APIs.
  */
@@ -1530,5 +1530,4 @@ RTCrX509Certificates_FindByIssuerAndSerialNumber(PCRTCRX509CERTIFICATES pCertifi
             return &pCertificates->paItems[i];
     return NULL;
 }
-
 

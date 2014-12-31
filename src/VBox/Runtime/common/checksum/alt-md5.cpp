@@ -1,4 +1,4 @@
-/* $Id: alt-md5.cpp 94702 2014-07-03 14:01:28Z knut.osmundsen@oracle.com $ */
+/* $Id: alt-md5.cpp 97393 2014-12-31 14:59:44Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - MD5 message digest functions, alternative implementation.
  */

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# $Id: wuihlpgraphgooglechart.py 96152 2014-09-17 14:51:43Z noreply@oracle.com $
+# $Id: wuihlpgraphgooglechart.py 97393 2014-12-31 14:59:44Z knut.osmundsen@oracle.com $
 
 """
 Test Manager Web-UI - Graph Helpers - Implemented using Google Charts.
@@ -26,7 +26,7 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 96152 $"
+__version__ = "$Revision: 97393 $"
 
 # Validation Kit imports.
 from testmanager.webui.wuihlpgraphbase  import WuiHlpGraphBase;
@@ -243,5 +243,4 @@ class WuiHlpLineGraphErrorbarY(WuiHlpLineGraph):
 
     def __init__(self, sId, oData, oDisp = None):
         WuiHlpLineGraph.__init__(self, sId, oData, fErrorBarY = True);
-
 

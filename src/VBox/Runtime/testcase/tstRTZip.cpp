@@ -1,4 +1,4 @@
-/* $Id: tstRTZip.cpp 90134 2013-10-22 14:49:14Z knut.osmundsen@oracle.com $ */
+/* $Id: tstRTZip.cpp 97393 2014-12-31 14:59:44Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT Testcase - RTZip, kind of.
  */
@@ -84,5 +84,4 @@ int main(int argc, char **argv)
      */
     return RTTestSummaryAndDestroy(hTest);
 }
-
 

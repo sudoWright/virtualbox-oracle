@@ -1,4 +1,4 @@
-/* $Id: spc-init.cpp 94611 2014-07-01 18:14:02Z knut.osmundsen@oracle.com $ */
+/* $Id: spc-init.cpp 97393 2014-12-31 14:59:44Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Crypto - Microsoft SPC / Authenticode, Initialization API.
  */
@@ -42,5 +42,4 @@
  * Generate the standard core code.
  */
 #include <iprt/asn1-generator-init.h>
-
 

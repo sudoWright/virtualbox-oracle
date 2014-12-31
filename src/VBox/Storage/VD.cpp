@@ -1,4 +1,4 @@
-/* $Id: VD.cpp 96932 2014-11-14 18:51:54Z alexander.eichner@oracle.com $ */
+/* $Id: VD.cpp 97393 2014-12-31 14:59:44Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxHDD - VBox HDD Container implementation.
  */
@@ -5365,7 +5365,7 @@ static DECLCALLBACK(size_t) vdIOIntIoCtxGetDataUnitSize(void *pvUser, PVDIOCTX p
 
     PVDIMAGE pImage = vdGetImageByNumber(pDisk, VD_LAST_IMAGE);
     AssertPtrReturn(pImage, 0);
-    return pImage->Backend->pfnGetSectorSize(pImage->pBackendData);  
+    return pImage->Backend->pfnGetSectorSize(pImage->pBackendData);
 }
 
 /**

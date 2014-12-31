@@ -1,4 +1,4 @@
-/* $Id: VSCSIInternal.h 96052 2014-09-12 09:34:39Z michal.necasek@oracle.com $ */
+/* $Id: VSCSIInternal.h 97393 2014-12-31 14:59:44Z knut.osmundsen@oracle.com $ */
 /** @file
  * Virtual SCSI driver: Internal defines
  */
@@ -264,7 +264,7 @@ int vscsiReqSenseErrorSet(PVSCSISENSE pVScsiSense, PVSCSIREQINT pVScsiReq, uint8
  * @param   pVScsiReq     The SCSI request.
  * @param   uSCSISenseKey The SCSI sense key to set.
  * @param   uSCSIASC      The ASC value.
- * @param   uSCSIASC      The ASCQ value. 
+ * @param   uSCSIASC      The ASCQ value.
  * @param   uInfo         The 32-bit sense information.
  */
 int vscsiReqSenseErrorInfoSet(PVSCSISENSE pVScsiSense, PVSCSIREQINT pVScsiReq, uint8_t uSCSISenseKey,
