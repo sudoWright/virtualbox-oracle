@@ -1,4 +1,4 @@
-/* $Id: blitter.cpp 97504 2015-01-04 05:05:41Z knut.osmundsen@oracle.com $ */
+/* $Id: blitter.cpp 97506 2015-01-04 05:13:27Z knut.osmundsen@oracle.com $ */
 /** @file
  * Blitter API implementation
  */
@@ -21,6 +21,7 @@
 *******************************************************************************/
 #ifdef IN_VMSVGA3D
 # include <OpenGL/OpenGL.h>
+# include <OpenGL/gl3.h>
 # include "../include/cr_blitter.h"
 # include <iprt/assert.h>
 # define WARN       AssertMsgFailed
