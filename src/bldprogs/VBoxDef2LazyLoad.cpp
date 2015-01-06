@@ -1,4 +1,4 @@
-/* $Id: VBoxDef2LazyLoad.cpp 97526 2015-01-05 23:41:14Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxDef2LazyLoad.cpp 97535 2015-01-06 10:08:27Z noreply@oracle.com $ */
 /** @file
  * VBoxDef2LazyLoad - Lazy Library Loader Generator.
  *
@@ -564,7 +564,7 @@ static RTEXITCODE generateOutputInner(FILE *pOutput)
             "    push    eax\n"
             "    mov     edx, [ebp + 8] ; symbol name\n"
             "    push    edx\n"
-            "    call    NAME(LazyLoading) ; returns handle in ecx\n"
+            "    call    LazyLoading    ; returns handle in ecx\n"
             "    mov     ecx, [g_hMod]\n"
             "    call    IMP2(RTLdrGetSymbol)\n"
             "    or      eax, eax\n"
@@ -844,7 +844,7 @@ int main(int argc, char **argv)
             else if (   !strcmp(psz, "--version")
                      || !strcmp(psz, "-V"))
             {
-                printf("$Revision: 97526 $\n");
+                printf("$Revision: 97535 $\n");
                 return RTEXITCODE_SUCCESS;
             }
             else
