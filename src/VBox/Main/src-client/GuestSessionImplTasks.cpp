@@ -1,4 +1,4 @@
-/* $Id: GuestSessionImplTasks.cpp 95088 2014-07-17 17:18:56Z noreply@oracle.com $ */
+/* $Id: GuestSessionImplTasks.cpp 97711 2015-01-20 17:41:23Z klaus.espenlaub@oracle.com $ */
 /** @file
  * VirtualBox Main - Guest session tasks.
  */
@@ -26,7 +26,6 @@
 #include "Global.h"
 #include "AutoCaller.h"
 #include "ConsoleImpl.h"
-#include "MachineImpl.h"
 #include "ProgressImpl.h"
 
 #include <memory> /* For auto_ptr. */
