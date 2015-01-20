@@ -1,4 +1,4 @@
-/* $Id: VBoxAPI-start.d 97699 2015-01-20 01:08:17Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxAPI-start.d 97704 2015-01-20 13:52:38Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxAPI - Static dtrace probes.
  */
@@ -18,6 +18,6 @@
 provider vboxapi
 {
     /* Manually defined probes: */
-
+    probe machine__state__changed(void *a_pMachine, int a_enmNewState, int a_enmOldState, const char *pszMachineUuid);
 
     /* The following probes are automatically generated and changes with the API: */
