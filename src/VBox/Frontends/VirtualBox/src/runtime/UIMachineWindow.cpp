@@ -1,4 +1,4 @@
-/* $Id: UIMachineWindow.cpp 97741 2015-01-21 11:43:32Z sergey.dubov@oracle.com $ */
+/* $Id: UIMachineWindow.cpp 97855 2015-01-26 12:50:51Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIMachineWindow class implementation.
  */
@@ -227,12 +227,6 @@ void UIMachineWindow::adjustMachineViewSize()
 {
     /* We need to adjust guest-screen size if necessary: */
     machineView()->adjustGuestScreenSize();
-}
-
-void UIMachineWindow::applyMachineWindowScaleFactor()
-{
-    /* We need to apply machine-view scale-factor if necessary: */
-    machineView()->applyMachineViewScaleFactor();
 }
 
 #ifdef VBOX_WITH_MASKED_SEAMLESS
