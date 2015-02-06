@@ -1,4 +1,4 @@
-/* $Id: VBoxDbgStatsQt4.h 67140 2010-10-28 09:27:05Z noreply@oracle.com $ */
+/* $Id: VBoxDbgStatsQt4.h 98062 2015-02-06 14:31:11Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Debugger GUI - Statistics.
  */
@@ -199,6 +199,14 @@ protected:
      * @param  a_pCloseEvt      The close event.
      */
     virtual void closeEvent(QCloseEvent *a_pCloseEvt);
+
+    /**
+     * Event filter for various purposes.
+     *
+     * @param  pWatched         The object event came to.
+     * @param  pEvent           The event being handled.
+     */
+    virtual bool eventFilter(QObject *pWatched, QEvent *pEvent);
 
 protected slots:
     /** Apply the activated combobox pattern. */
