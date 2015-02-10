@@ -1,6 +1,6 @@
-/* $Id: proxy_rtadvd.c 98135 2015-02-10 11:22:04Z noreply@oracle.com $ */
+/* $Id: proxy_rtadvd.c 98141 2015-02-10 12:44:52Z noreply@oracle.com $ */
 /** @file
- * NAT Network - IPv6 router advertisement daemon. 
+ * NAT Network - IPv6 router advertisement daemon.
  */
 
 /*
