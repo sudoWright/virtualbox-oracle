@@ -1,4 +1,4 @@
-/* $Id: VBoxDispD3DIf.cpp 97259 2014-12-12 10:34:36Z vitali.pelenjow@oracle.com $ */
+/* $Id: VBoxDispD3DIf.cpp 98189 2015-02-11 17:39:29Z vitali.pelenjow@oracle.com $ */
 
 /** @file
  * VBoxVideo Display D3D User mode dll
@@ -1098,6 +1098,7 @@ HRESULT VBoxDispD3DGlobalOpen(PVBOXWDDMDISP_D3D pD3D, PVBOXWDDMDISP_FORMATS pFor
         HRESULT hr = vboxDispD3DGlobalDoOpen(&g_VBoxDispD3DGlobalD3D);
         if (!SUCCEEDED(hr))
         {
+            vboxDispD3DGlobalUnlock();
             WARN(("vboxDispD3DGlobalDoOpen failed hr = 0x%x", hr));
             return hr;
         }
