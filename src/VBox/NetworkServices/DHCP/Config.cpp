@@ -1,4 +1,4 @@
-/* $Id: Config.cpp 92455 2014-02-25 16:37:29Z noreply@oracle.com $ */
+/* $Id: Config.cpp 98608 2015-02-25 15:42:17Z noreply@oracle.com $ */
 /** @file
  * Configuration for DHCP.
  */
@@ -73,7 +73,7 @@ const ClientMatchCriteria *g_AnyClient = new AnyClientMatchCriteria();
 
 static ConfigurationManager *g_ConfigurationManager = ConfigurationManager::getConfigurationManager();
 
-static NetworkManager *g_NetworkManager = NetworkManager::getNetworkManager();
+NetworkManager *NetworkManager::g_NetworkManager;
 
 bool MACClientMatchCriteria::check(const Client& client) const
 {
