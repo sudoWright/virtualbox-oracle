@@ -1,4 +1,4 @@
-/* $Id: UIDnDDropSource_win.cpp 96071 2014-09-12 16:19:53Z knut.osmundsen@oracle.com $ */
+/* $Id: UIDnDDropSource_win.cpp 98689 2015-02-27 15:36:23Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIDnDDropSource class implementation for Windows. This implements
  * the IDropSource interface.
@@ -20,6 +20,7 @@
 #define LOG_GROUP LOG_GROUP_GUEST_DND
 #include <VBox/log.h>
 
+#include <iprt/assert.h>
 #include <iprt/thread.h>
 
 #include <windows.h>
