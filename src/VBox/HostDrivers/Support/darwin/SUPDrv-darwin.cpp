@@ -1,4 +1,4 @@
-/* $Id: SUPDrv-darwin.cpp 97037 2014-11-25 15:01:59Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: SUPDrv-darwin.cpp 98720 2015-03-02 14:56:02Z ramshankar.venkataraman@oracle.com $ */
 /** @file
  * VirtualBox Support Driver - Darwin Specific Code.
  */
@@ -949,6 +949,13 @@ void VBOXCALL   supdrvOSResumeVTxOnCpu(bool fSuspended)
 bool VBOXCALL supdrvOSGetForcedAsyncTscMode(PSUPDRVDEVEXT pDevExt)
 {
     NOREF(pDevExt);
+    return false;
+}
+
+
+bool VBOXCALL supdrvOSAreCpusOfflinedOnSuspend(void)
+{
+    /** @todo verify this. */
     return false;
 }
 
