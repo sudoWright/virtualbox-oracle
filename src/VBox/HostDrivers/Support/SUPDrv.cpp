@@ -1,4 +1,4 @@
-/* $Id: SUPDrv.cpp 98797 2015-03-05 13:42:10Z noreply@oracle.com $ */
+/* $Id: SUPDrv.cpp 98798 2015-03-05 13:48:41Z noreply@oracle.com $ */
 /** @file
  * VBoxDrv - The VirtualBox Support Driver - Common code.
  */
@@ -3686,7 +3686,7 @@ SUPR0DECL(RTCCUINTREG) SUPR0ChangeCR4(RTCCUINTREG fOrMask, RTCCUINTREG fAndMask)
 #ifdef RT_OS_LINUX
     return supdrvOSChangeCR4(fOrMask, fAndMask);
 #else
-    RTCCUINTREG uOld = ASMReadCR4();
+    RTCCUINTREG uOld = ASMGetCR4();
     RTCCUINTREG uNew = (uOld & fAndMask) | fOrMask;
     if (uNew != uOld)
         ASMSetCR4(uNew);
