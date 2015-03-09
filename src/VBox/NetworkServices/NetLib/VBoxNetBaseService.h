@@ -1,4 +1,4 @@
-/* $Id: VBoxNetBaseService.h 91785 2014-01-24 08:23:12Z noreply@oracle.com $ */
+/* $Id: VBoxNetBaseService.h 98859 2015-03-09 16:14:52Z noreply@oracle.com $ */
 /** @file
  * VBoxNetUDP - IntNet Client Library.
  */
@@ -131,6 +131,7 @@ protected:
     protected:
     /* VirtualBox instance */
     ComPtr<IVirtualBox> virtualbox;
+    ComPtr<IVirtualBoxClient> virtualboxClient;
 
     private:
     struct Data;
