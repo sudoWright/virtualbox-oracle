@@ -1,4 +1,4 @@
-/* $Id: CPUMR0.cpp 98878 2015-03-11 14:00:23Z knut.osmundsen@oracle.com $ */
+/* $Id: CPUMR0.cpp 98906 2015-03-12 21:02:21Z knut.osmundsen@oracle.com $ */
 /** @file
  * CPUM - Host Context Ring 0.
  */
@@ -285,8 +285,9 @@ VMMR0_INT_DECL(int) CPUMR0InitVM(PVM pVM)
 
         for (uint32_t i = 0; i < RT_ELEMENTS(g_aCpuidUnifyBits); i++)
         {
+            bool            fIgnored;
             uint32_t        uLeaf = g_aCpuidUnifyBits[i].uLeaf;
-            PCPUMCPUIDLEAF  pLeaf = cpumCpuIdGetLeaf(pVM, uLeaf, 0);
+            PCPUMCPUIDLEAF  pLeaf = cpumCpuIdGetLeafEx(pVM, uLeaf, 0, &fIgnored);
             if (pLeaf)
             {
                 PCPUMCPUID pLegacyLeaf;
