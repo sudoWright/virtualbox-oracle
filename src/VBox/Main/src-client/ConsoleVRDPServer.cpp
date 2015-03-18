@@ -1,4 +1,4 @@
-/* $Id: ConsoleVRDPServer.cpp 98296 2015-02-17 13:18:26Z andreas.loeffler@oracle.com $ */
+/* $Id: ConsoleVRDPServer.cpp 99030 2015-03-18 11:43:37Z vitali.pelenjow@oracle.com $ */
 /** @file
  * VBox Console VRDP helper class.
  */
@@ -1096,14 +1096,14 @@ DECLCALLBACK(bool) ConsoleVRDPServer::VRDPCallbackFramebufferQuery(void *pvCallb
         ULONG ulHeight = 0;
         ULONG ulBitsPerPixel = 0;
         ULONG ulBytesPerLine = 0;
-        ULONG ulPixelFormat = 0;
+        BitmapFormat_T bitmapFormat = BitmapFormat_Opaque;
 
         hr = server->maSourceBitmaps[uScreenId]->QueryBitmapInfo(&pAddress,
                                                                  &ulWidth,
                                                                  &ulHeight,
                                                                  &ulBitsPerPixel,
                                                                  &ulBytesPerLine,
-                                                                 &ulPixelFormat);
+                                                                 &bitmapFormat);
 
         if (SUCCEEDED(hr))
         {
