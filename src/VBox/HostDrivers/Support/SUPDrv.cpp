@@ -1,4 +1,4 @@
-/* $Id: SUPDrv.cpp 99089 2015-03-20 15:17:42Z knut.osmundsen@oracle.com $ */
+p/* $Id: SUPDrv.cpp 99104 2015-03-20 23:50:18Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxDrv - The VirtualBox Support Driver - Common code.
  */
@@ -3946,7 +3946,7 @@ SUPR0DECL(int) SUPR0QueryVTCaps(PSUPDRVSESSION pSession, uint32_t *pfCaps)
                         if (vtCaps.n.allowed1 & VMX_VMCS_CTRL_PROC_EXEC2_EPT)
                             *pfCaps |= SUPVTCAPS_NESTED_PAGING;
                         if (vtCaps.n.allowed1 & VMX_VMCS_CTRL_PROC_EXEC2_UNRESTRICTED_GUEST)
-                            *pfCaps |= SUPVTCAPS_NESTED_PAGING;
+                            *pfCaps |= SUPVTCAPS_VTX_UNRESTRICTED_GUEST;
                     }
                 }
             }
