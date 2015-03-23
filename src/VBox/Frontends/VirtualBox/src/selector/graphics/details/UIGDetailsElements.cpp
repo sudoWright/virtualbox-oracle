@@ -1,4 +1,4 @@
-/* $Id: UIGDetailsElements.cpp 98568 2015-02-24 17:55:48Z sergey.dubov@oracle.com $ */
+/* $Id: UIGDetailsElements.cpp 99153 2015-03-23 17:25:37Z ramshankar.venkataraman@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIGDetailsDetails class implementation.
  */
@@ -353,6 +353,7 @@ void UIGDetailsUpdateThreadSystem::run()
             {
                 case KParavirtProvider_Minimal: acceleration << QApplication::translate("UIGDetails", "Minimal Paravirtualization", "details (system)"); break;
                 case KParavirtProvider_HyperV:  acceleration << QApplication::translate("UIGDetails", "Hyper-V Paravirtualization", "details (system)"); break;
+                case KParavirtProvider_KVM:     acceleration << QApplication::translate("UIGDetails", "KVM Paravirtualization", "details (system)"); break;
                 default: break;
             }
             if (!acceleration.isEmpty())
