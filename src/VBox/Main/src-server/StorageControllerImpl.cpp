@@ -1,4 +1,4 @@
-/* $Id: StorageControllerImpl.cpp 94109 2014-06-02 18:53:08Z noreply@oracle.com $ */
+/* $Id: StorageControllerImpl.cpp 99229 2015-03-26 16:40:30Z klaus.espenlaub@oracle.com $ */
 
 /** @file
  *
@@ -6,7 +6,7 @@
  */
 
 /*
- * Copyright (C) 2008-2014 Oracle Corporation
+ * Copyright (C) 2008-2015 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;
