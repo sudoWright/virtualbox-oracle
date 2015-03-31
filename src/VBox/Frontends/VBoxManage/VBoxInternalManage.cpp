@@ -1,4 +1,4 @@
-/* $Id: VBoxInternalManage.cpp 90841 2013-11-22 11:15:41Z noreply@oracle.com $ */
+/* $Id: VBoxInternalManage.cpp 99300 2015-03-31 10:15:11Z noreply@oracle.com $ */
 /** @file
  * VBoxManage - The 'internalcommands' command.
  *
@@ -2016,6 +2016,7 @@ static int CmdConvertToRaw(int argc, char **argv, ComPtr<IVirtualBox> aVirtualBo
                 break;
             offFile += cb;
         }
+        RTMemFree(pvBuf);
         if (RT_FAILURE(vrc))
         {
             VDCloseAll(pDisk);
