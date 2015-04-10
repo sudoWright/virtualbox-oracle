@@ -1,4 +1,4 @@
-/* $Id: VBoxManageControlVM.cpp 98730 2015-03-02 19:55:29Z alexander.eichner@oracle.com $ */
+/* $Id: VBoxManageControlVM.cpp 99486 2015-04-10 10:29:54Z noreply@oracle.com $ */
 /** @file
  * VBoxManage - Implementation of the controlvm command.
  */
@@ -196,7 +196,7 @@ int handleControlVM(HandlerArg *a)
         {
             if (a->argc <= 1 + 1)
             {
-                errorArgument("Missing argument to '%s'. Expected drag'n'drop mode.", a->argv[1]);
+                errorArgument("Missing argument to '%s'. Expected drag and drop mode.", a->argv[1]);
                 rc = E_FAIL;
                 break;
             }

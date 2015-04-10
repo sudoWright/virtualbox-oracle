@@ -1,4 +1,4 @@
-/* $Id: UIActionPoolRuntime.cpp 99475 2015-04-09 19:54:44Z sergey.dubov@oracle.com $ */
+/* $Id: UIActionPoolRuntime.cpp 99486 2015-04-10 10:29:54Z noreply@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIActionPoolRuntime class implementation.
  */
@@ -1506,7 +1506,7 @@ protected:
 
     void retranslateUi()
     {
-        setName(QApplication::translate("UIActionPool", "Drag'n'Drop"));
+        setName(QApplication::translate("UIActionPool", "Drag and Drop"));
     }
 };
 
