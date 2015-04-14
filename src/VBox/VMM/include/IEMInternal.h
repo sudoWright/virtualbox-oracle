@@ -1,4 +1,4 @@
-/* $Id: IEMInternal.h 94220 2014-06-06 05:22:34Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: IEMInternal.h 99536 2015-04-14 06:35:43Z knut.osmundsen@oracle.com $ */
 /** @file
  * IEM - Internal header file.
  */
@@ -372,22 +372,12 @@ typedef struct IEMCPU
 
     /** @name Target CPU information.
      * @{ */
-    /** EDX value of CPUID(1).
-     * @remarks Some bits are subject to change and must be queried dynamically. */
-    uint32_t                fCpuIdStdFeaturesEdx;
-    /** ECX value of CPUID(1).
-     * @remarks Some bits are subject to change and must be queried dynamically. */
-    uint32_t                fCpuIdStdFeaturesEcx;
     /** The CPU vendor. */
     CPUMCPUVENDOR           enmCpuVendor;
     /** @} */
 
     /** @name Host CPU information.
      * @{ */
-    /** EDX value of CPUID(1). */
-    uint32_t                fHostCpuIdStdFeaturesEdx;
-    /** ECX value of CPUID(1). */
-    uint32_t                fHostCpuIdStdFeaturesEcx;
     /** The CPU vendor. */
     CPUMCPUVENDOR           enmHostCpuVendor;
     /** @} */
