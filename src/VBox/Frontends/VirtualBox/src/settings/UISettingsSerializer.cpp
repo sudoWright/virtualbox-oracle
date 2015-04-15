@@ -1,5 +1,4 @@
-﻿/* $Id: UISettingsSerializer.cpp 99597 2015-04-15 11:34:52Z sergey.dubov@oracle.com $ */
-/** @file
+﻿/** @file
  * VBox Qt GUI - UISettingsSerializer class implementation.
  */
 
