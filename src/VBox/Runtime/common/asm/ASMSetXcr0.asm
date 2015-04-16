@@ -1,4 +1,4 @@
-; $Id: ASMSetXcr0.asm 99402 2015-04-06 23:34:45Z knut.osmundsen@oracle.com $
+; $Id: ASMSetXcr0.asm 99628 2015-04-16 15:01:35Z knut.osmundsen@oracle.com $
 ;; @file
 ; IPRT - ASMSetXcr0().
 ;
@@ -27,6 +27,7 @@
 ;*******************************************************************************
 ;* Header Files                                                                *
 ;*******************************************************************************
+%define RT_ASM_WITH_SEH64
 %include "iprt/asmdefs.mac"
 
 BEGINCODE
@@ -37,6 +38,7 @@ BEGINCODE
 ;                   msc=rcx, gcc=rdi, x86=[esp+4]
 ;
 BEGINPROC_EXPORTED ASMSetXcr0
+SEH64_END_PROLOGUE
 %ifdef ASM_CALL64_MSC
         mov     rdx, rcx
         shr     rdx, 32
