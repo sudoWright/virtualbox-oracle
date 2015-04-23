@@ -1,3 +1,4 @@
+/* $Id: cconvYV12.c 99740 2015-04-23 10:03:17Z noreply@oracle.com $ */
 #extension GL_ARB_texture_rectangle : enable
 uniform sampler2DRect uSrcTex;
 uniform sampler2DRect uVTex;

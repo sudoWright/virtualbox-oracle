@@ -1,3 +1,4 @@
+/* $Id: AutoStateDep.h 99740 2015-04-23 10:03:17Z noreply@oracle.com $ */
 #ifndef ____H_AUTOSTATEDEP
 #define ____H_AUTOSTATEDEP
 

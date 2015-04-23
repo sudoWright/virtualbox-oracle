@@ -1,4 +1,4 @@
-/* Id: 73443 $ */
+/* $Id: VBGLInternal.h 99740 2015-04-23 10:03:17Z noreply@oracle.com $ */
 /** @file
  * VBoxGuestLibR0 - Internal header.
  */
