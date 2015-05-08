@@ -1,4 +1,4 @@
-/* $Id: DevAHCI.cpp 100137 2015-05-07 13:51:37Z noreply@oracle.com $ */
+/* $Id: DevAHCI.cpp 100201 2015-05-08 20:44:50Z noreply@oracle.com $ */
 /** @file
  * DevAHCI - AHCI controller device (disk and cdrom).
  *
@@ -4248,6 +4248,7 @@ static int atapiReadDVDStructureSS(PAHCIREQ pAhciReq, PAHCIPort pAhciPort, size_
 
                         /* 4 byte header + 4 byte data */
                         uASC = (4 + 4);
+                        break;
 
                     case 0x03: /* BCA information - invalid field for no BCA info */
                         uASC = -SCSI_ASC_INV_FIELD_IN_CMD_PACKET;
