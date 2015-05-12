@@ -1,4 +1,4 @@
-/* $Id: vbox-img.cpp 93784 2014-05-20 12:43:45Z michal.necasek@oracle.com $ */
+/* $Id: vbox-img.cpp 100269 2015-05-12 13:50:14Z noreply@oracle.com $ */
 /** @file
  * Standalone image manipulation tool
  */
@@ -1303,7 +1303,7 @@ static int handleCompact(HandlerArg *a)
                             /* Release the file handle and continue.*/
                             RTVfsFileRelease(hVfsFile);
                         }
-                        else if RT_FAILURE(rc)
+                        else if (RT_FAILURE(rc))
                             break;
                         else
                         {
