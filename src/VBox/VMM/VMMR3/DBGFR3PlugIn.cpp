@@ -1,4 +1,4 @@
-/* $Id: DBGFR3PlugIn.cpp 100338 2015-05-16 01:02:51Z knut.osmundsen@oracle.com $ */
+/* $Id: DBGFR3PlugIn.cpp 100343 2015-05-16 13:04:40Z knut.osmundsen@oracle.com $ */
 /** @file
  * DBGF - Debugger Facility, Plug-In Support.
  */
@@ -29,6 +29,7 @@
 #include <VBox/log.h>
 #include <VBox/version.h>
 
+#include <iprt/alloca.h>
 #include <iprt/assert.h>
 #include <iprt/ctype.h>
 #include <iprt/env.h>
