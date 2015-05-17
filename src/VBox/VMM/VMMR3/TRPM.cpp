@@ -1,4 +1,4 @@
-/* $Id: TRPM.cpp 100346 2015-05-17 18:01:37Z knut.osmundsen@oracle.com $ */
+/* $Id: TRPM.cpp 100350 2015-05-17 18:19:53Z knut.osmundsen@oracle.com $ */
 /** @file
  * TRPM - The Trap Monitor.
  */
@@ -1114,7 +1114,6 @@ VMMR3DECL(int) TRPMR3SyncIDT(PVM pVM, PVMCPU pVCpu)
             /*
              * [Re]Register write virtual handler for guest's IDT.
              */
-            PVMCPU pVCpu = VMMGetCpu(pVM);
             if (pVM->trpm.s.GuestIdtr.pIdt != RTRCPTR_MAX)
             {
                 rc = PGMHandlerVirtualDeregister(pVM, pVCpu, pVM->trpm.s.GuestIdtr.pIdt, false /*fHypervisor*/);
