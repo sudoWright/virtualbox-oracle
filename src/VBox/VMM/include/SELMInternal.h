@@ -1,4 +1,4 @@
-/* $Id: SELMInternal.h 100346 2015-05-17 18:01:37Z knut.osmundsen@oracle.com $ */
+/* $Id: SELMInternal.h 100351 2015-05-17 18:23:10Z knut.osmundsen@oracle.com $ */
 /** @file
  * SELM - Internal header file.
  */
@@ -185,7 +185,7 @@ typedef struct SELM
      * This is only used if we monitor the bitmap. */
     uint16_t                offGuestIoBitmap;
     /** @} */
-    uint16_t                padding4;
+    uint16_t                padding4[3];
 
     /** SELMR3UpdateFromCPUM() profiling. */
     STAMPROFILE             StatUpdateFromCPUM;
