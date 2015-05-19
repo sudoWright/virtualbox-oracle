@@ -1,4 +1,4 @@
-/* $Id: PATMInternal.h 100352 2015-05-17 19:42:38Z knut.osmundsen@oracle.com $ */
+/* $Id: PATMInternal.h 100431 2015-05-19 14:27:00Z knut.osmundsen@oracle.com $ */
 /** @file
  * PATM - Internal header file.
  */
@@ -685,5 +685,7 @@ void patmR3DbgInit(PVM pVM);
 void patmR3DbgTerm(PVM pVM);
 void patmR3DbgReset(PVM pVM);
 void patmR3DbgAddPatch(PVM pVM, PPATMPATCHREC pPatchRec);
+
+PGM_ALL_CB2_DECL(FNPGMPHYSHANDLER) patmVirtPageHandler;
 
 #endif
