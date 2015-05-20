@@ -1,4 +1,4 @@
-/* $Id: VirtualBoxBase.h 100444 2015-05-19 23:20:24Z knut.osmundsen@oracle.com $ */
+/* $Id: VirtualBoxBase.h 100459 2015-05-20 06:34:22Z noreply@oracle.com $ */
 /** @file
  * VirtualBox COM base classes definition
  */
@@ -350,7 +350,7 @@ public:
  */
 #define CheckComArgNotNull(arg) \
     do { \
-        if (RT_LIKELY((arg) == NULL)) \
+        if (RT_LIKELY((arg) != NULL)) \
         { /* likely */ }\
         else \
             return setError(E_INVALIDARG, tr("Argument %s is NULL"), #arg); \
