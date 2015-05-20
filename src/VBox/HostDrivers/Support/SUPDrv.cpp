@@ -1,4 +1,4 @@
-/* $Id: SUPDrv.cpp 100489 2015-05-20 17:35:22Z knut.osmundsen@oracle.com $ */
+/* $Id: SUPDrv.cpp 100497 2015-05-20 23:24:44Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxDrv - The VirtualBox Support Driver - Common code.
  */
@@ -232,7 +232,6 @@ static SUPFUNC g_aFunctions[] =
     { "RTLogGetDefaultInstanceEx",              (void *)RTLogGetDefaultInstanceEx },
     { "RTLogLoggerExV",                         (void *)RTLogLoggerExV },
     { "RTLogPrintfV",                           (void *)RTLogPrintfV },
-    { "RTLogRelDefaultInstance",                (void *)RTLogRelGetDefaultInstance },
     { "RTLogRelGetDefaultInstance",             (void *)RTLogRelGetDefaultInstance },
     { "RTLogRelGetDefaultInstanceEx",           (void *)RTLogRelGetDefaultInstanceEx },
     { "RTLogSetDefaultInstanceThread",          (void *)RTLogSetDefaultInstanceThread },
