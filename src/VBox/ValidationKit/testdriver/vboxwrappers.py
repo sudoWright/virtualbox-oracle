@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# $Id: vboxwrappers.py 100486 2015-05-20 16:52:25Z klaus.espenlaub@oracle.com $
+# $Id: vboxwrappers.py 100487 2015-05-20 16:58:03Z klaus.espenlaub@oracle.com $
 # pylint: disable=C0302
 
 """
@@ -27,7 +27,7 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 100486 $"
+__version__ = "$Revision: 100487 $"
 
 
 # Standard Python imports.
@@ -2249,7 +2249,7 @@ class SessionWrapper(TdTaskBase):
                and self.oVM.state is vboxcon.MachineState_Running:
                 self.o.console.pause();
             if self.fpApiVer >= 5.0:
-                (sSnapId, oProgressCom) = self.o.machine.takeSnapshot(sName, sDescription, True);
+                oProgressCom = self.o.machine.takeSnapshot(sName, sDescription, True)[-1];
             else:
                 oProgressCom = self.o.console.takeSnapshot(sName, sDescription);
             oProgress = ProgressWrapper(oProgressCom, self.oVBoxMgr, self.oTstDrv, 'Take Snapshot %s' % (sName));
