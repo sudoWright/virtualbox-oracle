@@ -1,4 +1,4 @@
-/* $Id: SELMAll.cpp 100526 2015-05-21 17:04:14Z knut.osmundsen@oracle.com $ */
+/* $Id: SELMAll.cpp 100529 2015-05-21 17:08:57Z knut.osmundsen@oracle.com $ */
 /** @file
  * SELM All contexts.
  */
@@ -34,6 +34,7 @@
 #include <iprt/assert.h>
 #include <VBox/vmm/vmm.h>
 #include <iprt/x86.h>
+#include <iprt/string.h>
 
 #include "SELMInline.h"
 
