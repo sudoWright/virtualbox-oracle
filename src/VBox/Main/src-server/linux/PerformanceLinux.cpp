@@ -1,4 +1,4 @@
-/* $Id: PerformanceLinux.cpp 100195 2015-05-08 20:01:46Z noreply@oracle.com $ */
+/* $Id: PerformanceLinux.cpp 100548 2015-05-22 14:06:29Z noreply@oracle.com $ */
 
 /** @file
  *
@@ -127,7 +127,7 @@ int CollectorLinux::preCollect(const CollectorHints& hints, uint64_t /* iTick */
         if (RT_SUCCESS(rc))
             mProcessStats[*it] = vmStats;
     }
-    if (hints.isHostCpuLoadCollected() || mProcessStats.size())
+    if (hints.isHostCpuLoadCollected() || !mProcessStats.empty())
     {
         _getRawHostCpuLoad();
     }
