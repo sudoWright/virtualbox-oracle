@@ -1,4 +1,4 @@
-/* $Id: VMMR0.cpp 100489 2015-05-20 17:35:22Z knut.osmundsen@oracle.com $ */
+/* $Id: VMMR0.cpp 100567 2015-05-22 21:10:03Z knut.osmundsen@oracle.com $ */
 /** @file
  * VMM - Host Context Ring 0.
  */
@@ -709,9 +709,6 @@ static void vmmR0RecordRC(PVM pVM, PVMCPU pVCpu, int rc)
             break;
         case VINF_EM_RAW_EMULATE_INSTR_TSS_FAULT:
             STAM_COUNTER_INC(&pVM->vmm.s.StatRZRetTSSFault);
-            break;
-        case VINF_EM_RAW_EMULATE_INSTR_PD_FAULT:
-            STAM_COUNTER_INC(&pVM->vmm.s.StatRZRetPDFault);
             break;
         case VINF_CSAM_PENDING_ACTION:
             STAM_COUNTER_INC(&pVM->vmm.s.StatRZRetCSAMTask);
