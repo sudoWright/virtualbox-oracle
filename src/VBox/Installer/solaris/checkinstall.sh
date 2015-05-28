@@ -1,4 +1,5 @@
 #!/bin/sh
+# $Id: checkinstall.sh 100648 2015-05-28 09:29:56Z ramshankar.venkataraman@oracle.com $
 ## @file
 #
 # VirtualBox checkinstall script for Solaris.
