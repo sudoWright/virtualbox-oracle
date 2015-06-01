@@ -1,4 +1,4 @@
-/* $Id: UIWizardNewVD.cpp 98541 2015-02-24 11:09:17Z klaus.espenlaub@oracle.com $ */
+/* $Id: UIWizardNewVD.cpp 100716 2015-06-01 13:36:10Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardNewVD class implementation.
  */
@@ -120,7 +120,7 @@ void UIWizardNewVD::retranslateUi()
     UIWizard::retranslateUi();
 
     /* Translate wizard: */
-    setWindowTitle(tr("Create Virtual Hard Drive"));
+    setWindowTitle(tr("Create Virtual Hard Disk"));
     setButtonText(QWizard::FinishButton, tr("Create"));
 }
 
