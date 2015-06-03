@@ -1,4 +1,4 @@
-/* $Id: time-linux.cpp 96224 2014-09-23 10:25:34Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: time-linux.cpp 100769 2015-06-03 13:58:13Z noreply@oracle.com $ */
 /** @file
  * IPRT - Time, POSIX.
  */
@@ -81,12 +81,11 @@ DECLINLINE(int) mono_clock(struct timespec *ts)
          */
         case -1:
         {
-            int rc;
 #ifdef CLOCK_MONOTONIC
             /*
              * Real-Time API.
              */
-            rc = clock_gettime(CLOCK_MONOTONIC, ts);
+            int rc = clock_gettime(CLOCK_MONOTONIC, ts);
             if (!rc)
             {
                 iWorking = 0;
