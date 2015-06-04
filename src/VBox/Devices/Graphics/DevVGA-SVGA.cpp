@@ -1,4 +1,4 @@
-/* $Id: DevVGA-SVGA.cpp 100573 2015-05-24 14:11:46Z knut.osmundsen@oracle.com $ */
+/* $Id: DevVGA-SVGA.cpp 100797 2015-06-04 09:30:25Z noreply@oracle.com $ */
 /** @file
  * VMWare SVGA device.
  *
@@ -2393,7 +2393,7 @@ static DECLCALLBACK(int) vmsvgaFIFOLoop(PPDMDEVINS pDevIns, PPDMTHREAD pThread)
          * Quit if pending external command or changes in the thread state.
          */
         bool fDone = false;
-        while (   !(fDone = pFIFO[SVGA_FIFO_NEXT_CMD] == offCurrentCmd)
+        while (   !(fDone = (pFIFO[SVGA_FIFO_NEXT_CMD] == offCurrentCmd))
                && pThread->enmState == PDMTHREADSTATE_RUNNING)
         {
             uint32_t cbPayload = 0;
