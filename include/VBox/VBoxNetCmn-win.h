@@ -1,4 +1,4 @@
-/* $Id: VBoxNetCmn-win.h 100837 2015-06-05 14:40:34Z aleksey.ilyushin@oracle.com $ */
+/* $Id: VBoxNetCmn-win.h 100838 2015-06-05 15:22:11Z aleksey.ilyushin@oracle.com $ */
 /** @file
  * VBoxNetCmn-win.h - NDIS6 Networking Driver Common Definitions, Windows-specific code.
  */
