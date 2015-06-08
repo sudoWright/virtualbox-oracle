@@ -1,4 +1,4 @@
-/* $Id: ConsoleImpl.cpp 100609 2015-05-26 16:39:58Z andreas.loeffler@oracle.com $ */
+/* $Id: ConsoleImpl.cpp 100845 2015-06-08 09:10:55Z aleksey.ilyushin@oracle.com $ */
 /** @file
  * VBox Console COM Class implementation
  */
@@ -380,10 +380,6 @@ Console::Console()
     , mVMStateChangeCallbackDisabled(false)
     , mfUseHostClipboard(true)
     , mMachineState(MachineState_PoweredOff)
-#ifdef RT_OS_WINDOWS
-    , mfNDIS6(true)
-#endif /* RT_OS_WINDOWS */
-
 {
 }
 
