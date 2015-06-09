@@ -1,10 +1,10 @@
-/* $Id: VBoxNetFltUninstall.cpp 94790 2014-07-07 17:44:56Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxNetFltUninstall.cpp 100877 2015-06-09 14:23:56Z knut.osmundsen@oracle.com $ */
 /** @file
  * NetFltUninstall - VBoxNetFlt uninstaller command line tool
  */
 
 /*
- * Copyright (C) 2008-2011 Oracle Corporation
+ * Copyright (C) 2008-2015 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

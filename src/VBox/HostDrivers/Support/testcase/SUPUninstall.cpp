@@ -1,10 +1,10 @@
-/* $Id: SUPUninstall.cpp 74523 2011-10-24 13:58:22Z knut.osmundsen@oracle.com $ */
+/* $Id: SUPUninstall.cpp 100877 2015-06-09 14:23:56Z knut.osmundsen@oracle.com $ */
 /** @file
  * SUPUninstall - Driver Uninstall.
  */
 
 /*
- * Copyright (C) 2006-2011 Oracle Corporation
+ * Copyright (C) 2006-2015 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

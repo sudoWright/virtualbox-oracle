@@ -1,10 +1,10 @@
-/* $Id: tstOpenUSBDev.cpp 83575 2013-02-04 14:27:54Z noreply@oracle.com $ */
+/* $Id: tstOpenUSBDev.cpp 100877 2015-06-09 14:23:56Z knut.osmundsen@oracle.com $ */
 /** @file
  * Testcase that attempts to locate and open the specfied device.
  */
 
 /*
- * Copyright (C) 2006-2011 Oracle Corporation
+ * Copyright (C) 2006-2015 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;
@@ -206,7 +206,7 @@ int main(int argc, char **argv)
             case 'h':
                 return tstSyntax(argv[0]);
             case 'V':
-                RTPrintf("$Revision: 83575 $\n");
+                RTPrintf("$Revision: 100877 $\n");
                 return 0;
 
             default:

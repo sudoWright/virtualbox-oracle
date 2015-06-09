@@ -1,10 +1,10 @@
-/* $Id: SUPHardenedVerify-win.h 98694 2015-02-27 16:25:52Z knut.osmundsen@oracle.com $ */
+/* $Id: SUPHardenedVerify-win.h 100877 2015-06-09 14:23:56Z knut.osmundsen@oracle.com $ */
 /** @file
  * VirtualBox Support Library/Driver - Hardened Verification, Windows.
  */
 
 /*
- * Copyright (C) 2006-2014 Oracle Corporation
+ * Copyright (C) 2006-2015 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

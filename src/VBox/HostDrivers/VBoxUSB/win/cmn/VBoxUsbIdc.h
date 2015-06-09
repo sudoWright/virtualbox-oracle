@@ -1,10 +1,10 @@
-/* $Id: VBoxUsbIdc.h 71566 2011-05-05 08:55:16Z noreply@oracle.com $ */
+/* $Id: VBoxUsbIdc.h 100877 2015-06-09 14:23:56Z knut.osmundsen@oracle.com $ */
 /** @file
  * Windows USB Proxy - Monitor Driver communication interface.
  */
 
 /*
- * Copyright (C) 2011 Oracle Corporation
+ * Copyright (C) 2011-2015 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;
