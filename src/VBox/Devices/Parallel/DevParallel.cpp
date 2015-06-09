@@ -1,4 +1,4 @@
-/* $Id: DevParallel.cpp 89644 2013-10-07 21:41:00Z knut.osmundsen@oracle.com $ */
+/* $Id: DevParallel.cpp 100865 2015-06-09 10:46:34Z knut.osmundsen@oracle.com $ */
 /** @file
  * DevParallel - Parallel (Port) Device Emulation.
  *
@@ -799,7 +799,7 @@ const PDMDEVREG g_DeviceParallelPort =
     /* szName */
     "parallel",
     /* szRCMod */
-    "VBoxDDGC.gc",
+    "VBoxDDRC.rc",
     /* szR0Mod */
     "VBoxDDR0.r0",
     /* pszDescription */

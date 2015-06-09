@@ -1,4 +1,4 @@
-/* $Id: DevACPI.cpp 100304 2015-05-13 14:23:01Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: DevACPI.cpp 100865 2015-06-09 10:46:34Z knut.osmundsen@oracle.com $ */
 /** @file
  * DevACPI - Advanced Configuration and Power Interface (ACPI) Device.
  */
@@ -3478,7 +3478,7 @@ const PDMDEVREG g_DeviceACPI =
     /* szName */
     "acpi",
     /* szRCMod */
-    "VBoxDDGC.gc",
+    "VBoxDDRC.rc",
     /* szR0Mod */
     "VBoxDDR0.r0",
     /* pszDescription */

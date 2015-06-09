@@ -1,4 +1,4 @@
-/* $Id: DevSmc.cpp 99881 2015-04-29 14:04:42Z noreply@oracle.com $ */
+/* $Id: DevSmc.cpp 100865 2015-06-09 10:46:34Z knut.osmundsen@oracle.com $ */
 /** @file
  * DevSmc - Apple System Manaagement Controller.
  *
@@ -1472,7 +1472,7 @@ const PDMDEVREG g_DeviceSmc =
     /* szName */
     "smc",
     /* szRCMod */
-    "VBoxDDGC.gc",
+    "VBoxDDRC.rc",
     /* szR0Mod */
     "VBoxDDR0.r0",
     /* pszDescription */
