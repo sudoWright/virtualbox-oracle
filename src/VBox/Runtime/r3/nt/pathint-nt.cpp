@@ -1,10 +1,10 @@
-/* $Id: pathint-nt.cpp 96395 2014-10-06 13:30:20Z knut.osmundsen@oracle.com $ */
+/* $Id: pathint-nt.cpp 100874 2015-06-09 14:01:31Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Native NT, Internal Path stuff.
  */
 
 /*
- * Copyright (C) 2006-2013 Oracle Corporation
+ * Copyright (C) 2006-2015 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

@@ -1,10 +1,10 @@
-/* $Id: alt-md2.cpp 94715 2014-07-03 22:56:18Z knut.osmundsen@oracle.com $ */
+/* $Id: alt-md2.cpp 100874 2015-06-09 14:01:31Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Message-Digest Algorithm 2, Alternative Implementation.
  */
 
 /*
- * Copyright (C) 2009-2014 Oracle Corporation
+ * Copyright (C) 2009-2015 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

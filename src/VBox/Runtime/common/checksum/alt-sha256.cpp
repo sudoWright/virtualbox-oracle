@@ -1,10 +1,10 @@
-/* $Id: alt-sha256.cpp 94748 2014-07-06 18:09:40Z knut.osmundsen@oracle.com $ */
+/* $Id: alt-sha256.cpp 100874 2015-06-09 14:01:31Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - SHA-256 and SHA-224 hash functions, Alternative Implementation.
  */
 
 /*
- * Copyright (C) 2009-2014 Oracle Corporation
+ * Copyright (C) 2009-2015 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

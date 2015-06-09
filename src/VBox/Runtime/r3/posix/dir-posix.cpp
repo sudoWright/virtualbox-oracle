@@ -1,10 +1,10 @@
-/* $Id: dir-posix.cpp 100517 2015-05-21 13:28:09Z noreply@oracle.com $ */
+/* $Id: dir-posix.cpp 100874 2015-06-09 14:01:31Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Directory manipulation, POSIX.
  */
 
 /*
- * Copyright (C) 2006-2012 Oracle Corporation
+ * Copyright (C) 2006-2015 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

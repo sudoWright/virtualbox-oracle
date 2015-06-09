@@ -1,10 +1,10 @@
-/* $Id: RTSystemQueryDmiString-darwin.cpp 89632 2013-10-07 21:19:37Z knut.osmundsen@oracle.com $ */
+/* $Id: RTSystemQueryDmiString-darwin.cpp 100874 2015-06-09 14:01:31Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - RTSystemQueryDmiString, darwin ring-3.
  */
 
 /*
- * Copyright (C) 2010 Oracle Corporation
+ * Copyright (C) 2010-2015 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

@@ -1,10 +1,10 @@
-/* $Id: tstRTFileAio.cpp 85204 2013-04-23 11:28:41Z alexander.eichner@oracle.com $ */
+/* $Id: tstRTFileAio.cpp 100874 2015-06-09 14:01:31Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT Testcase - File Async I/O.
  */
 
 /*
- * Copyright (C) 2006-2010 Oracle Corporation
+ * Copyright (C) 2006-2015 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

@@ -1,10 +1,10 @@
-/* $Id: alt-sha1.cpp 97393 2014-12-31 14:59:44Z knut.osmundsen@oracle.com $ */
+/* $Id: alt-sha1.cpp 100874 2015-06-09 14:01:31Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - SHA-1 hash functions, Alternative Implementation.
  */
 
 /*
- * Copyright (C) 2009-2014 Oracle Corporation
+ * Copyright (C) 2009-2015 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;
