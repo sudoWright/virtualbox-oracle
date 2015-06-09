@@ -1,10 +1,10 @@
-/* $Id: DBGFAddrSpace.cpp 92170 2014-02-11 01:58:32Z knut.osmundsen@oracle.com $ */
+/* $Id: DBGFAddrSpace.cpp 100868 2015-06-09 11:15:22Z knut.osmundsen@oracle.com $ */
 /** @file
  * DBGF - Debugger Facility, Address Space Management.
  */
 
 /*
- * Copyright (C) 2008-2013 Oracle Corporation
+ * Copyright (C) 2008-2015 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;
