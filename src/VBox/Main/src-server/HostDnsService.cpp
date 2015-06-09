@@ -1,4 +1,4 @@
-/* $Id: HostDnsService.cpp 100225 2015-05-11 03:10:42Z noreply@oracle.com $ */
+/* $Id: HostDnsService.cpp 100906 2015-06-09 22:55:53Z knut.osmundsen@oracle.com $ */
 /** @file
  * Base class for Host DNS & Co services.
  */
@@ -51,7 +51,7 @@ bool HostDnsInformation::equals(const HostDnsInformation &info, uint32_t fLaxCom
     {
         std::set<std::string> l(servers.begin(), servers.end());
         std::set<std::string> r(info.servers.begin(), info.servers.end());
-        
+
         fSameServers = (l == r);
     }
 
