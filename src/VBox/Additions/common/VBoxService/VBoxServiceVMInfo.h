@@ -1,10 +1,10 @@
-/* $Id: VBoxServiceVMInfo.h 88291 2013-08-21 14:25:52Z andreas.loeffler@oracle.com $ */
+/* $Id: VBoxServiceVMInfo.h 100879 2015-06-09 14:26:20Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxServiceVMInfo.h - Internal VM info definitions.
  */
 
 /*
- * Copyright (C) 2013 Oracle Corporation
+ * Copyright (C) 2013-2015 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;
