@@ -1,10 +1,10 @@
-/* $Id: VBoxBusMouseMain.cpp 89646 2013-10-07 21:44:25Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxBusMouseMain.cpp 100883 2015-06-09 14:32:47Z knut.osmundsen@oracle.com $ */
 /** @file
  * Bus Mouse main module.
  */
 
 /*
- * Copyright (C) 2010-2013 Oracle Corporation
+ * Copyright (C) 2010-2015 Oracle Corporation
  *
  * Permission is hereby granted, free of charge, to any person
  * obtaining a copy of this software and associated documentation
