@@ -1,4 +1,4 @@
-/* $Id: VBoxService.cpp 100169 2015-05-08 10:27:52Z noreply@oracle.com $ */
+/* $Id: VBoxService.cpp 100863 2015-06-09 09:36:50Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxService - Guest Additions Service Skeleton.
  */
@@ -856,7 +856,7 @@ int main(int argc, char **argv)
      */
     if (   argc == 2
         && !RTStrICmp(argv[1], "pagefusion"))
-        return VBoxServicePageSharingInitFork();
+        return VBoxServicePageSharingWorkerChild();
 #endif
 
 #ifdef VBOX_WITH_GUEST_CONTROL
