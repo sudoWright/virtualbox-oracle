@@ -1,4 +1,4 @@
-/* $Id: VBoxMPDriver.cpp 100972 2015-06-12 06:10:56Z vitali.pelenjow@oracle.com $ */
+/* $Id: VBoxMPDriver.cpp 101034 2015-06-15 13:50:23Z vitali.pelenjow@oracle.com $ */
 
 /** @file
  * VBox XPDM Miniport driver interface functions
@@ -147,12 +147,6 @@ VBoxDrvFindAdapter(IN PVOID HwDeviceExtension, IN PVOID HwContext, IN PWSTR Argu
      * with old guest additions.
      */
     VBoxSetupDisplaysHGSMI(&pExt->u.primary.commonInfo, phVRAM, ulApertureSize, cbVRAM, 0);
-
-    PVBOXMP_COMMON pCommon = &pExt->u.primary.commonInfo;
-    if (pCommon->bHGSMI)
-    {
-        pCommon->u32MouseCursorFlags = VBoxHGSMIGetMouseCursorFlags(&pCommon->guestCtx);
-    }
 
     /* Check if the chip restricts horizontal resolution or not.
      * Must be done after VBoxSetupDisplaysHGSMI, because it initializes the common structure.
