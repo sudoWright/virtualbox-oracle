@@ -1,4 +1,4 @@
-/* $Id: HMSVMR0.cpp 101308 2015-06-28 16:25:06Z knut.osmundsen@oracle.com $ */
+/* $Id: HMSVMR0.cpp 101309 2015-06-28 16:25:16Z knut.osmundsen@oracle.com $ */
 /** @file
  * HM SVM (AMD-V) - Host Context Ring-0.
  */
@@ -4817,7 +4817,7 @@ HMSVM_EXIT_DECL hmR0SvmExitIOInstr(PVMCPU pVCpu, PCPUMCTX pCtx, PSVMTRANSIENT pS
                         rcStrict = IEMExecStringIoWrite(pVCpu, cbValue, enmAddrMode, IoExitInfo.n.u1REP, (uint8_t)cbInstr,
                                                         IoExitInfo.n.u3SEG);
                     }
-                    else if (cbInstr != 1U + IoExitInfo.n.u1REP)
+                    else if (cbInstr == 1U + IoExitInfo.n.u1REP)
                         rcStrict = IEMExecStringIoWrite(pVCpu, cbValue, enmAddrMode, IoExitInfo.n.u1REP, (uint8_t)cbInstr,
                                                         X86_SREG_DS);
                     else
