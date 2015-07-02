@@ -1,4 +1,4 @@
-/* $Id: VBoxFBOverlay.cpp 100762 2015-06-03 11:50:25Z sergey.dubov@oracle.com $ */
+/* $Id: VBoxFBOverlay.cpp 101393 2015-07-02 11:18:15Z alexander.eichner@oracle.com $ */
 /** @file
  * VBox Qt GUI - VBoxFBOverlay implementation.
  */
@@ -3255,6 +3255,8 @@ int VBoxVHWAImage::vhwaLoadSurface(VHWACommandList * pCmdList, struct SSMHANDLE 
 //            AssertRC(rc);
 //        }
     }
+    else
+        free(buf);
 
     VBOXQGL_LOAD_SURFSTOP(pSSM);
 
