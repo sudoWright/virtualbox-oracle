@@ -1,4 +1,4 @@
-/* $Id: UIMachineWindowFullscreen.h 101539 2015-07-08 15:05:04Z sergey.dubov@oracle.com $ */
+/* $Id: UIMachineWindowFullscreen.h 101540 2015-07-08 15:12:32Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIMachineWindowFullscreen class declaration.
  */
@@ -73,6 +73,9 @@ private slots:
 
     /** Revokes keyboard-focus. */
     void sltRevokeFocus();
+
+    /** Shows window minimized. */
+    void showMinimized();
 
 private:
 
