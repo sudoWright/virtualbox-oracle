@@ -1,4 +1,4 @@
-/* $Id: vbsfpath.cpp 101671 2015-07-17 07:55:21Z vitali.pelenjow@oracle.com $ */
+/* $Id: vbsfpath.cpp 101675 2015-07-17 11:32:19Z vitali.pelenjow@oracle.com $ */
 /** @file
  * Shared Folders - guest/host path convertion and verification.
  */
@@ -455,7 +455,7 @@ static const char sachCharBlackList[] = "/";
  *
  * @param c Character to verify.
  */
-static bool vbsfPathIsValidNameChar(char c)
+static bool vbsfPathIsValidNameChar(unsigned char c)
 {
     /* Character 0 is not allowed too. */
     if (c == 0 || strchr(sachCharBlackList, c))
