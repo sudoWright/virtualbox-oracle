@@ -1,4 +1,4 @@
-/* $Id: tstDisasm-2.cpp 100882 2015-06-09 14:31:41Z knut.osmundsen@oracle.com $ */
+/* $Id: tstDisasm-2.cpp 101699 2015-07-18 22:13:50Z knut.osmundsen@oracle.com $ */
 /** @file
  * Testcase - Generic Disassembler Tool.
  */
@@ -450,7 +450,7 @@ static int Usage(const char *argv0)
 "    The assembly output style. Default: default\n"
 "  --undef-op|-u <fail|all|db>\n"
 "    How to treat undefined opcodes. Default: fail\n"
-             , argv0, argv0);
+             , argv0, argv0, argv0);
     return 1;
 }
 
@@ -570,7 +570,7 @@ int main(int argc, char **argv)
                 break;
 
             case 'V':
-                RTPrintf("$Revision: 100882 $\n");
+                RTPrintf("$Revision: 101699 $\n");
                 return 0;
 
             default:
