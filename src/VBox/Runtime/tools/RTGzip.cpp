@@ -1,4 +1,4 @@
-/* $Id: RTGzip.cpp 100874 2015-06-09 14:01:31Z knut.osmundsen@oracle.com $ */
+/* $Id: RTGzip.cpp 101690 2015-07-18 18:55:25Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - GZIP Utility.
  */
@@ -397,7 +397,7 @@ static RTEXITCODE gzipOpenInput(const char *pszFile, PRTGZIPCMDOPTS pOpts, PRTVF
             if (pszError && *pszError)
                 return RTMsgErrorExit(RTEXITCODE_FAILURE,
                                       "RTVfsChainOpenIoStream failed with rc=%Rrc:\n"
-                                      "    '%s'\n",
+                                      "    '%s'\n"
                                       "     %*s^\n",
                                       rc, pszFile, pszError - pszFile, "");
             return RTMsgErrorExit(RTEXITCODE_FAILURE,
