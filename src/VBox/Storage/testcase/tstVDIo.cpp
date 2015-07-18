@@ -1,4 +1,4 @@
-/* $Id: tstVDIo.cpp 101400 2015-07-02 12:08:21Z alexander.eichner@oracle.com $ */
+/* $Id: tstVDIo.cpp 101714 2015-07-18 23:39:58Z knut.osmundsen@oracle.com $ */
 /** @file
  *
  * VBox HDD container test utility - I/O replay.
@@ -2808,7 +2808,7 @@ static void tstVDIoScriptExec(const char *pszName, const char *pszScript)
             VDIoBackendDestroy(GlobTest.pIoBackend);
         }
         else
-            RTPrintf("Creating the I/O backend failed rc=%Rrc\n");
+            RTPrintf("Creating the I/O backend failed rc=%Rrc\n", rc);
 
         RTTestSummaryAndDestroy(GlobTest.hTest);
     }
