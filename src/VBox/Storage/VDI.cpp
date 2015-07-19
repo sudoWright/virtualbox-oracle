@@ -1,4 +1,4 @@
-/* $Id: VDI.cpp 98533 2015-02-24 10:43:16Z klaus.espenlaub@oracle.com $ */
+/* $Id: VDI.cpp 101722 2015-07-19 01:39:42Z knut.osmundsen@oracle.com $ */
 /** @file
  * Virtual Disk Image (VDI), Core Code.
  */
@@ -556,7 +556,7 @@ static int vdiCreateImage(PVDIIMAGEDESC pImage, uint64_t cbSize,
         if (RT_FAILURE(rc))
         {
             rc = vdIfError(pImage->pIfError, rc, RT_SRC_POS,
-                           N_("VDI: Getting data alignment for '%s' failed (%Rrc)"), pImage->pszFilename);
+                           N_("VDI: Getting data alignment for '%s' failed (%Rrc)"), pImage->pszFilename, rc);
             goto out;
         }
     }
