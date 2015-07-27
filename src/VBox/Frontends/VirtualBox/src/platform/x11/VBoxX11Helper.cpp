@@ -1,4 +1,4 @@
-/* $Id: VBoxX11Helper.cpp 101642 2015-07-14 17:46:30Z sergey.dubov@oracle.com $ */
+/* $Id: VBoxX11Helper.cpp 101824 2015-07-27 14:55:21Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - X11 helpers..
  */
@@ -71,6 +71,9 @@ X11WMType X11WindowManagerType()
             {
                 if (QString((const char*)pcData).contains("KWin", Qt::CaseInsensitive))
                     wmType = X11WMType_KWin;
+                else
+                if (QString((const char*)pcData).contains("Compiz", Qt::CaseInsensitive))
+                    wmType = X11WMType_Compiz;
                 else
                 if (QString((const char*)pcData).contains("Mutter", Qt::CaseInsensitive))
                     wmType = X11WMType_Mutter;
