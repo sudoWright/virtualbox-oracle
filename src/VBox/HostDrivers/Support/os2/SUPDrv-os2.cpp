@@ -1,4 +1,4 @@
-/* $Id: SUPDrv-os2.cpp 100877 2015-06-09 14:23:56Z knut.osmundsen@oracle.com $ */
+/* $Id: SUPDrv-os2.cpp 101836 2015-07-28 11:49:23Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxDrv - The VirtualBox Support Driver - OS/2 specifics.
  */
@@ -520,9 +520,6 @@ SUPR0DECL(int) SUPR0Printf(const char *pszFormat, ...)
 }
 
 
-/**
- * Returns configuration flags of the host kernel.
- */
 SUPR0DECL(uint32_t) SUPR0GetKernelFeatures(void)
 {
     return 0;

@@ -1,4 +1,4 @@
-/* $Id: SUPDrv-win.cpp 100877 2015-06-09 14:23:56Z knut.osmundsen@oracle.com $ */
+/* $Id: SUPDrv-win.cpp 101836 2015-07-28 11:49:23Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxDrv - The VirtualBox Support Driver - Windows NT specifics.
  */
@@ -2253,9 +2253,6 @@ SUPR0DECL(int) SUPR0Printf(const char *pszFormat, ...)
 #endif
 
 
-/**
- * Returns configuration flags of the host kernel.
- */
 SUPR0DECL(uint32_t) SUPR0GetKernelFeatures(void)
 {
     return 0;

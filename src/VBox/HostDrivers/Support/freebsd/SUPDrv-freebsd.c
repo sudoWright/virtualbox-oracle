@@ -1,4 +1,4 @@
-/* $Id: SUPDrv-freebsd.c 98720 2015-03-02 14:56:02Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: SUPDrv-freebsd.c 101836 2015-07-28 11:49:23Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxDrv - The VirtualBox Support Driver - FreeBSD specifics.
  */
@@ -626,9 +626,6 @@ SUPR0DECL(int) SUPR0Printf(const char *pszFormat, ...)
 }
 
 
-/**
- * Returns configuration flags of the host kernel.
- */
 SUPR0DECL(uint32_t) SUPR0GetKernelFeatures(void)
 {
     return 0;
