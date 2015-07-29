@@ -1,6 +1,6 @@
-/* $Id: TemplateExe.rc 100220 2015-05-09 23:57:04Z knut.osmundsen@oracle.com $ */
+/* $Id: TemplateDrv.rc 101846 2015-07-29 09:43:26Z noreply@oracle.com $ */
 /** @file
- * Resource file template for an executable.
+ * Resource file template for a driver.
  */
 
 /*
@@ -67,6 +67,9 @@
 #  define IN_PRODUCT_NAME VBOX_RC_PRODUCT_NAME
 # endif
 #endif
+#ifndef IN_FILE_SUBTYPE /* optional */
+# define IN_FILE_SUBTYPE VFT2_UNKNOWN
+#endif
 
 
 /*******************************************************************************
@@ -88,8 +91,8 @@ PRODUCTVERSION  VBOX_RC_FILE_VERSION
 FILEFLAGSMASK   VS_FFI_FILEFLAGSMASK
 FILEFLAGS       VBOX_RC_FILE_FLAGS
 FILEOS          VBOX_RC_FILE_OS
-FILETYPE        VBOX_RC_TYPE_APP
-FILESUBTYPE     VFT2_UNKNOWN
+FILETYPE        VBOX_RC_TYPE_DRV
+FILESUBTYPE     IN_FILE_SUBTYPE
 BEGIN
     BLOCK "StringFileInfo"
     BEGIN
