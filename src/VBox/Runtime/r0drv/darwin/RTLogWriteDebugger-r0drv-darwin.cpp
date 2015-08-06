@@ -1,4 +1,4 @@
-/* $Id: RTLogWriteDebugger-r0drv-darwin.cpp 100874 2015-06-09 14:01:31Z knut.osmundsen@oracle.com $ */
+/* $Id: RTLogWriteDebugger-r0drv-darwin.cpp 101981 2015-08-06 23:27:10Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Log To Debugger, Ring-0 Driver, Darwin.
  */
@@ -35,7 +35,8 @@
 
 RTDECL(void) RTLogWriteDebugger(const char *pch, size_t cb)
 {
+    IPRT_DARWIN_SAVE_EFL_AC();
     kprintf("%.*s", (int)cb, pch);
-    return;
+    IPRT_DARWIN_RESTORE_EFL_AC();
 }
 
