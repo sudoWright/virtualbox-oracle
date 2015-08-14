@@ -1,4 +1,4 @@
-/* $Id: display.cpp 102119 2015-08-14 15:03:30Z noreply@oracle.com $ */
+/* $Id: display.cpp 102120 2015-08-14 15:04:46Z noreply@oracle.com $ */
 /** @file
  * X11 guest client - display management.
  */
@@ -387,8 +387,6 @@ struct VBCLSERVICE vbclDisplayInterface =
     getPidFilePath,
     init,
     run,
-    VBClServiceDefaultHandler, /* pause */
-    VBClServiceDefaultHandler, /* resume */
     cleanup
 };
 
