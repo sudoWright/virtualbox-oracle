@@ -1,4 +1,4 @@
-/* $Id: tstVMStructDTrace.cpp 100868 2015-06-09 11:15:22Z knut.osmundsen@oracle.com $ */
+/* $Id: tstVMStructDTrace.cpp 102121 2015-08-14 15:16:38Z knut.osmundsen@oracle.com $ */
 /** @file
  * tstVMMStructDTrace - Generates the DTrace test scripts for check that C/C++
  *                      and DTrace has the same understand of the VM, VMCPU and
@@ -18,9 +18,9 @@
  */
 
 
-/*******************************************************************************
-*   Header Files                                                               *
-*******************************************************************************/
+/*********************************************************************************************************************************
+*   Header Files                                                                                                                 *
+*********************************************************************************************************************************/
 #define IN_TSTVMSTRUCTGC 1
 #include <VBox/vmm/cfgm.h>
 #include <VBox/vmm/cpum.h>

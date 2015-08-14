@@ -1,4 +1,4 @@
-/* $Id: VBoxManageModifyVM.cpp 101498 2015-07-07 16:03:53Z klaus.espenlaub@oracle.com $ */
+/* $Id: VBoxManageModifyVM.cpp 102121 2015-08-14 15:16:38Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxManage - Implementation of modifyvm command.
  */
@@ -15,9 +15,10 @@
  * hope that it will be useful, but WITHOUT ANY WARRANTY of any kind.
  */
 
-/*******************************************************************************
-*   Header Files                                                               *
-*******************************************************************************/
+
+/*********************************************************************************************************************************
+*   Header Files                                                                                                                 *
+*********************************************************************************************************************************/
 #ifndef VBOX_ONLY_DOCS
 #include <VBox/com/com.h>
 #include <VBox/com/array.h>

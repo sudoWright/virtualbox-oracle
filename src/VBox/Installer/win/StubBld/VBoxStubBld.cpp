@@ -1,4 +1,4 @@
-/* $Id: VBoxStubBld.cpp 100884 2015-06-09 14:35:06Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxStubBld.cpp 102121 2015-08-14 15:16:38Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxStubBld - VirtualBox's Windows installer stub builder.
  */
@@ -15,9 +15,10 @@
  * hope that it will be useful, but WITHOUT ANY WARRANTY of any kind.
  */
 
-/*******************************************************************************
-*   Header Files                                                               *
-*******************************************************************************/
+
+/*********************************************************************************************************************************
+*   Header Files                                                                                                                 *
+*********************************************************************************************************************************/
 #include <windows.h>
 #include <shellapi.h>
 #include <strsafe.h>

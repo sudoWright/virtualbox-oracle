@@ -1,4 +1,4 @@
-/* $Id: GuestDnDSourceImpl.cpp 101974 2015-08-06 19:19:19Z andreas.loeffler@oracle.com $ */
+/* $Id: GuestDnDSourceImpl.cpp 102121 2015-08-14 15:16:38Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Console COM Class implementation - Guest drag and drop source.
  */
@@ -16,9 +16,9 @@
  */
 
 
-/*******************************************************************************
-*   Header Files                                                               *
-*******************************************************************************/
+/*********************************************************************************************************************************
+*   Header Files                                                                                                                 *
+*********************************************************************************************************************************/
 #include "GuestImpl.h"
 #include "GuestDnDSourceImpl.h"
 #include "GuestDnDPrivate.h"

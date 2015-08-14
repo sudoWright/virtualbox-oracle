@@ -1,4 +1,4 @@
-/* $Id: VBoxNetUDP.cpp 100885 2015-06-09 14:36:22Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxNetUDP.cpp 102121 2015-08-14 15:16:38Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxNetUDP - IntNet UDP Client Routines.
  */
@@ -15,9 +15,10 @@
  * hope that it will be useful, but WITHOUT ANY WARRANTY of any kind.
  */
 
-/*******************************************************************************
-*   Header Files                                                               *
-*******************************************************************************/
+
+/*********************************************************************************************************************************
+*   Header Files                                                                                                                 *
+*********************************************************************************************************************************/
 #define LOG_GROUP LOG_GROUP_DEFAULT
 #include "VBoxNetLib.h"
 #include <iprt/stream.h>

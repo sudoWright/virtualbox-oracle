@@ -1,4 +1,4 @@
-/* $Id: tstRTTimeSpec.cpp 100874 2015-06-09 14:01:31Z knut.osmundsen@oracle.com $ */
+/* $Id: tstRTTimeSpec.cpp 102121 2015-08-14 15:16:38Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - RTTimeSpec and PRTTIME tests.
  */
@@ -24,9 +24,10 @@
  * terms and conditions of either the GPL or the CDDL or both.
  */
 
-/*******************************************************************************
-*   Header Files                                                               *
-*******************************************************************************/
+
+/*********************************************************************************************************************************
+*   Header Files                                                                                                                 *
+*********************************************************************************************************************************/
 #if !defined(RT_OS_WINDOWS)
 # define RTTIME_INCL_TIMEVAL
 # define RTTIME_INCL_TIMESPEC

@@ -1,4 +1,4 @@
-/* $Id: tstSupTscDelta.cpp 101386 2015-07-01 21:30:12Z alexander.eichner@oracle.com $ */
+/* $Id: tstSupTscDelta.cpp 102121 2015-08-14 15:16:38Z knut.osmundsen@oracle.com $ */
 /** @file
  * SUP Testcase - Global Info Page TSC Delta Measurement Utility.
  */
@@ -24,9 +24,10 @@
  * terms and conditions of either the GPL or the CDDL or both.
  */
 
-/*******************************************************************************
-*   Header Files                                                               *
-*******************************************************************************/
+
+/*********************************************************************************************************************************
+*   Header Files                                                                                                                 *
+*********************************************************************************************************************************/
 #include <VBox/sup.h>
 #include <VBox/err.h>
 #include <iprt/assert.h>

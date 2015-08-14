@@ -1,4 +1,4 @@
-/* $Id: PATMGuest.cpp 100868 2015-06-09 11:15:22Z knut.osmundsen@oracle.com $ */
+/* $Id: PATMGuest.cpp 102121 2015-08-14 15:16:38Z knut.osmundsen@oracle.com $ */
 /** @file
  * PATMGuest - Guest OS Patching Manager (non-generic)
  */
@@ -15,9 +15,10 @@
  * hope that it will be useful, but WITHOUT ANY WARRANTY of any kind.
  */
 
-/*******************************************************************************
-*   Header Files                                                               *
-*******************************************************************************/
+
+/*********************************************************************************************************************************
+*   Header Files                                                                                                                 *
+*********************************************************************************************************************************/
 #define LOG_GROUP LOG_GROUP_PATM
 #include <VBox/vmm/patm.h>
 #include <VBox/vmm/pgm.h>

@@ -1,4 +1,4 @@
-/* $Id: tstOpenUSBDev.cpp 100877 2015-06-09 14:23:56Z knut.osmundsen@oracle.com $ */
+/* $Id: tstOpenUSBDev.cpp 102121 2015-08-14 15:16:38Z knut.osmundsen@oracle.com $ */
 /** @file
  * Testcase that attempts to locate and open the specfied device.
  */
@@ -16,9 +16,9 @@
  */
 
 
-/*******************************************************************************
-*   Header Files                                                               *
-*******************************************************************************/
+/*********************************************************************************************************************************
+*   Header Files                                                                                                                 *
+*********************************************************************************************************************************/
 #include <mach/mach.h>
 #include <Carbon/Carbon.h>
 #include <IOKit/IOKitLib.h>
@@ -206,7 +206,7 @@ int main(int argc, char **argv)
             case 'h':
                 return tstSyntax(argv[0]);
             case 'V':
-                RTPrintf("$Revision: 100877 $\n");
+                RTPrintf("$Revision: 102121 $\n");
                 return 0;
 
             default:

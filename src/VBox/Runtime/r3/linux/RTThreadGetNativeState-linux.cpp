@@ -1,4 +1,4 @@
-/* $Id: RTThreadGetNativeState-linux.cpp 100874 2015-06-09 14:01:31Z knut.osmundsen@oracle.com $ */
+/* $Id: RTThreadGetNativeState-linux.cpp 102121 2015-08-14 15:16:38Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - RTThreadGetNativeState, linux implementation.
  */
@@ -25,9 +25,9 @@
  */
 
 
-/*******************************************************************************
-*   Header Files                                                               *
-*******************************************************************************/
+/*********************************************************************************************************************************
+*   Header Files                                                                                                                 *
+*********************************************************************************************************************************/
 #define LOG_GROUP RTLOGGROUP_PROCESS
 #include <iprt/thread.h>
 #include "internal/iprt.h"

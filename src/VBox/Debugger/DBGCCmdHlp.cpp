@@ -1,4 +1,4 @@
-/* $Id: DBGCCmdHlp.cpp 100881 2015-06-09 14:30:56Z knut.osmundsen@oracle.com $ */
+/* $Id: DBGCCmdHlp.cpp 102121 2015-08-14 15:16:38Z knut.osmundsen@oracle.com $ */
 /** @file
  * DBGC - Debugger Console, Command Helpers.
  */
@@ -15,9 +15,10 @@
  * hope that it will be useful, but WITHOUT ANY WARRANTY of any kind.
  */
 
-/*******************************************************************************
-*   Header Files                                                               *
-*******************************************************************************/
+
+/*********************************************************************************************************************************
+*   Header Files                                                                                                                 *
+*********************************************************************************************************************************/
 #define LOG_GROUP LOG_GROUP_DBGC
 #include <VBox/dbg.h>
 #include <VBox/vmm/dbgf.h>

@@ -1,4 +1,4 @@
-/* $Id: VBoxStubCertUtil.cpp 100884 2015-06-09 14:35:06Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxStubCertUtil.cpp 102121 2015-08-14 15:16:38Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxStub - VirtualBox's Windows installer stub (certificate manipulations).
  *
@@ -18,9 +18,10 @@
  * hope that it will be useful, but WITHOUT ANY WARRANTY of any kind.
  */
 
-/*******************************************************************************
-*   Header Files                                                               *
-*******************************************************************************/
+
+/*********************************************************************************************************************************
+*   Header Files                                                                                                                 *
+*********************************************************************************************************************************/
 #include <Windows.h>
 #include <Wincrypt.h>
 

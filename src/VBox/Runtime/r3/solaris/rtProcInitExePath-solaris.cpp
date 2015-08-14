@@ -1,4 +1,4 @@
-/* $Id: rtProcInitExePath-solaris.cpp 100874 2015-06-09 14:01:31Z knut.osmundsen@oracle.com $ */
+/* $Id: rtProcInitExePath-solaris.cpp 102121 2015-08-14 15:16:38Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - rtProcInitName, Solaris.
  */
@@ -24,9 +24,10 @@
  * terms and conditions of either the GPL or the CDDL or both.
  */
 
-/*******************************************************************************
-*   Header Files                                                               *
-*******************************************************************************/
+
+/*********************************************************************************************************************************
+*   Header Files                                                                                                                 *
+*********************************************************************************************************************************/
 #define LOG_GROUP RTLOGGROUP_PROCESS
 #include <unistd.h>
 #include <errno.h>
