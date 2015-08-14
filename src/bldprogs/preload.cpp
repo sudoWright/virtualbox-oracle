@@ -1,4 +1,4 @@
-/* $Id: preload.cpp 100896 2015-06-09 22:36:56Z knut.osmundsen@oracle.com $ */
+/* $Id: preload.cpp 102116 2015-08-14 14:31:09Z knut.osmundsen@oracle.com $ */
 /** @file
  * bin2c - Binary 2 C Structure Converter.
  */
@@ -15,9 +15,10 @@
  * hope that it will be useful, but WITHOUT ANY WARRANTY of any kind.
  */
 
-/*******************************************************************************
-*   Header Files                                                               *
-*******************************************************************************/
+
+/*********************************************************************************************************************************
+*   Header Files                                                                                                                 *
+*********************************************************************************************************************************/
 #ifdef RT_OS_WINDOWS
 # include <Windows.h>
 #else
@@ -146,7 +147,7 @@ int main(int argc, char **argv)
             if (   !strcmp(argv[i], "--version")
                 || !strcmp(argv[i], "-V"))
             {
-                printf("$Revision: 100896 $\n");
+                printf("$Revision: 102116 $\n");
                 return 0;
             }
             fprintf(stderr, "syntax error: unknown option '%s'\n", argv[i]);

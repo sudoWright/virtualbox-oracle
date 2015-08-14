@@ -1,4 +1,4 @@
-/* $Id: VBoxCompilerPlugInsGcc.cpp 101794 2015-07-24 14:16:44Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxCompilerPlugInsGcc.cpp 102116 2015-08-14 14:31:09Z knut.osmundsen@oracle.com $ */
 /** @file
  * gccplugin - GCC plugin for checking IPRT format strings.
  */
@@ -14,6 +14,7 @@
  * VirtualBox OSE distribution. VirtualBox OSE is distributed in the
  * hope that it will be useful, but WITHOUT ANY WARRANTY of any kind.
  */
+
 
 /*********************************************************************************************************************************
 *   Header Files                                                                                                                 *
