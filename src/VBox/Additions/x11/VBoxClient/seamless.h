@@ -1,4 +1,4 @@
-/* $Id: seamless.h 99740 2015-04-23 10:03:17Z noreply@oracle.com $ */
+/* $Id: seamless.h 102107 2015-08-14 09:22:27Z noreply@oracle.com $ */
 /** @file
  * X11 Guest client - seamless mode, missing proper description while using the
  * potentially confusing word 'host'.
@@ -57,12 +57,6 @@ private:
      * @returns        IRPT return code.
      */
     int nextStateChangeEvent(void);
-
-    /**
-     * Interrupt an event wait and cause the current or next
-     * @a nextStateChangeEvent call to return immediately.
-     */
-    int cancelEvent(void);
 
     /** Thread function to monitor X11 window configuration changes. */
     static DECLCALLBACK(int) x11MonitorThread(RTTHREAD self, void *pvUser);
