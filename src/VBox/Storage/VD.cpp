@@ -1,4 +1,4 @@
-/* $Id: VD.cpp 102152 2015-08-17 14:20:55Z noreply@oracle.com $ */
+/* $Id: VD.cpp 102154 2015-08-17 14:25:47Z noreply@oracle.com $ */
 /** @file
  * VBoxHDD - VBox HDD Container implementation.
  */
@@ -11059,7 +11059,7 @@ VBOXDDU_DECL(int) VDRepair(PVDINTERFACE pVDIfsDisk, PVDINTERFACE pVDIfsImage,
 
 /**
  * generic plugin functions
- *.
+ */
 
 /** @copydoc VBOXHDDBACKEND::pfnComposeLocation */
 DECLCALLBACK(int) genericFileComposeLocation(PVDINTERFACE pConfig, char **pszLocation)
