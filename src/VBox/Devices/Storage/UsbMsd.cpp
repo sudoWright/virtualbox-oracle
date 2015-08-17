@@ -1,4 +1,4 @@
-/* $Id: UsbMsd.cpp 102121 2015-08-14 15:16:38Z knut.osmundsen@oracle.com $ */
+/* $Id: UsbMsd.cpp 102157 2015-08-17 15:02:05Z noreply@oracle.com $ */
 /** @file
  * UsbMSD - USB Mass Storage Device Emulation.
  */
@@ -2251,7 +2251,7 @@ static DECLCALLBACK(void) usbMsdVMReset(PPDMUSBINS pUsbIns)
 /**
  * @copydoc PDMUSBREG::pfnDestruct
  */
-static void usbMsdDestruct(PPDMUSBINS pUsbIns)
+static DECLCALLBACK(void) usbMsdDestruct(PPDMUSBINS pUsbIns)
 {
     PUSBMSD pThis = PDMINS_2_DATA(pUsbIns, PUSBMSD);
     LogFlow(("usbMsdDestruct/#%u:\n", pUsbIns->iInstance));
