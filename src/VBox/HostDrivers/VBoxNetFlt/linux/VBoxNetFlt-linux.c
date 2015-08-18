@@ -1,4 +1,4 @@
-/* $Id: VBoxNetFlt-linux.c 102121 2015-08-14 15:16:38Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxNetFlt-linux.c 102165 2015-08-18 06:39:53Z noreply@oracle.com $ */
 /** @file
  * VBoxNetFlt - Network Filter Driver (Host), Linux Specific Code.
  */
@@ -2291,8 +2291,8 @@ void vboxNetFltOsDeleteInstance(PVBOXNETFLTINS pThis)
 int  vboxNetFltOsInitInstance(PVBOXNETFLTINS pThis, void *pvContext)
 {
     int err;
-    NOREF(pvContext);
     IPRT_LINUX_SAVE_EFL_AC();
+    NOREF(pvContext);
 
     pThis->u.s.Notifier.notifier_call = vboxNetFltLinuxNotifierCallback;
     err = register_netdevice_notifier(&pThis->u.s.Notifier);
