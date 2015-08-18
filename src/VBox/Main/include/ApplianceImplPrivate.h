@@ -1,4 +1,4 @@
-/* $Id: ApplianceImplPrivate.h 99859 2015-04-29 08:26:44Z alexander.eichner@oracle.com $ */
+/* $Id: ApplianceImplPrivate.h 102203 2015-08-18 15:36:33Z noreply@oracle.com $ */
 /** @file
  * VirtualBox Appliance private data definitions
  */
@@ -142,7 +142,7 @@ struct Appliance::TaskOVF
         rc(S_OK)
     {}
 
-    static int updateProgress(unsigned uPercent, void *pvUser);
+    static DECLCALLBACK(int) updateProgress(unsigned uPercent, void *pvUser);
 
     HRESULT startThread();
 
