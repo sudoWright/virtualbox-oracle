@@ -1,4 +1,4 @@
-/* $Id: PerformanceImpl.cpp 101214 2015-06-22 19:31:59Z klaus.espenlaub@oracle.com $ */
+/* $Id: PerformanceImpl.cpp 102193 2015-08-18 13:24:49Z noreply@oracle.com $ */
 
 /** @file
  *
@@ -634,8 +634,8 @@ void PerformanceCollector::resumeSampling()
 ///////////////////////////////////////////////////////////////////////////////
 
 /* static */
-void PerformanceCollector::staticSamplerCallback(RTTIMERLR hTimerLR, void *pvUser,
-                                                 uint64_t iTick)
+DECLCALLBACK(void) PerformanceCollector::staticSamplerCallback(RTTIMERLR hTimerLR, void *pvUser,
+                                                               uint64_t iTick)
 {
     AssertReturnVoid(pvUser != NULL);
     PerformanceCollector *collector = static_cast <PerformanceCollector *> (pvUser);
