@@ -1,4 +1,4 @@
-/* $Id: UIMachineViewSeamless.cpp 102257 2015-08-20 17:08:03Z sergey.dubov@oracle.com $ */
+/* $Id: UIMachineViewSeamless.cpp 102275 2015-08-21 12:50:43Z noreply@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIMachineViewSeamless class implementation.
  */
@@ -216,6 +216,8 @@ void UIMachineViewSeamless::adjustGuestScreenSize()
     {
         frameBuffer()->setAutoEnabled(false);
         sltPerformGuestResize(workingArea().size());
+        /* And remember the size to know what we are resizing out of when we exit: */
+        uisession()->setLastFullScreenSize(screenId(), workingArea().size());
     }
 }
 
