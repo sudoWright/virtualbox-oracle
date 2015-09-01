@@ -1,4 +1,4 @@
-/* $Id: UIMachineViewFullscreen.cpp 102275 2015-08-21 12:50:43Z noreply@oracle.com $ */
+/* $Id: UIMachineViewFullscreen.cpp 102439 2015-09-01 14:23:14Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIMachineViewFullscreen class implementation.
  */
@@ -21,7 +21,6 @@
 
 /* Qt includes: */
 # include <QApplication>
-# include <QDesktopWidget>
 # include <QMainWindow>
 # include <QTimer>
 # ifdef Q_WS_MAC
