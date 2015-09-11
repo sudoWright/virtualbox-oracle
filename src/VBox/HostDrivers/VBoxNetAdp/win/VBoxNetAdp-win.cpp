@@ -1,4 +1,4 @@
-/* $Id: VBoxNetAdp-win.cpp 101219 2015-06-23 08:37:03Z aleksey.ilyushin@oracle.com $ */
+/* $Id: VBoxNetAdp-win.cpp 102613 2015-09-11 08:23:55Z aleksey.ilyushin@oracle.com $ */
 /** @file
  * VBoxNetAdp-win.cpp - NDIS6 Host-only Networking Driver, Windows-specific code.
  */
@@ -325,6 +325,8 @@ DECLHIDDEN(VOID) vboxNetAdpWinHaltEx(IN NDIS_HANDLE MiniportAdapterContext,
     PVBOXNETADP_ADAPTER pAdapter = (PVBOXNETADP_ADAPTER)MiniportAdapterContext;
     LogFlow(("==>vboxNetAdpWinHaltEx\n"));
     // TODO: Stop something?
+    if (pAdapter)
+        vboxNetAdpWinFreeAdapter(pAdapter);
     LogFlow(("<==vboxNetAdpWinHaltEx\n"));
 }
 
