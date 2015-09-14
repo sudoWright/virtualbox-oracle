@@ -1,4 +1,4 @@
-/* $Id: http.cpp 102643 2015-09-12 12:49:32Z knut.osmundsen@oracle.com $ */
+/* $Id: http-curl.cpp 102659 2015-09-14 13:13:53Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - HTTP communication API.
  */
