@@ -1,4 +1,4 @@
-/* $Id: VBoxNetAdp-linux.c 102790 2015-09-21 15:18:07Z noreply@oracle.com $ */
+/* $Id: VBoxNetAdp-linux.c 102793 2015-09-21 15:40:31Z noreply@oracle.com $ */
 /** @file
  * VBoxNetAdp - Virtual Network Adapter Driver (Host), Linux Specific Code.
  */
@@ -427,7 +427,6 @@ static int __init VBoxNetAdpLinuxInit(void)
  */
 static void __exit VBoxNetAdpLinuxUnload(void)
 {
-    int rc;
     Log(("VBoxNetAdpLinuxUnload\n"));
 
     /*
