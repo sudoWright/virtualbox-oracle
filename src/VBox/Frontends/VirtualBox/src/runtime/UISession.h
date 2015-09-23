@@ -1,4 +1,4 @@
-/* $Id: UISession.h 102837 2015-09-23 15:56:45Z sergey.dubov@oracle.com $ */
+/* $Id: UISession.h 102838 2015-09-23 16:13:09Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UISession class declaration.
  */
@@ -379,6 +379,9 @@ private:
 
     /** Update host-screen data. */
     void updateHostScreenData();
+
+    /** Updates action restrictions. */
+    void updateActionRestrictions();
 
     /* Private variables: */
     UIMachine *m_pMachine;
