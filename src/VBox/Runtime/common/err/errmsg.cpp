@@ -1,4 +1,4 @@
-/* $Id: errmsg.cpp 102121 2015-08-14 15:16:38Z knut.osmundsen@oracle.com $ */
+/* $Id: errmsg.cpp 102898 2015-09-28 14:05:58Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Status code messages.
  */
@@ -45,7 +45,7 @@
  */
 static const RTSTATUSMSG  g_aStatusMsgs[] =
 {
-#ifndef IPRT_NO_ERROR_DATA
+#if !defined(IPRT_NO_ERROR_DATA) && !defined(DOXYGEN_RUNNING)
 # include "errmsgdata.h"
 #else
     { "Success.", "Success.", "VINF_SUCCESS", 0 },
