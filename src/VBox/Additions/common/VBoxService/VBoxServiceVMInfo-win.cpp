@@ -1,4 +1,4 @@
-/* $Id: VBoxServiceVMInfo-win.cpp 102893 2015-09-28 02:26:35Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxServiceVMInfo-win.cpp 102897 2015-09-28 08:46:51Z vitali.pelenjow@oracle.com $ */
 /** @file
  * VBoxService - Virtual Machine Information for the Host, Windows specifics.
  */
@@ -199,7 +199,7 @@ static DECLCALLBACK(int) vgsvcWinVmInfoInitOnce(void *pvIgnored)
     }
 
     /* Kernel32: */
-    rc = RTLdrLoadSystem("kerne32.dll", true, &hLdrMod);
+    rc = RTLdrLoadSystem("kernel32.dll", true, &hLdrMod);
     AssertRCReturn(rc, rc);
     rc = RTLdrGetSymbol(hLdrMod, "QueryFullProcessImageNameW", (void **)&g_pfnQueryFullProcessImageNameW);
     if (RT_FAILURE(rc))
