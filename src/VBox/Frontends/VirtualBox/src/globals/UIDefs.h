@@ -1,4 +1,4 @@
-/* $Id: UIDefs.h 99740 2015-04-23 10:03:17Z noreply@oracle.com $ */
+/* $Id: UIDefs.h 102930 2015-09-29 19:21:31Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - Global definitions.
  */
@@ -95,12 +95,13 @@ using namespace UIDefs /* if header included */;
 /** Mac OS X: Known OS releases. */
 enum MacOSXRelease
 {
-    MacOSXRelease_Unknown,
+    MacOSXRelease_Old,
     MacOSXRelease_SnowLeopard,
     MacOSXRelease_Lion,
     MacOSXRelease_MountainLion,
     MacOSXRelease_Mavericks,
-    MacOSXRelease_Yosemite
+    MacOSXRelease_Yosemite,
+    MacOSXRelease_New,
 };
 #endif /* Q_WS_MAC */
 
