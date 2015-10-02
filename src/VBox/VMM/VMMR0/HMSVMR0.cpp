@@ -1,4 +1,4 @@
-/* $Id: HMSVMR0.cpp 103010 2015-10-01 16:44:12Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: HMSVMR0.cpp 103046 2015-10-02 17:33:16Z ramshankar.venkataraman@oracle.com $ */
 /** @file
  * HM SVM (AMD-V) - Host Context Ring-0.
  */
@@ -5164,6 +5164,8 @@ HMSVM_EXIT_DECL hmR0SvmExitVmmCall(PVMCPU pVCpu, PCPUMCTX pCtx, PSVMTRANSIENT pS
                 return rc;
             }
         }
+        else
+            Log4(("hmR0SvmExitVmmCall: Hypercalls not enabled\n"));
     }
 
     hmR0SvmSetPendingXcptUD(pVCpu);
