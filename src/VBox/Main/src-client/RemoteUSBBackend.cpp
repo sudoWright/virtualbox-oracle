@@ -1,6 +1,5 @@
-/* $Id: RemoteUSBBackend.cpp 99740 2015-04-23 10:03:17Z noreply@oracle.com $ */
+/* $Id: RemoteUSBBackend.cpp 103202 2015-10-07 19:54:48Z knut.osmundsen@oracle.com $ */
 /** @file
- *
  * VirtualBox Remote USB backend
  */
 
