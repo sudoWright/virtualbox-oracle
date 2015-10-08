@@ -1,5 +1,5 @@
-/** @file $Id: vbox_mode.c 101084 2015-06-17 07:02:41Z noreply@oracle.com $
- *
+/* $Id: vbox_mode.c 103226 2015-10-08 22:29:48Z knut.osmundsen@oracle.com $ */
+/** @file
  * VirtualBox Additions Linux kernel video driver
  */
 
