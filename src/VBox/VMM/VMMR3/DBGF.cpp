@@ -1,4 +1,4 @@
-/* $Id: DBGF.cpp 103219 2015-10-08 17:11:58Z knut.osmundsen@oracle.com $ */
+/* $Id: DBGF.cpp 103220 2015-10-08 18:09:45Z knut.osmundsen@oracle.com $ */
 /** @file
  * DBGF - Debugger Facility.
  */
@@ -1225,7 +1225,7 @@ VMMR3DECL(int) DBGFR3Step(PUVM pUVM, VMCPUID idCpu)
  *
  * @returns VINF_EM_DBG_STEP
  *
- * @param   pVCpu       Pointer to the VMCPU.
+ * @param   pVCpu       The cross context virtual CPU structure.
  *
  * @thread  VCpu EMT
  * @internal

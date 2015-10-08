@@ -1,4 +1,4 @@
-/* $Id: PDMAllCritSectBoth.cpp 102121 2015-08-14 15:16:38Z knut.osmundsen@oracle.com $ */
+/* $Id: PDMAllCritSectBoth.cpp 103220 2015-10-08 18:09:45Z knut.osmundsen@oracle.com $ */
 /** @file
  * PDM - Code Common to Both Critical Section Types, All Contexts.
  */
@@ -35,7 +35,7 @@
 /**
  * Process the critical sections (both types) queued for ring-3 'leave'.
  *
- * @param   pVCpu         Pointer to the VMCPU.
+ * @param   pVCpu         The cross context virtual CPU structure.
  */
 VMM_INT_DECL(void) PDMCritSectBothFF(PVMCPU pVCpu)
 {
