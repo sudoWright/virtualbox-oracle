@@ -1,6 +1,5 @@
-/* $Id: vboxvideo.c 102119 2015-08-14 15:03:30Z noreply@oracle.com $ */
+/* $Id: vboxvideo.c 103227 2015-10-08 22:31:55Z knut.osmundsen@oracle.com $ */
 /** @file
- *
  * Linux Additions X11 graphics driver
  */
 
