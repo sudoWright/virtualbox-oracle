@@ -1,4 +1,4 @@
-/* $Id: HMVMXR0.h 102194 2015-08-18 13:35:18Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: HMVMXR0.h 103219 2015-10-08 17:11:58Z knut.osmundsen@oracle.com $ */
 /** @file
  * HM VMX (VT-x) - Internal header file.
  */
@@ -78,5 +78,5 @@ DECLINLINE(int) VMXReadCachedVmcsEx(PVMCPU pVCpu, uint32_t idxCache, RTGCUINTREG
 
 RT_C_DECLS_END
 
-#endif /* ___HMVMXR0_h */
+#endif /* !___HMVMXR0_h */
 

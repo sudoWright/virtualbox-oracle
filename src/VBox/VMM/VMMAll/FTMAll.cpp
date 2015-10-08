@@ -1,4 +1,4 @@
-/* $Id: FTMAll.cpp 102121 2015-08-14 15:16:38Z knut.osmundsen@oracle.com $ */
+/* $Id: FTMAll.cpp 103219 2015-10-08 17:11:58Z knut.osmundsen@oracle.com $ */
 /** @file
  * FTM - Fault Tolerance Manager - All contexts
  */
@@ -35,7 +35,7 @@
  *
  * @returns VBox status code.
  *
- * @param   pVM         Pointer to the VM.
+ * @param   pVM         The cross context VM structure.
  * @param   enmType     Checkpoint type
  */
 VMM_INT_DECL(int) FTMSetCheckpoint(PVM pVM, FTMCHECKPOINTTYPE enmType)
@@ -56,7 +56,7 @@ VMM_INT_DECL(int) FTMSetCheckpoint(PVM pVM, FTMCHECKPOINTTYPE enmType)
  *
  * @returns true/false
  *
- * @param   pVM         Pointer to the VM.
+ * @param   pVM         The cross context VM structure.
  */
 VMM_INT_DECL(bool) FTMIsDeltaLoadSaveActive(PVM pVM)
 {

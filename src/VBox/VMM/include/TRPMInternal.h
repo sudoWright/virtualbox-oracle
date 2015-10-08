@@ -1,4 +1,4 @@
-/* $Id: TRPMInternal.h 103197 2015-10-07 17:07:25Z knut.osmundsen@oracle.com $ */
+/* $Id: TRPMInternal.h 103219 2015-10-08 17:11:58Z knut.osmundsen@oracle.com $ */
 /** @file
  * TRPM - Internal header file.
  */
@@ -264,7 +264,7 @@ DECLEXPORT(FNPGMRCVIRTPFHANDLER)    trpmRCShadowIDTWritePfHandler;
  * Clear guest trap/interrupt gate handler
  *
  * @returns VBox status code.
- * @param   pVM         Pointer to the VM.
+ * @param   pVM         The cross context VM structure.
  * @param   iTrap       Interrupt/trap number.
  */
 VMMDECL(int) trpmClearGuestTrapHandler(PVM pVM, unsigned iTrap);

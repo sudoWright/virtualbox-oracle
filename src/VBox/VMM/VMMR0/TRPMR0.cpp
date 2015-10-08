@@ -1,4 +1,4 @@
-/* $Id: TRPMR0.cpp 102213 2015-08-18 17:33:53Z knut.osmundsen@oracle.com $ */
+/* $Id: TRPMR0.cpp 103219 2015-10-08 17:11:58Z knut.osmundsen@oracle.com $ */
 /** @file
  * TRPM - The Trap Monitor - HC Ring 0
  */
@@ -38,7 +38,7 @@
 /**
  * Dispatches an interrupt that arrived while we were in the guest context.
  *
- * @param   pVM     Pointer to the VM.
+ * @param   pVM     The cross context VM structure.
  * @remark  Must be called with interrupts disabled.
  */
 VMMR0DECL(void) TRPMR0DispatchHostInterrupt(PVM pVM)
