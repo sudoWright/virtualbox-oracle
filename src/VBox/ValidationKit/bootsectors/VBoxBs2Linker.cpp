@@ -1,4 +1,4 @@
-/* $Id: VBoxBs2Linker.cpp 102121 2015-08-14 15:16:38Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxBs2Linker.cpp 103260 2015-10-09 13:42:14Z noreply@oracle.com $ */
 /** @file
  * VirtualBox Validation Kit - Boot Sector 2 "linker".
  */
@@ -61,6 +61,7 @@ int main(int argc, char **argv)
                 else
                 {
                     fprintf(stderr, "syntax errro: Unknown options '%s'\n", pszOpt);
+                    free(papszInputs);
                     return 2;
                 }
             }
@@ -97,7 +98,7 @@ int main(int argc, char **argv)
                     }
 
                     case 'V':
-                        printf("%s\n", "$Revision: 102121 $");
+                        printf("%s\n", "$Revision: 103260 $");
                         return 0;
 
                     case '?':
@@ -205,6 +206,7 @@ int main(int argc, char **argv)
         rcExit = 1;
     }
 
+    fclose(pOutput);
     return rcExit;
 }
 
