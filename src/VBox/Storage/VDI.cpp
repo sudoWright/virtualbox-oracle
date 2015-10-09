@@ -1,4 +1,4 @@
-/* $Id: VDI.cpp 102163 2015-08-17 15:36:22Z noreply@oracle.com $ */
+/* $Id: VDI.cpp 103230 2015-10-09 00:09:37Z knut.osmundsen@oracle.com $ */
 /** @file
  * Virtual Disk Image (VDI), Core Code.
  */
@@ -3284,11 +3284,11 @@ const VBOXHDDBACKEND g_VDIBackend =
     vdiSetParentModificationUuid,
     /* pfnDump */
     vdiDump,
-    /* pfnGetTimeStamp */
+    /* pfnGetTimestamp */
     NULL,
-    /* pfnGetParentTimeStamp */
+    /* pfnGetParentTimestamp */
     NULL,
-    /* pfnSetParentTimeStamp */
+    /* pfnSetParentTimestamp */
     NULL,
     /* pfnGetParentFilename */
     NULL,

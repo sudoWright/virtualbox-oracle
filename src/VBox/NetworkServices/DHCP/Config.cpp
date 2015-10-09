@@ -1,4 +1,4 @@
-/* $Id: Config.cpp 100905 2015-06-09 22:54:50Z knut.osmundsen@oracle.com $ */
+/* $Id: Config.cpp 103230 2015-10-09 00:09:37Z knut.osmundsen@oracle.com $ */
 /** @file
  * Configuration for DHCP.
  */
@@ -176,16 +176,18 @@ const std::string tagXMLTimeAttributeExpiration = "expiration";
 const std::string tagXMLLeaseOptions = "Options";
 
 /**
- * <Leases version="1.0">
- *   <Lease mac="" network=""/>
- *    <Address value=""/>
- *    <Time issued="" expiration=""/>
- *    <options>
- *      <option name="" type=""/>
- *      </option>
- *    </options>
- *   </Lease>
- * </Leases>
+ * @verbatim
+   <Leases version="1.0">
+     <Lease mac="" network=""/>
+      <Address value=""/>
+      <Time issued="" expiration=""/>
+      <options>
+        <option name="" type=""/>
+        </option>
+      </options>
+     </Lease>
+   </Leases>
+   @endverbatim
  */
 int ConfigurationManager::loadFromFile(const com::Utf8Str& leaseStorageFileName)
 {

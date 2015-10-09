@@ -1,4 +1,4 @@
-/* $Id: VMDK.cpp 102152 2015-08-17 14:20:55Z noreply@oracle.com $ */
+/* $Id: VMDK.cpp 103230 2015-10-09 00:09:37Z knut.osmundsen@oracle.com $ */
 /** @file
  * VMDK disk image, core code.
  */
@@ -6668,11 +6668,11 @@ const VBOXHDDBACKEND g_VmdkBackend =
     vmdkSetParentModificationUuid,
     /* pfnDump */
     vmdkDump,
-    /* pfnGetTimeStamp */
+    /* pfnGetTimestamp */
     NULL,
-    /* pfnGetParentTimeStamp */
+    /* pfnGetParentTimestamp */
     NULL,
-    /* pfnSetParentTimeStamp */
+    /* pfnSetParentTimestamp */
     NULL,
     /* pfnGetParentFilename */
     NULL,
