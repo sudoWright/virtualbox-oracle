@@ -1,4 +1,4 @@
-/* $Id: vbsfhlp.h 99740 2015-04-23 10:03:17Z noreply@oracle.com $ */
+/* $Id: vbsfhlp.h 103314 2015-10-12 15:28:03Z knut.osmundsen@oracle.com $ */
 /** @file
  *
  * VirtualBox Windows Guest Shared Folders
@@ -23,6 +23,7 @@
 #include <ntifs.h>
 #include <ntverp.h>
 
+#include <VBox/log.h>
 #include "VBoxGuestR0LibSharedFolders.h"
 
 void vbsfHlpSleep (ULONG ulMillies);
