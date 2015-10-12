@@ -1,4 +1,4 @@
-/* $Id: VBoxGuestR0LibSharedFolders.h 103311 2015-10-12 15:20:00Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxGuestR0LibSharedFolders.h 103312 2015-10-12 15:22:06Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxGuestLib - Central calls header.
  */
@@ -36,7 +36,7 @@
 
 typedef struct VBGLSFCLIENT
 {
-    uint32_t ulClientID;
+    HGCMCLIENTID idClient;
     VBGLHGCMHANDLE handle;
 } VBGLSFCLIENT;
 typedef VBGLSFCLIENT *PVBGLSFCLIENT;
