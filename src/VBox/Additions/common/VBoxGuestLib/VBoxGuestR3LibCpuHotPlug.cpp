@@ -1,4 +1,4 @@
-/* $Id: VBoxGuestR3LibCpuHotPlug.cpp 102121 2015-08-14 15:16:38Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxGuestR3LibCpuHotPlug.cpp 103282 2015-10-12 09:27:14Z ramshankar.venkataraman@oracle.com $ */
 /** @file
  * VBoxGuestR3Lib - Ring-3 Support Library for VirtualBox guest additions, CPU Hot Plugging.
  */
@@ -60,7 +60,7 @@ VBGLR3DECL(int) VbglR3CpuHotPlugInit(void)
  *
  * This will disable the CPU hot plugging events.
  *
- * @returns VBox status.
+ * @returns VBox status code.
  */
 VBGLR3DECL(int) VbglR3CpuHotPlugTerm(void)
 {
