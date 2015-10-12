@@ -1,4 +1,4 @@
-/* $Id: VBoxVFS.cpp 103309 2015-10-12 15:13:47Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxVFS.cpp 103310 2015-10-12 15:18:51Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxVFS - Guest Additions Shared Folders driver. KEXT entry point.
  */
@@ -90,7 +90,7 @@ RT_C_DECLS_END
 /** The number of IOService class instances. */
 static bool volatile        g_fInstantiated = 0;
 /* Global connection to the host service */
-VBSFCLIENT                  g_vboxSFClient;
+VBGLSFCLIENT                  g_vboxSFClient;
 /* VBoxVFS filesystem handle. Needed for FS unregistering. */
 static vfstable_t           g_oVBoxVFSHandle;
 
