@@ -1,4 +1,4 @@
-/* $Id: VBoxManageDebugVM.cpp 103014 2015-10-01 19:35:46Z andreas.loeffler@oracle.com $ */
+/* $Id: VBoxManageDebugVM.cpp 103344 2015-10-13 11:49:33Z andreas.loeffler@oracle.com $ */
 /** @file
  * VBoxManage - Implementation of the debugvm command.
  */
@@ -249,7 +249,7 @@ static RTEXITCODE handleDebugVM_LogXXXX(HandlerArg *pArgs, IMachineDebugger *pDe
     if (fRelease)
     {
         com::Utf8Str strTmp(strSettings);
-        strSettings = "release: ";
+        strSettings = "release:";
         strSettings.append(strTmp);
     }
 
