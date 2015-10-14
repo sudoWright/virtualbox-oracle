@@ -1,4 +1,4 @@
-/* $Id: GuestDnDPrivate.h 103394 2015-10-14 11:31:33Z andreas.loeffler@oracle.com $ */
+/* $Id: GuestDnDPrivate.h 103396 2015-10-14 12:03:29Z andreas.loeffler@oracle.com $ */
 /** @file
  * Private guest drag and drop code, used by GuestDnDTarget +
  * GuestDnDSource.
@@ -595,6 +595,9 @@ public:
         {
             return VINF_SUCCESS;
         }
+
+        if (!RTStrIsValidEncoding(pszList))
+            return VERR_INVALID_PARAMETER;
 
         RTCList<RTCString> lstURIOrg = RTCString(pszList, cbList).split("\r\n");
         if (lstURIOrg.isEmpty())
