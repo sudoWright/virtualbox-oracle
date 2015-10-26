@@ -1,4 +1,4 @@
-/* $Id: UINetworkManager.h 103632 2015-10-23 14:29:12Z sergey.dubov@oracle.com $ */
+/* $Id: UINetworkManager.h 103679 2015-10-26 18:00:31Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UINetworkManager stuff declaration.
  */
@@ -80,10 +80,9 @@ protected:
 
     /* Allow UINetworkCustomer to create network-request: */
     friend class UINetworkCustomer;
-    /* Network-request creation wrappers for UINetworkCustomer: */
-    void createNetworkRequest(const QNetworkRequest &request, UINetworkRequestType type,
-                              UINetworkCustomer *pCustomer);
-    void createNetworkRequest(const QList<QNetworkRequest> &requests, UINetworkRequestType type,
+    /** Creates network-request of the passed @a type
+      * on the basis of the passed @a requests for the @a pCustomer specified. */
+    void createNetworkRequest(UINetworkRequestType type, const QList<QNetworkRequest> &requests,
                               UINetworkCustomer *pCustomer);
 
 private:
