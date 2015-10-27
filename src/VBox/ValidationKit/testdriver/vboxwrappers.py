@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# $Id: vboxwrappers.py 103001 2015-10-01 13:12:13Z klaus.espenlaub@oracle.com $
+# $Id: vboxwrappers.py 103681 2015-10-27 11:18:49Z knut.osmundsen@oracle.com $
 # pylint: disable=C0302
 
 """
@@ -27,14 +27,13 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 103001 $"
+__version__ = "$Revision: 103681 $"
 
 
 # Standard Python imports.
 import array
 import os
 import socket
-import sys
 
 # Validation Kit imports.
 from common     import utils;
