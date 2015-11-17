@@ -1,4 +1,4 @@
-/* $Id: UIGInformationGroup.cpp 103996 2015-11-09 13:07:18Z noreply@oracle.com $ */
+/* $Id: UIGInformationGroup.cpp 104158 2015-11-17 16:37:24Z noreply@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIGInformationGroup class implementation.
  */
@@ -112,7 +112,7 @@ void UIGInformationGroup::sltBuildStep(QString strStepId, int iStepNumber)
         m_pBuildStep = new UIInformationBuildStep(this, pSet, strStepId, iStepNumber + 1);
 
         /* Build set: */
-        pSet->buildSet(m_machineItems[iStepNumber], m_machineItems.size() == 1, model()->settings());
+        pSet->buildSet(m_machineItems[iStepNumber], m_machineItems.size() == 1, model()->informationWindowElements());
     }
     else
     {
