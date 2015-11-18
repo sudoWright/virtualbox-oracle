@@ -1,4 +1,4 @@
-/* $Id: UINetworkReply.h 103683 2015-10-27 11:59:56Z sergey.dubov@oracle.com $ */
+/* $Id: UINetworkReply.h 104177 2015-11-18 12:35:13Z noreply@oracle.com $ */
 /** @file
  * VBox Qt GUI - UINetworkReply stuff declaration.
  */
@@ -54,6 +54,7 @@ public:
         NoError,
         ConnectionRefusedError,
         RemoteHostClosedError,
+        UrlNotFoundError,
         HostNotFoundError,
         OperationCanceledError,
         SslHandshakeFailedError,
