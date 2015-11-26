@@ -1,4 +1,4 @@
-# $Id: Makefile 102075 2015-08-13 10:16:46Z knut.osmundsen@oracle.com $
+# $Id: Makefile 104358 2015-11-26 02:17:48Z knut.osmundsen@oracle.com $
 ## @file
 # Makefile for the VirtualBox Linux Host Driver.
 #
@@ -287,7 +287,7 @@ MODULE_EXT    := ko
 $(MODULE)-y   := $(OBJS)
 
 # build defs
-EXTRA_CFLAGS  += -include $(MANGLING) $(INCL) $(KFLAGS) $(KDEBUG)
+EXTRA_CFLAGS  += -include $(MANGLING) $(INCL) $(KFLAGS) $(KDEBUG) -fno-omit-frame-pointer
 
 all: $(MODULE)
 
