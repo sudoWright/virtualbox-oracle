@@ -1,4 +1,4 @@
-/* $Id: EMHandleRCTmpl.h 104073 2015-11-11 11:20:55Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: EMHandleRCTmpl.h 104633 2015-12-10 12:48:03Z knut.osmundsen@oracle.com $ */
 /** @file
  * EM - emR3[Raw|Hm]HandleRC template.
  */
@@ -340,6 +340,7 @@ int emR3HmHandleRC(PVM pVM, PVMCPU pVCpu, PCPUMCTX pCtx, int rc)
         case VINF_EM_DBG_HYPER_STEPPED:
         case VINF_EM_DBG_HYPER_ASSERTION:
         case VINF_EM_DBG_STOP:
+        case VINF_EM_DBG_EVENT:
             break;
 
         /*
