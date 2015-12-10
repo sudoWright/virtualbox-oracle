@@ -1,4 +1,4 @@
-/* $Id: UIMachineViewScale.cpp 103042 2015-10-02 14:40:28Z sergey.dubov@oracle.com $ */
+/* $Id: UIMachineViewScale.cpp 104639 2015-12-10 16:07:16Z noreply@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIMachineViewScale class implementation.
  */
@@ -163,6 +163,7 @@ void UIMachineViewScale::resendSizeHint()
     display().SetVideoModeHint(screenId(),
                                guestScreenVisibilityStatus(),
                                false, 0, 0, sizeHint.width(), sizeHint.height(), 0);
+    uisession()->setScreenVisibleHostDesires(screenId(), guestScreenVisibilityStatus());
 }
 
 QSize UIMachineViewScale::sizeHint() const
