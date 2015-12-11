@@ -1,4 +1,4 @@
-/* $Id: QIListView.cpp 104660 2015-12-11 15:14:37Z sergey.dubov@oracle.com $ */
+/* $Id: QIListView.cpp 104665 2015-12-11 16:14:15Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - QIListView, QIItemDelegate class implementation.
  */
@@ -20,6 +20,7 @@
 #else  /* !VBOX_WITH_PRECOMPILED_HEADERS */
 
 /* Qt includes: */
+# include <QtGlobal>
 # ifdef Q_WS_MAC
 #  include <QApplication>
 #  include <QPainter>
