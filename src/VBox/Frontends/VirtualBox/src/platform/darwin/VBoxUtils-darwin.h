@@ -1,4 +1,4 @@
-/* $Id: VBoxUtils-darwin.h 104667 2015-12-11 16:26:22Z sergey.dubov@oracle.com $ */
+/* $Id: VBoxUtils-darwin.h 104670 2015-12-11 16:32:24Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - Declarations of utility classes and functions for handling Darwin specific tasks.
  */
@@ -195,7 +195,6 @@ NativeNSButtonRef darwinNativeButtonOfWindow(QWidget *pWidget, StandardWindowBut
  * @returns CGContextRef of the QWidget.
  * @param   pWidget      Pointer to the QWidget
  */
-CGContextRef darwinToCGContextRef(QWidget *pWidget);
 CGImageRef darwinToCGImageRef(const QImage *pImage);
 CGImageRef darwinToCGImageRef(const QPixmap *pPixmap);
 CGImageRef darwinToCGImageRef(const char *pczSource);
