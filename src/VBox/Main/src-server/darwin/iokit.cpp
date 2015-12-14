@@ -1,4 +1,4 @@
-/* $Id: iokit.cpp 102121 2015-08-14 15:16:38Z knut.osmundsen@oracle.com $ */
+/* $Id: iokit.cpp 104693 2015-12-14 14:50:28Z alexander.eichner@oracle.com $ */
 /** @file
  * Main - Darwin IOKit Routines.
  *
@@ -1003,6 +1003,9 @@ PUSBDEVICE DarwinGetUSBDevices(void)
                     &&  pCur->bDeviceProtocol == 1 /* Bluetooth */)
                     pCur->pszProduct = RTStrDup("Bluetooth");
                 darwinDictDupString(PropsRef, CFSTR("USB Serial Number"),   (char **)&pCur->pszSerialNumber);
+
+                pCur->pszBackend = RTStrDup("host");
+                AssertBreak(pCur->pszBackend);
 
 #if 0           /* leave the remainder as zero for now. */
                 /*
