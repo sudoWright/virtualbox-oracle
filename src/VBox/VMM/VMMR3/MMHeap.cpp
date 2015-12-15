@@ -1,4 +1,4 @@
-/* $Id: MMHeap.cpp 103282 2015-10-12 09:27:14Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: MMHeap.cpp 104701 2015-12-15 09:42:04Z noreply@oracle.com $ */
 /** @file
  * MM - Memory Manager - Heap.
  */
@@ -109,7 +109,7 @@ void mmR3HeapDestroy(PMMHEAP pHeap)
     }
 
     /*
-     * Free the stat nodes.                                                                     e
+     * Free the stat nodes.
      */
     /** @todo free all nodes in a AVL tree. */
     RTMemFree(pHeap);
