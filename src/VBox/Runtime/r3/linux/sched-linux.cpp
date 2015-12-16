@@ -1,4 +1,4 @@
-/* $Id: sched-linux.cpp 102121 2015-08-14 15:16:38Z knut.osmundsen@oracle.com $ */
+/* $Id: sched-linux.cpp 104742 2015-12-16 15:44:59Z noreply@oracle.com $ */
 /** @file
  * IPRT - Scheduling, POSIX.
  */
@@ -324,7 +324,7 @@ static int rtSchedRunThread(void *(*pfnThread)(void *pvArg), void *pvArg)
         do
         {
             rc = pthread_join(Thread, &pvRet);
-        } while (errno == EINTR);
+        } while (rc == EINTR);
         if (rc)
             return RTErrConvertFromErrno(rc);
         return (int)(uintptr_t)pvRet;
