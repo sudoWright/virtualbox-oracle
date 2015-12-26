@@ -1,4 +1,4 @@
-/* $Id: vbox_drv.h 104849 2015-12-26 15:21:54Z noreply@oracle.com $ */
+/* $Id: vbox_drv.h 104850 2015-12-26 15:24:08Z noreply@oracle.com $ */
 /** @file
  * VirtualBox Additions Linux kernel video driver
  */
@@ -133,6 +133,7 @@ struct vbox_connector
     {
         uint16_t cX;
         uint16_t cY;
+        bool fDisconnected;
     } modeHint;
 };
 
