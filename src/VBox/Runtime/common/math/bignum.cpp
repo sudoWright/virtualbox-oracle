@@ -1,4 +1,4 @@
-/* $Id: bignum.cpp 102919 2015-09-29 15:07:09Z knut.osmundsen@oracle.com $ */
+/* $Id: bignum.cpp 104871 2016-01-03 14:42:27Z alexander.eichner@oracle.com $ */
 /** @file
  * IPRT - Big Integer Numbers.
  */
@@ -263,7 +263,7 @@ static void rtBigNumElement2xDiv2xBy1x(RTBIGNUMELEMENT2X *puQuotient, RTBIGNUMEL
     uDivisor2x.s.Lo = uDivisor;
     /** @todo optimize this. */
     RTUInt128DivRem(puQuotient, &uRemainder2x, &uDividend, &uDivisor2x);
-    puRemainder->u = uRemainder2x.s.Lo;
+    *puRemainder = uRemainder2x.s.Lo;
 # else
     puQuotient->u  = uDividend.u / uDivisor;
     puRemainder->u = uDividend.u % uDivisor;
