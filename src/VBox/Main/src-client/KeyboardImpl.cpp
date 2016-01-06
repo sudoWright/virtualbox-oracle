@@ -1,4 +1,4 @@
-/* $Id: KeyboardImpl.cpp 103282 2015-10-12 09:27:14Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: KeyboardImpl.cpp 104905 2016-01-06 15:08:38Z noreply@oracle.com $ */
 /** @file
  * VirtualBox COM class implementation
  */
@@ -354,7 +354,7 @@ DECLCALLBACK(void) Keyboard::i_drvDestruct(PPDMDRVINS pDrvIns)
                 pThis->pKeyboard->mpDrv[cDev] = NULL;
                 break;
             }
-            pThis->pKeyboard->mpVMMDev = NULL;
+        pThis->pKeyboard->mpVMMDev = NULL;
     }
 }
 
