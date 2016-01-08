@@ -1,4 +1,4 @@
-/* $Id: bs3-cmn-MemAllocZ.c 104239 2015-11-20 03:38:25Z knut.osmundsen@oracle.com $ */
+/* $Id: bs3-cmn-MemAllocZ.c 104934 2016-01-08 00:23:32Z knut.osmundsen@oracle.com $ */
 /** @file
  * BS3Kit - Bs3MemAllocZ
  */
@@ -29,7 +29,6 @@
 *********************************************************************************************************************************/
 #include "bs3kit-template-header.h"
 #include "bs3-cmn-memory.h"
-#include <iprt/asm.h>
 
 
 BS3_DECL(void BS3_FAR *) Bs3MemAllocZ(BS3MEMKIND enmKind, size_t cb)

@@ -1,6 +1,6 @@
-/* $Id: bs3-cmn-TrapSetHandler.c 104934 2016-01-08 00:23:32Z knut.osmundsen@oracle.com $ */
+/* $Id: bs3-cmn-TrapDefaultHandler.c 104934 2016-01-08 00:23:32Z knut.osmundsen@oracle.com $ */
 /** @file
- * BS3Kit - Bs3Trap32SetHandler
+ * BS3Kit - Bs3TrapDefaultHandler
  */
 
 /*
@@ -29,13 +29,11 @@
 *********************************************************************************************************************************/
 #include "bs3kit-template-header.h"
 
-extern PFNBS3TRAPHANDLER BS3_DATA_NM(BS3_CMN_NM(g_apfnBs3TrapHandlers))[256];
 
-
-BS3_DECL(PFNBS3TRAPHANDLER) Bs3TrapSetHandler(uint8_t iIdt, PFNBS3TRAPHANDLER pfnHandler)
+BS3_DECL(void) Bs3TrapDefaultHandler(PBS3TRAPFRAME pTrapFrame)
 {
-    PFNBS3TRAPHANDLER pfnOld = BS3_DATA_NM(BS3_CMN_NM(g_apfnBs3TrapHandlers))[iIdt];
-    BS3_DATA_NM(BS3_CMN_NM(g_apfnBs3TrapHandlers))[iIdt] = pfnHandler;
-    return pfnOld;
+    Bs3TrapPrintFrame(pTrapFrame);
+    Bs3Panic();
 }
+
 

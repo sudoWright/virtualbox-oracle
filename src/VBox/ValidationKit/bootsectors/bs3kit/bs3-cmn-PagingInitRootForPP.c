@@ -1,4 +1,4 @@
-/* $Id: bs3-cmn-PagingInitRootForPP.c 104867 2016-01-01 01:49:33Z knut.osmundsen@oracle.com $ */
+/* $Id: bs3-cmn-PagingInitRootForPP.c 104934 2016-01-08 00:23:32Z knut.osmundsen@oracle.com $ */
 /** @file
  * BS3Kit - Bs3PagingInitRootForPP
  */
@@ -29,7 +29,6 @@
 *********************************************************************************************************************************/
 #include "bs3kit-template-header.h"
 #include "bs3-cmn-paging.h"
-#include <iprt/asm.h>
 
 
 BS3_DECL(int) Bs3PagingInitRootForPP(void)
