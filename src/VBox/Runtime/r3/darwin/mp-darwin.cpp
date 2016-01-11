@@ -1,4 +1,4 @@
-/* $Id: mp-darwin.cpp 102121 2015-08-14 15:16:38Z knut.osmundsen@oracle.com $ */
+/* $Id: mp-darwin.cpp 104967 2016-01-11 10:57:34Z noreply@oracle.com $ */
 /** @file
  * IPRT - Multiprocessor, Darwin.
  */
@@ -205,6 +205,12 @@ RTDECL(RTCPUID) RTMpGetOnlineCount(void)
     RTCPUSET Set;
     RTMpGetOnlineSet(&Set);
     return RTCpuSetCount(&Set);
+}
+
+
+RTDECL(RTCPUID) RTMpGetOnlineCoreCount(void)
+{
+    return rtMpDarwinOnlinePhysicalCpus();
 }
 
 
