@@ -1,4 +1,4 @@
-/* $Id: hostres.c 104977 2016-01-12 03:00:48Z noreply@oracle.com $ */
+/* $Id: hostres.c 105032 2016-01-14 15:40:24Z noreply@oracle.com $ */
 /** @file
  * Host resolver
  */
@@ -1296,7 +1296,7 @@ static PDNSMAPPINGENTRY
 getDNSMapByName(PNATState pData, const char *pszName)
 {
     PDNSMAPPINGENTRY pDNSMapingEntry;
-    const char *pszNameLower;
+    char *pszNameLower;
 
     pszNameLower = RTStrDup(pszName);
     if (RT_UNLIKELY(pszNameLower == NULL))
