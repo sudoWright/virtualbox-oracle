@@ -1,4 +1,4 @@
-/* $Id: UIMachineViewSeamless.h 99740 2015-04-23 10:03:17Z noreply@oracle.com $ */
+/* $Id: UIMachineViewSeamless.h 105073 2016-01-18 17:04:54Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIMachineViewSeamless class declaration.
  */
@@ -35,7 +35,7 @@ protected:
 #endif
     );
     /* Seamless machine-view destructor: */
-    virtual ~UIMachineViewSeamless();
+    virtual ~UIMachineViewSeamless() { cleanupSeamless(); }
 
 private slots:
 
