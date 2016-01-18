@@ -1,4 +1,4 @@
-/* $Id: USBDeviceImpl.h 104688 2015-12-14 14:04:37Z alexander.eichner@oracle.com $ */
+/* $Id: USBDeviceImpl.h 105074 2016-01-18 17:17:24Z alexander.eichner@oracle.com $ */
 
 /** @file
  * Header file for the OUSBDevice (IUSBDevice) class, VBoxC.
@@ -59,6 +59,7 @@ private:
     HRESULT getSpeed(USBConnectionSpeed_T *aSpeed);
     HRESULT getRemote(BOOL *aRemote);
     HRESULT getBackend(com::Utf8Str &aBackend);
+    HRESULT getDeviceInfo(std::vector<com::Utf8Str> &aInfo);
 
     struct Data
     {
