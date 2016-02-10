@@ -1,4 +1,4 @@
-/* $Id: ApplianceImplImport.cpp 105460 2016-02-10 00:51:35Z knut.osmundsen@oracle.com $ */
+/* $Id: ApplianceImplImport.cpp 105461 2016-02-10 01:34:57Z knut.osmundsen@oracle.com $ */
 /** @file
  * IAppliance and IVirtualSystem COM class implementations.
  */
@@ -15,6 +15,7 @@
  * hope that it will be useful, but WITHOUT ANY WARRANTY of any kind.
  */
 
+#include <iprt/alloca.h>
 #include <iprt/path.h>
 #include <iprt/dir.h>
 #include <iprt/file.h>
