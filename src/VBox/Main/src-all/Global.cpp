@@ -1,4 +1,4 @@
-/* $Id: Global.cpp 104103 2015-11-12 16:44:55Z noreply@oracle.com $ */
+/* $Id: Global.cpp 105460 2016-02-10 00:51:35Z knut.osmundsen@oracle.com $ */
 /** @file
  * VirtualBox COM global definitions
  *
@@ -623,6 +623,7 @@ Global::vboxStatusCodeToCOM(int aVBoxStatus)
 
         /* Other errors. */
         case VERR_UNRESOLVED_ERROR:             return E_FAIL;
+        case VERR_NOT_EQUAL:                    return VBOX_E_FILE_ERROR;
 
         default:
             AssertMsgFailed(("%Rrc\n", aVBoxStatus));
