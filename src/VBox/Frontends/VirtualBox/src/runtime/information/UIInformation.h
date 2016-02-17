@@ -1,4 +1,4 @@
-/* $Id: UIInformation.h 105559 2016-02-16 12:26:05Z noreply@oracle.com $ */
+/* $Id: UIInformation.h 105566 2016-02-17 09:18:55Z noreply@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIInformation class declaration.
  */
@@ -27,7 +27,7 @@
 #include "CMachine.h"
 #include "CConsole.h"
 
-/* Forward declartions: */
+/* Forward declarations: */
 class QVBoxLayout;
 class UIInformationView;
 class UIInformationModel;
