@@ -1,4 +1,4 @@
-/* $Id: VBoxGlobal.cpp 105261 2016-01-27 15:46:41Z sergey.dubov@oracle.com $ */
+/* $Id: VBoxGlobal.cpp 105646 2016-02-22 13:55:55Z noreply@oracle.com $ */
 /** @file
  * VBox Qt GUI - VBoxGlobal class implementation.
  */
@@ -2101,8 +2101,8 @@ void VBoxGlobal::updateMachineStorage(const CMachine &constMachine, const UIMedi
                                                     fMount, false /* retry? */);
             }
         }
-        /* Mounting successful: */
-        else
+        /* If mounting was successful: */
+        if (fWasMounted)
         {
             /* Disable First RUN Wizard: */
             if (gEDataManager->machineFirstTimeStarted(machine.GetId()))
