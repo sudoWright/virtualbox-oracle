@@ -1,4 +1,4 @@
-/* $Id: UIMachine.cpp 105791 2016-03-01 14:44:33Z sergey.dubov@oracle.com $ */
+/* $Id: UIMachine.cpp 105827 2016-03-03 16:03:08Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIMachine class implementation.
  */
@@ -199,9 +199,6 @@ bool UIMachine::prepare()
     /* Try to prepare session UI: */
     if (!prepareSession())
         return false;
-
-    /* Prevent application from closing when all window(s) closed: */
-    qApp->setQuitOnLastWindowClosed(false);
 
     /* Cache medium data early if necessary: */
     if (vboxGlobal().agressiveCaching())
