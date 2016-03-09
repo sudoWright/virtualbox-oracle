@@ -1,6 +1,6 @@
 #! /bin/sh
 #
-# Linux Additions X11 setup init script ($Revision: 104822 $)
+# Linux Additions X11 setup init script ($Revision: 105922 $)
 #
 
 #
@@ -190,7 +190,6 @@ restart()
     return 0
 }
 
-# setup_script
 setup()
 {
     echo "VirtualBox Guest Additions installation, Window System and desktop setup" > $LOG
@@ -477,7 +476,6 @@ EOF
     succ_msg "Window system drivers installed"
 }
 
-# cleanup_script
 cleanup()
 {
     # Restore xorg.conf files as far as possible
