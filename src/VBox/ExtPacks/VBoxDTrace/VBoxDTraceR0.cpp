@@ -1,4 +1,4 @@
-/* $Id: VBoxDTraceR0.cpp 104510 2015-12-04 14:23:17Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxDTraceR0.cpp 105918 2016-03-09 08:06:07Z noreply@oracle.com $ */
 /** @file
  * VBoxDTraceR0.
  *
@@ -1270,7 +1270,7 @@ void VBoxDtMutexDelete(struct VBoxDtMutex *pMtx)
 {
     AssertReturnVoid(pMtx != &g_DummyMtx);
     AssertPtr(pMtx);
-    if (pMtx->hMtx == NIL_RTSEMMUTEX || pMtx->hMtx == NULL)
+    if (pMtx->hMtx == NIL_RTSEMMUTEX)
         return;
 
     Assert(pMtx->hOwner == NIL_RTNATIVETHREAD);
