@@ -1,4 +1,4 @@
-/* $Id: bs3-cmn-RegCtxConvertToRingX.c 105941 2016-03-10 00:53:55Z knut.osmundsen@oracle.com $ */
+/* $Id: bs3-cmn-RegCtxConvertToRingX.c 105982 2016-03-13 16:34:32Z knut.osmundsen@oracle.com $ */
 /** @file
  * BS3Kit - Bs3RegCtxConvertToRingX
  */
@@ -37,7 +37,7 @@
  * @param   uSeg            The real mode segment.
  * @param   bRing           The target ring.
  */
-uint16_t bs3RegCtxConvertRealSegToRingX(uint16_t uSeg, uint8_t bRing)
+static uint16_t bs3RegCtxConvertRealSegToRingX(uint16_t uSeg, uint8_t bRing)
 {
     uint16_t uSel;
     if (   uSeg == 0
@@ -73,7 +73,7 @@ uint16_t bs3RegCtxConvertRealSegToRingX(uint16_t uSeg, uint8_t bRing)
  * @param   uSeg            The current selector value.
  * @param   bRing           The target ring.
  */
-uint16_t bs3RegCtxConvertProtSelToRingX(uint16_t uSel, uint8_t bRing)
+static uint16_t bs3RegCtxConvertProtSelToRingX(uint16_t uSel, uint8_t bRing)
 {
     if (   uSel > X86_SEL_RPL
         && !(uSel & X86_SEL_LDT) )
