@@ -1,4 +1,4 @@
-/* $Id: zip.cpp 102197 2015-08-18 14:57:46Z knut.osmundsen@oracle.com $ */
+/* $Id: zip.cpp 106032 2016-03-15 21:11:49Z noreply@oracle.com $ */
 /** @file
  * IPRT - Compression.
  */
@@ -1100,7 +1100,7 @@ static bool rtZipLZFValidHeader(PCRTZIPLZFHDR pHdr)
         ||  pHdr->cbUncompressed > RTZIPLZF_MAX_UNCOMPRESSED_DATA_SIZE
        )
     {
-        AssertMsgFailed(("Invalid LZF header! %.*Rhxs\n", sizeof(pHdr), pHdr));
+        AssertMsgFailed(("Invalid LZF header! %.*Rhxs\n", sizeof(*pHdr), pHdr));
         return false;
     }
     return true;
