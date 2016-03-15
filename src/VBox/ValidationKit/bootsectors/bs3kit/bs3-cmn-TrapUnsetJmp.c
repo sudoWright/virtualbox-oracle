@@ -1,9 +1,6 @@
-/* $Id: bs3-cmn-PerCpuData.c 106003 2016-03-15 08:59:49Z knut.osmundsen@oracle.com $ */
+/* $Id: bs3-cmn-TrapUnsetJmp.c 106003 2016-03-15 08:59:49Z knut.osmundsen@oracle.com $ */
 /** @file
- * BS3Kit - Per CPU Data.
- *
- * @remarks Not quite sure how to do per-cpu data yet, but this is stuff
- *          that eventually needs to be per CPU.
+ * BS3Kit - Bs3TrapUnsetJmp
  */
 
 /*
@@ -27,32 +24,20 @@
  * terms and conditions of either the GPL or the CDDL or both.
  */
 
-
 /*********************************************************************************************************************************
 *   Header Files                                                                                                                 *
 *********************************************************************************************************************************/
 #include "bs3kit-template-header.h"
-#include "bs3-cmn-test.h"
 
 
 /*********************************************************************************************************************************
 *   Global Variables                                                                                                             *
 *********************************************************************************************************************************/
-#if ARCH_BITS == 16
+extern uint32_t BS3_DATA_NM(g_pBs3TrapSetJmpFrame);
 
-/** The current CPU mode. */
-uint8_t  BS3_DATA_NM(g_bBs3CurrentMode) = BS3_MODE_RM;
 
-/** Hint for 16-bit trap handlers regarding the high word of EIP. */
-uint32_t BS3_DATA_NM(g_uBs3TrapEipHint) = 0;
-
-/** Flat pointer to a BS3TRAPFRAME registered by Bs3TrapSetJmp.
- * When this is non-zero, the setjmp is considered armed. */
-uint32_t BS3_DATA_NM(g_pBs3TrapSetJmpFrame) = 0;
-
-/** The context of the last Bs3TrapSetJmp call.
- * This will have eax set to 1 and need only be restored when it triggers. */
-BS3REGCTX BS3_DATA_NM(g_Bs3TrapSetJmpCtx);
-
-#endif /* ARCH_BITS == 16 */
+BS3_DECL(void) Bs3TrapUnsetJmp(void)
+{
+    BS3_DATA_NM(g_pBs3TrapSetJmpFrame) = 0;
+}
 
