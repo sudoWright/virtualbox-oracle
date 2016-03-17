@@ -1,4 +1,4 @@
-/* $Id: vbva.c 102191 2015-08-18 12:42:05Z noreply@oracle.com $ */
+/* $Id: vbva.c 106078 2016-03-17 18:40:28Z noreply@oracle.com $ */
 /** @file
  * VirtualBox X11 Additions graphics driver 2D acceleration functions
  */
@@ -221,9 +221,11 @@ vboxEnableVbva(ScrnInfoPtr pScrn)
     VBVXASSERT(rc, ("Failed to enable screen update reporting for at least one virtual monitor.\n"));
 #ifdef VBOXVIDEO_13
     VBoxHGSMISendCapsInfo(&pVBox->guestCtx, VBVACAPS_VIDEO_MODE_HINTS | VBVACAPS_DISABLE_CURSOR_INTEGRATION);
+#else
+    VBoxHGSMISendCapsInfo(&pVBox->guestCtx, VBVACAPS_DISABLE_CURSOR_INTEGRATION);
+#endif
     pVBox->fHaveHGSMIModeHints = haveHGSMIModeHintAndCursorReportingInterface(pVBox);
     pVBox->fHostHasScreenBlankingFlag = hostHasScreenBlankingFlag(pVBox);
-#endif
     return rc;
 }
 
