@@ -1,6 +1,6 @@
 #! /bin/sh
 #
-# Linux Additions X11 setup init script ($Revision: 106106 $)
+# Linux Additions X11 setup init script ($Revision: 106139 $)
 #
 
 #
@@ -369,7 +369,7 @@ setup()
             }
             # Do not install if we can use the kernel driver.
             case `uname -r` in
-                1.* | 2.* | 3.[0-9].* | 3.11 ) ;;
+                1.* | 2.* | 3.[0-9].* | 3.10.* ) ;;
                 * ) vboxvideo_src="" ;;
             esac
             ;;
