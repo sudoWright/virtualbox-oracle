@@ -1,4 +1,4 @@
-/* $Id: vbox_fb.c 105924 2016-03-09 11:20:48Z noreply@oracle.com $ */
+/* $Id: vbox_fb.c 106129 2016-03-21 14:40:17Z noreply@oracle.com $ */
 /** @file
  * VirtualBox Additions Linux kernel video driver
  */
@@ -438,6 +438,7 @@ int vbox_fbdev_init(struct drm_device *dev)
     ret = drm_fb_helper_initial_config(&fbdev->helper, 32);
     if (ret)
         goto fini;
+    vbox->fbdev_init = true;
 
     LogFunc(("vboxvideo: %d\n", __LINE__));
     return 0;
