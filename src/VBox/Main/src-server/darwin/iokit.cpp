@@ -1,4 +1,4 @@
-/* $Id: iokit.cpp 105179 2016-01-22 13:58:58Z knut.osmundsen@oracle.com $ */
+/* $Id: iokit.cpp 106175 2016-03-23 11:44:24Z knut.osmundsen@oracle.com $ */
 /** @file
  * Main - Darwin IOKit Routines.
  *
@@ -299,6 +299,7 @@ static bool darwinDictDupString(CFDictionaryRef DictRef, CFStringRef KeyStrRef, 
     char szBuf[512];
     if (darwinDictGetString(DictRef, KeyStrRef, szBuf, sizeof(szBuf)))
     {
+        USBLibPurgeEncoding(szBuf);
         *ppsz = RTStrDup(szBuf);
         if (*ppsz)
             return true;
