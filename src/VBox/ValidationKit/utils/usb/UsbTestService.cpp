@@ -1,4 +1,4 @@
-/* $Id: UsbTestService.cpp 106320 2016-03-31 18:57:37Z alexander.eichner@oracle.com $ */
+/* $Id: UsbTestService.cpp 106321 2016-03-31 18:59:42Z alexander.eichner@oracle.com $ */
 /** @file
  * UsbTestService - Remote USB test configuration and execution server.
  */
@@ -533,7 +533,7 @@ static int utsClientReqProcess(PUTSCLIENT pClient)
     /*
      * Read client command packet and process it.
      */
-    PUTSPKTHDR pPktHdr;
+    PUTSPKTHDR pPktHdr = NULL;
     int rc = utsRecvPkt(pClient, &pPktHdr, true /*fAutoRetryOnFailure*/);
     if (RT_FAILURE(rc))
         return rc;
@@ -981,7 +981,7 @@ static RTEXITCODE utsParseArgv(int argc, char **argv, bool *pfExit)
             }
 
             case 'V':
-                RTPrintf("$Revision: 106320 $\n");
+                RTPrintf("$Revision: 106321 $\n");
                 *pfExit = true;
                 return RTEXITCODE_SUCCESS;
 
