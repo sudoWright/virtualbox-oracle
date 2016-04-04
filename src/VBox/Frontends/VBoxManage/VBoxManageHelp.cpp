@@ -1,4 +1,4 @@
-/* $Id: VBoxManageHelp.cpp 106086 2016-03-18 10:51:02Z alexander.eichner@oracle.com $ */
+/* $Id: VBoxManageHelp.cpp 106379 2016-04-04 17:40:37Z ramshankar.venkataraman@oracle.com $ */
 /** @file
  * VBoxManage - help and other message output.
  */
@@ -1270,7 +1270,7 @@ void printUsage(USAGECATEGORY fCategory, uint32_t fSubCategory, PRTSTREAM pStrm)
     {
         RTStrmPrintf(pStrm,
                            "%s debugvm %s         <uuid|vmname>\n"
-                     "                            dumpguestcore --filename <name> |\n"
+                     "                            dumpvmcore --filename <name> |\n"
                      "                            info <item> [args] |\n"
                      "                            injectnmi |\n"
                      "                            log [--release|--debug] <settings> ...|\n"
