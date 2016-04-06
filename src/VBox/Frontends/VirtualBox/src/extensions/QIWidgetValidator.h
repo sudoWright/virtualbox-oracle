@@ -1,4 +1,4 @@
-/* $Id: QIWidgetValidator.h 99740 2015-04-23 10:03:17Z noreply@oracle.com $ */
+/* $Id: QIWidgetValidator.h 106441 2016-04-06 14:29:17Z noreply@oracle.com $ */
 /** @file
  * VBox Qt GUI - Qt extensions: QIWidgetValidator class declaration.
  */
@@ -24,9 +24,9 @@
 #include <QMap>
 
 /* External includes: */
-#ifdef Q_WS_X11
+#ifdef VBOX_WS_X11
 #include <limits.h>
-#endif /* Q_WS_X11 */
+#endif /* VBOX_WS_X11 */
 
 /* Forward declarations: */
 class UISettingsPage;
