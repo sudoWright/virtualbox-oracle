@@ -1,4 +1,4 @@
-/* $Id: UsbTestServiceGadgetHost.cpp 106391 2016-04-05 08:33:05Z alexander.eichner@oracle.com $ */
+/* $Id: UsbTestServiceGadgetHost.cpp 106459 2016-04-07 14:42:20Z alexander.eichner@oracle.com $ */
 /** @file
  * UsbTestServ - Remote USB test configuration and execution server, USB gadget host API.
  */
@@ -140,3 +140,4 @@ DECLHIDDEN(uint32_t) utsGadgetHostRelease(UTSGADGETHOST hGadgetHost)
 
     return cRefs;
 }
+
