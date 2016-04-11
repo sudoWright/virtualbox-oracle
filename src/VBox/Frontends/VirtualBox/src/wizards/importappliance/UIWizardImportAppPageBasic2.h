@@ -1,4 +1,4 @@
-/* $Id: UIWizardImportAppPageBasic2.h 106505 2016-04-11 10:56:08Z sergey.dubov@oracle.com $ */
+/* $Id: UIWizardImportAppPageBasic2.h 106506 2016-04-11 11:00:18Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardImportAppPageBasic2 class declaration.
  */
@@ -110,7 +110,6 @@ private:
     /** Holds the text-browser instance. */
     QTextBrowser *m_pTextBrowser;
 };
-
 
 #endif /* !___UIWizardImportAppPageBasic2_h___ */
 
