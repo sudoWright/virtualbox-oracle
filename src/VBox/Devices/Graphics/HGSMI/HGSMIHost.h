@@ -1,4 +1,4 @@
-/* $Id: HGSMIHost.h 99928 2015-04-30 14:57:47Z vitali.pelenjow@oracle.com $ */
+/* $Id: HGSMIHost.h 106557 2016-04-12 18:42:22Z vitali.pelenjow@oracle.com $ */
 /** @file
  *
  * VBox Host Guest Shared Memory Interface (HGSMI).
@@ -91,6 +91,7 @@ void HGSMIHostWrite (PHGSMIINSTANCE pIns,
                      HGSMIOFFSET offBuffer);
 
 void HGSMISetHostGuestFlags(PHGSMIINSTANCE pIns, uint32_t flags);
+uint32_t HGSMIGetHostGuestFlags(HGSMIINSTANCE *pIns);
 
 void HGSMIClearHostGuestFlags(PHGSMIINSTANCE pIns, uint32_t flags);
 
