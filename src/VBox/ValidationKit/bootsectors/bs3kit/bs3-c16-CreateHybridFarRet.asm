@@ -1,6 +1,6 @@
-; $Id: bs3-cmn-Panic.asm 106651 2016-04-18 09:11:04Z knut.osmundsen@oracle.com $
+; $Id: bs3-c16-CreateHybridFarRet.asm 106651 2016-04-18 09:11:04Z knut.osmundsen@oracle.com $
 ;; @file
-; BS3Kit - Bs3Panic, Common.
+; BS3Kit - Bs3A20Disable.
 ;
 
 ;
@@ -24,15 +24,30 @@
 ; terms and conditions of either the GPL or the CDDL or both.
 ;
 
-%include "bs3kit-template-header.mac"
+
+%include "bs3kit.mac"
 
 
-BS3_PROC_BEGIN_CMN Bs3Panic, BS3_PBC_HYBRID_0_ARGS
-        push    xBP
-        mov     xBP, xSP
-        cli
-.panic_again:
-        hlt
-        jmp     .panic_again
-BS3_PROC_END_CMN   Bs3Panic
+;;
+; Worker for BS3_PROC_BEGIN_CMN
+; @uses nothing
+BS3_PROC_BEGIN Bs3CreateHybridFarRet_c16
+        push    ax                      ; reserve space
+        push    bp
+        mov     bp, sp
+        push    ax                      ; save it
+
+        ; Move the return address up a word.
+        mov     ax, [bp + 4]
+        mov     [bp + 2], ax
+        ; Move the caller's return address up a word.
+        mov     ax, [bp + 6]
+        mov     [bp + 4], ax
+        ; Add CS to the caller's far return address.
+        mov     [bp + 6], cs
+
+        pop     ax
+        pop     bp
+        ret
+BS3_PROC_END   Bs3CreateHybridFarRet_c16
 
