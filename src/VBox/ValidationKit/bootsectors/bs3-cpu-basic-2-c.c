@@ -1,4 +1,4 @@
-/* $Id: bs3-cpu-basic-2-c.c 106651 2016-04-18 09:11:04Z knut.osmundsen@oracle.com $ */
+/* $Id: bs3-cpu-basic-2-c.c 106668 2016-04-18 14:09:39Z knut.osmundsen@oracle.com $ */
 /** @file
  * BS3Kit - bs3-cpu-basic-2, 16-bit C code.
  */
@@ -50,7 +50,7 @@ static const BS3TESTMODEENTRY g_aModeTest[] =
     //BS3TESTMODEENTRY_MODE("tss / gate / esp", bs3CpuBasic2_TssGateEsp),
     BS3TESTMODEENTRY_MODE("raise xcpt #1", bs3CpuBasic2_RaiseXcpt1),
     //BS3TESTMODEENTRY_CMN("iret", bs3CpuBasic2_iret),
-//    BS3TESTMODEENTRY_MODE("iret", bs3CpuBasic2_iret),
+    BS3TESTMODEENTRY_MODE("iret", bs3CpuBasic2_iret),
 //    BS3TESTMODEENTRY_MODE("sidt", bs3CpuBasic2_sidt),
 };
 
