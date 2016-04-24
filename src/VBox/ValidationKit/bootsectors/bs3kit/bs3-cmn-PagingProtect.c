@@ -1,4 +1,4 @@
-/* $Id: bs3-cmn-PagingProtect.c 106844 2016-04-24 11:04:57Z knut.osmundsen@oracle.com $ */
+/* $Id: bs3-cmn-PagingProtect.c 106846 2016-04-24 14:57:13Z knut.osmundsen@oracle.com $ */
 /** @file
  * BS3Kit - Bs3PagingProtect
  */
@@ -36,7 +36,7 @@
 /*********************************************************************************************************************************
 *   Defined Constants And Macros                                                                                                 *
 *********************************************************************************************************************************/
-#if 1
+#if 0
 # define BS3PAGING_DPRINTF1(a) Bs3TestPrintf a
 #else
 # define BS3PAGING_DPRINTF1(a) do { } while (0)
