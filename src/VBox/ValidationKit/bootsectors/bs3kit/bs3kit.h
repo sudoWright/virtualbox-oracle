@@ -1,4 +1,4 @@
-/* $Id: bs3kit.h 106972 2016-05-02 00:04:01Z knut.osmundsen@oracle.com $ */
+/* $Id: bs3kit.h 106975 2016-05-02 08:36:54Z knut.osmundsen@oracle.com $ */
 /** @file
  * BS3Kit - structures, symbols, macros and stuff.
  */
@@ -30,6 +30,7 @@
 #ifndef DOXYGEN_RUNNING
 # define IN_RING0
 #endif
+#define RT_NO_STRICT            /* Don't drag in IPRT assertion code in inline code we may use (asm.h). */
 #include <iprt/cdefs.h>
 #include <iprt/types.h>
 #ifndef DOXYGEN_RUNNING
