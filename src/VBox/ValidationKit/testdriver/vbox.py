@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# $Id: vbox.py 106703 2016-04-19 11:56:33Z knut.osmundsen@oracle.com $
+# $Id: vbox.py 107108 2016-05-09 14:17:19Z knut.osmundsen@oracle.com $
 # pylint: disable=C0302
 
 """
@@ -27,7 +27,7 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 106703 $"
+__version__ = "$Revision: 107108 $"
 
 
 # Standard Python imports.
@@ -500,10 +500,10 @@ class EventHandlerBase(object):
         """
         Unregister the event handler.
         """
+        fRc = False;
         if not self.fShutdown:
             self.fShutdown = True;
 
-            fRc = False;
             if self.oEventSrc is not None:
                 if self.fpApiVer < 3.3:
                     try:
