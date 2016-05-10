@@ -1,6 +1,6 @@
 #! /bin/sh
 #
-# Linux Additions X11 setup init script ($Revision: 106425 $)
+# Linux Additions X11 setup init script ($Revision: 107150 $)
 #
 
 #
@@ -372,6 +372,17 @@ setup()
             # For anything else, assume kernel drivers.
             dox11config=""
             ;;
+    esac
+    case "${x_version}" in
+    4.* | 6.* | 7.* | 1.?.* | 1.1[0-6].* )
+        echo "blacklist vboxvideo" > /etc/modprobe.d/blacklist-vboxvideo.conf
+        ;;
+    *)
+        if test -f /etc/modprobe.d/blacklist-vboxvideo.conf; then
+            rm -f /etc/modprobe.d/blacklist-vboxvideo.conf
+            ${MODPROBE} vboxvideo
+        fi
+        ;;
     esac
     test -n "${dox11config}" &&
         begin "Installing $xserver_version modules"
