@@ -1,4 +1,4 @@
-/* $Id: APIC.cpp 107391 2016-05-23 08:56:09Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: APIC.cpp 107401 2016-05-23 11:15:36Z noreply@oracle.com $ */
 /** @file
  * APIC - Advanced Programmable Interrupt Controller.
  */
@@ -1382,7 +1382,7 @@ static int apicR3InitState(PVM pVM)
             }
             else
             {
-                LogRel(("APIC%u: Failed to allocate %u bytes for the virtual-APIC page, rc=%Rrc\n", pApicCpu->cbApicPage, rc));
+                LogRel(("APIC%u: Failed to allocate %u bytes for the virtual-APIC page, rc=%Rrc\n", idCpu, pApicCpu->cbApicPage, rc));
                 apicR3TermState(pVM);
                 return rc;
             }
