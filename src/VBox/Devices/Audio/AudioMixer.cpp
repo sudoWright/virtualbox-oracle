@@ -1,4 +1,4 @@
-/* $Id: AudioMixer.cpp 107463 2016-05-24 18:12:08Z andreas.loeffler@oracle.com $ */
+/* $Id: AudioMixer.cpp 107464 2016-05-24 18:15:04Z andreas.loeffler@oracle.com $ */
 /** @file
  * VBox audio: Mixing routines, mainly used by the various audio device
  *             emulations to achieve proper multiplexing from/to attached
@@ -981,7 +981,7 @@ void AudioMixerStreamDestroy(PAUDMIXSTREAM pMixStream)
 bool AudioMixerStreamIsActive(PAUDMIXSTREAM pMixStream)
 {
     if (   !pMixStream
-        && !pMixStream->pConn)
+        || !pMixStream->pConn)
     {
         return false;
     }
