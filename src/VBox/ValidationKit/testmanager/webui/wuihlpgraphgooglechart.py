@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# $Id: wuihlpgraphgooglechart.py 100880 2015-06-09 14:29:55Z knut.osmundsen@oracle.com $
+# $Id: wuihlpgraphgooglechart.py 107509 2016-05-27 01:16:02Z knut.osmundsen@oracle.com $
 
 """
 Test Manager Web-UI - Graph Helpers - Implemented using Google Charts.
@@ -26,11 +26,12 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 100880 $"
+__version__ = "$Revision: 107509 $"
 
 # Validation Kit imports.
-from testmanager.webui.wuihlpgraphbase  import WuiHlpGraphBase;
 from common                             import webutils;
+from testmanager.webui.wuihlpgraphbase  import WuiHlpGraphBase;
+from testmanager.webui                  import wuihlpgraphsimple;
 
 
 #*******************************************************************************
@@ -44,7 +45,6 @@ class WuiHlpGraphGoogleChartsBase(WuiHlpGraphBase):
 
 
 ## @todo bar graphs later.
-from testmanager.webui import wuihlpgraphsimple;
 WuiHlpBarGraph = wuihlpgraphsimple.WuiHlpBarGraph;
 
 

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# $Id: wuireport.py 100880 2015-06-09 14:29:55Z knut.osmundsen@oracle.com $
+# $Id: wuireport.py 107509 2016-05-27 01:16:02Z knut.osmundsen@oracle.com $
 
 """
 Test Manager WUI - Reports.
@@ -26,7 +26,7 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 100880 $"
+__version__ = "$Revision: 107509 $"
 
 
 # Validation Kit imports.
@@ -93,8 +93,7 @@ class WuiReportSuccessRate(WuiReportBase):
         oTable = WuiHlpGraphDataTable('Period', [ 'Succeeded', 'Skipped', 'Failed' ]);
 
         #for i in range(len(adPeriods) - 1, -1, -1):
-        for i in range(len(adPeriods)):
-            dStatuses = adPeriods[i];
+        for i, dStatuses in enumerate(adPeriods):
             cSuccess  = dStatuses[ReportModelBase.ksTestStatus_Success] + dStatuses[ReportModelBase.ksTestStatus_Skipped];
             cTotal    = cSuccess + dStatuses[ReportModelBase.ksTestStatus_Failure];
             sPeriod   = self._oModel.getPeriodDesc(i);

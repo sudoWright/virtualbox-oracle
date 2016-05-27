@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# $Id: testboxcontroller.py 102582 2015-09-09 19:24:12Z knut.osmundsen@oracle.com $
+# $Id: testboxcontroller.py 107509 2016-05-27 01:16:02Z knut.osmundsen@oracle.com $
 
 """
 Test Manager Core - Web Server Abstraction Base Class.
@@ -26,7 +26,7 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 102582 $"
+__version__ = "$Revision: 107509 $"
 
 
 # Standard python imports.
@@ -394,6 +394,7 @@ class TestBoxController(object): # pylint: disable=R0903
         #
         # Update the row in TestBoxes if something changed.
         #
+        # pylint: disable=R0916
         if   self._sTestBoxAddr != oTestBox.ip \
           or sOs                != oTestBox.sOs \
           or sOsVersion         != oTestBox.sOsVersion \

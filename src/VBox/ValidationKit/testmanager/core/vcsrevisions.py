@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# $Id: vcsrevisions.py 107430 2016-05-24 01:54:00Z knut.osmundsen@oracle.com $
+# $Id: vcsrevisions.py 107509 2016-05-27 01:16:02Z knut.osmundsen@oracle.com $
 
 """
 Test Manager - VcsRevisions
@@ -26,7 +26,7 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 107430 $"
+__version__ = "$Revision: 107509 $"
 
 
 # Standard python imports.
@@ -158,7 +158,7 @@ class VcsRevisionLogic(ModelLogicBase): # pylint: disable=R0903
         """
 
         # Check VcsRevisionData before do anything
-        dDataErrors = oData.validateAndConvert(self._oDb);
+        dDataErrors = oData.validateAndConvert(self._oDb, oData.ksValidateFor_Add);
         if len(dDataErrors) > 0:
             raise TMExceptionBase('Invalid data passed to addVcsRevision(): %s' % (dDataErrors,));
 
