@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# $Id: failurereason.py 107541 2016-05-27 18:00:16Z knut.osmundsen@oracle.com $
+# $Id: failurereason.py 107562 2016-05-29 00:34:45Z knut.osmundsen@oracle.com $
 
 """
 Test Manager - Failure Reasons.
@@ -26,7 +26,7 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 107541 $"
+__version__ = "$Revision: 107562 $"
 
 
 # Validation Kit imports.
@@ -422,7 +422,7 @@ class FailureReasonLogic(ModelLogicBase): # pylint: disable=R0903
                 self._oDb.execute('SELECT   *\n'
                                   'FROM     FailureReasons\n'
                                   'WHERE    idFailureReason = %s\n'
-                                  'ORDER BY tsExpire\n'
+                                  'ORDER BY tsExpire DESC\n'
                                   'LIMIT 1\n'
                                   , (idFailureReason, ));
             elif self._oDb.getRowCount() > 1:
