@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# $Id: wuitestresultfailure.py 107547 2016-05-28 03:52:35Z knut.osmundsen@oracle.com $
+# $Id: wuitestresultfailure.py 107570 2016-05-29 16:52:40Z knut.osmundsen@oracle.com $
 
 """
 Test Manager WUI - Dummy Test Result Failure Reason Edit Dialog - just for error handling!
@@ -26,13 +26,13 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 107547 $"
+__version__ = "$Revision: 107570 $"
 
 # Validation Kit imports.
 from testmanager.webui.wuicontentbase           import WuiFormContentBase, WuiContentBase, WuiTmLink;
 from testmanager.webui.wuimain                  import WuiMain;
 from testmanager.webui.wuiadminfailurereason    import WuiFailureReasonDetailsLink, WuiFailureReasonAddLink;
-from testmanager.core.testresults               import TestResultFailureData;
+from testmanager.core.testresultfailures        import TestResultFailureData;
 from testmanager.core.testset                   import TestSetData;
 from testmanager.core.failurereason             import FailureReasonLogic;
 

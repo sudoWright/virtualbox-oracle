@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# $Id: wuitestresult.py 107564 2016-05-29 06:54:05Z knut.osmundsen@oracle.com $
+# $Id: wuitestresult.py 107570 2016-05-29 16:52:40Z knut.osmundsen@oracle.com $
 
 """
 Test Manager WUI - Test Results.
@@ -26,7 +26,7 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 107564 $"
+__version__ = "$Revision: 107570 $"
 
 # Python imports.
 import datetime;
@@ -45,7 +45,7 @@ from testmanager.core.testbox                   import TestBoxData;
 from testmanager.core.testcase                  import TestCaseData;
 from testmanager.core.testset                   import TestSetData;
 from testmanager.core.testgroup                 import TestGroupData;
-from testmanager.core.testresults               import TestResultFailureData;
+from testmanager.core.testresultfailures        import TestResultFailureData;
 from testmanager.core.build                     import BuildData;
 from testmanager.core                           import db;
 from testmanager                                import config;
