@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# $Id: vboxwrappers.py 107380 2016-05-20 14:56:17Z knut.osmundsen@oracle.com $
+# $Id: vboxwrappers.py 107617 2016-05-31 09:08:04Z alexander.eichner@oracle.com $
 # pylint: disable=C0302
 
 """
@@ -27,7 +27,7 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 107380 $"
+__version__ = "$Revision: 107617 $"
 
 
 # Standard Python imports.
@@ -2370,6 +2370,32 @@ class SessionWrapper(TdTaskBase):
         oFile.close()
 
         return True
+
+    #
+    # IMachineDebugger wrappers.
+    #
+
+    def queryOsKernelLog(self):
+        """
+        Tries to get the OS kernel log using the VM debugger interface.
+
+        Returns string containing the kernel log on success.
+        Returns None on failure.
+        """
+        try:
+            sPluginsLoaded = self.o.console.debugger.loadPlugIn('all');
+            if sPluginsLoaded == 'all':
+                sOsDetected = self.o.console.debugger.detectOS();
+                if sOsDetected is not None:
+                    sOsKernelLog = self.o.console.debugger.queryOSKernelLog(0);
+            else:
+                reporter.log('Unable to load debugger plugins');
+                return None;
+        except:
+            reporter.logXcpt('Unable to query the OS kernel log');
+            return None;
+
+        return sOsKernelLog;
 
     #
     # Other methods.
