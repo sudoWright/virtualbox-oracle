@@ -1,4 +1,4 @@
-/* $Id: bs3kit.h 106975 2016-05-02 08:36:54Z knut.osmundsen@oracle.com $ */
+/* $Id: bs3kit.h 107696 2016-06-01 18:34:57Z knut.osmundsen@oracle.com $ */
 /** @file
  * BS3Kit - structures, symbols, macros and stuff.
  */
@@ -3163,7 +3163,7 @@ BS3_MODE_EXPAND_EXTERN_DATA16(const char, g_szBs3ModeName, []);
 /**
  * Basic CPU detection.
  *
- * This sets the #g_bBs3CpuDetected global variable to the return value.
+ * This sets the #g_uBs3CpuDetected global variable to the return value.
  *
  * @returns BS3CPU_XXX value with the BS3CPU_F_CPUID flag set depending on
  *          capabilities.
