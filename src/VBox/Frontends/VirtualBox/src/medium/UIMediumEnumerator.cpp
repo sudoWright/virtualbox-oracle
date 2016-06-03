@@ -1,4 +1,4 @@
-/* $Id: UIMediumEnumerator.cpp 105711 2016-02-25 18:09:31Z sergey.dubov@oracle.com $ */
+/* $Id: UIMediumEnumerator.cpp 107752 2016-06-03 10:53:22Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIMediumEnumerator class implementation.
  */
@@ -330,6 +330,13 @@ void UIMediumEnumerator::sltHandleMediumEnumerationTaskComplete(UITask *pTask)
         m_fMediumEnumerationInProgress = false;
         emit sigMediumEnumerationFinished();
     }
+}
+
+void UIMediumEnumerator::retranslateUi()
+{
+    /* Translating NULL uimedium by recreating it: */
+    if (m_mediums.contains(UIMedium::nullID()))
+        m_mediums[UIMedium::nullID()] = UIMedium();
 }
 
 void UIMediumEnumerator::createMediumEnumerationTask(const UIMedium &medium)
