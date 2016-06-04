@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# $Id: testboxscript_real.py 107613 2016-05-31 08:39:45Z noreply@oracle.com $
+# $Id: testboxscript_real.py 107794 2016-06-04 14:02:59Z knut.osmundsen@oracle.com $
 
 """
 TestBox Script - main().
@@ -27,7 +27,7 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 107613 $"
+__version__ = "$Revision: 107794 $"
 
 
 # Standard python imports.
@@ -996,4 +996,5 @@ class TestBoxScript(object):
 
 if __name__ == '__main__':
     sys.exit(TestBoxScript.main());
+
 
