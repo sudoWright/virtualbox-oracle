@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# $Id: schedgroup.py 107509 2016-05-27 01:16:02Z knut.osmundsen@oracle.com $
+# $Id: schedgroup.py 107795 2016-06-05 02:55:32Z knut.osmundsen@oracle.com $
 
 """
 Test Manager - Scheduling Group.
@@ -26,7 +26,7 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 107509 $"
+__version__ = "$Revision: 107795 $"
 
 
 # Standard python imports.
@@ -290,18 +290,18 @@ class SchedGroupDataEx(SchedGroupData):
         ## @todo sPeriodBack!
         if tsNow is None:
             oDb.execute('SELECT *\n'
-                        'FROM   TestBoxes\n'
-                        'WHERE  TestBoxes.idSchedGroup = %s\n'
-                        '   AND TestBoxes.tsExpire     = \'infinity\'::TIMESTAMP\n'
-                        'ORDER BY TestBoxes.sName, TestBoxes.idTestBox\n'
+                        'FROM   TestBoxesWithStrings\n'
+                        'WHERE  TestBoxesWithStrings.idSchedGroup = %s\n'
+                        '   AND TestBoxesWithStrings.tsExpire     = \'infinity\'::TIMESTAMP\n'
+                        'ORDER BY TestBoxesWithStrings.sName, TestBoxesWithStrings.idTestBox\n'
                         , (self.idSchedGroup,));
         else:
             oDb.execute('SELECT *\n'
-                        'FROM   TestBoxes\n'
-                        'WHERE  TestBoxes.idSchedGroup = %s\n'
-                        '   AND TestBoxes.tsExpire     > %s\n'
-                        '   AND TestBoxes.tsEffective  <= %s\n'
-                        'ORDER BY TestBoxes.sName, TestBoxes.idTestBox\n'
+                        'FROM   TestBoxesWithStrings\n'
+                        'WHERE  TestBoxesWithStrings.idSchedGroup = %s\n'
+                        '   AND TestBoxesWithStrings.tsExpire     > %s\n'
+                        '   AND TestBoxesWithStrings.tsEffective  <= %s\n'
+                        'ORDER BY TestBoxesWithStrings.sName, TestBoxesWithStrings.idTestBox\n'
                         , (self.idSchedGroup, tsNow, tsNow, tsNow, tsNow));
         for aoRow in oDb.fetchAll():
             self.aoTestBoxes.append(TestBoxData().initFromDbRow(aoRow));
