@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# $Id: testbox.py 107838 2016-06-06 17:53:01Z knut.osmundsen@oracle.com $
+# $Id: testbox.py 107846 2016-06-06 22:51:57Z knut.osmundsen@oracle.com $
 
 """
 Test Manager - TestBox.
@@ -26,7 +26,7 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 107838 $"
+__version__ = "$Revision: 107846 $"
 
 
 # Standard python imports.
@@ -1059,7 +1059,7 @@ class TestBoxLogic(ModelLogicBase):
         if oTestBox.fEnabled:
             oTestBox.fEnabled = False;
             if sComment is not None:
-                _ = sComment; # oTestBox.sComment = sComment;
+                oTestBox.sComment = sComment;
             self.editEntry(oTestBox, uidAuthor = uidAuthor, fCommit = fCommit);
         return None;
 
