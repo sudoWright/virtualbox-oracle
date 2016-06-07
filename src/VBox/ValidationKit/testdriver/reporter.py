@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# $Id: reporter.py 107656 2016-06-01 07:51:59Z alexander.eichner@oracle.com $
+# $Id: reporter.py 107868 2016-06-07 11:45:40Z knut.osmundsen@oracle.com $
 # pylint: disable=C0302
 
 """
@@ -27,7 +27,7 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 107656 $"
+__version__ = "$Revision: 107868 $"
 
 
 # Standard Python imports.
@@ -815,7 +815,7 @@ class RemoteReporter(ReporterBase):
 
     def addLogFile(self, oSrcFile, sSrcFilename, sAltName, sDescription, sKind, sCaller, sTsPrf):
         fRc = True;
-        if sKind in [ 'text', 'log', ]  or  sKind.startswith('log/'):
+        if sKind in [ 'text', 'log', ]  or  sKind.startswith('log/')  or  sKind.startswith('info/'):
             self.log(0, '*** Uploading "%s" - KIND: "%s" - DESC: "%s" ***'
                         % (sSrcFilename, sKind, sDescription),  sCaller, sTsPrf);
             self.xmlFlush();
@@ -836,7 +836,7 @@ class RemoteReporter(ReporterBase):
 
     def addLogString(self, sLog, sLogName, sDescription, sKind, sCaller, sTsPrf):
         fRc = True;
-        if sKind in [ 'text', 'log', ]  or  sKind.startswith('log/'):
+        if sKind in [ 'text', 'log', ]  or  sKind.startswith('log/')  or  sKind.startswith('log/'):
             self.log(0, '*** Uploading "%s" - KIND: "%s" - DESC: "%s" ***'
                         % (sLogName, sKind, sDescription),  sCaller, sTsPrf);
             self.xmlFlush();
