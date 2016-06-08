@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# $Id: vboxwrappers.py 107906 2016-06-08 09:51:39Z alexander.eichner@oracle.com $
+# $Id: vboxwrappers.py 107908 2016-06-08 10:01:57Z alexander.eichner@oracle.com $
 # pylint: disable=C0302
 
 """
@@ -27,7 +27,7 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 107906 $"
+__version__ = "$Revision: 107908 $"
 
 
 # Standard Python imports.
@@ -2460,6 +2460,7 @@ class SessionWrapper(TdTaskBase):
         else:
             try:
                 sOsDetected = self.o.console.debugger.detectOS();
+                _ = sOsDetected;
             except:
                 reporter.logXcpt('Failed to detect the guest OS');
 
