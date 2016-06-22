@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# $Id: tdAddBasic1.py 105342 2016-02-01 15:48:54Z andreas.loeffler@oracle.com $
+# $Id: tdAddBasic1.py 108242 2016-06-22 21:27:36Z knut.osmundsen@oracle.com $
 
 """
 VirtualBox Validation Kit - Additions Basics #1.
@@ -27,7 +27,7 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 105342 $"
+__version__ = "$Revision: 108242 $"
 
 
 # Standard Python imports.
@@ -161,7 +161,7 @@ class tdAddBasic1(vbox.TestDriver):                                         # py
         Tests installing the guest additions
         """
         if oTestVm.isWindows():
-            fRc = self.testWindowsInstallAdditions(oSession, oTxsSession, oTestVm);
+            (fRc, oTxsSession) = self.testWindowsInstallAdditions(oSession, oTxsSession, oTestVm);
         else:
             reporter.error('Guest Additions installation not implemented for %s yet! (%s)' % \
                            (oTestVm.sKind, oTestVm.sVmName));
