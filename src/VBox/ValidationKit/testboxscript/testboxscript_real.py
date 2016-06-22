@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# $Id: testboxscript_real.py 107937 2016-06-08 20:31:49Z knut.osmundsen@oracle.com $
+# $Id: testboxscript_real.py 108236 2016-06-22 18:56:54Z knut.osmundsen@oracle.com $
 
 """
 TestBox Script - main().
@@ -27,7 +27,7 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 107937 $"
+__version__ = "$Revision: 108236 $"
 
 
 # Standard python imports.
@@ -695,7 +695,6 @@ class TestBoxScript(object):
                 if os.path.exists(sFullName):
                     raise Exception('Still exists after deletion, weird.');
             except Exception, oXcpt:
-                # pylint: disable=too-many-boolean-expressions
                 if    fUseTheForce is True \
                   and utils.getHostOs() not in ['win', 'os2'] \
                   and len(sFullName) >= 8 \
