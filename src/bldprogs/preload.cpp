@@ -1,4 +1,4 @@
-/* $Id: preload.cpp 102116 2015-08-14 14:31:09Z knut.osmundsen@oracle.com $ */
+/* $Id: preload.cpp 108331 2016-06-27 15:42:59Z noreply@oracle.com $ */
 /** @file
  * bin2c - Binary 2 C Structure Converter.
  */
@@ -147,7 +147,7 @@ int main(int argc, char **argv)
             if (   !strcmp(argv[i], "--version")
                 || !strcmp(argv[i], "-V"))
             {
-                printf("$Revision: 102116 $\n");
+                printf("$Revision: 108331 $\n");
                 return 0;
             }
             fprintf(stderr, "syntax error: unknown option '%s'\n", argv[i]);
@@ -190,7 +190,7 @@ int main(int argc, char **argv)
                 fclose(pFile);
             }
             else
-                fprintf(stderr, "error: fopen('%s','r'): %d\n", argv[i][1], errno);
+                fprintf(stderr, "error: fopen('%s','r'): %d\n", &argv[i][1], errno);
         }
         else
             load(argv[i]);
