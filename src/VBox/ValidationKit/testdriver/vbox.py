@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# $Id: vbox.py 108394 2016-06-30 09:33:48Z knut.osmundsen@oracle.com $
+# $Id: vbox.py 108395 2016-06-30 09:53:56Z knut.osmundsen@oracle.com $
 # pylint: disable=C0302
 
 """
@@ -27,7 +27,7 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 108394 $"
+__version__ = "$Revision: 108395 $"
 
 
 # Standard Python imports.
@@ -762,6 +762,9 @@ class SessionConsoleEventHandler(ConsoleEventHandlerBase):
         if oSession is not None: # paranoia
             if sErrId == 'HostMemoryLow':
                 oSession.signalHostMemoryLow();
+                if sys.platform == 'win32':
+                    from testdriver import winbase;
+                    winbase.logMemoryStats();
             oSession.signalTask();
         self.oVBoxMgr.interruptWaitEvents();
 
