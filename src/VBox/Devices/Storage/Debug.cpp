@@ -1,4 +1,4 @@
-/* $Id: Debug.cpp 108386 2016-06-30 07:19:39Z noreply@oracle.com $ */
+/* $Id: Debug.cpp 108387 2016-06-30 07:25:45Z noreply@oracle.com $ */
 /** @file
  * VBox storage devices: debug helpers
  */
@@ -17,6 +17,7 @@
 
 
 #include <iprt/assert.h>
+#include <iprt/log.h>
 #include <iprt/types.h>
 #include <iprt/string.h>
 #include <VBox/scsi.h>
