@@ -1,4 +1,4 @@
-/* $Id: VBoxManageHelp.cpp 108527 2016-07-06 14:28:06Z andreas.loeffler@oracle.com $ */
+/* $Id: VBoxManageHelp.cpp 108528 2016-07-06 14:48:32Z noreply@oracle.com $ */
 /** @file
  * VBoxManage - help and other message output.
  */
@@ -800,8 +800,9 @@ void printUsage(USAGECATEGORY fCategory, uint32_t fSubCategory, PRTSTREAM pStrm)
         }
         if (fLinux || fSolaris)
         {
+            RTStrmPrintf(pStrm, ""
 #ifdef VBOX_WITH_OSS
-            RTStrmPrintf(pStrm, "|oss"
+                                "|oss"
 #endif
 #ifdef VBOX_WITH_ALSA
                                 "|alsa"
