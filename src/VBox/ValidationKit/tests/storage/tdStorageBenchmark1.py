@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# $Id: tdStorageBenchmark1.py 108618 2016-07-08 10:06:17Z alexander.eichner@oracle.com $
+# $Id: tdStorageBenchmark1.py 108625 2016-07-08 11:42:08Z alexander.eichner@oracle.com $
 
 """
 VirtualBox Validation Kit - Storage benchmark.
@@ -27,7 +27,7 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 108618 $"
+__version__ = "$Revision: 108625 $"
 
 
 # Standard Python imports.
@@ -381,7 +381,7 @@ class tdStorageBenchmark(vbox.TestDriver):                                      
 
         # Linux VMs
         if 'tst-storage' in self.asTestVMs:
-            oVM = self.createTestVM('tst-storage', 1, '5.1/storage/tst-storage.vdi', sKind = 'ArchLinux_64', fIoApic = True, \
+            oVM = self.createTestVM('tst-storage', 1, '5.0/storage/tst-storage.vdi', sKind = 'ArchLinux_64', fIoApic = True, \
                                     eNic0AttachType = vboxcon.NetworkAttachmentType_NAT, \
                                     eNic0Type = vboxcon.NetworkAdapterType_Am79C973);
             if oVM is None:
