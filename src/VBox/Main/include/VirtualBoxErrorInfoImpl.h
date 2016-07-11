@@ -1,4 +1,4 @@
-/* $Id: VirtualBoxErrorInfoImpl.h 106960 2016-04-29 14:26:58Z klaus.espenlaub@oracle.com $ */
+/* $Id: VirtualBoxErrorInfoImpl.h 108661 2016-07-11 11:59:22Z noreply@oracle.com $ */
 /** @file
  * VirtualBoxErrorInfo COM class definition.
  */
@@ -108,6 +108,7 @@ public:
         : m_resultCode(S_OK),
           m_resultDetail(0)
     {}
+    virtual ~VirtualBoxErrorInfo() {}
 
     // public initializer/uninitializer for internal purposes only
     HRESULT init(HRESULT aResultCode,
