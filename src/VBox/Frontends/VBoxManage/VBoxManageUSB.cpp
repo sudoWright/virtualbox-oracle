@@ -1,4 +1,4 @@
-/* $Id: VBoxManageUSB.cpp 108661 2016-07-11 11:59:22Z noreply@oracle.com $ */
+/* $Id: VBoxManageUSB.cpp 108690 2016-07-12 09:39:30Z noreply@oracle.com $ */
 /** @file
  * VBoxManage - VirtualBox's command-line interface.
  */
@@ -44,7 +44,7 @@ public:
            m_cRefs(0)
     {
     }
-    virtual ~MyUSBDevice() {};
+    virtual ~MyUSBDevice() {}
 
     STDMETHOD_(ULONG, AddRef)(void)
     {
