@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# $Id: virtual_test_sheriff.py 108597 2016-07-07 15:16:25Z knut.osmundsen@oracle.com $
+# $Id: virtual_test_sheriff.py 108747 2016-07-14 07:40:34Z noreply@oracle.com $
 # pylint: disable=C0301
 
 """
@@ -33,7 +33,7 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 108597 $"
+__version__ = "$Revision: 108747 $"
 
 
 # Standard python imports
@@ -268,7 +268,7 @@ class VirtualTestSheriff(object): # pylint: disable=R0903
 
         if self.oConfig.sLogFile is not None and len(self.oConfig.sLogFile) > 0:
             self.oLogFile = open(self.oConfig.sLogFile, "a");
-            self.oLogFile.write('VirtualTestSheriff: $Revision: 108597 $ \n');
+            self.oLogFile.write('VirtualTestSheriff: $Revision: 108747 $ \n');
 
 
     def eprint(self, sText):
@@ -492,7 +492,7 @@ class VirtualTestSheriff(object): # pylint: disable=R0903
         for idTestResult, tReason in dReasonForResultId.items():
             oFailureReason = self.oFailureReasonLogic.cachedLookupByNameAndCategory(tReason[1], tReason[0]);
             if oFailureReason is not None:
-                sComment = 'Set by $Revision: 108597 $' # Handy for reverting later.
+                sComment = 'Set by $Revision: 108747 $' # Handy for reverting later.
                 if idTestResult in dCommentForResultId:
                     sComment += ': ' + dCommentForResultId[idTestResult];
 
@@ -907,7 +907,7 @@ class VirtualTestSheriff(object): # pylint: disable=R0903
                 oCaseFile.noteReasonForId(self.ktHarmless, oFailedResult.idTestResult);
 
             elif  sResultLog.find('** error: no action was specified') > 0 \
-               or sResultLog.find('(len(self._asXml, asText))'):
+               or sResultLog.find('(len(self._asXml, asText))') > 0:
                 oCaseFile.noteReasonForId(self.ktReason_Ignore_Buggy_Test_Driver, oFailedResult.idTestResult);
 
             else:
