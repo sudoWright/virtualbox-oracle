@@ -1,4 +1,4 @@
-/* $Id: FTM.cpp 103223 2015-10-08 20:59:48Z knut.osmundsen@oracle.com $ */
+/* $Id: FTM.cpp 108811 2016-07-16 13:37:33Z knut.osmundsen@oracle.com $ */
 /** @file
  * FTM - Fault Tolerance Manager
  */
@@ -41,8 +41,6 @@
 #include <iprt/socket.h>
 #include <iprt/semaphore.h>
 #include <iprt/asm.h>
-
-#include "internal/pgm.h"
 
 
 /*******************************************************************************

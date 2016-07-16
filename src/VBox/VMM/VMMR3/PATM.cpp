@@ -1,4 +1,4 @@
-/* $Id: PATM.cpp 103634 2015-10-23 21:16:36Z knut.osmundsen@oracle.com $ */
+/* $Id: PATM.cpp 108811 2016-07-16 13:37:33Z knut.osmundsen@oracle.com $ */
 /** @file
  * PATM - Dynamic Guest OS Patching Manager
  *
@@ -62,7 +62,6 @@
 #include <iprt/asm.h>
 #include <VBox/dis.h>
 #include <VBox/disopcode.h>
-#include "internal/pgm.h"
 
 #include <iprt/string.h>
 #include "PATMA.h"
