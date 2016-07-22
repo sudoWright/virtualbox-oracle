@@ -1,10 +1,10 @@
-/* $Id: PGMPhysRWTmpl.h 103219 2015-10-08 17:11:58Z knut.osmundsen@oracle.com $ */
+/* $Id: PGMPhysRWTmpl.h 109034 2016-07-22 18:29:06Z knut.osmundsen@oracle.com $ */
 /** @file
  * PGM - Page Manager and Monitor, Physical Memory Access Template.
  */
 
 /*
- * Copyright (C) 2006-2015 Oracle Corporation
+ * Copyright (C) 2006-2016 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

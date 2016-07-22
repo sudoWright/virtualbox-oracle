@@ -1,10 +1,10 @@
-/* $Id: DBGFInternal.h 108025 2016-06-13 08:51:05Z alexander.eichner@oracle.com $ */
+/* $Id: DBGFInternal.h 109034 2016-07-22 18:29:06Z knut.osmundsen@oracle.com $ */
 /** @file
  * DBGF - Internal header file.
  */
 
 /*
- * Copyright (C) 2006-2015 Oracle Corporation
+ * Copyright (C) 2006-2016 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

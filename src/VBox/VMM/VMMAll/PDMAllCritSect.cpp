@@ -1,10 +1,10 @@
-/* $Id: PDMAllCritSect.cpp 108862 2016-07-19 14:44:30Z knut.osmundsen@oracle.com $ */
+/* $Id: PDMAllCritSect.cpp 109034 2016-07-22 18:29:06Z knut.osmundsen@oracle.com $ */
 /** @file
  * PDM - Write-Only Critical Section, All Contexts.
  */
 
 /*
- * Copyright (C) 2006-2015 Oracle Corporation
+ * Copyright (C) 2006-2016 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;
