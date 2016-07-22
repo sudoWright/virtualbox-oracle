@@ -1,10 +1,10 @@
-/* $Id: debug.c 102722 2015-09-16 15:27:04Z noreply@oracle.com $ */
+/* $Id: debug.c 109069 2016-07-22 19:12:58Z knut.osmundsen@oracle.com $ */
 /** @file
  * NAT - debug helpers.
  */
 
 /*
- * Copyright (C) 2006-2015 Oracle Corporation
+ * Copyright (C) 2006-2016 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;
