@@ -1,4 +1,4 @@
-/* $Id: digest-builtin.cpp 109001 2016-07-22 14:51:49Z knut.osmundsen@oracle.com $ */
+/* $Id: digest-builtin.cpp 109017 2016-07-22 16:21:26Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Crypto - Cryptographic Hash / Message Digest API, Built-in providers.
  */
@@ -551,7 +551,7 @@ static PCRTCRDIGESTDESC const g_apDigestOps[] =
 /*
  * OpenSSL EVP.
  */
-    
+
 # if OPENSSL_VERSION_NUMBER >= 0x10100000
 /** @impl_interface_method{RTCRDIGESTDESC::pfnNew} */
 static DECLCALLBACK(void*) rtCrDigestOsslEvp_New(void)

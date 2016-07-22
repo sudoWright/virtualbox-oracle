@@ -1,4 +1,4 @@
-/* $Id: createtemp-generic.cpp 102486 2015-09-04 02:19:44Z knut.osmundsen@oracle.com $ */
+/* $Id: createtemp-generic.cpp 109017 2016-07-22 16:21:26Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - temporary file and directory creation, generic implementation.
  */
@@ -278,5 +278,4 @@ RTDECL(int) RTFileOpenTemp(PRTFILE phFile, char *pszFilename, size_t cbFilename,
     return rc;
 }
 RT_EXPORT_SYMBOL(RTFileOpenTemp);
-
 

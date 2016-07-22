@@ -1,4 +1,4 @@
-/* $Id: uri.cpp 103125 2015-10-07 00:05:47Z knut.osmundsen@oracle.com $ */
+/* $Id: uri.cpp 109017 2016-07-22 16:21:26Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Uniform Resource Identifier handling.
  */
@@ -1160,5 +1160,4 @@ RTDECL(char *) RTUriFilePath(const char *pszUri)
         return pszPath;
     return NULL;
 }
-
 

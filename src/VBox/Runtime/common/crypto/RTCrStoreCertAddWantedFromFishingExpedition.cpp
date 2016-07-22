@@ -1,4 +1,4 @@
-/* $Id: RTCrStoreCertAddWantedFromFishingExpedition.cpp 102605 2015-09-10 19:29:18Z knut.osmundsen@oracle.com $ */
+/* $Id: RTCrStoreCertAddWantedFromFishingExpedition.cpp 109017 2016-07-22 16:21:26Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Cryptographic (Certificate) Store, RTCrStoreCertAddFromFishingExpedition.
  */
@@ -243,5 +243,4 @@ RTDECL(int) RTCrStoreCertAddWantedFromFishingExpedition(RTCRSTORE hStore, uint32
     return rc;
 }
 RT_EXPORT_SYMBOL(RTCrStoreCertAddWantedFromFishingExpedition);
-
 
