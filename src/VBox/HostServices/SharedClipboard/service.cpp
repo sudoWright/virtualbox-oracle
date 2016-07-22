@@ -1,10 +1,10 @@
-/* $Id: service.cpp 97393 2014-12-31 14:59:44Z knut.osmundsen@oracle.com $ */
+/* $Id: service.cpp 109047 2016-07-22 18:41:09Z knut.osmundsen@oracle.com $ */
 /** @file
  * Shared Clipboard: Host service entry points.
  */
 
 /*
- * Copyright (C) 2006-2012 Oracle Corporation
+ * Copyright (C) 2006-2016 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;
