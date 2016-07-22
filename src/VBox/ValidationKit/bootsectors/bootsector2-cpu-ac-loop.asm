@@ -1,4 +1,4 @@
-; $Id: bootsector2-cpu-ac-loop.asm 104979 2016-01-12 11:15:13Z knut.osmundsen@oracle.com $
+; $Id: bootsector2-cpu-ac-loop.asm 109040 2016-07-22 18:35:33Z knut.osmundsen@oracle.com $
 ;; @file
 ; Bootsector test for debug exceptions.
 ;
@@ -7,7 +7,7 @@
 ;
 
 ;
-; Copyright (C) 2007-2015 Oracle Corporation
+; Copyright (C) 2007-2016 Oracle Corporation
 ;
 ; This file is part of VirtualBox Open Source Edition (OSE), as
 ; available from http://www.virtualbox.org. This file is free software;
