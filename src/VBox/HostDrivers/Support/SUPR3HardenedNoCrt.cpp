@@ -1,10 +1,10 @@
-/* $Id: SUPR3HardenedNoCrt.cpp 102121 2015-08-14 15:16:38Z knut.osmundsen@oracle.com $ */
+/* $Id: SUPR3HardenedNoCrt.cpp 109048 2016-07-22 18:41:49Z knut.osmundsen@oracle.com $ */
 /** @file
  * VirtualBox Support Library - Hardened main() no-crt routines.
  */
 
 /*
- * Copyright (C) 2006-2015 Oracle Corporation
+ * Copyright (C) 2006-2016 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

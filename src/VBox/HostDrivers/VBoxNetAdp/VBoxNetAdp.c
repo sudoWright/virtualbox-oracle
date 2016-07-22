@@ -1,10 +1,10 @@
-/* $Id: VBoxNetAdp.c 103610 2015-10-22 15:11:33Z noreply@oracle.com $ */
+/* $Id: VBoxNetAdp.c 109048 2016-07-22 18:41:49Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxNetAdp - Virtual Network Adapter Driver (Host), Common Code.
  */
 
 /*
- * Copyright (C) 2008-2015 Oracle Corporation
+ * Copyright (C) 2008-2016 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

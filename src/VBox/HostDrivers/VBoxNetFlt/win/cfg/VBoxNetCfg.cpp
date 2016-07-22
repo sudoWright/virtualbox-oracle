@@ -1,9 +1,9 @@
-/* $Id: VBoxNetCfg.cpp 109022 2016-07-22 18:00:27Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxNetCfg.cpp 109048 2016-07-22 18:41:49Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxNetCfg.cpp - Network Configuration API.
  */
 /*
- * Copyright (C) 2011-2015 Oracle Corporation
+ * Copyright (C) 2011-2016 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;
