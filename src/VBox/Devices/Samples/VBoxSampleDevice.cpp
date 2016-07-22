@@ -1,10 +1,10 @@
-/* $Id: VBoxSampleDevice.cpp 102121 2015-08-14 15:16:38Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxSampleDevice.cpp 109066 2016-07-22 19:10:00Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Sample Device.
  */
 
 /*
- * Copyright (C) 2009-2015 Oracle Corporation
+ * Copyright (C) 2009-2016 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;
