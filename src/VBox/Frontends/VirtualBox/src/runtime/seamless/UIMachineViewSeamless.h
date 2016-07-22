@@ -1,10 +1,10 @@
-/* $Id: UIMachineViewSeamless.h 105073 2016-01-18 17:04:54Z sergey.dubov@oracle.com $ */
+/* $Id: UIMachineViewSeamless.h 109051 2016-07-22 18:44:18Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIMachineViewSeamless class declaration.
  */
 
 /*
- * Copyright (C) 2010-2013 Oracle Corporation
+ * Copyright (C) 2010-2016 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

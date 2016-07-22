@@ -1,10 +1,10 @@
-/* $Id: DockIconPreview.h 104657 2015-12-11 14:51:51Z sergey.dubov@oracle.com $ */
+/* $Id: DockIconPreview.h 109051 2016-07-22 18:44:18Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIDockIconPreview class declaration.
  */
 
 /*
- * Copyright (C) 2010 Oracle Corporation
+ * Copyright (C) 2010-2016 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

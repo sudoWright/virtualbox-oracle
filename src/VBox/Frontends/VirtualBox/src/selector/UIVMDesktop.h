@@ -1,4 +1,4 @@
-/* $Id: UIVMDesktop.h 99740 2015-04-23 10:03:17Z noreply@oracle.com $ */
+/* $Id: UIVMDesktop.h 109051 2016-07-22 18:44:18Z knut.osmundsen@oracle.com $ */
 /** @file
  *
  * VBox frontends: Qt GUI ("VirtualBox"):
@@ -6,7 +6,7 @@
  */
 
 /*
- * Copyright (C) 2010-2013 Oracle Corporation
+ * Copyright (C) 2010-2016 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

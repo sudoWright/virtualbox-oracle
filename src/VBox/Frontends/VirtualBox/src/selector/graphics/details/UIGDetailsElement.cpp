@@ -1,10 +1,10 @@
-/* $Id: UIGDetailsElement.cpp 106079 2016-03-17 18:45:37Z sergey.dubov@oracle.com $ */
+/* $Id: UIGDetailsElement.cpp 109051 2016-07-22 18:44:18Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIGDetailsElement class implementation.
  */
 
 /*
- * Copyright (C) 2012 Oracle Corporation
+ * Copyright (C) 2012-2016 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

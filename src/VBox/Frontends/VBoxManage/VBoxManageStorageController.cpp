@@ -1,10 +1,10 @@
-/* $Id: VBoxManageStorageController.cpp 102334 2015-08-25 10:20:37Z alexander.eichner@oracle.com $ */
+/* $Id: VBoxManageStorageController.cpp 109051 2016-07-22 18:44:18Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxManage - The storage controller related commands.
  */
 
 /*
- * Copyright (C) 2006-2015 Oracle Corporation
+ * Copyright (C) 2006-2016 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

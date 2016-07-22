@@ -1,10 +1,10 @@
-/* $Id: UIShortcutPool.h 102727 2015-09-16 15:54:47Z sergey.dubov@oracle.com $ */
+/* $Id: UIShortcutPool.h 109051 2016-07-22 18:44:18Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIShortcutPool class declaration.
  */
 
 /*
- * Copyright (C) 2011-2013 Oracle Corporation
+ * Copyright (C) 2011-2016 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

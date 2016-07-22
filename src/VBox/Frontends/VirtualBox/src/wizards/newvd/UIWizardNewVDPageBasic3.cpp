@@ -1,10 +1,10 @@
-/* $Id: UIWizardNewVDPageBasic3.cpp 108620 2016-07-08 10:52:03Z sergey.dubov@oracle.com $ */
+/* $Id: UIWizardNewVDPageBasic3.cpp 109051 2016-07-22 18:44:18Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardNewVDPageBasic3 class implementation.
  */
 
 /*
- * Copyright (C) 2006-2012 Oracle Corporation
+ * Copyright (C) 2006-2016 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

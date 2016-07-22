@@ -1,10 +1,10 @@
-/* $Id: QIFileDialog.h 104331 2015-11-25 13:08:18Z sergey.dubov@oracle.com $ */
+/* $Id: QIFileDialog.h 109051 2016-07-22 18:44:18Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Qt GUI - Qt extensions: QIFileDialog class declarations.
  */
 
 /*
- * Copyright (C) 2009-2011 Oracle Corporation
+ * Copyright (C) 2009-2016 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;
