@@ -1,4 +1,4 @@
-/* $Id: APIC.cpp 108258 2016-06-23 12:20:44Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: APIC.cpp 109016 2016-07-22 16:20:18Z knut.osmundsen@oracle.com $ */
 /** @file
  * APIC - Advanced Programmable Interrupt Controller.
  */
@@ -31,6 +31,8 @@
 
 
 #ifndef VBOX_DEVICE_STRUCT_TESTCASE
+
+
 /*********************************************************************************************************************************
 *   Defined Constants And Macros                                                                                                 *
 *********************************************************************************************************************************/

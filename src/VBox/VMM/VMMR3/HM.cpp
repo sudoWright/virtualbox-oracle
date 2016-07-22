@@ -1,4 +1,4 @@
-/* $Id: HM.cpp 108168 2016-06-20 23:25:06Z knut.osmundsen@oracle.com $ */
+/* $Id: HM.cpp 109016 2016-07-22 16:20:18Z knut.osmundsen@oracle.com $ */
 /** @file
  * HM - Intel/AMD VM Hardware Support Manager.
  */
@@ -31,6 +31,7 @@
  *
  * @sa @ref grp_hm
  */
+
 
 /*********************************************************************************************************************************
 *   Header Files                                                                                                                 *
