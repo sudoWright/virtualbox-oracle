@@ -1,10 +1,10 @@
-/* $Id: VBoxDisplay.h 80892 2012-09-22 14:11:49Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: VBoxDisplay.h 109084 2016-07-22 19:18:03Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxDisplayService, Haiku Guest Additions, header.
  */
 
 /*
- * Copyright (C) 2012 Oracle Corporation
+ * Copyright (C) 2012-2016 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

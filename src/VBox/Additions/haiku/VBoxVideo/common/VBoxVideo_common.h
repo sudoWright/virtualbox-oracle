@@ -1,10 +1,10 @@
-/* $Id: VBoxVideo_common.h 80894 2012-09-22 16:53:18Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: VBoxVideo_common.h 109084 2016-07-22 19:18:03Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxVideo, Haiku Guest Additions, common header.
  */
 
 /*
- * Copyright (C) 2012 Oracle Corporation
+ * Copyright (C) 2012-2016 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;
