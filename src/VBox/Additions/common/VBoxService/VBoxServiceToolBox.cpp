@@ -1,4 +1,4 @@
-/* $Id: VBoxServiceToolBox.cpp 107363 2016-05-20 11:13:59Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxServiceToolBox.cpp 109026 2016-07-22 18:02:56Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxServiceToolbox - Internal (BusyBox-like) toolbox.
  */
@@ -48,6 +48,7 @@
 #include "VBoxServiceUtils.h"
 
 using namespace guestControl;
+
 
 /*********************************************************************************************************************************
 *   Defined Constants And Macros                                                                                                 *
