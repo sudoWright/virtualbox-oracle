@@ -1,10 +1,10 @@
-/* $Id: HostDnsService.cpp 107594 2016-05-30 15:19:06Z noreply@oracle.com $ */
+/* $Id: HostDnsService.cpp 109041 2016-07-22 18:36:43Z knut.osmundsen@oracle.com $ */
 /** @file
  * Base class for Host DNS & Co services.
  */
 
 /*
- * Copyright (C) 2013-2015 Oracle Corporation
+ * Copyright (C) 2013-2016 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

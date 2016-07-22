@@ -1,10 +1,10 @@
-/* $Id: NetworkServiceRunner.cpp 108908 2016-07-20 15:45:58Z noreply@oracle.com $ */
+/* $Id: NetworkServiceRunner.cpp 109041 2016-07-22 18:36:43Z knut.osmundsen@oracle.com $ */
 /** @file
  * VirtualBox Main - interface for VBox DHCP server
  */
 
 /*
- * Copyright (C) 2009-2012 Oracle Corporation
+ * Copyright (C) 2009-2016 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

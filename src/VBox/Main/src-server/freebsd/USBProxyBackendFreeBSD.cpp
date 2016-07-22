@@ -1,10 +1,10 @@
-/* $Id: USBProxyBackendFreeBSD.cpp 106933 2016-04-28 13:55:03Z alexander.eichner@oracle.com $ */
+/* $Id: USBProxyBackendFreeBSD.cpp 109041 2016-07-22 18:36:43Z knut.osmundsen@oracle.com $ */
 /** @file
  * VirtualBox USB Proxy Service, FreeBSD Specialization.
  */
 
 /*
- * Copyright (C) 2005-2012 Oracle Corporation
+ * Copyright (C) 2005-2016 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

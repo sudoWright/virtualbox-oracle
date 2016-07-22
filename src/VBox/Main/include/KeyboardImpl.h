@@ -1,10 +1,10 @@
-/* $Id: KeyboardImpl.h 96359 2014-10-02 07:47:58Z vitali.pelenjow@oracle.com $ */
+/* $Id: KeyboardImpl.h 109041 2016-07-22 18:36:43Z knut.osmundsen@oracle.com $ */
 /** @file
  * VirtualBox COM class implementation
  */
 
 /*
- * Copyright (C) 2006-2014 Oracle Corporation
+ * Copyright (C) 2006-2016 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

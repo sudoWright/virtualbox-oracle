@@ -1,10 +1,10 @@
-/* $Id: USBDeviceImpl.cpp 105074 2016-01-18 17:17:24Z alexander.eichner@oracle.com $ */
+/* $Id: USBDeviceImpl.cpp 109041 2016-07-22 18:36:43Z knut.osmundsen@oracle.com $ */
 /** @file
  * VirtualBox COM class implementation
  */
 
 /*
- * Copyright (C) 2006-2011 Oracle Corporation
+ * Copyright (C) 2006-2016 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

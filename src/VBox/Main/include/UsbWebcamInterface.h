@@ -1,10 +1,10 @@
-/* $Id: UsbWebcamInterface.h 89966 2013-10-15 15:12:06Z vitali.pelenjow@oracle.com $ */
+/* $Id: UsbWebcamInterface.h 109041 2016-07-22 18:36:43Z knut.osmundsen@oracle.com $ */
 /** @file
  * VirtualBox PDM Driver for Emulated USB Webcam
  */
 
 /*
- * Copyright (C) 2011-2013 Oracle Corporation
+ * Copyright (C) 2011-2016 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

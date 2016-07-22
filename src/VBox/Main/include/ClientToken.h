@@ -1,4 +1,4 @@
-/* $Id: ClientToken.h 88879 2013-09-11 14:08:36Z klaus.espenlaub@oracle.com $ */
+/* $Id: ClientToken.h 109041 2016-07-22 18:36:43Z knut.osmundsen@oracle.com $ */
 
 /** @file
  *
@@ -6,7 +6,7 @@
  */
 
 /*
- * Copyright (C) 2013 Oracle Corporation
+ * Copyright (C) 2013-2016 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;
