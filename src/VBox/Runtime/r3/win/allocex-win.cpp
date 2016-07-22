@@ -1,4 +1,4 @@
-/* $Id: allocex-win.cpp 102121 2015-08-14 15:16:38Z knut.osmundsen@oracle.com $ */
+/* $Id: allocex-win.cpp 109005 2016-07-22 15:16:45Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Memory Allocation, Extended Alloc Workers, Windows.
  */
@@ -115,6 +115,6 @@ DECLHIDDEN(int) rtMemAllocEx32BitReach(size_t cbAlloc, uint32_t fFlags, void **p
 DECLHIDDEN(void) rtMemFreeExYyBitReach(void *pv, size_t cb, uint32_t fFlags)
 {
     BOOL fRc = VirtualFree(pv, cb, MEM_RELEASE);
-    Assert(fRc);
+    Assert(fRc); NOREF(fRc);
 }
 
