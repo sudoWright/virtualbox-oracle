@@ -1,11 +1,11 @@
-/* $Id: pack_shaders.c 95662 2014-08-21 19:20:27Z noreply@oracle.com $ */
+/* $Id: pack_shaders.c 109050 2016-07-22 18:42:47Z knut.osmundsen@oracle.com $ */
 
 /** @file
  * VBox OpenGL DRI driver functions
  */
 
 /*
- * Copyright (C) 2009-2012 Oracle Corporation
+ * Copyright (C) 2009-2016 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

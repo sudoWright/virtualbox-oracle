@@ -1,10 +1,10 @@
-/* $Id: cr_compositor.h 97350 2014-12-21 16:13:18Z knut.osmundsen@oracle.com $ */
+/* $Id: cr_compositor.h 109050 2016-07-22 18:42:47Z knut.osmundsen@oracle.com $ */
 /** @file
  * Compositor API.
  */
 
 /*
- * Copyright (C) 2013-2014 Oracle Corporation
+ * Copyright (C) 2013-2016 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;
