@@ -1,10 +1,10 @@
-/* $Id: socket.h 103476 2015-10-16 14:51:40Z knut.osmundsen@oracle.com $ */
+/* $Id: socket.h 109033 2016-07-22 18:27:37Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Internal Header for RTSocket.
  */
 
 /*
- * Copyright (C) 2010-2015 Oracle Corporation
+ * Copyright (C) 2010-2016 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

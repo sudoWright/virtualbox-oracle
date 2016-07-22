@@ -1,4 +1,4 @@
-/* $Id: netaddrstr.cpp 102121 2015-08-14 15:16:38Z knut.osmundsen@oracle.com $ */
+/* $Id: netaddrstr.cpp 109033 2016-07-22 18:27:37Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Network Address String Handling.
  *
@@ -10,7 +10,7 @@
 /*
  * Contributed by Oliver Loch.
  *
- * Copyright (C) 2012-2015 Oracle Corporation
+ * Copyright (C) 2012-2016 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

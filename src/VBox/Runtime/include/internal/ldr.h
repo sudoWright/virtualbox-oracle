@@ -1,10 +1,10 @@
-/* $Id: ldr.h 104161 2015-11-18 00:28:21Z knut.osmundsen@oracle.com $ */
+/* $Id: ldr.h 109033 2016-07-22 18:27:37Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Loader Internals.
  */
 
 /*
- * Copyright (C) 2006-2015 Oracle Corporation
+ * Copyright (C) 2006-2016 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

@@ -1,10 +1,10 @@
-/* $Id: mp-r0drv-nt.cpp 106968 2016-04-29 20:49:59Z knut.osmundsen@oracle.com $ */
+/* $Id: mp-r0drv-nt.cpp 109033 2016-07-22 18:27:37Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Multiprocessor, Ring-0 Driver, NT.
  */
 
 /*
- * Copyright (C) 2008-2015 Oracle Corporation
+ * Copyright (C) 2008-2016 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;
