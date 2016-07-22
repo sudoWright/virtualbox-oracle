@@ -1,10 +1,10 @@
-/* $Id: preload.cpp 108331 2016-06-27 15:42:59Z noreply@oracle.com $ */
+/* $Id: preload.cpp 109096 2016-07-22 19:32:06Z knut.osmundsen@oracle.com $ */
 /** @file
  * bin2c - Binary 2 C Structure Converter.
  */
 
 /*
- * Copyright (C) 2006-2015 Oracle Corporation
+ * Copyright (C) 2006-2016 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;
@@ -147,7 +147,7 @@ int main(int argc, char **argv)
             if (   !strcmp(argv[i], "--version")
                 || !strcmp(argv[i], "-V"))
             {
-                printf("$Revision: 108331 $\n");
+                printf("$Revision: 109096 $\n");
                 return 0;
             }
             fprintf(stderr, "syntax error: unknown option '%s'\n", argv[i]);
