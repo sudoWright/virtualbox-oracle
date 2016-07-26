@@ -1,4 +1,4 @@
-/* $Id: store.cpp 109033 2016-07-22 18:27:37Z knut.osmundsen@oracle.com $ */
+/* $Id: store.cpp 109133 2016-07-26 14:43:03Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Cryptographic (Certificate) Store.
  */
@@ -322,6 +322,7 @@ RTDECL(int) RTCrStoreConvertToOpenSslCertStore(RTCRSTORE hStore, uint32_t fFlags
     PRTCRSTOREINT pThis = (PRTCRSTOREINT)hStore;
     AssertPtrReturn(pThis, VERR_INVALID_HANDLE);
     AssertReturn(pThis->u32Magic == RTCRSTOREINT_MAGIC, VERR_INVALID_HANDLE);
+    RT_NOREF_PV(fFlags);
 
     /*
      * Use the pfnCertFindAll method to add all certificates to the store we're returning.
@@ -375,6 +376,7 @@ RTDECL(int) RTCrStoreConvertToOpenSslCertStack(RTCRSTORE hStore, uint32_t fFlags
     PRTCRSTOREINT pThis = (PRTCRSTOREINT)hStore;
     AssertPtrReturn(pThis, VERR_INVALID_HANDLE);
     AssertReturn(pThis->u32Magic == RTCRSTOREINT_MAGIC, VERR_INVALID_HANDLE);
+    RT_NOREF_PV(fFlags);
 
     /*
      * Use the pfnCertFindAll method to add all certificates to the store we're returning.

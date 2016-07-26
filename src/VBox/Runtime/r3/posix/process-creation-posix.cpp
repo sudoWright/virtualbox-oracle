@@ -1,4 +1,4 @@
-/* $Id: process-creation-posix.cpp 109033 2016-07-22 18:27:37Z knut.osmundsen@oracle.com $ */
+/* $Id: process-creation-posix.cpp 109133 2016-07-26 14:43:03Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Process Creation, POSIX.
  */
@@ -313,6 +313,8 @@ static int rtProcPosixAdjustProfileEnvFromChild(RTENV hEnvToUse, uint32_t fFlags
         else
             rc = VERR_BUFFER_OVERFLOW;
     }
+#else
+    RT_NOREF_PV(hEnvToUse); RT_NOREF_PV(fFlags); RT_NOREF_PV(hEnv);
 #endif
     return rc;
 }
