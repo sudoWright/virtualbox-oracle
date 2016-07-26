@@ -1,4 +1,4 @@
-/* $Id: UIInformationView.cpp 105997 2016-03-14 14:50:57Z noreply@oracle.com $ */
+/* $Id: UIInformationView.cpp 109127 2016-07-26 11:46:43Z noreply@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIInformationView class implementation.
  */
@@ -38,6 +38,8 @@ UIInformationView::UIInformationView(QWidget *pParent)
     m_pTextEdit->setVisible(false);
     /* Set selection mode: */
     setSelectionMode(QAbstractItemView::ExtendedSelection);
+    /* Set scrolling mode to per pixel: */
+    setVerticalScrollMode(QAbstractItemView::ScrollPerPixel);
 }
 
 void UIInformationView::updateData(const QModelIndex &topLeft, const QModelIndex &bottomRight)
