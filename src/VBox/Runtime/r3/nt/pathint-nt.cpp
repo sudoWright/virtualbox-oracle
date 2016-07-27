@@ -1,4 +1,4 @@
-/* $Id: pathint-nt.cpp 109033 2016-07-22 18:27:37Z knut.osmundsen@oracle.com $ */
+/* $Id: pathint-nt.cpp 109153 2016-07-27 11:46:03Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Native NT, Internal Path stuff.
  */
@@ -393,6 +393,8 @@ static void rtNtPathFreeNative(struct _UNICODE_STRING *pNtName, PHANDLE phRootDi
 {
     RTUtf16Free(pNtName->Buffer);
     pNtName->Buffer = NULL;
+
+    RT_NOREF_PV(phRootDir); /* never returned by rtNtPathToNative */
 }
 
 
