@@ -1,4 +1,4 @@
-/* $Id: tstRTProcCreateEx.cpp 109033 2016-07-22 18:27:37Z knut.osmundsen@oracle.com $ */
+/* $Id: tstRTProcCreateEx.cpp 109161 2016-07-27 13:24:48Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT Testcase - RTProcCreateEx.
  */
@@ -45,7 +45,7 @@
 
 #ifdef RT_OS_WINDOWS
 # define SECURITY_WIN32
-# include <windows.h>
+# include <iprt/win/windows.h>
 # include <Security.h>
 #endif
 

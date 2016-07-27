@@ -1,4 +1,4 @@
-/* $Id: stream.cpp 109033 2016-07-22 18:27:37Z knut.osmundsen@oracle.com $ */
+/* $Id: stream.cpp 109161 2016-07-27 13:24:48Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - I/O Stream.
  */
@@ -58,7 +58,7 @@
 # include <fcntl.h>
 #endif
 #ifdef RT_OS_WINDOWS
-# include <Windows.h>
+# include <iprt/win/windows.h>
 #endif
 #ifndef RT_OS_WINDOWS
 # include <termios.h>

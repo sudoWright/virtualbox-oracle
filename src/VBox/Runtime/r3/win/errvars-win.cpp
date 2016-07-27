@@ -1,4 +1,4 @@
-/* $Id: errvars-win.cpp 109033 2016-07-22 18:27:37Z knut.osmundsen@oracle.com $ */
+/* $Id: errvars-win.cpp 109161 2016-07-27 13:24:48Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Save and Restore Error Variables, Windows Ring-3.
  */
@@ -28,7 +28,7 @@
 /*********************************************************************************************************************************
 *   Header Files                                                                                                                 *
 *********************************************************************************************************************************/
-#include <Winsock2.h>
+#include <iprt/win/winsock2.h>
 #include <errno.h>
 
 #include <iprt/err.h>

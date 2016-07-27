@@ -1,4 +1,4 @@
-/* $Id: tstTime-3.cpp 109033 2016-07-22 18:27:37Z knut.osmundsen@oracle.com $ */
+/* $Id: tstTime-3.cpp 109161 2016-07-27 13:24:48Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT Testcase - Simple RTTime test.
  */
@@ -29,7 +29,7 @@
 *   Header Files                                                                                                                 *
 *********************************************************************************************************************************/
 #ifdef RT_OS_WINDOWS
-# include <Windows.h>
+# include <iprt/win/windows.h>
 
 #else /* posix */
 # include <sys/time.h>

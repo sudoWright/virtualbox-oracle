@@ -1,4 +1,4 @@
-﻿/* $Id: RTNtDbgHelp.cpp 109033 2016-07-22 18:27:37Z knut.osmundsen@oracle.com $ */
+﻿/* $Id: RTNtDbgHelp.cpp 109161 2016-07-27 13:24:48Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - RTNtDbgHelp -  Tool for working/exploring DbgHelp.dll.
  */
@@ -28,7 +28,7 @@
 /*******************************************************************************
 *   Header Files                                                               *
 *******************************************************************************/
-#include <Windows.h>
+#include <iprt/win/windows.h>
 #include <Dbghelp.h>
 
 #include <iprt/alloca.h>
@@ -358,7 +358,7 @@ int main(int argc, char **argv)
 
 
             case 'V':
-                RTPrintf("$Revision: 109033 $");
+                RTPrintf("$Revision: 109161 $");
                 break;
 
             case 'h':
