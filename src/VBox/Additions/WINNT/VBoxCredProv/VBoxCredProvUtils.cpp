@@ -1,4 +1,4 @@
-/* $Id: VBoxCredProvUtils.cpp 109080 2016-07-22 19:17:25Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxCredProvUtils.cpp 109252 2016-07-29 12:52:10Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxCredProvUtils - Misc. utility functions for VBoxCredProv.
  */
@@ -19,7 +19,7 @@
 /*********************************************************************************************************************************
 *   Header Files                                                                                                                 *
 *********************************************************************************************************************************/
-#include <Windows.h>
+#include <iprt/win/windows.h>
 #include <iprt/string.h>
 #include <VBox/log.h>
 #include <VBox/VBoxGuestLib.h>

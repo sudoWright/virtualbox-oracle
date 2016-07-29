@@ -1,4 +1,4 @@
-/* $Id: VBoxNetBaseService.cpp 109037 2016-07-22 18:30:21Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxNetBaseService.cpp 109252 2016-07-29 12:52:10Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxNetBaseService - common services for VBoxNetDHCP and VBoxNetNAT.
  */
@@ -63,7 +63,7 @@
 #include "VBoxNetBaseService.h"
 
 #ifdef RT_OS_WINDOWS /* WinMain */
-# include <Windows.h>
+# include <iprt/win/windows.h>
 # include <stdlib.h>
 #endif
 

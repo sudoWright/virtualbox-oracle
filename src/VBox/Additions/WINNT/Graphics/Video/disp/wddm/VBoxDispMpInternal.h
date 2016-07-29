@@ -1,4 +1,4 @@
-/* $Id: VBoxDispMpInternal.h 109080 2016-07-22 19:17:25Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxDispMpInternal.h 109252 2016-07-29 12:52:10Z knut.osmundsen@oracle.com $ */
 
 /** @file
  * VBoxVideo Display external interface config
@@ -19,7 +19,7 @@
 #ifndef ___VBoxDispMpInternal_h__
 #define ___VBoxDispMpInternal_h__
 
-#include <windows.h>
+#include <iprt/win/windows.h>
 
 #if 0
 HRESULT vboxDispMpInternalInit();

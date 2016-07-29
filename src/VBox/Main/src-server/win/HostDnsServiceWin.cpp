@@ -1,4 +1,4 @@
-/* $Id: HostDnsServiceWin.cpp 109041 2016-07-22 18:36:43Z knut.osmundsen@oracle.com $ */
+/* $Id: HostDnsServiceWin.cpp 109252 2016-07-29 12:52:10Z knut.osmundsen@oracle.com $ */
 /** @file
  * Host DNS listener for Windows.
  */
@@ -31,7 +31,7 @@
 #include <iprt/err.h>
 #include <VBox/log.h>
 
-#include <Windows.h>
+#include <iprt/win/windows.h>
 #include <windns.h>
 #include <iptypes.h>
 #include <iphlpapi.h>

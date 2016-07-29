@@ -1,4 +1,4 @@
-/* $Id: VBoxCredProvFactory.h 109080 2016-07-22 19:17:25Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxCredProvFactory.h 109252 2016-07-29 12:52:10Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxCredentialProvFactory - The VirtualBox Credential Provider Factory.
  */
@@ -18,7 +18,7 @@
 #ifndef ___VBOX_CREDPROV_FACTORY_H___
 #define ___VBOX_CREDPROV_FACTORY_H___
 
-#include <Windows.h>
+#include <iprt/win/windows.h>
 
 class VBoxCredProvFactory : public IClassFactory
 {
