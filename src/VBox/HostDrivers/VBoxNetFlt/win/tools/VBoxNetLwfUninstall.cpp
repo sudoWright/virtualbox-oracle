@@ -1,4 +1,4 @@
-/* $Id: VBoxNetLwfUninstall.cpp 109048 2016-07-22 18:41:49Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxNetLwfUninstall.cpp 109261 2016-07-29 13:30:27Z knut.osmundsen@oracle.com $ */
 /** @file
  * NetLwfUninstall - VBoxNetLwf uninstaller command line tool
  */
@@ -96,5 +96,6 @@ static int VBoxNetLwfUninstall()
 
 int __cdecl main(int argc, char **argv)
 {
+    RT_NOREF2(argc, argv);
     return VBoxNetLwfUninstall();
 }
