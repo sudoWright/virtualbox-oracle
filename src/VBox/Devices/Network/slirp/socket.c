@@ -1,4 +1,4 @@
-/* $Id: socket.c 109069 2016-07-22 19:12:58Z knut.osmundsen@oracle.com $ */
+/* $Id: socket.c 109266 2016-07-29 13:56:04Z knut.osmundsen@oracle.com $ */
 /** @file
  * NAT - socket handling.
  */
@@ -32,7 +32,7 @@
 #endif
 #include <VBox/vmm/pdmdrv.h>
 #if defined (RT_OS_WINDOWS)
-#include <iphlpapi.h>
+#include <iprt/win/iphlpapi.h>
 #include <icmpapi.h>
 #endif
 
