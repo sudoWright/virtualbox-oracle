@@ -1,4 +1,4 @@
-/* $Id: VBoxDrvInst.cpp 109252 2016-07-29 12:52:10Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxDrvInst.cpp 109259 2016-07-29 13:25:48Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxDrvInst - Driver and service installation helper for Windows guests.
  */
@@ -26,7 +26,7 @@
 #include <VBox/version.h>
 
 #include <iprt/win/windows.h>
-#include <setupapi.h>
+#include <iprt/win/setupapi.h>
 #include <stdio.h>
 #include <tchar.h>
 
