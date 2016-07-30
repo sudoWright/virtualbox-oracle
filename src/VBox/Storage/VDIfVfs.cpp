@@ -1,4 +1,4 @@
-/* $Id: VDIfVfs.cpp 109038 2016-07-22 18:30:37Z knut.osmundsen@oracle.com $ */
+/* $Id: VDIfVfs.cpp 109303 2016-07-30 01:54:06Z knut.osmundsen@oracle.com $ */
 /** @file
  * Virtual Disk Image (VDI), I/O interface to IPRT VFS I/O stream glue.
  */
@@ -64,6 +64,7 @@ typedef VDIFVFSIOSFILE *PVDIFVFSIOSFILE;
 static DECLCALLBACK(int) vdIfVfsIos_Close(void *pvThis)
 {
     /* We don't close anything. */
+    RT_NOREF1(pvThis);
     return VINF_SUCCESS;
 }
 
