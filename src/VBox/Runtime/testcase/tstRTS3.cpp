@@ -1,4 +1,4 @@
-/* $Id: tstRTS3.cpp 109033 2016-07-22 18:27:37Z knut.osmundsen@oracle.com $ */
+/* $Id: tstRTS3.cpp 109298 2016-07-30 00:08:44Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT Testcase - Simple Storage Service (S3) Communication API
  */
@@ -59,7 +59,9 @@ static DECLCALLBACK(int) progress(unsigned uPercent, void *pvUser)
 {
 #ifdef TSTS3_SHOWPROGRESS
     RTTestIPrintf(RTTESTLVL_ALWAYS, " Progress for %s - %d%% done.\n", (char*)pvUser, (int)uPercent);
-#endif /* TSTS3_SHOWPROGRESS */
+#else
+    RT_NOREF2(uPercent, pvUser);
+#endif
     return VINF_SUCCESS;
 }
 
