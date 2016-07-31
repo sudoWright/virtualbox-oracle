@@ -1,4 +1,4 @@
-/* $Id: NetIf-win.cpp 109339 2016-07-30 23:04:42Z knut.osmundsen@oracle.com $ */
+/* $Id: NetIf-win.cpp 109367 2016-07-31 22:48:58Z knut.osmundsen@oracle.com $ */
 /** @file
  * Main - NetIfList, Windows implementation.
  */
@@ -58,7 +58,7 @@
 #define INITGUID
 #include <guiddef.h>
 #include <devguid.h>
-#include <objbase.h>
+#include <iprt/win/objbase.h>
 #include <iprt/win/setupapi.h>
 #include <shlobj.h>
 #include <cfgmgr32.h>

@@ -1,4 +1,4 @@
-/* $Id: com.cpp 109041 2016-07-22 18:36:43Z knut.osmundsen@oracle.com $ */
+/* $Id: com.cpp 109367 2016-07-31 22:48:58Z knut.osmundsen@oracle.com $ */
 /** @file
  * MS COM / XPCOM Abstraction Layer
  */
@@ -17,7 +17,7 @@
 
 #if !defined (VBOX_WITH_XPCOM)
 
-# include <objbase.h>
+# include <iprt/win/objbase.h>
 
 #else /* !defined (VBOX_WITH_XPCOM) */
 # include <stdlib.h>
