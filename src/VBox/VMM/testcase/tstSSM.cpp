@@ -1,4 +1,4 @@
-/* $Id: tstSSM.cpp 109034 2016-07-22 18:29:06Z knut.osmundsen@oracle.com $ */
+/* $Id: tstSSM.cpp 109363 2016-07-31 21:58:30Z knut.osmundsen@oracle.com $ */
 /** @file
  * Saved State Manager Testcase.
  */
@@ -702,6 +702,8 @@ static void destroyFakeVM(PVM pVM)
  */
 extern "C" DECLEXPORT(int) TrustedMain(int argc, char **argv, char **envp)
 {
+    RT_NOREF1(envp);
+
     /*
      * Init runtime and static data.
      */
