@@ -1,4 +1,4 @@
-/* $Id: service.cpp 109388 2016-08-01 09:44:15Z knut.osmundsen@oracle.com $ */
+/* $Id: service.cpp 109442 2016-08-01 21:24:06Z knut.osmundsen@oracle.com $ */
 /** @file
  * Guest Control Service: Controlling the guest.
  */
@@ -790,8 +790,8 @@ typedef struct ClientState
         return rc;
     }
 
-    int SendReply(const ClientConnection *pConnection,
-                        HostCommand      *pHostCmd)
+    int SendReply(ClientConnection const *pConnection,
+                  HostCommand            *pHostCmd)
     {
         AssertPtrReturn(pConnection, VERR_INVALID_POINTER);
         AssertPtrReturn(pHostCmd, VERR_INVALID_POINTER);
