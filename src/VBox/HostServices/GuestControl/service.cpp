@@ -1,4 +1,4 @@
-/* $Id: service.cpp 109387 2016-08-01 09:41:36Z knut.osmundsen@oracle.com $ */
+/* $Id: service.cpp 109388 2016-08-01 09:44:15Z knut.osmundsen@oracle.com $ */
 /** @file
  * Guest Control Service: Controlling the guest.
  */
@@ -82,7 +82,6 @@
 #include <string>
 #include <list>
 
-#include "gctrl.h"
 
 namespace guestControl {
 
