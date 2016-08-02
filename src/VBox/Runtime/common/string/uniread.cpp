@@ -1,4 +1,4 @@
-/* $Id: uniread.cpp 109033 2016-07-22 18:27:37Z knut.osmundsen@oracle.com $ */
+/* $Id: uniread.cpp 109459 2016-08-02 10:07:14Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Unicode Specification Reader.
  */
@@ -1023,10 +1023,11 @@ int PrintHeader(const char *argv0, const char *pszBaseDir)
     {
         memset(szBuf, 0, sizeof(szBuf));
 #ifdef _MSC_VER
-        _getcwd(szBuf, sizeof(szBuf));
+        if (!_getcwd(szBuf, sizeof(szBuf)))
 #else
-        getcwd(szBuf, sizeof(szBuf));
+        if (!getcwd(szBuf, sizeof(szBuf)))
 #endif
+            return RTEXITCODE_FAILURE;
         pszBaseDir = szBuf;
     }
 
