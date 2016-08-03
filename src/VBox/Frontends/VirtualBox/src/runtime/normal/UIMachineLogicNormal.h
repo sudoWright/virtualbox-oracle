@@ -1,4 +1,4 @@
-/* $Id: UIMachineLogicNormal.h 109051 2016-07-22 18:44:18Z knut.osmundsen@oracle.com $ */
+/* $Id: UIMachineLogicNormal.h 109516 2016-08-03 13:41:44Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIMachineLogicNormal class declaration.
  */
@@ -67,6 +67,9 @@ private slots:
     void sltHandleActionTriggerViewScreenToggle(int iIndex, bool fEnabled);
     /** Handles guest-screen resize requests. */
     void sltHandleActionTriggerViewScreenResize(int iIndex, const QSize &size);
+
+    /** Handles host-screen available-area change. */
+    virtual void sltHostScreenAvailableAreaChange() /* override */;
 
 private:
 
