@@ -1,4 +1,4 @@
-/* $Id: utils.c 109538 2016-08-03 17:37:54Z knut.osmundsen@oracle.com $ */
+/* $Id: utils.c 109552 2016-08-04 07:00:31Z knut.osmundsen@oracle.com $ */
 /** @file
  * DevVMWare/Shaderlib - Utility/Stub Functions & Data.
  */
@@ -18,7 +18,11 @@
 #include <iprt/err.h>
 #include <iprt/mem.h>
 #include <iprt/assert.h>
-#include <iprt/win/windows.h>
+#ifdef RT_OS_WINDOWS
+# include <iprt/win/windows.h>
+#else
+# include <windows.h>
+#endif
 #include "wined3d_private.h"
 
 
