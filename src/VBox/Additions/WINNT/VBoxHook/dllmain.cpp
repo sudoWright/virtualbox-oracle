@@ -1,4 +1,4 @@
-/* $Id: dllmain.cpp 109708 2016-08-06 15:19:54Z knut.osmundsen@oracle.com $ */
+/* $Id: dllmain.cpp 109711 2016-08-06 15:29:01Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxHook -- Global windows hook dll
  */
@@ -16,6 +16,7 @@
  */
 
 
+#include <iprt/cdefs.h>
 #include <iprt/win/windows.h>
 
 
