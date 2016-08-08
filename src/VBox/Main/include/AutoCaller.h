@@ -1,4 +1,4 @@
-/* $Id: AutoCaller.h 109209 2016-07-28 16:49:39Z knut.osmundsen@oracle.com $ */
+/* $Id: AutoCaller.h 109765 2016-08-08 11:12:33Z knut.osmundsen@oracle.com $ */
 /** @file
  *
  * VirtualBox object caller handling definitions
@@ -246,6 +246,8 @@ public:
         AutoCaller::init(aObj, true);
     }
 
+private:
+    DECLARE_CLS_COPY_CTOR_ASSIGN_NOOP(AutoLimitedCaller); /* Shuts up MSC warning C4625. */
 };
 
 /**
