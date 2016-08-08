@@ -1,4 +1,4 @@
-/* $Id: GuestCtrlImpl.cpp 106770 2016-04-21 13:00:20Z andreas.loeffler@oracle.com $ */
+/* $Id: GuestCtrlImpl.cpp 109801 2016-08-08 16:16:42Z knut.osmundsen@oracle.com $ */
 /** @file
  * VirtualBox COM class implementation: Guest
  */
@@ -583,7 +583,7 @@ HRESULT Guest::updateGuestAdditions(const com::Utf8Str &aSource, const std::vect
                     throw hr;
                 }
 
-                hr = pTask->createThread(NULL, RTTHREADTYPE_MAIN_HEAVY_WORKER);
+                hr = pTask->createThreadWithType(RTTHREADTYPE_MAIN_HEAVY_WORKER);
 
                 if (SUCCEEDED(hr))
                 {
