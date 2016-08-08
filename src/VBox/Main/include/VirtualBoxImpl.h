@@ -1,4 +1,4 @@
-/* $Id: VirtualBoxImpl.h 109500 2016-08-03 09:49:14Z klaus.espenlaub@oracle.com $ */
+/* $Id: VirtualBoxImpl.h 109806 2016-08-08 17:49:42Z knut.osmundsen@oracle.com $ */
 /** @file
  * VirtualBox COM class implementation
  */
@@ -384,7 +384,7 @@ private:
 
 #ifdef RT_OS_WINDOWS
     friend class StartSVCHelperClientData;
-    static DECLCALLBACK(int) SVCHelperClientThread(RTTHREAD aThread, void *aUser);
+    static void i_SVCHelperClientThreadTask(StartSVCHelperClientData *pTask);
 #endif
 
 };
