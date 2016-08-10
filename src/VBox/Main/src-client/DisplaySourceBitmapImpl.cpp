@@ -1,4 +1,4 @@
-/* $Id: DisplaySourceBitmapImpl.cpp 109041 2016-07-22 18:36:43Z knut.osmundsen@oracle.com $ */
+/* $Id: DisplaySourceBitmapImpl.cpp 109891 2016-08-10 12:37:42Z knut.osmundsen@oracle.com $ */
 /** @file
  *
  * Bitmap of a guest screen implementation.
@@ -117,6 +117,7 @@ HRESULT DisplaySourceBitmap::queryBitmapInfo(BYTE **aAddress,
 int DisplaySourceBitmap::initSourceBitmap(unsigned aScreenId,
                                           DISPLAYFBINFO *pFBInfo)
 {
+    RT_NOREF(aScreenId);
     int rc = VINF_SUCCESS;
 
     if (pFBInfo->w == 0 || pFBInfo->h == 0)
