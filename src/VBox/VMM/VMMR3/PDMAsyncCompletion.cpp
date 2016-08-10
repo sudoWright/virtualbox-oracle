@@ -1,4 +1,4 @@
-/* $Id: PDMAsyncCompletion.cpp 109227 2016-07-28 22:19:37Z knut.osmundsen@oracle.com $ */
+/* $Id: PDMAsyncCompletion.cpp 109884 2016-08-10 11:29:13Z alexander.eichner@oracle.com $ */
 /** @file
  * PDM Async I/O - Transport data asynchronous in R3 using EMT.
  */
@@ -755,7 +755,10 @@ bool pdmacEpIsTransferAllowed(PPDMASYNCCOMPLETIONENDPOINT pEndpoint, uint32_t cb
                     }
 
                     /* Update */
-                    ASMAtomicWriteU32(&pBwMgr->cbTransferAllowed, pBwMgr->cbTransferPerSecStart - cbTransfer);
+                    uint32_t cbTransferAllowedNew =   pBwMgr->cbTransferPerSecStart > cbTransfer
+                                                    ? pBwMgr->cbTransferPerSecStart - cbTransfer
+                                                    : 0;
+                    ASMAtomicWriteU32(&pBwMgr->cbTransferAllowed, cbTransferAllowedNew);
                     fAllowed = true;
                     LogFlow(("AIOMgr: Refreshed bandwidth\n"));
                 }
