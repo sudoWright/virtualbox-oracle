@@ -1,4 +1,4 @@
-/* $Id: tstVBoxAPI.cpp 109041 2016-07-22 18:36:43Z knut.osmundsen@oracle.com $ */
+/* $Id: tstVBoxAPI.cpp 109890 2016-08-10 12:23:00Z knut.osmundsen@oracle.com $ */
 /** @file
  * tstVBoxAPI - Checks VirtualBox API.
  */
@@ -353,7 +353,7 @@ static BOOL tstApiClean(IVirtualBox *pVBox)
 }
 
 
-int main(int argc, char **argv)
+int main()
 {
     /*
      * Initialization.
