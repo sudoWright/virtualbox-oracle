@@ -1,4 +1,4 @@
-/* $Id: UIRichTextString.cpp 109051 2016-07-22 18:44:18Z knut.osmundsen@oracle.com $ */
+/* $Id: UIRichTextString.cpp 109952 2016-08-11 10:43:41Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIRichTextString class implementation.
  */
@@ -227,6 +227,8 @@ QTextCharFormat UIRichTextString::textCharFormat(Type type)
             format.setFont(font);
             break;
         }
+
+        case Type_None: break; /* Shut up MSC */
     }
     return format;
 }
