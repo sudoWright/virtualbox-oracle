@@ -1,4 +1,4 @@
-/* $Id: VBoxDnDDataObject.cpp 109718 2016-08-06 16:00:44Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxDnDDataObject.cpp 109944 2016-08-11 00:02:38Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxDnDDataObject.cpp - IDataObject implementation.
  */
@@ -16,7 +16,7 @@
  */
 #include <iprt/win/windows.h>
 #include <new> /* For bad_alloc. */
-#include <shlobj.h>
+#include <iprt/win/shlobj.h>
 
 #include <iprt/path.h>
 #include <iprt/semaphore.h>

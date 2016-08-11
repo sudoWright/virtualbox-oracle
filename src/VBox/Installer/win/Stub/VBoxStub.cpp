@@ -1,4 +1,4 @@
-/* $Id: VBoxStub.cpp 109748 2016-08-07 13:38:41Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxStub.cpp 109944 2016-08-11 00:02:38Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxStub - VirtualBox's Windows installer stub.
  */
@@ -32,7 +32,7 @@
 #include <msiquery.h>
 #include <iprt/win/objbase.h>
 
-#include <shlobj.h>
+#include <iprt/win/shlobj.h>
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
