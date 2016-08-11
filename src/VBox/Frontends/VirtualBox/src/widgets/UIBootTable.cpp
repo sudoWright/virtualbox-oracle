@@ -1,4 +1,4 @@
-/* $Id: UIBootTable.cpp 109051 2016-07-22 18:44:18Z knut.osmundsen@oracle.com $ */
+/* $Id: UIBootTable.cpp 109956 2016-08-11 11:07:49Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIBootTable class implementation.
  */
@@ -40,6 +40,7 @@ UIBootTableItem::UIBootTableItem(KDeviceType type)
         case KDeviceType_DVD:      setIcon(UIIconPool::iconSet(":/cd_16px.png")); break;
         case KDeviceType_HardDisk: setIcon(UIIconPool::iconSet(":/hd_16px.png")); break;
         case KDeviceType_Network:  setIcon(UIIconPool::iconSet(":/nw_16px.png")); break;
+        default: break; /* Shut up, MSC! */
     }
     retranslateUi();
 }
