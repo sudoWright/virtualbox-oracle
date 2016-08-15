@@ -1,4 +1,4 @@
-/* $Id: IEMAllAImplC.cpp 109170 2016-07-27 15:46:22Z knut.osmundsen@oracle.com $ */
+/* $Id: IEMAllAImplC.cpp 110112 2016-08-15 10:00:20Z knut.osmundsen@oracle.com $ */
 /** @file
  * IEM - Instruction Implementation in Assembly, portable C variant.
  */
@@ -28,6 +28,7 @@
 /*********************************************************************************************************************************
 *   Global Variables                                                                                                             *
 *********************************************************************************************************************************/
+#ifdef RT_ARCH_X86
 /**
  * Parity calculation table.
  *
@@ -323,6 +324,7 @@ static uint8_t const g_afParity[256] =
     /* 0xfe = 11111110b */ 0,
     /* 0xff = 11111111b */ X86_EFL_PF,
 };
+#endif /* RT_ARCH_X86 */
 
 
 /**
