@@ -1,4 +1,4 @@
-/* $Id: VBoxMPVModes.cpp 109670 2016-08-05 20:12:05Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxMPVModes.cpp 110221 2016-08-16 14:05:58Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox WDDM Miniport driver
  */
@@ -621,7 +621,7 @@ NTSTATUS VBoxWddmChildStatusReportReconnected(PVBOXMP_DEVEXT pDevExt, uint32_t i
     }
     else
     {
-        /* @todo: try flushing.. */
+        /** @todo try flushing.. */
         WARN(("vboxVdmaCBufDrCreate returned NULL"));
         Status = STATUS_INSUFFICIENT_RESOURCES;
     }

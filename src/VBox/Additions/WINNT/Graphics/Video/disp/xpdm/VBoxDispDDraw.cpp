@@ -1,4 +1,4 @@
-/* $Id: VBoxDispDDraw.cpp 109671 2016-08-05 20:19:24Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxDispDDraw.cpp 110221 2016-08-16 14:05:58Z knut.osmundsen@oracle.com $ */
 
 /** @file
  * VBox XPDM Display driver, DirectDraw callbacks
@@ -194,7 +194,7 @@ DWORD APIENTRY VBoxDispDDCreateSurface(PDD_CREATESURFACEDATA lpCreateSurface)
                     lpCreateSurface->lpDDSurfaceDesc->dwFlags |= DDSD_PITCH;
 
 
-                    /*@todo: it's probably a memory leak, because DDDestroySurface wouldn't be called for
+                    /** @todo it's probably a memory leak, because DDDestroySurface wouldn't be called for
                      *       primary surfaces.
                      */
                     pSurf->lpGbl->dwReserved1 = (ULONG_PTR)pDesc;
