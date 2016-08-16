@@ -1,4 +1,4 @@
-/* $Id: NetworkAdapterImpl.cpp 108908 2016-07-20 15:45:58Z noreply@oracle.com $ */
+/* $Id: NetworkAdapterImpl.cpp 110218 2016-08-16 14:04:28Z knut.osmundsen@oracle.com $ */
 /** @file
  * Implementation of INetworkAdapter in VBoxSVC.
  */
@@ -1295,7 +1295,7 @@ HRESULT NetworkAdapter::setBandwidthGroup(const ComPtr<IBandwidthGroup> &aBandwi
         mParent->i_setModified(Machine::IsModified_NetworkAdapters);
         mlock.release();
 
-        /* TODO: changeAdapter=???. */
+        /** @todo changeAdapter=???. */
         mParent->i_onNetworkAdapterChange(this, FALSE);
     }
 
