@@ -1,4 +1,4 @@
-/* $Id: VBoxModBallooning.cpp 109927 2016-08-10 16:00:33Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxModBallooning.cpp 110222 2016-08-16 14:06:54Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxModBallooning - Module for handling the automatic ballooning of VMs.
  */
@@ -397,7 +397,7 @@ int balloonMachineSetup(const Bstr& strUuid)
                                              ComSafeArrayAsOutParam(metricAffected)));
 #endif
         if (FAILED(rc))
-            vrc = VERR_COM_IPRT_ERROR; /* @todo Find better rc! */
+            vrc = VERR_COM_IPRT_ERROR; /** @todo Find better rc! */
 
     } while (0);
 
