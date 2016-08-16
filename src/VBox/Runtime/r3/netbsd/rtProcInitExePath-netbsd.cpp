@@ -1,4 +1,4 @@
-/* $Id: rtProcInitExePath-netbsd.cpp 110204 2016-08-16 12:55:14Z knut.osmundsen@oracle.com $ */
+/* $Id: rtProcInitExePath-netbsd.cpp 110209 2016-08-16 13:09:11Z noreply@oracle.com $ */
 /** @file
  * IPRT - rtProcInitName, NetBSD.
  */
