@@ -1,4 +1,4 @@
-/* $Id: DevE1000.cpp 110217 2016-08-16 14:04:03Z knut.osmundsen@oracle.com $ */
+/* $Id: DevE1000.cpp 110353 2016-08-24 19:31:52Z aleksey.ilyushin@oracle.com $ */
 /** @file
  * DevE1000 - Intel 82540EM Ethernet Controller Emulation.
  *
@@ -2900,8 +2900,6 @@ static int e1kRegReadICR(PE1KSTATE pThis, uint32_t offset, uint32_t index, uint3
     rc = e1kRegReadDefault(pThis, offset, index, &value);
     if (RT_SUCCESS(rc))
     {
-        /* Do not return masked bits. */
-        value &= IMS;
         if (value)
         {
             /*
