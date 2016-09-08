@@ -1,4 +1,4 @@
-/* $Id: UIGDetailsItem.cpp 110508 2016-09-05 16:52:40Z sergey.dubov@oracle.com $ */
+/* $Id: UIGDetailsItem.cpp 110576 2016-09-08 13:14:26Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIGDetailsItem class definition.
  */
@@ -150,12 +150,9 @@ public:
         /* Make sure item still alive: */
         AssertPtrReturn(item(), QString());
 
-        switch (enmTextRole)
-        {
-            case QAccessible::Name:        return item()->name();
-            case QAccessible::Description: return item()->description();
-            default: break;
-        }
+        /* Return the description: */
+        if (enmTextRole == QAccessible::Description)
+            return item()->description();
 
         /* Null-string by default: */
         return QString();
