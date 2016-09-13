@@ -1,4 +1,4 @@
-/* $Id: QED.cpp 110627 2016-09-12 13:54:35Z alexander.eichner@oracle.com $ */
+/* $Id: QED.cpp 110646 2016-09-13 11:33:47Z alexander.eichner@oracle.com $ */
 /** @file
  * QED - QED Disk image.
  */
@@ -1592,7 +1592,7 @@ static DECLCALLBACK(int) qedCreate(const char *pszFilename, uint64_t cbSize,
                 *ppBackendData = pImage;
         }
 
-        if RT_FAILURE(rc)
+        if (RT_FAILURE(rc))
             RTMemFree(pImage);
     }
     else
