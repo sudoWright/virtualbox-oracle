@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# $Id: wuihlpform.py 109040 2016-07-22 18:35:33Z knut.osmundsen@oracle.com $
+# $Id: wuihlpform.py 110689 2016-09-15 08:04:50Z noreply@oracle.com $
 
 """
 Test Manager Web-UI - Form Helpers.
@@ -26,7 +26,7 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 109040 $"
+__version__ = "$Revision: 110689 $"
 
 # Standard python imports.
 import copy;
@@ -886,7 +886,7 @@ class WuiHlpForm(object):
                   u' <thead>\n'
                   u'  <tr>\n'
                   u'    <th rowspan="2"></th>\n'
-                  u'    <th rowspan="2">Schedulding Grooup</th>\n'
+                  u'    <th rowspan="2">Schedulding Group</th>\n'
                   u'    <th rowspan="2">Priority [0..31]</th>\n'
                   u'  </tr>\n'
                   u' </thead>\n'
