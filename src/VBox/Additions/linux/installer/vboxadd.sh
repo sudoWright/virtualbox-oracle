@@ -1,6 +1,6 @@
 #! /bin/sh
 #
-# Linux Additions kernel module init script ($Revision: 110762 $)
+# Linux Additions kernel module init script ($Revision: 111169 $)
 #
 
 #
@@ -413,7 +413,6 @@ EOF
 # setup_script
 setup()
 {
-    rm -f $LOG
     if test -r $config; then
       . $config
     else
