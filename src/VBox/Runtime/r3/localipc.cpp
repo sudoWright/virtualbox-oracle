@@ -1,4 +1,4 @@
-/* $Id: localipc.cpp 111309 2016-10-17 09:42:49Z knut.osmundsen@oracle.com $ */
+/* $Id: localipc.cpp 111310 2016-10-17 09:42:58Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Implements RTLocalIpcMakeNameUniqueUser
  */
@@ -83,3 +83,4 @@ RTDECL(int) RTLocalIpcMakeNameUniqueUser(const char *pszPrefix, const char *pszU
     *pcbDst = cbRes;
     return VINF_SUCCESS;
 }
+
