@@ -1,4 +1,4 @@
-/* $Id: VBoxSnapshotDetailsDlg.cpp 109051 2016-07-22 18:44:18Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxSnapshotDetailsDlg.cpp 111428 2016-10-20 14:43:06Z noreply@oracle.com $ */
 /** @file
  * VBox Qt GUI - VBoxSnapshotDetailsDlg class implementation.
  */
@@ -193,7 +193,7 @@ VBoxScreenshotViewer::VBoxScreenshotViewer (QWidget *aParent, const QPixmap &aSc
 
     QRect geo (QPoint (0, 0), initSize);
     geo.moveCenter (parentWidget()->geometry().center());
-    setGeometry (geo);
+    VBoxGlobal::setTopLevelGeometry(this, geo);
 
     retranslateUi();
 }
