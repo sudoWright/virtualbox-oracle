@@ -1,6 +1,6 @@
-/* $Id: DevIchHdaCommon.h 110140 2016-08-15 15:49:05Z noreply@oracle.com $ */
+/* $Id: DevHDACommon.h 111450 2016-10-21 11:29:03Z michal.necasek@oracle.com $ */
 /** @file
- * DevIchHdaCommon.h - Shared defines / functions between controller and codec.
+ * DevHDACommon.h - Shared defines / functions between HDA controller and codec.
  */
 
 /*

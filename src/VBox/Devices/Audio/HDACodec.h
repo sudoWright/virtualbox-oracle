@@ -1,6 +1,6 @@
-/* $Id: DevIchHdaCodec.h 107165 2016-05-12 13:12:20Z andreas.loeffler@oracle.com $ */
+/* $Id: HDACodec.h 111450 2016-10-21 11:29:03Z michal.necasek@oracle.com $ */
 /** @file
- * DevIchHdaCodec - VBox ICH Intel HD Audio Codec.
+ * HDACodec - VBox HD Audio Codec.
  */
 
 /*
