@@ -1,4 +1,4 @@
-/* $Id: TestExecServiceTcp.cpp 109246 2016-07-29 11:04:35Z knut.osmundsen@oracle.com $ */
+/* $Id: TestExecServiceTcp.cpp 111471 2016-10-22 16:36:39Z alexander.eichner@oracle.com $ */
 /** @file
  * TestExecServ - Basic Remote Execution Service, TCP/IP Transport Layer.
  */
@@ -346,7 +346,7 @@ static int txsTcpConnect(void)
 }
 
 /**
- * @interface_method_impl{TXSTRANSPORT,txsTcpNotifyReboot}
+ * @interface_method_impl{TXSTRANSPORT,pfnNotifyReboot}
  */
 static DECLCALLBACK(void) txsTcpNotifyReboot(void)
 {
