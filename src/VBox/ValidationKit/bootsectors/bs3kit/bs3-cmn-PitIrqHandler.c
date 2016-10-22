@@ -1,6 +1,6 @@
-/* $Id: bs3-cmn-PitIrqHandler.c 109027 2016-07-22 18:04:30Z knut.osmundsen@oracle.com $ */
+/* $Id: bs3-cmn-PitIrqHandler.c 111472 2016-10-22 17:25:58Z alexander.eichner@oracle.com $ */
 /** @file
- * BS3Kit - The PIT IRQ Handler and associated data..
+ * BS3Kit - The PIT IRQ Handler and associated data.
  */
 
 /*
