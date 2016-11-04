@@ -1,4 +1,4 @@
-/* $Id: DrvAudio.h 111425 2016-10-20 14:23:29Z andreas.loeffler@oracle.com $ */
+/* $Id: DrvAudio.h 111756 2016-11-04 12:38:20Z andreas.loeffler@oracle.com $ */
 /** @file
  * Intermediate audio driver header.
  */
@@ -81,10 +81,18 @@ typedef struct DRVAUDIOSTATS
 {
     STAMCOUNTER TotalStreamsActive;
     STAMCOUNTER TotalStreamsCreated;
+    STAMCOUNTER TotalSamplesRead;
+    STAMCOUNTER TotalSamplesWritten;
+    STAMCOUNTER TotalSamplesMixed;
+    STAMCOUNTER TotalSamplesLost;
     STAMCOUNTER TotalSamplesPlayed;
     STAMCOUNTER TotalSamplesCaptured;
     STAMCOUNTER TotalBytesRead;
     STAMCOUNTER TotalBytesWritten;
+    /** How much delay (in ms) for input processing. */
+    STAMPROFILEADV DelayIn;
+    /** How much delay (in ms) for output processing. */
+    STAMPROFILEADV DelayOut;
 } DRVAUDIOSTATS, *PDRVAUDIOSTATS;
 #endif
 
