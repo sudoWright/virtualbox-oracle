@@ -1,4 +1,4 @@
-/* $Id: UIDesktopWidgetWatchdog.cpp 111839 2016-11-09 17:55:45Z sergey.dubov@oracle.com $ */
+/* $Id: UIDesktopWidgetWatchdog.cpp 111843 2016-11-09 18:30:50Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIDesktopWidgetWatchdog class implementation.
  */
@@ -34,6 +34,7 @@
 
 /* Other VBox includes: */
 # include <iprt/assert.h>
+# include <VBox/log.h>
 
 #endif /* !VBOX_WITH_PRECOMPILED_HEADERS */
 
