@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# $Id: setup.sh 107465 2016-05-24 20:08:17Z noreply@oracle.com $
+# $Id: setup.sh 111934 2016-11-15 13:40:34Z knut.osmundsen@oracle.com $
 ## @file
 # VirtualBox Validation Kit - TestBoxScript Service Setup on Unixy platforms.
 #
@@ -215,7 +215,8 @@ check_testboxscript_install() {
     chmod a+x \
         "${TESTBOXSCRIPT_DIR}/testboxscript/testboxscript.py" \
         "${TESTBOXSCRIPT_DIR}/testboxscript/testboxscript_real.py" \
-        "${TESTBOXSCRIPT_DIR}/${HOST_OS}/${HOST_ARCH}/TestBoxHelper"
+        "${TESTBOXSCRIPT_DIR}/${HOST_OS}/${HOST_ARCH}/TestBoxHelper" \
+        "${TESTBOXSCRIPT_DIR}/linux/testboxscript-service.sh"
 
 
     # Check that the scripts work.
@@ -408,7 +409,7 @@ do
             exit 0;
             ;;
         -V|--version)
-            echo '$Revision: 107465 $'
+            echo '$Revision: 111934 $'
             exit 0;
             ;;
 
