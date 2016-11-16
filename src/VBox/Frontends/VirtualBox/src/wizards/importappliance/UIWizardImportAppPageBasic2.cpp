@@ -1,4 +1,4 @@
-/* $Id: UIWizardImportAppPageBasic2.cpp 108799 2016-07-15 14:15:16Z sergey.dubov@oracle.com $ */
+/* $Id: UIWizardImportAppPageBasic2.cpp 111954 2016-11-16 14:22:05Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardImportAppPageBasic2 class implementation.
  */
@@ -24,6 +24,7 @@
 # include <QTextBrowser>
 # include <QPushButton>
 # include <QPointer>
+# include <QLabel>
 
 /* Local includes: */
 # include "UIWizardImportAppPageBasic2.h"
