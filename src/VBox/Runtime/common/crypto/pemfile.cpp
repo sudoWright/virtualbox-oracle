@@ -1,4 +1,4 @@
-/* $Id: pemfile.cpp 109133 2016-07-26 14:43:03Z knut.osmundsen@oracle.com $ */
+/* $Id: pemfile.cpp 111995 2016-11-18 15:33:39Z noreply@oracle.com $ */
 /** @file
  * IPRT - Crypto - PEM file reader / writer.
  */
@@ -324,6 +324,7 @@ RTDECL(int) RTCrPemFreeSections(PCRTCRPEMSECTION pSectionHead)
             pFree->pszPreamble = NULL;
             pFree->cchPreamble = 0;
         }
+        RTMemFree(pFree);
     }
     return VINF_SUCCESS;
 }
