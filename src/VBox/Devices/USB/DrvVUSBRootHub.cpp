@@ -1,4 +1,4 @@
-/* $Id: DrvVUSBRootHub.cpp 111319 2016-10-17 11:34:36Z alexander.eichner@oracle.com $ */
+/* $Id: DrvVUSBRootHub.cpp 112111 2016-11-30 10:59:48Z noreply@oracle.com $ */
 /** @file
  * Virtual USB - Root Hub Driver.
  */
@@ -819,7 +819,6 @@ static DECLCALLBACK(int) vusbRhCancelAllUrbsWorker(PVUSBDEV pDev)
      * moment.
      */
     PVUSBURBVUSB pVUsbUrb, pVUsbUrbNext;
-
     RTListForEachSafe(&pDev->LstAsyncUrbs, pVUsbUrb, pVUsbUrbNext, VUSBURBVUSBINT, NdLst)
     {
         PVUSBURB pUrb = pVUsbUrb->pUrb;
@@ -860,7 +859,6 @@ static DECLCALLBACK(int) vusbRhAbortEpWorker(PVUSBDEV pDev, int EndPt, VUSBDIREC
      * Iterate the URBs, find ones corresponding to given EP, and cancel them.
      */
     PVUSBURBVUSB pVUsbUrb, pVUsbUrbNext;
-
     RTListForEachSafe(&pDev->LstAsyncUrbs, pVUsbUrb, pVUsbUrbNext, VUSBURBVUSBINT, NdLst)
     {
         PVUSBURB pUrb = pVUsbUrb->pUrb;
