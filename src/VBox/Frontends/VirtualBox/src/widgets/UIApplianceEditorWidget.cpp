@@ -1,4 +1,4 @@
-/* $Id: UIApplianceEditorWidget.cpp 112161 2016-12-06 17:02:35Z sergey.dubov@oracle.com $ */
+/* $Id: UIApplianceEditorWidget.cpp 112162 2016-12-06 17:09:32Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIApplianceEditorWidget class implementation.
  */
@@ -1434,6 +1434,4 @@ void UIApplianceEditorWidget::initSystemSettings()
         m_maxGuestCPUCount   = sp.GetMaxGuestCPUCount();
     }
 }
-
-#include "UIApplianceEditorWidget.moc"
 
