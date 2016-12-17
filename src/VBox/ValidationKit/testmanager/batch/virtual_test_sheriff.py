@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# $Id: virtual_test_sheriff.py 112356 2016-12-17 02:39:38Z knut.osmundsen@oracle.com $
+# $Id: virtual_test_sheriff.py 112357 2016-12-17 02:40:08Z knut.osmundsen@oracle.com $
 # pylint: disable=C0301
 
 """
@@ -33,7 +33,7 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 112356 $"
+__version__ = "$Revision: 112357 $"
 
 
 # Standard python imports
@@ -293,7 +293,7 @@ class VirtualTestSheriff(object): # pylint: disable=R0903
 
         if self.oConfig.sLogFile is not None and len(self.oConfig.sLogFile) > 0:
             self.oLogFile = open(self.oConfig.sLogFile, "a");
-            self.oLogFile.write('VirtualTestSheriff: $Revision: 112356 $ \n');
+            self.oLogFile.write('VirtualTestSheriff: $Revision: 112357 $ \n');
 
 
     def eprint(self, sText):
@@ -520,7 +520,7 @@ class VirtualTestSheriff(object): # pylint: disable=R0903
         for idTestResult, tReason in dReasonForResultId.items():
             oFailureReason = self.oFailureReasonLogic.cachedLookupByNameAndCategory(tReason[1], tReason[0]);
             if oFailureReason is not None:
-                sComment = 'Set by $Revision: 112356 $' # Handy for reverting later.
+                sComment = 'Set by $Revision: 112357 $' # Handy for reverting later.
                 if idTestResult in dCommentForResultId:
                     sComment += ': ' + dCommentForResultId[idTestResult];
 
@@ -588,7 +588,7 @@ class VirtualTestSheriff(object): # pylint: disable=R0903
         Returns The text following the needle up to the end of the line.
         Returns None if not found.
         """
-        if sHayStack is None:
+        if sHaystack is None:
             return None;
         off = sHaystack.find(sNeedle);
         if off < 0:
