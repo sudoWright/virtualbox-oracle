@@ -1,4 +1,4 @@
-/* $Id: Debug.cpp 109628 2016-08-04 22:47:52Z knut.osmundsen@oracle.com $ */
+/* $Id: Debug.cpp 112577 2017-01-03 11:52:07Z alexander.eichner@oracle.com $ */
 /** @file
  * VBox storage devices: debug helpers
  */
@@ -21,7 +21,7 @@
 #include <iprt/types.h>
 #include <iprt/string.h>
 #include <VBox/scsi.h>
-#include "ide.h"
+#include <VBox/ata.h>
 
 #ifdef LOG_ENABLED
 
