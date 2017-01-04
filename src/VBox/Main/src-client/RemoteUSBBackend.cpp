@@ -1,4 +1,4 @@
-/* $Id: RemoteUSBBackend.cpp 110218 2016-08-16 14:04:28Z knut.osmundsen@oracle.com $ */
+/* $Id: RemoteUSBBackend.cpp 112628 2017-01-04 17:34:28Z noreply@oracle.com $ */
 /** @file
  * VirtualBox Remote USB backend
  */
@@ -63,7 +63,7 @@
  * will not affect the timeout, so it is ok.
  *
  *
- * @subsection sub_vrdb_usb_dad  Device attaching/detaching
+ * @section sub_vrdb_usb_dad  Device attaching/detaching
  *
  * Devices are attached when client is connected or when a new device is connected to client.
  * Devices are detached when client is disconnected (all devices) or a device is disconnected
