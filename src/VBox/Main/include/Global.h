@@ -1,4 +1,4 @@
-/* $Id: Global.h 110077 2016-08-14 00:40:45Z knut.osmundsen@oracle.com $ */
+/* $Id: Global.h 112623 2017-01-04 17:10:35Z noreply@oracle.com $ */
 /** @file
  * VirtualBox COM API - Global Declarations and Definitions.
  */
@@ -121,7 +121,7 @@ public:
 
     /**
      * Shortcut to <tt>IsOnline(aState) || IsTransient(aState)</tt>. When it returns
-     * @false, the VM is turned off (no VM process) and not busy with
+     * @c false, the VM is turned off (no VM process) and not busy with
      * another exclusive operation.
      */
     static bool IsOnlineOrTransient(MachineState_T aState)
