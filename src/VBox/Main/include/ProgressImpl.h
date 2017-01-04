@@ -1,4 +1,4 @@
-/* $Id: ProgressImpl.h 109765 2016-08-08 11:12:33Z knut.osmundsen@oracle.com $ */
+/* $Id: ProgressImpl.h 112605 2017-01-04 12:08:18Z noreply@oracle.com $ */
 /** @file
  *
  * VirtualBox COM class implementation
@@ -78,7 +78,7 @@ public:
      * @param aDescription
      * @param aCancelable
      * @param cOperations
-     * @param bstrFirstOperationDescription
+     * @param aFirstOperationDescription
      * @return
      */
     HRESULT init(
