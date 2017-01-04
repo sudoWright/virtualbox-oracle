@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# $Id: wuimain.py 112593 2017-01-04 02:04:12Z knut.osmundsen@oracle.com $
+# $Id: wuimain.py 112594 2017-01-04 02:25:27Z knut.osmundsen@oracle.com $
 
 """
 Test Manager Core - WUI - The Main page.
@@ -26,7 +26,7 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 112593 $"
+__version__ = "$Revision: 112594 $"
 
 # Standard Python imports.
 
@@ -984,6 +984,7 @@ class WuiMain(WuiDispatcherBase):
 
         sHtml += u' </dl>\n';
         sHtml += u' <input type="submit" value="Apply"/>\n';
+        sHtml += u' <input type="reset" value="Reset"/>\n';
         sHtml += u'</div>\n';
         return sHtml;
 
