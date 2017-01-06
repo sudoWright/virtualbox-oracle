@@ -1,4 +1,4 @@
-/* $Id: ConsoleImpl2.cpp 112665 2017-01-05 17:26:48Z andreas.loeffler@oracle.com $ */
+/* $Id: ConsoleImpl2.cpp 112675 2017-01-06 09:58:18Z andreas.loeffler@oracle.com $ */
 /** @file
  * VBox Console COM Class implementation - VM Configuration Bits.
  *
@@ -2932,6 +2932,8 @@ int Console::i_configConstructorInner(PUVM pUVM, PVM pVM, AutoWriteLock *pAlock)
 #endif
                 default: AssertFailedBreak();
             }
+
+            /** @todo Implement a prioritizing feature here, e.g. which driver to insert in which order? */
 
 #ifdef VBOX_WITH_VRDE_AUDIO
             /*
