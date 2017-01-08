@@ -1,4 +1,4 @@
-/* $Id: VBoxMPIOCTL.cpp 112542 2017-01-01 10:53:29Z noreply@oracle.com $ */
+/* $Id: VBoxMPIOCTL.cpp 112697 2017-01-08 14:01:47Z noreply@oracle.com $ */
 
 /** @file
  * VBox XPDM Miniport IOCTL handlers
@@ -18,7 +18,7 @@
 
 #include "VBoxMPInternal.h"
 #include "common/VBoxMPCommon.h"
-#include <VBox/Hardware/VBoxVideoHW.h>
+#include <VBox/Hardware/VBoxVideoVBE.h>
 #include <VBox/VBoxGuestLib.h>
 #include <VBox/VBoxVideo.h>
 

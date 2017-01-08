@@ -1,4 +1,4 @@
-/* $Id: VBoxMPDriver.cpp 112542 2017-01-01 10:53:29Z noreply@oracle.com $ */
+/* $Id: VBoxMPDriver.cpp 112697 2017-01-08 14:01:47Z noreply@oracle.com $ */
 /** @file
  * VBox XPDM Miniport driver interface functions
  */
@@ -20,7 +20,7 @@
 *   Header Files                                                                                                                 *
 *********************************************************************************************************************************/
 #include "VBoxMPInternal.h"
-#include <VBox/Hardware/VBoxVideoHW.h>
+#include <VBox/Hardware/VBoxVideoVBE.h>
 #include <VBox/VBoxGuestLib.h>
 #include <VBox/VBoxVideo.h>
 #include "common/VBoxMPHGSMI.h"
