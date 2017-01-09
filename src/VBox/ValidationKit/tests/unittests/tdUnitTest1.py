@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# $Id: tdUnitTest1.py 112703 2017-01-09 11:57:35Z knut.osmundsen@oracle.com $
+# $Id: tdUnitTest1.py 112716 2017-01-09 15:08:35Z knut.osmundsen@oracle.com $
 
 """
 VirtualBox Validation Kit - Unit Tests.
@@ -27,14 +27,13 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 112703 $"
+__version__ = "$Revision: 112716 $"
 
 
 # Standard Python imports.
 import os
 import sys
 import re
-import subprocess
 
 
 # Only the main script needs to modify the path.
