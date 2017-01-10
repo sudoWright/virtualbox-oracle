@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# $Id: systemchangelog.py 112717 2017-01-09 15:32:42Z knut.osmundsen@oracle.com $
+# $Id: systemchangelog.py 112734 2017-01-10 15:36:36Z knut.osmundsen@oracle.com $
 
 """
 Test Manager - System changelog compilation.
@@ -26,7 +26,7 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 112717 $"
+__version__ = "$Revision: 112734 $"
 
 
 # Validation Kit imports.
@@ -127,13 +127,14 @@ class SystemChangelogLogic(ModelLogicBase):
         ModelLogicBase.__init__(self, oDb);
 
 
-    def fetchForListingEx(self, iStart, cMaxRows, tsNow, cDaysBack):
+    def fetchForListingEx(self, iStart, cMaxRows, tsNow, cDaysBack, aiSortColumns = None):
         """
         Fetches SystemLog entries.
 
         Returns an array (list) of SystemLogData items, empty list if none.
         Raises exception on error.
         """
+        _ = aiSortColumns;
 
         #
         # Construct the query.
