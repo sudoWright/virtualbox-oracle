@@ -1,4 +1,4 @@
-/* $Id: UISnapshotPane.cpp 111631 2016-10-31 15:32:19Z sergey.dubov@oracle.com $ */
+/* $Id: UISnapshotPane.cpp 112740 2017-01-11 07:07:01Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UISnapshotPane class implementation.
  */
@@ -739,8 +739,9 @@ void UISnapshotPane::sltCurrentItemChanged(QTreeWidgetItem *pItem)
         && !pSnapshotItem->isCurrentStateItem()
     );
     m_pActionCloneSnapshot->setEnabled(
-           !fBusy
-        && pSnapshotItem
+           pSnapshotItem
+        && (   !pSnapshotItem->isCurrentStateItem()
+            || !fBusy)
     );
 }
 
