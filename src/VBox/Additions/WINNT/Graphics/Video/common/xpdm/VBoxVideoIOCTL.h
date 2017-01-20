@@ -1,4 +1,4 @@
-/* $Id: VBoxVideoIOCTL.h 109080 2016-07-22 19:17:25Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxVideoIOCTL.h 112977 2017-01-20 09:23:53Z noreply@oracle.com $ */
 
 /** @file
  * VBox Miniport IOCTL related header
@@ -20,7 +20,7 @@
 #define VBOXVIDEOIOCTL_H
 
 #include <VBox/VMMDev.h>
-#include <VBox/HGSMI/HGSMI.h>
+#include <HGSMI.h>
 
 /* ==================== Virtual Box specific VRP's ==================== */
 

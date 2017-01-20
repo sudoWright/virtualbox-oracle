@@ -1,4 +1,4 @@
-/* $Id: SHGSMIHost.cpp 109107 2016-07-25 13:33:28Z knut.osmundsen@oracle.com $ */
+/* $Id: SHGSMIHost.cpp 112977 2017-01-20 09:23:53Z noreply@oracle.com $ */
 /** @file
  * Missing description.
  */
@@ -16,7 +16,7 @@
  */
 
 #include "SHGSMIHost.h"
-#include <VBox/VBoxVideo.h>
+#include <VBoxVideo.h>
 
 /*
  * VBOXSHGSMI made on top HGSMI and allows receiving notifications

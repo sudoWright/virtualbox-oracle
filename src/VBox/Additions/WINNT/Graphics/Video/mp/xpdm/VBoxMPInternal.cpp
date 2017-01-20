@@ -1,4 +1,4 @@
-/* $Id: VBoxMPInternal.cpp 110221 2016-08-16 14:05:58Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxMPInternal.cpp 112977 2017-01-20 09:23:53Z noreply@oracle.com $ */
 /** @file
  * VBox XPDM Miniport internal functions
  */
@@ -16,7 +16,7 @@
  */
 
 #include "VBoxMPInternal.h"
-#include <VBox/VBoxVideo.h>
+#include <VBoxVideo.h>
 #include <VBox/VBoxGuestLib.h>
 #include <iprt/asm.h>
 
