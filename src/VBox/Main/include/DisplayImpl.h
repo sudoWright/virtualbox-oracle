@@ -1,4 +1,4 @@
-/* $Id: DisplayImpl.h 112977 2017-01-20 09:23:53Z noreply@oracle.com $ */
+/* $Id: DisplayImpl.h 113002 2017-01-23 13:33:45Z andreas.loeffler@oracle.com $ */
 /** @file
  * VirtualBox COM class implementation
  */
@@ -503,8 +503,8 @@ private:
 #endif
 
 #ifdef VBOX_WITH_VIDEOREC
-    VIDEORECCONTEXT *mpVideoRecCtx;
-    bool maVideoRecEnabled[SchemaDefs::MaxGuestMonitors];
+    VIDEORECCONTEXT     *mpVideoRecCtx;
+    bool                 maVideoRecEnabled[SchemaDefs::MaxGuestMonitors];
 #endif
 
 private:
