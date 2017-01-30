@@ -1,4 +1,4 @@
-/* $Id: VBoxDbgConsole.cpp 113158 2017-01-30 17:54:29Z noreply@oracle.com $ */
+/* $Id: VBoxDbgConsole.cpp 113159 2017-01-30 18:00:51Z noreply@oracle.com $ */
 /** @file
  * VBox Debugger GUI - Console.
  */
@@ -44,11 +44,6 @@
 #include <iprt/string.h>
 
 #include <VBox/com/string.h>
-#ifdef VBOX_WITH_XPCOM
-# include <VirtualBox_XPCOM.h>
-#else
-# include <VirtualBox.h>
-#endif
 
 
 
