@@ -1,4 +1,4 @@
-/* $Id: ApplianceImplPrivate.h 109803 2016-08-08 16:55:15Z knut.osmundsen@oracle.com $ */
+/* $Id: ApplianceImplPrivate.h 113171 2017-01-31 10:13:27Z valery.portnyagin@oracle.com $ */
 /** @file
  * VirtualBox Appliance private data definitions
  */
@@ -235,6 +235,7 @@ struct Appliance::Data
 struct Appliance::XMLStack
 {
     std::map<Utf8Str, const VirtualSystemDescriptionEntry*> mapDisks;
+    std::list<Utf8Str> mapDiskSequence;
     std::map<Utf8Str, bool> mapNetworks;
 };
 
