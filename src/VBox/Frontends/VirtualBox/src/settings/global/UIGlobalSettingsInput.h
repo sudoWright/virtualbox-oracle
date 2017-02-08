@@ -1,4 +1,4 @@
-/* $Id: UIGlobalSettingsInput.h 113378 2017-02-08 13:27:21Z sergey.dubov@oracle.com $ */
+/* $Id: UIGlobalSettingsInput.h 113379 2017-02-08 14:05:28Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIGlobalSettingsInput class declaration.
  */
@@ -46,6 +46,8 @@ public:
 
     /* Constructor: */
     UIGlobalSettingsInput();
+    /* Destructor: */
+    ~UIGlobalSettingsInput();
 
 protected:
 
