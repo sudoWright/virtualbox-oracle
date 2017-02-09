@@ -1,4 +1,4 @@
-/* $Id: VBoxGlobalSettings.cpp 109051 2016-07-22 18:44:18Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxGlobalSettings.cpp 113410 2017-02-09 14:59:35Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - VBoxGlobalSettingsData, VBoxGlobalSettings class implementation.
  */
@@ -67,7 +67,7 @@ VBoxGlobalSettingsData::VBoxGlobalSettingsData()
 #endif
     guiFeatures = QString::null;
     languageId  = QString::null;
-    maxGuestRes = "auto";
+    maxGuestRes = QString::null;
     remapScancodes = QString::null;
     proxySettings = QString::null;
     hostScreenSaverDisabled = false;
