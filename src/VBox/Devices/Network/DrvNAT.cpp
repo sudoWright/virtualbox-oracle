@@ -1,4 +1,4 @@
-/* $Id: DrvNAT.cpp 111147 2016-10-06 14:11:46Z noreply@oracle.com $ */
+/* $Id: DrvNAT.cpp 113408 2017-02-09 14:22:43Z noreply@oracle.com $ */
 /** @file
  * DrvNAT - NAT network transport driver.
  */
@@ -1477,6 +1477,9 @@ static DECLCALLBACK(void) drvNATDestruct(PPDMDRVINS pDrvIns)
 
     RTReqQueueDestroy(pThis->hUrgRecvReqQueue);
     pThis->hUrgRecvReqQueue = NIL_RTREQQUEUE;
+
+    RTReqQueueDestroy(pThis->hRecvReqQueue);
+    pThis->hRecvReqQueue = NIL_RTREQQUEUE;
 
     RTSemEventDestroy(pThis->EventRecv);
     pThis->EventRecv = NIL_RTSEMEVENT;
