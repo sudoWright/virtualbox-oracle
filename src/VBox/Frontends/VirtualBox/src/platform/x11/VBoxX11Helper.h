@@ -1,4 +1,4 @@
-/* $Id: VBoxX11Helper.h 109051 2016-07-22 18:44:18Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxX11Helper.h 113529 2017-02-16 09:26:06Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - VBox X11 helper functions.
  */
@@ -25,6 +25,7 @@ enum X11WMType
     X11WMType_Compiz,
     X11WMType_GNOMEShell,
     X11WMType_KWin,
+    X11WMType_Metacity,
     X11WMType_Mutter,
     X11WMType_Xfwm4,
 };
