@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# $Id: vboxtestvms.py 113397 2017-02-09 08:53:40Z noreply@oracle.com $
+# $Id: vboxtestvms.py 113598 2017-02-21 16:54:21Z noreply@oracle.com $
 
 """
 VirtualBox Test VMs
@@ -26,7 +26,7 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 113397 $"
+__version__ = "$Revision: 113598 $"
 
 # Standard Python imports.
 import re;
@@ -415,6 +415,9 @@ class TestVm(object):
             return True;
         # Vista 64 throws BSOD 0x5D (UNSUPPORTED_PROCESSOR)
         if self.aInfo[g_iKind] in ['WindowsVista_64']:
+            return True;
+        # Solaris 11 hangs on VIA, tested on a physical box (testboxvqc)
+        if self.aInfo[g_iKind] in ['Solaris11_64']:
             return True;
         return False;
 
