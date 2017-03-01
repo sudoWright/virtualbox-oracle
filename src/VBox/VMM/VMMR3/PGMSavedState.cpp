@@ -1,4 +1,4 @@
-/* $Id: PGMSavedState.cpp 111406 2016-10-19 17:42:18Z knut.osmundsen@oracle.com $ */
+/* $Id: PGMSavedState.cpp 113714 2017-03-01 18:24:27Z noreply@oracle.com $ */
 /** @file
  * PGM - Page Manager and Monitor, The Saved State Part.
  */
@@ -1178,6 +1178,7 @@ static int pgmR3PrepRamPages(PVM pVM)
 
                         default:
                             AssertMsgFailed(("%R[pgmpage]", pPage));
+                            /* fall thru */
                         case PGMPAGETYPE_MMIO2:
                         case PGMPAGETYPE_MMIO2_ALIAS_MMIO:
                             paLSPages[iPage].fZero   = 0;

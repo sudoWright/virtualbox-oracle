@@ -1,4 +1,4 @@
-/* $Id: DrvUDPTunnel.cpp 109565 2016-08-04 09:00:52Z knut.osmundsen@oracle.com $ */
+/* $Id: DrvUDPTunnel.cpp 113714 2017-03-01 18:24:27Z noreply@oracle.com $ */
 /** @file
  * DrvUDPTunnel - UDP tunnel network transport driver
  *
@@ -292,6 +292,7 @@ static DECLCALLBACK(void) drvUDPTunnelUp_NotifyLinkChanged(PPDMINETWORKUP pInter
             break;
         default:
             AssertMsgFailed(("enmLinkState=%d\n", enmLinkState));
+            /* fall thru */
         case PDMNETWORKLINKSTATE_UP:
             fLinkDown = false;
             break;

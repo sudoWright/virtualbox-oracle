@@ -1,4 +1,4 @@
-/* $Id: CPUMAllRegs.cpp 112671 2017-01-05 20:14:10Z noreply@oracle.com $ */
+/* $Id: CPUMAllRegs.cpp 113714 2017-03-01 18:24:27Z noreply@oracle.com $ */
 /** @file
  * CPUM - CPU Monitor(/Manager) - Getters and Setters.
  */
@@ -1366,6 +1366,7 @@ VMMDECL(void) CPUMGetGuestCpuId(PVMCPU pVCpu, uint32_t uLeaf, uint32_t uSubLeaf,
         {
             default:
                 AssertFailed();
+                /* fall thru */
             case CPUMUNKNOWNCPUID_DEFAULTS:
             case CPUMUNKNOWNCPUID_LAST_STD_LEAF: /* ASSUME this is executed */
             case CPUMUNKNOWNCPUID_LAST_STD_LEAF_WITH_ECX: /** @todo Implement CPUMUNKNOWNCPUID_LAST_STD_LEAF_WITH_ECX */
