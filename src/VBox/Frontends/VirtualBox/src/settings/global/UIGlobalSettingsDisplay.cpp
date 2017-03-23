@@ -1,4 +1,4 @@
-/* $Id: UIGlobalSettingsDisplay.cpp 114141 2017-03-23 12:47:33Z sergey.dubov@oracle.com $ */
+/* $Id: UIGlobalSettingsDisplay.cpp 114143 2017-03-23 12:52:03Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIGlobalSettingsDisplay class implementation.
  */
@@ -191,7 +191,7 @@ void UIGlobalSettingsDisplay::retranslateUi()
     /* Translate uic generated strings: */
     Ui::UIGlobalSettingsDisplay::retranslateUi(this);
 
-    /* Populate combo-box: */
+    /* Reload combo-box: */
     reloadMaximumGuestScreenSizePolicyComboBox();
 }
 
