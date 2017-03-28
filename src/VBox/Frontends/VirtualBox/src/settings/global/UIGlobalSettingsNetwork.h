@@ -1,4 +1,4 @@
-/* $Id: UIGlobalSettingsNetwork.h 114143 2017-03-23 12:52:03Z sergey.dubov@oracle.com $ */
+/* $Id: UIGlobalSettingsNetwork.h 114215 2017-03-28 11:19:04Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIGlobalSettingsNetwork class declaration.
  */
@@ -96,6 +96,15 @@ private slots:
     void sltHandleContextMenuRequestNetworkHost(const QPoint &position);
 
 private:
+
+    /** Prepares all. */
+    void prepare();
+    /** Prepares NAT Network tab. */
+    void prepareTabNAT();
+    /** Prepares Host Network tab. */
+    void prepareTabHost();
+    /** Cleanups all. */
+    void cleanup();
 
     /** Uploads NAT @a network data into passed @a data storage unit. */
     void loadDataNetworkNAT(const CNATNetwork &network, UIDataSettingsGlobalNetworkNAT &data);
