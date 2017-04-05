@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# $Id: virtual_test_sheriff.py 114397 2017-04-05 12:02:41Z noreply@oracle.com $
+# $Id: virtual_test_sheriff.py 114398 2017-04-05 12:04:01Z noreply@oracle.com $
 # pylint: disable=C0301
 
 """
@@ -33,7 +33,7 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 114397 $"
+__version__ = "$Revision: 114398 $"
 
 
 # Standard python imports
@@ -293,7 +293,7 @@ class VirtualTestSheriff(object): # pylint: disable=R0903
 
         if self.oConfig.sLogFile:
             self.oLogFile = open(self.oConfig.sLogFile, "a");
-            self.oLogFile.write('VirtualTestSheriff: $Revision: 114397 $ \n');
+            self.oLogFile.write('VirtualTestSheriff: $Revision: 114398 $ \n');
 
 
     def eprint(self, sText):
@@ -551,7 +551,7 @@ class VirtualTestSheriff(object): # pylint: disable=R0903
         for idTestResult, tReason in dReasonForResultId.items():
             oFailureReason = self.getFailureReason(tReason);
             if oFailureReason is not None:
-                sComment = 'Set by $Revision: 114397 $' # Handy for reverting later.
+                sComment = 'Set by $Revision: 114398 $' # Handy for reverting later.
                 if idTestResult in dCommentForResultId:
                     sComment += ': ' + dCommentForResultId[idTestResult];
 
@@ -652,7 +652,7 @@ class VirtualTestSheriff(object): # pylint: disable=R0903
         # ( Whether to stop on hit, reason tuple, needle text. )
         ( False, ktReason_Host_LeftoverService,
           'SERVICE_NAME: vbox' ),
-        ( True,  ktReason_Host_Modprobe_Failed, 
+        ( True,  ktReason_Host_Modprobe_Failed,
           'modprobe vboxdrv failed' )
     ];
 
