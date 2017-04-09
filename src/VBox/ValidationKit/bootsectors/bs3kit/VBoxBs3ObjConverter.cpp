@@ -1,4 +1,4 @@
-/* $Id: VBoxBs3ObjConverter.cpp 114427 2017-04-05 18:19:29Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxBs3ObjConverter.cpp 114480 2017-04-09 17:35:58Z noreply@oracle.com $ */
 /** @file
  * VirtualBox Validation Kit - Boot Sector 3 object file convert.
  */
@@ -4765,7 +4765,7 @@ static bool convertOmfAddNeededGrpDefs(POMFDETAILS pOmfStuff)
                     memcpy(szSegNm, pOmfStuff->aGroups[j].pszSeg, cchSegNm);
 
                     /* Add the three segments. */
-                    static RTSTRTUPLE const s_aSuffixes[3] = { RT_STR_TUPLE("_START"), RT_STR_TUPLE(""), RT_STR_TUPLE("_END"), };
+                    static RTSTRTUPLE const s_aSuffixes[3] = { {RT_STR_TUPLE("_START")}, {RT_STR_TUPLE("")}, {RT_STR_TUPLE("_END")}, };
                     for (unsigned iSuffix = 0; iSuffix < RT_ELEMENTS(s_aSuffixes); iSuffix++)
                     {
                         uint16_t idxSegNm;
@@ -5472,7 +5472,7 @@ int main(int argc, char **argv)
                         break;
 
                     case 'V':
-                        printf("%s\n", "$Revision: 114427 $");
+                        printf("%s\n", "$Revision: 114480 $");
                         return 0;
 
                     case '?':
