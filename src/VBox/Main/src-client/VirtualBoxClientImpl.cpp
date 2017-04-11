@@ -1,4 +1,4 @@
-/* $Id: VirtualBoxClientImpl.cpp 114369 2017-04-03 21:09:37Z noreply@oracle.com $ */
+/* $Id: VirtualBoxClientImpl.cpp 114515 2017-04-11 14:53:40Z noreply@oracle.com $ */
 /** @file
  * VirtualBox COM class implementation
  */
@@ -298,6 +298,7 @@ HRESULT VirtualBoxClient::init()
                                                              NULL,
                                                              EOAC_NONE,
                                                              NULL);
+    NOREF(hrGUICoInitializeSecurity);
     Assert(SUCCEEDED(hrGUICoInitializeSecurity) || hrGUICoInitializeSecurity == RPC_E_TOO_LATE);
 #endif
 
