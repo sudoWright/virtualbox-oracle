@@ -1,4 +1,4 @@
-/* $Id: HGSMIHost.cpp 112977 2017-01-20 09:23:53Z noreply@oracle.com $ */
+/* $Id: HGSMIHost.cpp 114554 2017-04-12 14:42:47Z noreply@oracle.com $ */
 /** @file
  *
  * VBox Host Guest Shared Memory Interface (HGSMI).
@@ -72,7 +72,6 @@
 
 #include "HGSMIHost.h"
 #include <HGSMIChannels.h>
-#include <HGSMIChSetup.h>
 
 #include "../DevVGASavedState.h"
 
