@@ -1,4 +1,4 @@
-/* $Id: UIActionPoolSelector.cpp 115072 2017-04-26 17:08:04Z sergey.dubov@oracle.com $ */
+/* $Id: UIActionPoolSelector.cpp 115073 2017-04-26 19:47:06Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIActionPoolSelector class implementation.
  */
@@ -103,7 +103,7 @@ protected:
 
     QKeySequence defaultShortcut(UIActionPoolType) const
     {
-        return QKeySequence("Ctrl+T");
+        return QKeySequence("Ctrl+W");
     }
 
     void retranslateUi()
