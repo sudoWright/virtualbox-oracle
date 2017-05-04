@@ -1,4 +1,4 @@
-/* $Id: tstCollector.cpp 109795 2016-08-08 15:20:59Z knut.osmundsen@oracle.com $ */
+/* $Id: tstCollector.cpp 115209 2017-05-04 14:52:22Z noreply@oracle.com $ */
 
 /** @file
  *
@@ -575,6 +575,6 @@ int main(int argc, char *argv[])
 
     printf ("\ntstCollector FINISHED.\n");
 
-    return rc;
+    return 0;
 }
 
