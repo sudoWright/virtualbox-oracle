@@ -1,4 +1,4 @@
-/* $Id: RTErrConvertFromErrno.cpp 110216 2016-08-16 14:02:22Z knut.osmundsen@oracle.com $ */
+/* $Id: RTErrConvertFromErrno.cpp 115336 2017-05-10 13:02:36Z klaus.espenlaub@oracle.com $ */
 /** @file
  * IPRT - Convert errno to iprt status codes.
  */
@@ -444,7 +444,7 @@ RTDECL(int)  RTErrConvertFromErrno(unsigned uNativeCode)
 # endif
 #endif
         default:
-            AssertMsgFailed(("Unhandled error code %d\n", uNativeCode));
+            AssertLogRelMsgFailed(("Unhandled error code %d\n", uNativeCode));
             return VERR_UNRESOLVED_ERROR;
     }
 }

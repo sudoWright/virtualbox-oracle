@@ -1,4 +1,4 @@
-/* $Id: socket.cpp 109339 2016-07-30 23:04:42Z knut.osmundsen@oracle.com $ */
+/* $Id: socket.cpp 115336 2017-05-10 13:02:36Z klaus.espenlaub@oracle.com $ */
 /** @file
  * IPRT - Network Sockets.
  */
@@ -228,6 +228,7 @@ DECLHIDDEN(int) rtSocketResolverError(void)
             return VERR_TRY_AGAIN;
 
         default:
+            AssertLogRelMsgFailed(("Unhandled error %u\n", h_errno));
             return VERR_UNRESOLVED_ERROR;
     }
 #endif
