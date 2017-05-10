@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# $Id: vboxtestvms.py 113793 2017-03-07 10:54:16Z knut.osmundsen@oracle.com $
+# $Id: vboxtestvms.py 115363 2017-05-10 16:55:19Z noreply@oracle.com $
 
 """
 VirtualBox Test VMs
@@ -26,7 +26,7 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 113793 $"
+__version__ = "$Revision: 115363 $"
 
 # Standard Python imports.
 import re;
@@ -915,8 +915,8 @@ class TestVmManager(object):
                          sKind = 'Windows7', acCpusSup = range(1, 33), fIoApic = True);
         oSet.aoTestVms.append(oTestVm);
 
-        oTestVm = TestVm(oSet, 'tst-win8', sHd = '4.2/win8-32/t-win8.vdi',
-                         sKind = 'Windows8', acCpusSup = range(1, 33), fIoApic = True);
+        oTestVm = TestVm(oSet, 'tst-win8-64', sHd = '4.2/win8-64/t-win8-64.vdi',
+                         sKind = 'Windows8_64', acCpusSup = range(1, 33), fIoApic = True);
         oSet.aoTestVms.append(oTestVm);
 
         return oSet;
@@ -1006,8 +1006,8 @@ class TestVmManager(object):
                          sKind = 'Windows7', acCpusSup = range(1, 33), fIoApic = True);
         oSet.aoTestVms.append(oTestVm);
 
-        oTestVm = TestVm(oSet, 'tst-win8', sHd = '4.2/win8-32/t-win8.vdi',
-                         sKind = 'Windows8', acCpusSup = range(1, 33), fIoApic = True);
+        oTestVm = TestVm(oSet, 'tst-win8-64', sHd = '4.2/win8-64/t-win8-64.vdi',
+                         sKind = 'Windows8_64', acCpusSup = range(1, 33), fIoApic = True);
         oSet.aoTestVms.append(oTestVm);
 
         return oSet;
