@@ -1,4 +1,4 @@
-/* $Id: UIMachineWindowSeamless.cpp 113533 2017-02-16 13:20:32Z sergey.dubov@oracle.com $ */
+/* $Id: UIMachineWindowSeamless.cpp 115490 2017-05-18 14:32:20Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIMachineWindowSeamless class implementation.
  */
@@ -137,7 +137,8 @@ void UIMachineWindowSeamless::prepareMiniToolbar()
     m_pMiniToolBar = new UIMiniToolBar(this,
                                        GeometryType_Available,
                                        gEDataManager->miniToolbarAlignment(vboxGlobal().managedVMUuid()),
-                                       gEDataManager->autoHideMiniToolbar(vboxGlobal().managedVMUuid()));
+                                       gEDataManager->autoHideMiniToolbar(vboxGlobal().managedVMUuid()),
+                                       screenId());
     AssertPtrReturnVoid(m_pMiniToolBar);
     {
         /* Configure mini-toolbar: */
