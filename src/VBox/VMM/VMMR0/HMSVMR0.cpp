@@ -1,4 +1,4 @@
-/* $Id: HMSVMR0.cpp 115529 2017-05-19 13:24:50Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: HMSVMR0.cpp 115531 2017-05-19 13:30:38Z ramshankar.venkataraman@oracle.com $ */
 /** @file
  * HM SVM (AMD-V) - Host Context Ring-0.
  */
@@ -35,7 +35,7 @@
 #include "HMSVMR0.h"
 #include "dtrace/VBoxVMM.h"
 
-//#define HMSVM_USE_IEM_EVENT_REFLECTION
+#define HMSVM_USE_IEM_EVENT_REFLECTION
 #ifdef DEBUG_ramshankar
 # define HMSVM_SYNC_FULL_GUEST_STATE
 # define HMSVM_ALWAYS_TRAP_ALL_XCPTS
