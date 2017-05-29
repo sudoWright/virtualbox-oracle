@@ -1,4 +1,4 @@
-/* $Id: EMAll.cpp 115309 2017-05-09 13:04:57Z noreply@oracle.com $ */
+/* $Id: EMAll.cpp 115803 2017-05-29 15:59:59Z noreply@oracle.com $ */
 /** @file
  * EM - Execution Monitor(/Manager) - All contexts
  */
@@ -1291,7 +1291,7 @@ VMM_INT_DECL(int) EMInterpretCpuId(PVM pVM, PVMCPU pVCpu, PCPUMCTXCORE pRegFrame
 
     /* Note: operates the same in 64 and non-64 bits mode. */
     CPUMGetGuestCpuId(pVCpu, iLeaf, iSubLeaf, &pRegFrame->eax, &pRegFrame->ebx, &pRegFrame->ecx, &pRegFrame->edx);
-    Log(("Emulate: CPUID %x -> %08x %08x %08x %08x\n", iLeaf, pRegFrame->eax, pRegFrame->ebx, pRegFrame->ecx, pRegFrame->edx));
+    Log(("Emulate: CPUID %x/%x -> %08x %08x %08x %08x\n", iLeaf, iSubLeaf, pRegFrame->eax, pRegFrame->ebx, pRegFrame->ecx, pRegFrame->edx));
     return VINF_SUCCESS;
 }
 
