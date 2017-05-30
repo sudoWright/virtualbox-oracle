@@ -1,4 +1,4 @@
-/* $Id: SUPDrv.cpp 115809 2017-05-30 08:05:23Z noreply@oracle.com $ */
+/* $Id: SUPDrv.cpp 115810 2017-05-30 08:07:33Z noreply@oracle.com $ */
 /** @file
  * VBoxDrv - The VirtualBox Support Driver - Common code.
  */
@@ -3882,6 +3882,7 @@ SUPR0DECL(int) SUPR0GetCurrentGdtRw(RTHCUINTPTR *pGdtRw)
 #ifdef RT_OS_LINUX
     return supdrvOSGetCurrentGdtRw(pGdtRw);
 #else
+    NOREF(pGdtRw);
     return VERR_NOT_IMPLEMENTED;
 #endif
 }
