@@ -1,4 +1,4 @@
-/* $Id: tarvfs.cpp 115794 2017-05-28 12:19:53Z knut.osmundsen@oracle.com $ */
+/* $Id: tarvfs.cpp 115825 2017-05-30 19:23:25Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - TAR Virtual Filesystem, Reader.
  */
@@ -1473,6 +1473,7 @@ static const RTVFSFSSTREAMOPS rtZipTarFssOps =
     RTVFSFSSTREAMOPS_VERSION,
     0,
     rtZipTarFss_Next,
+    NULL,
     NULL,
     NULL,
     RTVFSFSSTREAMOPS_VERSION
