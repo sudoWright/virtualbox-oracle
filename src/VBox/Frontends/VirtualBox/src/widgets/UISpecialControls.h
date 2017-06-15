@@ -1,4 +1,4 @@
-/* $Id: UISpecialControls.h 110851 2016-09-22 18:02:33Z sergey.dubov@oracle.com $ */
+/* $Id: UISpecialControls.h 116149 2017-06-15 11:10:02Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - VBoxSpecialButtons declarations.
  */
@@ -229,6 +229,8 @@ class UIRoundRectSegmentedButton: public QWidget
 public:
     UIRoundRectSegmentedButton(QWidget *pParent, int aCount);
     ~UIRoundRectSegmentedButton();
+
+    int count() const;
 
     void setTitle(int iSegment, const QString &aTitle);
     void setToolTip(int iSegment, const QString &strTip);
