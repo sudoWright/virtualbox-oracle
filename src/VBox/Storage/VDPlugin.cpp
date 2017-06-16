@@ -1,4 +1,4 @@
-/* $Id: VDPlugin.cpp 114326 2017-03-31 11:28:52Z alexander.eichner@oracle.com $ */
+/* $Id: VDPlugin.cpp 116188 2017-06-16 20:25:22Z knut.osmundsen@oracle.com $ */
 /** @file
  * VD - Virtual disk container implementation, plugin related bits.
  */
@@ -84,6 +84,7 @@ static PCVDIMAGEBACKEND aStaticBackends[] =
     &g_VhdxBackend,
     &g_RawBackend,
     &g_CueBackend,
+    &g_VBoxIsoMakerBackend,
     &g_ISCSIBackend
 };
 
