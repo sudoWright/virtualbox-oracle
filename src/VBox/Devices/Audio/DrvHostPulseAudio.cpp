@@ -1,4 +1,4 @@
-/* $Id: DrvHostPulseAudio.cpp 116289 2017-06-21 15:22:41Z noreply@oracle.com $ */
+/* $Id: DrvHostPulseAudio.cpp 116290 2017-06-21 15:28:30Z noreply@oracle.com $ */
 /** @file
  * VBox audio devices: Pulse Audio audio driver.
  */
@@ -276,6 +276,7 @@ static int paWaitForEx(PDRVHOSTPULSEAUDIO pThis, pa_operation *pOP, RTMSINTERVAL
 {
     AssertPtrReturn(pThis, VERR_INVALID_POINTER);
     AssertPtrReturn(pOP,   VERR_INVALID_POINTER);
+    NOREF(fDebug);
 
     int rc = VINF_SUCCESS;
     pThis->fAbortEnumLoop = false;
