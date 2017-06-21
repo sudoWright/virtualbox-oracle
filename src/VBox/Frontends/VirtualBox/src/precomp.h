@@ -1,4 +1,4 @@
-/* $Id: precomp.h 115838 2017-05-31 10:17:25Z sergey.dubov@oracle.com $*/
+/* $Id: precomp.h 116276 2017-06-21 10:47:28Z sergey.dubov@oracle.com $*/
 /** @file
  * VBox Qt GUI - Header used if VBOX_WITH_PRECOMPILED_HEADERS is active.
  *
@@ -650,7 +650,7 @@
 #include "UISettingsSelector.h"
 #include "UISnapshotDetailsWidget.h"
 #include "UISnapshotPane.h"
-#include "VBoxTakeSnapshotDlg.h"
+#include "UITakeSnapshotDialog.h"
 #ifdef RT_OS_DARWIN
 # include "VBoxUtils-darwin.h"
 #endif
