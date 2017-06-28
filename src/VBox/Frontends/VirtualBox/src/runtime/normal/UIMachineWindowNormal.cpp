@@ -1,4 +1,4 @@
-/* $Id: UIMachineWindowNormal.cpp 116363 2017-06-26 11:55:17Z sergey.dubov@oracle.com $ */
+/* $Id: UIMachineWindowNormal.cpp 116468 2017-06-28 13:42:59Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIMachineWindowNormal class implementation.
  */
@@ -523,6 +523,9 @@ void UIMachineWindowNormal::showInNecessaryMode()
 
     /* Show in normal mode: */
     show();
+
+    /* Normalize machine-window geometry: */
+    normalizeGeometry(true /* adjust position */);
 
     /* Make sure machine-view have focus: */
     m_pMachineView->setFocus();
