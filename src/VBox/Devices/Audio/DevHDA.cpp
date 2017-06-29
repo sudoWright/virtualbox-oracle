@@ -1,4 +1,4 @@
-/* $Id: DevHDA.cpp 116534 2017-06-29 14:02:00Z andreas.loeffler@oracle.com $ */
+/* $Id: DevHDA.cpp 116535 2017-06-29 14:21:09Z andreas.loeffler@oracle.com $ */
 /** @file
  * DevHDA - VBox Intel HD Audio Controller.
  *
@@ -1593,6 +1593,8 @@ static void hdaReschedulePendingInterrupts(PHDASTATE pThis)
     for (uint8_t i = 0; i < HDA_MAX_STREAMS; ++i)
     {
         PHDASTREAM pStream = hdaStreamGetFromSD(pThis, i);
+        if (!pStream)
+            continue;
 
         if (   hdaStreamPeriodIsComplete    (&pStream->State.Period)
             && hdaStreamPeriodNeedsInterrupt(&pStream->State.Period)
