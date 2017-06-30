@@ -1,4 +1,4 @@
-/* $Id: UIMediumDefs.h 109051 2016-07-22 18:44:18Z knut.osmundsen@oracle.com $ */
+/* $Id: UIMediumDefs.h 116601 2017-06-30 14:26:07Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIMedium related declarations.
  */
@@ -34,11 +34,11 @@ namespace UIMediumDefs
     /** UIMedium types. */
     enum UIMediumType
     {
-        UIMediumType_Invalid,
         UIMediumType_HardDisk,
         UIMediumType_DVD,
         UIMediumType_Floppy,
-        UIMediumType_All
+        UIMediumType_All,
+        UIMediumType_Invalid
     };
 
     /** Converts global medium type (KDeviceType) to local (UIMediumType). */
