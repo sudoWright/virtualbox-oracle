@@ -1,4 +1,4 @@
-/* $Id: CPUM.cpp 116450 2017-06-28 10:17:24Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: CPUM.cpp 116571 2017-06-30 10:34:11Z ramshankar.venkataraman@oracle.com $ */
 /** @file
  * CPUM - CPU Monitor / Manager.
  */
@@ -2266,7 +2266,6 @@ static DECLCALLBACK(void) cpumR3InfoGuestHwvirt(PVM pVM, PCDBGFINFOHLP pHlp, con
     {
     }
 #endif
-    pHlp->pfnPrintf(pHlp, "\n");
 
 #undef CPUMHWVIRTDUMP_NONE
 #undef CPUMHWVIRTDUMP_COMMON
