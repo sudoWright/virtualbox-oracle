@@ -1,4 +1,4 @@
-/* $Id: Performance.cpp 116575 2017-06-30 12:06:06Z noreply@oracle.com $ */
+/* $Id: Performance.cpp 116576 2017-06-30 12:22:38Z noreply@oracle.com $ */
 /** @file
  * VBox Performance Classes implementation.
  */
@@ -484,7 +484,7 @@ void CollectorGuestManager::unregisterGuest(CollectorGuest* pGuest)
             }
         }
     }
-    Log7Func((": LEAVE new provider=%p\n", this, mVMMStatsProvider));
+    Log7Func(("[%p}: LEAVE new provider=%p\n", this, mVMMStatsProvider));
 }
 
 void CollectorGuestManager::destroyUnregistered()
