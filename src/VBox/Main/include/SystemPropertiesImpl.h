@@ -1,4 +1,4 @@
-/* $Id: SystemPropertiesImpl.h 109041 2016-07-22 18:36:43Z knut.osmundsen@oracle.com $ */
+/* $Id: SystemPropertiesImpl.h 116577 2017-06-30 12:27:58Z knut.osmundsen@oracle.com $ */
 
 /** @file
  *
@@ -54,6 +54,8 @@ public:
 
     int i_loadVDPlugin(const char *pszPluginLibrary);
     int i_unloadVDPlugin(const char *pszPluginLibrary);
+
+    HRESULT i_getDefaultAdditionsISO(com::Utf8Str &aDefaultAdditionsISO);
 
 private:
 
