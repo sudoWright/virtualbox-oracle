@@ -1,4 +1,4 @@
-/* $Id: HGCMObjects.cpp 109041 2016-07-22 18:36:43Z knut.osmundsen@oracle.com $ */
+/* $Id: HGCMObjects.cpp 116906 2017-07-11 20:46:37Z knut.osmundsen@oracle.com $ */
 /** @file
  * HGCMObjects - Host-Guest Communication Manager objects
  */
@@ -15,8 +15,8 @@
  * hope that it will be useful, but WITHOUT ANY WARRANTY of any kind.
  */
 
-#define LOG_GROUP_MAIN_OVERRIDE LOG_GROUP_HGCM
-#include "Logging.h"
+#define LOG_GROUP LOG_GROUP_HGCM
+#include "LoggingNew.h"
 
 #include "HGCMObjects.h"
 

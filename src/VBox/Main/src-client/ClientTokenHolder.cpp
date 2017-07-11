@@ -1,4 +1,4 @@
-/* $Id: ClientTokenHolder.cpp 109869 2016-08-10 09:39:08Z knut.osmundsen@oracle.com $ */
+/* $Id: ClientTokenHolder.cpp 116906 2017-07-11 20:46:37Z knut.osmundsen@oracle.com $ */
 /** @file
  *
  * VirtualBox API client session token holder (in the client process)
@@ -15,6 +15,9 @@
  * VirtualBox OSE distribution. VirtualBox OSE is distributed in the
  * hope that it will be useful, but WITHOUT ANY WARRANTY of any kind.
  */
+
+#define LOG_GROUP LOG_GROUP_MAIN_SESSION
+#include "LoggingNew.h"
 
 #include <iprt/asm.h>
 #include <iprt/assert.h>

@@ -1,4 +1,4 @@
-/* $Id: DrvAudioVRDE.cpp 113449 2017-02-10 15:45:38Z andreas.loeffler@oracle.com $ */
+/* $Id: DrvAudioVRDE.cpp 116906 2017-07-11 20:46:37Z knut.osmundsen@oracle.com $ */
 /** @file
  * VRDE audio backend for Main.
  */
@@ -20,6 +20,8 @@
 *   Header Files                                                                                                                 *
 *********************************************************************************************************************************/
 #define LOG_GROUP LOG_GROUP_DRV_HOST_AUDIO
+#include "LoggingNew.h"
+
 #include <VBox/log.h>
 #include "DrvAudioVRDE.h"
 #include "ConsoleImpl.h"

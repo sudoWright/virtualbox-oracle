@@ -1,4 +1,4 @@
-/* $Id: UsbWebcamInterface.cpp 110218 2016-08-16 14:04:28Z knut.osmundsen@oracle.com $ */
+/* $Id: UsbWebcamInterface.cpp 116906 2017-07-11 20:46:37Z knut.osmundsen@oracle.com $ */
 /** @file
  * UsbWebcamInterface - Driver Interface for USB Webcam emulation.
  */
@@ -17,6 +17,8 @@
 
 
 #define LOG_GROUP LOG_GROUP_USB_WEBCAM
+#include "LoggingNew.h"
+
 #include "UsbWebcamInterface.h"
 #include "ConsoleImpl.h"
 #include "ConsoleVRDPServer.h"
