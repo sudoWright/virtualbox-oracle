@@ -1,4 +1,4 @@
-/* $Id: MediumImpl.cpp 116851 2017-07-10 16:45:06Z klaus.espenlaub@oracle.com $ */
+/* $Id: MediumImpl.cpp 117067 2017-07-19 11:51:10Z klaus.espenlaub@oracle.com $ */
 /** @file
  * VirtualBox COM class implementation
  */
@@ -1698,6 +1698,7 @@ HRESULT Medium::setDescription(const com::Utf8Str &aDescription)
         }
 
         // save the settings
+        alock.release();
         i_markRegistriesModified();
         m->pVirtualBox->i_saveModifiedRegistries();
     }
