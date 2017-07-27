@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# $Id: virtual_test_sheriff.py 117228 2017-07-27 16:13:40Z noreply@oracle.com $
+# $Id: virtual_test_sheriff.py 117229 2017-07-27 16:20:00Z noreply@oracle.com $
 # pylint: disable=C0301
 
 """
@@ -33,7 +33,7 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 117228 $"
+__version__ = "$Revision: 117229 $"
 
 
 # Standard python imports
@@ -293,7 +293,7 @@ class VirtualTestSheriff(object): # pylint: disable=R0903
 
         if self.oConfig.sLogFile:
             self.oLogFile = open(self.oConfig.sLogFile, "a");
-            self.oLogFile.write('VirtualTestSheriff: $Revision: 117228 $ \n');
+            self.oLogFile.write('VirtualTestSheriff: $Revision: 117229 $ \n');
 
 
     def eprint(self, sText):
@@ -559,7 +559,7 @@ class VirtualTestSheriff(object): # pylint: disable=R0903
         for idTestResult, tReason in dReasonForResultId.items():
             oFailureReason = self.getFailureReason(tReason);
             if oFailureReason is not None:
-                sComment = 'Set by $Revision: 117228 $' # Handy for reverting later.
+                sComment = 'Set by $Revision: 117229 $' # Handy for reverting later.
                 if idTestResult in dCommentForResultId:
                     sComment += ': ' + dCommentForResultId[idTestResult];
 
@@ -834,8 +834,11 @@ class VirtualTestSheriff(object): # pylint: disable=R0903
 
     def investigateInfoHalReturnToFirmware(self, oCaseFile, sInfoText, dLogs):
         """ Investigates HalReturnToFirmware hangs """
+        del oCaseFile
+        del sInfoText
+        del dLogs
         # hope that's sufficient
-        return (True, ktReason_Unknown_HalReturnToFirmware);
+        return (True, self.ktReason_Unknown_HalReturnToFirmware);
 
     ## Things we search a main or VM log for to figure out why something went bust.
     katSimpleMainAndVmLogReasons = [
