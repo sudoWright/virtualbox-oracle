@@ -1,4 +1,4 @@
-/* $Id: UIToolsPaneMachine.cpp 117267 2017-07-29 14:41:24Z sergey.dubov@oracle.com $ */
+/* $Id: UIToolsPaneMachine.cpp 117325 2017-08-01 16:04:00Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIToolsPaneMachine class implementation.
  */
@@ -51,6 +51,11 @@ UIToolsPaneMachine::~UIToolsPaneMachine()
 {
     /* Cleanup: */
     cleanup();
+}
+
+ToolTypeMachine UIToolsPaneMachine::currentTool() const
+{
+    return m_pLayout->currentWidget()->property("ToolType").value<ToolTypeMachine>();
 }
 
 bool UIToolsPaneMachine::isToolOpened(ToolTypeMachine enmType) const
