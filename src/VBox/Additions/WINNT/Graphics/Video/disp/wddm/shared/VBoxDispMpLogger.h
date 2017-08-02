@@ -1,4 +1,4 @@
-/* $Id: VBoxDispMpLogger.h 109631 2016-08-04 23:41:09Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxDispMpLogger.h 117374 2017-08-02 21:45:09Z vitali.pelenjow@oracle.com $ */
 /** @file
  * VBox WDDM Display backdoor logger API
  */
