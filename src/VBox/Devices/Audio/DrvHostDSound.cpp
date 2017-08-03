@@ -1,4 +1,4 @@
-/* $Id: DrvHostDSound.cpp 117212 2017-07-27 08:15:43Z andreas.loeffler@oracle.com $ */
+/* $Id: DrvHostDSound.cpp 117379 2017-08-03 07:51:17Z andreas.loeffler@oracle.com $ */
 /** @file
  * Windows host backend driver using DirectSound.
  */
@@ -835,7 +835,6 @@ static HRESULT directSoundPlayStop(PDRVHOSTDSOUND pThis, PDSOUNDSTREAM pStreamDS
 
     if (SUCCEEDED(hr))
     {
-        dsoundPlayClearSamples(pThis, pStreamDS);
         pStreamDS->Out.fEnabled = false;
     }
     else
