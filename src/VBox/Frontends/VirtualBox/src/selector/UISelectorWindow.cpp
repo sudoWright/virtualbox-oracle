@@ -1,4 +1,4 @@
-/* $Id: UISelectorWindow.cpp 117445 2017-08-07 17:55:24Z sergey.dubov@oracle.com $ */
+/* $Id: UISelectorWindow.cpp 117456 2017-08-08 09:27:53Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UISelectorWindow class implementation.
  */
@@ -1857,7 +1857,7 @@ void UISelectorWindow::prepareToolbar()
         if (pSpace)
         {
             if (vboxGlobal().isBeta())
-                pSpace->setFixedSize(28, 1);
+                pSpace->setFixedSize(60, 1);
             else
                 pSpace->setFixedSize(1, 1);
             m_pToolBar->addWidget(pSpace);
