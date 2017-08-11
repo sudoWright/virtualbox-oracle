@@ -1,4 +1,4 @@
-/* $Id: UIMessageCenter.cpp 117284 2017-07-31 10:25:22Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIMessageCenter.cpp 117526 2017-08-11 13:14:04Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIMessageCenter class implementation.
  */
@@ -60,7 +60,6 @@
 # include "CDHCPServer.h"
 # include "CAudioAdapter.h"
 # include "CNATEngine.h"
-# include "CParallelPort.h"
 # include "CSerialPort.h"
 # include "CSharedFolder.h"
 # include "CSnapshot.h"
