@@ -1,4 +1,4 @@
-/* $Id: VideoRec.cpp 117571 2017-08-16 08:44:54Z andreas.loeffler@oracle.com $ */
+/* $Id: VideoRec.cpp 117572 2017-08-16 08:46:05Z andreas.loeffler@oracle.com $ */
 /** @file
  * Video capturing utility routines.
  */
@@ -894,8 +894,9 @@ int VideoRecStreamInit(PVIDEORECCONTEXT pCtx, uint32_t uScreen, const char *pszF
 
     if (   fHasVideoTrack
 #ifdef VBOX_WITH_AUDIO_VIDEOREC
-        || fHasAudioTrack)
+        || fHasAudioTrack
 #endif
+       )
     {
         char szWhat[32] = { 0 };
         if (fHasVideoTrack)
