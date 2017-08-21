@@ -1,4 +1,4 @@
-/* $Id: ConsoleImpl.h 113111 2017-01-27 14:10:44Z alexander.eichner@oracle.com $ */
+/* $Id: ConsoleImpl.h 117633 2017-08-21 13:48:12Z andreas.loeffler@oracle.com $ */
 /** @file
  * VBox Console COM Class definition
  */
@@ -157,6 +157,7 @@ public:
 
     // events from IInternalSessionControl
     HRESULT i_onNetworkAdapterChange(INetworkAdapter *aNetworkAdapter, BOOL changeAdapter);
+    HRESULT i_onAudioAdapterChange(IAudioAdapter *aAudioAdapter);
     HRESULT i_onSerialPortChange(ISerialPort *aSerialPort);
     HRESULT i_onParallelPortChange(IParallelPort *aParallelPort);
     HRESULT i_onStorageControllerChange();
