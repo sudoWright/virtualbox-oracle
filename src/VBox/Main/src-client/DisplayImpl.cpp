@@ -1,4 +1,4 @@
-/* $Id: DisplayImpl.cpp 116906 2017-07-11 20:46:37Z knut.osmundsen@oracle.com $ */
+/* $Id: DisplayImpl.cpp 117703 2017-08-28 10:11:16Z vitali.pelenjow@oracle.com $ */
 /** @file
  * VirtualBox COM class implementation
  */
@@ -3051,6 +3051,12 @@ HRESULT Display::setScreenLayout(ScreenLayoutMode_T aScreenLayoutMode,
 {
     NOREF(aScreenLayoutMode);
     NOREF(aGuestScreenInfo);
+    return E_NOTIMPL;
+}
+
+HRESULT Display::detachScreens(const std::vector<LONG> &aScreenIds)
+{
+    NOREF(aScreenIds);
     return E_NOTIMPL;
 }
 
