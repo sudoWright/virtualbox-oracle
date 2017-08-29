@@ -1,6 +1,6 @@
-/* $Id: UIPopupPaneTextPane.cpp 109051 2016-07-22 18:44:18Z knut.osmundsen@oracle.com $ */
+/* $Id: UIPopupPaneDetails.cpp 117716 2017-08-29 14:22:33Z serkan.bayraktar@oracle.com $ */
 /** @file
- * VBox Qt GUI - UIPopupPaneTextPane class implementation.
+ * VBox Qt GUI - UIPopupPaneDetails class implementation.
  */
 
 /*
@@ -19,23 +19,25 @@
 # include <precomp.h>
 #else  /* !VBOX_WITH_PRECOMPILED_HEADERS */
 /* Qt includes: */
-# include <QLabel>
 # include <QCheckBox>
+# include <QTextDocument>
+# include <QTextEdit>
 
 /* GUI includes: */
-# include "UIPopupPaneTextPane.h"
+# include "UIPopupPaneDetails.h"
 # include "UIAnimationFramework.h"
 
 #endif /* !VBOX_WITH_PRECOMPILED_HEADERS */
 
 
-UIPopupPaneTextPane::UIPopupPaneTextPane(QWidget *pParent, const QString &strText, bool fFocused)
+UIPopupPaneDetails::UIPopupPaneDetails(QWidget *pParent, const QString &strText, bool fFocused)
     : QWidget(pParent)
     , m_iLayoutMargin(0)
     , m_iLayoutSpacing(10)
     , m_strText(strText)
-    , m_pLabel(0)
-    , m_iDesiredLabelWidth(-1)
+    , m_pTextEdit(0)
+    , m_iDesiredTextEditWidth(-1)
+    , m_iDesiredTextEditHeight(-1)
     , m_fFocused(fFocused)
     , m_pAnimation(0)
 {
@@ -43,31 +45,32 @@ UIPopupPaneTextPane::UIPopupPaneTextPane(QWidget *pParent, const QString &strTex
     prepare();
 }
 
-void UIPopupPaneTextPane::setText(const QString &strText)
+void UIPopupPaneDetails::setText(const QString &strText)
 {
     /* Make sure the text has changed: */
-    if (m_pLabel->text() == strText)
+    if (m_strText == strText)
         return;
 
     /* Fetch new text: */
     m_strText = strText;
-    m_pLabel->setText(m_strText);
+    m_pTextEdit->setText(m_strText);
 
-    /* Update size-hint: */
+    /* Update size-hint/visibility: */
     updateSizeHint();
+    updateVisibility();
 }
 
-QSize UIPopupPaneTextPane::minimumSizeHint() const
+QSize UIPopupPaneDetails::minimumSizeHint() const
 {
     /* Check if desired-width set: */
-    if (m_iDesiredLabelWidth >= 0)
+    if (m_iDesiredTextEditWidth >= 0)
         /* Dependent size-hint: */
         return m_minimumSizeHint;
     /* Golden-rule size-hint by default: */
     return QWidget::minimumSizeHint();
 }
 
-void UIPopupPaneTextPane::setMinimumSizeHint(const QSize &minimumSizeHint)
+void UIPopupPaneDetails::setMinimumSizeHint(const QSize &minimumSizeHint)
 {
     /* Make sure the size-hint has changed: */
     if (m_minimumSizeHint == minimumSizeHint)
@@ -80,33 +83,54 @@ void UIPopupPaneTextPane::setMinimumSizeHint(const QSize &minimumSizeHint)
     emit sigSizeHintChanged();
 }
 
-void UIPopupPaneTextPane::layoutContent()
+void UIPopupPaneDetails::layoutContent()
 {
     /* Variables: */
     const int iWidth = width();
     const int iHeight = height();
-    const int iLabelWidth = m_labelSizeHint.width();
-    const int iLabelHeight = m_labelSizeHint.height();
+    const int iTextEditWidth = m_textEditSizeHint.width();
+    const int iTextEditHeight = m_textEditSizeHint.height();
 
-    /* Label: */
-    m_pLabel->move(m_iLayoutMargin, m_iLayoutMargin);
-    m_pLabel->resize(qMin(iWidth, iLabelWidth), qMin(iHeight, iLabelHeight));
+    /* TextEdit: */
+    m_pTextEdit->move(m_iLayoutMargin, m_iLayoutMargin);
+    m_pTextEdit->resize(qMin(iWidth, iTextEditWidth), qMin(iHeight, iTextEditHeight));
 }
 
-void UIPopupPaneTextPane::sltHandleProposalForWidth(int iWidth)
+void UIPopupPaneDetails::updateVisibility()
+{
+    if (m_fFocused && !m_strText.isEmpty())
+        show();
+    else
+        hide();
+}
+
+void UIPopupPaneDetails::sltHandleProposalForWidth(int iWidth)
 {
     /* Make sure the desired-width has changed: */
-    if (m_iDesiredLabelWidth == iWidth)
+    if (m_iDesiredTextEditWidth == iWidth)
         return;
 
     /* Fetch new desired-width: */
-    m_iDesiredLabelWidth = iWidth;
+    m_iDesiredTextEditWidth = iWidth;
 
     /* Update size-hint: */
     updateSizeHint();
 }
 
-void UIPopupPaneTextPane::sltFocusEnter()
+void UIPopupPaneDetails::sltHandleProposalForHeight(int iHeight)
+{
+    /* Make sure the desired-height has changed: */
+    if (m_iDesiredTextEditHeight == iHeight)
+        return;
+
+    /* Fetch new desired-height: */
+    m_iDesiredTextEditHeight = iHeight;
+
+    /* Update size-hint: */
+    updateSizeHint();
+}
+
+void UIPopupPaneDetails::sltFocusEnter()
 {
     /* Ignore if already focused: */
     if (m_fFocused)
@@ -115,11 +139,14 @@ void UIPopupPaneTextPane::sltFocusEnter()
     /* Update focus state: */
     m_fFocused = true;
 
+    /* Update visibility: */
+    updateVisibility();
+
     /* Notify listeners: */
     emit sigFocusEnter();
 }
 
-void UIPopupPaneTextPane::sltFocusLeave()
+void UIPopupPaneDetails::sltFocusLeave()
 {
     /* Ignore if already unfocused: */
     if (!m_fFocused)
@@ -128,35 +155,39 @@ void UIPopupPaneTextPane::sltFocusLeave()
     /* Update focus state: */
     m_fFocused = false;
 
+    /* Update visibility: */
+    updateVisibility();
+
     /* Notify listeners: */
     emit sigFocusLeave();
 }
 
-void UIPopupPaneTextPane::prepare()
+void UIPopupPaneDetails::prepare()
 {
     /* Prepare content: */
     prepareContent();
     /* Prepare animation: */
     prepareAnimation();
 
-    /* Update size-hint: */
+    /* Update size-hint/visibility: */
     updateSizeHint();
+    updateVisibility();
 }
 
-void UIPopupPaneTextPane::prepareContent()
+void UIPopupPaneDetails::prepareContent()
 {
-    /* Create label: */
-    m_pLabel = new QLabel(this);
+    /* Create text-editor: */
+    m_pTextEdit = new QTextEdit(this);
     {
-        /* Prepare label: */
-        m_pLabel->setFont(tuneFont(m_pLabel->font()));
-        m_pLabel->setWordWrap(true);
-        m_pLabel->setFocusPolicy(Qt::NoFocus);
-        m_pLabel->setText(m_strText);
+        /* Configure text-editor: */
+        m_pTextEdit->setFont(tuneFont(m_pTextEdit->font()));
+        m_pTextEdit->setText(m_strText);
+        m_pTextEdit->setFocusProxy(this);
+        m_pTextEdit->setLineWrapMode(QTextEdit::NoWrap);
     }
 }
 
-void UIPopupPaneTextPane::prepareAnimation()
+void UIPopupPaneDetails::prepareAnimation()
 {
     /* Propagate parent signals: */
     connect(parent(), SIGNAL(sigFocusEnter()), this, SLOT(sltFocusEnter()));
@@ -166,21 +197,31 @@ void UIPopupPaneTextPane::prepareAnimation()
                                                          SIGNAL(sigFocusEnter()), SIGNAL(sigFocusLeave()), m_fFocused);
 }
 
-void UIPopupPaneTextPane::updateSizeHint()
+void UIPopupPaneDetails::updateSizeHint()
 {
     /* Recalculate collapsed size-hint: */
     {
-        /* Collapsed size-hint contains only one-text-line label: */
-        QFontMetrics fm(m_pLabel->font(), m_pLabel);
-        m_collapsedSizeHint = QSize(m_iDesiredLabelWidth, fm.height());
+        /* Collapsed size-hint with 0 height: */
+        m_collapsedSizeHint = QSize(m_iDesiredTextEditWidth, 0);
     }
 
     /* Recalculate expanded size-hint: */
     {
+        int iNewHeight = m_iDesiredTextEditHeight;
+        QTextDocument *pTextDocument = m_pTextEdit->document();
+        if(pTextDocument)
+        {
+            /* Adjust text-edit size: */
+            pTextDocument->adjustSize();
+            /* Get corresponding QTextDocument size: */
+            QSize textSize = pTextDocument->size().toSize();
+            /* Make sure the text edits height is no larger than that of container widget: */
+            iNewHeight = qMin(iNewHeight, textSize.height());
+        }
         /* Recalculate label size-hint: */
-        m_labelSizeHint = QSize(m_iDesiredLabelWidth, m_pLabel->heightForWidth(m_iDesiredLabelWidth));
+        m_textEditSizeHint = QSize(m_iDesiredTextEditWidth, iNewHeight);
         /* Expanded size-hint contains full-size label: */
-        m_expandedSizeHint = m_labelSizeHint;
+        m_expandedSizeHint = m_textEditSizeHint;
     }
 
     /* Update current size-hint: */
@@ -195,7 +236,7 @@ void UIPopupPaneTextPane::updateSizeHint()
 }
 
 /* static */
-QFont UIPopupPaneTextPane::tuneFont(QFont font)
+QFont UIPopupPaneDetails::tuneFont(QFont font)
 {
 #if defined(VBOX_WS_MAC)
     font.setPointSize(font.pointSize() - 2);
