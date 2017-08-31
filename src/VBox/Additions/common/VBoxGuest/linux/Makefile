@@ -1,4 +1,4 @@
-# $Revision: 115989 $
+# $Revision: 117799 $
 ## @file
 # VirtualBox Guest Additions Module Makefile.
 #
@@ -28,7 +28,6 @@ MOD_OBJS   = \
 	HGCMInternal.o \
 	Init.o \
 	PhysHeap.o \
-	SysHlp.o \
 	VMMDev.o \
 	r0drv/alloc-r0drv.o \
 	r0drv/initterm-r0drv.o \
