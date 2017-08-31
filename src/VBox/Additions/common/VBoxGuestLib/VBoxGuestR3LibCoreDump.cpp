@@ -1,4 +1,4 @@
-/* $Id: VBoxGuestR3LibCoreDump.cpp 109079 2016-07-22 19:16:33Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxGuestR3LibCoreDump.cpp 117767 2017-08-31 12:09:41Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxGuestR3Lib - Ring-3 Support Library for VirtualBox guest additions, Core Dumps.
  */
@@ -38,7 +38,9 @@
  */
 VBGLR3DECL(int) VbglR3WriteCoreDump(void)
 {
-    VBoxGuestWriteCoreDump Req;
-    return vbglR3DoIOCtl(VBOXGUEST_IOCTL_WRITE_CORE_DUMP, &Req, sizeof(Req));
+    VBGLIOCWRITECOREDUMP Req;
+    VBGLREQHDR_INIT(&Req.Hdr, WRITE_CORE_DUMP);
+    Req.u.In.fFlags = 0;
+    return vbglR3DoIOCtl(VBGL_IOCTL_WRITE_CORE_DUMP, &Req.Hdr, sizeof(Req));
 }
 
