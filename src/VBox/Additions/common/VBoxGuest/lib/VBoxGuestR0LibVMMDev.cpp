@@ -1,4 +1,4 @@
-/* $Id: VBoxGuestR0LibVMMDev.cpp 117875 2017-09-05 14:17:02Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxGuestR0LibVMMDev.cpp 117884 2017-09-05 14:53:44Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxGuestLibR0 - VMMDev device related functions.
  */
@@ -24,6 +24,9 @@
  * terms and conditions of either the GPL or the CDDL or both.
  */
 
+/*********************************************************************************************************************************
+*   Header Files                                                                                                                 *
+*********************************************************************************************************************************/
 #include "VBoxGuestR0LibInternal.h"
 
 
