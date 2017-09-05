@@ -1,4 +1,4 @@
-/* $Id: VBoxGuestR0LibHGCM.cpp 117872 2017-09-05 13:53:41Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxGuestR0LibHGCM.cpp 117875 2017-09-05 14:17:02Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxGuestLib - Host-Guest Communication Manager, ring-0 client drivers.
  *
@@ -33,7 +33,7 @@
 /* Entire file is ifdef'ed with !VBGL_VBOXGUEST */
 #ifndef VBGL_VBOXGUEST
 
-#include "VBGLInternal.h"
+#include "VBoxGuestR0LibInternal.h"
 
 #include <iprt/assert.h>
 #include <iprt/semaphore.h>
