@@ -1,4 +1,4 @@
-/* $Id: VBoxPS2NT.cpp 117767 2017-08-31 12:09:41Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxPS2NT.cpp 117866 2017-09-05 13:24:02Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox NT4 Mouse Driver
  */
@@ -30,6 +30,7 @@ RT_C_DECLS_BEGIN
 #include <ntddmou.h>
 RT_C_DECLS_END
 
+#include <VBox/VMMDev.h>
 #include <VBox/VBoxGuestLib.h>
 
 /* not available on NT4 */
