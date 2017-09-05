@@ -1,4 +1,4 @@
-/* $Id: VBoxGuestR0LibSharedFolders.c 117884 2017-09-05 14:53:44Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxGuestR0LibSharedFolders.c 117892 2017-09-05 18:39:32Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxGuestR0LibSharedFolders - Ring 0 Shared Folders calls.
  */
@@ -28,6 +28,7 @@
 *   Header Files                                                                                                                 *
 *********************************************************************************************************************************/
 #define LOG_GROUP LOG_GROUP_SHARED_FOLDERS
+#include "VBoxGuestR0LibInternal.h"
 #include <VBox/VBoxGuestLibSharedFolders.h>
 #include <VBox/log.h>
 #include <iprt/time.h>
