@@ -1,4 +1,4 @@
-/* $Id: VMMDev.cpp 109079 2016-07-22 19:16:33Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxGuestR0LibVMMDev.cpp 117871 2017-09-05 13:51:06Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxGuestLibR0 - VMMDev device related functions.
  */

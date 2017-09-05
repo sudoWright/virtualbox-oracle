@@ -1,4 +1,4 @@
-/* $Id: Mouse.cpp 117767 2017-08-31 12:09:41Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxGuestR0LibMouse.cpp 117871 2017-09-05 13:51:06Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxGuestLibR0 - Mouse Integration.
  */
