@@ -1,4 +1,4 @@
-/* $Id: VBoxServiceInternal.h 109252 2016-07-29 12:52:10Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxServiceInternal.h 117891 2017-09-05 18:35:49Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxService - Guest Additions Services.
  */
@@ -26,6 +26,7 @@
 
 #include <iprt/list.h>
 #include <iprt/critsect.h>
+#include <iprt/path.h> /* RTPATH_MAX */
 
 #include <VBox/VBoxGuestLib.h>
 #include <VBox/HostServices/GuestControlSvc.h>
