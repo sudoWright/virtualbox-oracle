@@ -1,4 +1,4 @@
-/* $Id: mz.h 109030 2016-07-22 18:16:43Z knut.osmundsen@oracle.com $ */
+/* $Id: mz.h 117918 2017-09-06 18:11:39Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT, MZ Executable Header.
  */
@@ -28,7 +28,7 @@
 #define ___iprt_formats_mz_h
 
 #include <iprt/types.h>
-#include <iprt/assert.h>
+#include <iprt/assertcompile.h>
 
 typedef struct _IMAGE_DOS_HEADER
 {
