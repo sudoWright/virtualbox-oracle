@@ -1,4 +1,4 @@
-/* $Id: GuestControl.h 108323 2016-06-27 11:31:20Z andreas.loeffler@oracle.com $ */
+/* $Id: GuestControl.h 117906 2017-09-06 10:08:59Z knut.osmundsen@oracle.com $ */
 /** @file
  * Guest Control - Common Guest and Host Code.
  */
@@ -26,6 +26,8 @@
 
 #ifndef ___VBox_GuestHost_GuestControl_h
 #define ___VBox_GuestHost_GuestControl_h
+
+#include <iprt/types.h>
 
 /* Everything defined in this file lives in this namespace. */
 namespace guestControl {
