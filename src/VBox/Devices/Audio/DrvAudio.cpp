@@ -1,4 +1,4 @@
-/* $Id: DrvAudio.cpp 118157 2017-09-27 16:37:03Z andreas.loeffler@oracle.com $ */
+/* $Id: DrvAudio.cpp 118159 2017-09-27 16:48:28Z andreas.loeffler@oracle.com $ */
 /** @file
  * Intermediate audio driver header.
  *
@@ -3517,6 +3517,7 @@ static DECLCALLBACK(int) drvAudioAttach(PPDMDRVINS pDrvIns, uint32_t fFlags)
  * Detach notification.
  *
  * @param   pDrvIns     The driver instance data.
+ * @param   fFlags      Attach flags.
  */
 static DECLCALLBACK(void) drvAudioDetach(PPDMDRVINS pDrvIns, uint32_t fFlags)
 {
