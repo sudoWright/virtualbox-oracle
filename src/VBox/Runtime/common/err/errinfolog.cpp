@@ -1,6 +1,6 @@
-/* $Id: errinfolog.cpp 118280 2017-10-09 11:52:45Z knut.osmundsen@oracle.com $ */
+/* $Id: errinfolog.cpp 118281 2017-10-09 11:54:20Z knut.osmundsen@oracle.com $ */
 /** @file
- * IPRT - Error Info, Setters.
+ * IPRT - Error Info, Setters with logging.
  */
 
 /*
