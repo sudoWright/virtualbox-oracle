@@ -1,3 +1,4 @@
+/* $Id: VBoxVideo.h 118285 2017-10-09 12:50:34Z noreply@oracle.com $ */
 /** @file
  * VirtualBox Video interface.
  */
