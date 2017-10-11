@@ -1,4 +1,4 @@
-/* $Id: VBoxManageList.cpp 113155 2017-01-30 12:53:34Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxManageList.cpp 118325 2017-10-11 16:11:23Z noreply@oracle.com $ */
 /** @file
  * VBoxManage - The 'list' command.
  */
@@ -1357,7 +1357,7 @@ RTEXITCODE handleList(HandlerArg *a)
                 if (enmOptCommand == kListNotSpecified)
                     break;
                 ch = enmOptCommand;
-                /* fall thru */
+                RT_FALL_THRU();
 
             case kListVMs:
             case kListRunningVMs:

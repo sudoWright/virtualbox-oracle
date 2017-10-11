@@ -1,4 +1,4 @@
-/* $Id: VUSBUrb.cpp 113802 2017-03-07 12:13:49Z michal.necasek@oracle.com $ */
+/* $Id: VUSBUrb.cpp 118325 2017-10-11 16:11:23Z noreply@oracle.com $ */
 /** @file
  * Virtual USB - URBs.
  */
@@ -1378,7 +1378,7 @@ DECLHIDDEN(int) vusbUrbCancelWorker(PVUSBURB pUrb, CANCELMODE enmMode)
         {
             default:
                 AssertMsgFailed(("Invalid cancel mode\n"));
-                /* fall thru */
+                RT_FALL_THRU();
             case CANCELMODE_FAIL:
                 pUrb->enmStatus = VUSBSTATUS_CRC;
                 break;

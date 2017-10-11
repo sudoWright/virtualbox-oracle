@@ -1,4 +1,4 @@
-/* $Id: strformat.cpp 113328 2017-02-07 11:28:56Z noreply@oracle.com $ */
+/* $Id: strformat.cpp 118325 2017-10-11 16:11:23Z noreply@oracle.com $ */
 /** @file
  * IPRT - String Formatter.
  */
@@ -658,7 +658,7 @@ RTDECL(size_t) RTStrFormatV(PFNRTSTROUTPUT pfnOutput, void *pvArgOutput, PFNSTRF
 
                             case 'X':
                                 fFlags |= RTSTR_F_CAPITAL;
-                                /* fall thru */
+                                RT_FALL_THRU();
                             case 'x':
                                 uBase = 16;
                                 break;
