@@ -1,4 +1,4 @@
-/* $Id: HDAStreamPeriod.cpp 118419 2017-10-17 18:50:46Z knut.osmundsen@oracle.com $ */
+/* $Id: HDAStreamPeriod.cpp 118421 2017-10-17 19:08:38Z knut.osmundsen@oracle.com $ */
 /** @file
  * HDAStreamPeriod.cpp - Stream period functions for HD Audio.
  *
