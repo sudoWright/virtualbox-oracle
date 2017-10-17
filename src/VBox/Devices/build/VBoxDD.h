@@ -1,10 +1,10 @@
-/* $Id: VBoxDD.h 112919 2017-01-16 14:11:15Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: VBoxDD.h 118423 2017-10-17 19:14:35Z knut.osmundsen@oracle.com $ */
 /** @file
  * Built-in drivers & devices (part 1) header.
  */
 
 /*
- * Copyright (C) 2006-2016 Oracle Corporation
+ * Copyright (C) 2006-2017 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;
