@@ -1,10 +1,10 @@
-/* $Id: pdmwebcaminfs.h 109416 2016-08-01 15:16:22Z knut.osmundsen@oracle.com $ */
+/* $Id: pdmwebcaminfs.h 118406 2017-10-17 10:53:48Z knut.osmundsen@oracle.com $ */
 /** @file
  * webcaminfs - interfaces between dev and driver.
  */
 
 /*
- * Copyright (C) 2011-2016 Oracle Corporation
+ * Copyright (C) 2011-2017 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;
