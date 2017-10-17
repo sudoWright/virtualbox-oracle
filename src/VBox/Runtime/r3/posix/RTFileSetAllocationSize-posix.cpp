@@ -1,10 +1,10 @@
-/* $Id: RTFileSetAllocationSize-posix.cpp 105291 2016-01-28 14:53:22Z alexander.eichner@oracle.com $ */
+/* $Id: RTFileSetAllocationSize-posix.cpp 118412 2017-10-17 14:26:02Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - RTFileSetAllocationSize, linux implementation.
  */
 
 /*
- * Copyright (C) 2016 Oracle Corporation
+ * Copyright (C) 2016-2017 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

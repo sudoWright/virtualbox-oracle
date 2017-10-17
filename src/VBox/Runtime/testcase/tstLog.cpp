@@ -1,10 +1,10 @@
-/* $Id: tstLog.cpp 109295 2016-07-29 22:31:28Z knut.osmundsen@oracle.com $ */
+/* $Id: tstLog.cpp 118412 2017-10-17 14:26:02Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT Testcase - Log Formatting.
  */
 
 /*
- * Copyright (C) 2006-2016 Oracle Corporation
+ * Copyright (C) 2006-2017 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

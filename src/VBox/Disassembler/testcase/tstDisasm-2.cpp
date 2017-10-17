@@ -1,10 +1,10 @@
-/* $Id: tstDisasm-2.cpp 115807 2017-05-29 21:05:24Z noreply@oracle.com $ */
+/* $Id: tstDisasm-2.cpp 118412 2017-10-17 14:26:02Z knut.osmundsen@oracle.com $ */
 /** @file
  * Testcase - Generic Disassembler Tool.
  */
 
 /*
- * Copyright (C) 2008-2016 Oracle Corporation
+ * Copyright (C) 2008-2017 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;
@@ -574,7 +574,7 @@ int main(int argc, char **argv)
                 break;
 
             case 'V':
-                RTPrintf("$Revision: 115807 $\n");
+                RTPrintf("$Revision: 118412 $\n");
                 return 0;
 
             default:

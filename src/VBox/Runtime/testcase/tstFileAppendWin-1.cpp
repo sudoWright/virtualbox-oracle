@@ -1,10 +1,10 @@
-/* $Id: tstFileAppendWin-1.cpp 109161 2016-07-27 13:24:48Z knut.osmundsen@oracle.com $ */
+/* $Id: tstFileAppendWin-1.cpp 118412 2017-10-17 14:26:02Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT Testcase - Exploration of File Appending on Windows.
  */
 
 /*
- * Copyright (C) 2008-2016 Oracle Corporation
+ * Copyright (C) 2008-2017 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

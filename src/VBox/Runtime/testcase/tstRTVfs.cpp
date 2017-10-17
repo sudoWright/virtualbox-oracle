@@ -1,10 +1,10 @@
-/* $Id: tstRTVfs.cpp 109298 2016-07-30 00:08:44Z knut.osmundsen@oracle.com $ */
+/* $Id: tstRTVfs.cpp 118412 2017-10-17 14:26:02Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT Testcase - IPRT Virtual File System (VFS) API
  */
 
 /*
- * Copyright (C) 2015-2016 Oracle Corporation
+ * Copyright (C) 2015-2017 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

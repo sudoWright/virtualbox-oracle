@@ -1,4 +1,4 @@
-; $Id: tstAsmLock-2.asm 109035 2016-07-22 18:29:27Z knut.osmundsen@oracle.com $
+; $Id: tstAsmLock-2.asm 118412 2017-10-17 14:26:02Z knut.osmundsen@oracle.com $
 ;; @file
 ; Disassembly testcase - Invalid invariants.
 ;
@@ -11,7 +11,7 @@
 ;
 
 ;
-; Copyright (C) 2008-2016 Oracle Corporation
+; Copyright (C) 2008-2017 Oracle Corporation
 ;
 ; This file is part of VirtualBox Open Source Edition (OSE), as
 ; available from http://www.virtualbox.org. This file is free software;
