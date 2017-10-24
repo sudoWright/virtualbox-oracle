@@ -1,4 +1,4 @@
-; $Id: ASMBitFirstSetU64.asm 118412 2017-10-17 14:26:02Z knut.osmundsen@oracle.com $
+; $Id: ASMBitFirstSetU64.asm 118532 2017-10-24 15:01:30Z knut.osmundsen@oracle.com $
 ;; @file
 ; IPRT - ASMBitFirstSetU64().
 ;
@@ -113,5 +113,4 @@ BEGINPROC_EXPORTED ASMBitFirstSetU64
         ret
 %endif
 ENDPROC ASMBitFirstSetU64
-
 

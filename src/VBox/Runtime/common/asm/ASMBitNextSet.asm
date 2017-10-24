@@ -1,4 +1,4 @@
-; $Id: ASMBitNextSet.asm 118412 2017-10-17 14:26:02Z knut.osmundsen@oracle.com $
+; $Id: ASMBitNextSet.asm 118532 2017-10-24 15:01:30Z knut.osmundsen@oracle.com $
 ;; @file
 ; IPRT - ASMBitNextSet().
 ;
@@ -170,5 +170,4 @@ BEGINPROC_EXPORTED ASMBitNextSet
         mov     eax, 0ffffffffh
         jmp     .return
 ENDPROC ASMBitNextSet
-
 

@@ -1,4 +1,4 @@
-/* $Id: tarvfs.cpp 118412 2017-10-17 14:26:02Z knut.osmundsen@oracle.com $ */
+/* $Id: tarvfs.cpp 118532 2017-10-24 15:01:30Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - TAR Virtual Filesystem, Reader.
  */
@@ -1529,5 +1529,4 @@ RTDECL(int) RTZipTarFsStreamFromIoStream(RTVFSIOSTREAM hVfsIosIn, uint32_t fFlag
     RTVfsIoStrmRelease(hVfsIosIn);
     return rc;
 }
-
 

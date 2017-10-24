@@ -1,4 +1,4 @@
-/* $Id: RTLocaleQueryNormalizedBaseLocaleName-r3-generic.cpp 117188 2017-07-26 13:11:21Z knut.osmundsen@oracle.com $ */
+/* $Id: RTLocaleQueryNormalizedBaseLocaleName-r3-generic.cpp 118532 2017-10-24 15:01:30Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - RTLocaleQueryNormalizedBaseLocaleName, ring-3 generic.
  */
@@ -89,5 +89,4 @@ RTDECL(int) RTLocaleQueryNormalizedBaseLocaleName(char *pszName, size_t cbName)
     }
     return rc;
 }
-
 

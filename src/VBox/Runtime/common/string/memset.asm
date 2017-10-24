@@ -1,4 +1,4 @@
-; $Id: memset.asm 118412 2017-10-17 14:26:02Z knut.osmundsen@oracle.com $
+; $Id: memset.asm 118532 2017-10-24 15:01:30Z knut.osmundsen@oracle.com $
 ;; @file
 ; IPRT - No-CRT memset - AMD64 & X86.
 ;
