@@ -1,4 +1,4 @@
-; $Id: VMMRCA.asm 118412 2017-10-17 14:26:02Z knut.osmundsen@oracle.com $
+; $Id: VMMRCA.asm 118534 2017-10-24 15:07:46Z knut.osmundsen@oracle.com $
 ;; @file
 ; VMMRC - Raw-mode Context Virtual Machine Monitor assembly routines.
 ;

@@ -1,4 +1,4 @@
-/* $Id: MM.cpp 118412 2017-10-17 14:26:02Z knut.osmundsen@oracle.com $ */
+/* $Id: MM.cpp 118534 2017-10-24 15:07:46Z knut.osmundsen@oracle.com $ */
 /** @file
  * MM - Memory Manager.
  */
@@ -853,5 +853,4 @@ VMMR3DECL(uint32_t) MMR3PhysGet4GBRamHoleSize(PVM pVM)
     VM_ASSERT_VALID_EXT_RETURN(pVM, UINT32_MAX);
     return pVM->mm.s.cbRamHole;
 }
-
 
