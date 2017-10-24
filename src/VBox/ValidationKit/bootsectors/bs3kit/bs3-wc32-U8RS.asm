@@ -1,4 +1,4 @@
-; $Id: bs3-wc32-U8RS.asm 118412 2017-10-17 14:26:02Z knut.osmundsen@oracle.com $
+; $Id: bs3-wc32-U8RS.asm 118535 2017-10-24 15:10:29Z knut.osmundsen@oracle.com $
 ;; @file
 ; BS3Kit - 32-bit Watcom C/C++, 64-bit unsigned integer right shift.
 ;
@@ -57,5 +57,4 @@ $??U8RS:
         shr     eax, cl                 ; Only uses lower 5 bits.
         xor     edx, edx
         jmp     .return
-
 
