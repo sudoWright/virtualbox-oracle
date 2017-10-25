@@ -1,4 +1,4 @@
-/* $Id: DevVGA-SVGA3d-savedstate.cpp 118474 2017-10-23 11:54:35Z vitali.pelenjow@oracle.com $ */
+/* $Id: DevVGA-SVGA3d-savedstate.cpp 118615 2017-10-25 12:25:43Z knut.osmundsen@oracle.com $ */
 /** @file
  * DevSVGA3d - VMWare SVGA device, 3D parts - Saved state and assocated stuff.
  */
@@ -668,7 +668,7 @@ int vmsvga3dSaveExec(PVGASTATE pThis, PSSMHANDLE pSSM)
                         {
                         case VMSVGA3D_D3DRESTYPE_CUBE_TEXTURE:
                         case VMSVGA3D_D3DRESTYPE_VOLUME_TEXTURE:
-                            AssertFailed(); ///@todo
+                            AssertFailed(); /// @todo
                             fSkipSave = true;
                             break;
                         case VMSVGA3D_D3DRESTYPE_SURFACE:
