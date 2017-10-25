@@ -1,5 +1,4 @@
-/* $Id: fakedri_glfuncsList.h 109079 2016-07-22 19:16:33Z knut.osmundsen@oracle.com $ */
-
+/* $Id: fakedri_glfuncsList.h 118632 2017-10-25 14:24:45Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox OpenGL list of opengl functions common in Mesa and vbox opengl stub
  */
