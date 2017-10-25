@@ -1,4 +1,4 @@
-/* $Id: VBoxDD.d 118423 2017-10-17 19:14:35Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxDD.d 118613 2017-10-25 11:36:15Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxDD - Static dtrace probes
  */
@@ -31,5 +31,4 @@ provider vboxdd
 #pragma D attributes Private/Private/Unknown  provider vboxdd function
 #pragma D attributes Evolving/Evolving/Common provider vboxdd name
 #pragma D attributes Evolving/Evolving/Common provider vboxdd args
-
 
