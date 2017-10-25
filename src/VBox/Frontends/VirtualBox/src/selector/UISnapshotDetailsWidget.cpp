@@ -1,4 +1,4 @@
-/* $Id: UISnapshotDetailsWidget.cpp 118177 2017-09-28 15:52:28Z sergey.dubov@oracle.com $ */
+/* $Id: UISnapshotDetailsWidget.cpp 118577 2017-10-25 09:09:33Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Qt GUI - UISnapshotDetailsWidget class implementation.
  */
@@ -330,7 +330,7 @@ void UISnapshotDetailsElement::prepare()
 
 
 /*********************************************************************************************************************************
-*   Class UIScreenshotViewer implementation.                                                                                   *
+*   Class UIScreenshotViewer implementation.                                                                                     *
 *********************************************************************************************************************************/
 
 UIScreenshotViewer::UIScreenshotViewer(const QPixmap &pixmapScreenshot,
