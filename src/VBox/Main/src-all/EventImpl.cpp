@@ -1,4 +1,4 @@
-/* $Id: EventImpl.cpp 110218 2016-08-16 14:04:28Z knut.osmundsen@oracle.com $ */
+/* $Id: EventImpl.cpp 118647 2017-10-25 19:16:02Z klaus.espenlaub@oracle.com $ */
 /** @file
  * VirtualBox COM Event class implementation
  */
@@ -861,6 +861,7 @@ HRESULT ListenerRecord::enqueue(IEvent *aEvent)
     if (queueSize > 1000 || (queueSize > 500 && sinceRead > 60 * 1000))
     {
         ::RTCritSectLeave(&mcsQLock);
+        LogRel(("Event: forcefully unregistering passive event listener %p due to excessive queue size\n", this));
         return E_ABORT;
     }
 
