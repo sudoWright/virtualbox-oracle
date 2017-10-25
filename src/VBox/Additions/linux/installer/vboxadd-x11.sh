@@ -1,6 +1,7 @@
 #! /bin/sh
-#
-# Linux Additions X11 setup init script ($Revision: 117937 $)
+# $Id: vboxadd-x11.sh 118651 2017-10-25 19:49:49Z knut.osmundsen@oracle.com $
+## @file
+# Linux Additions X11 setup init script ($Revision: 118651 $)
 #
 
 #
