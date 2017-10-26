@@ -1,5 +1,6 @@
-; $Id$
-; @file NLS for German language.
+; $Id: German.nsh 118678 2017-10-26 14:38:32Z knut.osmundsen@oracle.com $
+;; @file
+; NLS for German language.
 ;
 
 ;

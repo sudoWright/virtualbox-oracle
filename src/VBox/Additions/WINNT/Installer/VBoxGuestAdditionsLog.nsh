@@ -1,4 +1,4 @@
-; $Id: VBoxGuestAdditionsLog.nsh 83502 2013-01-31 11:36:25Z andreas.loeffler@oracle.com $
+; $Id: VBoxGuestAdditionsLog.nsh 118678 2017-10-26 14:38:32Z knut.osmundsen@oracle.com $
 ;; @file
 ; VBoxGuestAdditionLog.nsh - Logging functions.
 ;

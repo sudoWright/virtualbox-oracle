@@ -1,7 +1,6 @@
-; $Id: VBoxGuestAdditionsExternal.nsh 83502 2013-01-31 11:36:25Z andreas.loeffler@oracle.com $
+; $Id: VBoxGuestAdditionsExternal.nsh 118678 2017-10-26 14:38:32Z knut.osmundsen@oracle.com $
 ;; @file
-; VBoxGuestAdditionExternal.nsh - Utility function for invoking external
-;                                 applications.
+; VBoxGuestAdditionExternal.nsh - Utility function for invoking external applications.
 ;
 
 ;
