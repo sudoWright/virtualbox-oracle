@@ -1,5 +1,4 @@
-/* $Id: VBoxDispDbg.h 117374 2017-08-02 21:45:09Z vitali.pelenjow@oracle.com $ */
-
+/* $Id: VBoxDispDbg.h 118674 2017-10-26 14:18:52Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxVideo Display D3D User mode dll
  */

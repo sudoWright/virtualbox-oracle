@@ -1,5 +1,4 @@
-/* $Id: VBoxDispMouse.cpp 109080 2016-07-22 19:17:25Z knut.osmundsen@oracle.com $ */
-
+/* $Id: VBoxDispMouse.cpp 118674 2017-10-26 14:18:52Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox XPDM Display driver, mouse pointer related functions
  */

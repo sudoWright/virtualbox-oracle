@@ -1,5 +1,4 @@
-/* $Id: VBoxDispKmt.h 117374 2017-08-02 21:45:09Z vitali.pelenjow@oracle.com $ */
-
+/* $Id: VBoxDispKmt.h 118674 2017-10-26 14:18:52Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxVideo Display D3D User mode dll
  */
@@ -21,7 +20,7 @@
 
 #include <D3dkmthk.h>
 
-#include <../../../common/wddm/VBoxMPIf.h>
+#include "../../../common/wddm/VBoxMPIf.h"
 
 /* win8 release preview-specific stuff */
 typedef struct _D3DKMT_ADAPTERINFO

@@ -1,5 +1,4 @@
-/* $Id: VBoxMPVidPn.h 110829 2016-09-22 11:41:09Z dmitrii.grigorev@oracle.com $ */
-
+/* $Id: VBoxMPVidPn.h 118674 2017-10-26 14:18:52Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox WDDM Miniport driver
  */

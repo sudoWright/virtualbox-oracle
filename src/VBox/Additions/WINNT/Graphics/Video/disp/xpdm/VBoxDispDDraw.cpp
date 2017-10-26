@@ -1,5 +1,4 @@
-/* $Id: VBoxDispDDraw.cpp 110221 2016-08-16 14:05:58Z knut.osmundsen@oracle.com $ */
-
+/* $Id: VBoxDispDDraw.cpp 118674 2017-10-26 14:18:52Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox XPDM Display driver, DirectDraw callbacks
  */

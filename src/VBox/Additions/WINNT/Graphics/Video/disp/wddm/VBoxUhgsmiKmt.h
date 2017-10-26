@@ -1,5 +1,4 @@
-/* $Id: VBoxUhgsmiKmt.h 109080 2016-07-22 19:17:25Z knut.osmundsen@oracle.com $ */
-
+/* $Id: VBoxUhgsmiKmt.h 118674 2017-10-26 14:18:52Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxVideo Display D3D User mode dll
  */

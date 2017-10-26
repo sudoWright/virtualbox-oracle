@@ -1,7 +1,10 @@
-/* $Id: VBoxVideoWinDbg.cpp 109252 2016-07-29 12:52:10Z knut.osmundsen@oracle.com $ */
-
+/* $Id: VBoxVideoWinDbg.cpp 118674 2017-10-26 14:18:52Z knut.osmundsen@oracle.com $ */
 /** @file
- * Copyright (C) 2011-2016 Oracle Corporation
+ * ???
+ */
+
+/*
+ * Copyright (C) 2017 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

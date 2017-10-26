@@ -1,5 +1,4 @@
-/* $Id: VBoxMPShgsmi.h 112977 2017-01-20 09:23:53Z noreply@oracle.com $ */
-
+/* $Id: VBoxMPShgsmi.h 118674 2017-10-26 14:18:52Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox WDDM Miniport driver
  */

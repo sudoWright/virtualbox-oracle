@@ -1,5 +1,4 @@
-/* $Id: VBoxDispVHWA.h 109080 2016-07-22 19:17:25Z knut.osmundsen@oracle.com $ */
-
+/* $Id: VBoxDispVHWA.h 118674 2017-10-26 14:18:52Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox XPDM Display driver, helper functions which interacts with our miniport driver
  */

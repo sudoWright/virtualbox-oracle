@@ -1,5 +1,4 @@
-/* $Id: VBoxMPHGSMI.h 117860 2017-09-05 11:33:54Z knut.osmundsen@oracle.com $ */
-
+/* $Id: VBoxMPHGSMI.h 118674 2017-10-26 14:18:52Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Miniport HGSMI related header
  */
