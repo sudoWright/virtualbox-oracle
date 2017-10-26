@@ -1,3 +1,4 @@
+/* $Id: VBoxGINA.h 118684 2017-10-26 14:47:05Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxGINA - Windows Logon DLL for VirtualBox.
  */
