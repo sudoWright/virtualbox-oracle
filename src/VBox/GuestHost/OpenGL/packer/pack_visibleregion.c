@@ -1,4 +1,4 @@
-/* $Id: pack_visibleregion.c 109734 2016-08-06 21:19:19Z knut.osmundsen@oracle.com $ */
+/* $Id: pack_visibleregion.c 118716 2017-10-26 17:24:52Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Packing VisibleRegion information
  */
