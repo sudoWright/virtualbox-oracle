@@ -1,4 +1,4 @@
-; $Id: tstAsmLock-3.asm 118412 2017-10-17 14:26:02Z knut.osmundsen@oracle.com $
+; $Id: tstAsmLock-3.asm 118697 2017-10-26 15:38:48Z knut.osmundsen@oracle.com $
 ;; @file
 ; Disassembly testcase - Invalid lock sequences for non-locking instructions.
 ;
