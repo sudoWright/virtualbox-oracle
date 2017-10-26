@@ -1,4 +1,4 @@
-/* $Id: VBoxDnDDataObject.cpp 109944 2016-08-11 00:02:38Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxDnDDataObject.cpp 118685 2017-10-26 14:51:38Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxDnDDataObject.cpp - IDataObject implementation.
  */
@@ -14,6 +14,8 @@
  * VirtualBox OSE distribution. VirtualBox OSE is distributed in the
  * hope that it will be useful, but WITHOUT ANY WARRANTY of any kind.
  */
+
+
 #include <iprt/win/windows.h>
 #include <new> /* For bad_alloc. */
 #include <iprt/win/shlobj.h>

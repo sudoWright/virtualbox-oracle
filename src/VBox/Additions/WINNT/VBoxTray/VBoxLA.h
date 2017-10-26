@@ -1,4 +1,4 @@
-/* $Id: VBoxLA.h 109080 2016-07-22 19:17:25Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxLA.h 118685 2017-10-26 14:51:38Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxLA - Location Awareness
  */
@@ -18,5 +18,5 @@
 #ifndef __VBOXSERVICELA__H
 #define __VBOXSERVICELA__H
 
-#endif /* __VBOXSERVICELA__H */
+#endif /* !__VBOXSERVICELA__H */
 
