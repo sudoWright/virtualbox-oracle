@@ -1,7 +1,9 @@
 #!/usr/bin/perl -w
-# $Revision: 83575 $
-#
+# $Id: x11restore.pl 118672 2017-10-26 13:47:29Z knut.osmundsen@oracle.com $
+## @file
 # Restore xorg.conf while removing Guest Additions.
+#
+
 #
 # Copyright (C) 2008-2012 Oracle Corporation
 #
