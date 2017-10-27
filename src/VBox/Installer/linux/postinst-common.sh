@@ -1,10 +1,11 @@
 #!/bin/sh
-# $Id: postinst-common.sh 115699 2017-05-24 08:02:36Z noreply@oracle.com $
+# $Id: postinst-common.sh 118731 2017-10-27 00:06:50Z knut.osmundsen@oracle.com $
 ## @file
 # Oracle VM VirtualBox
 # VirtualBox Linux post-installer common portions
 #
 
+#
 # Copyright (C) 2015 Oracle Corporation
 #
 # This file is part of VirtualBox Open Source Edition (OSE), as
