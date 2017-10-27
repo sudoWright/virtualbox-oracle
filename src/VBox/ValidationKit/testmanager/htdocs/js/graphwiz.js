@@ -1,10 +1,9 @@
-/* $Id: graphwiz.js 118412 2017-10-17 14:26:02Z knut.osmundsen@oracle.com $ */
+/* $Id: graphwiz.js 118784 2017-10-27 17:00:31Z knut.osmundsen@oracle.com $ */
 /** @file
  * JavaScript functions for the Graph Wizard.
  */
 
 /*
- *
  * Copyright (C) 2012-2017 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
