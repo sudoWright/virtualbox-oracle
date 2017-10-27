@@ -1,4 +1,4 @@
-/* $Id: DevVGA-SVGA3d-ogl.cpp 118745 2017-10-27 10:00:34Z vitali.pelenjow@oracle.com $ */
+/* $Id: DevVGA-SVGA3d-ogl.cpp 118750 2017-10-27 10:08:46Z vitali.pelenjow@oracle.com $ */
 /** @file
  * DevVMWare - VMWare SVGA device
  */
@@ -6824,6 +6824,7 @@ int vmsvga3dOcclusionQueryBegin(PVMSVGA3DSTATE pState, PVMSVGA3DCONTEXT pContext
 
 int vmsvga3dOcclusionQueryEnd(PVMSVGA3DSTATE pState, PVMSVGA3DCONTEXT pContext)
 {
+    RT_NOREF(pContext);
     AssertReturn(pState->ext.glEndQuery, VERR_NOT_SUPPORTED);
     pState->ext.glEndQuery(GL_ANY_SAMPLES_PASSED);
     VMSVGA3D_CHECK_LAST_ERROR(pState, pContext);
