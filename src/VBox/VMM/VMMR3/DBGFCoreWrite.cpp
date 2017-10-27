@@ -1,4 +1,4 @@
-/* $Id: DBGFCoreWrite.cpp 118412 2017-10-17 14:26:02Z knut.osmundsen@oracle.com $ */
+/* $Id: DBGFCoreWrite.cpp 118774 2017-10-27 15:58:19Z knut.osmundsen@oracle.com $ */
 /** @file
  * DBGF - Debugger Facility, Guest Core Dump.
  */
@@ -52,6 +52,7 @@
 #include <iprt/param.h>
 #include <iprt/file.h>
 #include <iprt/mem.h>
+#include <irpt/formats/elf64.h>
 
 #include "DBGFInternal.h"
 
@@ -67,8 +68,6 @@
 #include <VBox/err.h>
 #include <VBox/log.h>
 #include <VBox/version.h>
-
-#include "../../Runtime/include/internal/ldrELF64.h"
 
 
 /*********************************************************************************************************************************
