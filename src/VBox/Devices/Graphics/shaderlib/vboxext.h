@@ -1,10 +1,9 @@
-/* $Id: vboxext.h 109553 2016-08-04 07:08:40Z knut.osmundsen@oracle.com $ */
+/* $Id: vboxext.h 118753 2017-10-27 10:22:13Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox extension to Wine D3D
  */
 
 /*
- *
  * Copyright (C) 2011-2016 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
