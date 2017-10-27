@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# $Id: utils.py 118778 2017-10-27 16:19:47Z knut.osmundsen@oracle.com $
+# $Id: utils.py 118796 2017-10-27 18:07:48Z knut.osmundsen@oracle.com $
 # pylint: disable=C0302
 
 """
@@ -27,7 +27,7 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 118778 $"
+__version__ = "$Revision: 118796 $"
 
 
 # Standard Python imports.
@@ -348,7 +348,7 @@ def openNoDenyDeleteNoInherit(sFile, sMode = 'r'):
             if 'a' in sMode:
                 fOpen |= os.O_APPEND;
             if 'b' in sMode or 't' in sMode:
-                fOpen |= os.O_TEXT;
+                fOpen |= os.O_TEXT;                                                                 # pylint: disable=no-member
             fdFile = msvcrt.open_osfhandle(hDetachedFile, fOpen);
 
             # Tell python to use this handle.
