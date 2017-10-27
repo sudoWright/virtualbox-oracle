@@ -1,4 +1,4 @@
-/* $Id: init-win.cpp 118412 2017-10-17 14:26:02Z knut.osmundsen@oracle.com $ */
+/* $Id: init-win.cpp 118769 2017-10-27 15:48:25Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Init Ring-3, Windows Specific Code.
  */
@@ -635,5 +635,4 @@ static LONG CALLBACK rtR3WinUnhandledXcptFilter(PEXCEPTION_POINTERS pPtrs)
         return g_pfnUnhandledXcptFilter(pPtrs);
     return EXCEPTION_CONTINUE_SEARCH;
 }
-
 

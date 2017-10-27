@@ -1,4 +1,4 @@
-/* $Id: tstRTMath.cpp 116052 2017-06-12 11:33:15Z noreply@oracle.com $ */
+/* $Id: tstRTMath.cpp 118769 2017-10-27 15:48:25Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT Testcase - base mathematics.
  */
@@ -64,7 +64,7 @@ int main()
     if (rc)
         return rc;
     RTTestBanner(hTest);
-    
+
     tstCorrectness(hTest);
 
     return RTTestSummaryAndDestroy(hTest);
