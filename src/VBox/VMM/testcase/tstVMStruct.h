@@ -1,4 +1,4 @@
-/* $Id: tstVMStruct.h 118412 2017-10-17 14:26:02Z knut.osmundsen@oracle.com $ */
+/* $Id: tstVMStruct.h 118810 2017-10-28 13:12:06Z knut.osmundsen@oracle.com $ */
 /** @file
  * tstVMMStruct - Statements for generating VM and VMCPU offset and size tests.
  *

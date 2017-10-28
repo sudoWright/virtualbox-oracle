@@ -1,4 +1,4 @@
-/* $Id: DBGPlugInCommonELFTmpl.cpp.h 109436 2016-08-01 17:15:19Z knut.osmundsen@oracle.com $ */
+/* $Id: DBGPlugInCommonELFTmpl.cpp.h 118810 2017-10-28 13:12:06Z knut.osmundsen@oracle.com $ */
 /** @file
  * DBGPlugInCommonELF - Code Template for dealing with one kind of ELF.
  */

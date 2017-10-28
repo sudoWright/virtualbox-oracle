@@ -1,4 +1,4 @@
-/* $Id: vboxvfs.h 109082 2016-07-22 19:17:54Z knut.osmundsen@oracle.com $ */
+/* $Id: vboxvfs.h 118810 2017-10-28 13:12:06Z knut.osmundsen@oracle.com $ */
 /** @file
  * Description.
  */

@@ -1,4 +1,4 @@
-/* $Id: the-os2-kernel.h 48298 2009-06-08 00:43:21Z knut.osmundsen@oracle.com $ */
+/* $Id: the-os2-kernel.h 118810 2017-10-28 13:12:06Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Ring-0 Driver, The OS/2 Kernel Headers.
  */

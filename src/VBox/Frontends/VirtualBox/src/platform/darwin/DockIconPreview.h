@@ -1,4 +1,4 @@
-/* $Id: DockIconPreview.h 109051 2016-07-22 18:44:18Z knut.osmundsen@oracle.com $ */
+/* $Id: DockIconPreview.h 118810 2017-10-28 13:12:06Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIDockIconPreview class declaration.
  */

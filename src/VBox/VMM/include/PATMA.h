@@ -1,4 +1,4 @@
-/* $Id: PATMA.h 118412 2017-10-17 14:26:02Z knut.osmundsen@oracle.com $ */
+/* $Id: PATMA.h 118810 2017-10-28 13:12:06Z knut.osmundsen@oracle.com $ */
 /** @file
  * PATM macros & definitions (identical to PATMA.mac!).
  */
