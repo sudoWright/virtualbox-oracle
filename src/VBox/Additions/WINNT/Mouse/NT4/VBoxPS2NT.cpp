@@ -1,10 +1,10 @@
-/* $Id: VBoxPS2NT.cpp 117885 2017-09-05 17:22:12Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxPS2NT.cpp 118835 2017-10-28 14:55:58Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox NT4 Mouse Driver
  */
 
 /*
- * Copyright (C) 2011-2016 Oracle Corporation
+ * Copyright (C) 2011-2017 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

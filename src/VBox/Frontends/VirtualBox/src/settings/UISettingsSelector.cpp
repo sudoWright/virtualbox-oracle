@@ -1,10 +1,10 @@
-/* $Id: UISettingsSelector.cpp 112633 2017-01-04 18:42:21Z noreply@oracle.com $ */
+/* $Id: UISettingsSelector.cpp 118835 2017-10-28 14:55:58Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Qt GUI - UISettingsSelector class implementation.
  */
 
 /*
- * Copyright (C) 2008-2016 Oracle Corporation
+ * Copyright (C) 2008-2017 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

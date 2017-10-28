@@ -1,10 +1,10 @@
-/* $Id: proxy.h 109913 2016-08-10 14:41:47Z knut.osmundsen@oracle.com $ */
+/* $Id: proxy.h 118835 2017-10-28 14:55:58Z knut.osmundsen@oracle.com $ */
 /** @file
  * NAT Network - common definitions and declarations.
  */
 
 /*
- * Copyright (C) 2013-2016 Oracle Corporation
+ * Copyright (C) 2013-2017 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

@@ -1,10 +1,10 @@
-/* $Id: UIVMInformationDialog.cpp 112830 2017-01-13 07:30:55Z sergey.dubov@oracle.com $ */
+/* $Id: UIVMInformationDialog.cpp 118835 2017-10-28 14:55:58Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVMInformationDialog class implementation.
  */
 
 /*
- * Copyright (C) 2016 Oracle Corporation
+ * Copyright (C) 2016-2017 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

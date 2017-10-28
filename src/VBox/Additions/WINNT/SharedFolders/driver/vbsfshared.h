@@ -1,4 +1,4 @@
-/* $Id: vbsfshared.h 109080 2016-07-22 19:17:25Z knut.osmundsen@oracle.com $ */
+/* $Id: vbsfshared.h 118835 2017-10-28 14:55:58Z knut.osmundsen@oracle.com $ */
 /** @file
  *
  * VirtualBox Windows Guest Shared Folders
@@ -7,7 +7,7 @@
  */
 
 /*
- * Copyright (C) 2012-2016 Oracle Corporation
+ * Copyright (C) 2012-2017 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

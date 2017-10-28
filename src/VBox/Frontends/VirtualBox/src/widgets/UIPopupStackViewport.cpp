@@ -1,10 +1,10 @@
-/* $Id: UIPopupStackViewport.cpp 117716 2017-08-29 14:22:33Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIPopupStackViewport.cpp 118835 2017-10-28 14:55:58Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIPopupStackViewport class implementation.
  */
 
 /*
- * Copyright (C) 2013-2016 Oracle Corporation
+ * Copyright (C) 2013-2017 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

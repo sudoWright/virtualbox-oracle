@@ -1,10 +1,10 @@
-/* $Id: QISplitter.h 118810 2017-10-28 13:12:06Z knut.osmundsen@oracle.com $ */
+/* $Id: QISplitter.h 118835 2017-10-28 14:55:58Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Qt GUI - Qt extensions: QISplitter class declaration.
  */
 
 /*
- * Copyright (C) 2009-2016 Oracle Corporation
+ * Copyright (C) 2009-2017 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

@@ -1,10 +1,10 @@
-/* $Id: VUSBUrbPool.cpp 113802 2017-03-07 12:13:49Z michal.necasek@oracle.com $ */
+/* $Id: VUSBUrbPool.cpp 118835 2017-10-28 14:55:58Z knut.osmundsen@oracle.com $ */
 /** @file
  * Virtual USB - URB pool.
  */
 
 /*
- * Copyright (C) 2016 Oracle Corporation
+ * Copyright (C) 2016-2017 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;
