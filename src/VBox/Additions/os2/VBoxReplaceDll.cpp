@@ -1,10 +1,10 @@
-/** $Id: VBoxReplaceDll.cpp 118835 2017-10-28 14:55:58Z knut.osmundsen@oracle.com $ */
+/** $Id: VBoxReplaceDll.cpp 118837 2017-10-28 15:07:25Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxReplaceDll - helper for replacing a dll when it's in use by the system
  */
 
 /*
- * Copyright (C) 2013-2017 Oracle Corporation
+ * Copyright (C) 2013-2016 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;
@@ -67,7 +67,7 @@ int main(int argc, char **argv)
             else if (   !strcmp(argv[i], "--version")
                      || !strcmp(argv[i], "-V") )
             {
-                printf("$Revision: 118835 $\n");
+                printf("$Revision: 118837 $\n");
                 return 0;
             }
             else
