@@ -1,4 +1,4 @@
-/* $Id: gvm.h 118406 2017-10-17 10:53:48Z knut.osmundsen@oracle.com $ */
+/* $Id: gvm.h 118811 2017-10-28 13:12:42Z knut.osmundsen@oracle.com $ */
 /** @file
  * GVM - The Global VM Data.
  */

@@ -1,4 +1,4 @@
-/* $Id: pecoff.h 118404 2017-10-17 10:20:49Z knut.osmundsen@oracle.com $ */
+/* $Id: pecoff.h 118811 2017-10-28 13:12:42Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Windows NT PE & COFF Structures and Constants.
  */
