@@ -1,3 +1,4 @@
+/* $Id: inlines.h 118840 2017-10-28 16:12:47Z knut.osmundsen@oracle.com $ */
 /** @file
  * Inline routines for Watcom C.
  */
