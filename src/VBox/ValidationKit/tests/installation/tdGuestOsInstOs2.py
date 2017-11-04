@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# $Id: tdGuestOsInstOs2.py 118927 2017-11-04 10:19:04Z knut.osmundsen@oracle.com $
+# $Id: tdGuestOsInstOs2.py 118929 2017-11-04 10:44:04Z knut.osmundsen@oracle.com $
 
 """
 VirtualBox Validation Kit - OS/2 install tests.
@@ -27,7 +27,7 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 118927 $"
+__version__ = "$Revision: 118929 $"
 
 
 # Standard Python imports.
@@ -245,5 +245,5 @@ class tdGuestOsInstOs2(vbox.TestDriver):
         return False
 
 if __name__ == '__main__':
-    sys.exit(tdGuestOsInstOs2().main(sys.argv);
+    sys.exit(tdGuestOsInstOs2().main(sys.argv));
 
