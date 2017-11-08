@@ -1,4 +1,4 @@
-/* $Id: dvmmbr.cpp 118412 2017-10-17 14:26:02Z knut.osmundsen@oracle.com $ */
+/* $Id: dvmmbr.cpp 118976 2017-11-08 13:58:58Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT Disk Volume Management API (DVM) - MBR format backend.
  */
@@ -400,8 +400,10 @@ static DECLCALLBACK(int) rtDvmFmtMbrVolumeWrite(RTDVMVOLUMEFMT hVolFmt, uint64_t
 
 RTDVMFMTOPS g_rtDvmFmtMbr =
 {
-    /* pcszFmt */
+    /* pszFmt */
     "MBR",
+    /* enmFormat */
+    RTDVMFORMATTYPE_MBR,
     /* pfnProbe */
     rtDvmFmtMbrProbe,
     /* pfnOpen */
