@@ -1,4 +1,4 @@
-/* $Id: VBoxAboutDlg.cpp 118839 2017-10-28 15:14:05Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxAboutDlg.cpp 119035 2017-11-13 09:49:45Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - VBoxAboutDlg class implementation.
  */
@@ -124,8 +124,11 @@ void VBoxAboutDlg::prepare()
     }
 
     /* Load image: */
+    const int iIconMetric = QApplication::style()->pixelMetric(QStyle::PM_LargeIconSize);
+    const double dRatio = (double)iIconMetric / 32;
     const QIcon icon = UIIconPool::iconSet(strPath);
     m_size = icon.availableSizes().first();
+    m_size *= dRatio;
     m_pixmap = icon.pixmap(m_size);
 
     /* Prepare main-layout: */
