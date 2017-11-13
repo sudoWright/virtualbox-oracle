@@ -1,4 +1,4 @@
-/* $Id: DevVGA-SVGA3d-shared.cpp 118474 2017-10-23 11:54:35Z vitali.pelenjow@oracle.com $ */
+/* $Id: DevVGA-SVGA3d-shared.cpp 119030 2017-11-13 07:00:48Z vitali.pelenjow@oracle.com $ */
 /** @file
  * DevVMWare - VMWare SVGA device
  */
@@ -428,6 +428,7 @@ uint32_t vmsvga3dSurfaceFormatSize(SVGA3dSurfaceFormat format,
         *pcxBlock = 1;
         *pcyBlock = 1;
         return 8;
+    case SVGA3D_R8G8B8A8_UNORM:
     case SVGA3D_R8G8B8A8_SNORM:
         *pcxBlock = 1;
         *pcyBlock = 1;
