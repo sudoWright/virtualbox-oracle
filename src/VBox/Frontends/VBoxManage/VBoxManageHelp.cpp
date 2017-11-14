@@ -1,4 +1,4 @@
-/* $Id: VBoxManageHelp.cpp 118206 2017-09-29 16:14:12Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxManageHelp.cpp 119049 2017-11-14 02:58:20Z noreply@oracle.com $ */
 /** @file
  * VBoxManage - help and other message output.
  */
@@ -901,6 +901,7 @@ void printUsage(USAGECATEGORY fCategory, uint32_t fSubCategory, PRTSTREAM pStrm)
                      "                            [--encodedlun <lun>]\n"
                      "                            [--username <username>]\n"
                      "                            [--password <password>]\n"
+                     "                            [--passwordfile <file>]\n"
                      "                            [--initiator <initiator>]\n"
                      "                            [--intnet]\n"
                      "\n", SEP);
