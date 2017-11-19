@@ -1,4 +1,4 @@
-/* $Id: RTProcIsRunningByName-linux.cpp 119153 2017-11-19 14:27:58Z knut.osmundsen@oracle.com $ */
+/* $Id: RTProcIsRunningByName-linux.cpp 119154 2017-11-19 14:32:51Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - RTProcIsRunningByName, Linux implementation.
  */
@@ -109,7 +109,7 @@ RTR3DECL(bool) RTProcIsRunningByName(const char *pszName)
                 }
             }
         }
-        RTDirClose(pDir);
+        RTDirClose(hDir);
     }
 
     return false;
