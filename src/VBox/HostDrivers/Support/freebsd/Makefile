@@ -1,4 +1,4 @@
-# $Id: Makefile 118839 2017-10-28 15:14:05Z knut.osmundsen@oracle.com $
+# $Id: Makefile 119162 2017-11-19 16:12:34Z knut.osmundsen@oracle.com $
 ## @file
 # Makefile for the VirtualBox FreeBSD Host Driver.
 #
@@ -58,7 +58,8 @@ SRCS += \
 .PATH:	${.CURDIR}/common/err
 SRCS += \
 	RTErrConvertFromErrno.c \
-	RTErrConvertToErrno.c
+	RTErrConvertToErrno.c \
+	errinfo.c
 
 .PATH:	${.CURDIR}/common/log
 SRCS += \
