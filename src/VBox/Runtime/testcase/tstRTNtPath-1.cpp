@@ -1,4 +1,4 @@
-/* $Id: tstRTNtPath-1.cpp 118412 2017-10-17 14:26:02Z knut.osmundsen@oracle.com $ */
+/* $Id: tstRTNtPath-1.cpp 119153 2017-11-19 14:27:58Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT Testcase - RTNtPath*.
  */
@@ -65,7 +65,7 @@ void tstTraverse8dot3(TSTRAVERSE *pThis, size_t cchLong, size_t cchShort, uint32
     pThis->cDirs++;
 
     uint32_t cLeftToTest = 2;
-    PRTDIR  hDir;
+    RTDIR  hDir;
     int rc = RTDirOpen(&hDir, pThis->szLongPath);
     if (RT_FAILURE(rc))
         return;
