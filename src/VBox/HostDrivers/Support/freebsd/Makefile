@@ -1,4 +1,4 @@
-# $Id: Makefile 119168 2017-11-20 11:22:25Z knut.osmundsen@oracle.com $
+# $Id: Makefile 119267 2017-11-27 08:23:08Z alexander.eichner@oracle.com $
 ## @file
 # Makefile for the VirtualBox FreeBSD Host Driver.
 #
@@ -95,6 +95,7 @@ SRCS += \
 	RTStrCopyEx.c \
 	RTStrCopyP.c \
 	strformat.c \
+	strformatnum.c \
 	strformatrt.c \
 	strformattype.c \
 	strprintf.c \
