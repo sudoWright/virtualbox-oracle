@@ -1,4 +1,4 @@
-/* $Id: HMSVMR0.cpp 119243 2017-11-24 05:27:07Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: HMSVMR0.cpp 119370 2017-12-01 13:33:44Z ramshankar.venkataraman@oracle.com $ */
 /** @file
  * HM SVM (AMD-V) - Host Context Ring-0.
  */
@@ -2088,7 +2088,7 @@ static void hmR0SvmVmRunSetupVmcb(PVMCPU pVCpu, PCPUMCTX pCtx)
     {
         Assert(pVmcbNstGstCtrl->u64IOPMPhysAddr == g_HCPhysIOBitmap);
         Assert(pVmcbNstGstCtrl->u64MSRPMPhysAddr = g_HCPhysNstGstMsrBitmap);
-        Assert(pVmcbNstGstCtrl->NestedPaging.n.u1NestedPaging == pVCpu->CTX_SUFF(pVM)->hm.s.fNestedPaging);
+        Assert(RT_BOOL(pVmcbNstGstCtrl->NestedPaging.n.u1NestedPaging) == pVCpu->CTX_SUFF(pVM)->hm.s.fNestedPaging);
     }
 }
 
