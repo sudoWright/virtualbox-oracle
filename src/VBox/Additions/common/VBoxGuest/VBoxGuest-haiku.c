@@ -1,4 +1,4 @@
-/* $Id: VBoxGuest-haiku.c 119609 2017-12-11 16:33:05Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxGuest-haiku.c 119636 2017-12-12 17:38:54Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxGuest kernel module, Haiku Guest Additions, implementation.
  */
@@ -481,6 +481,11 @@ static status_t vgdrvHaikuAttach(const pci_info *pDevice)
                 rc = vgdrvHaikuAddIRQ(pState);
                 if (RT_SUCCESS(rc))
                 {
+                    /*
+                     * Read host configuration.
+                     */
+                    VGDrvCommonProcessOptionsFromHost(&g_DevExt);
+
                     LogRel((MODULE_NAME ": loaded successfully\n"));
                     return B_OK;
                 }
