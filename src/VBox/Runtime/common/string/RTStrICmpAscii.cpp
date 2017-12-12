@@ -1,6 +1,6 @@
-/* $Id: RTStrICmpAscii.cpp 118412 2017-10-17 14:26:02Z knut.osmundsen@oracle.com $ */
+/* $Id: RTStrICmpAscii.cpp 119641 2017-12-12 18:29:01Z knut.osmundsen@oracle.com $ */
 /** @file
- * IPRT - RTUtf16ICmpAscii.
+ * IPRT - RTStrICmpAscii.
  */
 
 /*
