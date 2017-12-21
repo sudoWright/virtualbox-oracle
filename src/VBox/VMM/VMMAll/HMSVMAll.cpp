@@ -1,4 +1,4 @@
-/* $Id: HMSVMAll.cpp 119853 2017-12-21 06:52:11Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: HMSVMAll.cpp 119855 2017-12-21 07:57:01Z ramshankar.venkataraman@oracle.com $ */
 /** @file
  * HM SVM (AMD-V) - All contexts.
  */
@@ -368,7 +368,7 @@ VMM_INT_DECL(void) HMSvmNstGstVmExitNotify(PVMCPU pVCpu, PCPUMCTX pCtx)
         pVmcbNstGstCtrl->u64TSCOffset             = pNstGstVmcbCache->u64TSCOffset;
         pVmcbNstGstCtrl->IntCtrl.n.u1VIntrMasking = pNstGstVmcbCache->fVIntrMasking;
         pVmcbNstGstCtrl->TLBCtrl                  = pNstGstVmcbCache->TLBCtrl;
-        pVmcbNstGstCtrl->NestedPaging             = pNstGstVmcbCache->NestedPagingCtrl;
+        pVmcbNstGstCtrl->u1NestedPaging           = pNstGstVmcbCache->u1NestedPaging;
         pCtx->hwvirt.svm.fHMCachedVmcb = false;
     }
 }
