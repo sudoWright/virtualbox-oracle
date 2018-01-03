@@ -1,4 +1,4 @@
-/* $Id: RTCp.cpp 120002 2018-01-01 12:27:43Z knut.osmundsen@oracle.com $ */
+/* $Id: RTCp.cpp 120048 2018-01-03 04:27:32Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - cp like utility.
  */
@@ -335,5 +335,4 @@ int main(int argc, char **argv)
         return RTMsgInitFailure(rc);
     return RTCmdCp(argc, argv);
 }
-
 
