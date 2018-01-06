@@ -1,4 +1,4 @@
-/* $Id: UIVMLogViewerWidget.cpp 119905 2017-12-22 11:44:17Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIVMLogViewerWidget.cpp 120085 2018-01-06 18:46:16Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVMLogViewer class implementation.
  */
@@ -697,6 +697,7 @@ QPlainTextEdit* UIVMLogViewerWidget::createLogPage(const QString &strName)
         AssertPtrReturn(pPageLayout, 0);
         /* Create Log-Viewer: */
         QPlainTextEdit *pLogViewer = new QPlainTextEdit(pPageContainer);
+
         AssertPtrReturn(pLogViewer, 0);
         {
             /* Configure Log-Viewer: */
