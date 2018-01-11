@@ -1,4 +1,4 @@
-/* $Id$ */
+/* $Id: AudioDriver.cpp 120209 2018-01-11 14:08:14Z andreas.loeffler@oracle.com $ */
 /** @file
  * VirtualBox audio base class for Main audio drivers.
  */
