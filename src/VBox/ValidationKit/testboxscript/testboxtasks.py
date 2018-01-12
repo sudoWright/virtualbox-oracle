@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# $Id: testboxtasks.py 120222 2018-01-11 20:46:02Z knut.osmundsen@oracle.com $
+# $Id: testboxtasks.py 120253 2018-01-12 18:25:48Z knut.osmundsen@oracle.com $
 
 """
 TestBox Script - Async Tasks.
@@ -26,7 +26,7 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 120222 $"
+__version__ = "$Revision: 120253 $"
 
 
 # Standard python imports.
@@ -641,6 +641,7 @@ class TestBoxCleanupTask(TestBoxTestDriverTask):
         try:
             oFile = open(sPath, "rb");
             sStr = oFile.read();
+            sStr = sStr.decode('utf-8');
             oFile.close();
             return sStr.strip();
         except Exception as oXcpt:
@@ -778,7 +779,7 @@ class TestBoxExecTask(TestBoxTestDriverTask):
         """
         try:
             oFile = open(sPath, "wb");
-            oFile.write(sContent);
+            oFile.write(sContent.encode('utf-8'));
             oFile.flush();
             try:     os.fsync(oFile.fileno());
             except:  pass;
