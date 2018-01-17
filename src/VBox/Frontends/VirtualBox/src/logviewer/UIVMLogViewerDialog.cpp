@@ -1,4 +1,4 @@
-/* $Id: UIVMLogViewerDialog.cpp 119763 2017-12-18 13:00:01Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIVMLogViewerDialog.cpp 120332 2018-01-17 14:45:30Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVMLogViewer class implementation.
  */
@@ -26,9 +26,9 @@
 # include <QDialogButtonBox>
 # include <QKeyEvent>
 # include <QLabel>
-# include <QPushButton>
 # include <QScrollBar>
 # include <QPlainTextEdit>
+# include <QPushButton>
 # include <QVBoxLayout>
 
 /* GUI includes: */
@@ -149,4 +149,3 @@ bool UIVMLogViewerDialog::shouldBeMaximized() const
 {
     return gEDataManager->logWindowShouldBeMaximized();
 }
-
