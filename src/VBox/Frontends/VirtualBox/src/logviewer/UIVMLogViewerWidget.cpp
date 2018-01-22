@@ -1,4 +1,4 @@
-/* $Id: UIVMLogViewerWidget.cpp 120413 2018-01-22 14:16:43Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIVMLogViewerWidget.cpp 120414 2018-01-22 15:10:38Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVMLogViewer class implementation.
  */
@@ -360,11 +360,12 @@ void UIVMLogViewerWidget::prepare()
 {
     m_pMainLayout = new QVBoxLayout(this);
 
-    prepareToolBar();
     prepareActions();
+    prepareToolBar();
 
     prepareMenu();
     prepareWidgets();
+
 
     /* Reading log files: */
     sltRefresh();
