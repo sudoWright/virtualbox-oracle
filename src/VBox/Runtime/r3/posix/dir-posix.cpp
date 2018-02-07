@@ -1,4 +1,4 @@
-/* $Id: dir-posix.cpp 120716 2018-02-07 14:05:43Z knut.osmundsen@oracle.com $ */
+/* $Id: dir-posix.cpp 120718 2018-02-07 14:08:47Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Directory manipulation, POSIX.
  */
@@ -277,7 +277,7 @@ int rtDirNativeOpen(PRTDIRINTERNAL pDir, char *pszPathBuf, uintptr_t hRelativeDi
             { /* likely */ }
             else
             {
-                pfnFdOpenDir = (PFNFDOPENDIR)dlsym(RTLD_DEFAULT, "fdopendir");
+                pfnFdOpenDir = (PFNFDOPENDIR)(uintptr_t)dlsym(RTLD_DEFAULT, "fdopendir");
                 s_pfnFdOpenDir = pfnFdOpenDir;
                 ASMAtomicWriteBool(&s_fInitalized, true);
             }
