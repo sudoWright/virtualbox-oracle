@@ -1,4 +1,4 @@
-/* $Id: UIInformationGuestSession.cpp 120708 2018-02-06 12:22:51Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIInformationGuestSession.cpp 120713 2018-02-07 08:54:11Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIInformationGuestSession class implementation.
  */
@@ -53,7 +53,7 @@ class UIGuestEventHandler : public QObject
 
 signals:
 
-    void sigGuestSessionRegistered(const CGuestSession &guestSession);
+    void sigGuestSessionRegistered(CGuestSession guestSession);
 
 public:
 
@@ -288,7 +288,7 @@ void UIInformationGuestSession::prepareEventHandler()
             this, &UIInformationGuestSession::sltGuestSessionRegistered);
 }
 
-void UIInformationGuestSession::sltGuestSessionRegistered(const CGuestSession &guestSession)
+void UIInformationGuestSession::sltGuestSessionRegistered(CGuestSession guestSession)
 {
     if(!guestSession.isOk())
         return;
