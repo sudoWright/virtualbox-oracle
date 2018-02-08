@@ -1,4 +1,4 @@
-/* $Id: DrvAudio.cpp 120738 2018-02-08 12:37:31Z andreas.loeffler@oracle.com $ */
+/* $Id: DrvAudio.cpp 120747 2018-02-08 16:21:02Z andreas.loeffler@oracle.com $ */
 /** @file
  * Intermediate audio driver header.
  *
@@ -2321,7 +2321,7 @@ static DECLCALLBACK(int) drvAudioStreamRead(PPDMIAUDIOCONNECTOR pInterface, PPDM
 
             cReadTotal += cRead;
 
-            AudioMixBufReleaseReadBlock(&pHstStream->MixBuf, cRead);
+            AudioMixBufReleaseReadBlock(&pGstStream->MixBuf, cRead);
         }
 
         if (cReadTotal)
