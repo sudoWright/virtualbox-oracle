@@ -1,4 +1,4 @@
-/* $Id: APIC.cpp 118412 2017-10-17 14:26:02Z knut.osmundsen@oracle.com $ */
+/* $Id: APIC.cpp 120791 2018-02-10 15:38:12Z knut.osmundsen@oracle.com $ */
 /** @file
  * APIC - Advanced Programmable Interrupt Controller.
  */
@@ -1432,7 +1432,7 @@ static int apicR3InitState(PVM pVM)
     LogFlow(("APIC: apicR3InitState: pVM=%p\n", pVM));
 
     /* With hardware virtualization, we don't need to map the APIC in GC. */
-    bool const fNeedsGCMapping = !HMIsEnabled(pVM);
+    bool const fNeedsGCMapping = VM_IS_RAW_MODE_ENABLED(pVM);
 
     /*
      * Allocate and map the pending-interrupt bitmap (PIB).
