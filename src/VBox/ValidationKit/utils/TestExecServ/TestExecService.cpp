@@ -1,4 +1,4 @@
-/* $Id: TestExecService.cpp 120102 2018-01-08 20:40:45Z knut.osmundsen@oracle.com $ */
+/* $Id: TestExecService.cpp 120847 2018-02-13 16:45:53Z alexander.eichner@oracle.com $ */
 /** @file
  * TestExecServ - Basic Remote Execution Service.
  */
@@ -158,7 +158,9 @@ typedef TXSEXEC *PTXSEXEC;
 static const PCTXSTRANSPORT g_apTransports[] =
 {
     &g_TcpTransport,
-    //&g_SerialTransport,
+#ifndef RT_OS_OS2
+    &g_SerialTransport,
+#endif
     //&g_FileSysTransport,
     //&g_GuestPropTransport,
     //&g_TestDevTransport,
@@ -3419,7 +3421,7 @@ static RTEXITCODE txsParseArgv(int argc, char **argv, bool *pfExit)
                 break;
 
             case 'V':
-                RTPrintf("$Revision: 120102 $\n");
+                RTPrintf("$Revision: 120847 $\n");
                 *pfExit = true;
                 return RTEXITCODE_SUCCESS;
 
