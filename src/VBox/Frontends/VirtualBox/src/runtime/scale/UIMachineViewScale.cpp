@@ -1,4 +1,4 @@
-/* $Id: UIMachineViewScale.cpp 120842 2018-02-13 11:56:54Z sergey.dubov@oracle.com $ */
+/* $Id: UIMachineViewScale.cpp 120843 2018-02-13 11:59:10Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIMachineViewScale class implementation.
  */
@@ -128,7 +128,7 @@ void UIMachineViewScale::applyMachineViewScaleFactor()
 {
     /* If scaled-size is valid: */
     const QSize scaledSize = frameBuffer()->scaledSize();
-    const double dDevicePixelRatio = frameBuffer()->devicePixelRatio();
+    const double dDevicePixelRatio = frameBuffer()->devicePixelRatio(); Q_UNUSED(dDevicePixelRatio);
     const bool fUseUnscaledHiDPIOutput = frameBuffer()->useUnscaledHiDPIOutput();
     if (scaledSize.isValid())
     {
