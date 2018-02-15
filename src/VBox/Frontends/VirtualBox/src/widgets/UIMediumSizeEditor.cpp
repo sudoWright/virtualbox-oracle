@@ -1,4 +1,4 @@
-/* $Id: UIMediumSizeEditor.cpp 117309 2017-07-31 15:27:54Z noreply@oracle.com $ */
+/* $Id: UIMediumSizeEditor.cpp 120890 2018-02-15 14:33:48Z klaus.espenlaub@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIMediumSizeEditor class implementation.
  */

@@ -1,4 +1,4 @@
-/* $Id: UIIndicatorsPool.h 115478 2017-05-18 07:52:21Z sergey.dubov@oracle.com $ */
+/* $Id: UIIndicatorsPool.h 120890 2018-02-15 14:33:48Z klaus.espenlaub@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIIndicatorsPool class declaration.
  */

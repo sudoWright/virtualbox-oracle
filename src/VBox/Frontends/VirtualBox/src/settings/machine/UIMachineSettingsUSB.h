@@ -1,4 +1,4 @@
-/* $Id: UIMachineSettingsUSB.h 114575 2017-04-13 10:08:10Z sergey.dubov@oracle.com $ */
+/* $Id: UIMachineSettingsUSB.h 120890 2018-02-15 14:33:48Z klaus.espenlaub@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIMachineSettingsUSB class declaration.
  */

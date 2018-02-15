@@ -1,4 +1,4 @@
-/* $Id: UIGlobalSettingsExtension.h 114215 2017-03-28 11:19:04Z sergey.dubov@oracle.com $ */
+/* $Id: UIGlobalSettingsExtension.h 120890 2018-02-15 14:33:48Z klaus.espenlaub@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIGlobalSettingsExtension class declaration.
  */

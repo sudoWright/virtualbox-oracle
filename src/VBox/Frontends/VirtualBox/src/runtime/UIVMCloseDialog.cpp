@@ -1,4 +1,4 @@
-/* $Id: UIVMCloseDialog.cpp 120200 2018-01-11 10:39:18Z sergey.dubov@oracle.com $ */
+/* $Id: UIVMCloseDialog.cpp 120890 2018-02-15 14:33:48Z klaus.espenlaub@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVMCloseDialog class implementation.
  */

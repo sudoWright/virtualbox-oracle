@@ -1,4 +1,4 @@
-/* $Id: UIWizardFirstRunPageBasic.cpp 120592 2018-01-30 08:30:14Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIWizardFirstRunPageBasic.cpp 120890 2018-02-15 14:33:48Z klaus.espenlaub@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardFirstRunPageBasic class implementation.
  */

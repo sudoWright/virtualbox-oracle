@@ -1,4 +1,4 @@
-/* $Id: UINetworkManagerDialog.cpp 119117 2017-11-17 15:48:58Z sergey.dubov@oracle.com $ */
+/* $Id: UINetworkManagerDialog.cpp 120890 2018-02-15 14:33:48Z klaus.espenlaub@oracle.com $ */
 /** @file
  * VBox Qt GUI - UINetworkManagerDialog stuff implementation.
  */

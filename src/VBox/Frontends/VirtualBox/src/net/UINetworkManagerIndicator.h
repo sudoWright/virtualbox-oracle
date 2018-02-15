@@ -1,4 +1,4 @@
-/* $Id: UINetworkManagerIndicator.h 118899 2017-11-02 10:22:18Z serkan.bayraktar@oracle.com $ */
+/* $Id: UINetworkManagerIndicator.h 120890 2018-02-15 14:33:48Z klaus.espenlaub@oracle.com $ */
 /** @file
  * VBox Qt GUI - UINetworkManagerIndicator stuff declaration.
  */

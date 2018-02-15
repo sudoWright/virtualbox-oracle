@@ -1,4 +1,4 @@
-/* $Id: UIMachineSettingsSerial.h 114586 2017-04-13 14:06:28Z sergey.dubov@oracle.com $ */
+/* $Id: UIMachineSettingsSerial.h 120890 2018-02-15 14:33:48Z klaus.espenlaub@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIMachineSettingsSerial class declaration.
  */

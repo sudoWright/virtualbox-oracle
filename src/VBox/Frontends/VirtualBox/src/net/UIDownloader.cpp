@@ -1,4 +1,4 @@
-/* $Id: UIDownloader.cpp 118899 2017-11-02 10:22:18Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIDownloader.cpp 120890 2018-02-15 14:33:48Z klaus.espenlaub@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIDownloader class implementation.
  */

@@ -1,4 +1,4 @@
-/* $Id: UINetworkReply.h 120563 2018-01-29 11:16:51Z sergey.dubov@oracle.com $ */
+/* $Id: UINetworkReply.h 120890 2018-02-15 14:33:48Z klaus.espenlaub@oracle.com $ */
 /** @file
  * VBox Qt GUI - UINetworkReply stuff declaration.
  */

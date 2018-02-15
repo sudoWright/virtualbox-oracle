@@ -1,4 +1,4 @@
-/* $Id: UIWizardNewVDPageBasic1.cpp 120592 2018-01-30 08:30:14Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIWizardNewVDPageBasic1.cpp 120890 2018-02-15 14:33:48Z klaus.espenlaub@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardNewVDPageBasic1 class implementation.
  */

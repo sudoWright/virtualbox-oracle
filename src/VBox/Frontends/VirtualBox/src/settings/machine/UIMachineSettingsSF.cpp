@@ -1,4 +1,4 @@
-/* $Id: UIMachineSettingsSF.cpp 119088 2017-11-16 11:12:36Z sergey.dubov@oracle.com $ */
+/* $Id: UIMachineSettingsSF.cpp 120890 2018-02-15 14:33:48Z klaus.espenlaub@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIMachineSettingsSF class implementation.
  */

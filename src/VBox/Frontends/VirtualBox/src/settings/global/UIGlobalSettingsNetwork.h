@@ -1,4 +1,4 @@
-/* $Id: UIGlobalSettingsNetwork.h 115173 2017-05-03 17:15:34Z sergey.dubov@oracle.com $ */
+/* $Id: UIGlobalSettingsNetwork.h 120890 2018-02-15 14:33:48Z klaus.espenlaub@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIGlobalSettingsNetwork class declaration.
  */

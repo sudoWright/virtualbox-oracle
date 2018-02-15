@@ -1,4 +1,4 @@
-/* $Id: UISettingsDialog.cpp 119246 2017-11-24 12:01:19Z sergey.dubov@oracle.com $ */
+/* $Id: UISettingsDialog.cpp 120890 2018-02-15 14:33:48Z klaus.espenlaub@oracle.com $ */
 /** @file
  * VBox Qt GUI - UISettingsDialog class implementation.
  */
