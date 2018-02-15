@@ -1,6 +1,6 @@
-/* $Id: UIInformationGuestSession.h 120845 2018-02-13 14:16:58Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIInformationGuestSession.h 120884 2018-02-15 13:50:20Z serkan.bayraktar@oracle.com $ */
 /** @file
- * VBox Qt GUI - UIInformationConfiguration class declaration.
+ * VBox Qt GUI - UIInformationGuestSession class declaration.
  */
 
 /*
