@@ -1,4 +1,4 @@
-/* $Id: UIGuestSessionTreeItem.cpp 120888 2018-02-15 14:11:16Z klaus.espenlaub@oracle.com $ */
+/* $Id: UIGuestSessionTreeItem.cpp 120900 2018-02-16 12:46:20Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIGuestSessionTreeItem class implementation.
  */
@@ -21,7 +21,6 @@
 
 /* GUI includes: */
 # include "UIGuestSessionTreeItem.h"
-# include "UIGuestSessionsEventHandler.h"
 # include "VBoxGlobal.h"
 
 /* COM includes: */
