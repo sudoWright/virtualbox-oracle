@@ -1,4 +1,4 @@
-/* $Id: UIVMLogViewerTextEdit.cpp 120834 2018-02-13 09:43:43Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIVMLogViewerTextEdit.cpp 120913 2018-02-19 12:17:34Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVMLogViewer class implementation.
  */
@@ -318,7 +318,7 @@ void UIVMLogViewerTextEdit::contextMenuEvent(QContextMenuEvent *pEvent)
     }
 
     QMenu *menu = createStandardContextMenu();
-    QAction *pAction = menu->addAction(tr("Bookmark"));
+    QAction *pAction = menu->addAction(UIVMLogViewerWidget::tr("Bookmark"));
     m_iContextMenuBookmark = bookmarkForPos(pEvent->pos());
     if (pAction)
         connect(pAction, &QAction::triggered, this, &UIVMLogViewerTextEdit::sltBookmark);
