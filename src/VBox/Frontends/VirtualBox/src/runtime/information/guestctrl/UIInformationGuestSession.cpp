@@ -1,4 +1,4 @@
-/* $Id: UIInformationGuestSession.cpp 120953 2018-02-21 17:35:07Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIInformationGuestSession.cpp 120965 2018-02-22 13:00:55Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIInformationGuestSession class implementation.
  */
@@ -207,6 +207,10 @@ void UIInformationGuestSession::prepareObjects()
     {
         m_pSplitter->addWidget(m_pTreeWidget);
         m_pTreeWidget->setColumnCount(3);
+        QStringList labels;
+        labels << "" << "" << "";
+
+        m_pTreeWidget->setHeaderLabels(labels);
     }
     m_pConsole = new UIGuestControlConsole;
     if (m_pConsole)
