@@ -1,4 +1,4 @@
-/* $Id: NEMR0Native-win.cpp 120951 2018-02-21 16:35:23Z knut.osmundsen@oracle.com $ */
+/* $Id: NEMR0Native-win.cpp 121016 2018-02-26 16:12:27Z knut.osmundsen@oracle.com $ */
 /** @file
  * NEM - Native execution manager, native ring-0 Windows backend.
  */
@@ -112,7 +112,7 @@ VMMR0_INT_DECL(int) NEMR0InitVM(PGVM pGVM, PVM pVM)
              * So far, so good.
              */
             /** @todo would be good if we could establish the partition ID ourselves. */
-            /** @todop this is too EARLY!   */
+            /** @todo this is too EARLY!   */
             pGVM->nem.s.idHvPartition = pVM->nem.s.idHvPartition;
             return rc;
         }
