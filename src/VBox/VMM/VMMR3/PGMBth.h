@@ -1,4 +1,4 @@
-/* $Id: PGMBth.h 120791 2018-02-10 15:38:12Z knut.osmundsen@oracle.com $ */
+/* $Id: PGMBth.h 121132 2018-03-05 22:07:48Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox - Page Manager / Monitor, Shadow+Guest Paging Template.
  */
@@ -134,7 +134,7 @@ PGM_BTH_DECL(int, Enter)(PVMCPU pVCpu, RTGCPHYS GCPhysCR3)
 
     PVM pVM = pVCpu->pVMR3;
 
-    Assert(HMIsNestedPagingActive(pVM) == pVM->pgm.s.fNestedPaging);
+    Assert((HMIsNestedPagingActive(pVM) || VM_IS_NEM_ENABLED(pVM)) == pVM->pgm.s.fNestedPaging);
     Assert(!pVM->pgm.s.fNestedPaging);
 
     pgmLock(pVM);
