@@ -1,4 +1,4 @@
-/* $Id: GuestSessionImpl.cpp 121141 2018-03-06 10:08:58Z andreas.loeffler@oracle.com $ */
+/* $Id: GuestSessionImpl.cpp 121142 2018-03-06 10:12:36Z andreas.loeffler@oracle.com $ */
 /** @file
  * VirtualBox Main - Guest session handling.
  */
@@ -2636,7 +2636,7 @@ HRESULT GuestSession::directoryCopyToGuest(const com::Utf8Str &aSource, const co
         try
         {
             pTask = new SessionTaskCopyDirTo(this /* GuestSession */, aSource, aDestination, "" /* strFilter */,
-                                             (DirectoryCopyFlags_T)fFlags);
+                                             (DirectoryCopyFlag_T)fFlags);
         }
         catch(...)
         {
