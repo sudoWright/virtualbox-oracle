@@ -1,4 +1,4 @@
-/* $Id: QIManagerDialog.cpp 120086 2018-01-07 09:10:41Z serkan.bayraktar@oracle.com $ */
+/* $Id: QIManagerDialog.cpp 121306 2018-03-15 15:13:11Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - QIManagerDialog class implementation.
  */
@@ -22,6 +22,8 @@
 /* Qt includes: */
 # include <QMenuBar>
 # include <QPushButton>
+# include <QStyle>
+# include <QVBoxLayout>
 
 /* GUI includes: */
 # include "QIDialogButtonBox.h"

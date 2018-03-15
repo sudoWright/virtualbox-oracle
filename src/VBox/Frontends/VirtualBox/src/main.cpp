@@ -1,4 +1,4 @@
-/* $Id: main.cpp 119661 2017-12-13 14:37:59Z knut.osmundsen@oracle.com $ */
+/* $Id: main.cpp 121306 2018-03-15 15:13:11Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - The main() function.
  */
@@ -20,6 +20,7 @@
 #else /* !VBOX_WITH_PRECOMPILED_HEADERS */
 
 /* Qt includes: */
+# include <QApplication>
 # include <QMessageBox>
 
 /* GUI includes: */

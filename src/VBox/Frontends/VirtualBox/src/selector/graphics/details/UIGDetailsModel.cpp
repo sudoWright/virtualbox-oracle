@@ -1,4 +1,4 @@
-/* $Id: UIGDetailsModel.cpp 118839 2017-10-28 15:14:05Z knut.osmundsen@oracle.com $ */
+/* $Id: UIGDetailsModel.cpp 121306 2018-03-15 15:13:11Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIGDetailsModel class implementation.
  */
@@ -20,9 +20,11 @@
 #else  /* !VBOX_WITH_PRECOMPILED_HEADERS */
 
 /* Qt includes: */
+# include <QAction>
 # include <QGraphicsScene>
 # include <QGraphicsSceneContextMenuEvent>
 # include <QGraphicsView>
+# include <QMenu>
 
 /* GUI includes: */
 # include "UIGDetails.h"

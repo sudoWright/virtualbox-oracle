@@ -1,4 +1,4 @@
-/* $Id: UIMachineWindowSeamless.cpp 118839 2017-10-28 15:14:05Z knut.osmundsen@oracle.com $ */
+/* $Id: UIMachineWindowSeamless.cpp 121306 2018-03-15 15:13:11Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIMachineWindowSeamless class implementation.
  */
@@ -21,6 +21,7 @@
 
 /* Qt includes: */
 # include <QMenu>
+# include <QSpacerItem>
 # include <QTimer>
 
 /* GUI includes: */

@@ -1,4 +1,4 @@
-/* $Id: UIVMLogViewerWidget.cpp 120569 2018-01-29 13:12:06Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIVMLogViewerWidget.cpp 121306 2018-03-15 15:13:11Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVMLogViewer class implementation.
  */
@@ -22,14 +22,16 @@
 /* Qt includes: */
 # include <QDateTime>
 # include <QDir>
-# include <QVBoxLayout>
-# if defined(RT_OS_SOLARIS)
-#  include <QFontDatabase>
-# endif
+# include <QMenu>
 # include <QPainter>
 # include <QPlainTextEdit>
 # include <QScrollBar>
+# include <QStyle>
 # include <QTextBlock>
+# include <QVBoxLayout>
+# ifdef RT_OS_SOLARIS
+#  include <QFontDatabase>
+# endif
 
 /* GUI includes: */
 # include "QIFileDialog.h"
