@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# $Id: vboxwrappers.py 120948 2018-02-21 13:01:33Z klaus.espenlaub@oracle.com $
+# $Id: vboxwrappers.py 121317 2018-03-16 12:18:32Z klaus.espenlaub@oracle.com $
 # pylint: disable=C0302
 
 """
@@ -27,7 +27,7 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 120948 $"
+__version__ = "$Revision: 121317 $"
 
 
 # Standard Python imports.
@@ -3062,6 +3062,7 @@ class TxsConnectTask(TdTaskBase):
                 except:
                     reporter.fatalXcpt();
                 else:
+                    reporter.log('TxsConnectTask: opening session to ip "%s"' % (sIpAddr));
                     self._openTcpSession(sIpAddr, cMsIdleFudge = 5000);
                     return None;
 
