@@ -1,10 +1,10 @@
-/* $Id: QIMainWindow.cpp 120890 2018-02-15 14:33:48Z klaus.espenlaub@oracle.com $ */
+/* $Id: QIMainWindow.cpp 121367 2018-03-20 13:17:08Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - QIMainWindow class implementation.
  */
 
 /*
- * Copyright (C) 2016-2017 Oracle Corporation
+ * Copyright (C) 2016-2018 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;
