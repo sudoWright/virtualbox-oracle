@@ -1,4 +1,4 @@
-/* $Id: UIHostFileTable.h 121379 2018-03-20 16:27:18Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIHostFileTable.h 121388 2018-03-21 11:07:34Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIGuestControlFileTable class declaration.
  */
@@ -46,7 +46,8 @@ private:
 
     /** Read the directory with the path @p path recursively and collect #of objects and
         total size */
-    void directoryStatisticsRecursive(const QString &path);
+    void directoryStatisticsRecursive(const QString &path, UIDirectoryStatistics &statistics);
+    void prepareActions();
 
 };
 
