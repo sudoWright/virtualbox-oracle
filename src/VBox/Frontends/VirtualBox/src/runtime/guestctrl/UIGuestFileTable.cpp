@@ -1,4 +1,4 @@
-/* $Id: UIGuestFileTable.cpp 121477 2018-03-26 09:03:32Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIGuestFileTable.cpp 121482 2018-03-26 12:16:37Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIGuestControlFileTable class implementation.
  */
@@ -115,7 +115,7 @@ void UIGuestFileTable::readDirectory(const QString& strPath,
         }
         insertItemsToTree(directories, parent, true, isStartDir);
         insertItemsToTree(files, parent, false, isStartDir);
-        updateCurrentLocationEdit(strPath);
+        //updateCurrentLocationEdit(strPath);
     }
     directory.Close();
 }
