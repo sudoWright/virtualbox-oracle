@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# "$Id: tdMoveVM1.py 121528 2018-03-28 16:12:59Z valery.portnyagin@oracle.com $"
+# "$Id: tdMoveVM1.py 121529 2018-03-28 16:19:50Z valery.portnyagin@oracle.com $"
 
 """
 VirtualBox Validation Kit - VM Move Test #1
@@ -27,7 +27,7 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 121528 $"
+__version__ = "$Revision: 121529 $"
 
 # Standard Python imports.
 import os
@@ -565,9 +565,6 @@ class SubTstDrvMoveVM1(base.SubTestDriverBase):
             sOrigLoc = self.oTstDrv.sScratchPath
             sBaseLoc = os.path.join(sOrigLoc, 'moveFolder')
             os.mkdir(sBaseLoc, 0o775)
-
-            sController=self.dsKeys['StandardImage']
-            aoMediumAttachments = oMachine.getMediumAttachmentsOfController(sController)
 
             #lock machine
             #get session machine
