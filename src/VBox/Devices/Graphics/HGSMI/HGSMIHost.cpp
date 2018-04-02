@@ -1,4 +1,4 @@
-/* $Id: HGSMIHost.cpp 121646 2018-04-02 17:11:37Z knut.osmundsen@oracle.com $ */
+/* $Id: HGSMIHost.cpp 121653 2018-04-02 21:12:58Z knut.osmundsen@oracle.com $ */
 /** @file
  *
  * VBox Host Guest Shared Memory Interface (HGSMI).
@@ -982,7 +982,7 @@ int HGSMIHostHeapSetup(PHGSMIINSTANCE pIns, HGSMIOFFSET RT_UNTRUSTED_GUEST offHe
      * Lock the heap and do the job.
      */
     int rc = hgsmiHostHeapLock(pIns);
-    AssertReturn(rc, rc);
+    AssertRCReturn(rc, rc);
 
     /* It is possible to change the heap only if there is no pending allocations. */
     ASSERT_GUEST_LOGREL_MSG_STMT_RETURN(pIns->hostHeap.cRefs == 0,
