@@ -1,4 +1,4 @@
-/* $Id: GuestSessionImplTasks.h 121677 2018-04-04 11:59:09Z andreas.loeffler@oracle.com $ */
+/* $Id: GuestSessionImplTasks.h 121684 2018-04-04 13:59:53Z andreas.loeffler@oracle.com $ */
 /** @file
  * VirtualBox Main - Guest session tasks header.
  */
