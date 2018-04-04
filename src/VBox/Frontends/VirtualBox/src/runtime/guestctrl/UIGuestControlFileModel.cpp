@@ -1,4 +1,4 @@
-/* $Id: UIGuestControlFileModel.cpp 121515 2018-03-28 12:03:55Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIGuestControlFileModel.cpp 121666 2018-04-04 06:01:54Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIGuestControlFileModel class implementation.
  */
@@ -255,3 +255,4 @@ bool UIGuestControlFileModel::insertRows(int position, int rows, const QModelInd
 
     return true;
 }
+

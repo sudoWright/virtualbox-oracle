@@ -1,4 +1,4 @@
-/* $Id: UIGuestControlWidget.h 121496 2018-03-27 09:52:56Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIGuestControlWidget.h 121666 2018-04-04 06:01:54Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIGuestControlWidget class declaration.
  */
@@ -88,3 +88,4 @@ private:
 };
 
 #endif /* !___UIGuestControlWidget_h___ */
+

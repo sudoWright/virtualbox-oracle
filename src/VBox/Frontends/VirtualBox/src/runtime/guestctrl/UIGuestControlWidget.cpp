@@ -1,4 +1,4 @@
-/* $Id: UIGuestControlWidget.cpp 121496 2018-03-27 09:52:56Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIGuestControlWidget.cpp 121666 2018-04-04 06:01:54Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIGuestControlWidget class implementation.
  */
@@ -449,3 +449,4 @@ void UIGuestControlWidget::loadSettings()
 }
 
 #include "UIGuestControlWidget.moc"
+
