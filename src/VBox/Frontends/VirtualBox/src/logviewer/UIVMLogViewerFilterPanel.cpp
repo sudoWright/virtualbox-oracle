@@ -1,4 +1,4 @@
-/* $Id: UIVMLogViewerFilterPanel.cpp 121322 2018-03-16 15:20:58Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIVMLogViewerFilterPanel.cpp 121665 2018-04-04 05:11:10Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVMLogViewer class implementation.
  */
@@ -540,3 +540,4 @@ void UIVMLogViewerFilterPanel::showEvent(QShowEvent *pEvent)
 }
 
 #include "UIVMLogViewerFilterPanel.moc"
+

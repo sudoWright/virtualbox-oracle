@@ -1,4 +1,4 @@
-/* $Id: UIVMLogViewerDialog.h 121449 2018-03-23 10:04:53Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIVMLogViewerDialog.h 121665 2018-04-04 05:11:10Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVMLogViewer class declaration.
  */
@@ -83,3 +83,4 @@ private:
 };
 
 #endif /* !___UIVMLogViewerDialog_h___ */
+

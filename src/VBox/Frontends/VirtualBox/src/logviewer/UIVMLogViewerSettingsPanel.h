@@ -1,4 +1,4 @@
-/* $Id: UIVMLogViewerSettingsPanel.h 120399 2018-01-21 21:28:37Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIVMLogViewerSettingsPanel.h 121665 2018-04-04 05:11:10Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVMLogViewer class declaration.
  */
@@ -72,3 +72,4 @@ private:
 };
 
 #endif /* !___UIVMLogViewerSettingsPanel_h___ */
+
