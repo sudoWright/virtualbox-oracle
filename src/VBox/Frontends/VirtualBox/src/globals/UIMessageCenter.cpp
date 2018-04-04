@@ -1,4 +1,4 @@
-/* $Id: UIMessageCenter.cpp 121659 2018-04-03 16:58:07Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIMessageCenter.cpp 121671 2018-04-04 06:55:08Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIMessageCenter class implementation.
  */
@@ -2824,3 +2824,4 @@ int UIMessageCenter::showMessageBox(QWidget *pParent, MessageType enmType,
     /* Return result-code: */
     return iResultCode;
 }
+
