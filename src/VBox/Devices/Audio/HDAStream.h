@@ -1,4 +1,4 @@
-/* $Id: HDAStream.h 120809 2018-02-11 21:25:29Z andreas.loeffler@oracle.com $ */
+/* $Id: HDAStream.h 121835 2018-04-07 14:35:47Z knut.osmundsen@oracle.com $ */
 /** @file
  * HDAStream.h - Stream functions for HD Audio.
  */
@@ -23,9 +23,6 @@
 #include "HDAStreamMap.h"
 #include "HDAStreamPeriod.h"
 
-/*********************************************************************************************************************************
-*   Prototypes                                                                                                                   *
-*********************************************************************************************************************************/
 
 typedef struct HDAMIXERSINK *PHDAMIXERSINK;
 
