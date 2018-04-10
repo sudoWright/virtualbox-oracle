@@ -1,4 +1,4 @@
-/* $Id: GIMKvm.cpp 120791 2018-02-10 15:38:12Z knut.osmundsen@oracle.com $ */
+/* $Id: GIMKvm.cpp 121903 2018-04-10 06:14:02Z ramshankar.venkataraman@oracle.com $ */
 /** @file
  * GIM - Guest Interface Manager, KVM implementation.
  */
@@ -36,7 +36,6 @@
 #include <iprt/err.h>
 #include <iprt/string.h>
 #include <iprt/mem.h>
-#include <iprt/spinlock.h>
 
 
 
