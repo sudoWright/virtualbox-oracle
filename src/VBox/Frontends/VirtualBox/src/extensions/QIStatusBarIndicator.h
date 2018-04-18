@@ -1,6 +1,6 @@
-/* $Id: QIStatusBarIndicator.h 121657 2018-04-03 16:37:08Z sergey.dubov@oracle.com $ */
+/* $Id: QIStatusBarIndicator.h 122135 2018-04-18 14:40:43Z sergey.dubov@oracle.com $ */
 /** @file
- * VBox Qt GUI - QIStatusBarIndicator interface declaration.
+ * VBox Qt GUI - Qt extensions: QIStatusBarIndicator interface declaration.
  */
 
 /*
@@ -136,4 +136,3 @@ private:
 
 
 #endif /* !___QIStatusBarIndicators_h___ */
-

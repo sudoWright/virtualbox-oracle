@@ -1,4 +1,4 @@
-/* $Id: QILabel.h 121657 2018-04-03 16:37:08Z sergey.dubov@oracle.com $ */
+/* $Id: QILabel.h 122135 2018-04-18 14:40:43Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - Qt extensions: QILabel class declaration.
  */
@@ -130,4 +130,3 @@ private:
 };
 
 #endif /* !___QILabel_h___ */
-
