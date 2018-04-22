@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# $Id: tdMoveMedium1.py 120986 2018-02-23 12:33:25Z klaus.espenlaub@oracle.com $
+# $Id: tdMoveMedium1.py 122221 2018-04-22 13:12:48Z alexander.eichner@oracle.com $
 
 """
 VirtualBox Validation Kit - Medium Move Test #1
@@ -27,7 +27,7 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 120986 $"
+__version__ = "$Revision: 122221 $"
 
 
 # Standard Python imports.
@@ -118,7 +118,7 @@ class SubTstDrvMoveMedium1(base.SubTestDriverBase):
                     or vboxcon.MediumFormatCapabilities_CreateDynamic not in aoDskFmtCaps:
                     continue
                 (asExts, aTypes) = oDskFmt.describeFileExtensions()
-                for i in range(0, len(asExts)):
+                for i in range(0, len(asExts)): #pylint: disable=consider-using-enumerate
                     if aTypes[i] is vboxcon.DeviceType_HardDisk:
                         sExt = '.' + asExts[i]
                         break
