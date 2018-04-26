@@ -1,4 +1,4 @@
-/* $Id: UIVMLogViewerBookmarksPanel.h 121768 2018-04-05 13:07:14Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIVMLogViewerBookmarksPanel.h 122326 2018-04-26 08:34:29Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVMLogViewer class declaration.
  */
@@ -86,4 +86,3 @@ private:
 };
 
 #endif /* !___UIVMLogViewerBookmarksPanel_h___ */
-

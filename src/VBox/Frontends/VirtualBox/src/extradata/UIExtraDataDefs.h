@@ -1,4 +1,4 @@
-/* $Id: UIExtraDataDefs.h 121657 2018-04-03 16:37:08Z sergey.dubov@oracle.com $ */
+/* $Id: UIExtraDataDefs.h 122326 2018-04-26 08:34:29Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - Extra-data related definitions.
  */
@@ -365,6 +365,15 @@ namespace UIExtraDataDefs
         /** Holds log-viewer geometry. */
         SHARED_LIBRARY_STUFF extern const char *GUI_LogWindowGeometry;
     /** @} */
+    /** @name Virtual Machine: Log-viewer widget settings
+      * @{ */
+        SHARED_LIBRARY_STUFF extern const char *GUI_LogViewerSettings;
+        /** Holds log-viewer wrap line flag. */
+        SHARED_LIBRARY_STUFF extern const char *GUI_LogViewerWrapLinesEnabled;
+        SHARED_LIBRARY_STUFF extern const char *GUI_LogViewerShowLineNumbersDisabled;
+        SHARED_LIBRARY_STUFF extern const char *GUI_LogViewerNoFontStyleName;
+    /** @} */
+
 }
 
 
