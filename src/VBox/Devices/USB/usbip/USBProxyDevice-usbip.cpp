@@ -1,4 +1,4 @@
-/* $Id: USBProxyDevice-usbip.cpp 118839 2017-10-28 15:14:05Z knut.osmundsen@oracle.com $ */
+/* $Id: USBProxyDevice-usbip.cpp 122405 2018-04-27 09:18:51Z knut.osmundsen@oracle.com $ */
 /** @file
  * USB device proxy - USB/IP backend.
  */
@@ -1262,7 +1262,6 @@ static int usbProxyUsbIpUrbsQueuePending(PUSBPROXYDEVUSBIP pProxyDevUsbIp)
 {
     RTLISTANCHOR ListUrbsPending;
 
-    RTListInit(&ListUrbsPending);
     int rc = RTSemFastMutexRequest(pProxyDevUsbIp->hMtxLists);
     AssertRC(rc);
     RTListMove(&ListUrbsPending, &pProxyDevUsbIp->ListUrbsToQueue);

@@ -1,4 +1,4 @@
-/* $Id: tstRTList.cpp 118412 2017-10-17 14:26:02Z knut.osmundsen@oracle.com $ */
+/* $Id: tstRTList.cpp 122405 2018-04-27 09:18:51Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT Testcase - List interface.
  */
@@ -130,8 +130,6 @@ static void tstRTListCreate(RTTEST hTest, unsigned cElements)
 
     /* Move the list to a new one. */
     RTLISTANCHOR ListHeadNew;
-
-    RTListInit(&ListHeadNew);
     RTListMove(&ListHeadNew, &ListHead);
 
     RTTEST_CHECK(hTest, RTListIsEmpty(&ListHead) == true);
