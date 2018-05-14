@@ -1,4 +1,4 @@
-/* $Id: UINameAndSystemEditor.h 122605 2018-05-09 20:03:15Z serkan.bayraktar@oracle.com $ */
+/* $Id: UINameAndSystemEditor.h 122638 2018-05-14 12:57:36Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UINameAndSystemEditor class declaration.
  */
@@ -75,7 +75,7 @@ public:
     void setNameFieldValidator(const QString &strValidatorString);
 
     /** Forwards the machine name to UIVMNamePathSelector member instance. */
-    void setMachineFilePath(const QString &strPath);
+    void setMachineFolder(const QString &strPath);
 
 protected:
 
