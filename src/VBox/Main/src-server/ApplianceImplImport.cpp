@@ -1,4 +1,4 @@
-/* $Id: ApplianceImplImport.cpp 122639 2018-05-14 13:13:52Z klaus.espenlaub@oracle.com $ */
+/* $Id: ApplianceImplImport.cpp 122640 2018-05-14 13:22:22Z klaus.espenlaub@oracle.com $ */
 /** @file
  * IAppliance and IVirtualSystem COM class implementations.
  */
@@ -2150,7 +2150,9 @@ HRESULT Appliance::i_importDoIt(TaskOVF *pTask, AutoWriteLockBase &rWriteLock, R
             /* If everything was successful so far check if some extension
              * pack wants to do file sanity checking. */
             if (SUCCEEDED(hrc))
+            {
                 /** @todo */;
+            }
         }
         catch (HRESULT hrcXcpt)
         {
