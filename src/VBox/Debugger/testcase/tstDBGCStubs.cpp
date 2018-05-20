@@ -1,4 +1,4 @@
-/* $Id: tstDBGCStubs.cpp 118839 2017-10-28 15:14:05Z knut.osmundsen@oracle.com $ */
+/* $Id: tstDBGCStubs.cpp 122716 2018-05-20 23:29:26Z knut.osmundsen@oracle.com $ */
 /** @file
  * DBGC Testcase - Command Parser, VMM Stub Functions.
  */
@@ -641,6 +641,13 @@ VMMDECL(uint32_t) CPUMGetGuestEFlags(PVMCPU pVCpu)
 
 #include <VBox/vmm/hm.h>
 VMMR3DECL(bool) HMR3IsEnabled(PUVM pUVM)
+{
+    return true;
+}
+
+
+#include <VBox/vmm/nem.h>
+VMMR3DECL(bool) NEMR3IsEnabled(PUVM pUVM)
 {
     return true;
 }
