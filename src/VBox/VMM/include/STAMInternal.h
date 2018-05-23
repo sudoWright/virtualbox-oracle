@@ -1,4 +1,4 @@
-/* $Id: STAMInternal.h 118810 2017-10-28 13:12:06Z knut.osmundsen@oracle.com $ */
+/* $Id: STAMInternal.h 122749 2018-05-23 15:13:06Z knut.osmundsen@oracle.com $ */
 /** @file
  * STAM Internal Header.
  */
@@ -123,6 +123,8 @@ typedef struct STAMDESC
     }                   u;
     /** Unit. */
     STAMUNIT            enmUnit;
+    /** The refresh group number (STAM_REFRESH_GRP_XXX). */
+    uint8_t             iRefreshGroup;
     /** Description. */
     const char         *pszDesc;
 } STAMDESC;
