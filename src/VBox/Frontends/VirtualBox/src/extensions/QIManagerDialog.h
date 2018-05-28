@@ -1,4 +1,4 @@
-/* $Id: QIManagerDialog.h 122104 2018-04-17 11:58:18Z sergey.dubov@oracle.com $ */
+/* $Id: QIManagerDialog.h 122814 2018-05-28 14:37:10Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - Qt extensions: QIManagerDialog class declaration.
  */
@@ -58,6 +58,7 @@ enum ButtonType
 /** Manager dialog factory insterface. */
 class SHARED_LIBRARY_STUFF QIManagerDialogFactory
 {
+
 public:
 
     /** Constructs Manager dialog factory. */
