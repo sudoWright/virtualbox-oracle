@@ -1,4 +1,4 @@
-/* $Id: UIStarter.cpp 122818 2018-05-28 16:39:19Z sergey.dubov@oracle.com $ */
+/* $Id: UIStarter.cpp 122819 2018-05-28 16:40:29Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIStarter class implementation.
  */
@@ -93,6 +93,8 @@ void UIStarter::deinit()
                this, &UIStarter::sltRestartUI);
     disconnect(&vboxGlobal(), &VBoxGlobal::sigAskToOpenURLs,
                this, &UIStarter::sltOpenURLs);
+    disconnect(&vboxGlobal(), &VBoxGlobal::sigAskToCommitData,
+               this, &UIStarter::sltHandleCommitDataRequest);
 }
 
 void UIStarter::prepare()
