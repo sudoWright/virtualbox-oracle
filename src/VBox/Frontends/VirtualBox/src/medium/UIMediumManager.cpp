@@ -1,4 +1,4 @@
-/* $Id: UIMediumManager.cpp 122839 2018-05-29 13:05:40Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIMediumManager.cpp 122845 2018-05-29 14:48:44Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIMediumManager class implementation.
  */
@@ -88,6 +88,7 @@ private:
     /** Holds the @a state to compare to. */
     KMediumState m_state;
 };
+
 
 /*********************************************************************************************************************************
 *   Class UIEnumerationProgressBar implementation.                                                                               *
