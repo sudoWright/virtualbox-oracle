@@ -1,4 +1,4 @@
-/* $Id: NEMInternal.h 122883 2018-06-01 14:02:49Z knut.osmundsen@oracle.com $ */
+/* $Id: NEMInternal.h 122922 2018-06-05 08:53:01Z knut.osmundsen@oracle.com $ */
 /** @file
  * NEM - Internal header file.
  */
@@ -250,6 +250,7 @@ typedef struct NEMCPU
     STAMCOUNTER                 StatExitInterruptWindow;
     STAMCOUNTER                 StatExitCpuId;
     STAMCOUNTER                 StatExitMsr;
+    STAMCOUNTER                 StatExitException;
     STAMCOUNTER                 StatExitUnrecoverable;
     STAMCOUNTER                 StatGetMsgTimeout;
     STAMCOUNTER                 StatStopCpuSuccess;
