@@ -1,4 +1,4 @@
-/* $Id: HostDnsService.h 122914 2018-06-04 22:05:25Z noreply@oracle.com $ */
+/* $Id: HostDnsService.h 122965 2018-06-08 10:19:45Z noreply@oracle.com $ */
 /** @file
  * Host DNS listener.
  */
@@ -95,7 +95,7 @@ class HostDnsMonitorProxy
     HostDnsMonitorProxy();
     ~HostDnsMonitorProxy();
     void init(VirtualBox *virtualbox);
-    void notify() const;
+    void notify();
 
     VirtualBox *getVirtualBox() const;
 
