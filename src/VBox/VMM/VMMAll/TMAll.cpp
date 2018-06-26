@@ -1,4 +1,4 @@
-/* $Id: TMAll.cpp 118412 2017-10-17 14:26:02Z knut.osmundsen@oracle.com $ */
+/* $Id: TMAll.cpp 123202 2018-06-26 01:49:48Z knut.osmundsen@oracle.com $ */
 /** @file
  * TM - Timeout Manager, all contexts.
  */
@@ -20,6 +20,9 @@
 *   Header Files                                                                                                                 *
 *********************************************************************************************************************************/
 #define LOG_GROUP LOG_GROUP_TM
+#ifdef DEBUG_bird
+# define DBGFTRACE_DISABLED /* annoying */
+#endif
 #include <VBox/vmm/tm.h>
 #include <VBox/vmm/mm.h>
 #include <VBox/vmm/dbgftrace.h>
