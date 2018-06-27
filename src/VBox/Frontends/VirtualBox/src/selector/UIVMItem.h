@@ -1,4 +1,4 @@
-/* $Id: UIVMItem.h 122654 2018-05-15 14:20:58Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIVMItem.h 123233 2018-06-27 15:38:30Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVMItem class declarations.
  */
@@ -66,6 +66,8 @@ public:
     QString settingsFile() const { return m_strSettingsFile; }
     const QStringList &groups();
     bool recache();
+    /** Recaches item pixmap. */
+    void recachePixmap();
 
     bool canSwitchTo() const;
     bool switchTo();
