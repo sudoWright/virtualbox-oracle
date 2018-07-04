@@ -1,4 +1,4 @@
-/* $Id: VBoxNetAdp.c 118839 2017-10-28 15:14:05Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxNetAdp.c 123415 2018-07-04 12:00:25Z aleksey.ilyushin@oracle.com $ */
 /** @file
  * VBoxNetAdp - Virtual Network Adapter Driver (Host), Common Code.
  */
@@ -119,7 +119,7 @@ int vboxNetAdpCreate(PVBOXNETADP *ppNew, const char *pcszName)
             {
                 Log(("vboxNetAdpCreate: using name: %s\n", pcszName));
                 pThis->iUnit = vboxNetAdpGetUnitByName(pcszName);
-                strncpy(pThis->szName, pcszName, sizeof(pThis->szName));
+                strncpy(pThis->szName, pcszName, sizeof(pThis->szName) - 1);
                 pThis->szName[sizeof(pThis->szName) - 1] = '\0';
             }
             else
