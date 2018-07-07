@@ -1,4 +1,4 @@
-/* $Id: fuzzmastercmd.cpp 123492 2018-07-07 13:37:19Z alexander.eichner@oracle.com $ */
+/* $Id: fuzzmastercmd.cpp 123493 2018-07-07 13:40:01Z alexander.eichner@oracle.com $ */
 /** @file
  * IPRT - Fuzzing framework API, master command.
  */
@@ -176,7 +176,6 @@ static int rtFuzzCmdMasterFuzzRunProcessCfgBool(bool *pfVal, const char *pszCfgI
 
     return rc;
 }
-#endif
 
 
 /**
@@ -202,6 +201,7 @@ static int rtFuzzCmdMasterFuzzRunProcessCfgBoolDef(bool *pfVal, const char *pszC
 
     return rc;
 }
+#endif
 
 
 /**
