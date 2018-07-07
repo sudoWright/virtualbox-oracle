@@ -1,4 +1,4 @@
-/* $Id: MediumImpl.h 123500 2018-07-07 16:20:42Z knut.osmundsen@oracle.com $ */
+/* $Id: MediumImpl.h 123509 2018-07-07 19:12:04Z alexander.eichner@oracle.com $ */
 /** @file
  * VirtualBox COM class implementation
  */
@@ -227,7 +227,7 @@ public:
     const Utf8Str& i_getKeyId();
 
     HRESULT i_openHddForIO(bool fWritable, SecretKeyStore *pKeyStore, PVDISK *ppHdd, MediumLockList *pMediumLockList,
-                           struct MediumCryptoFilterSettings *pCryptoSettingsRead);
+                           struct MediumCryptoFilterSettings *pCryptoSettings);
 
 private:
 
