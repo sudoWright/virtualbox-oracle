@@ -1,4 +1,4 @@
-/* $Id: GuestCtrlImpl.cpp 122234 2018-04-23 10:52:51Z andreas.loeffler@oracle.com $ */
+/* $Id: GuestCtrlImpl.cpp 123510 2018-07-07 21:27:53Z alexander.eichner@oracle.com $ */
 /** @file
  * VirtualBox COM class implementation: Guest
  */
@@ -41,7 +41,6 @@
 #include <iprt/cpp/utils.h>
 #include <iprt/file.h>
 #include <iprt/getopt.h>
-#include <iprt/isofs.h>
 #include <iprt/list.h>
 #include <iprt/path.h>
 #include <VBox/vmm/pgm.h>
