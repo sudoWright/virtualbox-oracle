@@ -1,4 +1,4 @@
-/* $Id: IEMAllCImplSvmInstr.cpp.h 123519 2018-07-08 10:38:08Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: IEMAllCImplSvmInstr.cpp.h 123580 2018-07-10 10:05:11Z ramshankar.venkataraman@oracle.com $ */
 /** @file
  * IEM - AMD-V (Secure Virtual Machine) instruction implementation.
  */
@@ -1399,6 +1399,10 @@ IEM_CIMPL_DEF_0(iemCImpl_skinit)
     return VERR_IEM_INSTR_NOT_IMPLEMENTED;
 }
 
+
+/**
+ * Implements SVM's implementation of PAUSE.
+ */
 IEM_CIMPL_DEF_0(iemCImpl_svm_pause)
 {
     bool fCheckIntercept = true;
