@@ -1,4 +1,4 @@
-/* $Id: Db.h 121776 2018-04-05 15:20:32Z noreply@oracle.com $ */
+/* $Id: Db.h 123637 2018-07-11 16:39:52Z noreply@oracle.com $ */
 /** @file
  * DHCP server - address database
  */
@@ -126,7 +126,7 @@ private:
     IPv4Pool m_pool;
 
 public:
-    Db() {}
+    Db();
     ~Db();
 
     int init(const Config *pConfig);
