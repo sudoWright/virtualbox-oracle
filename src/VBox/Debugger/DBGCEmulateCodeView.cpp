@@ -1,4 +1,4 @@
-/* $Id: DBGCEmulateCodeView.cpp 123635 2018-07-11 16:20:21Z knut.osmundsen@oracle.com $ */
+/* $Id: DBGCEmulateCodeView.cpp 123638 2018-07-11 16:43:18Z noreply@oracle.com $ */
 /** @file
  * DBGC - Debugger Console, CodeView / WinDbg Emulation.
  */
@@ -3483,7 +3483,7 @@ static DECLCALLBACK(int) dbgcCmdDumpMem(PCDBGCCMD pCmd, PDBGCCMDHLP pCmdHlp, PUV
                 {
                     /* Try lookup symbol for the above address. */
                     DBGFADDRESS Addr;
-                    int         rc = VINF_SUCCESS;
+                    rc = VINF_SUCCESS;
                     if (cbElement == 8)
                         DBGFR3AddrFromFlat(pDbgc->pUVM, &Addr, *(uint64_t *)&achBuffer[i]);
                     else if (!fFar)
