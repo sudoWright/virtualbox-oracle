@@ -1,4 +1,4 @@
-/* $Id: ldrVfsFile.cpp 119906 2017-12-22 11:46:23Z knut.osmundsen@oracle.com $ */
+/* $Id: ldrVfsFile.cpp 123672 2018-07-12 21:06:33Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Binary Image Loader, The File Oriented Parts, VFS variant.
  */
@@ -188,7 +188,7 @@ static int rtldrVfsFileCreate(const char *pszFilename, PRTLDRREADER *ppReader, u
 {
     size_t cbFilename = strlen(pszFilename) + 1;
     int rc = VERR_NO_MEMORY;
-    PRTLDRREADERVFSFILE pFileReader = (PRTLDRREADERVFSFILE)RTMemAlloc(RT_OFFSETOF(RTLDRREADERVFSFILE, szFilename[cbFilename]));
+    PRTLDRREADERVFSFILE pFileReader = (PRTLDRREADERVFSFILE)RTMemAlloc(RT_UOFFSETOF_DYN(RTLDRREADERVFSFILE, szFilename[cbFilename]));
     if (pFileReader)
     {
         memcpy(pFileReader->szFilename, pszFilename, cbFilename);

@@ -1,4 +1,4 @@
-/* $Id: NetIf-generic.cpp 118839 2017-10-28 15:14:05Z knut.osmundsen@oracle.com $ */
+/* $Id: NetIf-generic.cpp 123672 2018-07-12 21:06:33Z knut.osmundsen@oracle.com $ */
 /** @file
  * VirtualBox Main - Generic NetIf implementation.
  */
@@ -243,7 +243,7 @@ int NetIfCreateHostOnlyNetworkInterface(VirtualBox *pVirtualBox,
                     }
 
                     size_t cbNameLen = strlen(szBuf) + 1;
-                    PNETIFINFO pInfo = (PNETIFINFO)RTMemAllocZ(RT_OFFSETOF(NETIFINFO, szName[cbNameLen]));
+                    PNETIFINFO pInfo = (PNETIFINFO)RTMemAllocZ(RT_UOFFSETOF_DYN(NETIFINFO, szName[cbNameLen]));
                     if (!pInfo)
                         rc = VERR_NO_MEMORY;
                     else

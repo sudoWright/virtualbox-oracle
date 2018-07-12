@@ -1,4 +1,4 @@
-/* $Id: memtracker.cpp 119477 2017-12-07 11:16:53Z knut.osmundsen@oracle.com $ */
+/* $Id: memtracker.cpp 123672 2018-07-12 21:06:33Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Memory Tracker & Leak Detector.
  */
@@ -401,7 +401,7 @@ DECLINLINE(PRTMEMTRACKERTAG) rtMemTrackerGetTag(PRTMEMTRACKERINT pTracker, PRTME
      */
     if (RT_UNLIKELY(!pTag))
     {
-        pTag = (PRTMEMTRACKERTAG)RTMemAllocZVar(RT_OFFSETOF(RTMEMTRACKERTAG, szTag[cchTag + 1]));
+        pTag = (PRTMEMTRACKERTAG)RTMemAllocZVar(RT_UOFFSETOF_DYN(RTMEMTRACKERTAG, szTag[cchTag + 1]));
         if (pTag)
         {
             pTag->Core.Key = uHash;

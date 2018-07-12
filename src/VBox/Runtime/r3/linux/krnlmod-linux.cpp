@@ -1,4 +1,4 @@
-/* $Id: krnlmod-linux.cpp 119154 2017-11-19 14:32:51Z knut.osmundsen@oracle.com $ */
+/* $Id: krnlmod-linux.cpp 123672 2018-07-12 21:06:33Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Kernel module, Linux.
  */
@@ -102,7 +102,7 @@ static int rtKrnlModLinuxInfoCreate(const char *pszName, PRTKRNLMODINFO phKrnlMo
 {
     int rc = VINF_SUCCESS;
     size_t cchName = strlen(pszName) + 1;
-    PRTKRNLMODINFOINT pThis = (PRTKRNLMODINFOINT)RTMemAllocZ(RT_OFFSETOF(RTKRNLMODINFOINT, achName[cchName]));
+    PRTKRNLMODINFOINT pThis = (PRTKRNLMODINFOINT)RTMemAllocZ(RT_UOFFSETOF_DYN(RTKRNLMODINFOINT, achName[cchName]));
     if (RT_LIKELY(pThis))
     {
         memcpy(&pThis->achName[0], pszName, cchName);

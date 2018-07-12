@@ -1,4 +1,4 @@
-/* $Id: tarvfs.cpp 118532 2017-10-24 15:01:30Z knut.osmundsen@oracle.com $ */
+/* $Id: tarvfs.cpp 123672 2018-07-12 21:06:33Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - TAR Virtual Filesystem, Reader.
  */
@@ -1190,7 +1190,7 @@ static const RTVFSSYMLINKOPS g_rtZipTarFssSymOps =
     0,
     { /* ObjSet */
         RTVFSOBJSETOPS_VERSION,
-        RT_OFFSETOF(RTVFSSYMLINKOPS, Obj) - RT_OFFSETOF(RTVFSSYMLINKOPS, ObjSet),
+        RT_UOFFSETOF(RTVFSSYMLINKOPS, ObjSet) - RT_UOFFSETOF(RTVFSSYMLINKOPS, Obj),
         rtZipTarFssSym_SetMode,
         rtZipTarFssSym_SetTimes,
         rtZipTarFssSym_SetOwner,

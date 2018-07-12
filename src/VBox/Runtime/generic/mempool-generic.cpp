@@ -1,4 +1,4 @@
-/* $Id: mempool-generic.cpp 118412 2017-10-17 14:26:02Z knut.osmundsen@oracle.com $ */
+/* $Id: mempool-generic.cpp 123672 2018-07-12 21:06:33Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Memory Allocation Pool.
  */
@@ -134,7 +134,7 @@ RTDECL(int) RTMemPoolCreate(PRTMEMPOOL phMemPool, const char *pszName)
     Assert(*pszName);
 
     size_t          cchName  = strlen(pszName);
-    PRTMEMPOOLINT   pMemPool = (PRTMEMPOOLINT)RTMemAlloc(RT_OFFSETOF(RTMEMPOOLINT, szName[cchName + 1]));
+    PRTMEMPOOLINT   pMemPool = (PRTMEMPOOLINT)RTMemAlloc(RT_UOFFSETOF_DYN(RTMEMPOOLINT, szName[cchName + 1]));
     if (!pMemPool)
         return VERR_NO_MEMORY;
     int rc = RTSpinlockCreate(&pMemPool->hSpinLock, RTSPINLOCK_FLAGS_INTERRUPT_UNSAFE, "RTMemPoolCreate");
