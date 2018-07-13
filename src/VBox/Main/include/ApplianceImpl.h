@@ -1,4 +1,4 @@
-/* $Id: ApplianceImpl.h 123449 2018-07-04 19:46:14Z knut.osmundsen@oracle.com $ */
+/* $Id: ApplianceImpl.h 123720 2018-07-13 18:10:44Z klaus.espenlaub@oracle.com $ */
 /** @file
  * VirtualBox COM class implementation
  */
@@ -123,7 +123,9 @@ private:
      */
     bool i_isApplianceIdle();
     HRESULT i_searchUniqueVMName(Utf8Str& aName) const;
-    HRESULT i_searchUniqueDiskImageFilePath(const Utf8Str &aMachineFolder, Utf8Str &aName) const;
+    HRESULT i_searchUniqueImageFilePath(const Utf8Str &aMachineFolder,
+                                        DeviceType_T aDeviceType,
+                                        Utf8Str &aName) const;
     HRESULT i_setUpProgress(ComObjPtr<Progress> &pProgress,
                             const Utf8Str &strDescription,
                             SetUpProgressMode mode);
