@@ -1,4 +1,4 @@
-/* $Id: RTLdrFlt.cpp 118769 2017-10-27 15:48:25Z knut.osmundsen@oracle.com $ */
+/* $Id: RTLdrFlt.cpp 123740 2018-07-16 10:03:41Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Utility for translating addresses into symbols+offset.
  */
@@ -224,7 +224,7 @@ int main(int argc, char **argv)
                 return RTEXITCODE_SUCCESS;
 
             case 'V':
-                RTPrintf("$Revision: 118769 $\n");
+                RTPrintf("$Revision: 123740 $\n");
                 return RTEXITCODE_SUCCESS;
 
             case VINF_GETOPT_NOT_OPTION:
@@ -256,7 +256,7 @@ int main(int argc, char **argv)
                 if (enmOpenMethod == kOpenMethod_FromImage)
                     rc = RTDbgModCreateFromImage(&hMod, pszModule, NULL, enmArch, hDbgCfg);
                 else
-                    rc = RTDbgModCreateFromPeImage(&hMod, pszModule, NULL, NIL_RTLDRMOD, cbImage, uTimestamp, hDbgCfg);
+                    rc = RTDbgModCreateFromPeImage(&hMod, pszModule, NULL, NULL, cbImage, uTimestamp, hDbgCfg);
                 if (RT_FAILURE(rc))
                     return RTMsgErrorExit(RTEXITCODE_FAILURE, "RTDbgModCreateFromImage(,%s,,) -> %Rrc", pszModule, rc);
 
