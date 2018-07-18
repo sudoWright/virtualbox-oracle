@@ -1,4 +1,4 @@
-/* $Id: VMMInternal.h 123320 2018-06-29 20:02:35Z knut.osmundsen@oracle.com $ */
+/* $Id: VMMInternal.h 123808 2018-07-18 13:00:43Z ramshankar.venkataraman@oracle.com $ */
 /** @file
  * VMM - Internal header file.
  */
@@ -362,7 +362,6 @@ typedef struct VMM
     STAMCOUNTER                 StatRZRetStaleSelector;
     STAMCOUNTER                 StatRZRetIRETTrap;
     STAMCOUNTER                 StatRZRetEmulate;
-    STAMCOUNTER                 StatRZRetIOBlockEmulate;
     STAMCOUNTER                 StatRZRetPatchEmulate;
     STAMCOUNTER                 StatRZRetIORead;
     STAMCOUNTER                 StatRZRetIOWrite;
