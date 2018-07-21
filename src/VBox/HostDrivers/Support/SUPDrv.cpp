@@ -1,4 +1,4 @@
-/* $Id: SUPDrv.cpp 123320 2018-06-29 20:02:35Z knut.osmundsen@oracle.com $ */
+/* $Id: SUPDrv.cpp 123900 2018-07-21 15:11:53Z ramshankar.venkataraman@oracle.com $ */
 /** @file
  * VBoxDrv - The VirtualBox Support Driver - Common code.
  */
@@ -4325,7 +4325,7 @@ int VBOXCALL supdrvQueryVTCapsInternal(uint32_t *pfCaps)
                 rc = SUPR0GetVmxUsability(&fIsSmxModeAmbiguous);
                 if (rc == VINF_SUCCESS)
                 {
-                    VMXCAPABILITY vtCaps;
+                    VMXCTLSMSR vtCaps;
 
                     *pfCaps |= SUPVTCAPS_VT_X;
 

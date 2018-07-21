@@ -1,4 +1,4 @@
-/* $Id: HMInternal.h 123894 2018-07-21 04:50:51Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: HMInternal.h 123900 2018-07-21 15:11:53Z ramshankar.venkataraman@oracle.com $ */
 /** @file
  * HM - Internal header file.
  */
@@ -559,12 +559,6 @@ typedef struct HM
     AVLOU32TREE                     PatchTree;
     uint32_t                        cPatches;
     HMTPRPATCH                      aPatches[64];
-
-    struct
-    {
-        uint32_t                    u32AMDFeatureECX;
-        uint32_t                    u32AMDFeatureEDX;
-    } cpuid;
 
     /** Last recorded error code during HM ring-0 init. */
     int32_t                 rcInit;
