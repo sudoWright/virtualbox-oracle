@@ -1,4 +1,4 @@
-/* $Id: UartCore.cpp 123911 2018-07-22 14:56:25Z alexander.eichner@oracle.com $ */
+/* $Id: UartCore.cpp 123912 2018-07-22 15:00:59Z alexander.eichner@oracle.com $ */
 /** @file
  * UartCore - UART  (16550A up to 16950) emulation.
  *
@@ -390,6 +390,7 @@ DECLINLINE(bool) uartFifoPut(PUARTFIFO pFifo, bool fOvrWr, uint8_t bData)
 
     return fOverFlow;
 }
+#endif
 
 
 /**
@@ -413,6 +414,7 @@ DECLINLINE(uint8_t) uartFifoGet(PUARTFIFO pFifo)
 }
 
 
+#ifdef IN_RING3
 /**
  * Tries to copy the requested amount of data from the given FIFO into the provided buffer.
  *
