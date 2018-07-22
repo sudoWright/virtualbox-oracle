@@ -1,4 +1,4 @@
-/* $Id: UartCore.cpp 123912 2018-07-22 15:00:59Z alexander.eichner@oracle.com $ */
+/* $Id: UartCore.cpp 123913 2018-07-22 15:10:20Z alexander.eichner@oracle.com $ */
 /** @file
  * UartCore - UART  (16550A up to 16950) emulation.
  *
@@ -633,7 +633,7 @@ static void uartR3RecvFifoFill(PUARTCORE pThis)
     }
 
     Assert(cbFilled <= (size_t)pThis->cbAvailRdr);
-    ASMAtomicSubU32(&pThis->cbAvailRdr, cbFilled);
+    ASMAtomicSubU32(&pThis->cbAvailRdr, (uint32_t)cbFilled);
 }
 
 
