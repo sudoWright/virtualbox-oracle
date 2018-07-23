@@ -1,4 +1,4 @@
-/* $Id: RTHttp.cpp 118769 2017-10-27 15:48:25Z knut.osmundsen@oracle.com $ */
+/* $Id: RTHttp.cpp 123943 2018-07-23 16:52:04Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Utility for retriving URLs.
  */
@@ -55,6 +55,9 @@ int main(int argc, char **argv)
     rc = RTHttpCreate(&hHttp);
     if (RT_FAILURE(rc))
         return RTMsgErrorExit(RTEXITCODE_FAILURE, "RTHttpCreate failed: %Rrc", rc);
+    rc = RTHttpSetFollowRedirects(hHttp, 8);
+    if (RT_FAILURE(rc))
+        return RTMsgErrorExit(RTEXITCODE_FAILURE, "RTHttpSetFollowRedirects(,8) failed: %Rrc", rc);
 
     /*
      * Parse arguments.
@@ -105,7 +108,7 @@ int main(int argc, char **argv)
                 return RTEXITCODE_SUCCESS;
 
             case 'V':
-                RTPrintf("$Revision: 118769 $\n");
+                RTPrintf("$Revision: 123943 $\n");
                 return RTEXITCODE_SUCCESS;
 
             case VINF_GETOPT_NOT_OPTION:
