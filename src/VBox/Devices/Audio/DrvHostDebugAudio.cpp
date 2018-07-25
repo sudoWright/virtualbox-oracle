@@ -1,4 +1,4 @@
-/* $Id: DrvHostDebugAudio.cpp 123958 2018-07-25 08:12:10Z andreas.loeffler@oracle.com $ */
+/* $Id: DrvHostDebugAudio.cpp 123964 2018-07-25 11:50:50Z andreas.loeffler@oracle.com $ */
 /** @file
  * Debug audio driver.
  *
@@ -158,7 +158,7 @@ static int debugCreateStreamOut(PDRVHOSTDEBUGAUDIO pDrv, PDEBUGAUDIOSTREAM pStre
     if (RT_SUCCESS(rc))
     {
         if (pCfgAcq)
-            pCfgAcq->cFrameBufferHint = PDMAUDIOSTREAMCFG_B2F(pCfgAcq, pStreamDbg->Out.cbPlayBuffer);
+            pCfgAcq->cFrameBufferHint = _1K;
     }
 
     return rc;
