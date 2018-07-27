@@ -1,4 +1,4 @@
-/* $Id: UIVirtualBoxEventHandler.cpp 121551 2018-03-29 13:41:24Z sergey.dubov@oracle.com $ */
+/* $Id: UIVirtualBoxEventHandler.cpp 124003 2018-07-27 10:11:21Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVirtualBoxEventHandler class implementation.
  */
