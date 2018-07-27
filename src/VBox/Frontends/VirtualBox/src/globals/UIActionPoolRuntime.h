@@ -1,4 +1,4 @@
-/* $Id: UIActionPoolRuntime.h 121657 2018-04-03 16:37:08Z sergey.dubov@oracle.com $ */
+/* $Id: UIActionPoolRuntime.h 124002 2018-07-27 09:40:34Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIActionPoolRuntime class declaration.
  */
