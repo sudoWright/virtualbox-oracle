@@ -1,4 +1,4 @@
-/* $Id: errorprint.cpp 123499 2018-07-07 15:31:29Z knut.osmundsen@oracle.com $ */
+/* $Id: errorprint.cpp 124132 2018-08-05 13:58:10Z knut.osmundsen@oracle.com $ */
 
 /** @file
  * MS COM / XPCOM Abstraction Layer:
@@ -80,7 +80,7 @@ void GluePrintErrorInfo(const com::ErrorInfo &info)
         RTMsgError("%s", str.c_str());
         Log(("ERROR: %s", str.c_str()));
     }
-    catch (std::bad_alloc)
+    catch (std::bad_alloc &)
     {
         RTMsgError("std::bad_alloc in GluePrintErrorInfo!");
         Log(("ERROR: std::bad_alloc in GluePrintErrorInfo!\n"));
