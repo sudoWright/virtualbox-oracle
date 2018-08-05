@@ -1,4 +1,4 @@
-/* $Id: xarvfs.cpp 123672 2018-07-12 21:06:33Z knut.osmundsen@oracle.com $ */
+/* $Id: xarvfs.cpp 124129 2018-08-05 12:40:50Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - XAR Virtual Filesystem.
  */
@@ -1940,7 +1940,7 @@ static int rtZipXarReadAndValidateToc(RTVFSIOSTREAM hVfsIosIn, PCXARHEADER pXarH
                 {
                     Parser.read(pszOutput, cchToc, RTCString("xar-toc.xml"), *pDoc);
                 }
-                catch (xml::XmlError Err)
+                catch (xml::XmlError &Err)
                 {
                     rc = VERR_XAR_TOC_XML_PARSE_ERROR;
                 }
