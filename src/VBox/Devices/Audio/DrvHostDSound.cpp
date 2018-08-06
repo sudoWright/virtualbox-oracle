@@ -1,4 +1,4 @@
-/* $Id: DrvHostDSound.cpp 124158 2018-08-06 16:26:43Z andreas.loeffler@oracle.com $ */
+/* $Id: DrvHostDSound.cpp 124159 2018-08-06 16:48:31Z andreas.loeffler@oracle.com $ */
 /** @file
  * Windows host backend driver using DirectSound.
  */
@@ -2211,7 +2211,8 @@ static DECLCALLBACK(int) drvHostDSoundStreamDestroy(PPDMIHOSTAUDIO pInterface, P
 
     if (RT_SUCCESS(rc))
     {
-        rc = RTCritSectDelete(&pStreamDS->CritSect);
+        if (RTCritSectIsInitialized(&pStreamDS->CritSect))
+            rc = RTCritSectDelete(&pStreamDS->CritSect);
     }
 
     return rc;
