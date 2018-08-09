@@ -1,4 +1,4 @@
-/* $Id: UIWizardNewVD.cpp 123222 2018-06-26 16:13:10Z sergey.dubov@oracle.com $ */
+/* $Id: UIWizardNewVD.cpp 124225 2018-08-09 13:34:57Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardNewVD class implementation.
  */
@@ -150,4 +150,3 @@ void UIWizardNewVD::prepare()
     /* Call to base-class: */
     UIWizard::prepare();
 }
-
