@@ -1,4 +1,4 @@
-/* $Id: display_base.cpp 118839 2017-10-28 15:14:05Z knut.osmundsen@oracle.com $ */
+/* $Id: display_base.cpp 124275 2018-08-10 17:46:50Z vitali.pelenjow@oracle.com $ */
 
 /** @file
  * Presenter API: display base class implementation.
@@ -326,9 +326,9 @@ int CrFbDisplayBase::fbCleanupRemoveAllEntries()
             WARN(("err"));
             break;
         }
-
-        CrFbVisitCreatedEntries(mpFb, entriesDestroyCb, this);
     }
+
+    CrFbVisitCreatedEntries(mpFb, entriesDestroyCb, this);
 
     return rc;
 }
