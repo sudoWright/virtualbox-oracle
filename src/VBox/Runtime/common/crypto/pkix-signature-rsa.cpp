@@ -1,4 +1,4 @@
-/* $Id: pkix-signature-rsa.cpp 124340 2018-08-14 17:49:23Z knut.osmundsen@oracle.com $ */
+/* $Id: pkix-signature-rsa.cpp 124343 2018-08-14 17:52:12Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Crypto - Public Key Signature Schema Algorithm, RSA Providers.
  */
@@ -170,6 +170,7 @@ static DECLCALLBACK(void) rtCrPkixSignatureRsa_Delete(PCRTCRPKIXSIGNATUREDESC pD
     PRTCRPKIXSIGNATURERSA pThis = (PRTCRPKIXSIGNATURERSA)pvState;
     RT_NOREF_PV(fSigning); RT_NOREF_PV(pDesc);
     Assert(pThis->fSigning == fSigning);
+    NOREF(pThis);
 }
 
 
