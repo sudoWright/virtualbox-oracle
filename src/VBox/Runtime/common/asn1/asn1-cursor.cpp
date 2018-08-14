@@ -1,4 +1,4 @@
-/* $Id: asn1-cursor.cpp 118412 2017-10-17 14:26:02Z knut.osmundsen@oracle.com $ */
+/* $Id: asn1-cursor.cpp 124336 2018-08-14 16:13:43Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - ASN.1, Basic Operations.
  */
@@ -183,6 +183,12 @@ RTDECL(int) RTAsn1CursorSetInfo(PRTASN1CURSOR pCursor, int rc, const char *pszMs
     rc = RTAsn1CursorSetInfoV(pCursor, rc, pszMsg, va);
     va_end(va);
     return rc;
+}
+
+
+RTDECL(bool) RTAsn1CursorIsEnd(PRTASN1CURSOR pCursor)
+{
+    return pCursor->cbLeft == 0;
 }
 
 
