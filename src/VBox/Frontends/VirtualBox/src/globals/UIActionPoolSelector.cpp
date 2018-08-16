@@ -1,4 +1,4 @@
-/* $Id: UIActionPoolSelector.cpp 124396 2018-08-16 16:00:08Z sergey.dubov@oracle.com $ */
+/* $Id: UIActionPoolSelector.cpp 124397 2018-08-16 16:14:06Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIActionPoolSelector class implementation.
  */
@@ -2224,7 +2224,6 @@ void UIActionPoolSelector::updateMenuMedium()
 {
     /* Get corresponding menu: */
     UIMenu *pMenu = action(UIActionIndexST_M_Medium)->menu();
-    AssertPtrReturnVoid(pMenu);
     /* Clear contents: */
     pMenu->clear();
 
