@@ -1,4 +1,4 @@
-/* $Id: DrvHostDebugAudio.cpp 124081 2018-08-02 12:48:47Z andreas.loeffler@oracle.com $ */
+/* $Id: DrvHostDebugAudio.cpp 124530 2018-08-22 16:15:08Z andreas.loeffler@oracle.com $ */
 /** @file
  * Debug audio driver.
  *
@@ -69,6 +69,8 @@ static DECLCALLBACK(int) drvHostDebugAudioGetConfig(PPDMIHOSTAUDIO pInterface, P
 {
     RT_NOREF(pInterface);
     AssertPtrReturn(pBackendCfg, VERR_INVALID_POINTER);
+
+    RTStrPrintf2(pBackendCfg->szName, sizeof(pBackendCfg->szName), "Debug audio driver");
 
     pBackendCfg->cbStreamOut    = sizeof(DEBUGAUDIOSTREAM);
     pBackendCfg->cbStreamIn     = sizeof(DEBUGAUDIOSTREAM);

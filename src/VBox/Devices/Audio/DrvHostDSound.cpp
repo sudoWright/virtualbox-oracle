@@ -1,4 +1,4 @@
-/* $Id: DrvHostDSound.cpp 124410 2018-08-17 09:39:17Z andreas.loeffler@oracle.com $ */
+/* $Id: DrvHostDSound.cpp 124530 2018-08-22 16:15:08Z andreas.loeffler@oracle.com $ */
 /** @file
  * Windows host backend driver using DirectSound.
  */
@@ -1743,6 +1743,8 @@ static void dsoundUpdateStatusInternalEx(PDRVHOSTDSOUND pThis, PPDMAUDIOBACKENDC
 #endif
         pThis->fEnabledOut = RT_BOOL(cbCtx.cDevOut);
         pThis->fEnabledIn  = RT_BOOL(cbCtx.cDevIn);
+
+        RTStrPrintf2(Cfg.szName, sizeof(Cfg.szName), "DirectSound audio driver");
 
         Cfg.cMaxStreamsIn  = UINT32_MAX;
         Cfg.cMaxStreamsOut = UINT32_MAX;
