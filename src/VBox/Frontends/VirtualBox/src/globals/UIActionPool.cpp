@@ -1,4 +1,4 @@
-/* $Id: UIActionPool.cpp 124475 2018-08-20 17:39:50Z sergey.dubov@oracle.com $ */
+/* $Id: UIActionPool.cpp 124514 2018-08-22 10:13:55Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIActionPool class implementation.
  */
@@ -318,6 +318,7 @@ UIActionToggle::UIActionToggle(UIActionPool *pParent,
                                bool fMachineMenuAction /* = false */)
     : UIAction(pParent, UIActionType_Toggle, fMachineMenuAction)
 {
+    prepare();
 }
 
 UIActionToggle::UIActionToggle(UIActionPool *pParent,
