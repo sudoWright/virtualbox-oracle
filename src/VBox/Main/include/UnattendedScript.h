@@ -1,4 +1,4 @@
-/* $Id: UnattendedScript.h 117254 2017-07-28 15:28:33Z knut.osmundsen@oracle.com $ */
+/* $Id: UnattendedScript.h 124517 2018-08-22 12:54:55Z klaus.espenlaub@oracle.com $ */
 /** @file
  * Implementeation of algorithms which read/parse/save scripts for unattended installation.
  */
@@ -20,6 +20,7 @@
 
 #include "VirtualBoxBase.h"
 #include <iprt/cpp/utils.h>
+#include <vector>
 
 using namespace xml;
 
