@@ -1,4 +1,4 @@
-/* $Id: UIMediumEnumerator.h 121657 2018-04-03 16:37:08Z sergey.dubov@oracle.com $ */
+/* $Id: UIMediumEnumerator.h 124637 2018-08-27 14:35:32Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIMediumEnumerator class declaration.
  */
@@ -65,6 +65,7 @@ public:
     /* API: Medium-enumeration stuff: */
     bool isMediumEnumerationInProgress() const { return m_fMediumEnumerationInProgress; }
     void enumerateMediums();
+    void refreshMediums();
 
 private slots:
 
@@ -104,4 +105,3 @@ private:
 };
 
 #endif /* !___UIMediumEnumerator_h___ */
-
