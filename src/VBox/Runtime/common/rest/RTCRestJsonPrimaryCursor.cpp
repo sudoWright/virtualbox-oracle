@@ -1,4 +1,4 @@
-/* $Id: RTCRestJsonPrimaryCursor.cpp 124591 2018-08-24 15:37:06Z knut.osmundsen@oracle.com $ */
+/* $Id: RTCRestJsonPrimaryCursor.cpp 124713 2018-08-30 12:13:02Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - C++ REST, RTCRestJsonPrimaryCursor implementation.
  */
@@ -28,6 +28,7 @@
 /*********************************************************************************************************************************
 *   Header Files                                                                                                                 *
 *********************************************************************************************************************************/
+#define LOG_GROUP RTLOGGROUP_REST
 #include <iprt/cpp/restbase.h>
 
 #include <iprt/err.h>
