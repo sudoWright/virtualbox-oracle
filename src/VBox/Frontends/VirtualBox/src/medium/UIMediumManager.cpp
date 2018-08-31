@@ -1,4 +1,4 @@
-/* $Id: UIMediumManager.cpp 124681 2018-08-29 14:36:45Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIMediumManager.cpp 124749 2018-08-31 14:47:37Z noreply@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIMediumManager class implementation.
  */
@@ -309,7 +309,7 @@ void UIMediumManagerWidget::sltApplyMediumDetailsChanges()
         && newData.m_options.m_strLocation != oldData.m_options.m_strLocation)
     {
         /* Prepare move storage progress: */
-        CProgress comProgress = comMedium.SetLocation(newData.m_options.m_strLocation);
+        CProgress comProgress = comMedium.MoveTo(newData.m_options.m_strLocation);
 
         /* Show error message if necessary: */
         if (!comMedium.isOk())
