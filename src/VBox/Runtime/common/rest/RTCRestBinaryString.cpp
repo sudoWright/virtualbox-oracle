@@ -1,4 +1,4 @@
-/* $Id: RTCRestBinaryString.cpp 124895 2018-09-06 18:32:37Z knut.osmundsen@oracle.com $ */
+/* $Id: RTCRestBinaryString.cpp 124897 2018-09-06 20:20:26Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - C++ REST, RTCRestBinaryString implementation.
  */
@@ -303,7 +303,7 @@ void RTCRestBinaryString::setConsumerCallback(PFNCONSUMER a_pfnConsumer, void *a
 {
     freeData();
 
-    a_pfnConsumer    = a_pfnConsumer;
+    m_pfnConsumer    = a_pfnConsumer;
     m_pvCallbackData = a_pvCallbackData;
 }
 
