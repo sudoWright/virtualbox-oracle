@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# $Id: tdStorageBenchmark1.py 121085 2018-03-02 19:34:21Z alexander.eichner@oracle.com $
+# $Id: tdStorageBenchmark1.py 125271 2018-09-24 06:49:25Z alexander.eichner@oracle.com $
 
 """
 VirtualBox Validation Kit - Storage benchmark.
@@ -27,7 +27,7 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 121085 $"
+__version__ = "$Revision: 125271 $"
 
 
 # Standard Python imports.
@@ -1093,8 +1093,13 @@ class tdStorageBenchmark(vbox.TestDriver):                                      
             # Reconfigure the VM
             oSession = self.openSession(oVM);
             if oSession is not None:
+                #
+                # Disable audio controller which shares the interrupt line with the BusLogic controller and is suspected to cause
+                # rare test failures because the device initialization fails.
+                #
+                fRc = oSession.setupAudio(vboxcon.AudioControllerType_AC97, False);
                 # Attach HD
-                fRc = oSession.ensureControllerAttached(_ControllerTypeToName(eStorageController));
+                fRc = fRc and oSession.ensureControllerAttached(_ControllerTypeToName(eStorageController));
                 fRc = fRc and oSession.setStorageControllerType(eStorageController, _ControllerTypeToName(eStorageController));
 
                 if sHostIoCache == 'hostiocache':
