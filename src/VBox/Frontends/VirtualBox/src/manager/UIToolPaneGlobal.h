@@ -1,4 +1,4 @@
-/* $Id: UIToolPaneGlobal.h 124048 2018-08-01 14:07:18Z sergey.dubov@oracle.com $ */
+/* $Id: UIToolPaneGlobal.h 125369 2018-09-27 15:39:39Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIToolPaneGlobal class declaration.
  */
@@ -74,6 +74,9 @@ private:
     void prepareStackedLayout();
     /** Cleanups all. */
     void cleanup();
+
+    /** Handles translation for Desktop pane. */
+    void retranslateDesktopPane();
 
     /** Holds the action pool reference. */
     UIActionPool *m_pActionPool;
