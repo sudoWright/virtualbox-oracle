@@ -1,4 +1,4 @@
-/* $Id: IEMAllCImplVmxInstr.cpp.h 125433 2018-10-02 05:59:22Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: IEMAllCImplVmxInstr.cpp.h 125436 2018-10-02 06:02:23Z ramshankar.venkataraman@oracle.com $ */
 /** @file
  * IEM - VT-x instruction implementation.
  */
@@ -55,7 +55,6 @@
  *  VMX_EXIT_XSETBV
  *  VMX_EXIT_APIC_WRITE
  *  VMX_EXIT_RDRAND
- *  VMX_EXIT_INVPCID
  *  VMX_EXIT_VMFUNC
  *  VMX_EXIT_ENCLS
  *  VMX_EXIT_RDSEED
