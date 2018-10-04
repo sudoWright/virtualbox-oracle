@@ -1,4 +1,4 @@
-/* $Id: UIWizardImportAppPageExpert.cpp 120592 2018-01-30 08:30:14Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIWizardImportAppPageExpert.cpp 125493 2018-10-04 12:07:36Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardImportAppPageExpert class implementation.
  */
@@ -135,4 +135,3 @@ bool UIWizardImportAppPageExpert::validatePage()
     /* Return result: */
     return fResult;
 }
-
