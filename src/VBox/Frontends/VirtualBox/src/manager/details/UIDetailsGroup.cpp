@@ -1,4 +1,4 @@
-/* $Id: UIDetailsGroup.cpp 124878 2018-09-06 10:37:46Z sergey.dubov@oracle.com $ */
+/* $Id: UIDetailsGroup.cpp 125599 2018-10-08 15:31:17Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIDetailsGroup class implementation.
  */
@@ -316,7 +316,11 @@ void UIDetailsGroup::paintBackground(QPainter *pPainter, const QStyleOptionGraph
     const QRect optionRect = pOptions->rect;
 
     /* Paint default background: */
-    const QColor defaultColor = palette().color(QPalette::Active, QPalette::Midlight).darker(110);
+#ifdef VBOX_WS_MAC
+    const QColor defaultColor = palette().color(QPalette::Active, QPalette::Mid).lighter(145);
+#else
+    const QColor defaultColor = palette().color(QPalette::Active, QPalette::Mid).lighter(155);
+#endif
     pPainter->fillRect(optionRect, defaultColor);
 
     /* Restore painter: */
