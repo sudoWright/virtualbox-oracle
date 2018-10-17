@@ -1,4 +1,4 @@
-/* $Id: UIGDetailsGroup.h 118839 2017-10-28 15:14:05Z knut.osmundsen@oracle.com $ */
+/* $Id: UIGDetailsGroup.h 125861 2018-10-17 13:34:24Z noreply@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIGDetailsGroup class declaration.
  */
@@ -55,7 +55,7 @@ public:
 private slots:
 
     /* Handler: Build stuff: */
-    void sltBuildStep(QString strStepId, int iStepNumber);
+    void sltBuildStep(const QUuid &aStepId, const int iStepNumber);
 
 private:
 
@@ -95,7 +95,7 @@ private:
     QList<UIGDetailsItem*> m_items;
     QList<UIVMItem*> m_machineItems;
     UIBuildStep *m_pBuildStep;
-    QString m_strGroupId;
+    QUuid m_uGroupId;
 
     /* Friends: */
     friend class UIGDetailsModel;

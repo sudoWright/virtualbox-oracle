@@ -1,4 +1,4 @@
-/* $Id: UIDetailsModel.h 125577 2018-10-08 13:01:03Z sergey.dubov@oracle.com $ */
+/* $Id: UIDetailsModel.h 125861 2018-10-17 13:34:24Z noreply@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIDetailsModel class declaration.
  */
@@ -53,7 +53,7 @@ signals:
     void sigRootItemMinimumHeightHintChanged(int iRootItemMinimumHeightHint);
 
     /* Notifier: Link processing stuff: */
-    void sigLinkClicked(const QString &strCategory, const QString &strControl, const QString &strId);
+    void sigLinkClicked(const QString &strCategory, const QString &strControl, const QUuid &aId);
 
 public:
 
