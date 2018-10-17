@@ -1,4 +1,4 @@
-/* $Id: dlm_lists.c 118839 2017-10-28 15:14:05Z knut.osmundsen@oracle.com $ */
+/* $Id: dlm_lists.c 125879 2018-10-17 16:58:38Z dmitrii.grigorev@oracle.com $ */
 /** @file
  * Implementation of all the Display Lists related routines:
  *
@@ -352,6 +352,12 @@ void DLM_APIENTRY crDLMCallLists(GLsizei n, GLenum type, const GLvoid *lists, SP
     CRDLMContextState *pListState = CURRENT_STATE();
 
     crDebug("DLM: CallLists(%d, %u, %p).", n, type, lists);
+    
+    if (n >= INT32_MAX / sizeof(GLuint))
+    {
+        crError("crDLMCallLists: parameter 'n' is out of range");
+        return;
+    }
 
     if (pListState)
     {
