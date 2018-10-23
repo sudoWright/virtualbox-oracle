@@ -1,4 +1,4 @@
-/* $Id: UIToolPaneGlobal.h 125848 2018-10-16 16:59:07Z sergey.dubov@oracle.com $ */
+/* $Id: UIToolPaneGlobal.h 126054 2018-10-23 19:42:38Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIToolPaneGlobal class declaration.
  */
@@ -50,13 +50,13 @@ public:
     virtual ~UIToolPaneGlobal() /* override */;
 
     /** Returns type of tool currently opened. */
-    ToolTypeGlobal currentTool() const;
+    UIToolType currentTool() const;
     /** Returns whether tool of particular @a enmType is opened. */
-    bool isToolOpened(ToolTypeGlobal enmType) const;
+    bool isToolOpened(UIToolType enmType) const;
     /** Activates tool of passed @a enmType, creates new one if necessary. */
-    void openTool(ToolTypeGlobal enmType);
+    void openTool(UIToolType enmType);
     /** Closes tool of passed @a enmType, deletes one if exists. */
-    void closeTool(ToolTypeGlobal enmType);
+    void closeTool(UIToolType enmType);
 
 private:
 
