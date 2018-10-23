@@ -1,4 +1,4 @@
-/* $Id: VideoRecStream.h 126021 2018-10-23 12:15:27Z andreas.loeffler@oracle.com $ */
+/* $Id: VideoRecStream.h 126025 2018-10-23 13:50:28Z andreas.loeffler@oracle.com $ */
 /** @file
  * Video recording stream code header.
  */

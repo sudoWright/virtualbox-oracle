@@ -1,4 +1,4 @@
-/* $Id: VideoRecUtils.cpp 126016 2018-10-23 11:09:22Z andreas.loeffler@oracle.com $ */
+/* $Id: VideoRecUtils.cpp 126025 2018-10-23 13:50:28Z andreas.loeffler@oracle.com $ */
 /** @file
  * Video recording utility code.
  */
