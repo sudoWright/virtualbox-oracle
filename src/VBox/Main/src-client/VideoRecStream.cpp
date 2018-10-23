@@ -1,4 +1,4 @@
-/* $Id: VideoRecStream.cpp 126020 2018-10-23 12:04:40Z andreas.loeffler@oracle.com $ */
+/* $Id: VideoRecStream.cpp 126021 2018-10-23 12:15:27Z andreas.loeffler@oracle.com $ */
 /** @file
  * Video recording stream code.
  */
@@ -37,6 +37,7 @@
 
 #include "VideoRec.h"
 #include "VideoRecStream.h"
+#include "WebMWriter.h"
 
 
 /**
