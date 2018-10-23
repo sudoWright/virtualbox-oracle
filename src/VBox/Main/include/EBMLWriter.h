@@ -1,4 +1,4 @@
-/* $Id: EBMLWriter.h 119051 2017-11-14 11:09:16Z andreas.loeffler@oracle.com $ */
+/* $Id: EBMLWriter.h 126012 2018-10-23 08:54:28Z andreas.loeffler@oracle.com $ */
 /** @file
  * EBMLWriter.h - EBML writer.
  */
