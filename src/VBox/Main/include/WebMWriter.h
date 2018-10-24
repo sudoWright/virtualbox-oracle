@@ -1,4 +1,4 @@
-/* $Id: WebMWriter.h 126073 2018-10-24 11:49:04Z andreas.loeffler@oracle.com $ */
+/* $Id: WebMWriter.h 126074 2018-10-24 11:50:41Z andreas.loeffler@oracle.com $ */
 /** @file
  * WebMWriter.h - WebM container handling.
  */
@@ -381,6 +381,7 @@ public:
             , offSeekInfo(0)
             , offTracks(0)
             , offCues(0)
+            , cClusters(0)
         {
             uTimecodeScaleFactor = VBOX_WEBM_TIMECODESCALE_FACTOR_MS;
 
