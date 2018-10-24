@@ -1,4 +1,4 @@
-/* $Id: WebMWriter.cpp 126071 2018-10-24 11:43:09Z andreas.loeffler@oracle.com $ */
+/* $Id: WebMWriter.cpp 126072 2018-10-24 11:45:40Z andreas.loeffler@oracle.com $ */
 /** @file
  * WebMWriter.cpp - WebM container handling.
  */
@@ -142,7 +142,7 @@ int WebMWriter::Close(void)
         return VINF_SUCCESS;
 
     /* Make sure to drain all queues. */
-    processQueues(&CurSeg.queueBlocks, true /* fForce */);
+    processQueue(&CurSeg.queueBlocks, true /* fForce */);
 
     writeFooter();
 
@@ -463,7 +463,7 @@ int WebMWriter::writeSimpleBlockQueued(WebMTrack *a_pTrack, WebMSimpleBlock *a_p
             CurSeg.queueBlocks.Map[tcAbsPTS] = Blocks;
         }
 
-        processQueues(&CurSeg.queueBlocks, false /* fForce */);
+        processQueue(&CurSeg.queueBlocks, false /* fForce */);
     }
     catch(...)
     {
@@ -621,7 +621,7 @@ int WebMWriter::WriteBlock(uint8_t uTrack, const void *pvData, size_t cbData)
  * @param   fForce          Whether forcing to process the render queue or not.
  *                          Needed to drain the queues when terminating.
  */
-int WebMWriter::processQueues(WebMQueue *pQueue, bool fForce)
+int WebMWriter::processQueue(WebMQueue *pQueue, bool fForce)
 {
     if (pQueue->tsLastProcessedMs == 0)
         pQueue->tsLastProcessedMs = RTTimeMilliTS();
