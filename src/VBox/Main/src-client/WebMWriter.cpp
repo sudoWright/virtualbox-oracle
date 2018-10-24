@@ -1,4 +1,4 @@
-/* $Id: WebMWriter.cpp 126084 2018-10-24 13:57:34Z andreas.loeffler@oracle.com $ */
+/* $Id: WebMWriter.cpp 126093 2018-10-24 15:31:30Z andreas.loeffler@oracle.com $ */
 /** @file
  * WebMWriter.cpp - WebM container handling.
  */
@@ -347,7 +347,7 @@ int WebMWriter::init(void)
  */
 void WebMWriter::destroy(void)
 {
-    CurSeg.destroy();
+    CurSeg.uninit();
 }
 
 /**
