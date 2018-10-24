@@ -1,4 +1,4 @@
-/* $Id: WebMWriter.h 126084 2018-10-24 13:57:34Z andreas.loeffler@oracle.com $ */
+/* $Id: WebMWriter.h 126092 2018-10-24 15:27:20Z andreas.loeffler@oracle.com $ */
 /** @file
  * WebMWriter.h - WebM container handling.
  */
@@ -392,15 +392,23 @@ public:
 
         virtual ~WebMSegment()
         {
-            destroy();
+            uninit();
         }
 
+        /**
+         * Initializes a segment.
+         *
+         * @returns IPRT status code.
+         */
         int init(void)
         {
             return RTCritSectInit(&CritSect);
         }
 
-        void destroy(void)
+        /**
+         * Uninitializes a segment.
+         */
+        void uninit(void)
         {
             clear();
 
