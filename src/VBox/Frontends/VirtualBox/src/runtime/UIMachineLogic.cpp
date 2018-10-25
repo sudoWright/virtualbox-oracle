@@ -1,4 +1,4 @@
-/* $Id: UIMachineLogic.cpp 126107 2018-10-25 08:58:53Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIMachineLogic.cpp 126108 2018-10-25 09:21:21Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIMachineLogic class implementation.
  */
@@ -2501,11 +2501,6 @@ void UIMachineLogic::sltCloseLogViewerWindow()
 }
 
 #endif /* VBOX_WITH_DEBUGGER_GUI */
-
-void UIMachineLogic::sltCloseGuestControlWindow()
-{
-
-}
 
 #ifdef VBOX_WS_MAC
 void UIMachineLogic::sltSwitchToMachineWindow()

@@ -1,4 +1,4 @@
-/* $Id: UIGuestControlWidget.h 126107 2018-10-25 08:58:53Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIGuestControlWidget.h 126108 2018-10-25 09:21:21Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIGuestControlWidget class declaration.
  */
@@ -75,6 +75,7 @@ private:
     QITabWidget                  *m_pTabWidget;
     UIGuestProcessControlWidget *m_pProcessControlWidget;
     UIGuestControlFileManager   *m_pFileManager;
+    bool                         m_fShowToolbar;
 };
 
 #endif /* !___UIGuestControlWidget_h___ */
