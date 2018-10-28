@@ -1,4 +1,4 @@
-/* $Id: strncmp.cpp 118412 2017-10-17 14:26:02Z knut.osmundsen@oracle.com $ */
+/* $Id: strncmp.cpp 126206 2018-10-28 17:00:27Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - CRT Strings, strncmp().
  */
@@ -28,6 +28,8 @@
 
 #ifdef _MSC_VER
 _CRTIMP int __cdecl strncmp
+#elif defined(__WATCOMC__)
+_WCRTLINK int std::strncmp
 #else
 int strncmp
 #endif

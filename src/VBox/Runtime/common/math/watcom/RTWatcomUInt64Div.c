@@ -1,10 +1,10 @@
-/* $Id: strpbrk.cpp 126206 2018-10-28 17:00:27Z knut.osmundsen@oracle.com $ */
+/* $Id: RTWatcomUInt64Div.c 126206 2018-10-28 17:00:27Z knut.osmundsen@oracle.com $ */
 /** @file
- * IPRT - strpbrk().
+ * BS3Kit - Unsigned 64-bit division (compiler support routine helper).
  */
 
 /*
- * Copyright (C) 2006-2017 Oracle Corporation
+ * Copyright (C) 2007-2017 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;
@@ -28,39 +28,11 @@
 /*********************************************************************************************************************************
 *   Header Files                                                                                                                 *
 *********************************************************************************************************************************/
-#include <iprt/string.h>
+#include <iprt/uint64.h>
 
 
-/**
- * Find the first occurrence of a character in pszChars in pszStr.
- *
- * @returns
- */
-#ifdef _MSC_VER
-# if _MSC_VER >= 1400
-_CRTIMP __checkReturn _CONST_RETURN char *  __cdecl strpbrk(__in_z const char *pszStr, __in_z const char *pszChars)
-# else
-_CRTIMP char * __cdecl strpbrk(const char *pszStr, const char *pszChars)
-# endif
-#elif defined(__WATCOMC__)
-_WCRTLINK char *std::strpbrk(const char *pszStr, const char *pszChars)
-#else
-char *strpbrk(const char *pszStr, const char *pszChars)
-# if defined(__THROW) && !defined(RT_OS_WINDOWS) && !defined(RT_OS_OS2)
-    __THROW
-# endif
-#endif
+DECLASM(void) RTWatcomUInt64Div(RTUINT64U uDividend, RTUINT64U uDivisor, RTUINT64U RT_FAR *paQuotientReminder)
 {
-    int chCur;
-    while ((chCur = *pszStr++) != '\0')
-    {
-        int ch;
-        const char *psz = pszChars;
-        while ((ch = *psz++) != '\0')
-            if (ch == chCur)
-                return (char *)(pszStr - 1);
-
-    }
-    return NULL;
+    RTUInt64DivRem(&paQuotientReminder[0], &paQuotientReminder[1], &uDividend, &uDivisor);
 }
 
