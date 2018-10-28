@@ -1,4 +1,4 @@
-/* $Id: VBoxGuestR0LibIdc-os2.cpp 126203 2018-10-28 14:53:12Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxGuestR0LibIdc-os2.cpp 126204 2018-10-28 16:58:30Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxGuestLib - Ring-0 Support Library for VBoxGuest, IDC, OS/2 specific.
  */
@@ -40,9 +40,11 @@
 /*********************************************************************************************************************************
 *   Global Variables                                                                                                             *
 *********************************************************************************************************************************/
+RT_C_DECLS_BEGIN /* for watcom */
 /* This is defined in some assembly file.  The AttachDD operation
    is done in the driver init code. */
 extern VBGLOS2ATTACHDD g_VBoxGuestIDC;
+RT_C_DECLS_END
 
 
 
