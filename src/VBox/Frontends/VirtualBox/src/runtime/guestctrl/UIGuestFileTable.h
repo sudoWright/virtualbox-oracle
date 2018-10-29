@@ -1,4 +1,4 @@
-/* $Id: UIGuestFileTable.h 126214 2018-10-29 08:47:55Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIGuestFileTable.h 126226 2018-10-29 13:56:53Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIGuestFileTable class declaration.
  */
@@ -52,7 +52,8 @@ protected:
     virtual QString fsObjectPropertyString() /* override */;
     virtual void    showProperties() /* override */;
     virtual void    determineDriveLetters() /* override */;
-    virtual void    prepareActions() /* override */;
+    virtual void    prepareToolbar() /* override */;
+
 
 private:
 
