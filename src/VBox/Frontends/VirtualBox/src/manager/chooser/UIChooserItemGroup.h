@@ -1,4 +1,4 @@
-/* $Id: UIChooserItemGroup.h 126263 2018-10-30 14:55:01Z sergey.dubov@oracle.com $ */
+/* $Id: UIChooserItemGroup.h 126265 2018-10-30 14:59:35Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIChooserItemGroup class declaration.
  */
@@ -28,6 +28,7 @@
 
 /* Forward declarations: */
 class QGraphicsScene;
+class QLineEdit;
 class QMenu;
 class QMimeData;
 class QPainter;
