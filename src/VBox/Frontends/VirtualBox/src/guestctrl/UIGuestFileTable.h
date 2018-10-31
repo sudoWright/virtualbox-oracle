@@ -1,4 +1,4 @@
-/* $Id: UIGuestFileTable.h 126266 2018-10-30 15:07:55Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIGuestFileTable.h 126288 2018-10-31 09:30:01Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIGuestFileTable class declaration.
  */
@@ -53,6 +53,7 @@ protected:
     virtual void    showProperties() /* override */;
     virtual void    determineDriveLetters() /* override */;
     virtual void    prepareToolbar() /* override */;
+    virtual void    createFileViewContextMenu(const QWidget *pWidget, const QPoint &point) /* override */;
 
 private:
 
