@@ -1,4 +1,4 @@
-/* $Id: UIGuestControlFileManagerPanel.h 126311 2018-11-02 08:07:11Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIGuestControlFileManagerPanel.h 126320 2018-11-02 12:45:59Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVMLogViewer class declaration.
  */
@@ -40,6 +40,7 @@ public:
 
     UIGuestControlFileManagerPanel(UIGuestControlFileManager *pManagerWidget, QWidget *pParent);
     void setCloseButtonShortCut(QKeySequence shortCut);
+    virtual QString panelName() const = 0;
 
 protected:
 
