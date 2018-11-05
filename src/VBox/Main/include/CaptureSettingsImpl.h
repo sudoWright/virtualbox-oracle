@@ -1,4 +1,4 @@
-/* $Id: CaptureSettingsImpl.h 126359 2018-11-05 19:05:28Z andreas.loeffler@oracle.com $ */
+/* $Id: CaptureSettingsImpl.h 126361 2018-11-05 19:15:24Z andreas.loeffler@oracle.com $ */
 
 /** @file
  *
@@ -24,7 +24,7 @@
 
 namespace settings
 {
-    struct CaptureSettings;
+    class CaptureSettings;
 }
 
 class CaptureScreenSettings;
