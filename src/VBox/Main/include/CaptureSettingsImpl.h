@@ -1,4 +1,4 @@
-/* $Id: CaptureSettingsImpl.h 126381 2018-11-06 12:37:11Z andreas.loeffler@oracle.com $ */
+/* $Id: CaptureSettingsImpl.h 126391 2018-11-06 14:07:53Z noreply@oracle.com $ */
 
 /** @file
  *
