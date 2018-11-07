@@ -1,4 +1,4 @@
-/* $Id: VideoRecStream.h 126356 2018-11-05 18:35:21Z andreas.loeffler@oracle.com $ */
+/* $Id: VideoRecStream.h 126417 2018-11-07 13:56:14Z andreas.loeffler@oracle.com $ */
 /** @file
  * Video recording stream code header.
  */
@@ -129,7 +129,7 @@ public:
 
 protected:
 
-    int open(void);
+    int open(const settings::CaptureScreenSettings &Settings);
     int close(void);
 
     int initInternal(uint32_t uScreen, const settings::CaptureScreenSettings &Settings);
