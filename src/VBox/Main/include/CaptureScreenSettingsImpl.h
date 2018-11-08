@@ -1,4 +1,4 @@
-/* $Id: CaptureScreenSettingsImpl.h 126424 2018-11-07 17:13:56Z andreas.loeffler@oracle.com $ */
+/* $Id: CaptureScreenSettingsImpl.h 126440 2018-11-08 14:24:05Z andreas.loeffler@oracle.com $ */
 
 /** @file
  *
