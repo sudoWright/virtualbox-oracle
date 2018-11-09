@@ -1,4 +1,4 @@
-/* $Id: ConsoleImpl2.cpp 126458 2018-11-08 18:57:15Z aleksey.ilyushin@oracle.com $ */
+/* $Id: ConsoleImpl2.cpp 126474 2018-11-09 09:17:06Z andreas.loeffler@oracle.com $ */
 /** @file
  * VBox Console COM Class implementation - VM Configuration Bits.
  *
@@ -125,7 +125,7 @@
 # include "DrvAudioVRDE.h"
 #endif
 #ifdef VBOX_WITH_AUDIO_VIDEOREC
-# include "DrvAudioVideoRec.h"
+# include "DrvAudioRec.h"
 #endif
 #include "NetworkServiceRunner.h"
 #include "BusAssignmentManager.h"
