@@ -1,4 +1,4 @@
-/* $Id: VBoxManageControlVM.cpp 126494 2018-11-09 12:56:40Z andreas.loeffler@oracle.com $ */
+/* $Id: VBoxManageControlVM.cpp 126498 2018-11-09 13:55:30Z andreas.loeffler@oracle.com $ */
 /** @file
  * VBoxManage - Implementation of the controlvm command.
  */
@@ -1854,7 +1854,7 @@ RTEXITCODE handleControlVM(HandlerArg *a)
             RTFileClose(pngFile);
         }
 #ifdef VBOX_WITH_RECORDING
-        else if (!strcmp(a->argv[1], "record"))
+        else if (!strcmp(a->argv[1], "recording"))
         {
             if (a->argc < 3)
             {
