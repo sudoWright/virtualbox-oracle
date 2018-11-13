@@ -1,10 +1,10 @@
-/* $Id: UIGuestControlFileManagerLogPanel.h 126404 2018-11-06 18:24:52Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIGuestControlFileManagerLogPanel.h 126576 2018-11-13 16:16:17Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVMLogViewer class declaration.
  */
 
 /*
- * Copyright (C) 2010-2017 Oracle Corporation
+ * Copyright (C) 2010-2018 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;
