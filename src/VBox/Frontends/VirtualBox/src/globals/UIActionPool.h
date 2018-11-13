@@ -1,4 +1,4 @@
-/* $Id: UIActionPool.h 126419 2018-11-07 14:28:40Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIActionPool.h 126574 2018-11-13 16:05:13Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIActionPool class declaration.
  */
@@ -93,7 +93,7 @@ enum UIActionIndex
     UIActionIndex_M_Log_T_Find,
     UIActionIndex_M_Log_T_Filter,
     UIActionIndex_M_Log_T_Bookmark,
-    UIActionIndex_M_Log_T_Settings,
+    UIActionIndex_M_Log_T_Options,
     UIActionIndex_M_Log_S_Refresh,
     UIActionIndex_M_Log_S_Save,
 
