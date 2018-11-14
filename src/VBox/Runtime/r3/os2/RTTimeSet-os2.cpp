@@ -1,4 +1,4 @@
-/* $Id: RTTimeSet-os2.cpp 126450 2018-11-08 16:53:28Z knut.osmundsen@oracle.com $ */
+/* $Id: RTTimeSet-os2.cpp 126621 2018-11-14 20:19:03Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - RTTimeSet, OS/2.
  */
@@ -81,7 +81,7 @@ RTDECL(int) RTTimeSet(PCRTTIMESPEC pTime)
         APIRET rc = DosSetDateTime(&DateTime);
         if (rc == NO_ERROR)
             return VINF_SUCCESS;
-        AssertRC(rc);
+        AssertMsgFailed(("rc=%u\n", rc));
         return RTErrConvertFromOS2(rc);
     }
     return VERR_INVALID_PARAMETER;
