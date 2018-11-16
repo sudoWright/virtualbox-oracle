@@ -1,4 +1,4 @@
-/* $Id: UIGuestControlFileManagerOperationsPanel.cpp 126673 2018-11-16 12:34:15Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIGuestControlFileManagerOperationsPanel.cpp 126674 2018-11-16 12:35:23Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVMLogViewer class implementation.
  */
@@ -169,6 +169,7 @@ void UIFileOperationProgressWidget::sltCancelProgress()
 {
     m_comProgress.Cancel();
 }
+
 
 /*********************************************************************************************************************************
 *   UIGuestControlFileManagerOperationsPanel implementation.                                                                     *
