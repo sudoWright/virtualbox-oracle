@@ -1,4 +1,4 @@
-/* $Id: VMMDev.cpp 126678 2018-11-16 16:06:57Z knut.osmundsen@oracle.com $ */
+/* $Id: VMMDev.cpp 126681 2018-11-16 16:23:00Z knut.osmundsen@oracle.com $ */
 /** @file
  * VMMDev - Guest <-> VMM/Host communication device.
  */
@@ -2930,12 +2930,12 @@ static DECLCALLBACK(int) vmmdevRequestHandler(PPDMDEVINS pDevIns, void *pvUser, 
             {
                 memcpy(pRequestHeader, &requestHeader, sizeof(VMMDevRequestHeader));
 
-                VMMDEVREQLOCK   Lock   = { NULL, { NULL, NULL } };
+                VMMDEVREQLOCK   Lock   = { NULL, { 0, NULL } };
                 PVMMDEVREQLOCK  pLock  = NULL;
                 size_t          cbLeft = requestHeader.size - sizeof(VMMDevRequestHeader);
                 if (cbLeft)
                 {
-#if 1
+#if 0
                     RT_NOREF_PV(Lock);
 #else
                     if (   (   requestHeader.requestType == VMMDevReq_HGCMCall32
