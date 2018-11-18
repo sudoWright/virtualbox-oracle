@@ -1,4 +1,4 @@
-/* $Id: VBoxGuestR0LibInternal.h 123129 2018-06-20 13:53:28Z noreply@oracle.com $ */
+/* $Id: VBoxGuestR0LibInternal.h 126706 2018-11-18 04:50:34Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxGuestLibR0 - Internal header.
  */
@@ -105,14 +105,6 @@ struct _VBGLPHYSHEAPBLOCK;
 typedef struct _VBGLPHYSHEAPBLOCK VBGLPHYSHEAPBLOCK;
 struct _VBGLPHYSHEAPCHUNK;
 typedef struct _VBGLPHYSHEAPCHUNK VBGLPHYSHEAPCHUNK;
-
-#ifndef VBGL_VBOXGUEST
-struct VBGLHGCMHANDLEDATA
-{
-    uint32_t fAllocated;
-    VBGLIDCHANDLE IdcHandle;
-};
-#endif
 
 enum VbglLibStatus
 {
