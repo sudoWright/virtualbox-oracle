@@ -1,4 +1,4 @@
-/* $Id: ConsoleImpl.cpp 126652 2018-11-15 20:53:00Z knut.osmundsen@oracle.com $ */
+/* $Id: ConsoleImpl.cpp 126733 2018-11-19 14:31:44Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Console COM Class implementation
  */
@@ -10395,6 +10395,12 @@ void Console::i_powerUpThreadTask(VMPowerUpTask *pTask)
             /*
              * If VMR3Create() failed it has released the VM memory.
              */
+            if (pConsole->m_pVMMDev)
+            {
+                alock.release(); /* just to be on the safe side... */
+                pConsole->m_pVMMDev->hgcmShutdown(true /*fUvmIsInvalid*/);
+                alock.acquire();
+            }
             VMR3ReleaseUVM(pConsole->mpUVM);
             pConsole->mpUVM = NULL;
         }
