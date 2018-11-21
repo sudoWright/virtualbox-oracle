@@ -1,4 +1,4 @@
-/* $Id: IEMAllCImplSvmInstr.cpp.h 126785 2018-11-20 11:20:25Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: IEMAllCImplSvmInstr.cpp.h 126816 2018-11-21 10:49:32Z ramshankar.venkataraman@oracle.com $ */
 /** @file
  * IEM - AMD-V (Secure Virtual Machine) instruction implementation.
  */
@@ -16,6 +16,9 @@
  */
 
 
+/*********************************************************************************************************************************
+*   Defined Constants And Macros                                                                                                 *
+*********************************************************************************************************************************/
 #ifdef VBOX_WITH_NESTED_HWVIRT_SVM
 /**
  * Check the common SVM instruction preconditions.
