@@ -1,4 +1,4 @@
-/* $Id: ObjectState.h 118839 2017-10-28 15:14:05Z knut.osmundsen@oracle.com $ */
+/* $Id: ObjectState.h 126852 2018-11-22 12:20:52Z klaus.espenlaub@oracle.com $ */
 /** @file
  *
  * VirtualBox object state handling definitions
@@ -98,7 +98,7 @@ public:
 
     bool autoInitSpanConstructor(State aExpectedState);
     void autoInitSpanDestructor(State aNewState, HRESULT aFailedRC, com::ErrorInfo *aFailedEI);
-    State autoUninitSpanConstructor();
+    State autoUninitSpanConstructor(bool fTry);
     void autoUninitSpanDestructor();
 
 private:
