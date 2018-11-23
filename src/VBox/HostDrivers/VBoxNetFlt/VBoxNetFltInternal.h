@@ -1,4 +1,4 @@
-/* $Id: VBoxNetFltInternal.h 126883 2018-11-23 13:19:11Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxNetFltInternal.h 126886 2018-11-23 14:50:38Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxNetFlt - Network Filter Driver (Host), Internal Header.
  */
@@ -300,7 +300,6 @@ typedef struct VBOXNETFLTINS
 typedef struct VBOXNETFLTINS *PVBOXNETFLTINS;
 
 AssertCompileMemberAlignment(VBOXNETFLTINS, NanoTSLastRediscovery, 8);
-AssertCompileMemberAlignment(VBOXNETFLTINS, u, 8);
 #ifdef VBOXNETFLT_OS_SPECFIC
 AssertCompile(RT_SIZEOFMEMB(VBOXNETFLTINS, u.s) <= RT_SIZEOFMEMB(VBOXNETFLTINS, u.abPadding));
 #endif
