@@ -1,4 +1,4 @@
-/* $Id: tstGuestControlSvc.cpp 126937 2018-11-26 15:44:41Z noreply@oracle.com $ */
+/* $Id: tstGuestControlSvc.cpp 126950 2018-11-26 18:57:00Z knut.osmundsen@oracle.com $ */
 /** @file
  * Testcase for the guest control service.
  */
@@ -42,9 +42,10 @@ struct VBOXHGCMCALLHANDLE_TYPEDEF
 };
 
 /** Call completion callback for guest calls. */
-static DECLCALLBACK(void) callComplete(VBOXHGCMCALLHANDLE callHandle, int32_t rc)
+static DECLCALLBACK(int) callComplete(VBOXHGCMCALLHANDLE callHandle, int32_t rc)
 {
     callHandle->rc = rc;
+    return VINF_SUCCESS;
 }
 
 /**
