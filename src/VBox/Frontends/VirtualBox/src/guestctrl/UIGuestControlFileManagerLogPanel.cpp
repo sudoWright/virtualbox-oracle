@@ -1,4 +1,4 @@
-/* $Id: UIGuestControlFileManagerLogPanel.cpp 126962 2018-11-27 09:10:13Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIGuestControlFileManagerLogPanel.cpp 126970 2018-11-27 11:33:03Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVMLogViewer class implementation.
  */
@@ -65,6 +65,7 @@ UIFileManagerLogViewer::UIFileManagerLogViewer(QWidget *pParent /* = 0 */)
     :QTextEdit(pParent)
 {
     setUndoRedoEnabled(false);
+    setReadOnly(true);
 }
 
 void UIFileManagerLogViewer::contextMenuEvent(QContextMenuEvent *event)
