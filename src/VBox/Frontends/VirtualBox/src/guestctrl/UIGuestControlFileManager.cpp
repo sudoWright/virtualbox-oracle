@@ -1,4 +1,4 @@
-/* $Id: UIGuestControlFileManager.cpp 126963 2018-11-27 10:10:23Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIGuestControlFileManager.cpp 126978 2018-11-27 18:07:53Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIGuestControlFileManager class implementation.
  */
@@ -79,7 +79,7 @@ private:
 
 
 /*********************************************************************************************************************************
-*   UIGuestControlFileManagerOptions implementation.                                                                            *
+*   UIGuestControlFileManagerOptions implementation.                                                                             *
 *********************************************************************************************************************************/
 
 UIGuestControlFileManagerOptions *UIGuestControlFileManagerOptions::m_pInstance = 0;
