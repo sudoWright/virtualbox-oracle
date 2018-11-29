@@ -1,4 +1,4 @@
-/* $Id: UIGuestControlFileTable.cpp 126963 2018-11-27 10:10:23Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIGuestControlFileTable.cpp 127021 2018-11-29 16:02:02Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIGuestControlFileTable class implementation.
  */
@@ -1423,10 +1423,10 @@ bool UIGuestControlFileTable::event(QEvent *pEvent)
     {
         m_pWarningLabel->setVisible(!isEnabled());
         m_pView->setVisible(isEnabled());
+        retranslateUi();
     }
     return QIWithRetranslateUI<QWidget>::event(pEvent);
 }
-
 
 QString UIGuestControlFileTable::fileTypeString(FileObjectType type)
 {
