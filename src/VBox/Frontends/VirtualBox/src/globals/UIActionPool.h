@@ -1,4 +1,4 @@
-/* $Id: UIActionPool.h 126963 2018-11-27 10:10:23Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIActionPool.h 127107 2018-12-03 13:03:37Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIActionPool class declaration.
  */
@@ -103,8 +103,6 @@ enum UIActionIndex
     UIActionIndex_M_GuestControlFileManager_M_GuestSubmenu,
     UIActionIndex_M_GuestControlFileManager_S_CopyToGuest,
     UIActionIndex_M_GuestControlFileManager_S_CopyToHost,
-    UIActionIndex_M_GuestControlFileManager_S_MoveToGuest,
-    UIActionIndex_M_GuestControlFileManager_S_MoveToHost,
     UIActionIndex_M_GuestControlFileManager_T_Options,
     UIActionIndex_M_GuestControlFileManager_T_Log,
     UIActionIndex_M_GuestControlFileManager_T_FileOperations,
