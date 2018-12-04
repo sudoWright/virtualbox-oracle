@@ -1,4 +1,4 @@
-/* $Id: UIGuestFileTable.h 127107 2018-12-03 13:03:37Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIGuestFileTable.h 127150 2018-12-04 10:49:47Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIGuestFileTable class declaration.
  */
@@ -77,7 +77,7 @@ private:
 
     void prepareActionConnections();
     bool checkGuestSession();
-
+    QString permissionString(const CFsObjInfo &fsInfo);
     mutable CGuestSession     m_comGuestSession;
 };
 
