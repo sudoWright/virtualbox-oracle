@@ -1,4 +1,4 @@
-/* $Id: UIMachineSettingsSystem.h 127174 2018-12-05 08:51:25Z sergey.dubov@oracle.com $ */
+/* $Id: UIMachineSettingsSystem.h 127175 2018-12-05 09:12:37Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIMachineSettingsSystem class declaration.
  */
@@ -48,6 +48,11 @@ public:
     bool isNestedPagingSupported() const;
     /** Returns whether the Nested Paging is enabled. */
     bool isNestedPagingEnabled() const;
+
+    /** Returns whether the Nested HW Virt Ex is supported. */
+    bool isNestedHWVirtExSupported() const;
+    /** Returns whether the Nested HW Virt Ex is enabled. */
+    bool isNestedHWVirtExEnabled() const;
 
     /** Returns whether the HID is enabled. */
     bool isHIDEnabled() const;
