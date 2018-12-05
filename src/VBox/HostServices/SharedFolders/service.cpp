@@ -1,4 +1,4 @@
-/* $Id: service.cpp 127057 2018-11-30 19:26:42Z knut.osmundsen@oracle.com $ */
+/* $Id: service.cpp 127186 2018-12-05 12:08:09Z knut.osmundsen@oracle.com $ */
 /** @file
  * Shared Folders - Host service entry points.
  */
@@ -1746,6 +1746,7 @@ extern "C" DECLCALLBACK(DECLEXPORT(int)) VBoxHGCMSvcLoad (VBOXHGCMSVCFNTABLE *pt
             ptable->pfnHostCall   = svcHostCall;
             ptable->pfnSaveState  = svcSaveState;
             ptable->pfnLoadState  = svcLoadState;
+            ptable->pfnNotify     = NULL;
             ptable->pvService     = NULL;
         }
 
