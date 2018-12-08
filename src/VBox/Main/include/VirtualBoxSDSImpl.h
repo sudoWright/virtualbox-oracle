@@ -1,4 +1,4 @@
-/* $Id: VirtualBoxSDSImpl.h 127306 2018-12-07 22:17:39Z knut.osmundsen@oracle.com $ */
+/* $Id: VirtualBoxSDSImpl.h 127307 2018-12-08 00:54:36Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Global COM Class definition
  */
@@ -74,7 +74,6 @@ private:
      * @{ */
     STDMETHOD(RegisterVBoxSVC)(IVBoxSVCRegistration *aVBoxSVC, LONG aPid, IUnknown **aExistingVirtualBox);
     STDMETHOD(DeregisterVBoxSVC)(IVBoxSVCRegistration *aVBoxSVC, LONG aPid);
-    STDMETHOD(NotifyClientsFinished)(); /**< @todo r=bird: Internal within SDS! Make private. */
     /** @} */
 
 
