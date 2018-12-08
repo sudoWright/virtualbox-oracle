@@ -1,4 +1,4 @@
-/* $Id: VirtualBoxSDSImpl.cpp 127312 2018-12-08 19:11:20Z knut.osmundsen@oracle.com $ */
+/* $Id: VirtualBoxSDSImpl.cpp 127313 2018-12-08 19:28:04Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Global COM Class implementation.
  */
