@@ -1,4 +1,4 @@
-/* $Id: NATNetworkImpl.h 127376 2018-12-10 15:08:10Z aleksey.ilyushin@oracle.com $ */
+/* $Id: NATNetworkImpl.h 127398 2018-12-11 08:52:44Z aleksey.ilyushin@oracle.com $ */
 /** @file
  * INATNetwork implementation header, lives in VBoxSVC.
  */
@@ -117,6 +117,8 @@ private:
     void i_getPortForwardRulesFromMap(std::vector<Utf8Str> &aPortForwardRules, settings::NATRulesMap &aRules);
 
     void i_updateDnsOptions();
+    void i_updateDomainNameOption(ComPtr<IHost> &host);
+    void i_updateDomainNameServerOption(ComPtr<IHost> &host);
 
     struct Data;
     Data *m;
