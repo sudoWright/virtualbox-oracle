@@ -1,4 +1,4 @@
-/* $Id: VBoxNetDhcpdHardened.cpp 126827 2018-11-21 18:02:38Z aleksey.ilyushin@oracle.com $ */
+/* $Id: VBoxNetDhcpdHardened.cpp 127414 2018-12-11 16:43:14Z aleksey.ilyushin@oracle.com $ */
 /** @file
  * VBoxNetDhcpd - Hardened main().
  */
@@ -20,6 +20,6 @@
 
 int main(int argc, char **argv, char **envp)
 {
-    return SUPR3HardenedMain("VBoxNetDhcpd", 0 /* fFlags */, argc, argv, envp);
+    return SUPR3HardenedMain("VBoxNetDHCP", 0 /* fFlags */, argc, argv, envp);
 }
 
