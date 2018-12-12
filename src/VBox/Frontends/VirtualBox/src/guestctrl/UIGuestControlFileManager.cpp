@@ -1,4 +1,4 @@
-/* $Id: UIGuestControlFileManager.cpp 127168 2018-12-04 17:48:36Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIGuestControlFileManager.cpp 127431 2018-12-12 12:16:26Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIGuestControlFileManager class implementation.
  */
@@ -375,8 +375,8 @@ void UIGuestControlFileManager::prepareToolBar()
 
         m_pToolBar->addAction(m_pActionPool->action(UIActionIndex_M_GuestControlFileManager_T_Session));
         m_pToolBar->addAction(m_pActionPool->action(UIActionIndex_M_GuestControlFileManager_T_Options));
-        m_pToolBar->addAction(m_pActionPool->action(UIActionIndex_M_GuestControlFileManager_T_Log));
         m_pToolBar->addAction(m_pActionPool->action(UIActionIndex_M_GuestControlFileManager_T_FileOperations));
+        m_pToolBar->addAction(m_pActionPool->action(UIActionIndex_M_GuestControlFileManager_T_Log));
 
         connect(m_pActionPool->action(UIActionIndex_M_GuestControlFileManager_T_Options), &QAction::toggled,
                 this, &UIGuestControlFileManager::sltPanelActionToggled);
