@@ -1,4 +1,4 @@
-/* $Id: UIMachineSettingsStorage.cpp 126037 2018-10-23 15:48:45Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIMachineSettingsStorage.cpp 127465 2018-12-13 11:12:11Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIMachineSettingsStorage class implementation.
  */
@@ -3842,7 +3842,7 @@ void UIMachineSettingsStorage::addAttachmentWrapper(KDeviceType enmDevice)
         default: break; /* Shut up, MSC! */
     }
 
-    if (!fCancelled)
+    if (!fCancelled && !uMediumId.isNull())
     {
         m_pModelStorage->addAttachment(QUuid(m_pModelStorage->data(index, StorageModel::R_ItemId).toString()), enmDevice, uMediumId);
         m_pModelStorage->sort();
