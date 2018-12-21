@@ -1,4 +1,4 @@
-/* $Id: USBProxyDevice-linux.cpp 127624 2018-12-21 10:25:11Z michal.necasek@oracle.com $ */
+/* $Id: USBProxyDevice-linux.cpp 127632 2018-12-21 13:40:40Z michal.necasek@oracle.com $ */
 /** @file
  * USB device proxy - the Linux backend.
  */
@@ -1640,7 +1640,7 @@ static VUSBSTATUS vusbProxyLinuxStatusToVUsbStatus(int iStatus)
         case -ESHUTDOWN:
             Log(("vusbProxyLinuxStatusToVUsbStatus: SHUTDOWN!!\n"));
             return VUSBSTATUS_STALL;
-        
+
         case -ENOENT:
             Log(("vusbProxyLinuxStatusToVUsbStatus: ENOENT!!\n"));
             return VUSBSTATUS_STALL;
