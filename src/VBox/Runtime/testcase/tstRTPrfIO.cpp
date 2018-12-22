@@ -1,4 +1,4 @@
-/* $Id: tstRTPrfIO.cpp 118412 2017-10-17 14:26:02Z knut.osmundsen@oracle.com $ */
+/* $Id: tstRTPrfIO.cpp 127644 2018-12-22 00:51:28Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT Testcase - Profile IPRT I/O APIs.
  */
@@ -32,6 +32,7 @@
 #include <iprt/dir.h>
 #include <iprt/fs.h>
 
+#include <iprt/err.h>
 #include <iprt/getopt.h>
 #include <iprt/param.h>
 #include <iprt/path.h>
@@ -210,7 +211,7 @@ int main(int argc, char **argv)
                 break;
 
             case 'V':
-                RTTestPrintf(g_hTest, RTTESTLVL_ALWAYS, "$Revision: 118412 $\n");
+                RTTestPrintf(g_hTest, RTTESTLVL_ALWAYS, "$Revision: 127644 $\n");
                 return RTTestSummaryAndDestroy(g_hTest);
 
             case 'h':

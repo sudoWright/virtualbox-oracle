@@ -1,4 +1,4 @@
-/* $Id: VUSBSniffer.cpp 123672 2018-07-12 21:06:33Z knut.osmundsen@oracle.com $ */
+/* $Id: VUSBSniffer.cpp 127644 2018-12-22 00:51:28Z knut.osmundsen@oracle.com $ */
 /** @file
  * Virtual USB - Sniffer facility.
  */
@@ -22,6 +22,7 @@
 #define LOG_GROUP LOG_GROUP_DRV_VUSB
 #include <VBox/log.h>
 #include <iprt/file.h>
+#include <iprt/err.h>
 #include <iprt/path.h>
 #include <iprt/mem.h>
 #include <iprt/string.h>
@@ -29,11 +30,6 @@
 #include <iprt/time.h>
 
 #include "VUSBSnifferInternal.h"
-
-
-/*********************************************************************************************************************************
-*   Defined Constants And Macros                                                                                                 *
-*********************************************************************************************************************************/
 
 
 /*********************************************************************************************************************************

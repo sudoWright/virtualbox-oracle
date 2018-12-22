@@ -1,4 +1,4 @@
-/* $Id: ExtPackUtil.cpp 124132 2018-08-05 13:58:10Z knut.osmundsen@oracle.com $ */
+/* $Id: ExtPackUtil.cpp 127644 2018-12-22 00:51:28Z knut.osmundsen@oracle.com $ */
 /** @file
  * VirtualBox Main - Extension Pack Utilities and definitions, VBoxC, VBoxSVC, ++.
  */
@@ -23,6 +23,7 @@
 
 #include <iprt/ctype.h>
 #include <iprt/dir.h>
+#include <iprt/err.h>
 #include <iprt/file.h>
 #include <iprt/manifest.h>
 #include <iprt/param.h>

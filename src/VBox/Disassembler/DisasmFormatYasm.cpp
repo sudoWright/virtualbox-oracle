@@ -1,4 +1,4 @@
-/* $Id: DisasmFormatYasm.cpp 118412 2017-10-17 14:26:02Z knut.osmundsen@oracle.com $ */
+/* $Id: DisasmFormatYasm.cpp 127644 2018-12-22 00:51:28Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Disassembler - Yasm(/Nasm) Style Formatter.
  */
@@ -21,9 +21,10 @@
 *********************************************************************************************************************************/
 #include <VBox/dis.h>
 #include "DisasmInternal.h"
-#include <iprt/string.h>
 #include <iprt/assert.h>
 #include <iprt/ctype.h>
+#include <iprt/err.h>
+#include <iprt/string.h>
 
 
 /*********************************************************************************************************************************

@@ -1,4 +1,4 @@
-/* $Id: tstRTFileModeStringToFlags.cpp 118412 2017-10-17 14:26:02Z knut.osmundsen@oracle.com $ */
+/* $Id: tstRTFileModeStringToFlags.cpp 127644 2018-12-22 00:51:28Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT Testcase - File mode string to IPRT file mode flags.
  */
@@ -29,6 +29,8 @@
 *   Header Files                                                                                                                 *
 *********************************************************************************************************************************/
 #include <iprt/file.h>
+
+#include <iprt/err.h>
 #include <iprt/stream.h>
 #include <iprt/string.h>
 #include <iprt/test.h>

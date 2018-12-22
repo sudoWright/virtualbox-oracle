@@ -1,4 +1,4 @@
-/* $Id: localipc-posix.cpp 123672 2018-07-12 21:06:33Z knut.osmundsen@oracle.com $ */
+/* $Id: localipc-posix.cpp 127644 2018-12-22 00:51:28Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Local IPC Server & Client, Posix.
  */
@@ -36,6 +36,7 @@
 #include <iprt/assert.h>
 #include <iprt/ctype.h>
 #include <iprt/critsect.h>
+#include <iprt/err.h>
 #include <iprt/mem.h>
 #include <iprt/log.h>
 #include <iprt/poll.h>

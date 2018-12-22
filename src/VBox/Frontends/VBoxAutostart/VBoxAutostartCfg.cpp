@@ -1,4 +1,4 @@
-/* $Id: VBoxAutostartCfg.cpp 123672 2018-07-12 21:06:33Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxAutostartCfg.cpp 127644 2018-12-22 00:51:28Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxAutostart - VirtualBox Autostart service, configuration parser.
  */
@@ -19,13 +19,13 @@
 /*********************************************************************************************************************************
 *   Header Files                                                                                                                 *
 *********************************************************************************************************************************/
-
-#include <iprt/stream.h>
-#include <iprt/process.h>
-#include <iprt/string.h>
-#include <iprt/mem.h>
 #include <iprt/ctype.h>
+#include <iprt/err.h>
+#include <iprt/mem.h>
 #include <iprt/message.h>
+#include <iprt/process.h>
+#include <iprt/stream.h>
+#include <iprt/string.h>
 
 #include "VBoxAutostart.h"
 

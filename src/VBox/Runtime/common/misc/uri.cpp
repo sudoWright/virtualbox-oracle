@@ -1,4 +1,4 @@
-/* $Id: uri.cpp 125259 2018-09-22 20:00:36Z knut.osmundsen@oracle.com $ */
+/* $Id: uri.cpp 127644 2018-12-22 00:51:28Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Uniform Resource Identifier handling.
  */
@@ -32,6 +32,7 @@
 
 #include <iprt/assert.h>
 #include <iprt/ctype.h>
+#include <iprt/err.h>
 #include <iprt/path.h>
 #include <iprt/string.h>
 

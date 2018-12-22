@@ -1,4 +1,4 @@
-/* $Id: gzipcmd.cpp 120029 2018-01-02 11:59:55Z knut.osmundsen@oracle.com $ */
+/* $Id: gzipcmd.cpp 127644 2018-12-22 00:51:28Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - GZIP Utility.
  */
@@ -31,6 +31,7 @@
 #include <iprt/zip.h>
 
 #include <iprt/buildconfig.h>
+#include <iprt/err.h>
 #include <iprt/file.h>
 #include <iprt/getopt.h>
 #include <iprt/initterm.h>

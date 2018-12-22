@@ -1,4 +1,4 @@
-/* $Id: RTStrCatPEx.cpp 118412 2017-10-17 14:26:02Z knut.osmundsen@oracle.com $ */
+/* $Id: RTStrCatPEx.cpp 127644 2018-12-22 00:51:28Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - RTStrCatPEx
  */
@@ -30,6 +30,8 @@
 *********************************************************************************************************************************/
 #include <iprt/string.h>
 #include "internal/iprt.h"
+
+#include <iprt/err.h>
 
 
 RTDECL(int) RTStrCatPEx(char **ppszDst, size_t *pcbDst, const char *pszSrc, size_t cchMaxSrc)

@@ -1,4 +1,4 @@
-/* $Id: tftp.c 123672 2018-07-12 21:06:33Z knut.osmundsen@oracle.com $ */
+/* $Id: tftp.c 127644 2018-12-22 00:51:28Z knut.osmundsen@oracle.com $ */
 /** @file
  * NAT - TFTP server.
  */
@@ -42,8 +42,9 @@
  */
 
 #include <slirp.h>
-#include <iprt/file.h>
 #include <iprt/asm-math.h>
+#include <iprt/file.h>
+#include <iprt/err.h>
 
 typedef enum ENMTFTPSESSIONFMT
 {

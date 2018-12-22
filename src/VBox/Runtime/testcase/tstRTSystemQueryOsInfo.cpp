@@ -1,4 +1,4 @@
-/* $Id: tstRTSystemQueryOsInfo.cpp 118412 2017-10-17 14:26:02Z knut.osmundsen@oracle.com $ */
+/* $Id: tstRTSystemQueryOsInfo.cpp 127644 2018-12-22 00:51:28Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT Testcase - RTSystemQueryOSInfo.
  */
@@ -31,6 +31,7 @@
 #include <iprt/system.h>
 
 #include <iprt/assert.h>
+#include <iprt/err.h>
 #include <iprt/string.h>
 #include <iprt/test.h>
 

@@ -1,4 +1,4 @@
-/* $Id: strformatnum.cpp 126206 2018-10-28 17:00:27Z knut.osmundsen@oracle.com $ */
+/* $Id: strformatnum.cpp 127644 2018-12-22 00:51:28Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - String Formatter, Single Numbers.
  */
@@ -33,6 +33,7 @@
 #include "internal/iprt.h"
 
 #include <iprt/assert.h>
+#include <iprt/err.h>
 #include "internal/string.h"
 
 
