@@ -1,4 +1,4 @@
-/* $Id: vbsfpathabs.cpp 126663 2018-11-16 02:38:27Z knut.osmundsen@oracle.com $ */
+/* $Id: vbsfpathabs.cpp 127663 2018-12-22 02:15:30Z knut.osmundsen@oracle.com $ */
 /** @file
  * Shared Folders Service - guest/host path convertion and verification.
  */
@@ -20,6 +20,7 @@
 *   Header Files                                                                                                                 *
 *********************************************************************************************************************************/
 #define LOG_GROUP LOG_GROUP_SHARED_FOLDERS
+#include <iprt/err.h>
 #include <iprt/path.h>
 #include <iprt/string.h>
 
