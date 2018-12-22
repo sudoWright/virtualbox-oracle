@@ -1,4 +1,4 @@
-/* $Id: env-win.cpp 118412 2017-10-17 14:26:02Z knut.osmundsen@oracle.com $ */
+/* $Id: env-win.cpp 127657 2018-12-22 01:33:33Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Environment, Posix.
  */
@@ -32,6 +32,7 @@
 
 #include <iprt/alloca.h>
 #include <iprt/assert.h>
+#include <iprt/err.h>
 #include <iprt/string.h>
 #include <iprt/mem.h>
 
