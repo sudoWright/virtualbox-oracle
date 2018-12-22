@@ -1,4 +1,4 @@
-/* $Id: VBoxManageInfo.cpp 127132 2018-12-03 21:52:50Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxManageInfo.cpp 127664 2018-12-22 02:16:26Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxManage - The 'showvminfo' command and helper routines.
  */
@@ -36,6 +36,7 @@
 
 #include <VBox/log.h>
 #include <VBox/version.h>
+#include <iprt/err.h>
 #include <iprt/stream.h>
 #include <iprt/time.h>
 #include <iprt/string.h>

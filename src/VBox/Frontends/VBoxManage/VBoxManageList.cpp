@@ -1,4 +1,4 @@
-/* $Id: VBoxManageList.cpp 127124 2018-12-03 17:09:43Z aleksey.ilyushin@oracle.com $ */
+/* $Id: VBoxManageList.cpp 127664 2018-12-22 02:16:26Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxManage - The 'list' command.
  */
@@ -31,6 +31,7 @@
 #include <VBox/com/VirtualBox.h>
 
 #include <VBox/log.h>
+#include <iprt/err.h>
 #include <iprt/stream.h>
 #include <iprt/string.h>
 #include <iprt/time.h>
