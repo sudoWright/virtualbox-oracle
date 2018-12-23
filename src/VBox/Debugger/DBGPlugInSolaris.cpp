@@ -1,4 +1,4 @@
-/* $Id: DBGPlugInSolaris.cpp 124087 2018-08-02 21:06:59Z knut.osmundsen@oracle.com $ */
+/* $Id: DBGPlugInSolaris.cpp 127688 2018-12-23 01:39:48Z knut.osmundsen@oracle.com $ */
 /** @file
  * DBGPlugInSolaris - Debugger and Guest OS Digger Plugin For Solaris.
  */
@@ -24,6 +24,7 @@
 #include "DBGPlugInCommonELF.h"
 #include <VBox/vmm/dbgf.h>
 #include <iprt/asm.h>
+#include <iprt/err.h>
 #include <iprt/mem.h>
 #include <iprt/stream.h>
 #include <iprt/string.h>
