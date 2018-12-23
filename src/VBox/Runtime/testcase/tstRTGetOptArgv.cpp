@@ -1,4 +1,4 @@
-/* $Id: tstRTGetOptArgv.cpp 118412 2017-10-17 14:26:02Z knut.osmundsen@oracle.com $ */
+/* $Id: tstRTGetOptArgv.cpp 127710 2018-12-23 18:27:21Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT Testcase - RTGetOptArgv*.
  */
@@ -31,11 +31,12 @@
 #include <iprt/path.h>
 
 #include <iprt/err.h>
-#include <iprt/param.h>
 #include <iprt/getopt.h>
 #include <iprt/ldr.h>
+#include <iprt/param.h>
 #include <iprt/string.h>
 #include <iprt/test.h>
+#include <iprt/utf16.h>
 
 
 /*********************************************************************************************************************************

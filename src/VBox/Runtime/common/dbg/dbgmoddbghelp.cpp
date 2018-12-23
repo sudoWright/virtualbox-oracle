@@ -1,4 +1,4 @@
-/* $Id: dbgmoddbghelp.cpp 126271 2018-10-30 16:46:17Z knut.osmundsen@oracle.com $ */
+/* $Id: dbgmoddbghelp.cpp 127710 2018-12-23 18:27:21Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Debug Info Reader Using DbgHelp.dll if Present.
  */
@@ -40,6 +40,7 @@
 #include <iprt/mem.h>
 #include <iprt/path.h>
 #include <iprt/string.h>
+#include <iprt/utf16.h>
 #include "internal/dbgmod.h"
 
 #include <iprt/win/windows.h>
