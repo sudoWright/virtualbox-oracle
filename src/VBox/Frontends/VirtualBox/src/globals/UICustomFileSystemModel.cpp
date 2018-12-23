@@ -1,4 +1,4 @@
-/* $Id: UICustomFileSystemModel.cpp 127642 2018-12-21 19:12:16Z serkan.bayraktar@oracle.com $ */
+/* $Id: UICustomFileSystemModel.cpp 127730 2018-12-23 21:25:44Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UICustomFileSystemModel class implementation.
  */
@@ -49,7 +49,6 @@ UICustomFileSystemItem::UICustomFileSystemItem(const QVector<QVariant> &data,
 {
     if (parent)
         parent->appendChild(this);
-
 }
 
 UICustomFileSystemItem::~UICustomFileSystemItem()
