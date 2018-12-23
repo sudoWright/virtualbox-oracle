@@ -1,4 +1,4 @@
-/* $Id: utf16locale-generic.cpp 118412 2017-10-17 14:26:02Z knut.osmundsen@oracle.com $ */
+/* $Id: utf16locale-generic.cpp 127709 2018-12-23 16:38:11Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - UTF-16 Locale Specific Manipulation, Generic.
  */
@@ -29,7 +29,7 @@
 *   Header Files                                                                                                                 *
 *********************************************************************************************************************************/
 #define LOG_GROUP RTLOGGROUP_UTF16
-#include <iprt/string.h>
+#include <iprt/utf16.h>
 #include "internal/iprt.h"
 
 

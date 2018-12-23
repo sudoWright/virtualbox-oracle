@@ -1,4 +1,4 @@
-/* $Id: string.h 118406 2017-10-17 10:53:48Z knut.osmundsen@oracle.com $ */
+/* $Id: string.h 127709 2018-12-23 16:38:11Z knut.osmundsen@oracle.com $ */
 /** @file
  * MS COM / XPCOM Abstraction Layer - Smart string classes declaration.
  */
@@ -43,6 +43,7 @@
 #include "VBox/com/assert.h"
 
 #include <iprt/mem.h>
+#include <iprt/utf16.h>
 #include <iprt/cpp/ministring.h>
 
 

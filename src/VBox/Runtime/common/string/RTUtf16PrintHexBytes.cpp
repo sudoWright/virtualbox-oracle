@@ -1,4 +1,4 @@
-/* $Id: RTUtf16PrintHexBytes.cpp 118412 2017-10-17 14:26:02Z knut.osmundsen@oracle.com $ */
+/* $Id: RTUtf16PrintHexBytes.cpp 127709 2018-12-23 16:38:11Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - RTUtf16PrintHexBytes.
  */
@@ -28,8 +28,8 @@
 /*********************************************************************************************************************************
 *   Header Files                                                                                                                 *
 *********************************************************************************************************************************/
+#include <iprt/utf16.h>
 #include "internal/iprt.h"
-#include <iprt/string.h>
 
 #include <iprt/assert.h>
 #include <iprt/err.h>
