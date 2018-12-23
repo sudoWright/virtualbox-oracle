@@ -1,4 +1,4 @@
-/* $Id: DisplayImpl.h 126602 2018-11-14 13:44:39Z knut.osmundsen@oracle.com $ */
+/* $Id: DisplayImpl.h 127693 2018-12-23 02:14:05Z knut.osmundsen@oracle.com $ */
 /** @file
  * VirtualBox COM class implementation
  */
@@ -22,7 +22,6 @@
 
 #include <iprt/semaphore.h>
 #include <VBox/vmm/pdmdrv.h>
-#include <VBox/VMMDev.h>
 #include <VBoxVideo.h>
 #include <VBox/vmm/pdmifs.h>
 #include "DisplayWrap.h"
