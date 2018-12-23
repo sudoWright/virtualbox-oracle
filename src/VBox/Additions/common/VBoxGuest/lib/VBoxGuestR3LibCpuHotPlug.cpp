@@ -1,4 +1,4 @@
-/* $Id: VBoxGuestR3LibCpuHotPlug.cpp 118839 2017-10-28 15:14:05Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxGuestR3LibCpuHotPlug.cpp 127720 2018-12-23 19:43:43Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxGuestR3Lib - Ring-3 Support Library for VirtualBox guest additions, CPU Hot Plugging.
  */
@@ -30,6 +30,7 @@
 *********************************************************************************************************************************/
 #include "VBoxGuestR3LibInternal.h"
 #include <iprt/assert.h>
+#include <iprt/err.h>
 
 
 /**

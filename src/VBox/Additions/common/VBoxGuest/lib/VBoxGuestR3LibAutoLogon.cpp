@@ -1,4 +1,4 @@
-/* $Id: VBoxGuestR3LibAutoLogon.cpp 118839 2017-10-28 15:14:05Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxGuestR3LibAutoLogon.cpp 127720 2018-12-23 19:43:43Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxGuestR3LibAutoLogon - Ring-3 utility functions for auto-logon modules
  *                           (VBoxGINA / VBoxCredProv / pam_vbox).
@@ -34,6 +34,7 @@
 #endif
 
 #include "VBoxGuestR3LibInternal.h"
+#include <iprt/err.h>
 
 
 /**
