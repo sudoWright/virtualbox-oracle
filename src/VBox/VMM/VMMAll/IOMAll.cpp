@@ -1,4 +1,4 @@
-/* $Id: IOMAll.cpp 122978 2018-06-10 16:08:44Z knut.osmundsen@oracle.com $ */
+/* $Id: IOMAll.cpp 127680 2018-12-23 00:47:17Z knut.osmundsen@oracle.com $ */
 /** @file
  * IOM - Input / Output Monitor - Any Context.
  */
@@ -34,6 +34,7 @@
 #include <VBox/err.h>
 #include <VBox/log.h>
 #include <iprt/assert.h>
+#include <iprt/string.h>
 #include "IOMInline.h"
 
 
