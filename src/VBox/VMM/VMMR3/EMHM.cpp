@@ -1,4 +1,4 @@
-/* $Id: EMHM.cpp 125739 2018-10-12 11:24:11Z knut.osmundsen@oracle.com $ */
+/* $Id: EMHM.cpp 127696 2018-12-23 14:32:01Z knut.osmundsen@oracle.com $ */
 /** @file
  * EM - Execution Monitor / Manager - hardware virtualization
  */
@@ -46,6 +46,7 @@
 #include <VBox/vmm/cpumdis.h>
 #include <VBox/dis.h>
 #include <VBox/disopcode.h>
+#include <VBox/err.h>
 #include <VBox/vmm/dbgf.h>
 #include "VMMTracing.h"
 
