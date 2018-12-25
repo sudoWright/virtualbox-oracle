@@ -1,4 +1,4 @@
-/* $Id: vreg.cpp 118839 2017-10-28 15:14:05Z knut.osmundsen@oracle.com $ */
+/* $Id: vreg.cpp 127775 2018-12-25 07:21:57Z knut.osmundsen@oracle.com $ */
 /** @file
  * Visible Regions processing API implementation
  */
@@ -27,7 +27,7 @@
 # include <cr_error.h>
 #endif
 
-#include <iprt/err.h>
+#include <iprt/errcore.h>
 #include <iprt/assert.h>
 #include <iprt/asm.h>
 

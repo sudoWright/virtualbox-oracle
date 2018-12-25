@@ -1,4 +1,4 @@
-/* $Id: svcmain.cpp 127333 2018-12-09 23:19:16Z knut.osmundsen@oracle.com $ */
+/* $Id: svcmain.cpp 127775 2018-12-25 07:21:57Z knut.osmundsen@oracle.com $ */
 /** @file
  * SVCMAIN - COM out-of-proc server main entry
  */
@@ -33,7 +33,7 @@
 
 #include "svchlp.h"
 
-#include <VBox/err.h>
+#include <iprt/errcore.h>
 #include <iprt/buildconfig.h>
 #include <iprt/initterm.h>
 #include <iprt/string.h>

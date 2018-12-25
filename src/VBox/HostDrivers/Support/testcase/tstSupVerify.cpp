@@ -1,4 +1,4 @@
-/* $Id: tstSupVerify.cpp 118839 2017-10-28 15:14:05Z knut.osmundsen@oracle.com $ */
+/* $Id: tstSupVerify.cpp 127775 2018-12-25 07:21:57Z knut.osmundsen@oracle.com $ */
 /** @file
  * SUP Testcase - Test SUPR3HardenedVerifyPlugIn.
  */
@@ -29,7 +29,7 @@
 *   Header Files                                                                                                                 *
 *********************************************************************************************************************************/
 #include <VBox/sup.h>
-#include <VBox/err.h>
+#include <iprt/errcore.h>
 
 #include <iprt/getopt.h>
 #include <iprt/initterm.h>
@@ -87,7 +87,7 @@ int main(int argc, char **argv)
                 return 1;
 
             case 'V':
-                RTPrintf("$Revision: 118839 $\n");
+                RTPrintf("$Revision: 127775 $\n");
                 return 0;
 
             default:

@@ -1,4 +1,4 @@
-/* $Id: ThreadTask.cpp 127664 2018-12-22 02:16:26Z knut.osmundsen@oracle.com $ */
+/* $Id: ThreadTask.cpp 127775 2018-12-25 07:21:57Z knut.osmundsen@oracle.com $ */
 /** @file
  * Implementation of ThreadTask
  */
@@ -15,7 +15,7 @@
  * hope that it will be useful, but WITHOUT ANY WARRANTY of any kind.
  */
 
-#include <iprt/err.h>
+#include <iprt/errcore.h>
 #include <iprt/thread.h>
 
 #include "VirtualBoxBase.h"

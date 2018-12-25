@@ -1,4 +1,4 @@
-/* $Id: hostres.c 127644 2018-12-22 00:51:28Z knut.osmundsen@oracle.com $ */
+/* $Id: hostres.c 127775 2018-12-25 07:21:57Z knut.osmundsen@oracle.com $ */
 /** @file
  * Host resolver
  */
@@ -20,7 +20,7 @@
 #endif
 #include <iprt/assert.h>
 #include <iprt/ctype.h>
-#include <iprt/err.h>
+#include <iprt/errcore.h>
 #include <slirp.h>
 
 #define isdigit(ch)    RT_C_IS_DIGIT(ch)

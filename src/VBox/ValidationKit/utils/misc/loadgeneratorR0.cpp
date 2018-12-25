@@ -1,4 +1,4 @@
-/* $Id: loadgeneratorR0.cpp 118412 2017-10-17 14:26:02Z knut.osmundsen@oracle.com $ */
+/* $Id: loadgeneratorR0.cpp 127775 2018-12-25 07:21:57Z knut.osmundsen@oracle.com $ */
 /** @file
  * Load Generator, Ring-0 Service.
  */
@@ -30,7 +30,7 @@
 *********************************************************************************************************************************/
 #include <iprt/mp.h>
 #include <VBox/sup.h>
-#include <VBox/err.h>
+#include <iprt/errcore.h>
 
 
 

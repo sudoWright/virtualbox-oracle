@@ -1,4 +1,4 @@
-/* $Id: slirp_dns.c 127710 2018-12-23 18:27:21Z knut.osmundsen@oracle.com $ */
+/* $Id: slirp_dns.c 127775 2018-12-25 07:21:57Z knut.osmundsen@oracle.com $ */
 /** @file
  * NAT - dns initialization.
  */
@@ -20,7 +20,7 @@
 # include <paths.h>
 #endif
 
-#include <VBox/err.h>
+#include <iprt/errcore.h>
 #include <VBox/vmm/pdmdrv.h>
 #include <iprt/assert.h>
 #include <iprt/file.h>

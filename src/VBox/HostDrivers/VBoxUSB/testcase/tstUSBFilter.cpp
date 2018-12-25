@@ -1,4 +1,4 @@
-/** $Id: tstUSBFilter.cpp 118839 2017-10-28 15:14:05Z knut.osmundsen@oracle.com $ */
+/** $Id: tstUSBFilter.cpp 127775 2018-12-25 07:21:57Z knut.osmundsen@oracle.com $ */
 /** @file
  * VirtualBox USB filter abstraction - testcase.
  */
@@ -29,7 +29,7 @@
 *   Header Files                                                                                                                 *
 *********************************************************************************************************************************/
 #include <VBox/usbfilter.h>
-#include <VBox/err.h>
+#include <iprt/errcore.h>
 
 #include <iprt/string.h>
 #include <iprt/stream.h>

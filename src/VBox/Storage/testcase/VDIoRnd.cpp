@@ -1,4 +1,4 @@
-/* $Id: VDIoRnd.cpp 118839 2017-10-28 15:14:05Z knut.osmundsen@oracle.com $ */
+/* $Id: VDIoRnd.cpp 127775 2018-12-25 07:21:57Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox HDD container test utility - I/O data generator.
  */
@@ -17,7 +17,7 @@
 
 #define LOGGROUP LOGGROUP_DEFAULT
 #include <iprt/log.h>
-#include <iprt/err.h>
+#include <iprt/errcore.h>
 #include <iprt/mem.h>
 #include <iprt/rand.h>
 #include <iprt/assert.h>

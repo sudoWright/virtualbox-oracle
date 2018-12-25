@@ -1,4 +1,4 @@
-/* $Id: SUPR0IdcClient.c 118839 2017-10-28 15:14:05Z knut.osmundsen@oracle.com $ */
+/* $Id: SUPR0IdcClient.c 127775 2018-12-25 07:21:57Z knut.osmundsen@oracle.com $ */
 /** @file
  * VirtualBox Support Driver - IDC Client Lib, Core.
  */
@@ -29,7 +29,7 @@
 *   Header Files                                                                                                                 *
 *********************************************************************************************************************************/
 #include "SUPR0IdcClientInternal.h"
-#include <VBox/err.h>
+#include <iprt/errcore.h>
 #include <iprt/asm.h>
 
 

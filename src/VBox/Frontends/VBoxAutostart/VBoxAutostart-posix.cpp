@@ -1,4 +1,4 @@
-/* $Id: VBoxAutostart-posix.cpp 119151 2017-11-19 13:38:19Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxAutostart-posix.cpp 127775 2018-12-25 07:21:57Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxAutostart - VirtualBox Autostart service.
  */
@@ -30,7 +30,7 @@
 #include <VBox/com/listeners.h>
 #include <VBox/com/VirtualBox.h>
 
-#include <VBox/err.h>
+#include <iprt/errcore.h>
 #include <VBox/log.h>
 #include <VBox/version.h>
 

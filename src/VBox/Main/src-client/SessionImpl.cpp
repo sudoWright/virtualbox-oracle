@@ -1,4 +1,4 @@
-/* $Id: SessionImpl.cpp 126653 2018-11-15 23:28:28Z knut.osmundsen@oracle.com $ */
+/* $Id: SessionImpl.cpp 127775 2018-12-25 07:21:57Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Client Session COM Class implementation in VBoxC.
  */
@@ -25,7 +25,7 @@
 
 #include "AutoCaller.h"
 
-#include <VBox/err.h>
+#include <iprt/errcore.h>
 #include <iprt/process.h>
 
 
