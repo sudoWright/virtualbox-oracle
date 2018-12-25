@@ -1,4 +1,4 @@
-/* $Id: pathint-win.cpp 127710 2018-12-23 18:27:21Z knut.osmundsen@oracle.com $ */
+/* $Id: pathint-win.cpp 127753 2018-12-25 01:41:25Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Windows, Internal Path stuff.
  */
@@ -33,7 +33,7 @@
 
 #include <iprt/assert.h>
 #include <iprt/ctype.h>
-#include <iprt/err.h>
+#include <iprt/errcore.h>
 #include <iprt/string.h>
 #include <iprt/utf16.h>
 

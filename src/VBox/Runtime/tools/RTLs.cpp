@@ -1,4 +1,4 @@
-/* $Id: RTLs.cpp 120026 2018-01-02 11:20:24Z knut.osmundsen@oracle.com $ */
+/* $Id: RTLs.cpp 127753 2018-12-25 01:41:25Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - /bin/ls like utility for testing the VFS code.
  */
@@ -28,7 +28,7 @@
 /*********************************************************************************************************************************
 *   Header Files                                                                                                                 *
 *********************************************************************************************************************************/
-#include <iprt/err.h>
+#include <iprt/errcore.h>
 #include <iprt/fs.h>
 #include <iprt/initterm.h>
 #include <iprt/message.h>

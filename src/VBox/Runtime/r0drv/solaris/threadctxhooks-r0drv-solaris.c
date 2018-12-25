@@ -1,4 +1,4 @@
-/* $Id: threadctxhooks-r0drv-solaris.c 118412 2017-10-17 14:26:02Z knut.osmundsen@oracle.com $ */
+/* $Id: threadctxhooks-r0drv-solaris.c 127753 2018-12-25 01:41:25Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Thread Context Switching Hook, Ring-0 Driver, Solaris.
  */
@@ -34,7 +34,7 @@
 #include <iprt/mem.h>
 #include <iprt/assert.h>
 #include <iprt/thread.h>
-#include <iprt/err.h>
+#include <iprt/errcore.h>
 #include <iprt/asm.h>
 #include <iprt/log.h>
 #include "internal/thread.h"

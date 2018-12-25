@@ -1,4 +1,4 @@
-/* $Id: macstr.cpp 121654 2018-04-02 22:37:11Z noreply@oracle.com $ */
+/* $Id: macstr.cpp 127753 2018-12-25 01:41:25Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Command Line Parsing
  */
@@ -34,7 +34,7 @@
 
 #include <iprt/assert.h>
 #include <iprt/ctype.h>
-#include <iprt/err.h>
+#include <iprt/errcore.h>
 #include <iprt/message.h>
 #include <iprt/string.h>
 

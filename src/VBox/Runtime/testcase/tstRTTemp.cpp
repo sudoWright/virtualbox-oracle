@@ -1,4 +1,4 @@
-/* $Id: tstRTTemp.cpp 118412 2017-10-17 14:26:02Z knut.osmundsen@oracle.com $ */
+/* $Id: tstRTTemp.cpp 127753 2018-12-25 01:41:25Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT Testcase - Temporary files and directories.
  */
@@ -32,7 +32,7 @@
 #include <iprt/file.h>
 #include <iprt/path.h>
 
-#include <iprt/err.h>
+#include <iprt/errcore.h>
 #include <iprt/initterm.h>
 #include <iprt/mem.h>
 #include <iprt/param.h>

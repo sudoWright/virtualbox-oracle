@@ -1,4 +1,4 @@
-/* $Id: RTTraceLogTool.cpp 121464 2018-03-24 22:23:10Z alexander.eichner@oracle.com $ */
+/* $Id: RTTraceLogTool.cpp 127753 2018-12-25 01:41:25Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Utility for reading/receiving and dissecting trace logs.
  */
@@ -31,7 +31,7 @@
 #include <iprt/tracelog.h>
 
 #include <iprt/assert.h>
-#include <iprt/err.h>
+#include <iprt/errcore.h>
 #include <iprt/getopt.h>
 #include <iprt/initterm.h>
 #include <iprt/message.h>
@@ -206,7 +206,7 @@ int main(int argc, char **argv)
                          , RTPathFilename(argv[0]));
                 return RTEXITCODE_SUCCESS;
             case 'V':
-                RTPrintf("$Revision: 121464 $\n");
+                RTPrintf("$Revision: 127753 $\n");
                 return RTEXITCODE_SUCCESS;
 
             case 'i':

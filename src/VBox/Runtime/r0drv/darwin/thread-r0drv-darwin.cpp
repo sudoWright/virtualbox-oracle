@@ -1,4 +1,4 @@
-/* $Id: thread-r0drv-darwin.cpp 118412 2017-10-17 14:26:02Z knut.osmundsen@oracle.com $ */
+/* $Id: thread-r0drv-darwin.cpp 127753 2018-12-25 01:41:25Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Threads, Ring-0 Driver, Darwin.
  */
@@ -33,7 +33,7 @@
 #include <iprt/thread.h>
 
 #include <iprt/assert.h>
-#include <iprt/err.h>
+#include <iprt/errcore.h>
 
 
 

@@ -1,4 +1,4 @@
-/* $Id: tstRTCidr.cpp 118412 2017-10-17 14:26:02Z knut.osmundsen@oracle.com $ */
+/* $Id: tstRTCidr.cpp 127753 2018-12-25 01:41:25Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT Testcase - IPv4.
  */
@@ -30,7 +30,7 @@
 *********************************************************************************************************************************/
 #include <iprt/cidr.h>
 
-#include <iprt/err.h>
+#include <iprt/errcore.h>
 #include <iprt/initterm.h>
 #include <iprt/test.h>
 

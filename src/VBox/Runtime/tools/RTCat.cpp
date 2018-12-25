@@ -1,4 +1,4 @@
-/* $Id: RTCat.cpp 127644 2018-12-22 00:51:28Z knut.osmundsen@oracle.com $ */
+/* $Id: RTCat.cpp 127753 2018-12-25 01:41:25Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - cat like utility.
  */
@@ -31,7 +31,7 @@
 #include <iprt/vfs.h>
 
 #include <iprt/buildconfig.h>
-#include <iprt/err.h>
+#include <iprt/errcore.h>
 #include <iprt/file.h>
 #include <iprt/getopt.h>
 #include <iprt/initterm.h>

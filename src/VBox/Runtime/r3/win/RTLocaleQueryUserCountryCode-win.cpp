@@ -1,4 +1,4 @@
-/* $Id: RTLocaleQueryUserCountryCode-win.cpp 117188 2017-07-26 13:11:21Z knut.osmundsen@oracle.com $ */
+/* $Id: RTLocaleQueryUserCountryCode-win.cpp 127753 2018-12-25 01:41:25Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - RTLocaleQueryUserCountryCode, ring-3, Windows.
  */
@@ -34,7 +34,7 @@
 #include "internal/iprt.h"
 
 #include <iprt/ctype.h>
-#include <iprt/err.h>
+#include <iprt/errcore.h>
 #include <iprt/string.h>
 
 #include "internal-r3-win.h"

@@ -1,4 +1,4 @@
-/* $Id: initterm-r0drv-freebsd.c 102121 2015-08-14 15:16:38Z knut.osmundsen@oracle.com $ */
+/* $Id: initterm-r0drv-freebsd.c 127753 2018-12-25 01:41:25Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Initialization & Termination, Ring-0 Driver, FreeBSD.
  */
@@ -34,7 +34,7 @@
 *********************************************************************************************************************************/
 #include "the-freebsd-kernel.h"
 
-#include <iprt/err.h>
+#include <iprt/errcore.h>
 
 #include "internal/initterm.h"
 

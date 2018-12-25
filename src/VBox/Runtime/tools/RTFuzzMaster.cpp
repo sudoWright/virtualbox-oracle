@@ -1,4 +1,4 @@
-/* $Id: RTFuzzMaster.cpp 122908 2018-06-04 19:59:26Z alexander.eichner@oracle.com $ */
+/* $Id: RTFuzzMaster.cpp 127753 2018-12-25 01:41:25Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Fuzzing master Utility.
  */
@@ -29,7 +29,7 @@
 *   Header Files                                                                                                                 *
 *********************************************************************************************************************************/
 #include <iprt/fuzz.h>
-#include <iprt/err.h>
+#include <iprt/errcore.h>
 #include <iprt/initterm.h>
 #include <iprt/message.h>
 

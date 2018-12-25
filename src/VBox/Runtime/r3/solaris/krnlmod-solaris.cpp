@@ -1,4 +1,4 @@
-/* $Id: krnlmod-solaris.cpp 123672 2018-07-12 21:06:33Z knut.osmundsen@oracle.com $ */
+/* $Id: krnlmod-solaris.cpp 127753 2018-12-25 01:41:25Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Kernel module, Linux.
  */
@@ -33,7 +33,7 @@
 #include <iprt/asm.h>
 #include <iprt/assert.h>
 #include <iprt/dir.h>
-#include <iprt/err.h>
+#include <iprt/errcore.h>
 #include <iprt/mem.h>
 #include <iprt/string.h>
 #include <iprt/types.h>

@@ -1,4 +1,4 @@
-/* $Id: rand-posix.cpp 118412 2017-10-17 14:26:02Z knut.osmundsen@oracle.com $ */
+/* $Id: rand-posix.cpp 127753 2018-12-25 01:41:25Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Random Numbers and Byte Streams, POSIX.
  */
@@ -43,7 +43,7 @@
 
 #include <iprt/rand.h>
 #include <iprt/mem.h>
-#include <iprt/err.h>
+#include <iprt/errcore.h>
 #include <iprt/assert.h>
 #include "internal/rand.h"
 #include "internal/magics.h"

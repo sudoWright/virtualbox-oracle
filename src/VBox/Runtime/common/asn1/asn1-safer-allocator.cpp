@@ -1,4 +1,4 @@
-/* $Id: asn1-safer-allocator.cpp 124336 2018-08-14 16:13:43Z knut.osmundsen@oracle.com $ */
+/* $Id: asn1-safer-allocator.cpp 127753 2018-12-25 01:41:25Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - ASN.1, Safer Allocator, for sensitive data.
  */
@@ -32,7 +32,7 @@
 #include <iprt/asn1.h>
 
 #include <iprt/memsafer.h>
-#include <iprt/err.h>
+#include <iprt/errcore.h>
 #include <iprt/string.h>
 
 

@@ -1,4 +1,4 @@
-/* $Id: RTThreadGetNativeState-linux.cpp 118412 2017-10-17 14:26:02Z knut.osmundsen@oracle.com $ */
+/* $Id: RTThreadGetNativeState-linux.cpp 127753 2018-12-25 01:41:25Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - RTThreadGetNativeState, linux implementation.
  */
@@ -34,7 +34,7 @@
 
 #include <iprt/assert.h>
 #include <iprt/ctype.h>
-#include <iprt/err.h>
+#include <iprt/errcore.h>
 #include <iprt/string.h>
 
 #include "internal/thread.h"

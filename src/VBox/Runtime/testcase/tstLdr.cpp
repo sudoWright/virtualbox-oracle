@@ -1,4 +1,4 @@
-/* $Id: tstLdr.cpp 125546 2018-10-07 13:00:04Z knut.osmundsen@oracle.com $ */
+/* $Id: tstLdr.cpp 127753 2018-12-25 01:41:25Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Testcase for parts of RTLdr*.
  */
@@ -33,7 +33,7 @@
 #include <iprt/stream.h>
 #include <iprt/assert.h>
 #include <iprt/initterm.h>
-#include <iprt/err.h>
+#include <iprt/errcore.h>
 #include <iprt/string.h>
 
 

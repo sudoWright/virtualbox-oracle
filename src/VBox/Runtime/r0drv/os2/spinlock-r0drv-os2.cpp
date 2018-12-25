@@ -1,4 +1,4 @@
-/* $Id: spinlock-r0drv-os2.cpp 126210 2018-10-28 17:49:49Z knut.osmundsen@oracle.com $ */
+/* $Id: spinlock-r0drv-os2.cpp 127753 2018-12-25 01:41:25Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Spinlocks, Ring-0 Driver, OS/2.
  */
@@ -35,7 +35,7 @@
 #include "the-os2-kernel.h"
 
 #include <iprt/spinlock.h>
-#include <iprt/err.h>
+#include <iprt/errcore.h>
 #include <iprt/alloc.h>
 #include <iprt/assert.h>
 #include <iprt/asm.h>

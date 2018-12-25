@@ -1,4 +1,4 @@
-/* $Id: krnlmod-darwin.cpp 125048 2018-09-13 17:22:07Z knut.osmundsen@oracle.com $ */
+/* $Id: krnlmod-darwin.cpp 127753 2018-12-25 01:41:25Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Kernel module, Darwin.
  */
@@ -33,7 +33,7 @@
 
 #include <iprt/asm.h>
 #include <iprt/assert.h>
-#include <iprt/err.h>
+#include <iprt/errcore.h>
 #include <iprt/ldr.h>
 #include <iprt/mem.h>
 #include <iprt/once.h>

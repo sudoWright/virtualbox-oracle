@@ -1,4 +1,4 @@
-/* $Id: RTAssertShouldPanic-vbox.cpp 121479 2018-03-26 09:24:21Z andreas.loeffler@oracle.com $ */
+/* $Id: RTAssertShouldPanic-vbox.cpp 127753 2018-12-25 01:41:25Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Assertions, generic RTAssertShouldPanic.
  */
@@ -30,7 +30,7 @@
 *********************************************************************************************************************************/
 #include <iprt/assert.h>
 #include <iprt/env.h>
-#include <iprt/err.h>
+#include <iprt/errcore.h>
 #include <iprt/string.h>
 
 /** @def VBOX_RTASSERT_WITH_GDB

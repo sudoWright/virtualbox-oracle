@@ -1,4 +1,4 @@
-/* $Id: RTTimeSet-os2.cpp 126716 2018-11-18 19:46:03Z knut.osmundsen@oracle.com $ */
+/* $Id: RTTimeSet-os2.cpp 127753 2018-12-25 01:41:25Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - RTTimeSet, OS/2.
  */
@@ -41,7 +41,7 @@
 #include "internal/iprt.h"
 
 #include <iprt/assert.h>
-#include <iprt/err.h>
+#include <iprt/errcore.h>
 
 
 RTDECL(int) RTTimeSet(PCRTTIMESPEC pTime)

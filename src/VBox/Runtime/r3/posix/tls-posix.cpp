@@ -1,4 +1,4 @@
-/* $Id: tls-posix.cpp 118412 2017-10-17 14:26:02Z knut.osmundsen@oracle.com $ */
+/* $Id: tls-posix.cpp 127753 2018-12-25 01:41:25Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Thread Local Storage (TLS), POSIX.
  */
@@ -35,7 +35,7 @@
 #include <iprt/thread.h>
 #include <iprt/log.h>
 #include <iprt/assert.h>
-#include <iprt/err.h>
+#include <iprt/errcore.h>
 
 
 AssertCompile(sizeof(pthread_key_t) <= sizeof(RTTLS));
