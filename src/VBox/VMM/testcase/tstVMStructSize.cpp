@@ -1,4 +1,4 @@
-/* $Id: tstVMStructSize.cpp 123672 2018-07-12 21:06:33Z knut.osmundsen@oracle.com $ */
+/* $Id: tstVMStructSize.cpp 127783 2018-12-26 03:49:56Z ramshankar.venkataraman@oracle.com $ */
 /** @file
  * tstVMStructSize - testcase for check structure sizes/alignment
  *                   and to verify that HC and GC uses the same
@@ -430,6 +430,7 @@ int main()
     CHECK_MEMBER_ALIGNMENT(HMCPU, vmx.pfnStartVM, 8);
     CHECK_MEMBER_ALIGNMENT(HMCPU, vmx.HCPhysVmcs, 8);
     CHECK_MEMBER_ALIGNMENT(HMCPU, vmx.LastError, 8);
+    CHECK_MEMBER_ALIGNMENT(HMCPU, vmx.RestoreHost, 8);
     CHECK_MEMBER_ALIGNMENT(HMCPU, svm, 8);
     CHECK_MEMBER_ALIGNMENT(HMCPU, svm.pfnVMRun, 8);
     CHECK_MEMBER_ALIGNMENT(HMCPU, Event, 8);
