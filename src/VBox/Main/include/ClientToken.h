@@ -1,4 +1,4 @@
-/* $Id: ClientToken.h 118839 2017-10-28 15:14:05Z knut.osmundsen@oracle.com $ */
+/* $Id: ClientToken.h 127788 2018-12-27 03:31:39Z knut.osmundsen@oracle.com $ */
 
 /** @file
  *
@@ -19,6 +19,9 @@
 
 #ifndef ____H_CLIENTTOKEN
 #define ____H_CLIENTTOKEN
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 
 #include <VBox/com/ptr.h>
 #include <VBox/com/AutoLock.h>

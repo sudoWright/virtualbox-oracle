@@ -1,4 +1,4 @@
-/* $Id: MouseImpl.h 118839 2017-10-28 15:14:05Z knut.osmundsen@oracle.com $ */
+/* $Id: MouseImpl.h 127788 2018-12-27 03:31:39Z knut.osmundsen@oracle.com $ */
 /** @file
  * VirtualBox COM class implementation
  */
@@ -17,6 +17,9 @@
 
 #ifndef ____H_MOUSEIMPL
 #define ____H_MOUSEIMPL
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 
 #include "MouseWrap.h"
 #include "ConsoleImpl.h"

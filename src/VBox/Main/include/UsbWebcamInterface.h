@@ -1,4 +1,4 @@
-/* $Id: UsbWebcamInterface.h 118839 2017-10-28 15:14:05Z knut.osmundsen@oracle.com $ */
+/* $Id: UsbWebcamInterface.h 127788 2018-12-27 03:31:39Z knut.osmundsen@oracle.com $ */
 /** @file
  * VirtualBox PDM Driver for Emulated USB Webcam
  */
@@ -17,6 +17,9 @@
 
 #ifndef ____H_USBWEBCAMINTERFACE
 #define ____H_USBWEBCAMINTERFACE
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 
 #include <VBox/vmm/pdmdrv.h>
 #define VRDE_VIDEOIN_WITH_VRDEINTERFACE /* Get the VRDE interface definitions. */

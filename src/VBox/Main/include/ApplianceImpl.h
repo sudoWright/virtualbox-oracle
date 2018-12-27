@@ -1,4 +1,4 @@
-/* $Id: ApplianceImpl.h 127126 2018-12-03 18:17:11Z valery.portnyagin@oracle.com $ */
+/* $Id: ApplianceImpl.h 127788 2018-12-27 03:31:39Z knut.osmundsen@oracle.com $ */
 /** @file
  * VirtualBox COM class implementation
  */
@@ -17,6 +17,9 @@
 
 #ifndef ____H_APPLIANCEIMPL
 #define ____H_APPLIANCEIMPL
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 
 /* VBox includes */
 #include "VirtualSystemDescriptionWrap.h"

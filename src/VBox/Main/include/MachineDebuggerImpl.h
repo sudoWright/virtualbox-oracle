@@ -1,4 +1,4 @@
-/* $Id: MachineDebuggerImpl.h 122784 2018-05-24 19:29:45Z knut.osmundsen@oracle.com $ */
+/* $Id: MachineDebuggerImpl.h 127788 2018-12-27 03:31:39Z knut.osmundsen@oracle.com $ */
 /** @file
  * VirtualBox COM class implementation
  */
@@ -17,6 +17,9 @@
 
 #ifndef ____H_MACHINEDEBUGGER
 #define ____H_MACHINEDEBUGGER
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 
 #include "MachineDebuggerWrap.h"
 #include <iprt/log.h>

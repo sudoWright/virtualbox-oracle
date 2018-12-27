@@ -1,4 +1,4 @@
-/* $Id: WebMWriter.h 126092 2018-10-24 15:27:20Z andreas.loeffler@oracle.com $ */
+/* $Id: WebMWriter.h 127788 2018-12-27 03:31:39Z knut.osmundsen@oracle.com $ */
 /** @file
  * WebMWriter.h - WebM container handling.
  */
@@ -17,6 +17,9 @@
 
 #ifndef ____WEBMWRITER
 #define ____WEBMWRITER
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 
 #include "EBMLWriter.h"
 

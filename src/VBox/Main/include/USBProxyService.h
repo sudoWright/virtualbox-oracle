@@ -1,4 +1,4 @@
-/* $Id: USBProxyService.h 118839 2017-10-28 15:14:05Z knut.osmundsen@oracle.com $ */
+/* $Id: USBProxyService.h 127788 2018-12-27 03:31:39Z knut.osmundsen@oracle.com $ */
 /** @file
  * VirtualBox USB Proxy Service (base) class.
  */
@@ -18,6 +18,9 @@
 
 #ifndef ____H_USBPROXYSERVICE
 #define ____H_USBPROXYSERVICE
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 
 #include <VBox/usb.h>
 #include <VBox/usbfilter.h>

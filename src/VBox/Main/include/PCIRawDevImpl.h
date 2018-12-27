@@ -1,4 +1,4 @@
-/* $Id: PCIRawDevImpl.h 118839 2017-10-28 15:14:05Z knut.osmundsen@oracle.com $ */
+/* $Id: PCIRawDevImpl.h 127788 2018-12-27 03:31:39Z knut.osmundsen@oracle.com $ */
 /** @file
  * VirtualBox Driver interface to raw PCI device
  */
@@ -17,6 +17,9 @@
 
 #ifndef ____H_PCIRAWDEV
 #define ____H_PCIRAWDEV
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 
 #include "VirtualBoxBase.h"
 #include <VBox/vmm/pdmdrv.h>

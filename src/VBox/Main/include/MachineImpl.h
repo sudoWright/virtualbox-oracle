@@ -1,4 +1,4 @@
-/* $Id: MachineImpl.h 126645 2018-11-15 16:12:07Z andreas.loeffler@oracle.com $ */
+/* $Id: MachineImpl.h 127788 2018-12-27 03:31:39Z knut.osmundsen@oracle.com $ */
 /** @file
  * Implementation of IMachine in VBoxSVC - Header.
  */
@@ -17,6 +17,9 @@
 
 #ifndef ____H_MACHINEIMPL
 #define ____H_MACHINEIMPL
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 
 #include "AuthLibrary.h"
 #include "VirtualBoxBase.h"

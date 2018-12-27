@@ -1,4 +1,4 @@
-/* $Id: LoggingNew.h 116905 2017-07-11 20:15:52Z knut.osmundsen@oracle.com $ */
+/* $Id: LoggingNew.h 127788 2018-12-27 03:31:39Z knut.osmundsen@oracle.com $ */
 /** @file
  * VirtualBox COM - logging macros and function definitions, for new code.
  */
@@ -17,6 +17,9 @@
 
 #ifndef ____H_LOGGINGNEW
 #define ____H_LOGGINGNEW
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 
 #ifdef ____H_LOGGING
 # error "You must include LoggingNew.h as the first include!"

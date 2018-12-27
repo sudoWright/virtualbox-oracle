@@ -1,4 +1,4 @@
-/* $Id: ObjectState.h 126852 2018-11-22 12:20:52Z klaus.espenlaub@oracle.com $ */
+/* $Id: ObjectState.h 127788 2018-12-27 03:31:39Z knut.osmundsen@oracle.com $ */
 /** @file
  *
  * VirtualBox object state handling definitions
@@ -18,6 +18,9 @@
 
 #ifndef ____H_OBJECTSTATE
 #define ____H_OBJECTSTATE
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 
 #include "VBox/com/defs.h"
 #include "VBox/com/AutoLock.h"

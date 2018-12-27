@@ -1,4 +1,4 @@
-/* $Id: TextScript.h 127415 2018-12-11 17:03:05Z knut.osmundsen@oracle.com $ */
+/* $Id: TextScript.h 127788 2018-12-27 03:31:39Z knut.osmundsen@oracle.com $ */
 /** @file
  * Classes for reading/parsing/saving text scripts (unattended installation, ++).
  */
@@ -17,6 +17,9 @@
 
 #ifndef ____H_TEXTSCRIPT
 #define ____H_TEXTSCRIPT
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 
 #include "VirtualBoxBase.h"
 #include <iprt/cpp/utils.h>

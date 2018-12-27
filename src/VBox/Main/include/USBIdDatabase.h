@@ -1,4 +1,4 @@
-/* $Id: USBIdDatabase.h 118839 2017-10-28 15:14:05Z knut.osmundsen@oracle.com $ */
+/* $Id: USBIdDatabase.h 127788 2018-12-27 03:31:39Z knut.osmundsen@oracle.com $ */
 /** @file
  * USB device vendor and product ID database.
  */
@@ -17,6 +17,9 @@
 
 #ifndef ___USBIdDatabase_h
 #define ___USBIdDatabase_h
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 
 #include <iprt/assert.h>
 #include <iprt/stdint.h>
