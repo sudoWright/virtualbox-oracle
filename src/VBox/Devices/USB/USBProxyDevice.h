@@ -1,4 +1,4 @@
-/* $Id: USBProxyDevice.h 118839 2017-10-28 15:14:05Z knut.osmundsen@oracle.com $ */
+/* $Id: USBProxyDevice.h 127821 2018-12-30 05:39:55Z knut.osmundsen@oracle.com $ */
 /** @file
  * USBPROXY - USB proxy header
  */
@@ -17,6 +17,9 @@
 
 #ifndef ___USBProxyDevice_h
 #define ___USBProxyDevice_h
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 
 #include <VBox/cdefs.h>
 #include <VBox/vusb.h>

@@ -1,4 +1,4 @@
-/* $Id: VUSBInternal.h 123672 2018-07-12 21:06:33Z knut.osmundsen@oracle.com $ */
+/* $Id: VUSBInternal.h 127821 2018-12-30 05:39:55Z knut.osmundsen@oracle.com $ */
 /** @file
  * Virtual USB - Internal header.
  *
@@ -22,6 +22,9 @@
 
 #ifndef ___VUSBInternal_h
 #define ___VUSBInternal_h
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 
 #include <VBox/cdefs.h>
 #include <VBox/types.h>

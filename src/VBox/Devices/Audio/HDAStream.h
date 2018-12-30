@@ -1,4 +1,4 @@
-/* $Id: HDAStream.h 127278 2018-12-07 10:51:32Z andreas.loeffler@oracle.com $ */
+/* $Id: HDAStream.h 127821 2018-12-30 05:39:55Z knut.osmundsen@oracle.com $ */
 /** @file
  * HDAStream.h - Stream functions for HD Audio.
  */
@@ -17,6 +17,9 @@
 
 #ifndef HDA_STREAM_H
 #define HDA_STREAM_H
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 
 #include "DevHDACommon.h"
 

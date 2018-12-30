@@ -1,4 +1,4 @@
-/* $Id: AudioMixBuffer.h 124393 2018-08-16 14:35:39Z andreas.loeffler@oracle.com $ */
+/* $Id: AudioMixBuffer.h 127821 2018-12-30 05:39:55Z knut.osmundsen@oracle.com $ */
 /** @file
  * Audio Mixing bufer convert audio samples to/from different rates / formats.
  */
@@ -17,6 +17,9 @@
 
 #ifndef AUDIO_MIXBUF_H
 #define AUDIO_MIXBUF_H
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 
 #include <iprt/cdefs.h>
 #include <VBox/vmm/pdmaudioifs.h>

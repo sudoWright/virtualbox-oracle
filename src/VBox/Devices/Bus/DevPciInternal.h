@@ -1,4 +1,4 @@
-/* $Id: DevPciInternal.h 119746 2017-12-17 13:16:28Z knut.osmundsen@oracle.com $ */
+/* $Id: DevPciInternal.h 127821 2018-12-30 05:39:55Z knut.osmundsen@oracle.com $ */
 /** @file
  * DevPCI - Common Internal Header.
  */
@@ -17,6 +17,9 @@
 
 #ifndef ___Bus_DevPciInternal_h___
 #define ___Bus_DevPciInternal_h___
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 
 #ifndef PDMPCIDEV_INCLUDE_PRIVATE
 # define PDMPCIDEV_INCLUDE_PRIVATE /* Hack to get pdmpcidevint.h included at the right point. */

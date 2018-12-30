@@ -1,4 +1,4 @@
-/* $Id: inlines.h 127820 2018-12-30 05:39:14Z knut.osmundsen@oracle.com $ */
+/* $Id: inlines.h 127821 2018-12-30 05:39:55Z knut.osmundsen@oracle.com $ */
 /** @file
  * Inline routines for Watcom C.
  */
@@ -17,6 +17,9 @@
 
 #ifndef VBOX_INCLUDED_BIOS_inlines_h
 #define VBOX_INCLUDED_BIOS_inlines_h
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 
 extern unsigned inp(unsigned port);
 extern unsigned outp(unsigned port, unsigned value);

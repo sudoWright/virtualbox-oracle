@@ -1,4 +1,4 @@
-/* $Id: pulse_stubs.h 118421 2017-10-17 19:08:38Z knut.osmundsen@oracle.com $ */
+/* $Id: pulse_stubs.h 127821 2018-12-30 05:39:55Z knut.osmundsen@oracle.com $ */
 /** @file
  * Stubs for libpulse.
  */
@@ -17,6 +17,9 @@
 
 #ifndef AUDIO_PULSE_STUBS_H
 #define AUDIO_PULSE_STUBS_H
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 extern int audioLoadPulseLib(void);
 #endif
 
