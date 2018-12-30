@@ -1,4 +1,4 @@
-/* $Id: symdb.h 118412 2017-10-17 14:26:02Z knut.osmundsen@oracle.com $ */
+/* $Id: symdb.h 127814 2018-12-30 05:16:00Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Internal Header for the NT Ring-0 Driver Symbol DB.
  */
@@ -26,6 +26,9 @@
 
 #ifndef ___internal_r0drv_nt_symdb_h
 #define ___internal_r0drv_nt_symdb_h
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 
 #include <iprt/types.h>
 

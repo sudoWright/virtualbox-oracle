@@ -1,4 +1,4 @@
-/* $Id: the-linux-kernel.h 120068 2018-01-04 16:56:53Z noreply@oracle.com $ */
+/* $Id: the-linux-kernel.h 127814 2018-12-30 05:16:00Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Include all necessary headers for the Linux kernel.
  */
@@ -26,6 +26,9 @@
 
 #ifndef ___the_linux_kernel_h
 #define ___the_linux_kernel_h
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 
 /*
  * Include iprt/types.h to install the bool wrappers.

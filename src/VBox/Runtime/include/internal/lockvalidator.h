@@ -1,4 +1,4 @@
-/* $Id: lockvalidator.h 118412 2017-10-17 14:26:02Z knut.osmundsen@oracle.com $ */
+/* $Id: lockvalidator.h 127814 2018-12-30 05:16:00Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Internal RTLockValidator header.
  */
@@ -26,6 +26,9 @@
 
 #ifndef ___iprt_internal_lockvalidator_h
 #define ___iprt_internal_lockvalidator_h
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 
 #include <iprt/types.h>
 #include <iprt/lockvalidator.h>

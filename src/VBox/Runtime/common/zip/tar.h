@@ -1,4 +1,4 @@
-/* $Id: tar.h 118412 2017-10-17 14:26:02Z knut.osmundsen@oracle.com $ */
+/* $Id: tar.h 127814 2018-12-30 05:16:00Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - TAR Virtual Filesystem.
  */
@@ -26,6 +26,9 @@
 
 #ifndef __common_zip_tar_h
 #define __common_zip_tar_h
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 
 #include <iprt/assert.h>
 

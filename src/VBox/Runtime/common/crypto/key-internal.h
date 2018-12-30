@@ -1,4 +1,4 @@
-/* $Id: key-internal.h 124340 2018-08-14 17:49:23Z knut.osmundsen@oracle.com $ */
+/* $Id: key-internal.h 127814 2018-12-30 05:16:00Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Crypto - Cryptographic Keys, Internal Header.
  */
@@ -24,9 +24,11 @@
  * terms and conditions of either the GPL or the CDDL or both.
  */
 
-
 #ifndef ___common_crypto_keys_internal_h
 #define ___common_crypto_keys_internal_h
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 
 #include <iprt/crypto/key.h>
 #include <iprt/bignum.h>

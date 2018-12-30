@@ -1,4 +1,4 @@
-/* $Id: initterm.h 118810 2017-10-28 13:12:06Z knut.osmundsen@oracle.com $ */
+/* $Id: initterm.h 127814 2018-12-30 05:16:00Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Initialization & Termination.
  */
@@ -26,6 +26,9 @@
 
 #ifndef ___internal_initterm_h
 #define ___internal_initterm_h
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 
 #include <iprt/cdefs.h>
 
