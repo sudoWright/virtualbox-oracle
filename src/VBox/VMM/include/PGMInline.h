@@ -1,4 +1,4 @@
-/* $Id: PGMInline.h 120824 2018-02-12 20:45:31Z knut.osmundsen@oracle.com $ */
+/* $Id: PGMInline.h 127845 2018-12-30 06:38:55Z knut.osmundsen@oracle.com $ */
 /** @file
  * PGM - Inlined functions.
  */
@@ -17,6 +17,9 @@
 
 #ifndef ___PGMInline_h
 #define ___PGMInline_h
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 
 #include <VBox/cdefs.h>
 #include <VBox/types.h>

@@ -1,4 +1,4 @@
-/* $Id: SELMInternal.h 118810 2017-10-28 13:12:06Z knut.osmundsen@oracle.com $ */
+/* $Id: SELMInternal.h 127845 2018-12-30 06:38:55Z knut.osmundsen@oracle.com $ */
 /** @file
  * SELM - Internal header file.
  */
@@ -17,6 +17,9 @@
 
 #ifndef ___SELMInternal_h
 #define ___SELMInternal_h
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 
 #include <VBox/cdefs.h>
 #include <VBox/types.h>

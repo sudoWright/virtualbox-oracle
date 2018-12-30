@@ -1,4 +1,4 @@
-/* $Id: FTMInternal.h 118412 2017-10-17 14:26:02Z knut.osmundsen@oracle.com $ */
+/* $Id: FTMInternal.h 127845 2018-12-30 06:38:55Z knut.osmundsen@oracle.com $ */
 /** @file
  * FTM - Internal header file.
  */
@@ -17,6 +17,9 @@
 
 #ifndef ___FTMInternal_h
 #define ___FTMInternal_h
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 
 #include <VBox/cdefs.h>
 #include <VBox/types.h>

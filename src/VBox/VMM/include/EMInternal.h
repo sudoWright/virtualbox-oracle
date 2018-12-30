@@ -1,4 +1,4 @@
-/* $Id: EMInternal.h 123574 2018-07-10 09:24:10Z knut.osmundsen@oracle.com $ */
+/* $Id: EMInternal.h 127845 2018-12-30 06:38:55Z knut.osmundsen@oracle.com $ */
 /** @file
  * EM - Internal header file.
  */
@@ -17,6 +17,9 @@
 
 #ifndef ___EMInternal_h
 #define ___EMInternal_h
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 
 #include <VBox/cdefs.h>
 #include <VBox/types.h>
