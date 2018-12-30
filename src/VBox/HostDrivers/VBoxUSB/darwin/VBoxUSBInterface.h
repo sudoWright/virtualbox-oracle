@@ -1,4 +1,4 @@
-/** $Id: VBoxUSBInterface.h 118839 2017-10-28 15:14:05Z knut.osmundsen@oracle.com $ */
+/** $Id: VBoxUSBInterface.h 127829 2018-12-30 05:55:44Z knut.osmundsen@oracle.com $ */
 /** @file
  * VirtualBox USB Driver User<->Kernel Interface.
  */
@@ -26,6 +26,9 @@
 
 #ifndef ___VBoxUSBInterface_h
 #define ___VBoxUSBInterface_h
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 
 #include <VBox/usbfilter.h>
 
