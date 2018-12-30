@@ -1,5 +1,5 @@
 
-/* $Id: VBoxDTraceTypes.h 118839 2017-10-28 15:14:05Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxDTraceTypes.h 127825 2018-12-30 05:48:39Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxDTraceTypes.h - Fake a bunch of Solaris types.
  *
@@ -20,6 +20,9 @@
 
 #ifndef ___VBoxDTraceTypes_h___
 #define ___VBoxDTraceTypes_h___
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 
 #include <iprt/types.h>
 #include <iprt/stdarg.h>
