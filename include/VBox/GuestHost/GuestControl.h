@@ -1,4 +1,4 @@
-/* $Id: GuestControl.h 127027 2018-11-29 22:12:53Z knut.osmundsen@oracle.com $ */
+/* $Id: GuestControl.h 127808 2018-12-30 03:43:09Z knut.osmundsen@oracle.com $ */
 /** @file
  * Guest Control - Common Guest and Host Code.
  *
@@ -28,6 +28,9 @@
 
 #ifndef ___VBox_GuestHost_GuestControl_h
 #define ___VBox_GuestHost_GuestControl_h
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 
 #include <iprt/types.h>
 

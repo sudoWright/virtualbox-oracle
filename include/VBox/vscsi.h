@@ -1,4 +1,4 @@
-/* $Id: vscsi.h 120424 2018-01-22 19:38:45Z alexander.eichner@oracle.com $ */
+/* $Id: vscsi.h 127808 2018-12-30 03:43:09Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox storage drivers - Virtual SCSI driver
  */
@@ -26,6 +26,9 @@
 
 #ifndef ___VBox_vscsi_h
 #define ___VBox_vscsi_h
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 
 #include <VBox/cdefs.h>
 #include <VBox/types.h>

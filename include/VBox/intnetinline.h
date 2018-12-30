@@ -1,4 +1,4 @@
-/* $Id: intnetinline.h 123672 2018-07-12 21:06:33Z knut.osmundsen@oracle.com $ */
+/* $Id: intnetinline.h 127808 2018-12-30 03:43:09Z knut.osmundsen@oracle.com $ */
 /** @file
  * INTNET - Internal Networking, Inlined Code. (DEV,++)
  *
@@ -30,6 +30,9 @@
 
 #ifndef ___VBox_intnetinline_h
 #define ___VBox_intnetinline_h
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 
 #include <VBox/intnet.h>
 #include <iprt/string.h>

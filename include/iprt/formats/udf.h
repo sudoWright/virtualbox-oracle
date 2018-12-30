@@ -1,4 +1,4 @@
-/* $Id: udf.h 127741 2018-12-24 15:14:59Z knut.osmundsen@oracle.com $ */
+/* $Id: udf.h 127808 2018-12-30 03:43:09Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT, Universal Disk Format (UDF).
  */
@@ -26,6 +26,9 @@
 
 #ifndef ___iprt_formats_udf_h
 #define ___iprt_formats_udf_h
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 
 #include <iprt/types.h>
 #include <iprt/assertcompile.h>

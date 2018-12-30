@@ -1,4 +1,4 @@
-/* $Id: VBoxVideo.h 125510 2018-10-05 06:25:19Z noreply@oracle.com $ */
+/* $Id: VBoxVideo.h 127808 2018-12-30 03:43:09Z knut.osmundsen@oracle.com $ */
 /** @file
  * VirtualBox Video interface.
  */
@@ -30,6 +30,9 @@
 
 #ifndef ___VBox_Graphics_VBoxVideo_h
 #define ___VBox_Graphics_VBoxVideo_h
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 
 #include "VBoxVideoIPRT.h"
 
