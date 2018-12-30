@@ -1,4 +1,4 @@
-/* $Id: winutils.h 118839 2017-10-28 15:14:05Z knut.osmundsen@oracle.com $ */
+/* $Id: winutils.h 127827 2018-12-30 05:51:31Z knut.osmundsen@oracle.com $ */
 /** @file
  * NAT Network - winsock compatibility shim.
  */
@@ -16,7 +16,10 @@
  */
 
 #ifndef __WINUTILS_H_
-# define __WINUTILS_H_
+#define __WINUTILS_H_
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 
 # include <iprt/cdefs.h>
 
