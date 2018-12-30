@@ -1,4 +1,4 @@
-/* $Id: SelfSizingTable.h 127187 2018-12-05 12:30:09Z alexander.eichner@oracle.com $ $Revision: 127187 $ */
+/* $Id: SelfSizingTable.h 127830 2018-12-30 05:56:28Z knut.osmundsen@oracle.com $ $Revision: 127830 $ */
 /** @file
  * vboxraw header file
  */
@@ -67,6 +67,9 @@
 
 #ifndef ___SELFSIZINGTABLE_H
 #define ___SELFSIZINGTABLE_H
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 
 #include <iprt/types.h>
 #include <iprt/string.h>

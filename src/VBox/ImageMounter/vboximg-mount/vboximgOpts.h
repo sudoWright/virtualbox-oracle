@@ -1,5 +1,5 @@
 
-/* $Id: vboximgOpts.h 127548 2018-12-18 05:29:30Z noreply@oracle.com $ $Revision: 127548 $ $Date: 2018-12-18 06:29:30 +0100 (Tue, 18 Dec 2018) $ $Author: noreply@oracle.com $ */
+/* $Id: vboximgOpts.h 127830 2018-12-30 05:56:28Z knut.osmundsen@oracle.com $ $Revision: 127830 $ $Date: 2018-12-30 06:56:28 +0100 (Sun, 30 Dec 2018) $ $Author: knut.osmundsen@oracle.com $ */
 
 /** @file
  * vboximgOpts.h
@@ -19,6 +19,9 @@
 
 #ifndef ___vboximgopts_h
 #define ___vboximgopts_h
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 
 
 typedef struct vboximgOpts {
