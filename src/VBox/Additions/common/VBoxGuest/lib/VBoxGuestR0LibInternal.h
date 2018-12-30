@@ -1,4 +1,4 @@
-/* $Id: VBoxGuestR0LibInternal.h 126706 2018-11-18 04:50:34Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxGuestR0LibInternal.h 127835 2018-12-30 06:14:15Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxGuestLibR0 - Internal header.
  */
@@ -30,6 +30,9 @@
 
 #ifndef ___VBoxGuestLib_VBoxGuestR0LibInternal_h
 #define ___VBoxGuestLib_VBoxGuestR0LibInternal_h
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 
 /*
  * Define the private IDC handle structure before we include the VBoxGuestLib.h header.
