@@ -1,4 +1,4 @@
-/* $Id: UIWizardExportApp.h 123963 2018-07-25 10:14:30Z sergey.dubov@oracle.com $ */
+/* $Id: UIWizardExportApp.h 127834 2018-12-30 06:08:06Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardExportApp class declaration.
  */
@@ -17,6 +17,9 @@
 
 #ifndef ___UIWizardExportApp_h___
 #define ___UIWizardExportApp_h___
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 
 /* GUI includes: */
 #include "UIWizard.h"

@@ -1,4 +1,4 @@
-/* $Id: UIPopupBox.h 123358 2018-07-03 09:49:09Z sergey.dubov@oracle.com $ */
+/* $Id: UIPopupBox.h 127834 2018-12-30 06:08:06Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIPopupBox/UIPopupBoxGroup classes declaration.
  */
@@ -17,6 +17,9 @@
 
 #ifndef ___UIPopupBoxStuff_h___
 #define ___UIPopupBoxStuff_h___
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 
 /* Qt includes: */
 #include <QIcon>

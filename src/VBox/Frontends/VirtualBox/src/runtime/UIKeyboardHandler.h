@@ -1,4 +1,4 @@
-/* $Id: UIKeyboardHandler.h 124581 2018-08-24 10:41:54Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIKeyboardHandler.h 127834 2018-12-30 06:08:06Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIKeyboardHandler class declaration.
  */
@@ -17,6 +17,9 @@
 
 #ifndef ___UIKeyboardHandler_h___
 #define ___UIKeyboardHandler_h___
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 
 /* Qt includes: */
 #include <QMap>

@@ -1,4 +1,4 @@
-/* $Id: UIMediaComboBox.h 125956 2018-10-19 12:51:20Z noreply@oracle.com $ */
+/* $Id: UIMediaComboBox.h 127834 2018-12-30 06:08:06Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIMediaComboBox class declaration.
  */
@@ -17,6 +17,9 @@
 
 #ifndef ___UIMediaComboBox_h___
 #define ___UIMediaComboBox_h___
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 
 /* Qt includes: */
 #include <QComboBox>

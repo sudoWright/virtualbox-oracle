@@ -1,4 +1,4 @@
-/* $Id: QIStatusBar.h 122131 2018-04-18 13:20:23Z sergey.dubov@oracle.com $ */
+/* $Id: QIStatusBar.h 127834 2018-12-30 06:08:06Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Qt GUI - Qt extensions: QIStatusBar class declaration.
  */
@@ -17,6 +17,9 @@
 
 #ifndef ___QIStatusBar_h___
 #define ___QIStatusBar_h___
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 
 /* Qt includes: */
 #include <QStatusBar>

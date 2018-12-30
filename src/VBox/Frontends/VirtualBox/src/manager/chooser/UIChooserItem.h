@@ -1,4 +1,4 @@
-/* $Id: UIChooserItem.h 125978 2018-10-21 13:13:44Z sergey.dubov@oracle.com $ */
+/* $Id: UIChooserItem.h 127834 2018-12-30 06:08:06Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIChooserItem class declaration.
  */
@@ -17,6 +17,9 @@
 
 #ifndef ___UIChooserItem_h___
 #define ___UIChooserItem_h___
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 
 /* Qt includes: */
 #include <QMimeData>

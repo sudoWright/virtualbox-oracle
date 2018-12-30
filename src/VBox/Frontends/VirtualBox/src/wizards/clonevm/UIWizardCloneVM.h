@@ -1,4 +1,4 @@
-/* $Id: UIWizardCloneVM.h 122654 2018-05-15 14:20:58Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIWizardCloneVM.h 127834 2018-12-30 06:08:06Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardCloneVM class declaration.
  */
@@ -17,6 +17,9 @@
 
 #ifndef __UIWizardCloneVM_h__
 #define __UIWizardCloneVM_h__
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 
 /* GUI includes: */
 #include "UIWizard.h"

@@ -1,4 +1,4 @@
-/* $Id: UISettingsDialogSpecific.h 125956 2018-10-19 12:51:20Z noreply@oracle.com $ */
+/* $Id: UISettingsDialogSpecific.h 127834 2018-12-30 06:08:06Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Qt GUI - UISettingsDialogSpecific class declaration.
  */
@@ -17,6 +17,9 @@
 
 #ifndef ___UISettingsDialogSpecific_h___
 #define ___UISettingsDialogSpecific_h___
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 
 /* GUI includes: */
 #include "UISettingsDialog.h"

@@ -1,4 +1,4 @@
-/* $Id: UIIndicatorsPool.h 126823 2018-11-21 15:32:58Z sergey.dubov@oracle.com $ */
+/* $Id: UIIndicatorsPool.h 127834 2018-12-30 06:08:06Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIIndicatorsPool class declaration.
  */
@@ -17,6 +17,9 @@
 
 #ifndef ___UIIndicatorsPool_h___
 #define ___UIIndicatorsPool_h___
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 
 /* Qt includes: */
 #include <QWidget>

@@ -1,4 +1,4 @@
-/* $Id: UIApplianceExportEditorWidget.h 118839 2017-10-28 15:14:05Z knut.osmundsen@oracle.com $ */
+/* $Id: UIApplianceExportEditorWidget.h 127834 2018-12-30 06:08:06Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIApplianceExportEditorWidget class declaration.
  */
@@ -17,6 +17,9 @@
 
 #ifndef __UIApplianceExportEditorWidget_h__
 #define __UIApplianceExportEditorWidget_h__
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 
 /* GUI includes: */
 #include "UIApplianceEditorWidget.h"

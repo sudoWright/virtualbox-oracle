@@ -1,4 +1,4 @@
-/* $Id: UIScaleFactorEditor.h 127405 2018-12-11 11:03:40Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIScaleFactorEditor.h 127834 2018-12-30 06:08:06Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIScaleFactorEditor class declaration.
  */
@@ -17,6 +17,9 @@
 
 #ifndef ___UIScaleFactorEditor_h___
 #define ___UIScaleFactorEditor_h___
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 
 /* GUI includes: */
 #include "QIWithRetranslateUI.h"

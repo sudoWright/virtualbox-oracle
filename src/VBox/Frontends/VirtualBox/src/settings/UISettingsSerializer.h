@@ -1,4 +1,4 @@
-/* $Id: UISettingsSerializer.h 122497 2018-05-04 08:57:19Z sergey.dubov@oracle.com $ */
+/* $Id: UISettingsSerializer.h 127834 2018-12-30 06:08:06Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Qt GUI - UISettingsSerializer class declaration.
  */
@@ -17,6 +17,9 @@
 
 #ifndef ___UISettingsSerializer_h___
 #define ___UISettingsSerializer_h___
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 
 /* Qt includes: */
 #include <QList>

@@ -1,4 +1,4 @@
-/* $Id: UIProgressEventHandler.h 126504 2018-11-09 16:20:25Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIProgressEventHandler.h 127834 2018-12-30 06:08:06Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIProgressEventHandler class declaration.
  */
@@ -17,6 +17,9 @@
 
 #ifndef ___UIProgressEventHandler_h___
 #define ___UIProgressEventHandler_h___
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 
 /* GUI includes: */
  #include "UIMainEventListener.h"

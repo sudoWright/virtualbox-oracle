@@ -1,4 +1,4 @@
-/* $Id: UIWindowMenuManager.h 122581 2018-05-08 15:57:55Z sergey.dubov@oracle.com $ */
+/* $Id: UIWindowMenuManager.h 127834 2018-12-30 06:08:06Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWindowMenuManager class declaration.
  */
@@ -17,6 +17,9 @@
 
 #ifndef ___UIWindowMenuManager_h___
 #define ___UIWindowMenuManager_h___
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 
 /* Qt includes: */
 #include <QHash>

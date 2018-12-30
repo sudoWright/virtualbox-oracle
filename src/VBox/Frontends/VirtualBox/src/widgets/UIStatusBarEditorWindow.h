@@ -1,4 +1,4 @@
-/* $Id: UIStatusBarEditorWindow.h 125956 2018-10-19 12:51:20Z noreply@oracle.com $ */
+/* $Id: UIStatusBarEditorWindow.h 127834 2018-12-30 06:08:06Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIStatusBarEditorWindow class declaration.
  */
@@ -17,6 +17,9 @@
 
 #ifndef ___UIStatusBarEditorWindow_h___
 #define ___UIStatusBarEditorWindow_h___
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 
 /* Qt includes: */
 #include <QList>
