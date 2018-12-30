@@ -1,4 +1,4 @@
-/* $Id: cidet.h 118412 2017-10-17 14:26:02Z knut.osmundsen@oracle.com $ */
+/* $Id: cidet.h 127833 2018-12-30 06:03:11Z knut.osmundsen@oracle.com $ */
 /** @file
  * CPU Instruction Decoding & Execution Tests - C/C++ Header.
  */
@@ -24,9 +24,11 @@
  * terms and conditions of either the GPL or the CDDL or both.
  */
 
-
 #ifndef ___cidet_h___
 #define ___cidet_h___
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 
 #include <iprt/types.h>
 #include <iprt/x86.h>
