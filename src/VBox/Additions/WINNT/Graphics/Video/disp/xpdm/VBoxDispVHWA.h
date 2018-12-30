@@ -1,4 +1,4 @@
-/* $Id: VBoxDispVHWA.h 121581 2018-03-31 19:51:41Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxDispVHWA.h 127842 2018-12-30 06:26:37Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox XPDM Display driver, helper functions which interacts with our miniport driver
  */
@@ -17,6 +17,9 @@
 
 #ifndef VBOXDISPVHWA_H
 #define VBOXDISPVHWA_H
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 
 #include "VBoxDisp.h"
 

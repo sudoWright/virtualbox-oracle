@@ -1,4 +1,4 @@
-/* $Id: VBoxClipboard.h 118839 2017-10-28 15:14:05Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxClipboard.h 127842 2018-12-30 06:26:37Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxSeamless - Shared Clipboard
  */
@@ -17,6 +17,9 @@
 
 #ifndef __VBOXSERVICESHAREDCLIPLBOARD__H
 #define __VBOXSERVICESHAREDCLIPLBOARD__H
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 
 #endif /* !__VBOXSERVICESHAREDCLIPLBOARD__H */
 

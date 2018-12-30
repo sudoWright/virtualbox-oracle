@@ -1,4 +1,4 @@
-/* $Id: VBoxMPDevExt.h 126599 2018-11-14 12:19:32Z vitali.pelenjow@oracle.com $ */
+/* $Id: VBoxMPDevExt.h 127842 2018-12-30 06:26:37Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Miniport device extension header
  */
@@ -17,6 +17,9 @@
 
 #ifndef VBOXMPDEVEXT_H
 #define VBOXMPDEVEXT_H
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 
 #include "VBoxMPUtils.h"
 #include <VBoxVideoGuest.h>

@@ -1,4 +1,4 @@
-/* $Id: VBoxGINA.h 118839 2017-10-28 15:14:05Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxGINA.h 127842 2018-12-30 06:26:37Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxGINA - Windows Logon DLL for VirtualBox.
  */
@@ -17,6 +17,9 @@
 
 #ifndef __VBOXGINA_H__
 #define __VBOXGINA_H__
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 
 /** Handle to Winlogon service */
 extern HANDLE hGinaWlx;

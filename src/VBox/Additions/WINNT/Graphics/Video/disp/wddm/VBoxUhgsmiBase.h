@@ -1,4 +1,4 @@
-/* $Id: VBoxUhgsmiBase.h 127674 2018-12-22 22:32:24Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxUhgsmiBase.h 127842 2018-12-30 06:26:37Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxVideo Display D3D User mode dll
  */
@@ -17,6 +17,9 @@
 
 #ifndef ___VBoxUhgsmiBase_h__
 #define ___VBoxUhgsmiBase_h__
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 
 #include <VBoxUhgsmi.h>
 #include <VBoxCrHgsmi.h>
