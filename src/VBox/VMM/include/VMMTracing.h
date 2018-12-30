@@ -1,4 +1,4 @@
-/* $Id: VMMTracing.h 118412 2017-10-17 14:26:02Z knut.osmundsen@oracle.com $ */
+/* $Id: VMMTracing.h 127816 2018-12-30 05:17:24Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxVMM - Trace point macros for the VMM.
  */
@@ -15,9 +15,11 @@
  * hope that it will be useful, but WITHOUT ANY WARRANTY of any kind.
  */
 
-
 #ifndef ___VMMTracing_h___
 #define ___VMMTracing_h___
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 
 
 /*******************************************************************************
