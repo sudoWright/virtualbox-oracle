@@ -1,4 +1,4 @@
-/* $Id: VBoxGuestDeskbarView.h 118839 2017-10-28 15:14:05Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxGuestDeskbarView.h 127840 2018-12-30 06:19:55Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxGuestDeskbarView, Haiku Guest Additions, header.
  */
@@ -46,6 +46,9 @@
 
 #ifndef ___VBOXGUESTTRAYVIEW__H
 #define ___VBOXGUESTTRAYVIEW__H
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 
 #include <Bitmap.h>
 #include <View.h>

@@ -1,4 +1,4 @@
-/* $Id: VBoxVideo_common.h 118839 2017-10-28 15:14:05Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxVideo_common.h 127840 2018-12-30 06:19:55Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxVideo, Haiku Guest Additions, common header.
  */
@@ -46,6 +46,9 @@
 
 #ifndef ___VBOXVIDEO_COMMON_H
 #define ___VBOXVIDEO_COMMON_H
+#ifndef RT_WITHOUT_PRAGMA_ONCE
+# pragma once
+#endif
 
 #include <Drivers.h>
 #include <Accelerant.h>
