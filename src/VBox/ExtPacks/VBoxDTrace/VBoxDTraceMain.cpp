@@ -1,10 +1,10 @@
-/* $Id: VBoxDTraceMain.cpp 127775 2018-12-25 07:21:57Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxDTraceMain.cpp 127855 2019-01-01 01:45:53Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxDTrace main module.
  */
 
 /*
- * Copyright (C) 2010-2017 Oracle Corporation
+ * Copyright (C) 2010-2019 Oracle Corporation
  *
  * Permission is hereby granted, free of charge, to any person
  * obtaining a copy of this software and associated documentation

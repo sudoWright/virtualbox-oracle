@@ -1,10 +1,10 @@
-/* $Id: UIIndicatorsPool.cpp 127220 2018-12-06 07:54:21Z sergey.dubov@oracle.com $ */
+/* $Id: UIIndicatorsPool.cpp 127855 2019-01-01 01:45:53Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIIndicatorsPool class implementation.
  */
 
 /*
- * Copyright (C) 2010-2018 Oracle Corporation
+ * Copyright (C) 2010-2019 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

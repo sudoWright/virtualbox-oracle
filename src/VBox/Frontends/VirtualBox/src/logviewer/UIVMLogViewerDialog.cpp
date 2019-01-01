@@ -1,10 +1,10 @@
-/* $Id: UIVMLogViewerDialog.cpp 126374 2018-11-06 10:56:59Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIVMLogViewerDialog.cpp 127855 2019-01-01 01:45:53Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVMLogViewerDialog class implementation.
  */
 
 /*
- * Copyright (C) 2010-2018 Oracle Corporation
+ * Copyright (C) 2010-2019 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

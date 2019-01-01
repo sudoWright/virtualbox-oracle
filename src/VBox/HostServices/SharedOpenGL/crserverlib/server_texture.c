@@ -1,10 +1,10 @@
-/* $Id: server_texture.c 125879 2018-10-17 16:58:38Z dmitrii.grigorev@oracle.com $ */
+/* $Id: server_texture.c 127855 2019-01-01 01:45:53Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox crOpenGL - teximage functions.
  */
 
 /*
- * Copyright (C) 2010-2017 Oracle Corporation
+ * Copyright (C) 2010-2019 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

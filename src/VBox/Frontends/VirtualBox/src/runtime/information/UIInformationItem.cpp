@@ -1,10 +1,10 @@
-/* $Id: UIInformationItem.cpp 123437 2018-07-04 16:28:14Z sergey.dubov@oracle.com $ */
+/* $Id: UIInformationItem.cpp 127855 2019-01-01 01:45:53Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIInformationItem class definition.
  */
 
 /*
- * Copyright (C) 2016-2017 Oracle Corporation
+ * Copyright (C) 2016-2019 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

@@ -1,10 +1,10 @@
-/* $Id: UmHlpInternal.h 127841 2018-12-30 06:22:29Z knut.osmundsen@oracle.com $ */
+/* $Id: UmHlpInternal.h 127855 2019-01-01 01:45:53Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox WDDM User Mode Driver Helpers
  */
 
 /*
- * Copyright (C) 2018 Oracle Corporation
+ * Copyright (C) 2018-2019 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

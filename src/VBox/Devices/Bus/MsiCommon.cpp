@@ -1,4 +1,4 @@
-/* $Id: MsiCommon.cpp 121876 2018-04-09 14:35:02Z knut.osmundsen@oracle.com $ */
+/* $Id: MsiCommon.cpp 127855 2019-01-01 01:45:53Z knut.osmundsen@oracle.com $ */
 /** @file
  * MSI support routines
  *
@@ -6,7 +6,7 @@
  */
 
 /*
- * Copyright (C) 2010-2017 Oracle Corporation
+ * Copyright (C) 2010-2019 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

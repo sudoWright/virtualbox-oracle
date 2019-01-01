@@ -1,10 +1,10 @@
-/* $Id: VBoxNetDHCP.cpp 121113 2018-03-05 15:53:15Z noreply@oracle.com $ */
+/* $Id: VBoxNetDHCP.cpp 127855 2019-01-01 01:45:53Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxNetDHCP - DHCP Service for connecting to IntNet.
  */
 
 /*
- * Copyright (C) 2009-2017 Oracle Corporation
+ * Copyright (C) 2009-2019 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

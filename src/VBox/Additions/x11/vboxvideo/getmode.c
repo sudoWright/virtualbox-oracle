@@ -1,10 +1,10 @@
-/* $Id: getmode.c 127781 2018-12-26 02:12:14Z knut.osmundsen@oracle.com $ */
+/* $Id: getmode.c 127855 2019-01-01 01:45:53Z knut.osmundsen@oracle.com $ */
 /** @file
  * VirtualBox X11 Additions graphics driver dynamic video mode functions.
  */
 
 /*
- * Copyright (C) 2006-2017 Oracle Corporation
+ * Copyright (C) 2006-2019 Oracle Corporation
  *
  * Permission is hereby granted, free of charge, to any person
  * obtaining a copy of this software and associated documentation

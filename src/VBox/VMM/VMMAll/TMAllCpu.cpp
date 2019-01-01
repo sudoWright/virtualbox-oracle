@@ -1,10 +1,10 @@
-/* $Id: TMAllCpu.cpp 126174 2018-10-26 15:49:07Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: TMAllCpu.cpp 127855 2019-01-01 01:45:53Z knut.osmundsen@oracle.com $ */
 /** @file
  * TM - Timeout Manager, CPU Time, All Contexts.
  */
 
 /*
- * Copyright (C) 2006-2017 Oracle Corporation
+ * Copyright (C) 2006-2019 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

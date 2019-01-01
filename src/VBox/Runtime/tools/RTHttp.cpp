@@ -1,10 +1,10 @@
-/* $Id: RTHttp.cpp 127753 2018-12-25 01:41:25Z knut.osmundsen@oracle.com $ */
+/* $Id: RTHttp.cpp 127855 2019-01-01 01:45:53Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Utility for retriving URLs.
  */
 
 /*
- * Copyright (C) 2006-2017 Oracle Corporation
+ * Copyright (C) 2006-2019 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;
@@ -110,7 +110,7 @@ int main(int argc, char **argv)
                 return RTEXITCODE_SUCCESS;
 
             case 'V':
-                RTPrintf("$Revision: 127753 $\n");
+                RTPrintf("$Revision: 127855 $\n");
                 return RTEXITCODE_SUCCESS;
 
             case 's':

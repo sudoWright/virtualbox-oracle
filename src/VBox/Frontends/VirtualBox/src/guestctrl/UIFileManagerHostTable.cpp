@@ -1,10 +1,10 @@
-/* $Id: UIFileManagerHostTable.cpp 127796 2018-12-27 12:20:17Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIFileManagerHostTable.cpp 127855 2019-01-01 01:45:53Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIFileManagerHostTable class implementation.
  */
 
 /*
- * Copyright (C) 2016-2018 Oracle Corporation
+ * Copyright (C) 2016-2019 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

@@ -1,11 +1,11 @@
-/* $Id: SerialPortImpl.cpp 124451 2018-08-19 19:07:19Z alexander.eichner@oracle.com $ */
+/* $Id: SerialPortImpl.cpp 127855 2019-01-01 01:45:53Z knut.osmundsen@oracle.com $ */
 /** @file
  *
  * VirtualBox COM class implementation
  */
 
 /*
- * Copyright (C) 2006-2017 Oracle Corporation
+ * Copyright (C) 2006-2019 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

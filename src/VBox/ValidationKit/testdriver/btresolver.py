@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# $Id: btresolver.py 120145 2018-01-10 14:14:45Z knut.osmundsen@oracle.com $
+# $Id: btresolver.py 127855 2019-01-01 01:45:53Z knut.osmundsen@oracle.com $
 # pylint: disable=C0302
 
 """
@@ -8,7 +8,7 @@ Backtrace resolver using external debugging symbols and RTLdrFlt.
 
 __copyright__ = \
 """
-Copyright (C) 2016-2017 Oracle Corporation
+Copyright (C) 2016-2019 Oracle Corporation
 
 This file is part of VirtualBox Open Source Edition (OSE), as
 available from http://www.virtualbox.org. This file is free software;
@@ -27,7 +27,7 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 120145 $"
+__version__ = "$Revision: 127855 $"
 
 
 # Standard Python imports.

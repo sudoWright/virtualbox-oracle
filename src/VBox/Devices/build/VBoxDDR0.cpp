@@ -1,10 +1,10 @@
-/* $Id: VBoxDDR0.cpp 118424 2017-10-17 19:15:33Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxDDR0.cpp 127855 2019-01-01 01:45:53Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxDDR0 - Built-in drivers & devices (part 1), ring-0 module.
  */
 
 /*
- * Copyright (C) 2011-2017 Oracle Corporation
+ * Copyright (C) 2011-2019 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

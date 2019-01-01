@@ -1,10 +1,10 @@
-/* $Id: VirtioRing-solaris.c 127775 2018-12-25 07:21:57Z knut.osmundsen@oracle.com $ */
+/* $Id: VirtioRing-solaris.c 127855 2019-01-01 01:45:53Z knut.osmundsen@oracle.com $ */
 /** @file
  * VirtualBox Guest Additions: Virtio Driver for Solaris, Ring implementation.
  */
 
 /*
- * Copyright (C) 2010-2017 Oracle Corporation
+ * Copyright (C) 2010-2019 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

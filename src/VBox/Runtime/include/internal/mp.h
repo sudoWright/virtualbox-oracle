@@ -1,10 +1,10 @@
-/* $Id: mp.h 127814 2018-12-30 05:16:00Z knut.osmundsen@oracle.com $ */
+/* $Id: mp.h 127855 2019-01-01 01:45:53Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Internal RTMp header
  */
 
 /*
- * Copyright (C) 2016-2017 Oracle Corporation
+ * Copyright (C) 2016-2019 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

@@ -1,10 +1,10 @@
-/* $Id: PGMRCShw.h 118810 2017-10-28 13:12:06Z knut.osmundsen@oracle.com $ */
+/* $Id: PGMRCShw.h 127855 2019-01-01 01:45:53Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox - Page Manager, Shadow Paging Template - Guest Context.
  */
 
 /*
- * Copyright (C) 2006-2017 Oracle Corporation
+ * Copyright (C) 2006-2019 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

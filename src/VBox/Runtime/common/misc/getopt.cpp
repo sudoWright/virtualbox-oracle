@@ -1,10 +1,10 @@
-/* $Id: getopt.cpp 120857 2018-02-14 13:29:47Z knut.osmundsen@oracle.com $ */
+/* $Id: getopt.cpp 127855 2019-01-01 01:45:53Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Command Line Parsing
  */
 
 /*
- * Copyright (C) 2007-2017 Oracle Corporation
+ * Copyright (C) 2007-2019 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

@@ -1,10 +1,10 @@
-/* $Id: fuzzmastercmd.cpp 123493 2018-07-07 13:40:01Z alexander.eichner@oracle.com $ */
+/* $Id: fuzzmastercmd.cpp 127855 2019-01-01 01:45:53Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Fuzzing framework API, master command.
  */
 
 /*
- * Copyright (C) 2018 Oracle Corporation
+ * Copyright (C) 2018-2019 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

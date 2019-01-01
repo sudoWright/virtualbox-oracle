@@ -1,10 +1,10 @@
-/* $Id: vfsbase.cpp 123687 2018-07-13 06:06:12Z knut.osmundsen@oracle.com $ */
+/* $Id: vfsbase.cpp 127855 2019-01-01 01:45:53Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Virtual File System, Base.
  */
 
 /*
- * Copyright (C) 2010-2017 Oracle Corporation
+ * Copyright (C) 2010-2019 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

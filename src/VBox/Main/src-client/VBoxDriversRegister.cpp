@@ -1,11 +1,11 @@
-/* $Id: VBoxDriversRegister.cpp 126476 2018-11-09 10:05:06Z andreas.loeffler@oracle.com $ */
+/* $Id: VBoxDriversRegister.cpp 127855 2019-01-01 01:45:53Z knut.osmundsen@oracle.com $ */
 /** @file
  *
  * Main driver registration.
  */
 
 /*
- * Copyright (C) 2006-2018 Oracle Corporation
+ * Copyright (C) 2006-2019 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

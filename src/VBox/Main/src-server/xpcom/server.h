@@ -1,11 +1,11 @@
-/* $Id: server.h 127818 2018-12-30 05:19:23Z knut.osmundsen@oracle.com $ */
+/* $Id: server.h 127855 2019-01-01 01:45:53Z knut.osmundsen@oracle.com $ */
 /** @file
  *
  * Common header for XPCOM server and its module counterpart
  */
 
 /*
- * Copyright (C) 2006-2017 Oracle Corporation
+ * Copyright (C) 2006-2019 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

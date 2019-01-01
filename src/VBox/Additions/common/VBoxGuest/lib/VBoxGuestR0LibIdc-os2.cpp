@@ -1,10 +1,10 @@
-/* $Id: VBoxGuestR0LibIdc-os2.cpp 126204 2018-10-28 16:58:30Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxGuestR0LibIdc-os2.cpp 127855 2019-01-01 01:45:53Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxGuestLib - Ring-0 Support Library for VBoxGuest, IDC, OS/2 specific.
  */
 
 /*
- * Copyright (C) 2008-2018 Oracle Corporation
+ * Copyright (C) 2008-2019 Oracle Corporation
  *
  * Permission is hereby granted, free of charge, to any person
  * obtaining a copy of this software and associated documentation

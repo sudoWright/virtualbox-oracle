@@ -1,10 +1,10 @@
-/* $Id: UIHostNetworkDetailsWidget.cpp 117560 2017-08-15 14:11:37Z sergey.dubov@oracle.com $ */
+/* $Id: UIHostNetworkDetailsWidget.cpp 127855 2019-01-01 01:45:53Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIHostNetworkDetailsWidget class implementation.
  */
 
 /*
- * Copyright (C) 2009-2017 Oracle Corporation
+ * Copyright (C) 2009-2019 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

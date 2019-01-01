@@ -1,10 +1,10 @@
-/* $Id: serialport-posix.cpp 122214 2018-04-22 11:50:09Z alexander.eichner@oracle.com $ */
+/* $Id: serialport-posix.cpp 127855 2019-01-01 01:45:53Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Serial Port API, POSIX Implementation.
  */
 
 /*
- * Copyright (C) 2017-2018 Oracle Corporation
+ * Copyright (C) 2017-2019 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;
