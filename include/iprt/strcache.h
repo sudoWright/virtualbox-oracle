@@ -1,4 +1,4 @@
-/* $Id: strcache.h 127855 2019-01-01 01:45:53Z knut.osmundsen@oracle.com $ */
+/* $Id: strcache.h 127859 2019-01-01 02:37:24Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - String Cache, stub implementation.
  */
@@ -24,8 +24,8 @@
  * terms and conditions of either the GPL or the CDDL or both.
  */
 
-#ifndef ___iprt_strcache_h
-#define ___iprt_strcache_h
+#ifndef IPRT_INCLUDED_strcache_h
+#define IPRT_INCLUDED_strcache_h
 #ifndef RT_WITHOUT_PRAGMA_ONCE
 # pragma once
 #endif

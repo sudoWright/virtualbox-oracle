@@ -1,4 +1,4 @@
-/* $Id: elf32.h 127855 2019-01-01 01:45:53Z knut.osmundsen@oracle.com $ */
+/* $Id: elf32.h 127859 2019-01-01 02:37:24Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - ELF 32-bit header.
  */
@@ -24,8 +24,8 @@
  * terms and conditions of either the GPL or the CDDL or both.
  */
 
-#ifndef ___iprt_formats_elf32_h
-#define ___iprt_formats_elf32_h
+#ifndef IPRT_INCLUDED_formats_elf32_h
+#define IPRT_INCLUDED_formats_elf32_h
 #ifndef RT_WITHOUT_PRAGMA_ONCE
 # pragma once
 #endif
