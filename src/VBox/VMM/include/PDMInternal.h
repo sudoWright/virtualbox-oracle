@@ -1,4 +1,4 @@
-/* $Id: PDMInternal.h 127855 2019-01-01 01:45:53Z knut.osmundsen@oracle.com $ */
+/* $Id: PDMInternal.h 127863 2019-01-01 03:13:40Z knut.osmundsen@oracle.com $ */
 /** @file
  * PDM - Internal header file.
  */
@@ -15,8 +15,8 @@
  * hope that it will be useful, but WITHOUT ANY WARRANTY of any kind.
  */
 
-#ifndef ___PDMInternal_h
-#define ___PDMInternal_h
+#ifndef VMM_INCLUDED_SRC_include_PDMInternal_h
+#define VMM_INCLUDED_SRC_include_PDMInternal_h
 #ifndef RT_WITHOUT_PRAGMA_ONCE
 # pragma once
 #endif
