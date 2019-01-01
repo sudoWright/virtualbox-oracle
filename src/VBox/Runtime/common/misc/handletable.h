@@ -1,4 +1,4 @@
-/* $Id: handletable.h 127855 2019-01-01 01:45:53Z knut.osmundsen@oracle.com $ */
+/* $Id: handletable.h 127862 2019-01-01 03:01:10Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Handle Tables, internal header.
  */
@@ -24,8 +24,8 @@
  * terms and conditions of either the GPL or the CDDL or both.
  */
 
-#ifndef RT_INCLUDED_common_misc_handletable_h
-#define RT_INCLUDED_common_misc_handletable_h
+#ifndef IPRT_INCLUDED_SRC_common_misc_handletable_h
+#define IPRT_INCLUDED_SRC_common_misc_handletable_h
 #ifndef RT_WITHOUT_PRAGMA_ONCE
 # pragma once
 #endif

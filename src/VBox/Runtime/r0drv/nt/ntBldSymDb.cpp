@@ -1,4 +1,4 @@
-﻿/* $Id: ntBldSymDb.cpp 127855 2019-01-01 01:45:53Z knut.osmundsen@oracle.com $ */
+﻿/* $Id: ntBldSymDb.cpp 127862 2019-01-01 03:01:10Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - RTDirCreateUniqueNumbered, generic implementation.
  */
@@ -218,8 +218,8 @@ static void generateHeader(PRTSTREAM pOut)
                  " */\n"
                  "\n"
                  "\n"
-                 "#ifndef ___r0drv_nt_symdbdata_h\n"
-                 "#define ___r0drv_nt_symdbdata_h\n"
+                 "#ifndef IPRT_INCLUDED_SRC_nt_symdbdata_h\n"
+                 "#define IPRT_INCLUDED_SRC_nt_symdbdata_h\n"
                  "\n"
                  "#include \"r0drv/nt/symdb.h\"\n"
                  "\n"
@@ -1155,7 +1155,7 @@ int main(int argc, char **argv)
                 break;
 
             case 'V':
-                RTPrintf("$Revision: 127855 $");
+                RTPrintf("$Revision: 127862 $");
                 break;
 
             case 'h':
