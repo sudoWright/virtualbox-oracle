@@ -1,4 +1,4 @@
-/* $Id: UIPopupPaneDetails.h 127855 2019-01-01 01:45:53Z knut.osmundsen@oracle.com $ */
+/* $Id: UIPopupPaneDetails.h 127883 2019-01-01 06:24:57Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIPopupPaneDetails class declaration.
  */
@@ -15,8 +15,8 @@
  * hope that it will be useful, but WITHOUT ANY WARRANTY of any kind.
  */
 
-#ifndef ___UIPopupPaneDetails_h___
-#define ___UIPopupPaneDetails_h___
+#ifndef FEQT_INCLUDED_SRC_widgets_UIPopupPaneDetails_h
+#define FEQT_INCLUDED_SRC_widgets_UIPopupPaneDetails_h
 #ifndef RT_WITHOUT_PRAGMA_ONCE
 # pragma once
 #endif
@@ -136,5 +136,5 @@ private:
     UIAnimation *m_pAnimation;
 };
 
-#endif /* !___UIPopupPaneDetails_h___ */
+#endif /* !FEQT_INCLUDED_SRC_widgets_UIPopupPaneDetails_h */
 

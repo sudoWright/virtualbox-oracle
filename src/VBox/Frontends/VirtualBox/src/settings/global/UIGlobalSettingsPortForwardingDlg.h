@@ -1,4 +1,4 @@
-/* $Id: UIGlobalSettingsPortForwardingDlg.h 127855 2019-01-01 01:45:53Z knut.osmundsen@oracle.com $ */
+/* $Id: UIGlobalSettingsPortForwardingDlg.h 127883 2019-01-01 06:24:57Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIMachineSettingsPortForwardingDlg class declaration.
  */
@@ -15,8 +15,8 @@
  * hope that it will be useful, but WITHOUT ANY WARRANTY of any kind.
  */
 
-#ifndef __UIGlobalSettingsPortForwardingDlg_h__
-#define __UIGlobalSettingsPortForwardingDlg_h__
+#ifndef FEQT_INCLUDED_SRC_settings_global_UIGlobalSettingsPortForwardingDlg_h
+#define FEQT_INCLUDED_SRC_settings_global_UIGlobalSettingsPortForwardingDlg_h
 #ifndef RT_WITHOUT_PRAGMA_ONCE
 # pragma once
 #endif
@@ -64,4 +64,4 @@ private:
     QIDialogButtonBox *m_pButtonBox;
 };
 
-#endif // __UIGlobalSettingsPortForwardingDlg_h__
+#endif /* !FEQT_INCLUDED_SRC_settings_global_UIGlobalSettingsPortForwardingDlg_h */

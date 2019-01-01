@@ -1,4 +1,4 @@
-/* $Id: UICocoaApplication.h 127855 2019-01-01 01:45:53Z knut.osmundsen@oracle.com $ */
+/* $Id: UICocoaApplication.h 127883 2019-01-01 06:24:57Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Qt GUI - UICocoaApplication class declaration.
  */
@@ -15,8 +15,8 @@
  * hope that it will be useful, but WITHOUT ANY WARRANTY of any kind.
  */
 
-#ifndef ___VBoxCocoaApplication_h___
-#define ___VBoxCocoaApplication_h___
+#ifndef FEQT_INCLUDED_SRC_platform_darwin_UICocoaApplication_h
+#define FEQT_INCLUDED_SRC_platform_darwin_UICocoaApplication_h
 #ifndef RT_WITHOUT_PRAGMA_ONCE
 # pragma once
 #endif
@@ -118,5 +118,5 @@ private:
     QMap<QWidget*, QMap<StandardWindowButtonType, PfnStandardWindowButtonCallbackForQWidget> >  m_stdWindowButtonCallbacks;
 };
 
-#endif /* !___VBoxCocoaApplication_h___ */
+#endif /* !FEQT_INCLUDED_SRC_platform_darwin_UICocoaApplication_h */
 

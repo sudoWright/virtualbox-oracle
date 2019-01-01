@@ -1,4 +1,4 @@
-/* $Id: UIInformationView.h 127855 2019-01-01 01:45:53Z knut.osmundsen@oracle.com $ */
+/* $Id: UIInformationView.h 127883 2019-01-01 06:24:57Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIInformationView class declaration.
  */
@@ -15,8 +15,8 @@
  * hope that it will be useful, but WITHOUT ANY WARRANTY of any kind.
  */
 
-#ifndef ___UIInformationView_h___
-#define ___UIInformationView_h___
+#ifndef FEQT_INCLUDED_SRC_runtime_information_UIInformationView_h
+#define FEQT_INCLUDED_SRC_runtime_information_UIInformationView_h
 #ifndef RT_WITHOUT_PRAGMA_ONCE
 # pragma once
 #endif
@@ -57,5 +57,5 @@ private:
     QTextEdit *m_pTextEdit;
 };
 
-#endif /* !___UIInformationView_h___ */
+#endif /* !FEQT_INCLUDED_SRC_runtime_information_UIInformationView_h */
 

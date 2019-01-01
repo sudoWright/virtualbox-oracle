@@ -1,4 +1,4 @@
-/* $Id: UIFileManagerGuestTable.h 127855 2019-01-01 01:45:53Z knut.osmundsen@oracle.com $ */
+/* $Id: UIFileManagerGuestTable.h 127883 2019-01-01 06:24:57Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIFileManagerGuestTable class declaration.
  */
@@ -15,8 +15,8 @@
  * hope that it will be useful, but WITHOUT ANY WARRANTY of any kind.
  */
 
-#ifndef ___UIGuestTable_h___
-#define ___UIGuestTable_h___
+#ifndef FEQT_INCLUDED_SRC_guestctrl_UIFileManagerGuestTable_h
+#define FEQT_INCLUDED_SRC_guestctrl_UIFileManagerGuestTable_h
 #ifndef RT_WITHOUT_PRAGMA_ONCE
 # pragma once
 #endif
@@ -85,4 +85,4 @@ private:
     mutable CGuestSession     m_comGuestSession;
 };
 
-#endif /* !___UIFileManagerGuestTable_h___ */
+#endif /* !FEQT_INCLUDED_SRC_guestctrl_UIFileManagerGuestTable_h */

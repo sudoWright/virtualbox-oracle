@@ -1,4 +1,4 @@
-/* $Id: QIAdvancedSlider.h 127855 2019-01-01 01:45:53Z knut.osmundsen@oracle.com $ */
+/* $Id: QIAdvancedSlider.h 127883 2019-01-01 06:24:57Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Qt GUI - Qt extensions: QIAdvancedSlider class declaration.
  */
@@ -15,8 +15,8 @@
  * hope that it will be useful, but WITHOUT ANY WARRANTY of any kind.
  */
 
-#ifndef ___QIAdvancedSlider_h___
-#define ___QIAdvancedSlider_h___
+#ifndef FEQT_INCLUDED_SRC_extensions_QIAdvancedSlider_h
+#define FEQT_INCLUDED_SRC_extensions_QIAdvancedSlider_h
 #ifndef RT_WITHOUT_PRAGMA_ONCE
 # pragma once
 #endif
@@ -130,4 +130,4 @@ private:
     bool             m_fSnappingEnabled;
 };
 
-#endif /* !___QIAdvancedSlider_h___ */
+#endif /* !FEQT_INCLUDED_SRC_extensions_QIAdvancedSlider_h */

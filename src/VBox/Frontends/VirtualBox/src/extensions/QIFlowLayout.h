@@ -1,4 +1,4 @@
-/* $Id: QIFlowLayout.h 127855 2019-01-01 01:45:53Z knut.osmundsen@oracle.com $ */
+/* $Id: QIFlowLayout.h 127883 2019-01-01 06:24:57Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Qt GUI - Qt extensions: QIFlowLayout class declaration.
  */
@@ -15,8 +15,8 @@
  * hope that it will be useful, but WITHOUT ANY WARRANTY of any kind.
  */
 
-#ifndef ___QIFlowLayout_h___
-#define ___QIFlowLayout_h___
+#ifndef FEQT_INCLUDED_SRC_extensions_QIFlowLayout_h
+#define FEQT_INCLUDED_SRC_extensions_QIFlowLayout_h
 #ifndef RT_WITHOUT_PRAGMA_ONCE
 # pragma once
 #endif
@@ -133,4 +133,4 @@ private:
     int m_iSpacingV;
 };
 
-#endif /* !___QIFlowLayout_h___ */
+#endif /* !FEQT_INCLUDED_SRC_extensions_QIFlowLayout_h */

@@ -1,4 +1,4 @@
-/* $Id: UIConverter.h 127855 2019-01-01 01:45:53Z knut.osmundsen@oracle.com $ */
+/* $Id: UIConverter.h 127883 2019-01-01 06:24:57Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIConverter declaration.
  */
@@ -15,8 +15,8 @@
  * hope that it will be useful, but WITHOUT ANY WARRANTY of any kind.
  */
 
-#ifndef ___UIConverter_h___
-#define ___UIConverter_h___
+#ifndef FEQT_INCLUDED_SRC_converter_UIConverter_h
+#define FEQT_INCLUDED_SRC_converter_UIConverter_h
 #ifndef RT_WITHOUT_PRAGMA_ONCE
 # pragma once
 #endif
@@ -127,5 +127,5 @@ private:
 /** Singleton UI converter 'official' name. */
 #define gpConverter UIConverter::instance()
 
-#endif /* !___UIConverter_h___ */
+#endif /* !FEQT_INCLUDED_SRC_converter_UIConverter_h */
 
