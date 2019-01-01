@@ -1,4 +1,4 @@
-/* $Id: VBoxStub.h 127877 2019-01-01 06:01:16Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxStub.h 127888 2019-01-01 06:31:29Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxStub - VirtualBox's Windows installer stub.
  */
@@ -26,5 +26,5 @@
 typedef BOOL (WINAPI *LPFN_ISWOW64PROCESS) (HANDLE, PBOOL);
 LPFN_ISWOW64PROCESS fnIsWow64Process;
 
-#endif
+#endif /* !VBOX_INCLUDED_SRC_Stub_VBoxStub_h */
 

@@ -1,4 +1,4 @@
-/* $Id: the-darwin-kernel.h 127862 2019-01-01 03:01:10Z knut.osmundsen@oracle.com $ */
+/* $Id: the-darwin-kernel.h 127888 2019-01-01 06:31:29Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Include all necessary headers for the Darwing kernel.
  */
@@ -236,5 +236,5 @@ DECLINLINE(int) RTErrConvertFromMachKernReturn(kern_return_t rc)
     }
 }
 
-#endif
+#endif /* !IPRT_INCLUDED_SRC_r0drv_darwin_the_darwin_kernel_h */
 

@@ -1,5 +1,5 @@
 
-/* $Id: vboximgOpts.h 127876 2019-01-01 05:59:26Z knut.osmundsen@oracle.com $ $Revision: 127876 $ $Date: 2019-01-01 06:59:26 +0100 (Tue, 01 Jan 2019) $ $Author: knut.osmundsen@oracle.com $ */
+/* $Id: vboximgOpts.h 127888 2019-01-01 06:31:29Z knut.osmundsen@oracle.com $ $Revision: 127888 $ $Date: 2019-01-01 07:31:29 +0100 (Tue, 01 Jan 2019) $ $Author: knut.osmundsen@oracle.com $ */
 
 /** @file
  * vboximgOpts.h
@@ -43,4 +43,4 @@ typedef struct vboximgOpts {
 } VBOXIMGOPTS;
 
 
-#endif
+#endif /* !VBOX_INCLUDED_SRC_vboximg_mount_vboximgOpts_h */

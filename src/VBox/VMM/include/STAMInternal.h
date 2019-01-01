@@ -1,4 +1,4 @@
-/* $Id: STAMInternal.h 127863 2019-01-01 03:13:40Z knut.osmundsen@oracle.com $ */
+/* $Id: STAMInternal.h 127888 2019-01-01 06:31:29Z knut.osmundsen@oracle.com $ */
 /** @file
  * STAM Internal Header.
  */
@@ -179,4 +179,4 @@ typedef STAMUSERPERVM *PSTAMUSERPERVM;
 
 RT_C_DECLS_END
 
-#endif
+#endif /* !VMM_INCLUDED_SRC_include_STAMInternal_h */

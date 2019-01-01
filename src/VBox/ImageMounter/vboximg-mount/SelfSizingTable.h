@@ -1,4 +1,4 @@
-/* $Id: SelfSizingTable.h 127876 2019-01-01 05:59:26Z knut.osmundsen@oracle.com $ $Revision: 127876 $ */
+/* $Id: SelfSizingTable.h 127888 2019-01-01 06:31:29Z knut.osmundsen@oracle.com $ $Revision: 127888 $ */
 /** @file
  * vboxraw header file
  */
@@ -310,4 +310,4 @@ void SELFSIZINGTABLE::displayTable()
         pRow = pRow->next;
     }
 }
-#endif
+#endif /* !VBOX_INCLUDED_SRC_vboximg_mount_SelfSizingTable_h */

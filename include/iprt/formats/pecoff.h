@@ -1,4 +1,4 @@
-/* $Id: pecoff.h 127859 2019-01-01 02:37:24Z knut.osmundsen@oracle.com $ */
+/* $Id: pecoff.h 127888 2019-01-01 06:31:29Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Windows NT PE & COFF Structures and Constants.
  */
@@ -2167,5 +2167,5 @@ typedef IMAGE_RELOCATION const *PCIMAGE_RELOCATION;
 
 /** @} */
 
-#endif
+#endif /* !IPRT_INCLUDED_formats_pecoff_h */
 
