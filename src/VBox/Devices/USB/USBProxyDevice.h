@@ -1,4 +1,4 @@
-/* $Id: USBProxyDevice.h 127867 2019-01-01 04:23:20Z knut.osmundsen@oracle.com $ */
+/* $Id: USBProxyDevice.h 127979 2019-01-07 12:26:01Z michal.necasek@oracle.com $ */
 /** @file
  * USBPROXY - USB proxy header
  */
@@ -213,9 +213,7 @@ typedef struct USBPROXYDEV
     /** Ignore one or two SET_CONFIGURATION operation.
      * See usbProxyDevSetCfg for details. */
     int                 cIgnoreSetConfigs;
-    /** Mask of the interfaces that the guest shall doesn't see.
-     * This is experimental!
-     */
+    /** Mask of the interfaces that the guest shall not see. */
     uint32_t            fMaskedIfs;
     /** Whether we've opened the device or not.
      * For dealing with failed construction (the destruct method is always called). */
