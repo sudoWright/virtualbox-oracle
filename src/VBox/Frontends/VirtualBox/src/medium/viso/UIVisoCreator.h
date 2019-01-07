@@ -1,4 +1,4 @@
-/* $Id: UIVisoCreator.h 127977 2019-01-07 12:15:00Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIVisoCreator.h 127982 2019-01-07 12:56:21Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVisoCreator class declaration.
  */
@@ -43,8 +43,6 @@ class UIActionPool;
 class UIToolBar;
 class UIVisoHostBrowser;
 class UIVisoContentBrowser;
-class VisoOptions;
-class BrowserOptions;
 
 class SHARED_LIBRARY_STUFF UIVisoCreator : public QIWithRetranslateUI<QIDialog>
 {
