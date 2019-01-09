@@ -1,6 +1,6 @@
-/* $Id: regops.c 127855 2019-01-01 01:45:53Z knut.osmundsen@oracle.com $ */
+/* $Id: regops.c 128049 2019-01-09 12:58:33Z knut.osmundsen@oracle.com $ */
 /** @file
- * vboxsf - VBox Linux Shared Folders, Regular file inode and file operations.
+ * vboxsf - VBox Linux Shared Folders VFS, Regular file inode and file operations.
  */
 
 /*
