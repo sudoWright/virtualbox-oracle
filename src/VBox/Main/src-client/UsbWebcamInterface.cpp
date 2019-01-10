@@ -1,4 +1,4 @@
-/* $Id: UsbWebcamInterface.cpp 127855 2019-01-01 01:45:53Z knut.osmundsen@oracle.com $ */
+/* $Id: UsbWebcamInterface.cpp 128078 2019-01-10 18:07:47Z klaus.espenlaub@oracle.com $ */
 /** @file
  * UsbWebcamInterface - Driver Interface for USB Webcam emulation.
  */
@@ -25,6 +25,7 @@
 #include "EmulatedUSBImpl.h"
 
 #include <VBox/vmm/pdmwebcaminfs.h>
+#include <VBox/err.h>
 
 
 typedef struct EMWEBCAMREMOTE
