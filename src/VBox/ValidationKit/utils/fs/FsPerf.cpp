@@ -1,4 +1,4 @@
-/* $Id: FsPerf.cpp 128265 2019-01-19 06:56:27Z knut.osmundsen@oracle.com $ */
+/* $Id: FsPerf.cpp 128267 2019-01-19 11:09:25Z michal.necasek@oracle.com $ */
 /** @file
  * FsPerf - File System (Shared Folders) Performance Benchmark.
  */
@@ -249,9 +249,11 @@ enum
     kCmdOpt_End
 };
 
+
 /*********************************************************************************************************************************
 *   Global Variables                                                                                                             *
 *********************************************************************************************************************************/
+
 /** Command line parameters */
 static const RTGETOPTDEF g_aCmdOptions[] =
 {
@@ -1877,7 +1879,7 @@ int main(int argc, char *argv[])
 
             case 'V':
             {
-                char szRev[] = "$Revision: 128265 $";
+                char szRev[] = "$Revision: 128267 $";
                 szRev[RT_ELEMENTS(szRev) - 2] = '\0';
                 RTPrintf(RTStrStrip(strchr(szRev, ':') + 1));
                 return RTEXITCODE_SUCCESS;
