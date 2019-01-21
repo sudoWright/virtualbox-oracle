@@ -1,4 +1,4 @@
-/* $Id: UIChooserModel.cpp 128286 2019-01-21 12:24:14Z sergey.dubov@oracle.com $ */
+/* $Id: UIChooserModel.cpp 128291 2019-01-21 13:33:09Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIChooserModel class implementation.
  */
@@ -481,6 +481,7 @@ void UIChooserModel::indentRoot(UIChooserItem *pNewRootItem)
     m_pRightRoot = new UIChooserItemGroup(scene(), pNewRootItem->toGroupItem(), false);
     m_pRightRoot->setPos(root()->geometry().width(), 0);
     m_pRightRoot->resize(root()->geometry().size());
+    m_pRightRoot->setLevel(pNewRootItem->level() + 1);
 
     /* Indent root: */
     root()->setRoot(false);
@@ -521,6 +522,7 @@ void UIChooserModel::unindentRoot()
     m_pRightRoot = new UIChooserItemGroup(scene(), root()->toGroupItem(), false);
     m_pRightRoot->setPos(0, 0);
     m_pRightRoot->resize(root()->geometry().size());
+    m_pRightRoot->setLevel(root()->level());
 
     /* Unindent root: */
     m_pAfterSlidingFocus = root();
