@@ -1,4 +1,4 @@
-/* $Id: UIVisoConfigurationPanel.h 128321 2019-01-23 07:39:42Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIVisoConfigurationPanel.h 128322 2019-01-23 07:50:10Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVisoConfigurationPanel class declaration.
  */
@@ -23,7 +23,6 @@
 
 /* GUI includes: */
 #include "UIVisoCreatorPanel.h"
-#include "UIVisoCreatorDefs.h"
 
 /* Forward declarations: */
 class QGridLayout;
