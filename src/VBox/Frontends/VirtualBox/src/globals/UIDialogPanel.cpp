@@ -1,4 +1,4 @@
-/* $Id: UIDialogPanel.cpp 128324 2019-01-23 09:26:31Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIDialogPanel.cpp 128327 2019-01-23 10:17:54Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVMLogViewer class implementation.
  */
@@ -32,7 +32,7 @@
 #endif
 
 
-UIDialogPanel::UIDialogPanel(QWidget *pParent)
+UIDialogPanel::UIDialogPanel(QWidget *pParent /* = 0 */)
     : QIWithRetranslateUI<QWidget>(pParent)
     , m_pMainLayout(0)
     , m_pCloseButton(0)
