@@ -1,4 +1,4 @@
-/* $Id: UIVisoHostBrowser.h 128284 2019-01-21 11:48:36Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIVisoHostBrowser.h 128343 2019-01-23 18:45:09Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVisoHostBrowser class declaration.
  */
@@ -45,6 +45,8 @@ public:
     UIVisoHostBrowser(QWidget *pParent = 0, QMenu *pMenu = 0);
     ~UIVisoHostBrowser();
     virtual void showHideHiddenObjects(bool bShow) /* override */;
+    QString currentPath() const;
+    void setCurrentPath(const QString &strPath);
 
 protected:
 
