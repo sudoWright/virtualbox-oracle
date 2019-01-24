@@ -1,4 +1,4 @@
-/* $Id: service.cpp 127855 2019-01-01 01:45:53Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxSharedFoldersSvc.cpp 128355 2019-01-24 08:57:03Z andreas.loeffler@oracle.com $ */
 /** @file
  * Shared Folders - Host service entry points.
  */
