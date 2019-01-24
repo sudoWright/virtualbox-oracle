@@ -1,4 +1,4 @@
-/* $Id: UIFileManager.cpp 128327 2019-01-23 10:17:54Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIFileManager.cpp 128368 2019-01-24 14:43:37Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIFileManager class implementation.
  */
@@ -100,7 +100,6 @@ void UIFileManagerOptions::destroy()
 
  UIFileManagerOptions::~UIFileManagerOptions()
 {
-
 }
 
 UIFileManagerOptions::UIFileManagerOptions()
