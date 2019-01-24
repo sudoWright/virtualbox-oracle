@@ -1,4 +1,4 @@
-/* $Id: service.cpp 128259 2019-01-18 13:17:20Z andreas.loeffler@oracle.com $ */
+/* $Id: VBoxDragAndDropSvc.cpp 128348 2019-01-24 08:41:38Z andreas.loeffler@oracle.com $ */
 /** @file
  * Drag and Drop Service.
  */
