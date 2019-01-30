@@ -1,4 +1,4 @@
-/* $Id: UIChooserItemMachine.h 128311 2019-01-22 12:18:08Z sergey.dubov@oracle.com $ */
+/* $Id: UIChooserItemMachine.h 128484 2019-01-30 12:48:39Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIChooserItemMachine class declaration.
  */
@@ -219,6 +219,8 @@ private:
       * @{ */
         /** Prepares all. */
         void prepare();
+        /** Cleanups all. */
+        void cleanup();
     /** @} */
 
     /** @name Item stuff.
