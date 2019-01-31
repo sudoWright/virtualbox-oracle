@@ -1,4 +1,4 @@
-/* $Id: GuestSessionImplTasks.h 127864 2019-01-01 03:22:50Z knut.osmundsen@oracle.com $ */
+/* $Id: GuestSessionImplTasks.h 128518 2019-01-31 11:53:09Z andreas.loeffler@oracle.com $ */
 /** @file
  * VirtualBox Main - Guest session tasks header.
  */
@@ -34,7 +34,7 @@
 
 class Guest;
 class GuestSessionTask;
-class GuestSessionTaskInternalOpen;
+class GuestSessionTaskInternalStart;
 
 
 /**
