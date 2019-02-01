@@ -1,4 +1,4 @@
-/* $Id: IEMAllCImpl.cpp.h 127855 2019-01-01 01:45:53Z knut.osmundsen@oracle.com $ */
+/* $Id: IEMAllCImpl.cpp.h 128545 2019-02-01 06:06:38Z ramshankar.venkataraman@oracle.com $ */
 /** @file
  * IEM - Instruction Implementation in C/C++ (code include).
  */
@@ -5994,7 +5994,7 @@ IEM_CIMPL_DEF_2(iemCImpl_mov_Cd_Rd, uint8_t, iCrReg, uint8_t, iGReg)
             case 8: rcStrict = iemVmxVmexitInstrMovToCr8(pVCpu, iGReg, cbInstr);                        break;
         }
         if (rcStrict != VINF_VMX_INTERCEPT_NOT_ACTIVE)
-                return rcStrict;
+            return rcStrict;
     }
 #endif
 
