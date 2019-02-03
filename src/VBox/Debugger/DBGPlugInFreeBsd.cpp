@@ -1,4 +1,4 @@
-/* $Id: DBGPlugInFreeBsd.cpp 128616 2019-02-03 20:59:09Z alexander.eichner@oracle.com $ */
+/* $Id: DBGPlugInFreeBsd.cpp 128617 2019-02-03 23:38:41Z alexander.eichner@oracle.com $ */
 /** @file
  * DBGPlugInFreeBsd - Debugger and Guest OS Digger Plugin For FreeBSD.
  */
@@ -54,7 +54,7 @@ typedef enum FBSDPROBESTATE
     /** Last symbol was a symbol terminator character. */
     FBSDPROBESTATE_DYNSTR_SYM_TERMINATOR,
     /** Last symbol was a symbol character. */
-    FBSDPROBESTATE_DYNSTR_SYM_CHAR,
+    FBSDPROBESTATE_DYNSTR_SYM_CHAR
 } FBSDPROBESTATE;
 
 /**
