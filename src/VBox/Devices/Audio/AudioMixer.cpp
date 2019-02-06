@@ -1,4 +1,4 @@
-/* $Id: AudioMixer.cpp 128105 2019-01-11 13:53:44Z andreas.loeffler@oracle.com $ */
+/* $Id: AudioMixer.cpp 128673 2019-02-06 18:53:14Z alexander.eichner@oracle.com $ */
 /** @file
  * Audio mixing routines for multiplexing audio sources in device emulations.
  *
@@ -858,6 +858,7 @@ static void audioMixerSinkDestroyInternal(PAUDMIXSINK pSink)
         pSink->pszName = NULL;
     }
 
+    AudioMixBufDestroy(&pSink->MixBuf);
     RTCritSectDelete(&pSink->CritSect);
 
     RTMemFree(pSink);
