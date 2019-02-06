@@ -1,4 +1,4 @@
-/* $Id: ldrFile.cpp 127855 2019-01-01 01:45:53Z knut.osmundsen@oracle.com $ */
+/* $Id: ldrFile.cpp 128674 2019-02-06 19:46:49Z alexander.eichner@oracle.com $ */
 /** @file
  * IPRT - Binary Image Loader, The File Oriented Parts.
  */
@@ -185,12 +185,22 @@ static DECLCALLBACK(int) rtldrFileDestroy(PRTLDRREADER pReader)
 {
     int rc = VINF_SUCCESS;
     PRTLDRREADERFILE pFileReader = (PRTLDRREADERFILE)pReader;
+
+    Assert(!pFileReader->cMappings);
+
     if (pFileReader->hFile != NIL_RTFILE)
     {
         rc = RTFileClose(pFileReader->hFile);
         AssertRC(rc);
         pFileReader->hFile = NIL_RTFILE;
     }
+
+    if (pFileReader->pvMapping)
+    {
+        RTMemFree(pFileReader->pvMapping);
+        pFileReader->pvMapping = NULL;
+    }
+
     RTMemFree(pFileReader);
     return rc;
 }
