@@ -1,4 +1,4 @@
-/* $Id: UIFileManagerSessionPanel.cpp 128487 2019-01-30 14:18:45Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIFileManagerSessionPanel.cpp 128655 2019-02-06 09:50:26Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVMLogViewer class implementation.
  */
@@ -136,6 +136,7 @@ void UIGuestSessionCreateWidget::prepareWidgets()
         connect(m_pCloseButton, &QPushButton::clicked, this, &UIGuestSessionCreateWidget::sigCloseSession);
     }
     m_pMainLayout->insertStretch(-1, 1);
+    switchSessionCreateMode();
     retranslateUi();
 }
 
