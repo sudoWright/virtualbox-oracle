@@ -1,4 +1,4 @@
-/* $Id: UIChooserItem.h 128506 2019-01-30 18:12:57Z sergey.dubov@oracle.com $ */
+/* $Id: UIChooserItem.h 128698 2019-02-07 15:38:32Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIChooserItem class declaration.
  */
@@ -194,7 +194,7 @@ public:
     /** @name Layout stuff.
       * @{ */
         /** Updates geometry. */
-        void updateGeometry();
+        virtual void updateGeometry() /* override */;
 
         /** Updates layout. */
         virtual void updateLayout() = 0;
