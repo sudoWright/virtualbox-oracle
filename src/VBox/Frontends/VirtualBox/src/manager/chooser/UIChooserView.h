@@ -1,4 +1,4 @@
-/* $Id: UIChooserView.h 128731 2019-02-08 15:38:03Z sergey.dubov@oracle.com $ */
+/* $Id: UIChooserView.h 128735 2019-02-08 18:05:46Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIChooserView class declaration.
  */
@@ -51,12 +51,6 @@ public:
     /** @} */
 
 public slots:
-
-    /** @name General stuff.
-      * @{ */
-        /** Handles focus change to @a pFocusItem. */
-        void sltFocusChanged();
-    /** @} */
 
     /** @name Layout stuff.
       * @{ */
