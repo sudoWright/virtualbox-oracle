@@ -1,6 +1,5 @@
-/** $Id: VDScriptAst.cpp 127855 2019-01-01 01:45:53Z knut.osmundsen@oracle.com $ */
+/* $Id: VDScriptAst.cpp 128739 2019-02-09 01:55:37Z knut.osmundsen@oracle.com $ */
 /** @file
- *
  * VBox HDD container test utility - scripting engine AST node related functions.
  */
 
