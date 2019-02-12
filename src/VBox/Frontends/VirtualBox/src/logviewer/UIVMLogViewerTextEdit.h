@@ -1,4 +1,4 @@
-/* $Id: UIVMLogViewerTextEdit.h 128540 2019-01-31 19:05:53Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIVMLogViewerTextEdit.h 128789 2019-02-12 12:25:20Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVMLogViewer class declaration.
  */
@@ -89,6 +89,8 @@ private slots:
 
 private:
 
+    /** Configures this (such as palette etc.) */
+    void configure();
     void prepare();
     void prepareWidgets();
     QPair<int, QString> bookmarkForPos(const QPoint &position);
