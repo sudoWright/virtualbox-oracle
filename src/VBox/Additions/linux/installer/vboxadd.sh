@@ -1,7 +1,7 @@
 #! /bin/sh
-# $Id: vboxadd.sh 128832 2019-02-14 10:10:46Z noreply@oracle.com $
+# $Id: vboxadd.sh 128833 2019-02-14 10:32:59Z noreply@oracle.com $
 ## @file
-# Linux Additions kernel module init script ($Revision: 128832 $)
+# Linux Additions kernel module init script ($Revision: 128833 $)
 #
 
 #
@@ -564,8 +564,8 @@ setup)
 # Builds kernel modules for the specified kernels if they are not already built.
 quicksetup)
     if test x"$2" = xall; then
-       for i in /lib/modules/*; do 
-           KERN_VER="${i%/misc}"
+       for topi in /lib/modules/*; do
+           KERN_VER="${topi%/misc}"
            KERN_VER="${KERN_VER#/lib/modules/}"
            setup_modules "$KERN_VER"
         done
