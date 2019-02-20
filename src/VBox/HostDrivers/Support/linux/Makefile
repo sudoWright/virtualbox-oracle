@@ -1,4 +1,4 @@
-# $Id: Makefile 128953 2019-02-20 18:23:31Z knut.osmundsen@oracle.com $
+# $Id: Makefile 128954 2019-02-20 18:36:27Z knut.osmundsen@oracle.com $
 ## @file
 # Makefile for the VirtualBox Linux Host Driver.
 #
@@ -171,7 +171,7 @@ VBOXMOD_CFLAGS = -include $(VBOXDRV_DIR)include/VBox/SUPDrvMangling.h \
 
 include $(obj)/Makefile-footer.gmk
 
-check: $(MODULE)
+check: $(VBOXMOD_0_TARGET)
 	@if ! readelf -p __ksymtab_strings vboxdrv.ko | grep -E "\[.*\]  *(RT|g_..*RT.*)"; then \
 	    echo "All exported IPRT symbols are properly renamed!"; \
 	 else \
