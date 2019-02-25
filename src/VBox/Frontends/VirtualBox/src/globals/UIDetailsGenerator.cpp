@@ -1,4 +1,4 @@
-/* $Id: UIDetailsGenerator.cpp 129029 2019-02-25 13:57:39Z sergey.dubov@oracle.com $ */
+/* $Id: UIDetailsGenerator.cpp 129030 2019-02-25 14:20:51Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIDetailsGenerator implementation.
  */
