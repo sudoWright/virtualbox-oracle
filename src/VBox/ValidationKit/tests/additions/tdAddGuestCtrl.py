@@ -27,7 +27,7 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 129047 $"
+__version__ = "$Revision: 129048 $"
 
 # Disable bitching about too many arguments per function.
 # pylint: disable=R0913
@@ -44,7 +44,6 @@ __version__ = "$Revision: 129047 $"
 
 # Standard Python imports.
 from array import array
-import binascii
 import errno
 import os
 import random
