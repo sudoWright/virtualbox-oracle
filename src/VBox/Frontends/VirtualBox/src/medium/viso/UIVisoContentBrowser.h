@@ -1,4 +1,4 @@
-/* $Id: UIVisoContentBrowser.h 129119 2019-03-01 10:05:21Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIVisoContentBrowser.h 129120 2019-03-01 10:19:54Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVisoContentBrowser class declaration.
  */
@@ -94,7 +94,6 @@ private:
     void                    prepareConnections();
     void                    initializeModel();
     UICustomFileSystemItem *rootItem();
-
 
     /** @name Index conversion functions. These are half-smart and tries to determine the source model before conversion.
       * @{ */
