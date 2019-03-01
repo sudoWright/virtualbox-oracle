@@ -1,4 +1,4 @@
-/* $Id: UIVisoCreator.cpp 129081 2019-02-27 16:03:48Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIVisoCreator.cpp 129119 2019-03-01 10:05:21Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVisoCreator class implementation.
  */
@@ -16,10 +16,10 @@
  */
 
 /* Qt includes: */
+#include <QGridLayout>
 #include <QMenuBar>
 #include <QPushButton>
 #include <QStyle>
-#include <QGridLayout>
 
 /* GUI includes: */
 #include "QIDialogButtonBox.h"

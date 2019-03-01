@@ -1,4 +1,4 @@
-/* $Id: UIVisoConfigurationPanel.cpp 128834 2019-02-14 10:39:39Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIVisoConfigurationPanel.cpp 129119 2019-03-01 10:05:21Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVisoConfigurationPanel class implementation.
  */
@@ -16,17 +16,10 @@
  */
 
 /* Qt includes: */
-#include <QCheckBox>
+#include <QComboBox>
 #include <QGridLayout>
-#include <QTextEdit>
-#include <QPushButton>
-#include <QSplitter>
-#include <QStyle>
-#include <QTextBlock>
 
 /* GUI includes: */
-#include <QComboBox>
-#include "QIDialogButtonBox.h"
 #include "UIIconPool.h"
 #include "QILabel.h"
 #include "QILineEdit.h"
