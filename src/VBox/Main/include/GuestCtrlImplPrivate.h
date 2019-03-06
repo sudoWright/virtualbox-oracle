@@ -1,4 +1,4 @@
-/* $Id: GuestCtrlImplPrivate.h 129207 2019-03-06 16:40:18Z andreas.loeffler@oracle.com $ */
+/* $Id: GuestCtrlImplPrivate.h 129208 2019-03-06 16:47:50Z andreas.loeffler@oracle.com $ */
 /** @file
  * Internal helpers/structures for guest control functionality.
  */
@@ -1151,7 +1151,7 @@ protected:
  */
 class GuestObject : public GuestBase
 {
-    friend GuestSession;
+    friend class GuestSession;
 
 public:
 
