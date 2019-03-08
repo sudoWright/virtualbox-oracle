@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# $Id: vbox.py 129121 2019-03-01 10:21:28Z andreas.loeffler@oracle.com $
+# $Id: vbox.py 129242 2019-03-08 10:47:45Z andreas.loeffler@oracle.com $
 # pylint: disable=C0302
 
 """
@@ -27,7 +27,7 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 129121 $"
+__version__ = "$Revision: 129242 $"
 
 # pylint: disable=unnecessary-semicolon
 
@@ -3176,7 +3176,7 @@ class TestDriver(base.TestDriver):                                              
 
         Returns task result on success.
         """
-        # All async methods ends with the following to args.
+        # All async methods ends with the following two args.
         cMsTimeout    = aArgs[-2];
         fIgnoreErrors = aArgs[-1];
 
