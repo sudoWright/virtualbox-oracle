@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# $Id: virtual_test_sheriff.py 129283 2019-03-11 14:03:37Z klaus.espenlaub@oracle.com $
+# $Id: virtual_test_sheriff.py 129286 2019-03-11 17:37:35Z klaus.espenlaub@oracle.com $
 # pylint: disable=C0301
 
 """
@@ -35,7 +35,7 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 129283 $"
+__version__ = "$Revision: 129286 $"
 
 
 # Standard python imports
@@ -310,7 +310,7 @@ class VirtualTestSheriff(object): # pylint: disable=R0903
 
         if self.oConfig.sLogFile:
             self.oLogFile = open(self.oConfig.sLogFile, "a");
-            self.oLogFile.write('VirtualTestSheriff: $Revision: 129283 $ \n');
+            self.oLogFile.write('VirtualTestSheriff: $Revision: 129286 $ \n');
 
 
     def eprint(self, sText):
@@ -465,8 +465,13 @@ class VirtualTestSheriff(object): # pylint: disable=R0903
                     # Check for bad failure reasons.
                     oFailure = None;
                     if oSet.enmStatus in TestSetData.kasBadTestStatuses:
-                        oFailure = self.oTestResultFailureLogic.getById(oSet.idTestResult);
-                    if oFailure is not None and oFailure.idFailureReason in aidFailureReasons:
+                        (oTree, _ ) = self.oTestResultLogic.fetchResultTree(oSet.idTestSet)
+                        aoFailedResults = oTree.getListOfFailures();
+                        for oFailedResult in aoFailedResults:
+                            if oFailedResult.idFailureReason in aidFailureReasons:
+                                oFailure = oFailedResult;
+                                break;
+                    if oFailure is not None:
                         cBad += 1;
                     else:
                         # This is an okay test result then.
@@ -667,7 +672,7 @@ class VirtualTestSheriff(object): # pylint: disable=R0903
         for idTestResult, tReason in dReasonForResultId.items():
             oFailureReason = self.getFailureReason(tReason);
             if oFailureReason is not None:
-                sComment = 'Set by $Revision: 129283 $' # Handy for reverting later.
+                sComment = 'Set by $Revision: 129286 $' # Handy for reverting later.
                 if idTestResult in dCommentForResultId:
                     sComment += ': ' + dCommentForResultId[idTestResult];
 
