@@ -1,4 +1,4 @@
-/* $Id: UIChooserNodeMachine.h 129267 2019-03-10 19:45:56Z sergey.dubov@oracle.com $ */
+/* $Id: UIChooserNodeMachine.h 129324 2019-03-13 16:22:23Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIChooserNodeMachine class declaration.
  */
@@ -79,6 +79,8 @@ public:
 
     /** Returns position of specified node inside this one. */
     virtual int positionOf(UIChooserNode *pNode) /* override */;
+
+    virtual void searchForNodes(const QString &strSearchTerm, int iItemSearchFlags, QList<UIChooserNode*> &matchedItems) /* override */;
 
 protected:
 

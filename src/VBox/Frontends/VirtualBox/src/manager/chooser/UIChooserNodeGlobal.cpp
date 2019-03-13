@@ -1,4 +1,4 @@
-/* $Id: UIChooserNodeGlobal.cpp 129267 2019-03-10 19:45:56Z sergey.dubov@oracle.com $ */
+/* $Id: UIChooserNodeGlobal.cpp 129324 2019-03-13 16:22:23Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIChooserNodeGlobal class implementation.
  */
@@ -112,6 +112,22 @@ int UIChooserNodeGlobal::positionOf(UIChooserNode *pNode)
 {
     Q_UNUSED(pNode);
     AssertFailedReturn(0);
+}
+
+void UIChooserNodeGlobal::searchForNodes(const QString &strSearchTerm, int iItemSearchFlags, QList<UIChooserNode*> &matchedItems)
+{
+    if (!(iItemSearchFlags & UIChooserItemSearchFlag_Global))
+        return;
+    if (iItemSearchFlags & UIChooserItemSearchFlag_ExactName)
+    {
+        if (name() == strSearchTerm)
+            matchedItems << this;
+    }
+    else
+    {
+        if (name().contains(strSearchTerm, Qt::CaseInsensitive))
+            matchedItems << this;
+    }
 }
 
 void UIChooserNodeGlobal::retranslateUi()
