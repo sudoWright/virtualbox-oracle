@@ -1,4 +1,4 @@
-/* $Id: avlpv.cpp 127855 2019-01-01 01:45:53Z knut.osmundsen@oracle.com $ */
+/* $Id: avlpv.cpp 129375 2019-03-15 14:14:18Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - AVL tree, void *, unique keys.
  */
@@ -25,7 +25,7 @@
  */
 
 #ifndef NOFILEID
-static const char szFileId[] = "Id: kAVLPVInt.c,v 1.5 2003/02/13 02:02:35 bird Exp $";
+/*static const char szFileId[] = "Id: kAVLPVInt.c,v 1.5 2003/02/13 02:02:35 bird Exp $";*/
 #endif
 
 
