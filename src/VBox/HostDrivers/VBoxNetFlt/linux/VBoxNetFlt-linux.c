@@ -1,4 +1,4 @@
-/* $Id: VBoxNetFlt-linux.c 127855 2019-01-01 01:45:53Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxNetFlt-linux.c 129370 2019-03-15 11:37:18Z noreply@oracle.com $ */
 /** @file
  * VBoxNetFlt - Network Filter Driver (Host), Linux Specific Code.
  */
@@ -215,8 +215,8 @@ typedef struct VBOXNETFLTNOTIFIER *PVBOXNETFLTNOTIFIER;
 /*********************************************************************************************************************************
 *   Internal Functions                                                                                                           *
 *********************************************************************************************************************************/
-static int      VBoxNetFltLinuxInit(void);
-static void     VBoxNetFltLinuxUnload(void);
+static int      __init VBoxNetFltLinuxInit(void);
+static void     __exit VBoxNetFltLinuxUnload(void);
 static void     vboxNetFltLinuxForwardToIntNet(PVBOXNETFLTINS pThis, struct sk_buff *pBuf);
 
 
