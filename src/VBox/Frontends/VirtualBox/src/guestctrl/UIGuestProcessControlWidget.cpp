@@ -1,4 +1,4 @@
-/* $Id: UIGuestProcessControlWidget.cpp 129277 2019-03-11 10:43:02Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIGuestProcessControlWidget.cpp 129451 2019-03-19 13:39:12Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIGuestProcessControlWidget class implementation.
  */
@@ -135,6 +135,7 @@ UIGuestControlTreeWidget::UIGuestControlTreeWidget(QWidget *pParent /* = 0 */)
     :QITreeWidget(pParent)
 {
     setSelectionMode(QAbstractItemView::SingleSelection);
+    setAlternatingRowColors(true);
 }
 
 UIGuestControlTreeItem *UIGuestControlTreeWidget::selectedItem()
