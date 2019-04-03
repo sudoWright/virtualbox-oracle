@@ -1,4 +1,4 @@
-/* $Id: RTHttp.cpp 127855 2019-01-01 01:45:53Z knut.osmundsen@oracle.com $ */
+/* $Id: RTHttp.cpp 129781 2019-04-03 19:27:37Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Utility for retriving URLs.
  */
@@ -110,7 +110,7 @@ int main(int argc, char **argv)
                 return RTEXITCODE_SUCCESS;
 
             case 'V':
-                RTPrintf("$Revision: 127855 $\n");
+                RTPrintf("$Revision: 129781 $\n");
                 return RTEXITCODE_SUCCESS;
 
             case 's':
@@ -172,6 +172,7 @@ int main(int argc, char **argv)
         }
     }
 
+    RTHttpDestroy(hHttp);
     return rcExit;
 }
 
