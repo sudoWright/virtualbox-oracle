@@ -1,4 +1,4 @@
-/* $Id: HostDnsService.h 129767 2019-04-03 15:29:37Z andreas.loeffler@oracle.com $ */
+/* $Id: HostDnsService.h 129785 2019-04-04 11:36:37Z andreas.loeffler@oracle.com $ */
 /** @file
  * Host DNS listener.
  */
@@ -65,8 +65,7 @@ public:
     /* @note: method will wait till client call
        HostDnsService::monitorThreadInitializationDone() */
     virtual HRESULT init(HostDnsMonitorProxy *pProxy);
-
-    void uninit(void);
+    virtual void uninit(void);
 
 protected:
 
