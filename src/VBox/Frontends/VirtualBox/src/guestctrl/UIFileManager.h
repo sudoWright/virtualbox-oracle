@@ -1,4 +1,4 @@
-/* $Id: UIFileManager.h 129645 2019-03-28 10:17:11Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIFileManager.h 129782 2019-04-04 07:27:13Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIFileManager class declaration.
  */
@@ -67,7 +67,6 @@ public:
     bool fAskDeleteConfirmation;
     bool fShowHumanReadableSizes;
     bool fShowHiddenObjects;
-    bool fShowBreadCrumbs;
 
 private:
 
