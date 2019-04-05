@@ -1,4 +1,4 @@
-/* $Id: HostDnsService.h 129787 2019-04-04 11:43:28Z andreas.loeffler@oracle.com $ */
+/* $Id: HostDnsService.h 129809 2019-04-05 19:08:10Z andreas.loeffler@oracle.com $ */
 /** @file
  * Host DNS listener.
  */
@@ -153,7 +153,7 @@ protected:
 
 private:
 
-    HRESULT updateInfo();
+    int updateInfo(void);
     static void hostDnsServiceStoreCallback(void *store, void *arrayRef, void *info);
     struct Data;
     Data *m;
