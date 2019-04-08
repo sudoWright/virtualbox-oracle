@@ -1,4 +1,4 @@
-/* $Id: UIWizardImportApp.cpp 129866 2019-04-08 11:47:34Z sergey.dubov@oracle.com $ */
+/* $Id: UIWizardImportApp.cpp 129874 2019-04-08 14:45:43Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardImportApp class implementation.
  */
@@ -249,5 +249,5 @@ void UIWizardImportApp::sltCustomButtonClicked(int iId)
     }
 }
 
-#include "UIWizardImportApp.moc"
 
+#include "UIWizardImportApp.moc"
