@@ -1,4 +1,4 @@
-/* $Id: UIWizardExportAppPageBasic2.cpp 129902 2019-04-09 13:42:47Z sergey.dubov@oracle.com $ */
+/* $Id: UIWizardExportAppPageBasic2.cpp 129903 2019-04-09 13:52:22Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardExportAppPageBasic2 class implementation.
  */
@@ -46,7 +46,6 @@
 
 /* COM includes: */
 #include "CCloudClient.h"
-#include "CCloudProvider.h"
 
 
 /*********************************************************************************************************************************
