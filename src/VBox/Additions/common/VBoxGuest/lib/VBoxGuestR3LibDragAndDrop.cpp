@@ -1,4 +1,4 @@
-/* $Id: VBoxGuestR3LibDragAndDrop.cpp 128259 2019-01-18 13:17:20Z andreas.loeffler@oracle.com $ */
+/* $Id: VBoxGuestR3LibDragAndDrop.cpp 129936 2019-04-10 11:35:55Z andreas.loeffler@oracle.com $ */
 /** @file
  * VBoxGuestR3Lib - Ring-3 Support Library for VirtualBox guest additions, Drag & Drop.
  */
@@ -400,7 +400,7 @@ static int vbglR3DnDHGRecvURIData(PVBGLR3GUESTDNDCMDCTX pCtx, PVBOXDNDSNDDATAHDR
     if (RT_FAILURE(rc))
     {
         RTMemFree(pvChunk);
-        return VERR_NO_MEMORY;
+        return rc;
     }
 
     const char *pszDropDir = pDroppedFiles->GetDirAbs();
