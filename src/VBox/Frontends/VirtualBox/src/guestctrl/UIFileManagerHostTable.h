@@ -1,4 +1,4 @@
-/* $Id: UIFileManagerHostTable.h 129131 2019-03-01 13:07:07Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIFileManagerHostTable.h 130054 2019-04-16 15:52:58Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIFileManagerHostTable class declaration.
  */
@@ -55,6 +55,7 @@ protected:
     virtual QString fsObjectPropertyString() /* override */;
     virtual void    showProperties() /* override */;
     virtual void    determineDriveLetters() /* override */;
+    virtual void    determinePathSeparator() /* override */;
     virtual void    prepareToolbar() /* override */;
     virtual void    createFileViewContextMenu(const QWidget *pWidget, const QPoint &point) /* override */;
     /** @name Copy/Cut host-to-host stuff. Currently not implemented.
