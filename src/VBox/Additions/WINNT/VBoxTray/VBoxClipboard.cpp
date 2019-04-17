@@ -1,4 +1,4 @@
-/* $Id: VBoxClipboard.cpp 130086 2019-04-17 16:03:40Z andreas.loeffler@oracle.com $ */
+/* $Id: VBoxClipboard.cpp 130087 2019-04-17 16:10:24Z andreas.loeffler@oracle.com $ */
 /** @file
  * VBoxClipboard - Shared clipboard, Windows Guest Implementation.
  */
@@ -46,6 +46,7 @@ struct _VBOXCLIPBOARDCONTEXT
     /** Windows-specific context data. */
     VBOXCLIPBOARDWINCTX      Win;
 };
+
 
 /*********************************************************************************************************************************
 *   Static variables                                                                                                             *
