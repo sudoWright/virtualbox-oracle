@@ -1,4 +1,4 @@
-/** $Id: VBoxServiceClipboard-os2.cpp 127855 2019-01-01 01:45:53Z knut.osmundsen@oracle.com $ */
+/** $Id: VBoxServiceClipboard-os2.cpp 130100 2019-04-17 19:51:54Z andreas.loeffler@oracle.com $ */
 /** @file
  * VBoxService - Guest Additions Clipboard Service, OS/2.
  */
@@ -52,6 +52,7 @@
 #include <iprt/time.h>
 #include <iprt/utf16.h>
 #include <VBox/VBoxGuestLib.h>
+#include <VBox/GuestHost/SharedClipboard.h>
 #include <VBox/HostServices/VBoxClipboardSvc.h>
 #include "VBoxServiceInternal.h"
 
