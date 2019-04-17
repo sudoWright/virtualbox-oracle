@@ -1,4 +1,4 @@
-/* $Id: x11-stub.cpp 127855 2019-01-01 01:45:53Z knut.osmundsen@oracle.com $*/
+/* $Id: VBoxSharedClipboardSvc-x11-stubs.cpp 130075 2019-04-17 13:43:22Z andreas.loeffler@oracle.com $*/
 /** @file
  * Shared Clipboard Service - Linux host, a stub version with no functionality for use on headless hosts.
  */

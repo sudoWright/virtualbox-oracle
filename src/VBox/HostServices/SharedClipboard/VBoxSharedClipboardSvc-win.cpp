@@ -1,4 +1,4 @@
-/* $Id: VBoxClipboard-win.cpp 130066 2019-04-17 12:03:42Z andreas.loeffler@oracle.com $ */
+/* $Id: VBoxSharedClipboardSvc-win.cpp 130075 2019-04-17 13:43:22Z andreas.loeffler@oracle.com $ */
 /** @file
  * Shared Clipboard Service - Win32 host.
  */
