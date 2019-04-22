@@ -1,4 +1,4 @@
-/* $Id: VMM.cpp 127855 2019-01-01 01:45:53Z knut.osmundsen@oracle.com $ */
+/* $Id: VMM.cpp 130174 2019-04-22 04:35:20Z ramshankar.venkataraman@oracle.com $ */
 /** @file
  * VMM - The Virtual Machine Monitor Core.
  */
@@ -1646,7 +1646,7 @@ static DECLCALLBACK(int) vmmR3SendInitIpi(PVM pVM, VMCPUID idCpu)
 #ifdef VBOX_WITH_NESTED_HWVIRT_VMX
     PCCPUMCTX pCtx = CPUMQueryGuestCtxPtr(pVCpu);
     if (CPUMIsGuestInVmxNonRootMode(pCtx))
-        return VBOXSTRICTRC_TODO(IEMExecVmxVmexitInitIpi(pVCpu));
+        return VBOXSTRICTRC_TODO(IEMExecVmxVmexit(pVCpu, VMX_EXIT_INIT_SIGNAL));
 #endif
 
     /** @todo Figure out how to handle a SVM nested-guest intercepts here for INIT
