@@ -1,4 +1,4 @@
-/* $Id: VBoxClipboard.cpp 127855 2019-01-01 01:45:53Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxClipboard.cpp 130272 2019-04-26 06:41:46Z andreas.loeffler@oracle.com $ */
 /** @file
  * VBoxClipboard; Haiku Guest Additions, implementation.
  */
@@ -344,7 +344,7 @@ void VBoxClipboardService::MessageReceived(BMessage *message)
 
             be_clipboard->Unlock();
 
-            VbglR3ClipboardReportFormats(fClientId, formats);
+            VbglR3ClipboardWriteFormats(fClientId, formats);
             break;
         }
 
