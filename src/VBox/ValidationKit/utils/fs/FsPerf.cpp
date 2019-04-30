@@ -1,4 +1,4 @@
-/* $Id: FsPerf.cpp 130340 2019-04-30 16:32:43Z knut.osmundsen@oracle.com $ */
+/* $Id: FsPerf.cpp 130341 2019-04-30 16:35:01Z knut.osmundsen@oracle.com $ */
 /** @file
  * FsPerf - File System (Shared Folders) Performance Benchmark.
  */
@@ -704,6 +704,7 @@ static int FsPerfCommsWriteFile(const char *pszFilename, size_t cchFilename, con
 }
 
 
+#if 0 // currently unused
 /**
  * Creates a file under g_szCommsDir with the given content, then renames it
  * into g_szCommsSubDir.
@@ -731,6 +732,7 @@ static int FsPerfCommsWriteFileAndRename(const char *pszFilename, size_t cchFile
     }
     return rc;
 }
+#endif
 
 
 /**
@@ -5177,7 +5179,7 @@ int main(int argc, char *argv[])
 
             case 'V':
             {
-                char szRev[] = "$Revision: 130340 $";
+                char szRev[] = "$Revision: 130341 $";
                 szRev[RT_ELEMENTS(szRev) - 2] = '\0';
                 RTPrintf(RTStrStrip(strchr(szRev, ':') + 1));
                 return RTEXITCODE_SUCCESS;
