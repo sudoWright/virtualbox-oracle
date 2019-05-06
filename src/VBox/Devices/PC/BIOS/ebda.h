@@ -1,6 +1,6 @@
-/* $Id: ebda.h 127867 2019-01-01 04:23:20Z knut.osmundsen@oracle.com $ */
+/* $Id: ebda.h 130403 2019-05-06 21:17:11Z michal.necasek@oracle.com $ */
 /** @file
- * PC BIOS - ???
+ * PC BIOS - EBDA (Extended BIOS Data Area) Definition
  */
 
 /*
