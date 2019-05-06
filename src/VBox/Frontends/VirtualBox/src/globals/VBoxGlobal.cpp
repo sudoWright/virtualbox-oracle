@@ -1,4 +1,4 @@
-/* $Id: VBoxGlobal.cpp 130074 2019-04-17 13:28:48Z serkan.bayraktar@oracle.com $ */
+/* $Id: VBoxGlobal.cpp 130392 2019-05-06 17:20:47Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - VBoxGlobal class implementation.
  */
@@ -2635,7 +2635,7 @@ QUuid VBoxGlobal::openMedium(UIMediumDeviceType enmMediumType, QString strMedium
         return guiMedium.id();
     }
     else
-        msgCenter().cannotOpenMedium(comVBox, enmMediumType, strMediumLocation, pParent);
+        msgCenter().cannotOpenMedium(comVBox, strMediumLocation, pParent);
 
     return QUuid();
 }
