@@ -1,4 +1,4 @@
-/* $Id: UIMachineSettingsStorage.h 130557 2019-05-14 15:52:41Z sergey.dubov@oracle.com $ */
+/* $Id: UIMachineSettingsStorage.h 130558 2019-05-14 16:12:59Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIMachineSettingsStorage class declaration.
  */
@@ -89,6 +89,9 @@ enum PixmapType
     SCSIControllerNormal,
     SCSIControllerExpand,
     SCSIControllerCollapse,
+    SASControllerNormal,
+    SASControllerExpand,
+    SASControllerCollapse,
     USBControllerNormal,
     USBControllerExpand,
     USBControllerCollapse,
