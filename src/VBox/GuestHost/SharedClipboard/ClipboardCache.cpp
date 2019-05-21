@@ -1,4 +1,4 @@
-/* $Id: ClipboardCache.cpp 130636 2019-05-18 15:48:41Z andreas.loeffler@oracle.com $ */
+/* $Id: ClipboardCache.cpp 130684 2019-05-21 08:36:42Z andreas.loeffler@oracle.com $ */
 /** @file
  * Shared Clipboard - Cache handling.
  */
@@ -251,12 +251,12 @@ int SharedClipboardCache::OpenTemp(SHAREDCLIPBOARDCACHEFLAGS fFlags /* = SHAREDC
     return rc;
 }
 
-int SharedClipboardCache::Reset(bool fRemoveDropDir)
+int SharedClipboardCache::Reset(bool fDeleteContent)
 {
     int rc = closeInternal();
     if (RT_SUCCESS(rc))
     {
-        if (fRemoveDropDir)
+        if (fDeleteContent)
         {
             rc = Rollback();
         }
