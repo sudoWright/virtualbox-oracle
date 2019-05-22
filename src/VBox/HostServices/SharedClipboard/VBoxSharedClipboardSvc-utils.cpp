@@ -1,4 +1,4 @@
-/* $Id$ */
+/* $Id: VBoxSharedClipboardSvc-utils.cpp 130720 2019-05-22 09:58:53Z andreas.loeffler@oracle.com $ */
 /** @file
  * Shared Clipboard Service - Host service utility functions.
  */
