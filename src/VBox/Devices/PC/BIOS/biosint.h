@@ -1,6 +1,6 @@
-/* $Id: biosint.h 129887 2019-04-09 10:13:30Z michal.necasek@oracle.com $ */
+/* $Id: biosint.h 130793 2019-05-24 10:19:34Z michal.necasek@oracle.com $ */
 /** @file
- * PC BIOS - ???
+ * PC BIOS - BIOS internal definitions.
  */
 
 /*
