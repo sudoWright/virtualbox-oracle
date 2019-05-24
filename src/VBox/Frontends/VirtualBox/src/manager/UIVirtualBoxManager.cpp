@@ -1,4 +1,4 @@
-/* $Id: UIVirtualBoxManager.cpp 130800 2019-05-24 12:01:05Z sergey.dubov@oracle.com $ */
+/* $Id: UIVirtualBoxManager.cpp 130801 2019-05-24 12:09:08Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVirtualBoxManager class implementation.
  */
@@ -1248,7 +1248,7 @@ void UIVirtualBoxManager::prepare()
 
     /* Cache medium data early if necessary: */
     if (vboxGlobal().agressiveCaching())
-        vboxGlobal().startMediaEnumeration();
+        vboxGlobal().startMediumEnumeration();
 
     /* Prepare: */
     prepareIcon();
