@@ -1,4 +1,4 @@
-/* $Id: tstDeviceStructSizeRC.cpp 128225 2019-01-17 14:10:17Z andreas.loeffler@oracle.com $ */
+/* $Id: tstDeviceStructSizeRC.cpp 131028 2019-06-01 12:23:46Z alexander.eichner@oracle.com $ */
 /** @file
  * tstDeviceStructSizeGC - Generate structure member and size checks from the RC perspective.
  *
@@ -1392,6 +1392,7 @@ int main()
     GEN_CHECK_OFF(AHCIPort, pDrvBase);
     GEN_CHECK_OFF(AHCIPort, pDrvMedia);
     GEN_CHECK_OFF(AHCIPort, pDrvMediaEx);
+    GEN_CHECK_OFF(AHCIPort, pszDesc);
     GEN_CHECK_OFF(AHCIPort, IBase);
     GEN_CHECK_OFF(AHCIPort, IPort);
     GEN_CHECK_OFF(AHCIPort, IMediaExPort);
