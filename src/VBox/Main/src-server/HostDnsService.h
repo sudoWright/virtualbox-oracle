@@ -1,4 +1,4 @@
-/* $Id: HostDnsService.h 129809 2019-04-05 19:08:10Z andreas.loeffler@oracle.com $ */
+/* $Id: HostDnsService.h 131064 2019-06-03 19:05:16Z andreas.loeffler@oracle.com $ */
 /** @file
  * Host DNS listener.
  */
@@ -67,10 +67,11 @@ public:
     virtual HRESULT init(HostDnsMonitorProxy *pProxy);
     virtual void uninit(void);
 
+    virtual ~HostDnsServiceBase();
+
 protected:
 
     explicit HostDnsServiceBase(bool fThreaded = false);
-    virtual ~HostDnsServiceBase();
 
     void setInfo(const HostDnsInformation &);
 
