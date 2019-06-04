@@ -1,4 +1,4 @@
-/* $Id: UIProgressDialog.h 127883 2019-01-01 06:24:57Z knut.osmundsen@oracle.com $ */
+/* $Id: UIProgressDialog.h 131095 2019-06-04 14:59:37Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIProgressDialog class declaration.
  */
@@ -154,6 +154,8 @@ private:
     const ulong  m_cOperations;
     /** Holds the number of current operation. */
     ulong        m_uCurrentOperation;
+    /** Holds the weight of current operation. */
+    ulong        m_uCurrentOperationWeight;
     /** Holds whether progress cancel is enabled. */
     bool         m_fCancelEnabled;
     /** Holds whether the progress has ended. */
