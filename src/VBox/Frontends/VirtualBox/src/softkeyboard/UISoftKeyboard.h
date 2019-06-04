@@ -1,4 +1,4 @@
-/* $Id: UISoftKeyboard.h 131076 2019-06-04 08:10:48Z serkan.bayraktar@oracle.com $ */
+/* $Id: UISoftKeyboard.h 131087 2019-06-04 13:06:59Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UISoftKeyboard class declaration.
  */
@@ -55,6 +55,7 @@ public:
 protected:
 
     virtual void retranslateUi() /* override */;
+    void focusOutEvent(QFocusEvent *pEvent) /* override */;
 
 private slots:
 
