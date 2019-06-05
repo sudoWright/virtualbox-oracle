@@ -1,4 +1,4 @@
-/* $Id: ConsoleVRDPServer.cpp 131016 2019-05-31 15:23:14Z andreas.loeffler@oracle.com $ */
+/* $Id: ConsoleVRDPServer.cpp 131127 2019-06-05 13:30:45Z noreply@oracle.com $ */
 /** @file
  * VBox Console VRDP helper class.
  */
@@ -1293,7 +1293,7 @@ DECLCALLBACK(void) ConsoleVRDPServer::VRDPCallbackVideoModeHint(void *pvCallback
 
     server->mConsole->i_getDisplay()->SetVideoModeHint(uScreenId, TRUE /*=enabled*/,
                                                        FALSE /*=changeOrigin*/, 0/*=OriginX*/, 0/*=OriginY*/,
-                                                       cWidth, cHeight, cBitsPerPixel);
+                                                       cWidth, cHeight, cBitsPerPixel, TRUE /*=notify*/);
 }
 
 DECLCALLBACK(void) ConsoleVRDPServer::VRDECallbackAudioIn(void *pvCallback,
