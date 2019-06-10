@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# $Id: tdAppliance1.py 129442 2019-03-19 10:00:28Z valery.portnyagin@oracle.com $
+# $Id: tdAppliance1.py 131227 2019-06-10 22:56:46Z knut.osmundsen@oracle.com $
 
 """
 VirtualBox Validation Kit - IAppliance Test #1
@@ -27,7 +27,7 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 129442 $"
+__version__ = "$Revision: 131227 $"
 
 
 # Standard Python imports.
@@ -53,7 +53,7 @@ class SubTstDrvAppliance1(base.SubTestDriverBase):
     """
 
     def __init__(self, oTstDrv):
-        base.SubTestDriverBase.__init__(self, 'appliance', oTstDrv);
+        base.SubTestDriverBase.__init__(self, oTstDrv, 'appliance', 'Applicance');
 
     def testIt(self):
         """
