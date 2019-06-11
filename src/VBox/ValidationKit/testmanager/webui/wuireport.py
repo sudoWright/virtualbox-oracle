@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# $Id: wuireport.py 127855 2019-01-01 01:45:53Z knut.osmundsen@oracle.com $
+# $Id: wuireport.py 131247 2019-06-11 11:58:28Z knut.osmundsen@oracle.com $
 
 """
 Test Manager WUI - Reports.
@@ -26,7 +26,7 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 127855 $"
+__version__ = "$Revision: 131247 $"
 
 
 # Validation Kit imports.
@@ -415,7 +415,7 @@ class WuiReportFailuresWithTotalBase(WuiReportFailuresBase):
 
                     oTable.addRow(oPeriod.sDesc, aiValues, asValues);
 
-                if True: # pylint: disable=W0125
+                if True: # pylint: disable=using-constant-test
                     aiValues = [];
                     asValues = [];
                     for idKey in aidSorted:

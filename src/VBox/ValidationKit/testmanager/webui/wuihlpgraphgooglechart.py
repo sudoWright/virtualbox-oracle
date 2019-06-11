@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# $Id: wuihlpgraphgooglechart.py 127855 2019-01-01 01:45:53Z knut.osmundsen@oracle.com $
+# $Id: wuihlpgraphgooglechart.py 131247 2019-06-11 11:58:28Z knut.osmundsen@oracle.com $
 
 """
 Test Manager Web-UI - Graph Helpers - Implemented using Google Charts.
@@ -26,7 +26,7 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 127855 $"
+__version__ = "$Revision: 131247 $"
 
 # Validation Kit imports.
 from common                             import webutils;
@@ -67,7 +67,7 @@ class WuiHlpLineGraph(WuiHlpGraphGoogleChartsBase):
         self._fErrorBarY = fEnable;
         return True;
 
-    def renderGraph(self): # pylint: disable=R0914
+    def renderGraph(self): # pylint: disable=too-many-locals
         fSlideFilter = True;
 
         # Tooltips?

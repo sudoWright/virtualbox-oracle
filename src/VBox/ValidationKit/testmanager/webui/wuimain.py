@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# $Id: wuimain.py 127855 2019-01-01 01:45:53Z knut.osmundsen@oracle.com $
+# $Id: wuimain.py 131247 2019-06-11 11:58:28Z knut.osmundsen@oracle.com $
 
 """
 Test Manager Core - WUI - The Main page.
@@ -26,7 +26,7 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 127855 $"
+__version__ = "$Revision: 131247 $"
 
 # Standard Python imports.
 
@@ -716,7 +716,7 @@ class WuiMain(WuiDispatcherBase):
     # The rest of stuff
     #
 
-    def _actionGroupedResultsListing( #pylint: disable=R0914
+    def _actionGroupedResultsListing( #pylint: disable=too-many-locals
             self,
             enmResultsGroupingType,
             oResultsLogicType,
