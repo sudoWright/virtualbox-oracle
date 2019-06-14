@@ -1,4 +1,4 @@
-/* $Id: HMVMXR0.cpp 131314 2019-06-14 06:57:14Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: HMVMXR0.cpp 131315 2019-06-14 09:16:36Z ramshankar.venkataraman@oracle.com $ */
 /** @file
  * HM VMX (Intel VT-x) - Host Context Ring-0.
  */
@@ -16009,7 +16009,7 @@ HMVMX_EXIT_DECL hmR0VmxExitXcptOrNmiNested(PVMCPU pVCpu, PVMXTRANSIENT pVmxTrans
                 ExitInfo.u64Qual = pVmxTransient->uExitQual;
 
                 VMXVEXITEVENTINFO ExitEventInfo;
-                RT_ZERO(ExitInfo);
+                RT_ZERO(ExitEventInfo);
                 ExitEventInfo.uExitIntInfo         = pVmxTransient->uExitIntInfo;
                 ExitEventInfo.uExitIntErrCode      = pVmxTransient->uExitIntErrorCode;
                 ExitEventInfo.uIdtVectoringInfo    = pVmxTransient->uIdtVectoringInfo;
