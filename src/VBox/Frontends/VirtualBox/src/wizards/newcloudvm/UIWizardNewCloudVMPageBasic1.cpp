@@ -1,4 +1,4 @@
-/* $Id: UIWizardNewCloudVMPageBasic1.cpp 131530 2019-06-24 15:54:07Z sergey.dubov@oracle.com $ */
+/* $Id: UIWizardNewCloudVMPageBasic1.cpp 131531 2019-06-24 16:13:24Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardNewCloudVMPageBasic1 class implementation.
  */
@@ -788,6 +788,9 @@ void UIWizardNewCloudVMPageBasic1::sltHandleDestinationChange()
 {
     /* Update tool-tip: */
     updateDestinationComboToolTip();
+
+    /* Make image list focused by default: */
+    m_pAccountImageList->setFocus();
 
     /* Refresh required settings: */
     populateAccounts();

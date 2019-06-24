@@ -1,4 +1,4 @@
-/* $Id: UIWizardNewCloudVMPageExpert.cpp 131443 2019-06-20 13:40:17Z sergey.dubov@oracle.com $ */
+/* $Id: UIWizardNewCloudVMPageExpert.cpp 131531 2019-06-24 16:13:24Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardNewCloudVMPageExpert class implementation.
  */
@@ -288,6 +288,9 @@ void UIWizardNewCloudVMPageExpert::sltHandleDestinationChange()
 {
     /* Update tool-tip: */
     updateDestinationComboToolTip();
+
+    /* Make image list focused by default: */
+    m_pAccountImageList->setFocus();
 
     /* Refresh required settings: */
     populateAccounts();
