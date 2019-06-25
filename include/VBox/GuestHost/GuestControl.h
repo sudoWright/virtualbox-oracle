@@ -1,4 +1,4 @@
-/* $Id: GuestControl.h 129863 2019-04-08 11:03:56Z andreas.loeffler@oracle.com $ */
+/* $Id: GuestControl.h 131550 2019-06-25 14:19:35Z knut.osmundsen@oracle.com $ */
 /** @file
  * Guest Control - Common Guest and Host Code.
  *
@@ -86,7 +86,7 @@ enum eProcessStatus
  */
 /** No remove flags specified. */
 #define DIRREMOVEREC_FLAG_NONE                 UINT32_C(0x0)
-/** Recursively deletes the directorie's contents. */
+/** Recursively deletes the directory contents. */
 #define DIRREMOVEREC_FLAG_RECURSIVE            RT_BIT(0)
 /** Delete the content of the directory and the directory itself. */
 #define DIRREMOVEREC_FLAG_CONTENT_AND_DIR      RT_BIT(1)
