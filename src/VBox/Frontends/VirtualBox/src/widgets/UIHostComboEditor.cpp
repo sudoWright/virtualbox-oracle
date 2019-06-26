@@ -1,4 +1,4 @@
-/* $Id: UIHostComboEditor.cpp 129316 2019-03-13 14:59:39Z noreply@oracle.com $ */
+/* $Id: UIHostComboEditor.cpp 131599 2019-06-26 15:57:32Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIHostComboEditor class implementation.
  */
@@ -31,7 +31,7 @@
 
 /* GUI includes: */
 #include "QIToolButton.h"
-#include "VBoxGlobal.h"
+#include "UICommon.h"
 #include "UIExtraDataManager.h"
 #include "UIHostComboEditor.h"
 #include "UIIconPool.h"

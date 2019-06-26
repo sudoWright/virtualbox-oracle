@@ -1,4 +1,4 @@
-/* $Id: UIWizard.cpp 131451 2019-06-20 16:01:52Z sergey.dubov@oracle.com $ */
+/* $Id: UIWizard.cpp 131599 2019-06-26 15:57:32Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizard class implementation.
  */
@@ -24,7 +24,7 @@
 #include "UIIconPool.h"
 #include "UIWizard.h"
 #include "UIWizardPage.h"
-#include "VBoxGlobal.h"
+#include "UICommon.h"
 #include "QIRichTextLabel.h"
 #include "UIExtraDataManager.h"
 
