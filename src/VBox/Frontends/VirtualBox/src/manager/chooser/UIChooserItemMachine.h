@@ -1,4 +1,4 @@
-/* $Id: UIChooserItemMachine.h 129530 2019-03-22 13:22:06Z sergey.dubov@oracle.com $ */
+/* $Id: UIChooserItemMachine.h 131627 2019-06-27 12:27:56Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIChooserItemMachine class declaration.
  */
@@ -182,11 +182,6 @@ private:
         MachineItemData_MinorSpacing,
         MachineItemData_TextSpacing,
         MachineItemData_ButtonMargin,
-        /* Pixmaps: */
-        MachineItemData_SettingsButtonPixmap,
-        MachineItemData_StartButtonPixmap,
-        MachineItemData_PauseButtonPixmap,
-        MachineItemData_CloseButtonPixmap,
     };
 
     /** @name Prepare/cleanup cascade.
