@@ -1,4 +1,4 @@
-/* $Id: VBoxSharedClipboardSvc-internal.h 131761 2019-07-03 13:28:33Z andreas.loeffler@oracle.com $ */
+/* $Id: VBoxSharedClipboardSvc-internal.h 131767 2019-07-03 13:45:52Z andreas.loeffler@oracle.com $ */
 /** @file
  * Shared Clipboard Service - Internal header.
  */
@@ -26,6 +26,7 @@
 #include <map>
 
 #include <iprt/list.h>
+#include <iprt/cpp/list.h> /* For RTCList. */
 
 #include <VBox/hgcmsvc.h>
 #include <VBox/log.h>
