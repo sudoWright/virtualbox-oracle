@@ -1,4 +1,4 @@
-/* $Id: DhcpOptions.cpp 127855 2019-01-01 01:45:53Z knut.osmundsen@oracle.com $ */
+/* $Id: DhcpOptions.cpp 131808 2019-07-04 10:14:02Z knut.osmundsen@oracle.com $ */
 /** @file
  * DHCP server - DHCP options
  */
@@ -15,6 +15,7 @@
  * hope that it will be useful, but WITHOUT ANY WARRANTY of any kind.
  */
 
+#include "DhcpdInternal.h"
 #include "DhcpOptions.h"
 #include "DhcpMessage.h"
 

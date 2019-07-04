@@ -1,4 +1,4 @@
-/* $Id: VBoxNetDhcpd.cpp 131793 2019-07-04 08:01:58Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxNetDhcpd.cpp 131808 2019-07-04 10:14:02Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxNetDhcpd - DHCP server for host-only and NAT networks.
  */
@@ -26,7 +26,7 @@
 # include <iprt/win/winsock2.h>
 #endif
 
-
+#include "DhcpdInternal.h"
 #include <iprt/param.h>
 #include <iprt/errcore.h>
 
