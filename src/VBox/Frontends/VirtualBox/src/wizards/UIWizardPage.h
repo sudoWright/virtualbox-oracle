@@ -1,4 +1,4 @@
-/* $Id: UIWizardPage.h 127883 2019-01-01 06:24:57Z knut.osmundsen@oracle.com $ */
+/* $Id: UIWizardPage.h 131857 2019-07-06 12:43:14Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardPage class declaration.
  */
@@ -46,7 +46,7 @@ public:
 protected:
 
     /** Returns wizard this page-base belongs to. */
-    virtual UIWizard *wizardImp();
+    virtual UIWizard *wizardImp() const;
 
     /** Returns wizard page this page-base belongs to. */
     virtual UIWizardPage *thisImp();
