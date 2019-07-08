@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# $Id: remoteexecutor.py 131889 2019-07-08 12:25:46Z alexander.eichner@oracle.com $
+# $Id: remoteexecutor.py 131890 2019-07-08 12:31:34Z alexander.eichner@oracle.com $
 
 """
 VirtualBox Validation Kit - Storage benchmark, test execution helpers.
@@ -26,7 +26,7 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 131889 $"
+__version__ = "$Revision: 131890 $"
 
 
 # Standard Python imports.
@@ -286,3 +286,4 @@ class RemoteExecutor(object):
             fRc = self.execBinaryNoStdOut('rm', ('-rf', sDir));
 
         return fRc;
+
