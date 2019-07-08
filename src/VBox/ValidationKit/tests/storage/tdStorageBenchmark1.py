@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# $Id: tdStorageBenchmark1.py 131904 2019-07-08 17:00:21Z alexander.eichner@oracle.com $
+# $Id: tdStorageBenchmark1.py 131906 2019-07-08 18:15:30Z alexander.eichner@oracle.com $
 
 """
 VirtualBox Validation Kit - Storage benchmark.
@@ -27,7 +27,7 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 131904 $"
+__version__ = "$Revision: 131906 $"
 
 
 # Standard Python imports.
@@ -1274,7 +1274,7 @@ class tdStorageBenchmark(vbox.TestDriver):                                      
         """
 
         fRc = True;
-        oDiskCfg = self.kdStorageCfgs.get(socket.gethostname().lower());
+        oDiskCfg = self.kdStorageCfgs.get(socket.getfqdn().lower());
 
         # Test the host first if requested
         if oDiskCfg is not None or self.fUseScratch:
