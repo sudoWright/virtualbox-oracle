@@ -1,4 +1,4 @@
-/* $Id: HMInternal.h 131926 2019-07-09 04:41:11Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: HMInternal.h 131929 2019-07-09 04:56:19Z ramshankar.venkataraman@oracle.com $ */
 /** @file
  * HM - Internal header file.
  */
@@ -1120,9 +1120,10 @@ typedef struct HMCPU
 
     STAMCOUNTER             StatInjectInterrupt;
     STAMCOUNTER             StatInjectXcpt;
-    STAMCOUNTER             StatInjectPendingReflect;
-    STAMCOUNTER             StatInjectPendingInterpret;
-    STAMCOUNTER             StatInjectPendingNPF;
+    STAMCOUNTER             StatInjectReflect;
+    STAMCOUNTER             StatInjectConvertDF;
+    STAMCOUNTER             StatInjectInterpret;
+    STAMCOUNTER             StatInjectReflectNPF;
 
     STAMCOUNTER             StatExitAll;
     STAMCOUNTER             StatNestedExitAll;
