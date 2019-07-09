@@ -1,4 +1,4 @@
-/* $Id: DHCPServerImpl.h 131912 2019-07-08 23:29:30Z knut.osmundsen@oracle.com $ */
+/* $Id: DHCPServerImpl.h 131923 2019-07-09 01:14:53Z knut.osmundsen@oracle.com $ */
 /** @file
  * VirtualBox COM class implementation
  */
@@ -138,7 +138,7 @@ private:
 
     /** @name Helpers
      * @{  */
-    HRESULT i_calcLeaseFilename(const com::Utf8Str &aNetwork) RT_NOEXCEPT;
+    HRESULT i_calcLeasesFilename(const com::Utf8Str &aNetwork) RT_NOEXCEPT;
     /** @} */
 
     struct Data;
