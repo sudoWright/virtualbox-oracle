@@ -1,4 +1,4 @@
-/* $Id: HMInternal.h 131929 2019-07-09 04:56:19Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: HMInternal.h 131966 2019-07-10 08:37:07Z ramshankar.venkataraman@oracle.com $ */
 /** @file
  * HM - Internal header file.
  */
@@ -1171,6 +1171,7 @@ typedef struct HMCPU
     STAMCOUNTER             StatExitIntWindow;
     STAMCOUNTER             StatExitExtInt;
     STAMCOUNTER             StatExitHostNmiInGC;
+    STAMCOUNTER             StatExitHostNmiInGCIpi;
     STAMCOUNTER             StatExitPreemptTimer;
     STAMCOUNTER             StatExitTprBelowThreshold;
     STAMCOUNTER             StatExitTaskSwitch;
