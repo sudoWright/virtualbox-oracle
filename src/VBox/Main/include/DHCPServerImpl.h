@@ -1,4 +1,4 @@
-/* $Id: DHCPServerImpl.h 132126 2019-07-14 03:18:41Z knut.osmundsen@oracle.com $ */
+/* $Id: DHCPServerImpl.h 132137 2019-07-14 21:10:58Z knut.osmundsen@oracle.com $ */
 /** @file
  * VirtualBox COM class implementation
  */
@@ -68,6 +68,7 @@ public:
     /** @name Public internal methods.
      * @{ */
     HRESULT i_saveSettings(settings::DHCPServer &data);
+    HRESULT i_removeConfig(DHCPConfig *pConfig, DHCPConfigScope_T enmScope);
     /** @} */
 
 private:
