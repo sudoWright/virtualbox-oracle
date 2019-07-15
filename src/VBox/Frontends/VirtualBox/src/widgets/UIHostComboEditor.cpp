@@ -1,4 +1,4 @@
-/* $Id: UIHostComboEditor.cpp 131599 2019-06-26 15:57:32Z sergey.dubov@oracle.com $ */
+/* $Id: UIHostComboEditor.cpp 132169 2019-07-15 18:56:56Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIHostComboEditor class implementation.
  */
@@ -472,6 +472,8 @@ void UIHostComboEditor::sltCommitData()
 
 void UIHostComboEditor::prepare()
 {
+    /* Make sure QIStyledDelegate aware of us: */
+    setProperty("has_sigCommitData", true);
     /* Configure self: */
     setAutoFillBackground(true);
     /* Create layout: */
