@@ -1,4 +1,4 @@
-/* $Id: UIChooserSearchWidget.cpp 129766 2019-04-03 15:24:31Z sergey.dubov@oracle.com $ */
+/* $Id: UIChooserSearchWidget.cpp 132239 2019-07-18 07:33:44Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIChooserSearchWidget class implementation.
  */
@@ -181,6 +181,11 @@ bool UIChooserSearchWidget::eventFilter(QObject *pWatched, QEvent *pEvent)
 
 void UIChooserSearchWidget::sltHandleSearchTermChange(const QString &strSearchTerm)
 {
+    if (strSearchTerm.isEmpty())
+    {
+        emit sigToggleVisibility(false);
+        return;
+    }
     emit sigRedoSearch(strSearchTerm, UIChooserItemSearchFlag_Machine);
 }
 
