@@ -1,4 +1,4 @@
-/* $Id: HMInternal.h 131966 2019-07-10 08:37:07Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: HMInternal.h 132275 2019-07-19 09:07:21Z ramshankar.venkataraman@oracle.com $ */
 /** @file
  * HM - Internal header file.
  */
@@ -1184,6 +1184,7 @@ typedef struct HMCPU
     STAMCOUNTER             StatFlushPageManual;
     STAMCOUNTER             StatFlushPhysPageManual;
     STAMCOUNTER             StatFlushTlb;
+    STAMCOUNTER             StatFlushTlbNstGst;
     STAMCOUNTER             StatFlushTlbManual;
     STAMCOUNTER             StatFlushTlbWorldSwitch;
     STAMCOUNTER             StatNoFlushTlbWorldSwitch;
