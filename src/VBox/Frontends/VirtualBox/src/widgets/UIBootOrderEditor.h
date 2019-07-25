@@ -1,4 +1,4 @@
-/* $Id: UIBootListWidget.h 132409 2019-07-25 13:14:34Z sergey.dubov@oracle.com $ */
+/* $Id: UIBootOrderEditor.h 132411 2019-07-25 13:40:26Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIBootListWidget class declaration.
  */
