@@ -1,4 +1,4 @@
-/* $Id: tstAsmStructs.cpp 127855 2019-01-01 01:45:53Z knut.osmundsen@oracle.com $ */
+/* $Id: tstAsmStructs.cpp 132438 2019-07-26 13:37:47Z knut.osmundsen@oracle.com $ */
 /** @file
  * Testcase for checking offsets in the assembly structures shared with C/C++.
  */
@@ -24,7 +24,6 @@
 #include <VBox/vmm/trpm.h>
 #include "TRPMInternal.h"
 #include "HMInternal.h"
-#include "VMMSwitcher.h"
 #include "VMMInternal.h"
 #include <VBox/vmm/vm.h>
 #include <VBox/vmm/hm_vmx.h>
