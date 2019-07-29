@@ -1,4 +1,4 @@
-/* $Id: SELM.cpp 132449 2019-07-26 16:12:06Z knut.osmundsen@oracle.com $ */
+/* $Id: SELM.cpp 132492 2019-07-29 21:36:45Z knut.osmundsen@oracle.com $ */
 /** @file
  * SELM - The Selector Manager.
  */
@@ -81,8 +81,6 @@
 #include <iprt/string.h>
 #include <iprt/thread.h>
 #include <iprt/string.h>
-
-#include "SELMInline.h"
 
 
 /*********************************************************************************************************************************
