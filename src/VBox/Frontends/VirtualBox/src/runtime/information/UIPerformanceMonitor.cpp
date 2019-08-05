@@ -1,4 +1,4 @@
-/* $Id: UIPerformanceMonitor.cpp 132573 2019-08-05 12:15:04Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIPerformanceMonitor.cpp 132574 2019-08-05 12:22:35Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIPerformanceMonitor class implementation.
  */
@@ -360,7 +360,7 @@ const QQueue<ULONG> &UISubMetric::data() const
 
 bool UISubMetric::isPercentage() const
 {
-    return m_strUnit == '%';
+    return m_strUnit == "%";
 }
 
 
