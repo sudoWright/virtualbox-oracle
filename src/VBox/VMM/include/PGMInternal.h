@@ -1,4 +1,4 @@
-/* $Id: PGMInternal.h 132616 2019-08-07 09:41:57Z knut.osmundsen@oracle.com $ */
+/* $Id: PGMInternal.h 132617 2019-08-07 09:42:31Z knut.osmundsen@oracle.com $ */
 /** @file
  * PGM - Internal header file.
  */
@@ -3282,8 +3282,8 @@ typedef struct PGM
 
 
     /** PGM critical section.
-     * This protects the physical & virtual access handlers, ram ranges,
-     * and the page flag updating (some of it anyway).
+     * This protects the physical, ram ranges, and the page flag updating (some of
+     * it anyway).
      */
     PDMCRITSECT                     CritSectX;
 
