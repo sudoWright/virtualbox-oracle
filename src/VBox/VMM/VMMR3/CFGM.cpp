@@ -1,4 +1,4 @@
-/* $Id: CFGM.cpp 132503 2019-07-31 10:31:36Z knut.osmundsen@oracle.com $ */
+/* $Id: CFGM.cpp 132632 2019-08-08 00:36:57Z knut.osmundsen@oracle.com $ */
 /** @file
  * CFGM - Configuration Manager.
  */
@@ -55,6 +55,7 @@
 /*********************************************************************************************************************************
 *   Header Files                                                                                                                 *
 *********************************************************************************************************************************/
+#define VBOX_BUGREF_9217_PART_I
 #define LOG_GROUP LOG_GROUP_CFGM
 #include <VBox/vmm/cfgm.h>
 #include <VBox/vmm/dbgf.h>
