@@ -1,4 +1,4 @@
-/* $Id: HGSMIHost.h 127867 2019-01-01 04:23:20Z knut.osmundsen@oracle.com $ */
+/* $Id: HGSMIHost.h 132753 2019-08-15 15:46:09Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Host Guest Shared Memory Interface (HGSMI), host part.
  */
@@ -21,8 +21,7 @@
 # pragma once
 #endif
 
-#include <VBox/vmm/vm.h>
-
+#include <VBox/types.h>
 #include <HGSMI.h>
 #include <HGSMIChSetup.h>
 
