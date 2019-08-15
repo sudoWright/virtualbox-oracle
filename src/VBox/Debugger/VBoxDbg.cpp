@@ -1,4 +1,4 @@
-/* $Id: VBoxDbg.cpp 127855 2019-01-01 01:45:53Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxDbg.cpp 132762 2019-08-15 17:34:15Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Debugger GUI.
  */
@@ -27,7 +27,6 @@
 # include <VirtualBox_XPCOM.h>
 #endif /* !RT_OS_WINDOWS */
 #include <VBox/dbggui.h>
-#include <VBox/vmm/vm.h>
 #include <iprt/errcore.h>
 #include <iprt/assert.h>
 #include <iprt/alloc.h>
