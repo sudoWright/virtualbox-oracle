@@ -1,4 +1,4 @@
-/* $Id: VMAll.cpp 132736 2019-08-15 07:29:37Z knut.osmundsen@oracle.com $ */
+/* $Id: VMAll.cpp 132793 2019-08-16 20:28:38Z knut.osmundsen@oracle.com $ */
 /** @file
  * VM - Virtual Machine All Contexts.
  */
@@ -19,7 +19,6 @@
 /*********************************************************************************************************************************
 *   Header Files                                                                                                                 *
 *********************************************************************************************************************************/
-#define VBOX_BUGREF_9217_PART_I
 #define LOG_GROUP LOG_GROUP_VM
 #include "VMInternal.h"
 #include <VBox/vmm/vmm.h>
