@@ -1,4 +1,4 @@
-/* $Id: RTStrStartsWith.cpp 127855 2019-01-01 01:45:53Z knut.osmundsen@oracle.com $ */
+/* $Id: RTStrStartsWith.cpp 132823 2019-08-20 19:44:47Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - String starts with predicate.
  */
@@ -33,7 +33,7 @@
 #include "internal/iprt.h"
 
 
-RTDECL(int) RTStrStartsWith(const char *pszString, const char *pszStart)
+RTDECL(bool) RTStrStartsWith(const char *pszString, const char *pszStart)
 {
     if (pszString)
     {
