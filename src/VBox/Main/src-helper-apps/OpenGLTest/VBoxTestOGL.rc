@@ -1,4 +1,4 @@
-/* $Id: VBoxTestOGL.rc 127855 2019-01-01 01:45:53Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxTestOGL.rc 132830 2019-08-21 11:28:40Z alexander.eichner@oracle.com $ */
 /** @file
  * VBoxTestOGL - Resource file containing version info and icon.
  */
