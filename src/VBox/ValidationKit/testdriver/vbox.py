@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# $Id: vbox.py 131724 2019-07-02 11:16:36Z knut.osmundsen@oracle.com $
+# $Id: vbox.py 132865 2019-08-23 13:27:22Z alexander.eichner@oracle.com $
 # pylint: disable=too-many-lines
 
 """
@@ -27,7 +27,7 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 131724 $"
+__version__ = "$Revision: 132865 $"
 
 # pylint: disable=unnecessary-semicolon
 
@@ -1995,7 +1995,7 @@ class TestDriver(base.TestDriver):                                              
             self.processEvents(cMsTimeout - cMsElapsed);
         return None;
 
-    def _logVmInfoUnsafe(self, oVM):                                            # pylint: disable=too-many-statements,too-many-branches
+    def _logVmInfoUnsafe(self, oVM):                                            # pylint: disable=too-many-statements,too-many-branches,not-callable
         """
         Internal worker for logVmInfo that is wrapped in try/except.
         """
