@@ -1,4 +1,4 @@
-/* $Id: UIVMLogPage.cpp 132800 2019-08-18 10:38:58Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIVMLogPage.cpp 132934 2019-08-27 17:47:44Z andreas.loeffler@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVMLogViewer class implementation.
  */
@@ -192,7 +192,7 @@ void UIVMLogPage::deleteBookmark(int index)
 {
     if (m_bookmarkVector.size() <= index)
          return;
-    m_bookmarkVector.remove(index, 1);
+    //m_bookmarkVector.remove(index, 1);
     updateTextEditBookmarkLineSet();
 }
 
