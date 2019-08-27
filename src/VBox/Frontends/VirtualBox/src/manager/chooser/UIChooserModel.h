@@ -1,4 +1,4 @@
-/* $Id: UIChooserModel.h 129673 2019-03-29 10:46:10Z sergey.dubov@oracle.com $ */
+/* $Id: UIChooserModel.h 132932 2019-08-27 16:48:40Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIChooserModel class declaration.
  */
@@ -252,6 +252,9 @@ private slots:
 
     /** @name Selection stuff.
       * @{ */
+        /** Makes sure current item is visible. */
+        void sltMakeSureCurrentItemVisible();
+
         /** Handles current-item destruction. */
         void sltCurrentItemDestroyed();
     /** @} */
