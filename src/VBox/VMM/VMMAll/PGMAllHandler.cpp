@@ -1,4 +1,4 @@
-/* $Id: PGMAllHandler.cpp 132793 2019-08-16 20:28:38Z knut.osmundsen@oracle.com $ */
+/* $Id: PGMAllHandler.cpp 133038 2019-09-01 23:03:34Z knut.osmundsen@oracle.com $ */
 /** @file
  * PGM - Page Manager / Monitor, Access Handlers.
  */
@@ -159,10 +159,12 @@ int pgmHandlerPhysicalExCreate(PVMCC pVM, PGMPHYSHANDLERTYPE hType, RTR3PTR pvUs
                     ||  MMHyperR3ToRC(pVM, MMHyperRCToR3(pVM, pvUserRC)) == pvUserRC,
                     ("Not RC pointer! pvUserRC=%RRv\n", pvUserRC),
                     VERR_INVALID_PARAMETER);
+#if 0 /* No longer valid. */
     AssertMsgReturn(    (RTR0UINTPTR)pvUserR0 < 0x10000
                     ||  MMHyperR3ToR0(pVM, MMHyperR0ToR3(pVM, pvUserR0)) == pvUserR0,
                     ("Not R0 pointer! pvUserR0=%RHv\n", pvUserR0),
                     VERR_INVALID_PARAMETER);
+#endif
 
     /*
      * Allocate and initialize the new entry.
