@@ -1,4 +1,4 @@
-/* $Id: GuestImpl.h 131505 2019-06-24 09:09:21Z knut.osmundsen@oracle.com $ */
+/* $Id: GuestImpl.h 133185 2019-09-08 23:51:15Z knut.osmundsen@oracle.com $ */
 /** @file
  * VirtualBox COM class implementation
  */
@@ -219,7 +219,7 @@ private:
     } mData;
 
     ULONG                           mMemoryBalloonSize;
-    ULONG                           mStatUpdateInterval;
+    ULONG                           mStatUpdateInterval; /**< In seconds. */
     uint64_t                        mNetStatRx;
     uint64_t                        mNetStatTx;
     uint64_t                        mNetStatLastTs;
