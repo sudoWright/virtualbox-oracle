@@ -1,4 +1,4 @@
-/* $Id: VirtualKD.cpp 133038 2019-09-01 23:03:34Z knut.osmundsen@oracle.com $ */
+/* $Id: VirtualKD.cpp 133243 2019-09-10 14:50:27Z knut.osmundsen@oracle.com $ */
 /** @file
  * VirtualKD - Device stub/loader for fast Windows kernel-mode debugging.
  *
@@ -236,7 +236,7 @@ const PDMDEVREG g_DeviceVirtualKD =
     /* .cbInstanceShared = */       sizeof(VIRTUALKD),
     /* .cbInstanceCC = */           0,
     /* .cbInstanceRC = */           0,
-    /* .uReserved1 = */             0,
+    /* .cMaxPciDevices = */         0,
     /* .pszDescription = */         "Provides fast debugging interface when debugging Windows kernel",
 #if defined(IN_RING3)
     /* .pszRCMod = */               "",

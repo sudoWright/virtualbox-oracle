@@ -1,4 +1,4 @@
-/* $Id: DevPcBios.cpp 133105 2019-09-04 14:05:50Z alexander.eichner@oracle.com $ */
+/* $Id: DevPcBios.cpp 133243 2019-09-10 14:50:27Z knut.osmundsen@oracle.com $ */
 /** @file
  * DevPcBios - PC BIOS Device.
  */
@@ -1809,7 +1809,7 @@ const PDMDEVREG g_DevicePcBios =
     /* .cbInstanceShared = */       sizeof(DEVPCBIOS),
     /* .cbInstanceCC = */           0,
     /* .cbInstanceRC = */           0,
-    /* .uReserved1 = */             0,
+    /* .cMaxPciDevices = */         0,
     /* .pszDescription = */         "PC BIOS Device",
 #if defined(IN_RING3)
     /* .pszRCMod = */               "",

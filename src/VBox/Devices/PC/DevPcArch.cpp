@@ -1,4 +1,4 @@
-/* $Id: DevPcArch.cpp 133038 2019-09-01 23:03:34Z knut.osmundsen@oracle.com $ */
+/* $Id: DevPcArch.cpp 133243 2019-09-10 14:50:27Z knut.osmundsen@oracle.com $ */
 /** @file
  * DevPcArch - PC Architecture Device.
  */
@@ -297,7 +297,7 @@ const PDMDEVREG g_DevicePcArch =
     /* .cbInstanceShared = */       sizeof(DEVPCARCH),
     /* .cbInstanceCC = */           0,
     /* .cbInstanceRC = */           0,
-    /* .uReserved1 = */             0,
+    /* .cMaxPciDevices = */         0,
     /* .pszDescription = */         "PC Architecture Device",
 #if defined(IN_RING3)
     /* .pszRCMod = */               "",
