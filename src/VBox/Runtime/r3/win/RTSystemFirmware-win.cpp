@@ -1,4 +1,4 @@
-/* $Id: RTSystemFirmware-win.cpp 133249 2019-09-10 16:34:49Z andreas.loeffler@oracle.com $ */
+/* $Id: RTSystemFirmware-win.cpp 133430 2019-09-17 13:13:26Z andreas.loeffler@oracle.com $ */
 /** @file
  * IPRT - System firmware information, Win32.
  */
@@ -168,7 +168,7 @@ RTDECL(void) RTSystemFirmwareValueFree(PRTSYSFWVALUE pValue)
 }
 
 
-RTDECL(int) RTSystemFirmwareValueGet(RTSYSFWPROP enmProp, PRTSYSFWVALUE *ppValue)
+RTDECL(int) RTSystemFirmwareValueQuery(RTSYSFWPROP enmProp, PRTSYSFWVALUE *ppValue)
 {
     int rc = rtSystemFirmwareGetPrivileges(SE_SYSTEM_ENVIRONMENT_NAME);
     if (RT_FAILURE(rc))

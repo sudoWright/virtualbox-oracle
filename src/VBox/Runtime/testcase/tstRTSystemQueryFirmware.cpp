@@ -1,4 +1,4 @@
-/* $Id: tstRTSystemQueryFirmware.cpp 133249 2019-09-10 16:34:49Z andreas.loeffler@oracle.com $ */
+/* $Id: tstRTSystemQueryFirmware.cpp 133430 2019-09-17 13:13:26Z andreas.loeffler@oracle.com $ */
 /** @file
  * IPRT Testcase - RTSystemQuerFirmware*.
  */
@@ -65,7 +65,7 @@ int main()
     }
 
     PRTSYSFWVALUE pValue;
-    rc = RTSystemFirmwareValueGet(RTSYSFWPROP_SECURE_BOOT, &pValue);
+    rc = RTSystemFirmwareValueQuery(RTSYSFWPROP_SECURE_BOOT, &pValue);
     if (RT_SUCCESS(rc))
     {
         RTTestPrintf(hTest, RTTESTLVL_INFO, "Secure Boot enabled: %RTbool\n", pValue->u.fVal);
