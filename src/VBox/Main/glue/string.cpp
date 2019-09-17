@@ -1,4 +1,4 @@
-/* $Id: string.cpp 133420 2019-09-17 10:14:53Z knut.osmundsen@oracle.com $ */
+/* $Id: string.cpp 133421 2019-09-17 10:20:29Z knut.osmundsen@oracle.com $ */
 /** @file
  * MS COM / XPCOM Abstraction Layer - UTF-8 and UTF-16 string classes.
  */
@@ -632,6 +632,7 @@ void Bstr::cleanupAndCopyFrom(const OLECHAR *a_bstrSrc)
     cleanup();
     copyFrom(a_bstrSrc);
 }
+
 
 
 /*********************************************************************************************************************************
