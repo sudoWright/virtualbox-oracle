@@ -1,4 +1,4 @@
-/* $Id: ClipboardArea.cpp 133193 2019-09-09 08:43:14Z andreas.loeffler@oracle.com $ */
+/* $Id: ClipboardArea.cpp 133432 2019-09-17 14:45:21Z andreas.loeffler@oracle.com $ */
 /** @file
  * Shared Clipboard - Area handling.
  */
@@ -20,7 +20,7 @@
 *   Header Files                                                                                                                 *
 *********************************************************************************************************************************/
 #define LOG_GROUP LOG_GROUP_SHARED_CLIPBOARD
-#include <VBox/GuestHost/SharedClipboard-uri.h>
+#include <VBox/GuestHost/SharedClipboard-transfers.h>
 
 #include <iprt/asm.h>
 #include <iprt/assert.h>
