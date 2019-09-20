@@ -1,4 +1,4 @@
-/* $Id: VBoxVga.c 128269 2019-01-19 12:49:02Z michal.necasek@oracle.com $ */
+/* $Id: VBoxVga.c 133501 2019-09-20 13:08:32Z alexander.eichner@oracle.com $ */
 /** @file
  * VBoxVga.c
  */
