@@ -1,4 +1,4 @@
-; $Id: tstAsmStructsAsm.asm 132438 2019-07-26 13:37:47Z knut.osmundsen@oracle.com $
+; $Id: tstAsmStructsAsm.asm 133518 2019-09-23 08:19:38Z ramshankar.venkataraman@oracle.com $
 ;; @file
 ; Assembly / C structure layout testcase.
 ;
@@ -24,7 +24,6 @@ BITS 64
 
 %include "CPUMInternal.mac"
 %include "HMInternal.mac"
-%include "TRPMInternal.mac"
 %include "VMMInternal.mac"
 %include "VBox/vmm/cpum.mac"
 %include "VBox/vmm/vm.mac"
