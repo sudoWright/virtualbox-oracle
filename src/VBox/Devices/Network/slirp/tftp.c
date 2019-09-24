@@ -1,4 +1,4 @@
-/* $Id: tftp.c 133578 2019-09-24 16:17:53Z noreply@oracle.com $ */
+/* $Id: tftp.c 133579 2019-09-24 16:19:33Z noreply@oracle.com $ */
 /** @file
  * NAT - TFTP server.
  */
@@ -42,7 +42,6 @@
  */
 
 #include <slirp.h>
-#include <iprt/asm-math.h>
 #include <iprt/file.h>
 #include <iprt/err.h>
 #include <iprt/path.h>
