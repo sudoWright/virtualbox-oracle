@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# $Id: utils.py 133732 2019-10-04 01:41:17Z knut.osmundsen@oracle.com $
+# $Id: utils.py 133737 2019-10-04 21:45:22Z knut.osmundsen@oracle.com $
 # pylint: disable=too-many-lines
 
 """
@@ -29,7 +29,7 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 133732 $"
+__version__ = "$Revision: 133737 $"
 
 
 # Standard Python imports.
@@ -318,8 +318,8 @@ def getPresentCpuCount():
             if cCpus > 0:
                 return cCpus;
 
-    import multiprocessor;
-    return multiprocessor.cpu_count();
+    import multiprocessing
+    return multiprocessing.cpu_count();
 
 
 #
