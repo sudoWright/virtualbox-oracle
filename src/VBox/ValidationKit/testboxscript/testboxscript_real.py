@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# $Id: testboxscript_real.py 133733 2019-10-04 01:41:17Z knut.osmundsen@oracle.com $
+# $Id: testboxscript_real.py 133738 2019-10-04 21:45:38Z knut.osmundsen@oracle.com $
 
 """
 TestBox Script - main().
@@ -27,12 +27,11 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 133733 $"
+__version__ = "$Revision: 133738 $"
 
 
 # Standard python imports.
 import math
-import multiprocessing
 import os
 from optparse import OptionParser       # pylint: disable=deprecated-module
 import platform
