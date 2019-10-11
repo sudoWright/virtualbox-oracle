@@ -1,4 +1,4 @@
-/* $Id: SharedClipboard-transfers.h 133910 2019-10-11 12:06:49Z andreas.loeffler@oracle.com $ */
+/* $Id: SharedClipboard-transfers.h 133917 2019-10-11 14:33:25Z andreas.loeffler@oracle.com $ */
 /** @file
  * Shared Clipboard - Shared transfer functions between host and guest.
  */
@@ -396,6 +396,10 @@ typedef struct _SHCLREPLY
         {
             SHCLLISTHANDLE uHandle;
         } ListOpen;
+        struct
+        {
+            SHCLLISTHANDLE uHandle;
+        } ListClose;
         struct
         {
             SHCLOBJHANDLE uHandle;
