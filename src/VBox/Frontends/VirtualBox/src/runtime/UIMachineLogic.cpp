@@ -1,4 +1,4 @@
-/* $Id: UIMachineLogic.cpp 133129 2019-09-05 13:58:44Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIMachineLogic.cpp 133913 2019-10-11 12:45:23Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIMachineLogic class implementation.
  */
@@ -1596,7 +1596,10 @@ void UIMachineLogic::sltShowSoftKeyboard()
     /* Create the soft keyboard only once: */
     if (m_pSoftKeyboardDialog)
     {
+        m_pSoftKeyboardDialog->show();
         m_pSoftKeyboardDialog->raise();
+        m_pSoftKeyboardDialog->setWindowState(m_pSoftKeyboardDialog->windowState() & ~Qt::WindowMinimized);
+        m_pSoftKeyboardDialog->activateWindow();
         return;
     }
     QWidget *pCenterWidget = windowManager().realParentWindow(activeMachineWindow());
