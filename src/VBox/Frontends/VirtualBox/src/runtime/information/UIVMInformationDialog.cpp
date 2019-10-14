@@ -1,4 +1,4 @@
-/* $Id: UIVMInformationDialog.cpp 133953 2019-10-14 13:13:41Z sergey.dubov@oracle.com $ */
+/* $Id: UIVMInformationDialog.cpp 133956 2019-10-14 14:38:47Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVMInformationDialog class implementation.
  */
@@ -78,7 +78,7 @@ void UIVMInformationDialog::invoke(UIMachineWindow *pMachineWindow)
 }
 
 UIVMInformationDialog::UIVMInformationDialog(UIMachineWindow *pMachineWindow)
-    : QIWithRetranslateUI<QIMainWindow>(0)
+    : QMainWindowWithRestorableGeometryAndRetranslateUi(0)
     , m_pTabWidget(0)
     , m_pMachineWindow(pMachineWindow)
 {
