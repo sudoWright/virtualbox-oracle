@@ -1,4 +1,4 @@
-/* $Id: VBoxSharedClipboardSvc-transfers.cpp 133981 2019-10-15 16:37:37Z andreas.loeffler@oracle.com $ */
+/* $Id: VBoxSharedClipboardSvc-transfers.cpp 133985 2019-10-15 16:53:56Z andreas.loeffler@oracle.com $ */
 /** @file
  * Shared Clipboard Service - Internal code for transfer (list) handling.
  */
@@ -2191,7 +2191,7 @@ int shclSvcTransferStop(PSHCLCLIENT pClient, PSHCLTRANSFER pTransfer)
  * Sets the host service's (file) transfer mode.
  *
  * @returns VBox status code.
- * @param   uMode               Transfer mode to set.
+ * @param   fMode               Transfer mode to set.
  */
 int shclSvcTransferModeSet(uint32_t fMode)
 {
