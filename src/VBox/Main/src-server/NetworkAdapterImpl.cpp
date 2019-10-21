@@ -1,4 +1,4 @@
-/* $Id: NetworkAdapterImpl.cpp 134139 2019-10-21 18:04:10Z aleksey.ilyushin@oracle.com $ */
+/* $Id: NetworkAdapterImpl.cpp 134144 2019-10-21 18:37:15Z aleksey.ilyushin@oracle.com $ */
 /** @file
  * Implementation of INetworkAdapter in VBoxSVC.
  */
@@ -764,7 +764,7 @@ HRESULT NetworkAdapter::setCloudNetwork(const com::Utf8Str &aCloudNetwork)
         alock.release();
 
 #if 0
-        // @todo Implement dynamic re-attachment of cloud network
+        /// @todo Implement dynamic re-attachment of cloud network
         AutoWriteLock mlock(mParent COMMA_LOCKVAL_SRC_POS);       // mParent is const, no need to lock
         mParent->i_setModified(Machine::IsModified_NetworkAdapters);
         mlock.release();
