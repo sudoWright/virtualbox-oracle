@@ -1,4 +1,4 @@
-/* $Id: VBoxSharedClipboardSvc.cpp 134169 2019-10-22 13:23:50Z andreas.loeffler@oracle.com $ */
+/* $Id: VBoxSharedClipboardSvc.cpp 134181 2019-10-22 19:36:15Z andreas.loeffler@oracle.com $ */
 /** @file
  * Shared Clipboard Service - Host service entry points.
  */
@@ -111,7 +111,8 @@
  *
  * - Support for VRDE (VRDP) is not implemented yet (see #9498).
  * - Unicode support on Windows hosts / guests is not enabled (yet).
- * - Symbolic links are not yet handled.
+ * - Symbolic links / Windows junctions are not allowed.
+ * - Windows alternate data streams (ADS) are not allowed.
  * - No support for ACLs yet.
  * - No (maybe never) support for NT4.
  *
