@@ -1,4 +1,4 @@
-/* $Id: UIMessageCenter.h 134160 2019-10-22 08:39:20Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIMessageCenter.h 134165 2019-10-22 11:33:14Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIMessageCenter class declaration.
  */
@@ -445,7 +445,7 @@ public:
     bool cannotSwitchScreenInFullscreen(quint64 uMinVRAM) const;
     void cannotSwitchScreenInSeamless(quint64 uMinVRAM) const;
     void cannotAddDiskEncryptionPassword(const CConsole &console);
-    bool confirmSoftKeyboardClose() const;
+    bool confirmSoftKeyboardClose(const QStringList &strNameList) const;
 
 #ifdef VBOX_GUI_WITH_NETWORK_MANAGER
     /* API: Network management warnings: */
