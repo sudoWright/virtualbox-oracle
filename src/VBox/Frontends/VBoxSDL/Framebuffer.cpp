@@ -1,4 +1,4 @@
-/* $Id: Framebuffer.cpp 134271 2019-10-25 11:58:38Z andreas.loeffler@oracle.com $ */
+/* $Id: Framebuffer.cpp 134272 2019-10-25 12:01:57Z andreas.loeffler@oracle.com $ */
 /** @file
  * VBoxSDL - Implementation of VBoxSDLFB (SDL framebuffer) class
  */
@@ -1008,7 +1008,7 @@ void VBoxSDLFB::resizeSDL(void)
     SDL_SysWMinfo info;
     SDL_VERSION(&info.version);
     if (SDL_GetWMInfo(&info))
-        mWinId = (LONG64) info.info.x11.wmpwindow;
+        mWinId = (LONG64) info.info.x11.wmwindow;
 # elif defined(RT_OS_DARWIN)
     mWinId = (intptr_t)VBoxSDLGetDarwinWindowId();
 # else
