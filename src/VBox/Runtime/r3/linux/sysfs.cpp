@@ -1,4 +1,4 @@
-/* $Id: sysfs.cpp 127855 2019-01-01 01:45:53Z knut.osmundsen@oracle.com $ */
+/* $Id: sysfs.cpp 134327 2019-10-30 10:42:48Z noreply@oracle.com $ */
 /** @file
  * IPRT - Linux sysfs access.
  */
@@ -43,7 +43,6 @@
 
 #include <unistd.h>
 #include <stdio.h>
-#include <sys/sysctl.h>
 #include <sys/stat.h>
 #include <sys/fcntl.h>
 #include <sys/sysmacros.h>
