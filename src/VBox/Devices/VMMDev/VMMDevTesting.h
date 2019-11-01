@@ -1,4 +1,4 @@
-/* $Id: VMMDevTesting.h 127867 2019-01-01 04:23:20Z knut.osmundsen@oracle.com $ */
+/* $Id: VMMDevTesting.h 134384 2019-11-01 21:07:06Z knut.osmundsen@oracle.com $ */
 /** @file
  * VMMDev - Guest <-> VMM/Host communication device, internal header.
  */
@@ -26,8 +26,9 @@
 
 RT_C_DECLS_BEGIN
 
-int  vmmdevTestingInitialize(PPDMDEVINS pDevIns);
-void vmmdevTestingTerminate(PPDMDEVINS pDevIns);
+int  vmmdevR3TestingInitialize(PPDMDEVINS pDevIns);
+void vmmdevR3TestingTerminate(PPDMDEVINS pDevIns);
+int  vmmdevRZTestingInitialize(PPDMDEVINS pDevIns);
 
 RT_C_DECLS_END
 
