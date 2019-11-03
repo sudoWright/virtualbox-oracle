@@ -1,4 +1,4 @@
-/* $Id: VBoxDispD3D.cpp 132837 2019-08-21 14:32:40Z vitali.pelenjow@oracle.com $ */
+/* $Id: VBoxDispD3D.cpp 134389 2019-11-03 15:49:20Z vitali.pelenjow@oracle.com $ */
 /** @file
  * VBoxVideo Display D3D User mode dll
  */
@@ -113,7 +113,8 @@ static HRESULT vboxDispAdapterInit(D3DDDIARG_OPENADAPTER const *pOpenData, VBOXW
     if (pAdapter->enmHwType == VBOXVIDEO_HWTYPE_VBOX)
         pAdapter->u32VBox3DCaps = pAdapterInfo->u.vbox.u32VBox3DCaps;
     pAdapter->AdapterInfo = *pAdapterInfo;
-    pAdapter->f3D         = !vboxDispIsDDraw(pOpenData);
+    pAdapter->f3D         =    RT_BOOL(pAdapterInfo->u32AdapterCaps & VBOXWDDM_QAI_CAP_3D)
+                            && !vboxDispIsDDraw(pOpenData);
 #ifdef VBOX_WITH_VIDEOHWACCEL
     pAdapter->cHeads      = pAdapterInfo->cInfos;
     for (uint32_t i = 0; i < pAdapter->cHeads; ++i)

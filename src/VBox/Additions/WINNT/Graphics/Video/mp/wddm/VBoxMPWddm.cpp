@@ -1,4 +1,4 @@
-/* $Id: VBoxMPWddm.cpp 134350 2019-10-30 18:47:23Z vitali.pelenjow@oracle.com $ */
+/* $Id: VBoxMPWddm.cpp 134389 2019-11-03 15:49:20Z vitali.pelenjow@oracle.com $ */
 /** @file
  * VBox WDDM Miniport driver
  */
@@ -1999,6 +1999,7 @@ NTSTATUS APIENTRY DxgkDdiQueryAdapterInfo(
 
                     pQAI->u32Version = VBOXVIDEOIF_VERSION;
                     pQAI->enmHwType = pDevExt->enmHwType;
+                    pQAI->u32AdapterCaps = pDevExt->f3DEnabled ? VBOXWDDM_QAI_CAP_3D : 0;
                     if (pDevExt->enmHwType == VBOXVIDEO_HWTYPE_VBOX)
                     {
                         pQAI->u.vbox.u32VBox3DCaps = 0;
