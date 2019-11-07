@@ -1,4 +1,4 @@
-/* $Id: UIEmptyFilePathSelector.cpp 133541 2019-09-23 17:27:06Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIEmptyFilePathSelector.cpp 134509 2019-11-07 16:10:43Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIEmptyFilePathSelector class implementation.
  */
@@ -216,11 +216,18 @@ void UIEmptyFilePathSelector::choose()
 {
     QString path = mPath;
 
+    /* Check whether we have file-name information available: */
+    const QString strFileName = QFileInfo(path).fileName();
+
     /* Preparing initial directory. */
     QString initDir = path.isNull() ? mHomeDir :
         QIFileDialog::getFirstExistingDir (path);
     if (initDir.isNull())
         initDir = mHomeDir;
+
+    /* Append file-name information if any: */
+    if (!strFileName.isEmpty())
+        initDir = QDir(initDir).absoluteFilePath(strFileName);
 
     switch (mMode)
     {
