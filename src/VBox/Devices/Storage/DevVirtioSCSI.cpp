@@ -1,4 +1,4 @@
-/* $Id: DevVirtioSCSI.cpp 134606 2019-11-12 18:46:14Z noreply@oracle.com $ $Revision: 134606 $ $Date: 2019-11-12 19:46:14 +0100 (Tue, 12 Nov 2019) $ $Author: noreply@oracle.com $ */
+/* $Id: DevVirtioSCSI.cpp 134607 2019-11-12 18:53:07Z noreply@oracle.com $ $Revision: 134607 $ $Date: 2019-11-12 19:53:07 +0100 (Tue, 12 Nov 2019) $ $Author: noreply@oracle.com $ */
 /** @file
  * VBox storage devices - Virtio SCSI Driver
  *
@@ -1138,7 +1138,7 @@ static int virtioScsiR3ReqSubmit(PPDMDEVINS pDevIns, PVIRTIOSCSI pThis, PVIRTIOS
     if (uType == 0xc1 && uTarget == 0x01)
     {
         LogRel(("* * * REPORT LUNS LU ACCESSED * * * "));
-        uScsiLun == 0xff; /* Force rejection. todo: figure out right way to handle, r=paul */
+        uScsiLun = 0xff; /* Force rejection. todo: figure out right way to handle, r=paul */
     }
     else
     if (uType != 1)
