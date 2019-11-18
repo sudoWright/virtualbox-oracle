@@ -1,4 +1,4 @@
-/* $Id: ApplianceImplImport.cpp 133746 2019-10-06 12:37:56Z valery.portnyagin@oracle.com $ */
+/* $Id: ApplianceImplImport.cpp 134761 2019-11-18 20:42:02Z klaus.espenlaub@oracle.com $ */
 /** @file
  * IAppliance and IVirtualSystem COM class implementations.
  */
@@ -3862,7 +3862,10 @@ void Appliance::i_importMachineGeneric(const ovf::VirtualSystem &vsysThis,
     if (FAILED(rc)) throw rc;
 
     /* Set the VRAM */
-    rc = pNewMachine->COMSETTER(VRAMSize)(vramVBox);
+    ComPtr<IGraphicsAdapter> pGraphicsAdapter;
+    rc = pNewMachine->COMGETTER(GraphicsAdapter)(pGraphicsAdapter.asOutParam());
+    if (FAILED(rc)) throw rc;
+    rc = pGraphicsAdapter->COMSETTER(VRAMSize)(vramVBox);
     if (FAILED(rc)) throw rc;
 
     // I/O APIC: Generic OVF has no setting for this. Enable it if we
