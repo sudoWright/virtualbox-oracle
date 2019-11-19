@@ -1,4 +1,4 @@
-/* $Id: UIKeyboardHandler.h 127883 2019-01-01 06:24:57Z knut.osmundsen@oracle.com $ */
+/* $Id: UIKeyboardHandler.h 134810 2019-11-19 20:50:14Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIKeyboardHandler class declaration.
  */
@@ -231,8 +231,6 @@ protected:
     /** The root window at the time we grab the mouse buttons. */
     xcb_window_t m_hButtonGrabWindow;
 #endif /* VBOX_WS_X11 */
-
-    ULONG m_cMonitors;
 };
 
 #endif /* !FEQT_INCLUDED_SRC_runtime_UIKeyboardHandler_h */
