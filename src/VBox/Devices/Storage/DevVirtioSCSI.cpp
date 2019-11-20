@@ -1,4 +1,4 @@
-    /* $Id: DevVirtioSCSI.cpp 134858 2019-11-20 20:56:22Z noreply@oracle.com $ $Revision: 134858 $ $Date: 2019-11-20 21:56:22 +0100 (Wed, 20 Nov 2019) $ $Author: noreply@oracle.com $ */
+    /* $Id: DevVirtioSCSI.cpp 134860 2019-11-20 21:01:41Z noreply@oracle.com $ $Revision: 134860 $ $Date: 2019-11-20 22:01:41 +0100 (Wed, 20 Nov 2019) $ $Author: noreply@oracle.com $ */
 /** @file
  * VBox storage devices - Virtio SCSI Driver
  *
@@ -1062,10 +1062,6 @@ static DECLCALLBACK(int) virtioScsiR3IoReqCopyToBuf(PPDMIMEDIAEXPORT pInterface,
 
     return VINF_SUCCESS;
 }
-
-/*********************************************************************************************************************************
-*   Worker Thread                                                                                                                *
-*********************************************************************************************************************************/
 
 /**
  * Handles request queues for/on a worker thread.
