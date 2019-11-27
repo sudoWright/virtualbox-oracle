@@ -1,4 +1,4 @@
-/* $Id: HDAStreamChannel.cpp 127855 2019-01-01 01:45:53Z knut.osmundsen@oracle.com $ */
+/* $Id: HDAStreamChannel.cpp 135070 2019-11-27 21:31:53Z knut.osmundsen@oracle.com $ */
 /** @file
  * HDAStreamChannel.cpp - Stream channel functions for HD Audio.
  */
@@ -61,7 +61,7 @@ void hdaR3StreamChannelDataDestroy(PPDMAUDIOSTREAMCHANNELDATA pChanData)
         pChanData->pCircBuf = NULL;
     }
 
-    pChanData->fFlags = PDMAUDIOSTREAMCHANNELDATA_FLAG_NONE;
+    pChanData->fFlags = PDMAUDIOSTREAMCHANNELDATA_FLAGS_NONE;
 }
 
 /**
