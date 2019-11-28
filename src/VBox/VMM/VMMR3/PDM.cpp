@@ -1,4 +1,4 @@
-/* $Id: PDM.cpp 134381 2019-11-01 20:46:49Z knut.osmundsen@oracle.com $ */
+/* $Id: PDM.cpp 135079 2019-11-28 00:29:11Z knut.osmundsen@oracle.com $ */
 /** @file
  * PDM - Pluggable Device Manager.
  */
@@ -33,6 +33,7 @@
  *
  * @sa  @ref grp_pdm
  *      @subpage pg_pdm_block_cache
+ *      @subpage pg_pdm_audio
  *
  *
  * @section sec_pdm_dev     The Pluggable Devices
