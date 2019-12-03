@@ -1,4 +1,4 @@
-/* $Id: HDAStream.h 135156 2019-12-03 00:30:11Z knut.osmundsen@oracle.com $ */
+/* $Id: HDAStream.h 135170 2019-12-03 14:40:21Z knut.osmundsen@oracle.com $ */
 /** @file
  * HDAStream.h - Stream functions for HD Audio.
  */
@@ -234,7 +234,7 @@ typedef struct HDASTREAM
     R3PTRTYPE(PHDASTATE)     pHDAState;
     /** Pointer to HDA sink this stream is attached to. */
     R3PTRTYPE(PHDAMIXERSINK) pMixSink;
-    /** Stream's timer (copy of HDASTATE::ahTimers[u8SD]). */
+    /** The timer for pumping data thru the attached LUN drivers. */
     TMTIMERHANDLE            hTimer;
     /** The stream'S critical section to serialize access. */
     RTCRITSECT               CritSect;
