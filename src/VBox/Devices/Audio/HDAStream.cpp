@@ -1,4 +1,4 @@
-/* $Id: HDAStream.cpp 135170 2019-12-03 14:40:21Z knut.osmundsen@oracle.com $ */
+/* $Id: HDAStream.cpp 135254 2019-12-05 13:31:38Z knut.osmundsen@oracle.com $ */
 /** @file
  * HDAStream.cpp - Stream functions for HD Audio.
  */
@@ -923,8 +923,7 @@ static int hdaR3StreamTransfer(PPDMDEVINS pDevIns, PHDASTREAM pStream, uint32_t 
     AssertPtr(pThis);
 
     PHDASTREAMPERIOD pPeriod = &pStream->State.Period;
-    if (!hdaR3StreamPeriodLock(pPeriod))
-        return VERR_ACCESS_DENIED;
+    hdaR3StreamPeriodLock(pPeriod))
 
     bool fProceed = true;
 
