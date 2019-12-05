@@ -1,4 +1,4 @@
-/* $Id: WebMWriter.h 135264 2019-12-05 15:59:34Z andreas.loeffler@oracle.com $ */
+/* $Id: WebMWriter.h 135271 2019-12-05 16:33:04Z andreas.loeffler@oracle.com $ */
 /** @file
  * WebMWriter.h - WebM container handling.
  */
@@ -28,6 +28,7 @@
 #include <map>
 #include <list>
 
+#include <iprt/mem.h>
 #include <iprt/rand.h>
 
 #ifdef VBOX_WITH_LIBVPX
