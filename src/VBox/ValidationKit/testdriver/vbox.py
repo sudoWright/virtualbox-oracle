@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# $Id: vbox.py 134790 2019-11-19 12:09:00Z knut.osmundsen@oracle.com $
+# $Id: vbox.py 135509 2019-12-19 14:55:09Z alexander.eichner@oracle.com $
 # pylint: disable=too-many-lines
 
 """
@@ -27,7 +27,7 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 134790 $"
+__version__ = "$Revision: 135509 $"
 
 # pylint: disable=unnecessary-semicolon
 
@@ -4082,6 +4082,8 @@ class TestDriver(base.TestDriver):                                              
             sName = "SCSI Controller";
         elif eControllerType == vboxcon.StorageControllerType_NVMe:
             sName = "NVMe Controller";
+        elif eControllerType == vboxcon.StorageControllerType_VirtioSCSI:
+            sName = "VirtIO SCSI Controller";
         else:
             sName = "Storage Controller";
         return sName;
