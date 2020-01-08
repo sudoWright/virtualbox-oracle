@@ -1,4 +1,4 @@
-/* $Id: RTFTPServer.cpp 135570 2020-01-08 10:02:03Z andreas.loeffler@oracle.com $ */
+/* $Id: RTFTPServer.cpp 135575 2020-01-08 11:48:03Z andreas.loeffler@oracle.com $ */
 /** @file
  * IPRT - Utility for running a (simple) FTP server.
  */
@@ -50,6 +50,7 @@
 #ifdef RT_OS_WINDOWS
 # include <iprt/win/windows.h>
 #endif
+
 
 /*********************************************************************************************************************************
 *   Global Variables                                                                                                             *
@@ -214,7 +215,7 @@ int main(int argc, char **argv)
                 return RTEXITCODE_SUCCESS;
 
             case 'V':
-                RTPrintf("$Revision: 135570 $\n");
+                RTPrintf("$Revision: 135575 $\n");
                 return RTEXITCODE_SUCCESS;
 
             default:
