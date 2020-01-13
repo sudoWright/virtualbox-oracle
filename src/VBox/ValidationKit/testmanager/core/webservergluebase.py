@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# $Id: webservergluebase.py 135520 2019-12-22 18:51:55Z knut.osmundsen@oracle.com $
+# $Id: webservergluebase.py 135670 2020-01-13 17:48:10Z knut.osmundsen@oracle.com $
 
 """
 Test Manager Core - Web Server Abstraction Base Class.
@@ -26,7 +26,7 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 135520 $"
+__version__ = "$Revision: 135670 $"
 
 
 # Standard python imports.
@@ -89,7 +89,7 @@ class WebServerGlueBase(object):
 
         # Output.
         if sys.version_info[0] >= 3:
-            self.oOutputRaw = sys.stdout.detach();
+            self.oOutputRaw = sys.stdout.detach();  # pylint: disable=no-member
             sys.stdout = None; # Prevents flush_std_files() from complaining on stderr during sys.exit().
         else:
             self.oOutputRaw = sys.stdout;
