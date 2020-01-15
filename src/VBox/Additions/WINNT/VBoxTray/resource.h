@@ -1,4 +1,4 @@
-/* $Id: resource.h 127865 2019-01-01 03:53:56Z knut.osmundsen@oracle.com $ */
+/* $Id: resource.h 135727 2020-01-15 17:13:15Z vitali.pelenjow@oracle.com $ */
 /** @file
  * VBoxService - Guest Additions Service
  */
@@ -21,6 +21,6 @@
 # pragma once
 #endif
 
-#define IDI_VIRTUALBOX 101
+#define IDI_VIRTUALBOX 1
 
 #endif /* !GA_INCLUDED_SRC_WINNT_VBoxTray_resource_h */
