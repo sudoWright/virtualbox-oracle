@@ -1,4 +1,4 @@
-/* $Id: VBoxDD.h 135597 2020-01-09 04:31:04Z noreply@oracle.com $ */
+/* $Id: VBoxDD.h 135747 2020-01-19 12:19:24Z alexander.eichner@oracle.com $ */
 /** @file
  * Built-in drivers & devices (part 1) header.
  */
@@ -191,6 +191,7 @@ extern const PDMUSBREG g_DevWebcam;
 extern const PDMDRVREG g_DrvSCSI;
 #endif
 
+extern const PDMDRVREG g_DrvIfTrace;
 
 /* VBoxAcpi.cpp */
 int acpiPrepareDsdt(PPDMDEVINS pDevIns, void **ppvPtr, size_t *pcbDsdt);
