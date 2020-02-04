@@ -1,11 +1,11 @@
-/* $Id: VBoxMPSa.cpp 132899 2019-08-26 13:56:24Z vitali.pelenjow@oracle.com $ */
+/* $Id: VBoxMPSa.cpp 135976 2020-02-04 10:35:17Z knut.osmundsen@oracle.com $ */
 
 /** @file
  * Sorted array impl
  */
 
 /*
- * Copyright (C) 2014-2019 Oracle Corporation
+ * Copyright (C) 2014-2020 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

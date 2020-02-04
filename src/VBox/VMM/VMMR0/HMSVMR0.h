@@ -1,10 +1,10 @@
-/* $Id: HMSVMR0.h 133487 2019-09-20 05:20:00Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: HMSVMR0.h 135976 2020-02-04 10:35:17Z knut.osmundsen@oracle.com $ */
 /** @file
  * HM SVM (AMD-V) - Internal header file.
  */
 
 /*
- * Copyright (C) 2006-2019 Oracle Corporation
+ * Copyright (C) 2006-2020 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

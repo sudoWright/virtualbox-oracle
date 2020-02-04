@@ -1,10 +1,10 @@
-/* $Id: UIToolPaneMachine.h 131718 2019-07-02 09:41:51Z sergey.dubov@oracle.com $ */
+/* $Id: UIToolPaneMachine.h 135976 2020-02-04 10:35:17Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIToolPaneMachine class declaration.
  */
 
 /*
- * Copyright (C) 2017-2019 Oracle Corporation
+ * Copyright (C) 2017-2020 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

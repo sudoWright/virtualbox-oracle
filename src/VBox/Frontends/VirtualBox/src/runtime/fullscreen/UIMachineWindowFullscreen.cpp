@@ -1,10 +1,10 @@
-/* $Id: UIMachineWindowFullscreen.cpp 133183 2019-09-08 18:19:53Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIMachineWindowFullscreen.cpp 135976 2020-02-04 10:35:17Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIMachineWindowFullscreen class implementation.
  */
 
 /*
- * Copyright (C) 2010-2019 Oracle Corporation
+ * Copyright (C) 2010-2020 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

@@ -1,10 +1,10 @@
-/* $Id: MachineDebuggerImpl.cpp 132597 2019-08-06 13:54:47Z knut.osmundsen@oracle.com $ */
+/* $Id: MachineDebuggerImpl.cpp 135976 2020-02-04 10:35:17Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox IMachineDebugger COM class implementation (VBoxC).
  */
 
 /*
- * Copyright (C) 2006-2019 Oracle Corporation
+ * Copyright (C) 2006-2020 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

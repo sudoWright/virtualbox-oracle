@@ -1,4 +1,4 @@
-/* $Id: fsw_iso9660.c 133501 2019-09-20 13:08:32Z alexander.eichner@oracle.com $ */
+/* $Id: fsw_iso9660.c 135976 2020-02-04 10:35:17Z knut.osmundsen@oracle.com $ */
 /** @file
  * fsw_iso9660.c - ISO9660 file system driver code.
  *
@@ -14,7 +14,7 @@
  */
 
 /*
- * Copyright (C) 2010-2019 Oracle Corporation
+ * Copyright (C) 2010-2020 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

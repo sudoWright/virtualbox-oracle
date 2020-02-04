@@ -1,10 +1,10 @@
-/* $Id: BusAssignmentManager.cpp 131989 2019-07-10 14:10:43Z michal.necasek@oracle.com $ */
+/* $Id: BusAssignmentManager.cpp 135976 2020-02-04 10:35:17Z knut.osmundsen@oracle.com $ */
 /** @file
  * VirtualBox bus slots assignment manager
  */
 
 /*
- * Copyright (C) 2010-2019 Oracle Corporation
+ * Copyright (C) 2010-2020 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

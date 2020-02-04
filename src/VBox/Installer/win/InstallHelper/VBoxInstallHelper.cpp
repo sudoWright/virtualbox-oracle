@@ -1,10 +1,10 @@
-/* $Id: VBoxInstallHelper.cpp 129475 2019-03-20 08:05:37Z aleksey.ilyushin@oracle.com $ */
+/* $Id: VBoxInstallHelper.cpp 135976 2020-02-04 10:35:17Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxInstallHelper - Various helper routines for Windows host installer.
  */
 
 /*
- * Copyright (C) 2008-2019 Oracle Corporation
+ * Copyright (C) 2008-2020 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

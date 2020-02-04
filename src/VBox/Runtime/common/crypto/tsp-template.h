@@ -1,10 +1,10 @@
-/* $Id: tsp-template.h 132748 2019-08-15 15:18:06Z knut.osmundsen@oracle.com $ */
+/* $Id: tsp-template.h 135976 2020-02-04 10:35:17Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Crypto - Time-Stamp Protocol (RFC-3161), Code Generator Template.
  */
 
 /*
- * Copyright (C) 2006-2019 Oracle Corporation
+ * Copyright (C) 2006-2020 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;
