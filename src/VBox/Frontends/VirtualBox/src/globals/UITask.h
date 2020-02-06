@@ -1,4 +1,4 @@
-/* $Id: UITask.h 136013 2020-02-05 19:14:36Z sergey.dubov@oracle.com $ */
+/* $Id: UITask.h 136026 2020-02-06 14:59:10Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UITask class declaration.
  */
@@ -43,8 +43,9 @@ public:
     /** Task types. */
     enum Type
     {
-        Type_MediumEnumeration = 1,
-        Type_DetailsPopulation = 2,
+        Type_MediumEnumeration     = 1,
+        Type_DetailsPopulation     = 2,
+        Type_CloudAcquireInstances = 3,
     };
 
     /** Constructs the task of passed @a enmType. */
