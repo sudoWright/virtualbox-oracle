@@ -1,4 +1,4 @@
-/* $Id: UIChooserItem.cpp 135976 2020-02-04 10:35:17Z knut.osmundsen@oracle.com $ */
+/* $Id: UIChooserItem.cpp 136069 2020-02-10 17:08:22Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIChooserItem class definition.
  */
@@ -494,12 +494,15 @@ void UIChooserItem::mouseMoveEvent(QGraphicsSceneMouseEvent *pEvent)
         QApplication::startDragDistance())
         return;
 
-    /* Initialize dragging: */
-    QDrag *pDrag = new QDrag(pEvent->widget());
-    model()->setCurrentDragObject(pDrag);
-    pDrag->setPixmap(toPixmap());
-    pDrag->setMimeData(createMimeData());
-    pDrag->exec(Qt::MoveAction | Qt::CopyAction, Qt::MoveAction);
+    /* Initialize dragging for local VMs only: */
+    if (!m_pNode->hasAtLeastOneCloudNode())
+    {
+        QDrag *pDrag = new QDrag(pEvent->widget());
+        model()->setCurrentDragObject(pDrag);
+        pDrag->setPixmap(toPixmap());
+        pDrag->setMimeData(createMimeData());
+        pDrag->exec(Qt::MoveAction | Qt::CopyAction, Qt::MoveAction);
+    }
 }
 
 void UIChooserItem::dragMoveEvent(QGraphicsSceneDragDropEvent *pEvent)
