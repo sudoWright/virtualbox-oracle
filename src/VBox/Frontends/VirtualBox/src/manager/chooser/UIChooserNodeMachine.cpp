@@ -1,4 +1,4 @@
-/* $Id: UIChooserNodeMachine.cpp 136069 2020-02-10 17:08:22Z sergey.dubov@oracle.com $ */
+/* $Id: UIChooserNodeMachine.cpp 136076 2020-02-11 13:12:53Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIChooserNodeMachine class implementation.
  */
@@ -83,6 +83,7 @@ UIChooserNodeMachine::~UIChooserNodeMachine()
     delete item();
     if (parentNode())
         parentNode()->removeNode(this);
+    delete m_pCache;
 }
 
 QString UIChooserNodeMachine::name() const
