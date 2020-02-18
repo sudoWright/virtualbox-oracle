@@ -1,6 +1,6 @@
-/* $Id: UIVirtualMachineItemCloud.h 136152 2020-02-17 12:38:51Z sergey.dubov@oracle.com $ */
+/* $Id: UIVirtualMachineItemCloud.h 136169 2020-02-18 15:29:54Z sergey.dubov@oracle.com $ */
 /** @file
- * VBox Qt GUI - UIVirtualMachineItemCloud class declarations.
+ * VBox Qt GUI - UIVirtualMachineItemCloud class declaration.
  */
 
 /*
