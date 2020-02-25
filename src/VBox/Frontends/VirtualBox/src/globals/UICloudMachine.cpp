@@ -1,4 +1,4 @@
-/* $Id: UICloudMachine.cpp 136087 2020-02-11 16:31:09Z sergey.dubov@oracle.com $ */
+/* $Id: UICloudMachine.cpp 136262 2020-02-25 11:06:13Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UICloudMachine class implementation.
  */
