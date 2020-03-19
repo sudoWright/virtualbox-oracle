@@ -1,4 +1,4 @@
-/* $Id: GuestCtrlImpl.cpp 135976 2020-02-04 10:35:17Z knut.osmundsen@oracle.com $ */
+/* $Id: GuestCtrlImpl.cpp 136516 2020-03-19 09:40:22Z andreas.loeffler@oracle.com $ */
 /** @file
  * VirtualBox COM class implementation: Guest
  */
@@ -531,7 +531,6 @@ HRESULT Guest::updateGuestAdditions(const com::Utf8Str &aSource, const std::vect
     startupInfo.mName = "Updating Guest Additions";
 
     GuestCredentials guestCreds;
-    RT_ZERO(guestCreds);
 
     HRESULT hrc;
     ComObjPtr<GuestSession> pSession;
