@@ -1,4 +1,4 @@
-/* $Id: VBoxService.cpp 135976 2020-02-04 10:35:17Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxService.cpp 136626 2020-03-25 13:15:39Z andreas.loeffler@oracle.com $ */
 /** @file
  * VBoxService - Guest Additions Service Skeleton.
  */
@@ -914,7 +914,7 @@ int main(int argc, char **argv)
      * handles a guest control session.
      */
     if (   argc >= 2
-        && !RTStrICmp(argv[1], "guestsession"))
+        && !RTStrICmp(argv[1], VBOXSERVICECTRLSESSION_GETOPT_PREFIX))
         fUserSession = true;
 #endif
 
