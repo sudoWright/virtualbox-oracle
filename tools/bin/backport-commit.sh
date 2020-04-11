@@ -1,5 +1,5 @@
 # !kmk_ash
-# $Id: backport-commit.sh 137143 2020-04-10 13:02:38Z knut.osmundsen@oracle.com $
+# $Id: backport-commit.sh 137168 2020-04-11 18:30:37Z knut.osmundsen@oracle.com $
 ## @file
 # Script for committing a backport from trunk.
 #
@@ -117,7 +117,7 @@ for MY_IGNORE in 1 2 3; do
                 "${MY_SVN}" up "${MY_BRANCH_DIR}"
                 exit 0
             fi
-            echo "error: commit failed" >2
+            echo "error: commit failed" 1>&2
             exit 1
             ;;
         n|N|[nN][oO])
