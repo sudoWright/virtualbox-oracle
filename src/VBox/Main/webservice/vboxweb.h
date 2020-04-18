@@ -1,4 +1,4 @@
-/* $Id: vboxweb.h 135976 2020-02-04 10:35:17Z knut.osmundsen@oracle.com $ */
+/* $Id: vboxweb.h 137320 2020-04-18 13:25:05Z knut.osmundsen@oracle.com $ */
 /** @file
  * vboxweb.h - header file for "real" web server code.
  */
@@ -31,7 +31,7 @@
 
 #include <iprt/asm.h>
 
-#include <string>
+#include <iprt/sanitized/string>
 
 /****************************************************************************
  *

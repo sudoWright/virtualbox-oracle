@@ -1,4 +1,4 @@
-/* $Id: QMTranslatorImpl.cpp 135976 2020-02-04 10:35:17Z knut.osmundsen@oracle.com $ */
+/* $Id: QMTranslatorImpl.cpp 137320 2020-04-18 13:25:05Z knut.osmundsen@oracle.com $ */
 /** @file
  * VirtualBox API translation handling class
  */
@@ -18,7 +18,7 @@
 #include <vector>
 #include <set>
 #include <algorithm>
-#include <iterator>
+#include <iprt/sanitized/iterator>
 #include <iprt/errcore.h>
 #include <iprt/file.h>
 #include <iprt/asm.h>
