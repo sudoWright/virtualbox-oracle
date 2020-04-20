@@ -1,6 +1,6 @@
-/* $Id: vcc100-msvcrt-fakes.cpp 135976 2020-02-04 10:35:17Z knut.osmundsen@oracle.com $ */
+/* $Id: vcc-fakes-ntdll.cpp 137390 2020-04-20 15:01:48Z knut.osmundsen@oracle.com $ */
 /** @file
- * IPRT - Tricks to make the Visual C++ 2010 CRT work on NT4, W2K and XP.
+ * IPRT - Tricks to make the Visual C++ 2010 CRT work on NT4, W2K and XP - NTDLL.DLL.
  */
 
 /*
@@ -28,55 +28,47 @@
 /*********************************************************************************************************************************
 *   Header Files                                                                                                                 *
 *********************************************************************************************************************************/
-#include <iprt/assert.h>
-#include <stdlib.h>
-
+#include <iprt/cdefs.h>
+#include <iprt/types.h>
 
 #ifndef RT_ARCH_X86
 # error "This code is X86 only"
 #endif
 
+#include <iprt/win/windows.h>
 
 
-/* This one is static in libcmt, fortunately no rocket science.  */
-extern "C" void __cdecl my_initterm(PFNRT *papfnStart, PFNRT *papfnEnd)
+
+/** Dynamically resolves an kernel32 API.   */
+#define RESOLVE_ME(ApiNm) \
+    static bool volatile    s_fInitialized = false; \
+    static decltype(ApiNm) *s_pfnApi = NULL; \
+    decltype(ApiNm)        *pfnApi; \
+    if (s_fInitialized) \
+        pfnApi = s_pfnApi; \
+    else \
+    { \
+        pfnApi = (decltype(pfnApi))GetProcAddress(GetModuleHandleW(L"ntdll.dll"), #ApiNm); \
+        s_pfnApi = pfnApi; \
+        s_fInitialized = true; \
+    } do {} while (0) \
+
+
+extern "C"
+__declspec(dllexport)
+ULONG WINAPI RtlGetLastWin32Error(VOID)
 {
-    for (; (uintptr_t)papfnStart < (uintptr_t)papfnEnd; papfnStart++)
-        if (*papfnStart)
-            (*papfnStart)();
+    RESOLVE_ME(RtlGetLastWin32Error);
+    if (pfnApi)
+        return pfnApi();
+    return GetLastError();
 }
 
-extern "C" PFNRT __cdecl my_dllonexit(PFNRT pfnToAdd, PFNRT **ppapfnStart, PFNRT **ppapfnEnd)
+
+/* Dummy to force dragging in this object in the link, so the linker
+   won't accidentally use the symbols from kernel32. */
+extern "C" int vcc100_ntdll_fakes_cpp(void)
 {
-    /* This is _very_ crude, but it'll probably do for our purposes... */
-    size_t cItems = *ppapfnEnd - *ppapfnStart;
-    *ppapfnStart = (PFNRT *)realloc(*ppapfnStart, (cItems + 1) * sizeof(**ppapfnStart));
-    (*ppapfnStart)[cItems] = pfnToAdd;
-    *ppapfnEnd = &(*ppapfnStart)[cItems + 1];
-    return pfnToAdd;
-}
-
-extern "C" int _newmode;
-extern "C" int __cdecl __setargv(void);
-extern "C" int __cdecl _setargv(void);
-
-extern "C" int __cdecl my_getmainargs(int *pcArgs, char ***ppapszArgs, char ***ppapszEnv, int fDoWildcardExp, int *pfNewMode)
-{
-    _newmode = *pfNewMode;
-
-    Assert(!fDoWildcardExp);
-    int rc = _setargv();
-    if (rc >= 0)
-    {
-        *pcArgs     = __argc;
-        *ppapszArgs = __argv;
-        *ppapszEnv  = _environ;
-    }
-    return rc;
-}
-
-extern "C" void __cdecl my_setusermatherr(PFNRT pfnIgnore)
-{
-    /* pure stub. */
+    return 42;
 }
 
