@@ -1,4 +1,4 @@
-/* $Id: UIChooserNodeMachine.cpp 137410 2020-04-21 09:41:36Z sergey.dubov@oracle.com $ */
+/* $Id: UIChooserNodeMachine.cpp 137413 2020-04-21 10:02:06Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIChooserNodeMachine class implementation.
  */
@@ -187,11 +187,6 @@ void UIChooserNodeMachine::updateAllNodes(const QUuid &uId)
     /* Update machine-item: */
     if (item())
         item()->updateItem();
-}
-
-bool UIChooserNodeMachine::hasAtLeastOneCloudNode() const
-{
-    return cache()->itemType() != UIVirtualMachineItem::ItemType_Local;
 }
 
 int UIChooserNodeMachine::positionOf(UIChooserNode *pNode)
