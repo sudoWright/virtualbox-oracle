@@ -1,4 +1,4 @@
-/* $Id: VBoxManageAppliance.cpp 137603 2020-04-28 09:56:41Z valery.portnyagin@oracle.com $ */
+/* $Id: VBoxManageAppliance.cpp 137604 2020-04-28 10:06:54Z valery.portnyagin@oracle.com $ */
 /** @file
  * VBoxManage - The appliance-related commands.
  */
@@ -2034,7 +2034,7 @@ RTEXITCODE handleSignAppliance(HandlerArg *arg)
                         RTCrDigestRelease(hDigest);
                         RTCrKeyRelease(hPrivateKey);
                         if (rc == VERR_CR_PKIX_SIGNATURE_MISMATCH)
-                            return RTMsgErrorExit(RTEXITCODE_FAILURE, "The manifest signature does not match", rc);
+                            return RTMsgErrorExit(RTEXITCODE_FAILURE, "The manifest signature does not match");
 
                         return RTMsgErrorExit(RTEXITCODE_FAILURE, "Error validating the manifest signature (%Rrc, %s)",
                                               rc, ErrInfo.pszMsg);
