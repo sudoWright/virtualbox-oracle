@@ -1,4 +1,4 @@
-/* $Id: tstRTErr-1.cpp 137633 2020-04-28 16:05:00Z knut.osmundsen@oracle.com $ */
+/* $Id: tstRTErr-1.cpp 137636 2020-04-28 16:33:50Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT Testcase - Error Messages.
  */
@@ -233,5 +233,4 @@ int main(int argc, char **argv)
      */
     return RTTestSummaryAndDestroy(hTest);
 }
-
 
