@@ -1,4 +1,4 @@
-/* $Id: UIChooser.h 137692 2020-04-30 13:23:42Z sergey.dubov@oracle.com $ */
+/* $Id: UIChooser.h 137694 2020-04-30 14:07:20Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIChooser class declaration.
  */
@@ -155,6 +155,8 @@ private:
 
         /** Deinit model. */
         void deinitModel();
+        /** Cleanups connections. */
+        void cleanupConnections();
         /** Cleanups all. */
         void cleanup();
     /** @} */
