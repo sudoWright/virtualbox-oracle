@@ -1,4 +1,4 @@
-/* $Id: UIChooser.h 138168 2020-05-22 13:31:42Z sergey.dubov@oracle.com $ */
+/* $Id: UIChooser.h 138174 2020-05-22 14:53:47Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIChooser class declaration.
  */
@@ -118,6 +118,9 @@ public:
         bool isSingleCloudProfileGroupSelected() const;
         /** Returns whether all items of one group are selected. */
         bool isAllItemsOfOneGroupSelected() const;
+
+        /** Returns full name of currently selected group. */
+        QString fullGroupName() const;
     /** @} */
 
     /** @name Group saving stuff.
