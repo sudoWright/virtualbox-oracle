@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# $Id: wuibase.py 136649 2020-03-25 20:09:52Z knut.osmundsen@oracle.com $
+# $Id: wuibase.py 138226 2020-05-25 13:00:24Z knut.osmundsen@oracle.com $
 
 """
 Test Manager Web-UI - Base Classes.
@@ -26,7 +26,7 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 136649 $"
+__version__ = "$Revision: 138226 $"
 
 
 # Standard python imports.
@@ -633,7 +633,7 @@ class WuiDispatcherBase(object):
         # Relative timestamp. Validate and convert it to a fixed timestamp.
         #
         chSign = sValue[0];
-        (sValue, sError) = ModelDataBase.validateTs(sValue[1:]);
+        (sValue, sError) = ModelDataBase.validateTs(sValue[1:], fRelative = True);
         if sError is not None:
             raise WuiException('%s parameter "%s" ("%s") is invalid: %s' % (self._sAction, sName, sValue, sError));
         if sValue[-6] in ['-', '+']:
