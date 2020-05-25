@@ -1,4 +1,4 @@
-/* $Id: UIVirtualBoxManager.cpp 138174 2020-05-22 14:53:47Z sergey.dubov@oracle.com $ */
+/* $Id: UIVirtualBoxManager.cpp 138241 2020-05-25 15:44:36Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVirtualBoxManager class implementation.
  */
@@ -1353,7 +1353,7 @@ void UIVirtualBoxManager::sltPerformCreateMachineShortcut()
 
 void UIVirtualBoxManager::sltPerformGroupSorting()
 {
-    m_pWidget->performGroupSorting();
+    m_pWidget->sortGroup();
 }
 
 void UIVirtualBoxManager::sltGroupCloseMenuAboutToShow()
