@@ -1,4 +1,4 @@
-/* $Id: UIVirtualBoxManagerWidget.h 138247 2020-05-25 17:24:01Z sergey.dubov@oracle.com $ */
+/* $Id: UIVirtualBoxManagerWidget.h 138272 2020-05-26 15:53:40Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVirtualBoxManagerWidget class declaration.
  */
@@ -145,8 +145,8 @@ public:
         void disbandGroup();
         /** Removes machine. */
         void removeMachine();
-        /** Moves machine to a new group. */
-        void moveMachineToNewGroup();
+        /** Moves machine to a group with certain @a strName. */
+        void moveMachineToGroup(const QString &strName = QString());
         /** Refreshes machine. */
         void refreshMachine();
         /** Sorts group. */

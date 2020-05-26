@@ -1,4 +1,4 @@
-/* $Id: UIChooser.cpp 138247 2020-05-25 17:24:01Z sergey.dubov@oracle.com $ */
+/* $Id: UIChooser.cpp 138272 2020-05-26 15:53:40Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIChooser class implementation.
  */
@@ -130,10 +130,10 @@ void UIChooser::removeMachine()
     model()->removeSelectedMachineItems();
 }
 
-void UIChooser::moveMachineToNewGroup()
+void UIChooser::moveMachineToGroup(const QString &strName)
 {
     AssertPtrReturnVoid(model());
-    model()->moveSelectedMachineItemsToNewGroupItem();
+    model()->moveSelectedMachineItemsToGroupItem(strName);
 }
 
 void UIChooser::refreshMachine()
