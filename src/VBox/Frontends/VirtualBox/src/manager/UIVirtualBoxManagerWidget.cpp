@@ -1,4 +1,4 @@
-/* $Id: UIVirtualBoxManagerWidget.cpp 138272 2020-05-26 15:53:40Z sergey.dubov@oracle.com $ */
+/* $Id: UIVirtualBoxManagerWidget.cpp 138275 2020-05-26 16:17:40Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVirtualBoxManagerWidget class implementation.
  */
@@ -133,6 +133,11 @@ void UIVirtualBoxManagerWidget::removeMachine()
 void UIVirtualBoxManagerWidget::moveMachineToGroup(const QString &strName /* = QString() */)
 {
     m_pPaneChooser->moveMachineToGroup(strName);
+}
+
+QStringList UIVirtualBoxManagerWidget::possibleGroupsForMachineToMove(const QUuid &uId)
+{
+    return m_pPaneChooser->possibleGroupsForMachineToMove(uId);
 }
 
 void UIVirtualBoxManagerWidget::refreshMachine()
