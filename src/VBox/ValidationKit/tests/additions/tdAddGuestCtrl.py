@@ -27,7 +27,7 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 138301 $"
+__version__ = "$Revision: 138302 $"
 
 # Standard Python imports.
 import errno
@@ -68,7 +68,7 @@ def limitString(sString, cLimit = 32):
         sString = str(sString);
     cLen = len(sString);
     if not cLen:
-        return cLen;
+        return '';
     return (sString[:cLimit] + '...[%d more]' % (cLen - cLimit)) if cLen > cLimit else sString;
 
 class GuestStream(bytearray):
