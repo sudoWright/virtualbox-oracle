@@ -1,4 +1,4 @@
-/* $Id: VBoxManage.cpp 137978 2020-05-14 17:42:13Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxManage.cpp 138442 2020-06-04 13:38:15Z aleksey.ilyushin@oracle.com $ */
 /** @file
  * VBoxManage - VirtualBox's command-line interface.
  */
@@ -161,7 +161,7 @@ static const VBMGCMD g_aCommands[] =
     { "convertdd",          USAGE_CONVERTFROMRAW,   VBMG_CMD_TODO, handleConvertFromRaw,       VBMG_CMD_F_NO_COM },
     { "usbdevsource",       USAGE_USBDEVSOURCE,     VBMG_CMD_TODO, handleUSBDevSource,         0 },
     { "cloudprofile",       USAGE_S_NEWCMD,      HELP_CMD_CLOUDPROFILE, handleCloudProfile,         0 },
-    { "cloud",              USAGE_S_NEWCMD,         VBMG_CMD_TODO, handleCloud,               0 }
+    { "cloud",              USAGE_S_NEWCMD,        HELP_CMD_CLOUD, handleCloud,               0 }
 };
 
 /**
