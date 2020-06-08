@@ -1,4 +1,4 @@
-/* $Id: UIMachineView.cpp 138227 2020-05-25 13:05:38Z sergey.dubov@oracle.com $ */
+/* $Id: UIMachineView.cpp 138512 2020-06-08 14:58:31Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIMachineView class implementation.
  */
@@ -430,8 +430,8 @@ void UIMachineView::sltHandleNotifyChange(int iWidth, int iHeight)
         && (machine().GetGraphicsAdapter().GetGraphicsControllerType() != KGraphicsControllerType_VMSVGA))
         storeGuestSizeHint(QSize(iWidth, iHeight));
 
-    LogRelFlow(("GUI: UIMachineView::sltHandleNotifyChange: Complete for Screen=%d, Size=%dx%d\n",
-                (unsigned long)m_uScreenId, iWidth, iHeight));
+    LogRel2(("GUI: UIMachineView::sltHandleNotifyChange: Complete for Screen=%d, Size=%dx%d\n",
+             (unsigned long)m_uScreenId, frameBufferSizeNew.width(), frameBufferSizeNew.height()));
 }
 
 void UIMachineView::sltHandleNotifyUpdate(int iX, int iY, int iWidth, int iHeight)
