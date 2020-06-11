@@ -1,4 +1,4 @@
-/* $Id: VBoxGLSupportInfo.cpp 135976 2020-02-04 10:35:17Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxGLSupportInfo.cpp 138593 2020-06-11 10:30:36Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - OpenGL support info used for 2D support detection.
  */
