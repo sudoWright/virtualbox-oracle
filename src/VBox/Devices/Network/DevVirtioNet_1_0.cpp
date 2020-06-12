@@ -1,4 +1,4 @@
-/* $Id: DevVirtioNet_1_0.cpp 138610 2020-06-12 06:27:21Z noreply@oracle.com $ $Revision: 138610 $ $Date: 2020-06-12 08:27:21 +0200 (Fri, 12 Jun 2020) $ $Author: noreply@oracle.com $ */
+/* $Id: DevVirtioNet_1_0.cpp 138612 2020-06-12 06:30:50Z noreply@oracle.com $ $Revision: 138612 $ $Date: 2020-06-12 08:30:50 +0200 (Fri, 12 Jun 2020) $ $Author: noreply@oracle.com $ */
 
 /** @file
  * VBox storage devices - Virtio NET Driver
@@ -822,7 +822,7 @@ static DECLCALLBACK(void) virtioNetR3Info(PPDMDEVINS pDevIns, PCDBGFINFOHLP pHlp
         "Debug Info: %s\n"
         "        (options: [a]ll, [n]et, [f]eatures, [s]tate, [p]ointers, [q]ueues)\n"
         "---------------------------------------------------------------------------\n\n",
-        pThis->szInst, pDevIns->pReg->szName);
+        pThis->szInst);
 
     if (fNone)
         return;
@@ -913,7 +913,7 @@ static DECLCALLBACK(void) virtioNetR3Info(PPDMDEVINS pDevIns, PCDBGFINFOHLP pHlp
         uint32_t fTransmitting = ASMAtomicReadU32(&pThis->uIsTransmitting);
 
         pHlp->pfnPrintf(pHlp, "    Transmitting: ............. %s\n", fTransmitting ? "true" : "false");
-        pHlp->pfnPrintf(pHlp, "    Quiescing: ................ %s %s\n",
+        pHlp->pfnPrintf(pHlp, "    Quiescing: ................ %s %s%s%s\n",
                 pThis->fQuiescing ? "true" : "false",
                 pThis->fQuiescing ? "(" : "",
                 pThis->fQuiescing ? virtioCoreGetStateChangeText(pThisCC->enmQuiescingFor) : "",
