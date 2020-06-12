@@ -1,4 +1,4 @@
-/* $Id: DevVirtioNet_1_0.cpp 138609 2020-06-12 06:17:35Z noreply@oracle.com $ $Revision: 138609 $ $Date: 2020-06-12 08:17:35 +0200 (Fri, 12 Jun 2020) $ $Author: noreply@oracle.com $ */
+/* $Id: DevVirtioNet_1_0.cpp 138610 2020-06-12 06:27:21Z noreply@oracle.com $ $Revision: 138610 $ $Date: 2020-06-12 08:27:21 +0200 (Fri, 12 Jun 2020) $ $Author: noreply@oracle.com $ */
 
 /** @file
  * VBox storage devices - Virtio NET Driver
@@ -662,7 +662,7 @@ static DECLCALLBACK(void) virtioNetVirtqNotified(PPDMDEVINS pDevIns, PVIRTIOCORE
         }
     }
     else
-        LogRelFunc(("%s unrecognized queue %s (idx=%d) notified\n", pVirtq->szName, idxVirtq));
+        LogRelFunc(("%s unrecognized queue %s (idx=%d) notified\n", pThis->szInst, pVirtq->szName, idxVirtq));
 }
 
 #ifdef IN_RING3 /* spans most of the file, at the moment. */
