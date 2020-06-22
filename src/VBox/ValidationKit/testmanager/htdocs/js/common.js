@@ -1,4 +1,4 @@
-/* $Id: common.js 138758 2020-06-22 10:12:49Z alexander.rudnev@oracle.com $ */
+/* $Id: common.js 138764 2020-06-22 12:19:32Z alexander.rudnev@oracle.com $ */
 /** @file
  * Common JavaScript functions
  */
@@ -240,7 +240,7 @@ function parseIsoTimestamp(sTs)
 }
 
 /** 
- * @param   oDate   Date object. 
+ * @param   oDate   Date object.
  */
 function formatTimeHHMM(oDate, fNbsp)
 {
