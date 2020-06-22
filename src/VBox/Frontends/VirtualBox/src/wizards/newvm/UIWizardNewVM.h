@@ -1,4 +1,4 @@
-/* $Id: UIWizardNewVM.h 138744 2020-06-21 15:25:49Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIWizardNewVM.h 138756 2020-06-22 07:33:39Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardNewVM class declaration.
  */
@@ -42,6 +42,7 @@ public:
         PageNameType,
         PageHardware,
         PageDisk,
+        PageInstallSetup,
         PageMax
     };
 
