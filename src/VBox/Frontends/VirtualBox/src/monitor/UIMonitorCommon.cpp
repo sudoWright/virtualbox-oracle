@@ -1,4 +1,4 @@
-/* $Id: UIMonitorCommon.cpp 136806 2020-04-02 08:38:43Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIMonitorCommon.cpp 138781 2020-06-22 18:24:00Z noreply@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIMonitorCommon class implementation.
  */
@@ -17,6 +17,8 @@
 
 /* Qt includes: */
 #include <QPainter>
+#include <QPainterPath>
+#include <QPainterPathStroker>
 #include <QXmlStreamReader>
 
 

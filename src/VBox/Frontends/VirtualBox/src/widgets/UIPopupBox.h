@@ -1,4 +1,4 @@
-/* $Id: UIPopupBox.h 135976 2020-02-04 10:35:17Z knut.osmundsen@oracle.com $ */
+/* $Id: UIPopupBox.h 138781 2020-06-22 18:24:00Z noreply@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIPopupBox/UIPopupBoxGroup classes declaration.
  */
@@ -24,6 +24,9 @@
 /* Qt includes: */
 #include <QIcon>
 #include <QWidget>
+#include <QPainter>
+#include <QPainterPath>
+#include <QPainterPathStroker>
 
 /* GUI includes: */
 #include "UILibraryDefs.h"
