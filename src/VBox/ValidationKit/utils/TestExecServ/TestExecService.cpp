@@ -1,4 +1,4 @@
-/* $Id: TestExecService.cpp 138673 2020-06-16 20:03:06Z andreas.loeffler@oracle.com $ */
+/* $Id: TestExecService.cpp 138794 2020-06-24 08:53:30Z andreas.loeffler@oracle.com $ */
 /** @file
  * TestExecServ - Basic Remote Execution Service.
  */
@@ -1698,7 +1698,7 @@ static int txsDoVer(PCTXSPKTHDR pPktHdr)
     if (RTStrPrintf2(Pkt.szVer, sizeof(Pkt.szVer), "%s r%s %s.%s (%s %s)",
                      RTBldCfgVersion(), RTBldCfgRevisionStr(), KBUILD_TARGET, KBUILD_TARGET_ARCH, __DATE__, __TIME__) > 0)
     {
-        return txsReplyInternal(&Pkt.Hdr, "ACK VER", strlen(Pkt.szVer) + 1);
+        return txsReplyInternal(&Pkt.Hdr, "ACK VER ", strlen(Pkt.szVer) + 1);
     }
 
     return txsReplyRC(pPktHdr, VERR_BUFFER_OVERFLOW, "RTStrPrintf2");
@@ -3702,7 +3702,7 @@ static RTEXITCODE txsParseArgv(int argc, char **argv, bool *pfExit)
                 break;
 
             case 'V':
-                RTPrintf("$Revision: 138673 $\n");
+                RTPrintf("$Revision: 138794 $\n");
                 *pfExit = true;
                 return RTEXITCODE_SUCCESS;
 
