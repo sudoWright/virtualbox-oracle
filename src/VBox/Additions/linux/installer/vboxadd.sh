@@ -1,7 +1,7 @@
 #! /bin/sh
-# $Id: vboxadd.sh 135976 2020-02-04 10:35:17Z knut.osmundsen@oracle.com $
+# $Id: vboxadd.sh 138821 2020-06-25 11:52:07Z knut.osmundsen@oracle.com $
 ## @file
-# Linux Additions kernel module init script ($Revision: 135976 $)
+# Linux Additions kernel module init script ($Revision: 138821 $)
 #
 
 #
@@ -61,7 +61,7 @@ QUIET=
 test -z "${TARGET_VER}" && TARGET_VER=`uname -r`
 # Marker to ignore a particular kernel version which was already installed.
 SKIPFILE_BASE=/var/lib/VBoxGuestAdditions/skip
-export BUILD_TYPE
+export VBOX_KBUILD_TYPE
 export USERNAME
 
 setup_log()
