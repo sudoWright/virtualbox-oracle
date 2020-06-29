@@ -1,4 +1,4 @@
-/* $Id: UIActionPoolManager.cpp 138288 2020-05-27 12:01:54Z sergey.dubov@oracle.com $ */
+/* $Id: UIActionPoolManager.cpp 138883 2020-06-29 12:46:08Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIActionPoolManager class implementation.
  */
@@ -666,7 +666,7 @@ protected:
     /** Handles translation event. */
     virtual void retranslateUi() /* override */
     {
-        setName(QApplication::translate("UIActionPool", "[New]"));
+        setName(QApplication::translate("UIActionPool", "[New]", "group"));
         setStatusTip(QApplication::translate("UIActionPool", "Add new group based on selected virtual machines"));
     }
 };
