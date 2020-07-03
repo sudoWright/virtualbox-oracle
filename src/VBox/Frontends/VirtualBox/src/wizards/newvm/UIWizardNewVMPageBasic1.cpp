@@ -1,4 +1,4 @@
-/* $Id: UIWizardNewVMPageBasicNameType.cpp 138945 2020-07-03 06:10:45Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIWizardNewVMPageBasic1.cpp 138947 2020-07-03 06:18:15Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardNewVMPageBasicNameType class implementation.
  */
@@ -28,7 +28,7 @@
 #include "UIFilePathSelector.h"
 #include "UIMessageCenter.h"
 #include "UINameAndSystemEditor.h"
-#include "UIWizardNewVMPageBasicNameType.h"
+#include "UIWizardNewVMPageBasic1.h"
 #include "UIWizardNewVM.h"
 
 /* COM includes: */
