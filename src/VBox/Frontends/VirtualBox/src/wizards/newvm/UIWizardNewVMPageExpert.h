@@ -1,4 +1,4 @@
-/* $Id: UIWizardNewVMPageExpert.h 138947 2020-07-03 06:18:15Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIWizardNewVMPageExpert.h 138958 2020-07-03 12:41:08Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardNewVMPageExpert class declaration.
  */
@@ -31,7 +31,7 @@ class QGroupBox;
 
 /* Expert page of the New Virtual Machine wizard: */
 class UIWizardNewVMPageExpert : public UIWizardPage,
-                                public UIWizardNewVMPageNameType,
+                                public UIWizardNewVMPage1,
                                 public UIWizardNewVMPageHardware,
                                 public UIWizardNewVMPageDisk
 {

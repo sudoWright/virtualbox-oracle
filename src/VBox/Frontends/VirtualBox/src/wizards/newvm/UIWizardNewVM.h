@@ -1,4 +1,4 @@
-/* $Id: UIWizardNewVM.h 138947 2020-07-03 06:18:15Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIWizardNewVM.h 138958 2020-07-03 12:41:08Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardNewVM class declaration.
  */
@@ -60,9 +60,7 @@ public:
     enum
     {
         Page1,
-        PageUserNameHostname,
-        PageGAInstall,
-        PageProductKey,
+        Page2,
         PageHardware,
         PageDisk,
         PageMax
