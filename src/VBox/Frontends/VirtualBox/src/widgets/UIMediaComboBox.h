@@ -1,4 +1,4 @@
-/* $Id: UIMediaComboBox.h 135976 2020-02-04 10:35:17Z knut.osmundsen@oracle.com $ */
+/* $Id: UIMediaComboBox.h 138966 2020-07-06 10:19:00Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIMediaComboBox class declaration.
  */
@@ -40,7 +40,7 @@ public:
     typedef QMap<QString, QString> BaseToDiffMap;
 
     /** Constructs media combo-box passing @a pParent to the base-class. */
-    UIMediaComboBox(QWidget *pParent);
+    UIMediaComboBox(QWidget *pParent = 0);
 
     /** Performs refresh. */
     void refresh();
