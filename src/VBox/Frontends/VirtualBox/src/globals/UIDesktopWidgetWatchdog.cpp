@@ -1,4 +1,4 @@
-/* $Id: UIDesktopWidgetWatchdog.cpp 138467 2020-06-05 14:40:35Z sergey.dubov@oracle.com $ */
+/* $Id: UIDesktopWidgetWatchdog.cpp 139061 2020-07-08 19:33:26Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIDesktopWidgetWatchdog class implementation.
  */
@@ -76,7 +76,7 @@ static bool ResolveDynamicImports(void)
     return g_pfnGetDpiForMonitor != NULL;
 }
 
-static BOOL CALLBACK MonitorEnumProcF(HMONITOR hMonitor, HDC hdcMonitor, LPRECT lpClipRect, LPARAM dwData)
+static BOOL CALLBACK MonitorEnumProcF(HMONITOR hMonitor, HDC hdcMonitor, LPRECT lpClipRect, LPARAM dwData) RT_NOTHROW_DEF
 {
     /* These required for clipped screens only: */
     RT_NOREF(hdcMonitor, lpClipRect);

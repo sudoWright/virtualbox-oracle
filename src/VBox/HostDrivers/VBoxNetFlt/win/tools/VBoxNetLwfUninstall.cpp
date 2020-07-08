@@ -1,4 +1,4 @@
-/* $Id: VBoxNetLwfUninstall.cpp 137331 2020-04-18 23:08:25Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxNetLwfUninstall.cpp 139061 2020-07-08 19:33:26Z knut.osmundsen@oracle.com $ */
 /** @file
  * NetLwfUninstall - VBoxNetLwf uninstaller command line tool
  */
@@ -30,9 +30,9 @@
 #define VBOX_NETCFG_APP_NAME L"NetLwfUninstall"
 #define VBOX_NETLWF_RETRIES 10
 
-static VOID winNetCfgLogger(LPCSTR szString)
+static DECLCALLBACK(void) winNetCfgLogger(const char *pszString)
 {
-    printf("%s", szString);
+    printf("%s", pszString);
 }
 
 static int VBoxNetLwfUninstall()

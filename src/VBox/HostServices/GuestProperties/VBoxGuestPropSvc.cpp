@@ -1,4 +1,4 @@
-/* $Id: VBoxGuestPropSvc.cpp 138237 2020-05-25 14:58:09Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxGuestPropSvc.cpp 139061 2020-07-08 19:33:26Z knut.osmundsen@oracle.com $ */
 /** @file
  * Guest Property Service: Host service entry points.
  */
@@ -1824,7 +1824,7 @@ int Service::uninit()
 using guestProp::Service;
 
 /**
- * @copydoc VBOXHGCMSVCLOAD
+ * @copydoc FNVBOXHGCMSVCLOAD
  */
 extern "C" DECLCALLBACK(DECLEXPORT(int)) VBoxHGCMSvcLoad(VBOXHGCMSVCFNTABLE *ptable)
 {

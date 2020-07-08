@@ -1,4 +1,4 @@
-/* $Id: digest-builtin.cpp 137860 2020-05-11 12:00:59Z knut.osmundsen@oracle.com $ */
+/* $Id: digest-builtin.cpp 139061 2020-07-08 19:33:26Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Crypto - Cryptographic Hash / Message Digest API, Built-in providers.
  */
@@ -42,7 +42,9 @@
 
 #ifdef IPRT_WITH_OPENSSL
 # include "internal/iprt-openssl.h"
+# include "internal/openssl-pre.h"
 # include <openssl/evp.h>
+# include "internal/openssl-post.h"
 #endif
 
 

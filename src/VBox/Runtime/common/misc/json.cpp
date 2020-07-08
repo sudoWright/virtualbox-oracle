@@ -1,4 +1,4 @@
-/* $Id: json.cpp 136644 2020-03-25 19:37:25Z alexander.eichner@oracle.com $ */
+/* $Id: json.cpp 139061 2020-07-08 19:33:26Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT JSON parser API (JSON).
  */
@@ -145,8 +145,8 @@ typedef const RTJSONTOKEN *PCRTJSONTOKEN;
  * @param   cbBuf           How much to read.
  * @param   pcbRead         Where to store the amount of data read on succcess.
  */
-typedef DECLCALLBACK(int) FNRTJSONTOKENIZERREAD(void *pvUser, size_t offInput, void *pvBuf, size_t cbBuf,
-                                                size_t *pcbRead);
+typedef DECLCALLBACKTYPE(int, FNRTJSONTOKENIZERREAD,(void *pvUser, size_t offInput, void *pvBuf, size_t cbBuf,
+                                                     size_t *pcbRead));
 /** Pointer to a tokenizer read buffer callback. */
 typedef FNRTJSONTOKENIZERREAD *PFNRTJSONTOKENIZERREAD;
 

@@ -1,4 +1,4 @@
-/* $Id: VDI.cpp 138718 2020-06-19 17:18:56Z brent.paulson@oracle.com $ */
+/* $Id: VDI.cpp 139061 2020-07-08 19:33:26Z knut.osmundsen@oracle.com $ */
 /** @file
  * Virtual Disk Image (VDI), Core Code.
  */
@@ -2310,7 +2310,7 @@ static DECLCALLBACK(int) vdiCompact(void *pBackendData, unsigned uPercentStart,
     void *pvBuf = NULL, *pvTmp = NULL;
     unsigned *paBlocks2 = NULL;
 
-    DECLCALLBACKMEMBER(int, pfnParentRead)(void *, uint64_t, void *, size_t) = NULL;
+    PFNVDPARENTREAD pfnParentRead = NULL;
     void *pvParent = NULL;
     PVDINTERFACEPARENTSTATE pIfParentState = VDIfParentStateGet(pVDIfsOperation);
     if (pIfParentState)
