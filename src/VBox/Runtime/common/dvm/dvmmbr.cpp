@@ -1,4 +1,4 @@
-/* $Id: dvmmbr.cpp 135976 2020-02-04 10:35:17Z knut.osmundsen@oracle.com $ */
+/* $Id: dvmmbr.cpp 139064 2020-07-08 21:13:30Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT Disk Volume Management API (DVM) - MBR format backend.
  */
@@ -685,7 +685,7 @@ static DECLCALLBACK(int) rtDvmFmtMbrVolumeWrite(RTDVMVOLUMEFMT hVolFmt, uint64_t
     return rtDvmDiskWrite(pVol->pVolMgr->pDisk, pVol->pEntry->offPart + off, pvBuf, cbWrite);
 }
 
-RTDVMFMTOPS g_rtDvmFmtMbr =
+DECL_HIDDEN_CONST(const RTDVMFMTOPS) g_rtDvmFmtMbr =
 {
     /* pszFmt */
     "MBR",
