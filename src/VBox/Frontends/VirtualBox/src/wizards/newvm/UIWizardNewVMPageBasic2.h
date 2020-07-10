@@ -1,4 +1,4 @@
-/* $Id: UIWizardNewVMPageBasic2.h 139101 2020-07-09 12:56:45Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIWizardNewVMPageBasic2.h 139132 2020-07-10 10:13:03Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardNewVMPageBasic2 class declaration.
  */
@@ -72,6 +72,7 @@ protected:
 
     bool checkGAISOFile() const;
     void markWidgets() const;
+    void retranslateWidgets();
 
     /** @name Widgets
       * @{ */
