@@ -1,4 +1,4 @@
-/* $Id: ProgressImpl.h 135976 2020-02-04 10:35:17Z knut.osmundsen@oracle.com $ */
+/* $Id: ProgressImpl.h 139228 2020-07-11 23:17:17Z knut.osmundsen@oracle.com $ */
 /** @file
  *
  * VirtualBox COM class implementation
@@ -234,6 +234,7 @@ private:
                            const ComPtr<IVirtualBoxErrorInfo> &aErrorInfo);
 
     // internal helper methods
+    HRESULT i_notifyCompleteWorker(HRESULT aResultCode, const ComPtr<IVirtualBoxErrorInfo> &aErrorInfo);
     double i_calcTotalPercent();
     void i_checkForAutomaticTimeout(void);
 
