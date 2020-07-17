@@ -1,4 +1,4 @@
-/* $Id: GuestDnDPrivate.cpp 135976 2020-02-04 10:35:17Z knut.osmundsen@oracle.com $ */
+/* $Id: GuestDnDPrivate.cpp 139382 2020-07-17 10:02:58Z andreas.loeffler@oracle.com $ */
 /** @file
  * Private guest drag and drop code, used by GuestDnDTarget + GuestDnDSource.
  */
@@ -938,8 +938,8 @@ int GuestDnDBase::updateProgress(GuestDnDData *pData, GuestDnDResponse *pResp,
     AssertPtrReturn(pResp, VERR_INVALID_POINTER);
     /* cbDataAdd is optional. */
 
-    LogFlowFunc(("cbTotal=%RU64, cbProcessed=%RU64, cbRemaining=%RU64, cbDataAdd=%RU32\n",
-                 pData->getTotal(), pData->getProcessed(), pData->getRemaining(), cbDataAdd));
+    LogFlowFunc(("cbExtra=%RU64, cbProcessed=%RU64, cbRemaining=%RU64, cbDataAdd=%RU32\n",
+                 pData->cbExtra, pData->cbProcessed, pData->getRemaining(), cbDataAdd));
 
     if (!pResp)
         return VINF_SUCCESS;
