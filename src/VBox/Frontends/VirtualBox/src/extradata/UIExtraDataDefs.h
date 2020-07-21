@@ -1,4 +1,4 @@
-/* $Id: UIExtraDataDefs.h 139430 2020-07-21 09:43:03Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIExtraDataDefs.h 139432 2020-07-21 10:54:57Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - Extra-data related definitions.
  */
@@ -896,13 +896,13 @@ enum UIToolType
     UIToolType_Media,
     UIToolType_Network,
     UIToolType_Cloud,
-    UIToolType_VMResourceMonitor,
+    UIToolType_Resources,
     /* Machine types: */
     UIToolType_Error,
     UIToolType_Details,
     UIToolType_Snapshots,
     UIToolType_Logs,
-    UIToolType_PerformanceMonitor
+    UIToolType_Performance,
 };
 Q_DECLARE_METATYPE(UIToolType);
 
