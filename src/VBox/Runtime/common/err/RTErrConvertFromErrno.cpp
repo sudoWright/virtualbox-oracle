@@ -1,4 +1,4 @@
-/* $Id: RTErrConvertFromErrno.cpp 139655 2020-07-31 15:44:35Z alexander.eichner@oracle.com $ */
+/* $Id: RTErrConvertFromErrno.cpp 139656 2020-07-31 15:45:56Z alexander.eichner@oracle.com $ */
 /** @file
  * IPRT - Convert errno to iprt status codes.
  */
@@ -399,7 +399,7 @@ RTDECL(int)  RTErrConvertFromErrno(int iNativeCode)
 # endif
 #endif
 #ifdef ESTALE
-        case ESTALE             return VERR_STALE_FILE_HANDLE; /* 116: Stale NFS file handle */
+        case ESTALE:            return VERR_STALE_FILE_HANDLE; /* 116: Stale NFS file handle */
 #endif
 #ifdef EUCLEAN
         //case EUCLEAN          117     /* Structure needs cleaning */
