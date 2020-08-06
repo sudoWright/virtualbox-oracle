@@ -1,6 +1,6 @@
-/* $Id: x509-verify.cpp 137977 2020-05-14 17:40:35Z knut.osmundsen@oracle.com $ */
+/* $Id: x509-verify.cpp 139736 2020-08-06 00:43:00Z knut.osmundsen@oracle.com $ */
 /** @file
- * IPRT - Crypto - X.509, Signature verficiation.
+ * IPRT - Crypto - X.509, Signature verification.
  */
 
 /*
