@@ -1,4 +1,4 @@
-/* $Id: Logo.c 135976 2020-02-04 10:35:17Z knut.osmundsen@oracle.com $ */
+/* $Id: Logo.c 139944 2020-08-17 07:03:03Z alexander.eichner@oracle.com $ */
 /** @file
  * Logo DXE Driver, install Edkii Platform Logo protocol.
  */
