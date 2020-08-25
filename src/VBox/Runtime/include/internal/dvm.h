@@ -1,4 +1,4 @@
-/* $Id: dvm.h 140052 2020-08-24 17:44:48Z noreply@oracle.com $ */
+/* $Id: dvm.h 140063 2020-08-25 21:05:37Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Disk Volume Management Internals.
  */
@@ -272,7 +272,7 @@ typedef struct RTDVMFMTOPS
      *
      * @returns The requested index. UINT32_MAX on failure.
      * @param   hVolFmt         The format specific volume handle.
-     * @param   enmIndex        The index to get.
+     * @param   enmIndex        The index to get. Never RTDVMVOLIDX_HOST.
      * @sa RTDvmVolumeGetIndex
      */
     DECLCALLBACKMEMBER(uint32_t, pfnVolumeGetIndex,(RTDVMVOLUMEFMT hVolFmt, RTDVMVOLIDX enmIndex));
