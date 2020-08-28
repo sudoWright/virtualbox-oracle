@@ -1,4 +1,4 @@
-/* $Id: HostDrivePartitionImpl.cpp 140126 2020-08-28 16:45:39Z knut.osmundsen@oracle.com $ */
+/* $Id: HostDrivePartitionImpl.cpp 140129 2020-08-28 16:49:16Z knut.osmundsen@oracle.com $ */
 /** @file
  * VirtualBox Main - IHostDrivePartition implementation, VBoxSVC.
  */
@@ -19,7 +19,7 @@
 #include "HostDrivePartitionImpl.h"
 #include "LoggingNew.h"
 
-#include <iprt/err.h>
+#include <iprt/errcore.h>
 
 /*
  * HostDrivePartition implementation.
