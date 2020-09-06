@@ -1,4 +1,4 @@
-/* $Id: tarcmd.cpp 140245 2020-09-06 20:31:16Z alexander.eichner@oracle.com $ */
+/* $Id: tarcmd.cpp 140246 2020-09-06 20:33:03Z alexander.eichner@oracle.com $ */
 /** @file
  * IPRT - A mini TAR Command.
  */
@@ -76,7 +76,7 @@ typedef enum RTZIPTARCMDFORMAT
     /** XAR.  */
     RTZIPTARCMDFORMAT_XAR,
     /** CPIO. */
-    RTZIPTARCMDFORMAT_CPIO,
+    RTZIPTARCMDFORMAT_CPIO
 } RTZIPTARCMDFORMAT;
 
 
