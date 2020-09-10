@@ -1,6 +1,6 @@
-/* $Id: UIAudioControllerEditor.h 135976 2020-02-04 10:35:17Z knut.osmundsen@oracle.com $ */
+/* $Id: UIAudioHostDriverEditor.h 140314 2020-09-10 13:57:52Z sergey.dubov@oracle.com $ */
 /** @file
- * VBox Qt GUI - UIAudioControllerEditor class declaration.
+ * VBox Qt GUI - UIAudioHostDriverEditor class declaration.
  */
 
 /*
@@ -15,8 +15,8 @@
  * hope that it will be useful, but WITHOUT ANY WARRANTY of any kind.
  */
 
-#ifndef FEQT_INCLUDED_SRC_widgets_UIAudioControllerEditor_h
-#define FEQT_INCLUDED_SRC_widgets_UIAudioControllerEditor_h
+#ifndef FEQT_INCLUDED_SRC_widgets_UIAudioHostDriverEditor_h
+#define FEQT_INCLUDED_SRC_widgets_UIAudioHostDriverEditor_h
 #ifndef RT_WITHOUT_PRAGMA_ONCE
 # pragma once
 #endif
@@ -35,29 +35,29 @@
 class QLabel;
 class QIComboBox;
 
-/** QWidget subclass used as an audio controller editor. */
-class SHARED_LIBRARY_STUFF UIAudioControllerEditor : public QIWithRetranslateUI<QWidget>
+/** QWidget subclass used as an audio host driver editor. */
+class SHARED_LIBRARY_STUFF UIAudioHostDriverEditor : public QIWithRetranslateUI<QWidget>
 {
     Q_OBJECT;
 
 signals:
 
     /** Notifies listeners about @a enmValue change. */
-    void sigValueChanged(KAudioControllerType enmValue);
+    void sigValueChanged(KAudioDriverType enmValue);
 
 public:
 
-    /** Constructs audio controller editor passing @a pParent to the base-class.
+    /** Constructs audio host driver editor passing @a pParent to the base-class.
       * @param  fWithLabel  Brings whether we should add label ourselves. */
-    UIAudioControllerEditor(QWidget *pParent = 0, bool fWithLabel = false);
+    UIAudioHostDriverEditor(QWidget *pParent = 0, bool fWithLabel = false);
 
     /** Defines editor @a enmValue. */
-    void setValue(KAudioControllerType enmValue);
+    void setValue(KAudioDriverType enmValue);
     /** Returns editor value. */
-    KAudioControllerType value() const;
+    KAudioDriverType value() const;
 
     /** Returns the vector of supported values. */
-    QVector<KAudioControllerType> supportedValues() const { return m_supportedValues; }
+    QVector<KAudioDriverType> supportedValues() const { return m_supportedValues; }
 
 protected:
 
@@ -80,10 +80,10 @@ private:
     bool  m_fWithLabel;
 
     /** Holds the value to be selected. */
-    KAudioControllerType  m_enmValue;
+    KAudioDriverType  m_enmValue;
 
     /** Holds the vector of supported values. */
-    QVector<KAudioControllerType>  m_supportedValues;
+    QVector<KAudioDriverType>  m_supportedValues;
 
     /** Holds the label instance. */
     QLabel     *m_pLabel;
@@ -91,4 +91,4 @@ private:
     QIComboBox *m_pCombo;
 };
 
-#endif /* !FEQT_INCLUDED_SRC_widgets_UIAudioControllerEditor_h */
+#endif /* !FEQT_INCLUDED_SRC_widgets_UIAudioHostDriverEditor_h */

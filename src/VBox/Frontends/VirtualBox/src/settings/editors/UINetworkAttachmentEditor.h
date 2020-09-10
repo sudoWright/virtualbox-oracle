@@ -1,4 +1,4 @@
-/* $Id: UINetworkAttachmentEditor.h 135976 2020-02-04 10:35:17Z knut.osmundsen@oracle.com $ */
+/* $Id: UINetworkAttachmentEditor.h 140314 2020-09-10 13:57:52Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UINetworkAttachmentEditor class declaration.
  */
