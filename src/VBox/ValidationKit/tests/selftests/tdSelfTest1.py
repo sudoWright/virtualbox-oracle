@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# $Id: tdSelfTest1.py 140742 2020-10-04 11:36:59Z knut.osmundsen@oracle.com $
+# $Id: tdSelfTest1.py 140748 2020-10-04 12:26:55Z knut.osmundsen@oracle.com $
 
 """
 Test Manager Self Test - Dummy Test Driver.
@@ -27,7 +27,7 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 140742 $"
+__version__ = "$Revision: 140748 $"
 
 
 import sys;
@@ -36,8 +36,8 @@ import os;
 print('dummydriver.py: hello world!');
 print('dummydriver.py: args: %s' % (sys.argv,));
 
-print('dummydriver.py: environment:')
-for sVar in sorted(os.environ.keys()):
+print('dummydriver.py: environment:');
+for sVar in sorted(os.environ.keys()): # pylint: disable=consider-iterating-dictionary
     print('%s=%s' % (sVar, os.environ[sVar]));
 
 if sys.argv[-1] in [ 'all', 'execute' ]:
