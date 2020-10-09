@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# "$Id: tdMoveVm1.py 140819 2020-10-09 13:51:02Z knut.osmundsen@oracle.com $"
+# "$Id: tdMoveVm1.py 140820 2020-10-09 15:53:00Z knut.osmundsen@oracle.com $"
 
 """
 VirtualBox Validation Kit - VM Move Test #1
@@ -27,12 +27,11 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 140819 $"
+__version__ = "$Revision: 140820 $"
 
 # Standard Python imports.
 import os
 import sys
-import time
 import shutil
 from collections import defaultdict
 
