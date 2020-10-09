@@ -1,4 +1,4 @@
-/* $Id: ConsoleImpl.h 139287 2020-07-13 12:56:56Z knut.osmundsen@oracle.com $ */
+/* $Id: ConsoleImpl.h 140821 2020-10-09 15:54:19Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Console COM Class definition
  */
@@ -734,7 +734,7 @@ private:
                        const char *pcszBwGroup,
                        bool fDiscard,
                        bool fNonRotational,
-                       IMedium *pMedium,
+                       ComPtr<IMedium> ptrMedium,
                        MachineState_T aMachineState,
                        HRESULT *phrc);
     int i_configMediumProperties(PCFGMNODE pCur, IMedium *pMedium, bool *pfHostIP, bool *pfEncrypted);
