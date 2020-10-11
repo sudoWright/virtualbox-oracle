@@ -1,4 +1,4 @@
-/* $Id: APICInternal.h 140160 2020-08-31 23:47:31Z knut.osmundsen@oracle.com $ */
+/* $Id: APICInternal.h 140844 2020-10-11 18:50:58Z alexander.eichner@oracle.com $ */
 /** @file
  * APIC - Advanced Programmable Interrupt Controller.
  */
@@ -844,7 +844,7 @@ typedef enum APICMSRACCESS
     /** Count of enum members (don't use). */
     APICMSRACCESS_COUNT
 } APICMSRACCESS;
-/** @} */
+
 
 /** @def APIC_CACHE_LINE_SIZE
  * Padding (in bytes) for aligning data in different cache lines. Present
