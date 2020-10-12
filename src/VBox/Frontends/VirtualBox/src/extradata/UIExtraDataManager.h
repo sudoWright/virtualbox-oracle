@@ -1,4 +1,4 @@
-/* $Id: UIExtraDataManager.h 140326 2020-09-11 14:02:36Z sergey.dubov@oracle.com $ */
+/* $Id: UIExtraDataManager.h 140856 2020-10-12 12:30:09Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIExtraDataManager class declaration.
  */
@@ -157,9 +157,6 @@ public:
 
     /** @name General
       * @{ */
-        /** Returns event handling type. */
-        EventHandlingType eventHandlingType();
-
         /** Returns a list of restricted dialogs. */
         UIExtraDataMetaDefs::DialogType restrictedDialogTypes(const QUuid &uID);
         /** Defines a list of restricted dialogs. */
