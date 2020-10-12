@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# $Id: tdStorageBenchmark1.py 139122 2020-07-10 06:59:47Z alexander.eichner@oracle.com $
+# $Id: tdStorageBenchmark1.py 140848 2020-10-12 06:46:14Z alexander.eichner@oracle.com $
 
 """
 VirtualBox Validation Kit - Storage benchmark.
@@ -27,7 +27,7 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 139122 $"
+__version__ = "$Revision: 140848 $"
 
 
 # Standard Python imports.
@@ -569,7 +569,7 @@ class tdStorageBenchmark(vbox.TestDriver):                                      
         self.asDiskFormats           = self.asDiskFormatsDef;
         self.asDiskVariantsDef       = ['Dynamic', 'Fixed', 'DynamicSplit2G', 'FixedSplit2G', 'Network'];
         self.asDiskVariants          = self.asDiskVariantsDef;
-        self.asTestsDef              = ['iozone', 'fio', 'ioperf'];
+        self.asTestsDef              = ['ioperf'];
         self.asTests                 = self.asTestsDef;
         self.asTestSetsDef           = ['Fast', 'Functionality', 'Benchmark', 'Stress'];
         self.asTestSets              = self.asTestSetsDef;
