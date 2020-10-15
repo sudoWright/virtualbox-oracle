@@ -1,4 +1,4 @@
-/* $Id: UIHelpBrowserDialog.cpp 140943 2020-10-15 09:26:34Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIHelpBrowserDialog.cpp 140945 2020-10-15 09:41:04Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIHelpBrowserDialog class implementation.
  */
@@ -83,7 +83,7 @@ void UIHelpBrowserDialog::configureCentralWidget()
     /* Create widget: */
     UIHelpBrowserWidget *pWidget = 0;
 
-#ifdef VBOX_WS_X11
+#ifdef RT_OS_LINUX
     pWidget = new UIHelpBrowserWidget(EmbedTo_Dialog, m_strHelpFilePath, true /* show toolbar */, this);
 #endif
 
