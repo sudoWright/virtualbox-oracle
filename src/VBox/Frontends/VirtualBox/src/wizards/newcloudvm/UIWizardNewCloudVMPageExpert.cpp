@@ -1,4 +1,4 @@
-/* $Id: UIWizardNewCloudVMPageExpert.cpp 140635 2020-09-30 13:02:39Z sergey.dubov@oracle.com $ */
+/* $Id: UIWizardNewCloudVMPageExpert.cpp 140954 2020-10-15 11:42:18Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardNewCloudVMPageExpert class implementation.
  */
@@ -215,6 +215,9 @@ void UIWizardNewCloudVMPageExpert::retranslateUi()
     /* Translate source tab-bar: */
     m_pSourceTabBar->setTabText(0, UIWizardNewCloudVM::tr("&Boot Volumes"));
     m_pSourceTabBar->setTabText(1, UIWizardNewCloudVM::tr("&Images"));
+
+    /* Translate profile stuff: */
+    m_pProfileToolButton->setToolTip(UIWizardNewCloudVM::tr("Open Cloud Profile Manager..."));
 
     /* Translate settings container: */
     m_pSettingsCnt->setTitle(UIWizardNewCloudVM::tr("Settings"));
