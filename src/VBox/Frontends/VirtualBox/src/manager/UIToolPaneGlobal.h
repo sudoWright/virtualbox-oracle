@@ -1,4 +1,4 @@
-/* $Id: UIToolPaneGlobal.h 139574 2020-07-29 10:11:07Z sergey.dubov@oracle.com $ */
+/* $Id: UIToolPaneGlobal.h 141069 2020-10-23 13:46:16Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIToolPaneGlobal class declaration.
  */
@@ -47,9 +47,6 @@ class UIToolPaneGlobal : public QWidget
     Q_OBJECT;
 
 signals:
-
-    /** Notifies listeners about Cloud Profile Manager change. */
-    void sigCloudProfileManagerChange();
 
     /** Notifies listeners about request to switch to Performance pane of machine with @a uMachineId. */
     void sigSwitchToMachinePerformancePane(const QUuid &uMachineId);
