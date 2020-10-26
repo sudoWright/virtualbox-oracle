@@ -1,4 +1,4 @@
-/* $Id: UIHelpBrowserWidget.h 141099 2020-10-26 16:59:39Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIHelpBrowserWidget.h 141100 2020-10-26 17:54:33Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIHelpBrowserWidget class declaration.
  */
@@ -79,6 +79,7 @@ private slots:
     void sltHandleHelpEngineSetupFinished();
     void sltHandleContentWidgetItemClicked(const QModelIndex &index);
     void sltHandleTabVisibility(bool togggled);
+    void sltHandleHelpBrowserViewerSourceChange(const QUrl &source);
 
 private:
 
