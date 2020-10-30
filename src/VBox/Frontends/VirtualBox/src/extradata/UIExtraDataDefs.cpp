@@ -1,4 +1,4 @@
-/* $Id: UIExtraDataDefs.cpp 141100 2020-10-26 17:54:33Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIExtraDataDefs.cpp 141158 2020-10-30 10:08:52Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - Extra-data related definitions.
  */
@@ -239,6 +239,7 @@ const char *UIExtraDataDefs::GUI_GuestControl_LogViewerVisiblePanels = "GUI/LogV
 
 /* Help Browser */
 const char *UIExtraDataDefs::GUI_HelpBrowserLastURL = "GUI/HelpBrowserLastURL";
+const char *UIExtraDataDefs::GUI_HelpBrowserDialogGeometry = "GUI/HelpBrowserDialogGeomety";
 
 /* VM Resource Monitor: */
 const char *UIExtraDataDefs::GUI_VMResourceManager_HiddenColumns = "GUI/VMResourceManagerHiddenColumns";
