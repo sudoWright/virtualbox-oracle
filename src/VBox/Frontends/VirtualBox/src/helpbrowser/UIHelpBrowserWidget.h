@@ -1,4 +1,4 @@
-/* $Id: UIHelpBrowserWidget.h 141330 2020-11-12 11:51:46Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIHelpBrowserWidget.h 141349 2020-11-13 15:20:11Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIHelpBrowserWidget class declaration.
  */
@@ -98,6 +98,7 @@ private slots:
     void sltShowLinksContextMenu(const QPoint &pos);
     void sltOpenLinkInNewTab();
     void sltOpenLink();
+    void sltCopyLink();
     void sltAddNewBookmark(const QUrl &url, const QString &strTitle);
     void sltHandleFontSizeactions();
 
