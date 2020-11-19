@@ -1,4 +1,4 @@
-/* $Id: UIVirtualMachineItemCloud.cpp 141221 2020-11-03 11:23:27Z sergey.dubov@oracle.com $ */
+/* $Id: UIVirtualMachineItemCloud.cpp 141404 2020-11-19 15:41:51Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVirtualMachineItemCloud class implementation.
  */
@@ -288,7 +288,9 @@ bool UIVirtualMachineItemCloud::isItemRemovable() const
 bool UIVirtualMachineItemCloud::isItemSaved() const
 {
     return    accessible()
-           && machineState() == KCloudMachineState_Stopped;
+           && itemType() == UIVirtualMachineItemType_CloudReal
+           && (   machineState() == KCloudMachineState_Stopped
+               || machineState() == KCloudMachineState_Running);
 }
 
 bool UIVirtualMachineItemCloud::isItemPoweredOff() const
