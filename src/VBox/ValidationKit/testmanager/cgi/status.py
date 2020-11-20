@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# $Id: status.py 141469 2020-11-20 19:21:17Z knut.osmundsen@oracle.com $
+# $Id: status.py 141470 2020-11-20 19:35:30Z knut.osmundsen@oracle.com $
 
 """
 CGI - Administrator Web-UI.
@@ -27,7 +27,7 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 141469 $"
+__version__ = "$Revision: 141470 $"
 
 
 # Standard python imports.
@@ -441,7 +441,7 @@ SELECT  TestSets.enmStatus,
         TestBoxesWithStrings.sOS
 FROM    TestSets
 INNER JOIN TestCases
-        ON TestCases.idGenTestCase         = TestCases.idGenTestCase
+        ON TestCases.idGenTestCase         = TestSets.idGenTestCase
 INNER JOIN TestBoxesWithStrings
         ON TestBoxesWithStrings.idTestBox  = TestSets.idTestBox
        AND TestBoxesWithStrings.tsExpire   = 'infinity'::TIMESTAMP
