@@ -1,10 +1,10 @@
-/* $Id: UIDownloaderExtensionPack.h 135976 2020-02-04 10:35:17Z knut.osmundsen@oracle.com $ */
+/* $Id: UIDownloaderAdditions.h 141543 2020-11-26 16:54:39Z sergey.dubov@oracle.com $ */
 /** @file
- * VBox Qt GUI - UIDownloaderExtensionPack class declaration.
+ * VBox Qt GUI - UIDownloaderAdditions class declaration.
  */
 
 /*
- * Copyright (C) 2011-2020 Oracle Corporation
+ * Copyright (C) 2006-2020 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;
@@ -15,8 +15,8 @@
  * hope that it will be useful, but WITHOUT ANY WARRANTY of any kind.
  */
 
-#ifndef FEQT_INCLUDED_SRC_net_UIDownloaderExtensionPack_h
-#define FEQT_INCLUDED_SRC_net_UIDownloaderExtensionPack_h
+#ifndef FEQT_INCLUDED_SRC_networking_UIDownloaderAdditions_h
+#define FEQT_INCLUDED_SRC_networking_UIDownloaderAdditions_h
 #ifndef RT_WITHOUT_PRAGMA_ONCE
 # pragma once
 #endif
@@ -27,32 +27,30 @@
 /* Forward declarations: */
 class QByteArray;
 
-/** UIDownloader extension for background extension-pack downloading. */
-class SHARED_LIBRARY_STUFF UIDownloaderExtensionPack : public UIDownloader
+/** UIDownloader extension for background additions downloading. */
+class SHARED_LIBRARY_STUFF UIDownloaderAdditions : public UIDownloader
 {
     Q_OBJECT;
 
 signals:
 
     /** Notifies listeners about downloading finished.
-      * @param  strSource  Brings the downloading source.
-      * @param  strTarget  Brings the downloading target.
-      * @param  strHash    Brings the downloaded file hash. */
-    void sigDownloadFinished(const QString &strSource, const QString &strTarget, const QString &strHash);
+      * @param  strFile  Brings the downloaded file-name. */
+    void sigDownloadFinished(const QString &strFile);
 
 public:
 
     /** Creates downloader instance. */
-    static UIDownloaderExtensionPack *create();
+    static UIDownloaderAdditions *create();
     /** Returns current downloader instance. */
-    static UIDownloaderExtensionPack *current() { return s_pInstance; }
+    static UIDownloaderAdditions *current() { return s_pInstance; }
 
 private:
 
     /** Constructs downloader. */
-    UIDownloaderExtensionPack();
+    UIDownloaderAdditions();
     /** Destructs downloader. */
-    ~UIDownloaderExtensionPack();
+    ~UIDownloaderAdditions();
 
     /** Returns description of the current network operation. */
     virtual const QString description() const /* override */;
@@ -65,11 +63,11 @@ private:
     virtual void handleVerifiedObject(UINetworkReply *pReply) /* override */;
 
     /** Holds the static singleton instance. */
-    static UIDownloaderExtensionPack *s_pInstance;
+    static UIDownloaderAdditions *s_pInstance;
 
     /** Holds the cached received data awaiting for verification. */
     QByteArray m_receivedData;
 };
 
-#endif /* !FEQT_INCLUDED_SRC_net_UIDownloaderExtensionPack_h */
+#endif /* !FEQT_INCLUDED_SRC_networking_UIDownloaderAdditions_h */
 
