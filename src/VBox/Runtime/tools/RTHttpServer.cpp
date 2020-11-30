@@ -1,4 +1,4 @@
-/* $Id: RTHttpServer.cpp 141597 2020-11-30 16:45:54Z andreas.loeffler@oracle.com $ */
+/* $Id: RTHttpServer.cpp 141598 2020-11-30 16:51:08Z andreas.loeffler@oracle.com $ */
 /** @file
  * IPRT - Utility for running a (simple) HTTP server.
  *
@@ -479,6 +479,7 @@ DECLCALLBACK(int) onQueryInfo(PRTHTTPCALLBACKDATA pData,
                                                "300: file://%s\r\n"
                                                "200: filename content-length last-modified file-type\r\n",
                                                pszUrl);
+                    RT_NOREF(cch);
                     Assert(cch);
 
                     pResp->cbBodyUsed = strlen((char *)pResp->pvBody);
@@ -618,7 +619,7 @@ int main(int argc, char **argv)
                 return RTEXITCODE_SUCCESS;
 
             case 'V':
-                RTPrintf("$Revision: 141597 $\n");
+                RTPrintf("$Revision: 141598 $\n");
                 return RTEXITCODE_SUCCESS;
 
             default:
