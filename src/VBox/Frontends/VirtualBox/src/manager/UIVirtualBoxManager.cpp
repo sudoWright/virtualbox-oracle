@@ -1,4 +1,4 @@
-/* $Id: UIVirtualBoxManager.cpp 141619 2020-12-01 13:33:04Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIVirtualBoxManager.cpp 141627 2020-12-01 14:42:29Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVirtualBoxManager class implementation.
  */
@@ -2484,8 +2484,7 @@ void UIVirtualBoxManager::prepareConnections()
     /* 'Help' menu contents action connection. It is done here since we need different behaviour in
      * the manager and runtime UIs: */
     connect(actionPool()->action(UIActionIndex_Simple_Contents), &UIAction::triggered,
-        this, &UIVirtualBoxManager::sltPerformShowHelpBrowser);
-
+            this, &UIVirtualBoxManager::sltPerformShowHelpBrowser);
 }
 
 void UIVirtualBoxManager::loadSettings()
