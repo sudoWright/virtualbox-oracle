@@ -1,4 +1,4 @@
-/* $Id: MMAll.cpp 138165 2020-05-22 12:51:49Z alexander.eichner@oracle.com $ */
+/* $Id: MMAll.cpp 142034 2020-12-29 12:22:37Z alexander.eichner@oracle.com $ */
 /** @file
  * MM - Memory Manager - Any Context.
  */
@@ -574,6 +574,7 @@ const char *mmGetTagName(MMTAG enmTag)
 
         TAG2STR(DBGF);
         TAG2STR(DBGF_AS);
+        TAG2STR(DBGF_FLOWTRACE);
         TAG2STR(DBGF_INFO);
         TAG2STR(DBGF_LINE);
         TAG2STR(DBGF_LINE_DUP);
