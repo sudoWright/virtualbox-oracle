@@ -1,4 +1,4 @@
-/* $Id: UINetworkManager.h 142254 2021-01-18 11:16:06Z sergey.dubov@oracle.com $ */
+/* $Id: UINetworkManager.h 142285 2021-01-20 08:58:56Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UINetworkManager class declaration.
  */
@@ -207,6 +207,9 @@ private:
         void createItemForNATNetwork(const UIDataNATNetwork &data, bool fChooseItem);
         /** Updates passed NAT network tree-widget item on the basis of passed @a data, @a fChooseItem if requested. */
         void updateItemForNATNetwork(const UIDataNATNetwork &data, bool fChooseItem, UIItemNATNetwork *pItem);
+
+        /** Returns a list of busy NAT network names. */
+        QStringList busyNames() const;
     /** @} */
 
     /** @name General variables.
