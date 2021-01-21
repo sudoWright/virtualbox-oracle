@@ -1,4 +1,4 @@
-/* $Id: memobj-r0drv-linux.c 142110 2021-01-05 16:35:27Z brent.paulson@oracle.com $ */
+/* $Id: memobj-r0drv-linux.c 142335 2021-01-21 19:33:35Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Ring-0 Memory Objects, Linux.
  */
@@ -536,7 +536,7 @@ typedef const LNXAPPLYPGRANGE *PCLNXAPPLYPGRANGE;
  * @param   uAddr               The address to apply the new protection to.
  * @param   pvUser              The opaque user data.
  */
-static DECLCALLBACK(int) rtR0MemObjLinuxApplyPageRange(pte_t *pPte, unsigned long uAddr, void *pvUser)
+static int rtR0MemObjLinuxApplyPageRange(pte_t *pPte, unsigned long uAddr, void *pvUser)
 {
     PCLNXAPPLYPGRANGE pArgs = (PCLNXAPPLYPGRANGE)pvUser;
     PRTR0MEMOBJLNX pMemLnx = pArgs->pMemLnx;
