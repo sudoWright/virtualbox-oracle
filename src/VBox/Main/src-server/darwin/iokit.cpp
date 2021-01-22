@@ -1,4 +1,4 @@
-/* $Id: iokit.cpp 142364 2021-01-22 19:22:03Z michal.necasek@oracle.com $ */
+/* $Id: iokit.cpp 142365 2021-01-22 19:29:15Z michal.necasek@oracle.com $ */
 /** @file
  * Main - Darwin IOKit Routines.
  *
@@ -48,8 +48,8 @@
 #endif
 
 #include <VBox/log.h>
-#include <VBox/err.h>
 #include <VBox/usblib.h>
+#include <iprt/errcore.h>
 #include <iprt/mem.h>
 #include <iprt/string.h>
 #include <iprt/process.h>
