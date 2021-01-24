@@ -1,4 +1,4 @@
-; $Id: HMR0A.asm 142396 2021-01-24 19:57:39Z knut.osmundsen@oracle.com $
+; $Id: HMR0A.asm 142397 2021-01-24 20:01:59Z knut.osmundsen@oracle.com $
 ;; @file
 ; HM - Ring-0 VMX, SVM world-switch and helper routines.
 ;
@@ -324,7 +324,7 @@ ALIGNCODE(64)
 BEGINPROC hmR0VmxExportHostSegmentRegsAsmHlp
 %ifdef ASM_CALL64_MSC
  %define pRestoreHost rcx
-%elifdef ASM_CALL64_MSC
+%elifdef ASM_CALL64_GCC
  %define pRestoreHost rdi
 %else
  %error Unknown calling convension.
