@@ -1,4 +1,4 @@
-/* $Id: UIVirtualBoxManagerWidget.h 141940 2020-12-17 14:30:07Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIVirtualBoxManagerWidget.h 142541 2021-02-01 19:32:18Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVirtualBoxManagerWidget class declaration.
  */
@@ -151,6 +151,8 @@ public:
         /** Returns whether at least one cloud profile currently being updated. */
         bool isCloudProfileUpdateInProgress() const;
 
+        /** Switches to global item. */
+        void switchToGlobalItem();
         /** Opens group name editor. */
         void openGroupNameEditor();
         /** Disbands group. */
