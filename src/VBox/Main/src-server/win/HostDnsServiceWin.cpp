@@ -1,4 +1,4 @@
-/* $Id: HostDnsServiceWin.cpp 142606 2021-02-03 15:43:22Z knut.osmundsen@oracle.com $ */
+/* $Id: HostDnsServiceWin.cpp 142620 2021-02-03 17:14:01Z michal.necasek@oracle.com $ */
 /** @file
  * Host DNS listener for Windows.
  */
@@ -56,7 +56,7 @@ DECLINLINE(int) registerNotification(const HKEY &hKey, HANDLE &hEvent)
     return VINF_SUCCESS;
 }
 
-static void appendTokenizedStrings(std::vector<std::string> &vecStrings, const std::string &strToAppend, char chDelim /* = ' ' */)
+static void appendTokenizedStrings(std::vector<std::string> &vecStrings, const std::string &strToAppend, char chDelim = ' ')
 {
     if (strToAppend.empty())
         return;
