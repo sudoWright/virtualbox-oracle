@@ -1,4 +1,4 @@
-/* $Id: IEMAll.cpp 142276 2021-01-19 17:54:51Z knut.osmundsen@oracle.com $ */
+/* $Id: IEMAll.cpp 142672 2021-02-08 11:41:48Z alexander.eichner@oracle.com $ */
 /** @file
  * IEM - Interpreted Execution Manager - All Contexts.
  */
@@ -14658,6 +14658,7 @@ VMM_INT_DECL(VBOXSTRICTRC) IEMInjectTrap(PVMCPUCC pVCpu, uint8_t u8TrapNo, TRPME
                 case X86_XCPT_SS:
                 case X86_XCPT_PF:
                 case X86_XCPT_AC:
+                case X86_XCPT_GP:
                     fFlags |= IEM_XCPT_FLAGS_ERR;
                     break;
             }
