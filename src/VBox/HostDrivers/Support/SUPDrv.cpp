@@ -1,4 +1,4 @@
-/* $Id: SUPDrv.cpp 142743 2021-02-10 20:21:04Z knut.osmundsen@oracle.com $ */
+/* $Id: SUPDrv.cpp 142744 2021-02-10 20:36:30Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxDrv - The VirtualBox Support Driver - Common code.
  */
@@ -5811,6 +5811,7 @@ int VBOXCALL supdrvLdrRegisterWrappedModule(PSUPDRVDEVEXT pDevExt, PCSUPLDRWRAPP
     /*
      * Call module init function if found.
      */
+    rc = VINF_SUCCESS;
     if (pImage->pfnModuleInit)
     {
         Log(("supdrvIOCtl_LdrLoad: calling pfnModuleInit=%p\n", pImage->pfnModuleInit));
