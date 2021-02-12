@@ -1,4 +1,4 @@
-/* $Id: UIWizardNewVMPageExpert.cpp 142770 2021-02-11 15:21:12Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIWizardNewVMPageExpert.cpp 142782 2021-02-12 11:00:29Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardNewVMPageExpert class implementation.
  */
@@ -22,6 +22,7 @@
 #include <QGroupBox>
 #include <QHBoxLayout>
 #include <QLabel>
+#include <QLineEdit>
 #include <QRadioButton>
 #include <QSpinBox>
 #include <QVBoxLayout>

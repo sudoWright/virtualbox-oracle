@@ -1,4 +1,4 @@
-/* $Id: UIWizardNewVMPageBasic2.cpp 142624 2021-02-03 17:50:56Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIWizardNewVMPageBasic2.cpp 142782 2021-02-12 11:00:29Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardNewVMPageBasic2 class implementation.
  */
@@ -21,6 +21,7 @@
 #include <QGridLayout>
 #include <QGroupBox>
 #include <QLabel>
+#include <QLineEdit>
 #include <QSpacerItem>
 #include <QToolBox>
 #include <QVBoxLayout>
