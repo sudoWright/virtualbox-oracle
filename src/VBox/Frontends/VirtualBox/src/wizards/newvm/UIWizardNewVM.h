@@ -1,4 +1,4 @@
-/* $Id: UIWizardNewVM.h 142621 2021-02-03 17:17:19Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIWizardNewVM.h 142936 2021-02-24 18:26:21Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardNewVM class declaration.
  */
@@ -61,8 +61,8 @@ public:
     {
         Page1,
         Page2,
-        Page3,
-        Page4,
+        Page8,
+        //Page4,
         PageMax
     };
 
@@ -99,6 +99,7 @@ protected:
 
     /* Who will be able to create virtual-machine: */
     friend class UIWizardNewVMPageBasic4;
+    friend class UIWizardNewVMPageBasic8;
     friend class UIWizardNewVMPageExpert;
 
 private slots:
