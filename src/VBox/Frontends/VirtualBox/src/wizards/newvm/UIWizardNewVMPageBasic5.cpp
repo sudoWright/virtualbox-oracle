@@ -1,4 +1,4 @@
-/* $Id: UIWizardNewVMPageBasic5.cpp 142951 2021-02-25 17:17:43Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIWizardNewVMPageBasic5.cpp 142958 2021-02-26 11:22:00Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardNewVMPageBasic5 class implementation.
  */
@@ -55,7 +55,9 @@ UIWizardNewVMPageBasic5::UIWizardNewVMPageBasic5()
             fFoundVDI = true;
         }
     }
-    Assert(fFoundVDI);
+    if (!fFoundVDI)
+        AssertMsgFailed(("No medium format corresponding to VDI could be found!"));
+
     m_strDefaultExtension =  defaultExtension(m_mediumFormat);
 }
 
