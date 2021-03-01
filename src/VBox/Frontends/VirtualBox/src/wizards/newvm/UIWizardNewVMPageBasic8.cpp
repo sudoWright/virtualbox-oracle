@@ -1,4 +1,4 @@
-/* $Id: UIWizardNewVMPageBasic8.cpp 142987 2021-03-01 17:33:17Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIWizardNewVMPageBasic8.cpp 142989 2021-03-01 17:48:20Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardNewVMPageBasic8 class implementation.
  */
@@ -165,7 +165,6 @@ bool UIWizardNewVMPageBasic8::validatePage()
     }
 
     startProcessing();
-
     SelectedDiskSource enmDiskSource = field("selectedDiskSource").value<SelectedDiskSource>();
     if (enmDiskSource == SelectedDiskSource_New)
     {
