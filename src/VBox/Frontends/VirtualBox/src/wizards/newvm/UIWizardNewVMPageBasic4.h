@@ -1,4 +1,4 @@
-/* $Id: UIWizardNewVMPageBasic4.h 143003 2021-03-02 14:13:51Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIWizardNewVMPageBasic4.h 143004 2021-03-02 15:13:46Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardNewVMPageBasic4 class declaration.
  */
@@ -137,7 +137,7 @@ private:
     void setEnableNewDiskWidgets(bool fEnable);
 
     bool isComplete() const;
-    bool validatePage();
+    virtual bool validatePage() /* override */;
 
     QIRichTextLabel *m_pLabel;
 

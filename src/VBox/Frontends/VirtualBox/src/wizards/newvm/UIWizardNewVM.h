@@ -1,4 +1,4 @@
-/* $Id: UIWizardNewVM.h 142983 2021-03-01 16:43:03Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIWizardNewVM.h 143004 2021-03-02 15:13:46Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardNewVM class declaration.
  */
@@ -72,9 +72,8 @@ public:
     {
         Page1,
         Page2,
-        Page4,
-        Page5,
         Page8,
+        Page4,
         PageMax
     };
 
