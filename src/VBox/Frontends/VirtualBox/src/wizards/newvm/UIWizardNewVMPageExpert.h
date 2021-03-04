@@ -1,4 +1,4 @@
-/* $Id: UIWizardNewVMPageExpert.h 143041 2021-03-04 11:11:22Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIWizardNewVMPageExpert.h 143047 2021-03-04 14:33:44Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardNewVMPageExpert class declaration.
  */
@@ -42,6 +42,7 @@ class UIWizardNewVMPageExpert : public UIWizardPage,
                                 public UIWizardNewVMPage3,
                                 public UIWizardNewVMPage4,
                                 public UIWizardNewVDPage1,
+                                public UIWizardNewVDPage2,
                                 public UIWizardNewVDPage3
 {
 
