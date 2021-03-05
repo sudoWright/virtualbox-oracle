@@ -1,4 +1,4 @@
-/* $Id: DrvHostPulseAudio.cpp 139639 2020-07-30 20:26:54Z knut.osmundsen@oracle.com $ */
+/* $Id: DrvHostPulseAudio.cpp 143088 2021-03-05 16:48:14Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox audio devices: Pulse Audio audio driver.
  */
@@ -637,7 +637,7 @@ static int paStreamOpen(PDRVHOSTPULSEAUDIO pThis, PPULSEAUDIOSTREAM pStreamPA, b
 
         pa_threaded_mainloop_unlock(pThis->pMainLoop);
         LogFlowFuncLeaveRC(VINF_SUCCESS);
-        return rc;
+        return VINF_SUCCESS;
 
     } while (0);
 
