@@ -1,4 +1,4 @@
-/* $Id: UIVMActivityMonitor.cpp 143210 2021-03-10 15:10:39Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIVMActivityMonitor.cpp 143211 2021-03-10 15:49:34Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVMActivityMonitor class implementation.
  */
