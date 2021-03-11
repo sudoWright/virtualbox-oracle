@@ -1,4 +1,4 @@
-/* $Id: VBoxManageInfo.cpp 142916 2021-02-23 17:29:34Z klaus.espenlaub@oracle.com $ */
+/* $Id: VBoxManageInfo.cpp 143228 2021-03-11 12:50:12Z noreply@oracle.com $ */
 /** @file
  * VBoxManage - The 'showvminfo' command and helper routines.
  */
@@ -43,6 +43,8 @@
 #include <iprt/ctype.h>
 
 #include "VBoxManage.h"
+#include "VBoxManageUtils.h"
+
 using namespace com;
 
 
