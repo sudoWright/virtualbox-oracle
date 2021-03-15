@@ -1,4 +1,4 @@
-/* $Id: UIMonitorCommon.cpp 138781 2020-06-22 18:24:00Z noreply@oracle.com $ */
+/* $Id: UIMonitorCommon.cpp 143262 2021-03-15 11:13:47Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIMonitorCommon class implementation.
  */
