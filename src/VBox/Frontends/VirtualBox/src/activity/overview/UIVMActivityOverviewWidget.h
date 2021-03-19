@@ -1,4 +1,4 @@
-/* $Id: UIVMActivityOverviewWidget.h 143324 2021-03-18 08:11:08Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIVMActivityOverviewWidget.h 143368 2021-03-19 13:42:23Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVMActivityOverviewWidget class declaration.
  */
@@ -103,7 +103,6 @@ private:
         void prepareActions();
         void updateColumnsMenu();
         void loadSettings();
-        void loadHiddenColumnList();
         void saveSettings();
     /** @} */
 
