@@ -1,6 +1,6 @@
-/* $Id: DrvHostAudioCoreAudioAuth.mm 143413 2021-03-22 09:13:05Z knut.osmundsen@oracle.com $ */
+/* $Id: DrvHostAudioCoreAudioAuth.mm 143432 2021-03-22 10:44:43Z knut.osmundsen@oracle.com $ */
 /** @file
- * VBox audio devices - Mac OS X CoreAudio audio driver, authorization helpers for Mojave+.
+ * Host audio driver - Mac OS X CoreAudio, authorization helpers for Mojave+.
  */
 
 /*

@@ -1,6 +1,6 @@
-/* $Id: DevHda.h 143417 2021-03-22 09:28:22Z knut.osmundsen@oracle.com $ */
+/* $Id: DevHda.h 143432 2021-03-22 10:44:43Z knut.osmundsen@oracle.com $ */
 /** @file
- * DevHDA.h - VBox Intel HD Audio Controller.
+ * Intel HD Audio Controller Emulation - Structures.
  */
 
 /*
