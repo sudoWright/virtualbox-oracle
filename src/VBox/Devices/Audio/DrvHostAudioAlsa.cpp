@@ -1,4 +1,4 @@
-/* $Id: DrvHostAudioAlsa.cpp 143413 2021-03-22 09:13:05Z knut.osmundsen@oracle.com $ */
+/* $Id: DrvHostAudioAlsa.cpp 143421 2021-03-22 09:55:26Z knut.osmundsen@oracle.com $ */
 /** @file
  * ALSA audio driver.
  */
@@ -59,7 +59,6 @@ RT_C_DECLS_END
 #include <alsa/asoundlib.h>
 #include <alsa/control.h> /* For device enumeration. */
 
-#include "DrvAudio.h"
 #include "VBoxDD.h"
 
 

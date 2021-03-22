@@ -1,4 +1,4 @@
-/* $Id: DevHdaCodec.cpp 143417 2021-03-22 09:28:22Z knut.osmundsen@oracle.com $ */
+/* $Id: DevHdaCodec.cpp 143421 2021-03-22 09:55:26Z knut.osmundsen@oracle.com $ */
 /** @file
  * HDACodec - VBox HD Audio Codec.
  *
@@ -38,7 +38,6 @@
 #include <iprt/cpp/utils.h>
 
 #include "VBoxDD.h"
-#include "DrvAudio.h"
 #include "AudioMixer.h"
 #include "DevHdaCodec.h"
 #include "DevHdaCommon.h"

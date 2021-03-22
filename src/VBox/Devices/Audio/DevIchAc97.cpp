@@ -1,4 +1,4 @@
-/* $Id: DevIchAc97.cpp 143188 2021-03-09 15:11:22Z knut.osmundsen@oracle.com $ */
+/* $Id: DevIchAc97.cpp 143421 2021-03-22 09:55:26Z knut.osmundsen@oracle.com $ */
 /** @file
  * DevIchAc97 - VBox ICH AC97 Audio Controller.
  */
@@ -40,7 +40,7 @@
 
 #include "AudioMixBuffer.h"
 #include "AudioMixer.h"
-#include "DrvAudio.h"
+#include "DrvAudioCommon.h"
 
 
 /*********************************************************************************************************************************
