@@ -1,4 +1,4 @@
-/* $Id: VBoxNetLwipNAT.cpp 142889 2021-02-22 02:52:34Z noreply@oracle.com $ */
+/* $Id: VBoxNetLwipNAT.cpp 143527 2021-03-27 22:54:08Z noreply@oracle.com $ */
 /** @file
  * VBoxNetNAT - NAT Service for connecting to IntNet.
  */
@@ -812,6 +812,7 @@ int VBoxNetLwipNAT::initIPv4LoopbackMap()
     {
         m_loOptDescriptor.lomap = m_lo2off;
         m_loOptDescriptor.num_lomap = dst;
+        m_ProxyOptions.lomap_desc = &m_loOptDescriptor;
     }
 
     return VINF_SUCCESS;
