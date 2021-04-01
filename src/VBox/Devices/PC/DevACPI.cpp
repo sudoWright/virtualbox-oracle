@@ -1,4 +1,4 @@
-/* $Id: DevACPI.cpp 143559 2021-03-31 16:29:39Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: DevACPI.cpp 143569 2021-04-01 04:03:48Z ramshankar.venkataraman@oracle.com $ */
 /** @file
  * DevACPI - Advanced Configuration and Power Interface (ACPI) Device.
  */
@@ -866,7 +866,7 @@ typedef struct ACPITBLVTD
     ACPIDMAR            Dmar;
     ACPIDRHD            Drhd;
     /* ACPIDMARDEVSCOPE    DevScope; */
-} ACPITBLDMAR;
+} ACPITBLVTD;
 #endif  /* VBOX_WITH_IOMMU_INTEL */
 
 /** MCFG Descriptor Structure */
