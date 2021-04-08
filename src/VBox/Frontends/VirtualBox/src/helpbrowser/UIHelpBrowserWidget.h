@@ -1,4 +1,4 @@
-/* $Id: UIHelpBrowserWidget.h 143657 2021-04-08 09:22:28Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIHelpBrowserWidget.h 143660 2021-04-08 10:49:01Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIHelpBrowserWidget class declaration.
  */
@@ -168,7 +168,7 @@ private:
     QAction             *m_pShowHideStatusBarAction;
     QAction             *m_pZoomInAction;
     QAction             *m_pZoomOutAction;
-    QAction             *m_pFontSizeResetAction;
+    QAction             *m_pZoomResetAction;
 
     /* This is set t true when handling QHelpContentModel::contentsCreated signal. */
     bool                 m_fModelContentCreated;
