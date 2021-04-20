@@ -1,4 +1,4 @@
-/* $Id: UIWizardNewVMPageExpert.cpp 143875 2021-04-19 13:23:37Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIWizardNewVMPageExpert.cpp 143899 2021-04-20 08:02:57Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardNewVMPageExpert class implementation.
  */
@@ -157,7 +157,7 @@ void UIWizardNewVMPageExpert::retranslateUi()
     UIWizardNewVMPageBaseUnattended::retranslateWidgets();
     UIWizardNewVMPageHardwareBase::retranslateWidgets();
     UIWizardNewVMPageDiskBase::retranslateWidgets();
-    UIWizardNewVDPage1::retranslateWidgets();
+    UIWizardNewVDPageBaseFileType::retranslateWidgets();
     UIWizardNewVDPage2::retranslateWidgets();
     UIWizardNewVDPage3::retranslateWidgets();
 
