@@ -1,4 +1,4 @@
-/* $Id: DevIommuAmd.cpp 143918 2021-04-21 02:54:26Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: DevIommuAmd.cpp 143919 2021-04-21 02:56:01Z ramshankar.venkataraman@oracle.com $ */
 /** @file
  * IOMMU - Input/Output Memory Management Unit - AMD implementation.
  */
@@ -772,6 +772,7 @@ static uint32_t iommuAmdGetEvtLogEntryCount(PIOMMU pThis)
 }
 
 
+#if defined(IN_RING3) || defined(LOG_ENABLED)
 /**
  * Gets the descriptive I/O permission name for a memory access.
  *
@@ -784,6 +785,7 @@ static const char *iommuAmdMemAccessGetPermName(uint8_t fPerm)
     Assert(fPerm > 0 && fPerm < RT_ELEMENTS(g_aszPerm));
     return g_aszPerm[fPerm & IOMMU_IO_PERM_MASK];
 }
+#endif
 
 
 /**
