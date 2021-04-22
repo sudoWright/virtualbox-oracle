@@ -1,4 +1,4 @@
-/* $Id: DevHdaStream.h 143870 2021-04-16 19:30:00Z knut.osmundsen@oracle.com $ */
+/* $Id: DevHdaStream.h 143976 2021-04-22 18:24:15Z knut.osmundsen@oracle.com $ */
 /** @file
  * Intel HD Audio Controller Emulation - Streams.
  */
@@ -325,6 +325,11 @@ typedef struct HDASTREAMR3
         STAMCOUNTER             StatDmaFlowErrors;
         /** Number of bytes involved in unresolved flow errors. */
         STAMCOUNTER             StatDmaFlowErrorBytes;
+
+        STAMPROFILE             StatStart;
+        STAMPROFILE             StatReset;
+        STAMPROFILE             StatStop;
+        STAMPROFILE             StatUnusedPadding;
     } State;
     /** Debug bits. */
     HDASTREAMDEBUG              Dbg;
