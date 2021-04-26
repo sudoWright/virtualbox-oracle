@@ -1,4 +1,4 @@
-/* $Id: UIVMActivityOverviewWidget.h 144025 2021-04-26 16:25:43Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIVMActivityOverviewWidget.h 144028 2021-04-26 16:48:01Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVMActivityOverviewWidget class declaration.
  */
@@ -86,6 +86,7 @@ private slots:
     void sltHandleTableSelectionChanged(const QItemSelection &selected, const QItemSelection &deselected);
     void sltNotRunningVMVisibility(bool fShow);
     void sltSaveSettings();
+    void sltClearCOMData();
 
 private:
 
