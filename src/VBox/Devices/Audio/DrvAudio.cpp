@@ -1,4 +1,4 @@
-/* $Id: DrvAudio.cpp 144153 2021-05-03 10:26:28Z knut.osmundsen@oracle.com $ */
+/* $Id: DrvAudio.cpp 144157 2021-05-03 10:49:09Z knut.osmundsen@oracle.com $ */
 /** @file
  * Intermediate audio driver - Connects the audio device emulation with the host backend.
  */
@@ -3758,7 +3758,7 @@ static DECLCALLBACK(int) drvAudioStreamCapture(PPDMIAUDIOCONNECTOR pInterface,
 
 
 /*********************************************************************************************************************************
-*   PDMIHOSTAUDIOPORT interface implementation.                                                                                   *
+*   PDMIHOSTAUDIOPORT interface implementation.                                                                                  *
 *********************************************************************************************************************************/
 
 /**

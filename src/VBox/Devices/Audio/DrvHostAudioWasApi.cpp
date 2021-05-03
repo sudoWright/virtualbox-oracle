@@ -1,4 +1,4 @@
-/* $Id: DrvHostAudioWasApi.cpp 144153 2021-05-03 10:26:28Z knut.osmundsen@oracle.com $ */
+/* $Id: DrvHostAudioWasApi.cpp 144157 2021-05-03 10:49:09Z knut.osmundsen@oracle.com $ */
 /** @file
  * Host audio driver - Windows Audio Session API.
  */
@@ -1223,6 +1223,7 @@ static DECLCALLBACK(int) drvHostWasWorkerThread(RTTHREAD hThreadSelf, void *pvUs
     return VINF_SUCCESS;
 }
 #endif
+
 
 /*********************************************************************************************************************************
 *   PDMIHOSTAUDIO                                                                                                                *
