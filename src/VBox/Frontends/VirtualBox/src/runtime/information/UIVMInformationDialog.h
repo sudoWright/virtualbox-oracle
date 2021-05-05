@@ -1,4 +1,4 @@
-/* $Id: UIVMInformationDialog.h 144101 2021-04-29 09:47:00Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIVMInformationDialog.h 144209 2021-05-05 12:38:50Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVMInformationDialog class declaration.
  */
@@ -72,6 +72,7 @@ private slots:
 
     /** Handles tab-widget page change. */
     void sltHandlePageChanged(int iIndex);
+    void sltSaveSettings();
 
 private:
 
@@ -89,7 +90,6 @@ private:
     void prepareButtonBox();
     /** Loads settings. */
     void loadSettings();
-    void saveSettings();
 
     /** @name Widget variables.
      * @{ */

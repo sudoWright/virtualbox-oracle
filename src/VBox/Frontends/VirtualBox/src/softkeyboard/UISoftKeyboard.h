@@ -1,4 +1,4 @@
-/* $Id: UISoftKeyboard.h 144115 2021-04-29 14:02:38Z serkan.bayraktar@oracle.com $ */
+/* $Id: UISoftKeyboard.h 144209 2021-05-05 12:38:50Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UISoftKeyboard class declaration.
  */
@@ -103,12 +103,13 @@ private slots:
     void sltHandleColorCellClick(int iColorRow);
     void sltResetKeyboard();
     void sltHandleHelpRequest();
+    void sltSaveSettings();
+    void sltReleaseKeys();
 
 private:
 
     void prepareObjects();
     void prepareConnections();
-    void saveSettings();
     void loadSettings();
     void configure();
     void updateStatusBarMessage(const QString &strLayoutName);
