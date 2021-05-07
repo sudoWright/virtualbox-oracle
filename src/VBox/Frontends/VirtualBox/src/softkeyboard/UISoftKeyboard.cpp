@@ -1,4 +1,4 @@
-/* $Id: UISoftKeyboard.cpp 144256 2021-05-07 08:36:43Z serkan.bayraktar@oracle.com $ */
+/* $Id: UISoftKeyboard.cpp 144257 2021-05-07 08:52:20Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UISoftKeyboard class implementation.
  */
@@ -3901,6 +3901,7 @@ void UISoftKeyboard::closeEvent(QCloseEvent *event)
             return;
         }
     }
+    keyboard().ReleaseKeys();
     emit sigClose();
     event->ignore();
 }
