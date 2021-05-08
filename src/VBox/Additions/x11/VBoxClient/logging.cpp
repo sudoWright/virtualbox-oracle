@@ -1,4 +1,4 @@
-/* $Id: logging.cpp 141325 2020-11-12 10:15:18Z andreas.loeffler@oracle.com $ */
+/* $Id: logging.cpp 144282 2021-05-08 22:57:37Z noreply@oracle.com $ */
 /** @file
  * VirtualBox Guest Additions - X11 Client.
  */
@@ -16,6 +16,7 @@
  */
 
 
+#include <sys/wait.h>
 #include <stdlib.h>
 #include <iprt/buildconfig.h>
 #include <iprt/file.h>
