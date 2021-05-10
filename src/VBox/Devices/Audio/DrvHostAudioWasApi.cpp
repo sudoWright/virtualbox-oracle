@@ -1,4 +1,4 @@
-/* $Id: DrvHostAudioWasApi.cpp 144222 2021-05-05 23:38:58Z knut.osmundsen@oracle.com $ */
+/* $Id: DrvHostAudioWasApi.cpp 144295 2021-05-10 07:19:31Z andreas.loeffler@oracle.com $ */
 /** @file
  * Host audio driver - Windows Audio Session API.
  */
@@ -44,7 +44,11 @@
 
 #include <new> /* std::bad_alloc */
 
-#include "VBoxDD.h"
+#ifdef VBOX_AUDIO_VKAT
+# include "VBoxDDVKAT.h"
+#else
+# include "VBoxDD.h"
+#endif
 
 
 /*********************************************************************************************************************************
