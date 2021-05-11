@@ -1,4 +1,4 @@
-/* $Id: AudioTest.cpp 144323 2021-05-11 16:31:00Z andreas.loeffler@oracle.com $ */
+/* $Id: AudioTest.cpp 144325 2021-05-11 16:39:05Z andreas.loeffler@oracle.com $ */
 /** @file
  * Audio testing routines.
  * Common code which is being used by the ValidationKit and the debug / ValdikationKit audio driver(s).
@@ -46,6 +46,7 @@
 #define AUDIOTEST_MANIFEST_VER      1
 
 #define AUDIOTEST_INI_SEC_HDR_STR   "header"
+
 
 /*********************************************************************************************************************************
 *   Structures and Typedefs                                                                                                      *
