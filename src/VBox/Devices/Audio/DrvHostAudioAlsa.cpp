@@ -1,4 +1,4 @@
-/* $Id: DrvHostAudioAlsa.cpp 144329 2021-05-12 00:46:35Z knut.osmundsen@oracle.com $ */
+/* $Id: DrvHostAudioAlsa.cpp 144395 2021-05-15 16:03:07Z knut.osmundsen@oracle.com $ */
 /** @file
  * Host audio driver - Advanced Linux Sound Architecture (ALSA).
  */
@@ -58,11 +58,7 @@
 #include <alsa/version.h>
 #include "DrvHostAudioAlsaStubs.h"
 
-#ifdef VBOX_AUDIO_VKAT
-# include "VBoxDDVKAT.h"
-#else
-# include "VBoxDD.h"
-#endif
+#include "VBoxDD.h"
 
 
 /*********************************************************************************************************************************
