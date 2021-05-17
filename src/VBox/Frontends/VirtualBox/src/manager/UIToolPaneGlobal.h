@@ -1,4 +1,4 @@
-/* $Id: UIToolPaneGlobal.h 143324 2021-03-18 08:11:08Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIToolPaneGlobal.h 144435 2021-05-17 11:56:34Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIToolPaneGlobal class declaration.
  */
@@ -49,8 +49,8 @@ class UIToolPaneGlobal : public QWidget
 
 signals:
 
-    /** Notifies listeners about request to switch to Performance pane of machine with @a uMachineId. */
-    void sigSwitchToMachinePerformancePane(const QUuid &uMachineId);
+    /** Notifies listeners about request to switch to Activity pane of machine with @a uMachineId. */
+    void sigSwitchToMachineActivityPane(const QUuid &uMachineId);
 
 public:
 
