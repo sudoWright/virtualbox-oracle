@@ -1,4 +1,4 @@
-/* $Id: UIVMActivityToolWidget.cpp 144375 2021-05-14 08:14:18Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIVMActivityToolWidget.cpp 144419 2021-05-17 09:03:37Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVMActivityToolWidget class implementation.
  */
@@ -26,6 +26,7 @@
 #include <QPushButton>
 #include <QTableView>
 #include <QTimer>
+#include <QUuid>
 #include <QVBoxLayout>
 #include <QSortFilterProxyModel>
 
