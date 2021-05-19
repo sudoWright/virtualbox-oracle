@@ -1,4 +1,4 @@
-/* $Id: AudioTestService.cpp 144515 2021-05-19 15:05:29Z andreas.loeffler@oracle.com $ */
+/* $Id: AudioTestService.cpp 144516 2021-05-19 15:09:54Z andreas.loeffler@oracle.com $ */
 /** @file
  * AudioTestService - Audio test execution server.
  */
@@ -704,7 +704,7 @@ static DECLCALLBACK(int) atsClientWorker(RTTHREAD hThread, void *pvUser)
  *
  * @returns VBox status code.
  */
-int atsMainThread(RTTHREAD hThread, void *pvUser)
+static DECLCALLBACK(int) atsMainThread(RTTHREAD hThread, void *pvUser)
 {
     RT_NOREF(hThread, pvUser);
 
