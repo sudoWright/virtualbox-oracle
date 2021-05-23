@@ -1,4 +1,4 @@
-/* $Id: DrvHostAudioDSound.cpp 144560 2021-05-21 11:57:55Z knut.osmundsen@oracle.com $ */
+/* $Id: DrvHostAudioDSound.cpp 144572 2021-05-23 01:21:16Z knut.osmundsen@oracle.com $ */
 /** @file
  * Host audio driver - DirectSound (Windows).
  */
@@ -804,7 +804,7 @@ static BOOL CALLBACK drvHostDSoundEnumOldStylePlaybackCallback(LPGUID pGUID, LPC
         pDev->Core.enmType  = PDMAUDIODEVICETYPE_BUILTIN;
 
         if (pGUID == NULL)
-            pDev->Core.fFlags = PDMAUDIOHOSTDEV_F_DEFAULT;
+            pDev->Core.fFlags = PDMAUDIOHOSTDEV_F_DEFAULT_OUT;
 
         char *pszName;
         rc = RTUtf16ToUtf8(pwszDescription, &pszName);
