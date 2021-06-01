@@ -1,4 +1,4 @@
-/* $Id: vkatDriverStack.cpp 144793 2021-06-01 19:41:40Z knut.osmundsen@oracle.com $ */
+/* $Id: vkatDriverStack.cpp 144798 2021-06-01 20:50:54Z knut.osmundsen@oracle.com $ */
 /** @file
  * Validation Kit Audio Test (VKAT) - Driver stack code.
  */
@@ -682,6 +682,7 @@ static int audioTestDriverStackStreamCreate(PAUDIOTESTDRVSTACK pDrvStack, PPDMAU
                     RTTestFailed(g_hTest, "Out of memory!\n");
                     rc = VERR_NO_MEMORY;
                 }
+                RTMemFree(pStreamAt);
             }
             else
             {
