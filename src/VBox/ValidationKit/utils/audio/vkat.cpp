@@ -1,4 +1,4 @@
-/* $Id: vkat.cpp 144810 2021-06-02 08:43:16Z andreas.loeffler@oracle.com $ */
+/* $Id: vkat.cpp 144811 2021-06-02 08:46:58Z andreas.loeffler@oracle.com $ */
 /** @file
  * Validation Kit Audio Test (VKAT) utility for testing and validating the audio stack.
  */
@@ -675,6 +675,7 @@ static DECLCALLBACK(int) audioTestSvcToneRecordCallback(void const *pvUser, PPDM
 
     return rc;
 }
+
 
 /*********************************************************************************************************************************
 *   Implementation of audio test environment handling                                                                            *
