@@ -1,4 +1,4 @@
-/* $Id: UIVMLogViewerWidget.h 145049 2021-06-10 14:39:35Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIVMLogViewerWidget.h 145051 2021-06-10 16:04:00Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVMLogViewerWidget class declaration.
  */
@@ -141,7 +141,6 @@ private slots:
         void sltChangeFont(QFont font);
         void sltResetOptionsToDefault();
     /** @} */
-    void sltShowTabBarContextMenu(const QPoint &pos);
     void sltCloseMachineLogs();
     void sltTabCloseButtonClick();
 
