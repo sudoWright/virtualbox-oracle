@@ -1,4 +1,4 @@
-/* $Id: VBoxX11Helper.h 145276 2021-06-21 12:49:27Z serkan.bayraktar@oracle.com $ */
+/* $Id: VBoxX11Helper.h 145277 2021-06-21 12:57:45Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - VBox X11 helper functions.
  */
@@ -23,6 +23,7 @@
 
 /* Qt includes: */
 #include <QString>
+#include <QVector>
 
 /* GUI includes: */
 #include "UILibraryDefs.h"
