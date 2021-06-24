@@ -1,4 +1,4 @@
-/* $Id: DevHdaCodec.cpp 145327 2021-06-23 19:06:11Z knut.osmundsen@oracle.com $ */
+/* $Id: DevHdaCodec.cpp 145345 2021-06-24 12:30:53Z knut.osmundsen@oracle.com $ */
 /** @file
  * Intel HD Audio Controller Emulation - Codec, Sigmatel/IDT STAC9220.
  *
@@ -40,8 +40,6 @@
 #include "VBoxDD.h"
 #include "AudioMixer.h"
 #include "DevHda.h"
-#include "DevHdaCodec.h"
-#include "DevHdaCommon.h"
 
 
 /*********************************************************************************************************************************
