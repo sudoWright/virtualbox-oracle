@@ -1,4 +1,4 @@
-/* $Id: QIRichTextLabel.h 141364 2020-11-16 15:08:36Z sergey.dubov@oracle.com $ */
+/* $Id: QIRichTextLabel.h 145329 2021-06-24 02:53:57Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - Qt extensions: QIRichTextLabel class declaration.
  */
@@ -62,6 +62,8 @@ public:
 
 public slots:
 
+    /** Returns minimum text width. */
+    int minimumTextWidth() const;
     /** Defines @a iMinimumTextWidth. */
     void setMinimumTextWidth(int iMinimumTextWidth);
 
