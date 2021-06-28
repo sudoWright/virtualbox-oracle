@@ -1,4 +1,4 @@
-/* $Id: DBGFR3FlowTrace.cpp 142847 2021-02-18 15:09:53Z alexander.eichner@oracle.com $ */
+/* $Id: DBGFR3FlowTrace.cpp 145382 2021-06-28 08:16:29Z alexander.eichner@oracle.com $ */
 /** @file
  * DBGF - Debugger Facility, Guest Execution Flow Tracing.
  */
@@ -1208,7 +1208,7 @@ VMMR3DECL(int) DBGFR3FlowTraceModCreate(PUVM pUVM, VMCPUID idCpu,
         rc = RTSemFastMutexCreate(&pThis->hMtx);
         if (RT_SUCCESS(rc))
         {
-            rc = DBGFR3BpOwnerCreate(pUVM, dbgfR3FlowTraceModProbeFiredWorker, &pThis->hBpOwner);
+            rc = DBGFR3BpOwnerCreate(pUVM, dbgfR3FlowTraceModProbeFiredWorker, NULL /*pfnBpIoHit*/, &pThis->hBpOwner);
             if (RT_SUCCESS(rc))
             {
                 PDBGFFLOWTRACEPROBEINT pProbe = hFlowTraceProbeCommon;
