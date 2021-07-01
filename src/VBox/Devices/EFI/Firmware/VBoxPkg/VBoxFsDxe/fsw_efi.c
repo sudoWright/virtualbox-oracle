@@ -1,4 +1,4 @@
-/* $Id: fsw_efi.c 139958 2020-08-17 16:09:43Z alexander.eichner@oracle.com $ */
+/* $Id: fsw_efi.c 145460 2021-07-01 12:10:28Z alexander.eichner@oracle.com $ */
 /** @file
  * fsw_efi.c - EFI host environment code.
  */
