@@ -1,4 +1,4 @@
-/* $Id: AudioTestServiceClient.cpp 145421 2021-06-30 07:02:07Z andreas.loeffler@oracle.com $ */
+/* $Id: AudioTestServiceClient.cpp 145542 2021-07-06 09:10:25Z andreas.loeffler@oracle.com $ */
 /** @file
  * AudioTestServiceClient - Audio Test Service (ATS), Client helpers.
  *
@@ -21,7 +21,7 @@
 /*********************************************************************************************************************************
 *   Header Files                                                                                                                 *
 *********************************************************************************************************************************/
-#define LOG_GROUP LOG_GROUP_DRV_HOST_AUDIO /** @todo Add an own log group for this? */
+#define LOG_GROUP LOG_GROUP_AUDIO_TEST
 
 #include <iprt/crc.h>
 #include <iprt/err.h>
