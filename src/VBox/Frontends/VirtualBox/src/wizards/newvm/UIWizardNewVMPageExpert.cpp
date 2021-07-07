@@ -1,4 +1,4 @@
-/* $Id: UIWizardNewVMPageExpert.cpp 145481 2021-07-02 15:03:13Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIWizardNewVMPageExpert.cpp 145571 2021-07-07 10:06:10Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardNewVMPageExpert class implementation.
  */
@@ -71,7 +71,7 @@ UIWizardNewVMPageExpert::UIWizardNewVMPageExpert(const QString &strGroup)
 
     /* Register classes: */
     qRegisterMetaType<CMedium>();
-    qRegisterMetaType<SelectedDiskSource>();
+    //qRegisterMetaType<SelectedDiskSource>();
 
     /* Register fields: */
 //     registerField("name*", m_pNameAndSystemEditor, "name", SIGNAL(sigNameChanged(const QString &)));
