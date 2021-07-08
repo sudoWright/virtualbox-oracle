@@ -1,4 +1,4 @@
-/* $Id: UIWizardNewVMNameOSTypePageBasic.cpp 145570 2021-07-07 06:38:10Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIWizardNewVMNameOSTypePageBasic.cpp 145592 2021-07-08 11:36:21Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardNewVMPageBasicNameOSStype class implementation.
  */
@@ -471,6 +471,13 @@ bool UIWizardNewVMNameOSTypePageBasic::validatePage()
 {
     /* Try to create machine folder: */
     return UIWizardNewVMNameOSTypePage::createMachineFolder(m_pNameAndSystemEditor, this, qobject_cast<UIWizardNewVM*>(wizard()));
+}
+
+void UIWizardNewVMNameOSTypePageBasic::showEvent(QShowEvent *pEvent)
+{
+    if (m_pNameAndSystemEditor)
+        m_pNameAndSystemEditor->setFocus();
+    UINativeWizardPage::showEvent(pEvent);
 }
 
 void UIWizardNewVMNameOSTypePageBasic::sltISOPathChanged(const QString &strPath)
