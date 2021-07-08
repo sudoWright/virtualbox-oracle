@@ -1,4 +1,4 @@
-/* $Id: UIWizardNewVMDiskPageBasic.h 145590 2021-07-08 10:52:34Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIWizardNewVMDiskPageBasic.h 145591 2021-07-08 11:35:46Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardNewVMDiskPageBasic class declaration.
  */
@@ -87,7 +87,7 @@ private slots:
     void sltSelectedDiskSourceChanged();
     void sltMediaComboBoxIndexChanged();
     void sltGetWithFileOpenDialog();
-    void sltHandleSizeEditorChange();
+    void sltHandleSizeEditorChange(qulonglong uSize);
     void sltFixedCheckBoxToggled(bool fChecked);
 
 private:
