@@ -1,4 +1,4 @@
-/* $Id: UIWizardNewVDPageFileType.cpp 143901 2021-04-20 09:13:59Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIWizardNewVDPageFileType.cpp 145662 2021-07-12 17:27:15Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardNewVDPageFileType class implementation.
  */
@@ -123,9 +123,6 @@ QWidget *UIWizardNewVDPageBaseFileType::createFormatButtonGroup(bool fExpertMode
             m_pFormatButtonGroup->button(0)->setFocus();
         }
     }
-
-
-
     return pContainerWidget;
 }
 
