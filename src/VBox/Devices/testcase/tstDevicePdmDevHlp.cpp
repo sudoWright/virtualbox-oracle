@@ -1,4 +1,4 @@
-/* $Id: tstDevicePdmDevHlp.cpp 138489 2020-06-06 10:29:22Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: tstDevicePdmDevHlp.cpp 145724 2021-07-14 23:36:25Z knut.osmundsen@oracle.com $ */
 /** @file
  * tstDevice - Test framework for PDM devices/drivers, PDM helper implementation.
  */
@@ -3565,7 +3565,7 @@ static DECLCALLBACK(int) pdmR3DevHlp_DriverReconfigure(PPDMDEVINS pDevIns, uint3
     {
         AssertPtrReturn(papszDrivers[i], VERR_INVALID_POINTER);
         size_t cchDriver = strlen(papszDrivers[i]);
-        AssertPtrReturn(cchDriver > 0 && cchDriver < RT_SIZEOFMEMB(PDMDRVREG, szName), VERR_OUT_OF_RANGE);
+        AssertReturn(cchDriver > 0 && cchDriver < RT_SIZEOFMEMB(PDMDRVREG, szName), VERR_OUT_OF_RANGE);
 
         if (papConfigs)
             AssertPtrNullReturn(papConfigs[i], VERR_INVALID_POINTER);
