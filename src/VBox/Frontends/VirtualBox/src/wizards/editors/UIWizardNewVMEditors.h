@@ -1,4 +1,4 @@
-/* $Id: UIWizardNewVMEditors.h 145736 2021-07-15 09:51:10Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIWizardNewVMEditors.h 145768 2021-07-16 11:56:03Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardNewVMEditors class declaration.
  */
@@ -103,7 +103,6 @@ private:
 
     QLabel *m_pGAISOPathLabel;
     UIFilePathSelector *m_pGAISOFilePathSelector;
-
 };
 
 class UIAdditionalUnattendedOptions : public QIWithRetranslateUI<QGroupBox>
