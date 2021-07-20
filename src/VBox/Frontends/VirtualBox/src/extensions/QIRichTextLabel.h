@@ -1,4 +1,4 @@
-/* $Id: QIRichTextLabel.h 145329 2021-06-24 02:53:57Z sergey.dubov@oracle.com $ */
+/* $Id: QIRichTextLabel.h 145790 2021-07-20 09:52:02Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - Qt extensions: QIRichTextLabel class declaration.
  */
@@ -59,6 +59,11 @@ public:
 
     /** Installs event filter for a passed @ pFilterObj. */
     void installEventFilter(QObject *pFilterObj);
+
+    /** Returns browser font. */
+    QFont browserFont() const;
+    /** Defines @a newFont for browser. */
+    void setBrowserFont(const QFont &newFont);
 
 public slots:
 
