@@ -1,4 +1,4 @@
-/* $Id: UIWizardNewVMDiskPageBasic.h 145798 2021-07-20 12:30:18Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIWizardNewVMDiskPageBasic.h 145815 2021-07-21 14:53:03Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardNewVMDiskPageBasic class declaration.
  */
@@ -98,7 +98,6 @@ private:
     QWidget *createNewDiskWidgets();
     void cleanupPage();
     void setEnableNewDiskWidgets(bool fEnable);
-    void setVirtualDiskFromDiskCombo();
     QWidget *createDiskWidgets();
     QWidget *createMediumVariantWidgets(bool fWithLabels);
 
