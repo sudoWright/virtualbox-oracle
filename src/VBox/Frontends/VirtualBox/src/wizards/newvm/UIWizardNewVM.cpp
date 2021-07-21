@@ -1,4 +1,4 @@
-/* $Id: UIWizardNewVM.cpp 145812 2021-07-21 11:29:35Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIWizardNewVM.cpp 145814 2021-07-21 14:17:53Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardNewVM class implementation.
  */
@@ -96,7 +96,7 @@ void UIWizardNewVM::populatePages()
         }
         case WizardMode_Expert:
         {
-            addPage(new UIWizardNewVMPageExpert());
+            addPage(new UIWizardNewVMPageExpert);
             break;
         }
         default:
@@ -811,7 +811,6 @@ const QString &UIWizardNewVM::mediumPath() const
 void UIWizardNewVM::setMediumPath(const QString &strMediumPath)
 {
     m_strMediumPath = strMediumPath;
-    printf("%s\n", qPrintable(m_strMediumPath));
 }
 
 qulonglong UIWizardNewVM::mediumSize() const
