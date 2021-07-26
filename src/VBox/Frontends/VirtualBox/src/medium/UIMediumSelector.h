@@ -1,4 +1,4 @@
-/* $Id: UIMediumSelector.h 140502 2020-09-23 12:10:51Z sergey.dubov@oracle.com $ */
+/* $Id: UIMediumSelector.h 145889 2021-07-26 09:36:52Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIMediumSelector class declaration.
  */
@@ -79,6 +79,7 @@ private slots:
     void sltCreateMedium();
     void sltHandleItemSelectionChanged();
     void sltHandleTreeWidgetDoubleClick(QTreeWidgetItem * item, int column);
+    void sltHandleMediumCreated(const QUuid &uMediumId);
     void sltHandleMediumEnumerationStart();
     void sltHandleMediumEnumerated();
     void sltHandleMediumEnumerationFinish();
