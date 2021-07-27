@@ -1,4 +1,4 @@
-/* $Id: UIExtensionPackManager.h 142332 2021-01-21 16:08:36Z sergey.dubov@oracle.com $ */
+/* $Id: UIExtensionPackManager.h 145916 2021-07-27 11:08:28Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIExtensionPackManager class declaration.
  */
@@ -82,6 +82,11 @@ private slots:
         void sltHandleCurrentItemChange();
         /** Handles context-menu request for tree-widget @a position. */
         void sltHandleContextMenuRequest(const QPoint &position);
+
+        /** Handles signal about extension pack @a strName installed. */
+        void sltHandleExtensionPackInstalled(const QString &strName);
+        /** Handles signal about extension pack @a strName uninstalled. */
+        void sltHandleExtensionPackUninstalled(const QString &strName);
     /** @} */
 
 private:
