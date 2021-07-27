@@ -1,4 +1,4 @@
-/* $Id: UIWizardNewVMPageExpert.cpp 145849 2021-07-22 17:29:34Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIWizardNewVMPageExpert.cpp 145921 2021-07-27 14:06:35Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardNewVMPageExpert class implementation.
  */
@@ -465,9 +465,9 @@ QWidget *UIWizardNewVMPageExpert::createNewDiskWidgets()
 
     m_pSizeAndLocationGroup = new UIMediumSizeAndPathGroupBox;
     pDiskContainerLayout->addWidget(m_pSizeAndLocationGroup, 0, 0, 2, 2);
-    m_pFormatButtonGroup = new UIDiskFormatsGroupBox;
+    m_pFormatButtonGroup = new UIDiskFormatsGroupBox(true, 0);
     pDiskContainerLayout->addWidget(m_pFormatButtonGroup, 2, 0, 4, 1);
-    m_pDiskVariantGroupBox  = new UIDiskVariantGroupBox;
+    m_pDiskVariantGroupBox  = new UIDiskVariantGroupBox(true, 0);
     pDiskContainerLayout->addWidget(m_pDiskVariantGroupBox, 2, 1, 2, 1);
 
     return pNewDiskContainerWidget;
