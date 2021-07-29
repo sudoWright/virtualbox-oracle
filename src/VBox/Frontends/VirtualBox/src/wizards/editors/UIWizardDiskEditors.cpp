@@ -1,4 +1,4 @@
-/* $Id: UIWizardDiskEditors.cpp 145989 2021-07-29 10:36:20Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIWizardDiskEditors.cpp 145991 2021-07-29 12:10:20Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIUserNamePasswordEditor class implementation.
  */
@@ -571,7 +571,6 @@ void UIMediumSizeAndPathGroupBox::setMediumSize(qulonglong uSize)
     if (m_pMediumSizeEditor)
         return m_pMediumSizeEditor->setMediumSize(uSize);
 }
-
 
 /* static */
 QString UIMediumSizeAndPathGroupBox::stripFormatExtension(const QString &strFileName, const QStringList &formatExtensions)
