@@ -1,4 +1,4 @@
-/* $Id: internal-r0drv-nt.h 140426 2020-09-19 09:19:38Z knut.osmundsen@oracle.com $ */
+/* $Id: internal-r0drv-nt.h 146017 2021-07-29 21:29:10Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Internal Header for the NT Ring-0 Driver Code.
  */
@@ -95,6 +95,7 @@ extern decltype(MmMapLockedPagesSpecifyCache) *g_pfnrtMmMapLockedPagesSpecifyCac
 extern decltype(MmAllocateContiguousMemorySpecifyCache) *g_pfnrtMmAllocateContiguousMemorySpecifyCache;
 extern decltype(MmSecureVirtualMemory)        *g_pfnrtMmSecureVirtualMemory;
 extern decltype(MmUnsecureVirtualMemory)      *g_pfnrtMmUnsecureVirtualMemory;
+extern decltype(PsIsThreadTerminating)        *g_pfnrtPsIsThreadTerminating;
 
 extern PFNRTRTLGETVERSION                      g_pfnrtRtlGetVersion;
 #ifdef RT_ARCH_X86
