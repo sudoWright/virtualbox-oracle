@@ -1,4 +1,4 @@
-/* $Id: UIWizardNewVMDiskPageBasic.h 145998 2021-07-29 13:17:06Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIWizardNewVMDiskPageBasic.h 146010 2021-07-29 15:54:11Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardNewVMDiskPageBasic class declaration.
  */
@@ -28,7 +28,6 @@
 /* GUI includes: */
 #include "QIFileDialog.h"
 #include "UINativeWizardPage.h"
-//
 
 /* COM includes: */
 #include "COMEnums.h"

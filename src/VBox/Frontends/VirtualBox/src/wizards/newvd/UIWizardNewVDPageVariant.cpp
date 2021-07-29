@@ -1,4 +1,4 @@
-/* $Id: UIWizardNewVDPageVariant.cpp 145998 2021-07-29 13:17:06Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIWizardNewVDPageVariant.cpp 146010 2021-07-29 15:54:11Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardNewVDPageVariant class implementation.
  */
@@ -17,7 +17,6 @@
 
 /* Qt includes: */
 #include <QVBoxLayout>
-#include <QButtonGroup>
 
 /* GUI includes: */
 #include "UIWizardDiskEditors.h"

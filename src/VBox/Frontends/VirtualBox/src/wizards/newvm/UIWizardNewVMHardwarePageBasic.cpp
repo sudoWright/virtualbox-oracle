@@ -1,4 +1,4 @@
-/* $Id: UIWizardNewVMHardwarePageBasic.cpp 145736 2021-07-15 09:51:10Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIWizardNewVMHardwarePageBasic.cpp 146010 2021-07-29 15:54:11Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardNewVMHardwarePageBasic class implementation.
  */
@@ -16,20 +16,15 @@
  */
 
 /* Qt includes: */
-#include <QCheckBox>
-#include <QGridLayout>
-#include <QMetaType>
 #include <QVBoxLayout>
 
 /* GUI includes: */
 #include "QIRichTextLabel.h"
 #include "UIBaseMemoryEditor.h"
-#include "UIMessageCenter.h"
 #include "UIVirtualCPUEditor.h"
 #include "UIWizardNewVM.h"
 #include "UIWizardNewVMEditors.h"
 #include "UIWizardNewVMHardwarePageBasic.h"
-#include "UIWizardNewVDPageSizeLocation.h"
 
 /* COM includes: */
 #include "CGuestOSType.h"

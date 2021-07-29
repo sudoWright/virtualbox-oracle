@@ -1,4 +1,4 @@
-/* $Id: UIWizardNewVMNameOSTypePageBasic.h 145822 2021-07-22 07:50:38Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIWizardNewVMNameOSTypePageBasic.h 146010 2021-07-29 15:54:11Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardNewVMNameOSTypePageBasic class declaration.
  */
@@ -23,17 +23,11 @@
 
 /* Local includes: */
 #include "UINativeWizardPage.h"
-#include "UIExtraDataDefs.h"
 
 /* Forward declarations: */
-class QBoxLayout;
 class QCheckBox;
-class QFrame;
-class QLabel;
-class QRadioButton;
 class QGridLayout;
 class QIRichTextLabel;
-class UIFilePathSelector;
 class UINameAndSystemEditor;
 class UIWizardNewVM;
 
