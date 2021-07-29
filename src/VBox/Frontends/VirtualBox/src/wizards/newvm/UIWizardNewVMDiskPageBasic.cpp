@@ -1,4 +1,4 @@
-/* $Id: UIWizardNewVMDiskPageBasic.cpp 145989 2021-07-29 10:36:20Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIWizardNewVMDiskPageBasic.cpp 145998 2021-07-29 13:17:06Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardNewVMDiskPageBasic class implementation.
  */
@@ -37,6 +37,7 @@
 #include "UIMessageCenter.h"
 #include "UIWizardNewVMDiskPageBasic.h"
 #include "UIWizardDiskEditors.h"
+#include "UIWizardNewVM.h"
 
 /* COM includes: */
 #include "CGuestOSType.h"
