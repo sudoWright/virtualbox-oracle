@@ -1,4 +1,4 @@
-/* $Id: DevIommuIntel.cpp 146052 2021-07-31 00:54:54Z knut.osmundsen@oracle.com $ */
+/* $Id: DevIommuIntel.cpp 146083 2021-08-02 14:16:11Z ramshankar.venkataraman@oracle.com $ */
 /** @file
  * IOMMU - Input/Output Memory Management Unit - Intel implementation.
  */
@@ -65,7 +65,7 @@
             return rcLock; \
     } while (0)
 
-/** Acquires the DMAR lock (can fail under extraordinary circumstance in in ring-0). */
+/** Acquires the DMAR lock (can fail under extraordinary circumstance in ring-0). */
 #define DMAR_LOCK(a_pDevIns, a_pThisCC) \
     do { \
         int const rcLock = (a_pThisCC)->CTX_SUFF(pIommuHlp)->pfnLock((a_pDevIns), VINF_SUCCESS); \
