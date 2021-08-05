@@ -1,4 +1,4 @@
-/* $Id: UINetworkRequestManagerWindow.h 141543 2020-11-26 16:54:39Z sergey.dubov@oracle.com $ */
+/* $Id: UINetworkRequestManagerWindow.h 146132 2021-08-05 11:24:33Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UINetworkRequestManagerWindow stuff declaration.
  */
@@ -63,7 +63,7 @@ protected:
     /** Allows adding/removing network-request widgets to UINetworkRequest. */
     friend class UINetworkRequest;
     /** Adds network-request widget. */
-    void addNetworkRequestWidget(UINetworkRequest *pNetworkRequest);
+    void addNetworkRequestWidget(const QUuid &uuid, UINetworkRequest *pNetworkRequest);
     /** Removes network-request widget. */
     void removeNetworkRequestWidget(const QUuid &uuid);
 
