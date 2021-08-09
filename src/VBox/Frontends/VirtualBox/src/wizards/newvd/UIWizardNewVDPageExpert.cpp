@@ -1,4 +1,4 @@
-/* $Id: UIWizardNewVDPageExpert.cpp 146181 2021-08-09 08:43:16Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIWizardNewVDPageExpert.cpp 146182 2021-08-09 08:57:36Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardNewVDPageExpert class implementation.
  */
@@ -93,7 +93,12 @@ void UIWizardNewVDPageExpert::sltMediumSizeChanged(qulonglong uSize)
 
 void UIWizardNewVDPageExpert::sltMediumPathChanged(const QString &strPath)
 {
-    newVDWizardPropertySet(MediumPath, strPath);
+    UIWizardNewVD *pWizard = qobject_cast<UIWizardNewVD*>(wizard());
+    AssertReturnVoid(pWizard);
+    QString strMediumPath =
+        UIDiskEditorGroupBox::appendExtension(strPath,
+                                              UIDiskEditorGroupBox::defaultExtensionForMediumFormat(pWizard->mediumFormat()));
+    newVDWizardPropertySet(MediumPath, strMediumPath);
     emit completeChanged();
 }
 
