@@ -1,4 +1,4 @@
-/* $Id: UIWizardCloneVMPageBasic3.cpp 135976 2020-02-04 10:35:17Z knut.osmundsen@oracle.com $ */
+/* $Id: UIWizardCloneVMPageBasic3.cpp 146200 2021-08-10 10:07:26Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardCloneVMPageBasic3 class implementation.
  */
@@ -132,17 +132,16 @@ bool UIWizardCloneVMPageBasic3::validatePage()
     /* Initial result: */
     bool fResult = true;
 
-    /* Lock finish button: */
-    startProcessing();
+    // /* Lock finish button: */
+    // startProcessing();
 
     /* Try to clone VM: */
-    if (fResult)
-        fResult = qobject_cast<UIWizardCloneVM*>(wizard())->cloneVM();
+    // if (fResult)
+    //     fResult = qobject_cast<UIWizardCloneVM*>(wizard())->cloneVM();
 
-    /* Unlock finish button: */
-    endProcessing();
+    // /* Unlock finish button: */
+    // endProcessing();
 
     /* Return result: */
     return fResult;
 }
-
