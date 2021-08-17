@@ -1,4 +1,4 @@
-/* $Id: UsbKbd.cpp 146311 2021-08-16 13:47:40Z michal.necasek@oracle.com $ */
+/* $Id: UsbKbd.cpp 146315 2021-08-17 10:22:27Z michal.necasek@oracle.com $ */
 /** @file
  * UsbKbd - USB Human Interface Device Emulation, Keyboard.
  */
@@ -1784,7 +1784,7 @@ static DECLCALLBACK(int) usbHidConstruct(PPDMUSBINS pUsbIns, int iInstance, PCFG
     if (RT_FAILURE(rc))
         return rc;
     char szMode[64];
-    rc = CFGMR3QueryStringDef(pCfg, "Mode", szMode, sizeof(szMode), "extended");
+    rc = CFGMR3QueryStringDef(pCfg, "Mode", szMode, sizeof(szMode), "basic");
     if (RT_FAILURE(rc))
         return PDMUsbHlpVMSetError(pUsbIns, rc, RT_SRC_POS, N_("HID failed to query settings"));
     if (!RTStrCmp(szMode, "basic"))
