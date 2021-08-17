@@ -1,4 +1,4 @@
-/* $Id: UIWizardCloneVMEditors.h 146310 2021-08-16 13:30:36Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIWizardCloneVMEditors.h 146321 2021-08-17 15:40:19Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardDiskEditors class declaration.
  */
@@ -76,7 +76,7 @@ public:
     QString clonePath() const;
     void setClonePath(const QString &strPath);
 
-    bool isComplete();
+    bool isComplete(const QString &strMachineGroup);
 
 private:
 
