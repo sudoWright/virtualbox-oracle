@@ -1,4 +1,4 @@
-/* $Id: UIWizardNewVMDiskPageBasic.h 146010 2021-07-29 15:54:11Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIWizardNewVMDiskPageBasic.h 146397 2021-08-20 15:34:22Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardNewVMDiskPageBasic class declaration.
  */
@@ -58,7 +58,6 @@ namespace UIWizardNewVMDiskPage
                                 const QString &strMachineFolder,
                                 const QString &strMachineBaseName,
                                 QWidget *pCaller);
-    QString selectNewMediumLocation(UIWizardNewVM *pWizard);
 }
 
 
