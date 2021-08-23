@@ -1,4 +1,4 @@
-/* $Id: vboximgCrypto.cpp 135976 2020-02-04 10:35:17Z knut.osmundsen@oracle.com $ $Revision: 135976 $ */
+/* $Id: vboximgCrypto.cpp 146420 2021-08-23 09:43:25Z knut.osmundsen@oracle.com $ $Revision: 146420 $ */
 
 /** @file
  * vboximgCypto.cpp - Disk Image Flattening FUSE Program.
@@ -293,7 +293,7 @@ DECLCALLBACK(int) vboximgVdCryptoConfigQuerySize(void *pvUser, const char *pszNa
 {
     VDISKCRYPTOSETTINGS *pSettings = (VDISKCRYPTOSETTINGS *)pvUser;
     AssertPtrReturn(pSettings, VERR_GENERAL_FAILURE);
-    AssertReturn(VALID_PTR(pcbValue), VERR_INVALID_POINTER);
+    AssertPtrReturn(pcbValue, VERR_INVALID_POINTER);
 
     size_t cbValue = 0;
     if (!strcmp(pszName, "Algorithm"))
@@ -321,7 +321,7 @@ DECLCALLBACK(int) vboximgVdCryptoConfigQuery(void *pvUser, const char *pszName,
 {
     VDISKCRYPTOSETTINGS *pSettings = (VDISKCRYPTOSETTINGS *)pvUser;
     AssertPtrReturn(pSettings, VERR_GENERAL_FAILURE);
-    AssertReturn(VALID_PTR(pszValue), VERR_INVALID_POINTER);
+    AssertPtrReturn(pszValue, VERR_INVALID_POINTER);
 
     const char *psz = NULL;
     if (!strcmp(pszName, "Algorithm"))
