@@ -1,4 +1,4 @@
-/* $Id: DevVirtioNet_1_0.cpp 146408 2021-08-23 05:59:57Z noreply@oracle.com $ $Revision: 146408 $ $Date: 2021-08-23 07:59:57 +0200 (Mon, 23 Aug 2021) $ $Author: noreply@oracle.com $ */
+/* $Id: DevVirtioNet_1_0.cpp 146409 2021-08-23 06:07:10Z noreply@oracle.com $ $Revision: 146409 $ $Date: 2021-08-23 08:07:10 +0200 (Mon, 23 Aug 2021) $ $Author: noreply@oracle.com $ */
 
 /** @file
  * VBox storage devices - Virtio NET Driver
@@ -2779,7 +2779,7 @@ static DECLCALLBACK(void) virtioNetR3StatusChanged(PVIRTIOCORE pVirtio, PVIRTIOC
             PVIRTIONETWORKER pWorker = &pThis->aWorkers[uVirtqNbr];
 
             Assert(pWorker->uIdx == uVirtqNbr);
-	    RT_NOREF(pWorker);
+            RT_NOREF(pWorker);
 
             Assert(pVirtq->uIdx == pWorker->uIdx);
 
