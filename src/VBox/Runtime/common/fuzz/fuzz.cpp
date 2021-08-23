@@ -1,4 +1,4 @@
-/* $Id: fuzz.cpp 139061 2020-07-08 19:33:26Z knut.osmundsen@oracle.com $ */
+/* $Id: fuzz.cpp 146438 2021-08-23 19:08:38Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Fuzzing framework API, core.
  */
@@ -2136,7 +2136,7 @@ RTDECL(int) RTFuzzCtxInputGenerate(RTFUZZCTX hFuzzCtx, PRTFUZZINPUT phFuzzInput)
 
         rc = pMutator->pfnPrep(pThis, offStart, pMutationParent, &pMutation);
         if (   RT_SUCCESS(rc)
-            && VALID_PTR(pMutation))
+            && RT_VALID_PTR(pMutation))
         {
             pMutation->pMutator = pMutator;
 
