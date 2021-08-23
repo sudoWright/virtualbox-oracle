@@ -1,4 +1,4 @@
-/* $Id: SUPDrv-win.cpp 142743 2021-02-10 20:21:04Z knut.osmundsen@oracle.com $ */
+/* $Id: SUPDrv-win.cpp 146415 2021-08-23 09:25:17Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxDrv - The VirtualBox Support Driver - Windows NT specifics.
  */
@@ -1474,7 +1474,7 @@ NTSTATUS _stdcall VBoxDrvNtInternalDeviceControl(PDEVICE_OBJECT pDevObj, PIRP pI
     {
         /* Verify the pDevExt in the session. */
         if (  pStack->Parameters.DeviceIoControl.IoControlCode != SUPDRV_IDC_REQ_CONNECT
-            ? VALID_PTR(pSession) && pSession->pDevExt == pDevExt
+            ? RT_VALID_PTR(pSession) && pSession->pDevExt == pDevExt
             : !pSession
            )
         {
