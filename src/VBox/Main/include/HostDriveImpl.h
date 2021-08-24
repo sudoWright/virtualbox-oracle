@@ -1,4 +1,4 @@
-/* $Id: HostDriveImpl.h 140130 2020-08-28 16:49:53Z knut.osmundsen@oracle.com $ */
+/* $Id: HostDriveImpl.h 146463 2021-08-24 09:44:46Z noreply@oracle.com $ */
 /** @file
  * VirtualBox Main - IHostDrive implementation, VBoxSVC.
  */
@@ -27,7 +27,7 @@ class ATL_NO_VTABLE HostDrive
     : public HostDriveWrap
 {
 public:
-    DECLARE_EMPTY_CTOR_DTOR(HostDrive)
+    DECLARE_COMMON_CLASS_METHODS(HostDrive)
 
     HRESULT FinalConstruct();
     void FinalRelease();

@@ -1,4 +1,4 @@
-/* $Id: HostUpdateImpl.h 140845 2020-10-11 18:53:11Z alexander.eichner@oracle.com $ */
+/* $Id: HostUpdateImpl.h 146463 2021-08-24 09:44:46Z noreply@oracle.com $ */
 /** @file
  * VirtualBox COM class implementation
  */
@@ -29,7 +29,7 @@ class ATL_NO_VTABLE HostUpdate
     : public HostUpdateWrap
 {
 public:
-    DECLARE_EMPTY_CTOR_DTOR(HostUpdate)
+    DECLARE_COMMON_CLASS_METHODS(HostUpdate)
 
     HRESULT FinalConstruct();
     void FinalRelease();

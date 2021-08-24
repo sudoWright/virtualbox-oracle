@@ -1,4 +1,4 @@
-/* $Id: RemoteUSBDeviceImpl.h 135976 2020-02-04 10:35:17Z knut.osmundsen@oracle.com $ */
+/* $Id: RemoteUSBDeviceImpl.h 146463 2021-08-24 09:44:46Z noreply@oracle.com $ */
 
 /** @file
  *
@@ -34,7 +34,7 @@ class ATL_NO_VTABLE RemoteUSBDevice :
 {
 public:
 
-    DECLARE_EMPTY_CTOR_DTOR(RemoteUSBDevice)
+    DECLARE_COMMON_CLASS_METHODS(RemoteUSBDevice)
 
     HRESULT FinalConstruct();
     void FinalRelease();

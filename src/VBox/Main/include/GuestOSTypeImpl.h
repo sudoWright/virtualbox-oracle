@@ -1,4 +1,4 @@
-/* $Id: GuestOSTypeImpl.h 142198 2021-01-13 15:56:05Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: GuestOSTypeImpl.h 146463 2021-08-24 09:44:46Z noreply@oracle.com $ */
 /** @file
  *
  * VirtualBox COM class implementation
@@ -30,7 +30,7 @@ class ATL_NO_VTABLE GuestOSType :
 {
 public:
 
-    DECLARE_EMPTY_CTOR_DTOR(GuestOSType)
+    DECLARE_COMMON_CLASS_METHODS(GuestOSType)
 
     HRESULT FinalConstruct();
     void FinalRelease();
