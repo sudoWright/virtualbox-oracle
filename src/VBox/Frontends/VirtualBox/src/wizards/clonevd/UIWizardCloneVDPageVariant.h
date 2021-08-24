@@ -1,6 +1,6 @@
-/* $Id: UIWizardCloneVDPageBasic1.h 146435 2021-08-23 16:48:32Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIWizardCloneVDPageVariant.h 146462 2021-08-24 08:50:46Z serkan.bayraktar@oracle.com $ */
 /** @file
- * VBox Qt GUI - UIWizardCloneVDPageBasic1 class declaration.
+ * VBox Qt GUI - UIWizardCloneVDPageVariant class declaration.
  */
 
 /*
@@ -15,62 +15,61 @@
  * hope that it will be useful, but WITHOUT ANY WARRANTY of any kind.
  */
 
-#ifndef FEQT_INCLUDED_SRC_wizards_clonevd_UIWizardCloneVDPageBasic1_h
-#define FEQT_INCLUDED_SRC_wizards_clonevd_UIWizardCloneVDPageBasic1_h
+#ifndef FEQT_INCLUDED_SRC_wizards_clonevd_UIWizardCloneVDPageVariant_h
+#define FEQT_INCLUDED_SRC_wizards_clonevd_UIWizardCloneVDPageVariant_h
 #ifndef RT_WITHOUT_PRAGMA_ONCE
 # pragma once
 #endif
-
-/* Qt includes: */
-#include <QSet>
 
 /* GUI includes: */
 #include "UINativeWizardPage.h"
 
 /* COM includes: */
 #include "COMEnums.h"
-#include "CMediumFormat.h"
 
 /* Forward declarations: */
 class QIRichTextLabel;
-class UIDiskFormatsGroupBox;
 class UIWizardCloneVD;
+class CMediumFormat;
+class UIDiskVariantGroupBox;
 
-
-/** 2nd page of the Clone Virtual Disk Image wizard (basic extension): */
-class UIWizardCloneVDPageBasic1 : public UINativeWizardPage
+class UIWizardCloneVDPageVariant : public UINativeWizardPage
 {
     Q_OBJECT;
 
 public:
 
-    /** Constructs basic page.
-      * @param  enmDeviceType  Brings the device type to limit format to. */
-    UIWizardCloneVDPageBasic1(KDeviceType enmDeviceType);
+    /** Constructs basic page. */
+    UIWizardCloneVDPageVariant(KDeviceType enmDeviceType);
 
 private slots:
 
-    void sltMediumFormatChanged();
+    void sltMediumVariantChanged(qulonglong uVariant);
 
 private:
 
-    UIWizardCloneVD *cloneWizard() const;
-
     /** Handles translation event. */
     virtual void retranslateUi() /* override */;
-    void prepare(KDeviceType enmDeviceType);
+    void prepare();
+    UIWizardCloneVD *cloneWizard() const;
 
     /** Prepares the page. */
     virtual void initializePage() /* override */;
 
     /** Returns whether the page is complete. */
     virtual bool isComplete() const /* override */;
+    void setWidgetVisibility(const CMediumFormat &mediumFormat);
 
     /** Holds the description label instance. */
-    QIRichTextLabel *m_pLabel;
-    UIDiskFormatsGroupBox *m_pFormatGroupBox;
+    QIRichTextLabel *m_pDescriptionLabel;
+    /** Holds the 'Dynamic' description label instance. */
+    QIRichTextLabel *m_pDynamicLabel;
+    /** Holds the 'Fixed' description label instance. */
+    QIRichTextLabel *m_pFixedLabel;
+    /** Holds the 'Split to 2GB files' description label instance. */
+    QIRichTextLabel *m_pSplitLabel;
 
-    QSet<QString> m_userModifiedParameters;
+    UIDiskVariantGroupBox *m_pVariantGroupBox;
 };
 
-#endif /* !FEQT_INCLUDED_SRC_wizards_clonevd_UIWizardCloneVDPageBasic1_h */
+#endif /* !FEQT_INCLUDED_SRC_wizards_clonevd_UIWizardCloneVDPageVariant_h */
