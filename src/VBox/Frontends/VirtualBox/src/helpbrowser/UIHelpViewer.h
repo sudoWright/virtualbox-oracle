@@ -1,4 +1,4 @@
-/* $Id: UIHelpViewer.h 146505 2021-08-25 11:12:43Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIHelpViewer.h 146507 2021-08-25 11:28:56Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIHelpBrowserWidget class declaration.
  */
@@ -128,6 +128,7 @@ private:
     /** If there is image at @p globalPosition then its data is loaded to m_overlayPixmap. */
     void loadImageAtPosition(const QPoint &globalPosition);
     void clearOverlay();
+    void enableOverlay();
     void setImageOverCursor(QPoint globalPosition);
 
     const QHelpEngine* m_pHelpEngine;
