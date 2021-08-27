@@ -1,4 +1,4 @@
-/* $Id: UILanguageSettingsEditor.cpp 146579 2021-08-27 10:03:18Z sergey.dubov@oracle.com $ */
+/* $Id: UILanguageSettingsEditor.cpp 146587 2021-08-27 11:48:23Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Qt GUI - UILanguageSettingsEditor class implementation.
  */
@@ -31,7 +31,7 @@
 
 /* Other VBox includes: */
 #include <iprt/assert.h>
-#include <iprt/err.h>
+#include <iprt/errcore.h>
 #include <iprt/path.h>
 
 
