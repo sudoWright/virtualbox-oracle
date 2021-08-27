@@ -1,4 +1,4 @@
-/* $Id: UITranslator.cpp 146606 2021-08-27 20:37:40Z sergey.dubov@oracle.com $ */
+/* $Id: UITranslator.cpp 146607 2021-08-27 20:44:46Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UITranslator class implementation.
  */
@@ -37,6 +37,9 @@
 #ifdef Q_OS_UNIX
 # include <iprt/env.h>
 #endif
+
+/* External includes: */
+#include <math.h>
 
 
 /** Port config cache. */
