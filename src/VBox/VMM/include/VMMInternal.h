@@ -1,4 +1,4 @@
-/* $Id: VMMInternal.h 146637 2021-08-30 14:04:48Z knut.osmundsen@oracle.com $ */
+/* $Id: VMMInternal.h 146639 2021-08-30 14:08:43Z knut.osmundsen@oracle.com $ */
 /** @file
  * VMM - Internal header file.
  */
@@ -416,7 +416,6 @@ typedef struct VMM
     STAMCOUNTER                 StatRZCallPGMPoolGrow;
     STAMCOUNTER                 StatRZCallPGMMapChunk;
     STAMCOUNTER                 StatRZCallPGMAllocHandy;
-    STAMCOUNTER                 StatRZCallPGMLock;
     /** @} */
 } VMM;
 /** Pointer to VMM. */
