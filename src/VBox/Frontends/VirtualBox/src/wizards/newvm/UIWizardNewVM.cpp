@@ -1,4 +1,4 @@
-/* $Id: UIWizardNewVM.cpp 146666 2021-08-31 10:52:50Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIWizardNewVM.cpp 146672 2021-08-31 12:33:48Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardNewVM class implementation.
  */
@@ -106,6 +106,11 @@ void UIWizardNewVM::populatePages()
             break;
         }
     }
+}
+
+void UIWizardNewVM::wizardClean()
+{
+    UIWizardNewVMNameOSTypePage::cleanupMachineFolder(this, true);
 }
 
 bool UIWizardNewVM::createVM()
