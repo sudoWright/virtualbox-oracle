@@ -1,4 +1,4 @@
-/* $Id: DrvHostAudioValidationKit.cpp 146721 2021-09-01 17:15:51Z andreas.loeffler@oracle.com $ */
+/* $Id: DrvHostAudioValidationKit.cpp 146722 2021-09-01 17:28:36Z andreas.loeffler@oracle.com $ */
 /** @file
  * Host audio driver - ValidationKit - For dumping and injecting audio data from/to the device emulation.
  */
@@ -872,7 +872,7 @@ static DECLCALLBACK(int) drvHostValKitAudioHA_StreamPlay(PPDMIHOSTAUDIO pInterfa
         pThis->cbPlayedSilence = 0;
     }
 
-    const bool fHandleSilence = true;
+    bool fHandleSilence = true;
 
     if (pTst->pEntry == NULL) /* Test not started yet? */
     {
