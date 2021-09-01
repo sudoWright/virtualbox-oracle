@@ -1,4 +1,4 @@
-/* $Id: UIVirtualBoxManager.cpp 146649 2021-08-30 18:24:32Z sergey.dubov@oracle.com $ */
+/* $Id: UIVirtualBoxManager.cpp 146715 2021-09-01 15:56:33Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVirtualBoxManager class implementation.
  */
@@ -1982,7 +1982,7 @@ void UIVirtualBoxManager::prepare()
 {
 #ifdef VBOX_WS_X11
     /* Assign same name to both WM_CLASS name & class for now: */
-    UICommon::setWMClass(this, "VirtualBox Manager", "VirtualBox Manager");
+    NativeWindowSubsystem::X11SetWMClass(this, "VirtualBox Manager", "VirtualBox Manager");
 #endif
 
 #ifdef VBOX_WS_MAC
