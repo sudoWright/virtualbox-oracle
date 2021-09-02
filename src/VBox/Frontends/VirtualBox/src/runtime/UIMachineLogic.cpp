@@ -1,4 +1,4 @@
-/* $Id: UIMachineLogic.cpp 146706 2021-09-01 11:57:17Z sergey.dubov@oracle.com $ */
+/* $Id: UIMachineLogic.cpp 146744 2021-09-02 13:35:13Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIMachineLogic class implementation.
  */
@@ -2401,7 +2401,7 @@ void UIMachineLogic::sltInstallGuestAdditions()
     CVirtualBox comVBox = uiCommon().virtualBox();
     CMediumVector comMedia = comVBox.GetDVDImages();
     if (!comVBox.isOk())
-        msgCenter().cannotAcquireVirtualBoxParameter(comVBox);
+        UINotificationMessage::cannotAcquireVirtualBoxParameter(comVBox);
     else
     {
         const QString strName = QString("%1_%2.iso").arg(GUI_GuestAdditionsName, uiCommon().vboxVersionStringNormalized());
