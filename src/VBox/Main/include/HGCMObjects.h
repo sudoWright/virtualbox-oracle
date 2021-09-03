@@ -1,4 +1,4 @@
-/* $Id: HGCMObjects.h 135976 2020-02-04 10:35:17Z knut.osmundsen@oracle.com $ */
+/* $Id: HGCMObjects.h 146765 2021-09-03 22:58:51Z knut.osmundsen@oracle.com $ */
 /** @file
  * HGCMObjects - Host-Guest Communication Manager objects header.
  */
@@ -30,7 +30,7 @@ class HGCMObject;
 
 typedef struct _ObjectAVLCore
 {
-    AVLULNODECORE AvlCore;
+    AVLU32NODECORE AvlCore;
     HGCMObject *pSelf;
 } ObjectAVLCore;
 
