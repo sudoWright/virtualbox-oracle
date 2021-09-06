@@ -1,4 +1,4 @@
-/* $Id: UIWizardNewVM.cpp 146761 2021-09-03 15:28:52Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIWizardNewVM.cpp 146785 2021-09-06 19:05:03Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardNewVM class implementation.
  */
@@ -270,7 +270,7 @@ void UIWizardNewVM::deleteVirtualDisk()
     QString strLocation = m_virtualDisk.GetLocation();
     if (!m_virtualDisk.isOk())
     {
-        msgCenter().cannotAcquireMediumAttribute(m_virtualDisk, this);
+        msgCenter().cannotAcquireHardDiskLocation(m_virtualDisk, this);
         return;
     }
 
