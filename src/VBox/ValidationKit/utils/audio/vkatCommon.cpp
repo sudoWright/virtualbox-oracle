@@ -1,4 +1,4 @@
-/* $Id: vkatCommon.cpp 146797 2021-09-07 17:32:09Z andreas.loeffler@oracle.com $ */
+/* $Id: vkatCommon.cpp 146802 2021-09-08 10:54:36Z andreas.loeffler@oracle.com $ */
 /** @file
  * Validation Kit Audio Test (VKAT) - Self test code.
  */
@@ -345,7 +345,12 @@ int audioTestPlayTone(PAUDIOTESTENV pTstEnv, PAUDIOTESTSTREAM pStream, PAUDIOTES
                     RTTestPrintf(g_hTest, RTTESTLVL_ALWAYS, "Waiting for stream to be writable again ...\n");
                     nsLastMsgCantWrite = nsNow;
                 }
+
                 RTThreadSleep(RT_MIN(RT_MAX(1, pStream->Cfg.Device.cMsSchedulingHint), 256));
+
+                /* Try draining the stream in the hope that we can write to it soon again. */
+                rc = AudioTestMixStreamDrain(&pStream->Mix, true /*fSync*/);
+                AssertRCBreak(rc);
             }
             else
                 AssertFailedBreakStmt(rc = VERR_AUDIO_STREAM_NOT_READY);
