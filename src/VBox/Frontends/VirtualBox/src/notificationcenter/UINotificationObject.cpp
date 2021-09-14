@@ -1,4 +1,4 @@
-/* $Id: UINotificationObject.cpp 146725 2021-09-01 18:43:24Z sergey.dubov@oracle.com $ */
+/* $Id: UINotificationObject.cpp 146879 2021-09-14 10:22:33Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UINotificationObject class implementation.
  */
@@ -187,6 +187,7 @@ void UINotificationProgress::sltHandleProgressFinished()
 {
     m_uPercent = 100;
     emit sigProgressFinished();
+    close();
 }
 
 
