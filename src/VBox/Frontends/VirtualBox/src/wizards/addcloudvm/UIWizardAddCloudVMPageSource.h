@@ -1,6 +1,6 @@
-/* $Id: UIWizardNewCloudVMPageBasic1.h 145956 2021-07-28 15:41:48Z sergey.dubov@oracle.com $ */
+/* $Id: UIWizardAddCloudVMPageSource.h 146898 2021-09-15 09:07:48Z sergey.dubov@oracle.com $ */
 /** @file
- * VBox Qt GUI - UIWizardNewCloudVMPageBasic1 class declaration.
+ * VBox Qt GUI - UIWizardAddCloudVMPageSource class declaration.
  */
 
 /*
@@ -15,8 +15,8 @@
  * hope that it will be useful, but WITHOUT ANY WARRANTY of any kind.
  */
 
-#ifndef FEQT_INCLUDED_SRC_wizards_newcloudvm_UIWizardNewCloudVMPageBasic1_h
-#define FEQT_INCLUDED_SRC_wizards_newcloudvm_UIWizardNewCloudVMPageBasic1_h
+#ifndef FEQT_INCLUDED_SRC_wizards_addcloudvm_UIWizardAddCloudVMPageSource_h
+#define FEQT_INCLUDED_SRC_wizards_addcloudvm_UIWizardAddCloudVMPageSource_h
 #ifndef RT_WITHOUT_PRAGMA_ONCE
 # pragma once
 #endif
@@ -27,18 +27,14 @@
 /* COM includes: */
 #include "COMEnums.h"
 #include "CCloudClient.h"
-#include "CVirtualSystemDescription.h"
-#include "CVirtualSystemDescriptionForm.h"
 
 /* Forward declarations: */
 class QGridLayout;
 class QLabel;
 class QListWidget;
-class QTabBar;
 class QIComboBox;
 class QIRichTextLabel;
 class QIToolButton;
-class CCloudProvider;
 
 /** Provider combo data fields. */
 enum
@@ -53,35 +49,33 @@ enum
     ProfileData_Name = Qt::UserRole + 1
 };
 
-/** Namespace for 1st page of the New Cloud VM wizard. */
-namespace UIWizardNewCloudVMPage1
+/** Namespace for Source page of the Add Cloud VM wizard. */
+namespace UIWizardAddCloudVMPage1
 {
     /** Populates @a pCombo with known providers. */
     void populateProviders(QIComboBox *pCombo);
     /** Populates @a pCombo with known profiles of @a comProvider specified. */
     void populateProfiles(QIComboBox *pCombo, const CCloudProvider &comProvider);
-    /** Populates @a pList with source images from tab of @a pTabBar available in @a comClient. */
-    void populateSourceImages(QListWidget *pList, QTabBar *pTabBar, const CCloudClient &comClient);
-    /** Populates @a comVSD with form property suitable for tab of @a pTabBar with @a strImageId value. */
-    void populateFormProperties(CVirtualSystemDescription comVSD, QTabBar *pTabBar, const QString &strImageId);
+    /** Populates @a pList with profile instances available in @a comClient. */
+    void populateProfileInstances(QListWidget *pList, const CCloudClient &comClient);
 
     /** Updates @a pCombo tool-tips. */
     void updateComboToolTip(QIComboBox *pCombo);
 
     /** Returns current user data for @a pList specified. */
-    QString currentListWidgetData(QListWidget *pList);
+    QStringList currentListWidgetData(QListWidget *pList);
 }
 
-/** UINativeWizardPage extension for 1st page of the New Cloud VM wizard,
-  * based on UIWizardNewCloudVMPage1 namespace functions. */
-class UIWizardNewCloudVMPageBasic1 : public UINativeWizardPage
+/** UINativeWizardPage extension for Source page of the Add Cloud VM wizard,
+  * based on UIWizardAddCloudVMPage1 namespace functions. */
+class UIWizardAddCloudVMPageSource : public UINativeWizardPage
 {
     Q_OBJECT;
 
 public:
 
-    /** Constructs 1st basic page. */
-    UIWizardNewCloudVMPageBasic1();
+    /** Constructs Source page. */
+    UIWizardAddCloudVMPageSource();
 
 protected:
 
@@ -107,11 +101,8 @@ private slots:
     /** Handles profile tool-button click. */
     void sltHandleProfileButtonClick();
 
-    /** Handles change in source tab-bar. */
-    void sltHandleSourceChange();
-
-    /** Handles change in image list. */
-    void sltHandleSourceImageChange();
+    /** Handles change in instance list. */
+    void sltHandleSourceInstanceChange();
 
 private:
 
@@ -130,25 +121,17 @@ private:
     /** Returns Cloud Client object. */
     CCloudClient client() const;
 
-    /** Defines Virtual System @a comDescription object. */
-    void setVSD(const CVirtualSystemDescription &comDescription);
-    /** Returns Virtual System Description object. */
-    CVirtualSystemDescription vsd() const;
-
-    /** Returns Virtual System Description Form object. */
-    CVirtualSystemDescriptionForm vsdForm() const;
+    /** Defines @a instanceIds. */
+    void setInstanceIds(const QStringList &instanceIds);
+    /** Returns instance IDs. */
+    QStringList instanceIds() const;
 
     /** Updates provider. */
     void updateProvider();
     /** Updates profile. */
     void updateProfile();
-    /** Updates source. */
-    void updateSource();
-    /** Updates source image. */
-    void updateSourceImage();
-
-    /** Holds the image ID. */
-    QString  m_strSourceImageId;
+    /** Updates source instance. */
+    void updateSourceInstance();
 
     /** Holds the main label instance. */
     QIRichTextLabel *m_pLabelMain;
@@ -171,12 +154,10 @@ private:
     QIComboBox   *m_pProfileComboBox;
     /** Holds the profile management tool-button instance. */
     QIToolButton *m_pProfileToolButton;
-    /** Holds the source image label instance. */
-    QLabel       *m_pSourceImageLabel;
-    /** Holds the source tab-bar instance. */
-    QTabBar      *m_pSourceTabBar;
-    /** Holds the source image list instance. */
-    QListWidget  *m_pSourceImageList;
+    /** Holds the source instance label instance. */
+    QLabel       *m_pSourceInstanceLabel;
+    /** Holds the source instance list instance. */
+    QListWidget  *m_pSourceInstanceList;
 };
 
-#endif /* !FEQT_INCLUDED_SRC_wizards_newcloudvm_UIWizardNewCloudVMPageBasic1_h */
+#endif /* !FEQT_INCLUDED_SRC_wizards_addcloudvm_UIWizardAddCloudVMPageSource_h */
