@@ -1,4 +1,4 @@
-/* $Id: UIWizardDiskEditors.cpp 146910 2021-09-15 12:50:23Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIWizardDiskEditors.cpp 146912 2021-09-15 13:46:39Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIUserNamePasswordEditor class implementation.
  */
@@ -172,7 +172,7 @@ QString UIDiskEditorGroupBox::defaultExtension(const CMediumFormat &mediumFormat
 
 UIDiskFormatsGroupBox::UIDiskFormatsGroupBox(bool fExpertMode, KDeviceType enmDeviceType, QWidget *pParent /* = 0 */)
     : UIDiskEditorGroupBox(fExpertMode, pParent)
-    , m_enmDeviceType(enmDeviceType)
+    , UIDiskFormatBase(enmDeviceType)
     , m_pFormatButtonGroup(0)
     , m_pMainLayout(0)
 {
