@@ -1,4 +1,4 @@
-/* $Id: GuestSessionImplTasks.h 146463 2021-08-24 09:44:46Z noreply@oracle.com $ */
+/* $Id: GuestSessionImplTasks.h 146972 2021-09-20 11:06:57Z noreply@oracle.com $ */
 /** @file
  * VirtualBox Main - Guest session tasks header.
  */
@@ -155,7 +155,6 @@ typedef std::vector<FsList *> FsLists;
  */
 class GuestSessionTask
     : public ThreadTask
-    , public VirtualBoxTranslatable
 {
 public:
     DECLARE_TRANSLATE_METHODS(GuestSessionTask)
