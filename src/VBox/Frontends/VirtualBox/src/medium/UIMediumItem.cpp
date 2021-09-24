@@ -1,4 +1,4 @@
-/* $Id: UIMediumItem.cpp 146876 2021-09-14 07:17:16Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIMediumItem.cpp 147033 2021-09-24 13:08:32Z brent.paulson@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIMediumItem class implementation.
  */
@@ -145,7 +145,8 @@ bool UIMediumItem::isMediumModifiable() const
         if (comMachine.isNull())
             continue;
         if (comMachine.GetState() != KMachineState_PoweredOff &&
-            comMachine.GetState() != KMachineState_Aborted)
+            comMachine.GetState() != KMachineState_Aborted &&
+            comMachine.GetState() != KMachineState_AbortedSaved)
             return false;
     }
     return true;
