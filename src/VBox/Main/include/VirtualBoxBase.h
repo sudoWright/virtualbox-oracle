@@ -1,4 +1,4 @@
-/* $Id: VirtualBoxBase.h 146972 2021-09-20 11:06:57Z noreply@oracle.com $ */
+/* $Id: VirtualBoxBase.h 147043 2021-09-24 16:47:04Z noreply@oracle.com $ */
 /** @file
  * VirtualBox COM base classes definition
  */
@@ -35,7 +35,7 @@
 
 #include "VBox/com/VirtualBox.h"
 
-#include "VirtualBoxTranslator.h"
+#include <VBox/VirtualBoxTranslator.h>
 
 // avoid including VBox/settings.h and VBox/xml.h; only declare the classes
 namespace xml
