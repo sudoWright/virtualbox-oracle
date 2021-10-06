@@ -1,4 +1,4 @@
-/* $Id: UIWizardImportAppPageBasic1.h 147271 2021-10-05 11:04:45Z sergey.dubov@oracle.com $ */
+/* $Id: UIWizardImportAppPageBasic1.h 147305 2021-10-06 10:43:27Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardImportAppPageBasic1 class declaration.
  */
@@ -22,7 +22,6 @@
 #endif
 
 /* GUI includes: */
-#include "UIWizardImportAppDefs.h"
 #include "UIWizardPage.h"
 
 /* COM includes: */
