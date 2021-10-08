@@ -1,4 +1,4 @@
-/* $Id: UIWizardNewCloudVMPageSource.h 147187 2021-09-30 14:39:22Z sergey.dubov@oracle.com $ */
+/* $Id: UIWizardNewCloudVMPageSource.h 147365 2021-10-08 12:27:18Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardNewCloudVMPageSource class declaration.
  */
@@ -113,7 +113,7 @@ private slots:
     void sltHandleProfileButtonClick();
 
     /** Handles change in source tab-bar. */
-    void sltHandleSourceChange();
+    void sltHandleSourceTabBarChange();
 
     /** Handles change in image list. */
     void sltHandleSourceImageChange();
