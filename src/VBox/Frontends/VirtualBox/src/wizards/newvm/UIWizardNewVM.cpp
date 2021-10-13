@@ -1,4 +1,4 @@
-/* $Id: UIWizardNewVM.cpp 147341 2021-10-07 11:52:00Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIWizardNewVM.cpp 147449 2021-10-13 12:13:47Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardNewVM class implementation.
  */
@@ -136,12 +136,6 @@ bool UIWizardNewVM::createVM()
             msgCenter().cannotCreateMachine(vbox, this);
             return false;
         }
-
-        /* Disable first run wizard for now. We will soon remove it: */
-        if (ISOFilePath().isEmpty() &&
-            !isUnattendedEnabled() &&
-            !m_virtualDisk.isNull())
-            m_machine.SetExtraData(GUI_FirstRun, "no");
     }
 
 #if 0
