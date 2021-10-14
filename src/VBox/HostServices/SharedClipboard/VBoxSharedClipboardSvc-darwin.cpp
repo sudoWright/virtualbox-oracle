@@ -1,4 +1,4 @@
-/* $Id: VBoxSharedClipboardSvc-darwin.cpp 145776 2021-07-19 13:48:09Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxSharedClipboardSvc-darwin.cpp 147507 2021-10-14 21:02:32Z vadim.galitsyn@oracle.com $ */
 /** @file
  * Shared Clipboard Service - Mac OS X host.
  */
@@ -83,7 +83,8 @@ static int vboxClipboardChanged(SHCLCONTEXT *pCtx)
     int rc = queryNewPasteboardFormats(pCtx->hPasteboard, pCtx->idGuestOwnership, pCtx->hStrOwnershipFlavor,
                                        &fFormats, &fChanged);
     if (   RT_SUCCESS(rc)
-        && fChanged)
+        && fChanged
+        && ShClSvcIsBackendActive())
         rc = ShClSvcHostReportFormats(pCtx->pClient, fFormats);
 
     LogFlowFuncLeaveRC(rc);
