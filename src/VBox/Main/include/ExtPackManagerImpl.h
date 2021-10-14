@@ -1,4 +1,4 @@
-/* $Id: ExtPackManagerImpl.h 147461 2021-10-14 12:25:38Z noreply@oracle.com $ */
+/* $Id: ExtPackManagerImpl.h 147463 2021-10-14 12:41:35Z noreply@oracle.com $ */
 /** @file
  * VirtualBox Main - interface for Extension Packs, VBoxSVC & VBoxC.
  */
@@ -185,7 +185,7 @@ protected:
                                                      const char  *pszComponent,
                                                      const char  *pszSourceText,
                                                      const char  *pszComment = NULL,
-                                                     const size_t aNum = -1);
+                                                     const size_t aNum = (~(size_t)0));
     static DECLCALLBACK(int)      i_hlpReservedN(PCVBOXEXTPACKHLP pHlp);
     /** @}  */
 
