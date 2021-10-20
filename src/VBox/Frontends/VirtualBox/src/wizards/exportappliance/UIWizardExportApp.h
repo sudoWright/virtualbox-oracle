@@ -1,4 +1,4 @@
-/* $Id: UIWizardExportApp.h 147151 2021-09-29 17:57:13Z sergey.dubov@oracle.com $ */
+/* $Id: UIWizardExportApp.h 147697 2021-10-20 13:02:11Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardExportApp class declaration.
  */
@@ -169,7 +169,7 @@ public:
         bool exportAppliance();
 
         /** Creates VSD Form. */
-        bool createVsdLaunchForm();
+        void createVsdLaunchForm();
 
         /** Creates New Cloud VM. */
         bool createCloudVM();
