@@ -1,4 +1,4 @@
-/* $Id: DrvIfsTrace.cpp 147673 2021-10-20 09:06:11Z alexander.eichner@oracle.com $ */
+/* $Id: DrvIfsTrace.cpp 147701 2021-10-20 13:42:39Z alexander.eichner@oracle.com $ */
 /** @file
  * VBox interface callback tracing driver.
  */
@@ -79,7 +79,7 @@ static DECLCALLBACK(void) drvIfTrace_Destruct(PPDMDRVINS pDrvIns)
 
     if (pThis->pszTraceFilePath)
     {
-        MMR3HeapFree(pThis->pszTraceFilePath);
+        PDMDrvHlpMMHeapFree(pDrvIns, pThis->pszTraceFilePath);
         pThis->pszTraceFilePath = NULL;
     }
 }
