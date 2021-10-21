@@ -1,4 +1,4 @@
-/* $Id: PGMInternal.h 147736 2021-10-21 10:15:38Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: PGMInternal.h 147745 2021-10-21 12:43:45Z knut.osmundsen@oracle.com $ */
 /** @file
  * PGM - Internal header file.
  */
@@ -3113,9 +3113,6 @@ typedef struct PGM
     RTR3PTR                         pvZeroPgR3;
     /** The ring-0 mapping of the zero page. */
     RTR0PTR                         pvZeroPgR0;
-    /** The GC mapping of the zero page. */
-    RTRCPTR                         pvZeroPgRC;
-    RTRCPTR                         RCPtrAlignment3;
     /** @}*/
 
     /** @name   The Invalid MMIO page.
