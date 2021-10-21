@@ -1,4 +1,4 @@
-/* $Id: vkatCmdSelfTest.cpp 147752 2021-10-21 13:30:54Z andreas.loeffler@oracle.com $ */
+/* $Id: vkatCmdSelfTest.cpp 147753 2021-10-21 13:33:57Z andreas.loeffler@oracle.com $ */
 /** @file
  * Validation Kit Audio Test (VKAT) - Self test.
  *
@@ -114,7 +114,7 @@ static SELFTESTCTX g_Ctx;
 
 
 /*********************************************************************************************************************************
-*   Driver stack self-test implementation                                                                                                     *
+*   Driver stack self-test implementation                                                                                        *
 *********************************************************************************************************************************/
 
 /**
