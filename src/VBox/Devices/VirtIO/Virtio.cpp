@@ -1,4 +1,4 @@
-/* $Id: Virtio.cpp 147756 2021-10-21 13:49:59Z alexander.eichner@oracle.com $ */
+/* $Id: Virtio.cpp 147759 2021-10-21 14:16:29Z alexander.eichner@oracle.com $ */
 /** @file
  * Virtio - Virtio Common Functions (VRing, VQueue, Virtio PCI)
  */
@@ -701,7 +701,7 @@ void vpciR3DumpState(PPDMDEVINS pDevIns, PVPCISTATE pThis, const char *pcszCalle
     }
 }
 # else
-#  define vpciR3DumpState(d, x, s)  do {} while (0)
+#  define vpciR3DumpState(d, x, s)  do { RT_NOREF((d), (x)); } while (0)
 # endif
 
 /**
