@@ -1,4 +1,4 @@
-/* $Id: AudioTestService.cpp 147807 2021-10-22 11:43:28Z andreas.loeffler@oracle.com $ */
+/* $Id: AudioTestService.cpp 147816 2021-10-22 13:56:55Z andreas.loeffler@oracle.com $ */
 /** @file
  * AudioTestService - Audio test execution server.
  */
@@ -861,7 +861,11 @@ static void atsClientFree(PATSCLIENTINST pInst)
     AssertReturnVoid(pInst->pTransportClient == NULL);
 
     if (pInst->pszHostname)
+    {
         RTStrFree(pInst->pszHostname);
+        pInst->pszHostname = NULL;
+    }
+
     RTMemFree(pInst);
     pInst = NULL;
 }
