@@ -1,4 +1,4 @@
-/* $Id: AudioTestServiceClient.h 146601 2021-08-27 16:40:53Z andreas.loeffler@oracle.com $ */
+/* $Id: AudioTestServiceClient.h 147802 2021-10-22 07:00:44Z andreas.loeffler@oracle.com $ */
 /** @file
  * AudioTestServiceClient - Audio test execution server, Public Header.
  */
@@ -48,7 +48,7 @@ void AudioTestSvcClientDestroy(PATSCLIENT pClient);
  * @{ */
 int AudioTestSvcClientConnectEx(PATSCLIENT pClient, RTMSINTERVAL msTimeout);
 int AudioTestSvcClientConnect(PATSCLIENT pClient);
-int AudioTestSvcClientClose(PATSCLIENT pClient);
+int AudioTestSvcClientDisconnect(PATSCLIENT pClient);
 /** @} */
 
 /** @name Option handling.
