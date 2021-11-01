@@ -1,4 +1,4 @@
-/* $Id: UIWizardNewCloudVMPageProperties.cpp 147968 2021-10-29 13:46:25Z sergey.dubov@oracle.com $ */
+/* $Id: UIWizardNewCloudVMPageProperties.cpp 147988 2021-11-01 13:08:24Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardNewCloudVMPageProperties class implementation.
  */
@@ -99,6 +99,8 @@ void UIWizardNewCloudVMPageProperties::retranslateUi()
 
 void UIWizardNewCloudVMPageProperties::initializePage()
 {
+    /* Make sure form-editor knows notification-center: */
+    m_pFormEditor->setNotificationCenter(wizard()->notificationCenter());
     /* Generate VSD form, asynchronously: */
     QMetaObject::invokeMethod(this, "sltInitShortWizardForm", Qt::QueuedConnection);
 }
