@@ -1,10 +1,10 @@
-/* $Id: darwin-pasteboard.cpp 140013 2020-08-20 14:28:33Z andreas.loeffler@oracle.com $ */
+/* $Id: darwin-pasteboard.cpp 148011 2021-11-02 21:47:25Z knut.osmundsen@oracle.com $ */
 /** @file
  * Shared Clipboard Service - Mac OS X host implementation.
  */
 
 /*
- * Includes contributions from François Revol
+ * Includes contributions from FranÃ§ois Revol
  *
  * Copyright (C) 2008-2020 Oracle Corporation
  *
