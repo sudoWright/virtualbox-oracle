@@ -1,6 +1,6 @@
-/* $Id: GVMMR3.cpp 148065 2021-11-05 00:55:27Z knut.osmundsen@oracle.com $ */
+/* $Id: GVMMR3.cpp 148066 2021-11-05 00:57:27Z knut.osmundsen@oracle.com $ */
 /** @file
- * GVMM - Global VM Manager, ring-3 request wrappers..
+ * GVMM - Global VM Manager, ring-3 request wrappers.
  */
 
 /*
@@ -24,13 +24,6 @@
 #include <VBox/vmm/vmm.h>
 #include <VBox/vmm/vmcc.h>
 #include <VBox/sup.h>
-#include <VBox/param.h>
-
-#include <iprt/assert.h>
-#include <iprt/errcore.h>
-#include <VBox/log.h>
-#include <iprt/mem.h>
-#include <iprt/string.h>
 
 
 /**
