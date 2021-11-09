@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# $Id: valueunit.py 148149 2021-11-09 21:26:03Z knut.osmundsen@oracle.com $
+# $Id: valueunit.py 148152 2021-11-09 23:50:52Z knut.osmundsen@oracle.com $
 
 """
 Test Value Unit Definititions.
@@ -29,7 +29,7 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 148149 $"
+__version__ = "$Revision: 148152 $"
 
 
 
@@ -119,7 +119,7 @@ g_asNames = \
     'ticks/call',
     'ticks/occ',
     'pages',
-    'pages/sec',
+    'pages/s',
     'ticks/page',
     'ns/page',
 ];
