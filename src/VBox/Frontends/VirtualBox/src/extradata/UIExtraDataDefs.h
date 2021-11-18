@@ -1,4 +1,4 @@
-/* $Id: UIExtraDataDefs.h 148347 2021-11-18 07:23:59Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIExtraDataDefs.h 148353 2021-11-18 14:00:30Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - Extra-data related definitions.
  */
@@ -156,6 +156,7 @@ namespace UIExtraDataDefs
       * @{ */
         /** Holds recent folder for VISO creation content. */
         SHARED_LIBRARY_STUFF extern const char *GUI_VISOCreator_RecentFolder;
+        SHARED_LIBRARY_STUFF extern const char *GUI_VISOCreator_DialogGeometry;
     /** @} */
 
     /** @name VirtualBox Manager
