@@ -1,4 +1,4 @@
-/* $Id: UIVisoCreator.cpp 148472 2021-11-24 19:48:54Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIVisoCreator.cpp 148473 2021-11-24 19:49:22Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVisoCreator class implementation.
  */
@@ -594,6 +594,7 @@ QUuid UIVisoCreatorWidget::createViso(UIActionPool *pActionPool, QWidget *pParen
     delete pVisoCreator;
     return QUuid();
 }
+
 
 /*********************************************************************************************************************************
 *   UIVisoCreatorDialog implementation.                                                                                          *
