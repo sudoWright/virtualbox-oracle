@@ -1,4 +1,4 @@
-/* $Id: UIFileManager.cpp 148639 2021-12-03 14:23:31Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIFileManager.cpp 148647 2021-12-03 16:45:05Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIFileManager class implementation.
  */
@@ -137,8 +137,9 @@ UIFileManager::UIFileManager(EmbedTo enmEmbedding, UIActionPool *pActionPool,
     restorePanelVisibility();
     UIFileManagerOptions::create();
     uiCommon().setHelpKeyword(this, "guestadd-gc-file-manager");
-    //connect(&uiCommon(), &UICommon::sigAskToDetachCOM, this, &UIFileManager::sltCleanupListenerAndGuest);
-    Q_UNUSED(comMachine);
+
+    if (!comMachine.isNull())
+        setMachines( QVector<QUuid>() << comMachine.GetId());
 }
 
 UIFileManager::~UIFileManager()

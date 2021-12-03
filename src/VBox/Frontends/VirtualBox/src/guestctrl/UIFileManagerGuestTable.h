@@ -1,4 +1,4 @@
-/* $Id: UIFileManagerGuestTable.h 148639 2021-12-03 14:23:31Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIFileManagerGuestTable.h 148647 2021-12-03 16:45:05Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIFileManagerGuestTable class declaration.
  */
@@ -93,7 +93,7 @@ private slots:
     void sltGuestSessionUnregistered(CGuestSession guestSession);
     void sltGuestSessionRegistered(CGuestSession guestSession);
     void sltGuestSessionStateChanged(const CGuestSessionStateChangedEvent &cEvent);
-
+    void sltCreateGuestSession(QString strUserName, QString strPassword);
 
 private:
 
