@@ -1,4 +1,4 @@
-/* $Id: UIFileManager.h 148639 2021-12-03 14:23:31Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIFileManager.h 148664 2021-12-06 08:51:01Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIFileManager class declaration.
  */
@@ -90,8 +90,6 @@ public:
                   const CMachine &comMachine, QWidget *pParent, bool fShowToolbar);
     ~UIFileManager();
     QMenu *menu() const;
-
-    void setDialogBeingClosed(bool fFlag);
 
 #ifdef VBOX_WS_MAC
     /** Returns the toolbar. */
