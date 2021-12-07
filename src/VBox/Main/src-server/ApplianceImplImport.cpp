@@ -1,4 +1,4 @@
-/* $Id: ApplianceImplImport.cpp 147459 2021-10-14 11:59:23Z noreply@oracle.com $ */
+/* $Id: ApplianceImplImport.cpp 148704 2021-12-07 12:35:52Z noreply@oracle.com $ */
 /** @file
  * IAppliance and IVirtualSystem COM class implementations.
  */
@@ -2594,7 +2594,7 @@ HRESULT Appliance::i_readManifestFile(TaskOVF *pTask, RTVFSIOSTREAM hVfsIosMf, c
 
     /*
      * Copy the manifest into a memory backed file so we can later do signature
-     * validation indepentend of the algorithms used by the signature.
+     * validation independent of the algorithms used by the signature.
      */
     int vrc = RTVfsMemorizeIoStreamAsFile(hVfsIosMf, RTFILE_O_READ, &m->hMemFileTheirManifest);
     RTVfsIoStrmRelease(hVfsIosMf);     /* consumes stream handle.  */
