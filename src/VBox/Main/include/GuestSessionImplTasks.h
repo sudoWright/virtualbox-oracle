@@ -1,4 +1,4 @@
-/* $Id: GuestSessionImplTasks.h 146972 2021-09-20 11:06:57Z noreply@oracle.com $ */
+/* $Id: GuestSessionImplTasks.h 148744 2021-12-08 14:55:45Z andreas.loeffler@oracle.com $ */
 /** @file
  * VirtualBox Main - Guest session tasks header.
  */
@@ -66,10 +66,6 @@ struct GuestSessionFsSourceSpec
         {
             /** Directory copy flags. */
             DirectoryCopyFlag_T fCopyFlags;
-            /** Whether to follow symbolic links or not. */
-            bool                fFollowSymlinks; /** @todo Remove once we have that parameter in DirectoryCopyFlag_T. */
-            /** Whether to copy the directory recursively or not. */
-            bool                fRecursive;
         } Dir;
         /** File-specific data. */
         struct
