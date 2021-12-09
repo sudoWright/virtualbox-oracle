@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# $Id: vbox.py 148788 2021-12-09 16:53:56Z klaus.espenlaub@oracle.com $
+# $Id: vbox.py 148791 2021-12-09 17:16:00Z klaus.espenlaub@oracle.com $
 # pylint: disable=too-many-lines
 
 """
@@ -27,7 +27,7 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 148788 $"
+__version__ = "$Revision: 148791 $"
 
 # pylint: disable=unnecessary-semicolon
 
@@ -2240,7 +2240,7 @@ class TestDriver(base.TestDriver):                                              
                     reporter.log("    nat-network:    %s" % (oNic.NATNetwork,));
                 if self.fpApiVer >= 7.0 and hasattr(oNic.NATEngine.localhostReachable):
                     reporter.log("    localhostReachable: %s" % (oNic.NATEngine.localhostReachable,));
-                    
+
             elif oNic.attachmentType == vboxcon.NetworkAttachmentType_Bridged:
                 reporter.log("    attachmentType: Bridged (%s)" % (oNic.attachmentType,));
                 if self.fpApiVer >= 4.1:
