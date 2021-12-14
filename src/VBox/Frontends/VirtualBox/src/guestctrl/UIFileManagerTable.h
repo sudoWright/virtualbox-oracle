@@ -1,4 +1,4 @@
-/* $Id: UIFileManagerTable.h 148801 2021-12-10 12:39:38Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIFileManagerTable.h 148854 2021-12-14 14:55:00Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIFileManagerTable class declaration.
  */
@@ -137,6 +137,7 @@ signals:
 
     void sigLogOutput(QString strLog, const QString &strMachineName, FileManagerLogType eLogType);
     void sigDeleteConfirmationOptionChanged();
+    void sigSelectionChanged(bool fHasSelection);
 
 public:
 
