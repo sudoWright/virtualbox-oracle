@@ -1,4 +1,4 @@
-/* $Id: GuestProcessImpl.cpp 148852 2021-12-14 13:53:27Z andreas.loeffler@oracle.com $ */
+/* $Id: GuestProcessImpl.cpp 148872 2021-12-15 09:20:57Z andreas.loeffler@oracle.com $ */
 /** @file
  * VirtualBox Main - Guest process handling.
  */
@@ -1017,7 +1017,7 @@ int GuestProcess::i_readData(uint32_t uHandle, uint32_t uSize, uint32_t uTimeout
  *
  * @returns VBox status code.
  * @param   procStatus          Guest process status to set.
- * @param   pSvcCbData          Guest process result code to set.
+ * @param   procRc              Guest process result code to set.
  *
  * @note    Takes the write lock.
  */
