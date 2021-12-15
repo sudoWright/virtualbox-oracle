@@ -1,4 +1,4 @@
-/* $Id: UIFileManager.h 148873 2021-12-15 09:38:11Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIFileManager.h 148876 2021-12-15 10:04:28Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIFileManager class declaration.
  */
@@ -24,6 +24,7 @@
 /* Qt includes: */
 #include <QPointer>
 #include <QWidget>
+#include <QString>
 #include <QUuid>
 
 /* GUI includes: */
