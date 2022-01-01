@@ -1,10 +1,10 @@
-/* $Id: VBoxSharedClipboardSvc-internal.h 148641 2021-12-03 16:03:24Z andreas.loeffler@oracle.com $ */
+/* $Id: VBoxSharedClipboardSvc-internal.h 149129 2022-01-01 11:31:46Z knut.osmundsen@oracle.com $ */
 /** @file
  * Shared Clipboard Service - Internal header.
  */
 
 /*
- * Copyright (C) 2006-2021 Oracle Corporation
+ * Copyright (C) 2006-2022 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

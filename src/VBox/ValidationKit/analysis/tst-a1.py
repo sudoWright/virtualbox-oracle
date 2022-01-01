@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# $Id: tst-a1.py 141517 2020-11-25 14:45:30Z knut.osmundsen@oracle.com $
+# $Id: tst-a1.py 149129 2022-01-01 11:31:46Z knut.osmundsen@oracle.com $
 
 """
 Analyzer Experiment  1.
@@ -8,7 +8,7 @@ Analyzer Experiment  1.
 
 __copyright__ = \
 """
-Copyright (C) 2010-2020 Oracle Corporation
+Copyright (C) 2010-2022 Oracle Corporation
 
 This file is part of VirtualBox Open Source Edition (OSE), as
 available from http://www.virtualbox.org. This file is free software;
@@ -27,7 +27,7 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 141517 $"
+__version__ = "$Revision: 149129 $"
 
 
 import os.path

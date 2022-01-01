@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# $Id: rest.py 138332 2020-05-29 01:12:32Z knut.osmundsen@oracle.com $
+# $Id: rest.py 149129 2022-01-01 11:31:46Z knut.osmundsen@oracle.com $
 
 """
 CGI - REST - sPath=path variant.
@@ -8,7 +8,7 @@ CGI - REST - sPath=path variant.
 
 __copyright__ = \
 """
-Copyright (C) 2012-2020 Oracle Corporation
+Copyright (C) 2012-2022 Oracle Corporation
 
 This file is part of VirtualBox Open Source Edition (OSE), as
 available from http://www.virtualbox.org. This file is free software;
@@ -27,7 +27,7 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 138332 $"
+__version__ = "$Revision: 149129 $"
 
 
 # Standard python imports.

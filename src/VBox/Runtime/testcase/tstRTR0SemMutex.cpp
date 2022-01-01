@@ -1,10 +1,10 @@
-/* $Id: tstRTR0SemMutex.cpp 146438 2021-08-23 19:08:38Z knut.osmundsen@oracle.com $ */
+/* $Id: tstRTR0SemMutex.cpp 149129 2022-01-01 11:31:46Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT R0 Testcase - Mutex Semaphores.
  */
 
 /*
- * Copyright (C) 2009-2020 Oracle Corporation
+ * Copyright (C) 2009-2022 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

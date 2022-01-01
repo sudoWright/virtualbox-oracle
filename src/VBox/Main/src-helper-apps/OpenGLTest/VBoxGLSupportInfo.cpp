@@ -1,10 +1,10 @@
-/* $Id: VBoxGLSupportInfo.cpp 138593 2020-06-11 10:30:36Z sergey.dubov@oracle.com $ */
+/* $Id: VBoxGLSupportInfo.cpp 149129 2022-01-01 11:31:46Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Qt GUI - OpenGL support info used for 2D support detection.
  */
 
 /*
- * Copyright (C) 2009-2020 Oracle Corporation
+ * Copyright (C) 2009-2022 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

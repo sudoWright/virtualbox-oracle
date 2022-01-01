@@ -1,10 +1,10 @@
-/* $Id: HostOnlyNetworkImpl.cpp 147097 2021-09-28 06:54:46Z aleksey.ilyushin@oracle.com $ */
+/* $Id: HostOnlyNetworkImpl.cpp 149129 2022-01-01 11:31:46Z knut.osmundsen@oracle.com $ */
 /** @file
  * IHostOnlyNetwork  COM class implementations.
  */
 
 /*
- * Copyright (C) 2021 Oracle Corporation
+ * Copyright (C) 2021-2022 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

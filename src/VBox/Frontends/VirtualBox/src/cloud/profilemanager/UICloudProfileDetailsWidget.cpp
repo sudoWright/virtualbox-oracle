@@ -1,10 +1,10 @@
-/* $Id: UICloudProfileDetailsWidget.cpp 141537 2020-11-26 14:48:09Z serkan.bayraktar@oracle.com $ */
+/* $Id: UICloudProfileDetailsWidget.cpp 149129 2022-01-01 11:31:46Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Qt GUI - UICloudProfileDetailsWidget class implementation.
  */
 
 /*
- * Copyright (C) 2009-2020 Oracle Corporation
+ * Copyright (C) 2009-2022 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

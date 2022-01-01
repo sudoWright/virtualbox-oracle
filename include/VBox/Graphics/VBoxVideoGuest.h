@@ -1,10 +1,10 @@
-/* $Id: VBoxVideoGuest.h 139061 2020-07-08 19:33:26Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxVideoGuest.h 149129 2022-01-01 11:31:46Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Host Guest Shared Memory Interface (HGSMI) - OS-independent guest structures.
  */
 
 /*
- * Copyright (C) 2006-2020 Oracle Corporation
+ * Copyright (C) 2006-2022 Oracle Corporation
  *
  * Permission is hereby granted, free of charge, to any person
  * obtaining a copy of this software and associated documentation

@@ -1,10 +1,10 @@
-/* $Id: UIExtension.h 146649 2021-08-30 18:24:32Z sergey.dubov@oracle.com $ */
+/* $Id: UIExtension.h 149129 2022-01-01 11:31:46Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIExtension namespace declaration.
  */
 
 /*
- * Copyright (C) 2006-2021 Oracle Corporation
+ * Copyright (C) 2006-2022 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

@@ -1,10 +1,10 @@
-/* $Id: tstRTHttp-1.cpp 140673 2020-10-01 14:18:39Z knut.osmundsen@oracle.com $ */
+/* $Id: tstRTHttp-1.cpp 149129 2022-01-01 11:31:46Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Testcase for the RTHttp API.
  */
 
 /*
- * Copyright (C) 2018-2020 Oracle Corporation
+ * Copyright (C) 2018-2022 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

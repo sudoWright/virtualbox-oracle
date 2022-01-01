@@ -1,11 +1,11 @@
 #! /bin/sh
-# $Id: vboxadd.sh 141026 2020-10-20 14:26:02Z valery.portnyagin@oracle.com $
+# $Id: vboxadd.sh 149129 2022-01-01 11:31:46Z knut.osmundsen@oracle.com $
 ## @file
-# Linux Additions kernel module init script ($Revision: 141026 $)
+# Linux Additions kernel module init script ($Revision: 149129 $)
 #
 
 #
-# Copyright (C) 2006-2020 Oracle Corporation
+# Copyright (C) 2006-2022 Oracle Corporation
 #
 # This file is part of VirtualBox Open Source Edition (OSE), as
 # available from http://www.virtualbox.org. This file is free software;

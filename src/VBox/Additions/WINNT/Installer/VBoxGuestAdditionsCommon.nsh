@@ -1,10 +1,10 @@
-; $Id: VBoxGuestAdditionsCommon.nsh 145157 2021-06-15 14:30:12Z andreas.loeffler@oracle.com $
+; $Id: VBoxGuestAdditionsCommon.nsh 149129 2022-01-01 11:31:46Z knut.osmundsen@oracle.com $
 ;; @file
 ; VBoxGuestAdditionsCommon.nsh - Common / shared utility functions.
 ;
 
 ;
-; Copyright (C) 2006-2020 Oracle Corporation
+; Copyright (C) 2006-2022 Oracle Corporation
 ;
 ; This file is part of VirtualBox Open Source Edition (OSE), as
 ; available from http://www.virtualbox.org. This file is free software;

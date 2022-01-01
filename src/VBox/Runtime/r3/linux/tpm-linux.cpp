@@ -1,10 +1,10 @@
-/* $Id: tpm-linux.cpp 146635 2021-08-30 12:56:43Z alexander.eichner@oracle.com $ */
+/* $Id: tpm-linux.cpp 149129 2022-01-01 11:31:46Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Trusted Platform Module (TPM) access, Linux variant.
  */
 
 /*
- * Copyright (C) 2021 Oracle Corporation
+ * Copyright (C) 2021-2022 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

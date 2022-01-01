@@ -1,10 +1,10 @@
-/* $Id: DrvHostDVD.cpp 148060 2021-11-04 21:40:52Z klaus.espenlaub@oracle.com $ */
+/* $Id: DrvHostDVD.cpp 149129 2022-01-01 11:31:46Z knut.osmundsen@oracle.com $ */
 /** @file
  * DrvHostDVD - Host DVD block driver.
  */
 
 /*
- * Copyright (C) 2006-2020 Oracle Corporation
+ * Copyright (C) 2006-2022 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

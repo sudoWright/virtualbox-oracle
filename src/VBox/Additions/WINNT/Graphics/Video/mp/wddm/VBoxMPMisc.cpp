@@ -1,10 +1,10 @@
-/* $Id: VBoxMPMisc.cpp 138468 2020-06-05 15:03:45Z vitali.pelenjow@oracle.com $ */
+/* $Id: VBoxMPMisc.cpp 149129 2022-01-01 11:31:46Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox WDDM Miniport driver
  */
 
 /*
- * Copyright (C) 2011-2020 Oracle Corporation
+ * Copyright (C) 2011-2022 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

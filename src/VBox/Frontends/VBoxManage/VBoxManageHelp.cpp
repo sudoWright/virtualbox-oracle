@@ -1,10 +1,10 @@
-/* $Id: VBoxManageHelp.cpp 148911 2021-12-15 15:29:06Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxManageHelp.cpp 149129 2022-01-01 11:31:46Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxManage - help and other message output.
  */
 
 /*
- * Copyright (C) 2006-2020 Oracle Corporation
+ * Copyright (C) 2006-2022 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

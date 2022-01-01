@@ -1,10 +1,10 @@
-/* $Id: GuestFileImpl.cpp 148872 2021-12-15 09:20:57Z andreas.loeffler@oracle.com $ */
+/* $Id: GuestFileImpl.cpp 149129 2022-01-01 11:31:46Z knut.osmundsen@oracle.com $ */
 /** @file
  * VirtualBox Main - Guest file handling.
  */
 
 /*
- * Copyright (C) 2012-2021 Oracle Corporation
+ * Copyright (C) 2012-2022 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;

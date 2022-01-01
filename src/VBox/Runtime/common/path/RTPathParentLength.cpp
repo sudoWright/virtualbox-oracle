@@ -1,10 +1,10 @@
-/* $Id: RTPathParentLength.cpp 139123 2020-07-10 09:01:02Z knut.osmundsen@oracle.com $ */
+/* $Id: RTPathParentLength.cpp 149129 2022-01-01 11:31:46Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - RTPathParentLength
  */
 
 /*
- * Copyright (C) 2019-2020 Oracle Corporation
+ * Copyright (C) 2019-2022 Oracle Corporation
  *
  * This file is part of VirtualBox Open Source Edition (OSE), as
  * available from http://www.virtualbox.org. This file is free software;
