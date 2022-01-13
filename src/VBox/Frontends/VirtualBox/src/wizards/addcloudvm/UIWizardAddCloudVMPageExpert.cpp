@@ -1,4 +1,4 @@
-/* $Id: UIWizardAddCloudVMPageExpert.cpp 149271 2022-01-13 10:44:20Z sergey.dubov@oracle.com $ */
+/* $Id: UIWizardAddCloudVMPageExpert.cpp 149277 2022-01-13 13:04:35Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardAddCloudVMPageExpert class implementation.
  */
@@ -126,7 +126,7 @@ UIWizardAddCloudVMPageExpert::UIWizardAddCloudVMPageExpert()
                         m_pSourceInstanceList->setSelectionMode(QAbstractItemView::ExtendedSelection);
 
                         /* Add into layout: */
-                        pLayoutSource->addWidget(m_pSourceInstanceList, 1, 0);
+                        pLayoutSource->addWidget(m_pSourceInstanceList);
                     }
                 }
 
