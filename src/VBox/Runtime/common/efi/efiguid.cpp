@@ -1,4 +1,4 @@
-/* $Id: efiguid.cpp 149129 2022-01-01 11:31:46Z knut.osmundsen@oracle.com $ */
+/* $Id: efiguid.cpp 149350 2022-01-17 19:29:25Z klaus.espenlaub@oracle.com $ */
 /** @file
  * IPRT - EFI GUID conversion helpers.
  */
@@ -32,6 +32,7 @@
 #include <iprt/efi.h>
 
 #include <iprt/cdefs.h>
+#include <iprt/asm.h>
 #include <iprt/string.h>
 
 
