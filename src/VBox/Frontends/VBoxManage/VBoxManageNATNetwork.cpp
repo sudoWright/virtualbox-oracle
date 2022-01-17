@@ -1,4 +1,4 @@
-/* $Id: VBoxManageNATNetwork.cpp 149347 2022-01-17 18:58:27Z noreply@oracle.com $ */
+/* $Id: VBoxManageNATNetwork.cpp 149352 2022-01-17 21:04:05Z noreply@oracle.com $ */
 /** @file
  * VBoxManage - Implementation of NAT Network command command.
  */
@@ -598,7 +598,7 @@ RTEXITCODE handleNATNetwork(HandlerArg *a)
 RTEXITCODE listNATNetworks(bool fLong, bool fSorted,
                            const ComPtr<IVirtualBox> &pVirtualBox)
 {
-    int rc;
+    HRESULT rc;
 
     RT_NOREF(fLong);
     RT_NOREF(fSorted);
