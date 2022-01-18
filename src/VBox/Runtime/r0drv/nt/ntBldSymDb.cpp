@@ -1,4 +1,4 @@
-﻿/* $Id: ntBldSymDb.cpp 149129 2022-01-01 11:31:46Z knut.osmundsen@oracle.com $ */
+﻿/* $Id: ntBldSymDb.cpp 149369 2022-01-18 11:24:43Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - RTDirCreateUniqueNumbered, generic implementation.
  */
@@ -966,10 +966,10 @@ static bool isInterestingName(const char *pszName, size_t cchName)
 {
     static struct { const char *psz; size_t cch; } const s_aNames[] =
     {
-        RT_STR_TUPLE("ntoskrnl.pdb"),
-        RT_STR_TUPLE("ntkrnlmp.pdb"),
-        RT_STR_TUPLE("ntkrnlpa.pdb"),
-        RT_STR_TUPLE("ntkrpamp.pdb"),
+        { RT_STR_TUPLE("ntoskrnl.pdb") },
+        { RT_STR_TUPLE("ntkrnlmp.pdb") },
+        { RT_STR_TUPLE("ntkrnlpa.pdb") },
+        { RT_STR_TUPLE("ntkrpamp.pdb") },
     };
 
     if (   cchName == s_aNames[0].cch
@@ -1155,7 +1155,7 @@ int main(int argc, char **argv)
                 break;
 
             case 'V':
-                RTPrintf("$Revision: 149129 $");
+                RTPrintf("$Revision: 149369 $");
                 break;
 
             case 'h':
