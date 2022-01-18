@@ -1,4 +1,4 @@
-/* $Id: VBoxDD.cpp 149129 2022-01-01 11:31:46Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxDD.cpp 149382 2022-01-18 13:15:12Z aleksey.ilyushin@oracle.com $ */
 /** @file
  * VBoxDD - Built-in drivers & devices (part 1).
  */
@@ -424,6 +424,12 @@ extern "C" DECLEXPORT(int) VBoxDriversRegister(PCPDMDRVREGCB pCallbacks, uint32_
 
 # ifdef VBOX_WITH_LIBTPMS
     rc = pCallbacks->pfnRegister(pCallbacks, &g_DrvTpmEmuTpms);
+    if (RT_FAILURE(rc))
+        return rc;
+# endif
+
+# ifdef VBOX_WITH_CLOUD_NET
+    rc = pCallbacks->pfnRegister(pCallbacks, &g_DrvCloudTunnel);
     if (RT_FAILURE(rc))
         return rc;
 # endif
