@@ -1,4 +1,4 @@
-/* $Id: UIWizardNewVMNameOSTypePage.h 149380 2022-01-18 12:19:06Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIWizardNewVMNameOSTypePage.h 149508 2022-01-24 13:35:27Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardNewVMNameOSTypePage class declaration.
  */
@@ -86,6 +86,7 @@ private:
     void markWidgets() const;
     void setSkipCheckBoxEnable();
     bool isUnattendedEnabled() const;
+    bool isOSTypeDetectionOK() const;
 
     /** @name Widgets
      * @{ */
