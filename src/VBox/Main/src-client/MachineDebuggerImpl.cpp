@@ -1,4 +1,4 @@
-/* $Id: MachineDebuggerImpl.cpp 149556 2022-01-26 18:01:15Z knut.osmundsen@oracle.com $ */
+/* $Id: MachineDebuggerImpl.cpp 149557 2022-01-26 18:24:49Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox IMachineDebugger COM class implementation (VBoxC).
  */
@@ -900,7 +900,8 @@ static DECLCALLBACK(void) MachineDebuggerInfoPrintf(PCDBGFINFOHLP pHlp, const ch
 /**
  * Initializes the debug info string buffer formatter
  *
- * @param   pHlp                The help structure to init.
+ * @param   pHlp    The help structure to init.
+ * @param   pVMM    The VMM vtable.
  */
 static void MachineDebuggerInfoInit(PMACHINEDEBUGGERINOFHLP pHlp, PCVMMR3VTABLE pVMM)
 {
