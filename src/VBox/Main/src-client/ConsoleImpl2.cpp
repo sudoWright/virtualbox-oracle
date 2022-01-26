@@ -1,4 +1,4 @@
-/* $Id: ConsoleImpl2.cpp 149556 2022-01-26 18:01:15Z knut.osmundsen@oracle.com $ */
+/* $Id: ConsoleImpl2.cpp 149561 2022-01-26 19:57:06Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Console COM Class implementation - VM Configuration Bits.
  *
@@ -3715,7 +3715,7 @@ int Console::i_configConstructorInner(PUVM pUVM, PVM pVM, PCVMMR3VTABLE pVMM, Au
     if (RT_SUCCESS(rc))
     {
         pAlock->release();
-        rc = mptrExtPackManager->i_callAllVmConfigureVmmHooks(this, pVM);
+        rc = mptrExtPackManager->i_callAllVmConfigureVmmHooks(this, pVM, pVMM);
         pAlock->acquire();
     }
 #endif
