@@ -1,4 +1,4 @@
-/* $Id: UnattendedImpl.h 149656 2022-02-01 12:23:58Z serkan.bayraktar@oracle.com $ */
+/* $Id: UnattendedImpl.h 149660 2022-02-01 14:07:44Z serkan.bayraktar@oracle.com $ */
 /** @file
  * Unattended class header
  */
@@ -36,11 +36,12 @@ struct ControllerSlot;
  */
 struct WIMImage
 {
-    Utf8Str mName;
-    Utf8Str mVersionMajor;
-    Utf8Str mVersionMinor;
-    Utf8Str mVersionBuild;
-    Utf8Str getNameAndVersion() const;
+    Utf8Str  mName;
+    Utf8Str  mVersionMajor;
+    Utf8Str  mVersionMinor;
+    Utf8Str  mVersionBuild;
+    uint32_t mImageIndex;
+    Utf8Str  getNameAndVersion() const;
 };
 
 /**
