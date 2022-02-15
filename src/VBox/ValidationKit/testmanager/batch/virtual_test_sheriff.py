@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# $Id: virtual_test_sheriff.py 149952 2022-02-15 21:57:50Z knut.osmundsen@oracle.com $
+# $Id: virtual_test_sheriff.py 149953 2022-02-15 22:00:38Z knut.osmundsen@oracle.com $
 # pylint: disable=line-too-long
 
 """
@@ -35,7 +35,7 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 149952 $"
+__version__ = "$Revision: 149953 $"
 
 
 # Standard python imports
@@ -341,7 +341,7 @@ class VirtualTestSheriff(object): # pylint: disable=too-few-public-methods
 
         if self.oConfig.sLogFile:
             self.oLogFile = open(self.oConfig.sLogFile, "a");
-            self.oLogFile.write('VirtualTestSheriff: $Revision: 149952 $ \n');
+            self.oLogFile.write('VirtualTestSheriff: $Revision: 149953 $ \n');
 
 
     def eprint(self, sText):
@@ -639,6 +639,7 @@ class VirtualTestSheriff(object): # pylint: disable=too-few-public-methods
     ktReason_Host_InstallationFailed                   = ( 'Host',              'Installation failed' );
     ktReason_Host_InstallationWantReboot               = ( 'Host',              'Installation want reboot' );
     ktReason_Host_InvalidPackage                       = ( 'Host',              'ERROR_INSTALL_PACKAGE_INVALID' );
+    ktReason_Host_InstallSourceAbsent                  = ( 'Host',              'ERROR_INSTALL_SOURCE_ABSENT' );
     ktReason_Host_NotSignedWithBuildCert               = ( 'Host',              'Not signed with build cert' );
     ktReason_Host_DoubleFreeHeap                       = ( 'Host',              'Double free or corruption' );
     ktReason_Host_LeftoverService                      = ( 'Host',              'Leftover service' );
@@ -743,7 +744,7 @@ class VirtualTestSheriff(object): # pylint: disable=too-few-public-methods
         for idTestResult, tReason in dReasonForResultId.items():
             oFailureReason = self.getFailureReason(tReason);
             if oFailureReason is not None:
-                sComment = 'Set by $Revision: 149952 $' # Handy for reverting later.
+                sComment = 'Set by $Revision: 149953 $' # Handy for reverting later.
                 if idTestResult in dCommentForResultId:
                     sComment += ': ' + dCommentForResultId[idTestResult];
 
@@ -878,6 +879,7 @@ class VirtualTestSheriff(object): # pylint: disable=too-few-public-methods
             ( True,  ktReason_Host_InstallationWantReboot, 'ERROR_SUCCESS_REBOOT_REQUIRED' ),
             ( False, ktReason_Host_InstallationFailed, 'Installation error.' ),
             ( True,  ktReason_Host_InvalidPackage, 'Uninstaller failed, exit code: 1620' ),
+            ( True,  ktReason_Host_InstallSourceAbsent, 'Uninstaller failed, exit code: 1612' ),
         ],
     };
 
