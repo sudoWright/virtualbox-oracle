@@ -1,4 +1,4 @@
-/* $Id: UIMachineLogic.cpp 150229 2022-02-28 22:04:49Z knut.osmundsen@oracle.com $ */
+/* $Id: UIMachineLogic.cpp 150230 2022-02-28 22:08:38Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIMachineLogic class implementation.
  */
@@ -22,6 +22,7 @@
 #include <QImageWriter>
 #include <QPainter>
 #include <QRegExp>
+#include <QRegularExpression>
 #include <QTimer>
 #ifdef VBOX_WS_MAC
 # include <QMenuBar>
