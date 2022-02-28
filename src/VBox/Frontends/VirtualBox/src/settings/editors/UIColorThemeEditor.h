@@ -1,4 +1,4 @@
-/* $Id: UIColorThemeEditor.h 149129 2022-01-01 11:31:46Z knut.osmundsen@oracle.com $ */
+/* $Id: UIColorThemeEditor.h 150220 2022-02-28 15:34:57Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIColorThemeEditor class declaration.
  */
@@ -57,7 +57,7 @@ public:
 protected:
 
     /** Handles translation event. */
-    virtual void retranslateUi() /* override */;
+    virtual void retranslateUi() RT_OVERRIDE;
 
 private slots:
 

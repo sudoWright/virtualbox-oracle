@@ -1,4 +1,4 @@
-/* $Id: UIVMActivityToolWidget.h 149129 2022-01-01 11:31:46Z knut.osmundsen@oracle.com $ */
+/* $Id: UIVMActivityToolWidget.h 150220 2022-02-28 15:34:57Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVMActivityToolWidget class declaration.
  */
@@ -63,8 +63,8 @@ protected:
 
     /** @name Event-handling stuff.
       * @{ */
-        virtual void retranslateUi() /* override */;
-        virtual void showEvent(QShowEvent *pEvent) /* override */;
+        virtual void retranslateUi() RT_OVERRIDE;
+        virtual void showEvent(QShowEvent *pEvent) RT_OVERRIDE;
     /** @} */
 
 private slots:

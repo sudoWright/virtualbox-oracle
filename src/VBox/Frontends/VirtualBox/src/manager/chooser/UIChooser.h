@@ -1,4 +1,4 @@
-/* $Id: UIChooser.h 149129 2022-01-01 11:31:46Z knut.osmundsen@oracle.com $ */
+/* $Id: UIChooser.h 150220 2022-02-28 15:34:57Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIChooser class declaration.
  */
@@ -91,7 +91,7 @@ public:
       * @param  pActionPool  Brings the action-pool reference.  */
     UIChooser(QWidget *pParent, UIActionPool *pActionPool);
     /** Destructs Chooser-pane. */
-    virtual ~UIChooser() /* override */;
+    virtual ~UIChooser() RT_OVERRIDE;
 
     /** @name General stuff.
       * @{ */

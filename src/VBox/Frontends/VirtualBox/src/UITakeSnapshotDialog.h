@@ -1,4 +1,4 @@
-/* $Id: UITakeSnapshotDialog.h 149129 2022-01-01 11:31:46Z knut.osmundsen@oracle.com $ */
+/* $Id: UITakeSnapshotDialog.h 150220 2022-02-28 15:34:57Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Qt GUI - UITakeSnapshotDialog class declaration.
  */
@@ -62,10 +62,10 @@ public:
 protected:
 
     /** Handles any Qt @a pEvent. */
-    virtual bool event(QEvent *pEvent) /* override */;
+    virtual bool event(QEvent *pEvent) RT_OVERRIDE;
 
     /** Handles translation event. */
-    virtual void retranslateUi() /* override */;
+    virtual void retranslateUi() RT_OVERRIDE;
 
 private slots:
 

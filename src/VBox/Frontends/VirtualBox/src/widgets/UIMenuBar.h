@@ -1,4 +1,4 @@
-/* $Id: UIMenuBar.h 149129 2022-01-01 11:31:46Z knut.osmundsen@oracle.com $ */
+/* $Id: UIMenuBar.h 150220 2022-02-28 15:34:57Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIMenuBar class declaration.
  */
@@ -45,7 +45,7 @@ public:
 protected:
 
     /** Paint event handler. */
-    virtual void paintEvent(QPaintEvent *pEvent) /* override */;
+    virtual void paintEvent(QPaintEvent *pEvent) RT_OVERRIDE;
 
 private:
 
