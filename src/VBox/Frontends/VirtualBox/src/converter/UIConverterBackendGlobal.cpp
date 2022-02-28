@@ -1,4 +1,4 @@
-/* $Id: UIConverterBackendGlobal.cpp 150218 2022-02-28 15:04:55Z knut.osmundsen@oracle.com $ */
+/* $Id: UIConverterBackendGlobal.cpp 150229 2022-02-28 22:04:49Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIConverterBackendGlobal implementation.
  */
@@ -18,6 +18,7 @@
 /* Qt includes: */
 #include <QApplication>
 #include <QHash>
+#include <QRegExp>
 #include <QRegularExpression>
 
 /* GUI includes: */
