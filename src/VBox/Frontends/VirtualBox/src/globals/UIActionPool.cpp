@@ -1,4 +1,4 @@
-/* $Id: UIActionPool.cpp 150233 2022-02-28 22:49:53Z knut.osmundsen@oracle.com $ */
+/* $Id: UIActionPool.cpp 150247 2022-03-01 09:13:50Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIActionPool class implementation.
  */
@@ -16,6 +16,7 @@
  */
 
 /* Qt includes: */
+#include <QActionGroup>
 #include <QHelpEvent>
 #include <QToolTip>
 
