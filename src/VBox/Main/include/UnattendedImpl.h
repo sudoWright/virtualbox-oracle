@@ -1,4 +1,4 @@
-/* $Id: UnattendedImpl.h 149723 2022-02-03 15:40:21Z knut.osmundsen@oracle.com $ */
+/* $Id: UnattendedImpl.h 150315 2022-03-03 13:59:09Z serkan.bayraktar@oracle.com $ */
 /** @file
  * Unattended class header
  */
@@ -228,6 +228,7 @@ private:
     HRESULT getDetectedOSHints(com::Utf8Str &aDetectedOSHints);
     HRESULT getDetectedImageNames(std::vector<com::Utf8Str> &aDetectedImageNames);
     HRESULT getDetectedImageIndices(std::vector<ULONG> &aDetectedImageIndices);
+    HRESULT getIsUnattendedInstallSupported(BOOL *aIsUnattendedInstallSupported);
     //internal functions
 
     /**
