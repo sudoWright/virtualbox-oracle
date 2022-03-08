@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# $Id: tst-utsgadget.py 149129 2022-01-01 11:31:46Z knut.osmundsen@oracle.com $
+# $Id: tst-utsgadget.py 150376 2022-03-08 14:44:28Z knut.osmundsen@oracle.com $
 
 """
 Simple testcase for usbgadget2.py.
@@ -26,7 +26,7 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 149129 $"
+__version__ = "$Revision: 150376 $"
 
 # Standard python imports.
 import sys
@@ -35,9 +35,9 @@ import sys
 sys.path.insert(0, '.');
 sys.path.insert(0, '..');
 sys.path.insert(0, '../..');
-import usbgadget;
-import testdriver.reporter as reporter
 from common import utils;
+from testdriver import reporter;
+import usbgadget;
 
 
 # Python 3 hacks:
