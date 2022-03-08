@@ -1,4 +1,4 @@
-/* $Id: OpenGLTestApp.cpp 150386 2022-03-08 22:10:28Z knut.osmundsen@oracle.com $ */
+/* $Id: OpenGLTestApp.cpp 150387 2022-03-08 22:24:06Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox host opengl support test application.
  */
@@ -56,8 +56,8 @@
 
 #ifdef VBOX_WITH_VIDEOHWACCEL
 # include <QApplication>
-# if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
-#  include <QSurfaceFormat>
+# if QT_VERSION < QT_VERSION_CHECK(6, 0, 0) && defined(RT_OS_WINDOWS)
+#  include <QGLWidget> /* for GL headers on windows */
 # endif
 # include <VBox/VBoxGL2D.h>
 #endif
@@ -461,7 +461,7 @@ int main(int argc, char **argv)
                     return RTEXITCODE_SUCCESS;
 
                 case 'V':
-                    RTPrintf("$Revision: 150386 $\n");
+                    RTPrintf("$Revision: 150387 $\n");
                     return RTEXITCODE_SUCCESS;
 
                 case VERR_GETOPT_UNKNOWN_OPTION:
