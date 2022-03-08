@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# $Id: reporter.py 149129 2022-01-01 11:31:46Z knut.osmundsen@oracle.com $
+# $Id: reporter.py 150375 2022-03-08 14:18:58Z knut.osmundsen@oracle.com $
 # pylint: disable=too-many-lines
 
 """
@@ -29,7 +29,7 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 149129 $"
+__version__ = "$Revision: 150375 $"
 
 
 # Standard Python imports.
@@ -70,7 +70,7 @@ class ReporterLock(object):
         oSelf = threading.current_thread();
 
         # Take the lock.
-        if not self.oLock.acquire():
+        if not self.oLock.acquire():                            # pylint: disable=consider-using-with
             return False;
 
         self.oOwner      = oSelf;
