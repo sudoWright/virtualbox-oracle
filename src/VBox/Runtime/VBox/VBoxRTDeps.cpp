@@ -1,4 +1,4 @@
-/* $Id: VBoxRTDeps.cpp 149625 2022-01-31 14:47:17Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxRTDeps.cpp 150383 2022-03-08 17:26:05Z alexander.eichner@oracle.com $ */
 /** @file
  * IPRT - VBoxRT.dll/so dependencies.
  */
@@ -115,7 +115,6 @@ struct CLANG11NONSENSE { PFNRT pfn; } g_VBoxRTDeps[] =
     { (PFNRT)TLSv1_server_method },
 #endif
     { (PFNRT)AES_ofb128_encrypt }, /* libtpms */
-    { (PFNRT)FIPS_mode }, /* libssh */
     { NULL }
 };
 
