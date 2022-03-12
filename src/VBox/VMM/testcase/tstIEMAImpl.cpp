@@ -1,4 +1,4 @@
-/* $Id: tstIEMAImpl.cpp 150449 2022-03-12 01:43:01Z knut.osmundsen@oracle.com $ */
+/* $Id: tstIEMAImpl.cpp 150450 2022-03-12 01:43:26Z knut.osmundsen@oracle.com $ */
 /** @file
  * IEM Assembly Instruction Helper Testcase.
  */
@@ -342,14 +342,14 @@ static uint64_t  RandU64Src(uint32_t iTest)
 static void GenerateHeader(PRTSTREAM pOut, const char *pszCpuDesc, const char *pszCpuType, const char *pszCpuSuffU)
 {
     /* We want to tag the generated source code with the revision that produced it. */
-    static char s_szRev[] = "$Revision: 150449 $";
+    static char s_szRev[] = "$Revision: 150450 $";
     const char *pszRev = RTStrStripL(strchr(s_szRev, ':') + 1);
     size_t      cchRev = 0;
     while (RT_C_IS_DIGIT(pszRev[cchRev]))
         cchRev++;
 
     RTStrmPrintf(pOut,
-                 "/* $Id: tstIEMAImpl.cpp 150449 2022-03-12 01:43:01Z knut.osmundsen@oracle.com $ */\n"
+                 "/* $Id: tstIEMAImpl.cpp 150450 2022-03-12 01:43:26Z knut.osmundsen@oracle.com $ */\n"
                  "/** @file\n"
                  " * IEM Assembly Instruction Helper Testcase Data%s%s - r%.*s on %s.\n"
                  " */\n"
@@ -1241,8 +1241,8 @@ static void ShiftDblGenerate(PRTSTREAM pOut, const char *pszCpuSuffU, uint32_t c
 static void ShiftDblTest(void)
 {
     ShiftDblU16Test();
-//    ShiftDblU32Test();
-//    ShiftDblU64Test();
+    ShiftDblU32Test();
+    ShiftDblU64Test();
 }
 
 
