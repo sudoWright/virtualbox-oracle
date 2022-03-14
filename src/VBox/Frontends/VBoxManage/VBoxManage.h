@@ -1,4 +1,4 @@
-/* $Id: VBoxManage.h 150469 2022-03-13 20:57:16Z alexander.eichner@oracle.com $ */
+/* $Id: VBoxManage.h 150473 2022-03-14 08:56:53Z alexander.eichner@oracle.com $ */
 /** @file
  * VBoxManage - VirtualBox command-line interface, internal header file.
  */
@@ -111,7 +111,6 @@ typedef enum
     USAGE_I_CONVERTTORAW,
     USAGE_I_CONVERTHD,
     USAGE_I_DUMPHDINFO,
-    USAGE_STORAGEATTACH,
     USAGE_I_DEBUGLOG,
     USAGE_I_SETHDPARENTUUID,
     USAGE_I_PASSWORDHASH,
