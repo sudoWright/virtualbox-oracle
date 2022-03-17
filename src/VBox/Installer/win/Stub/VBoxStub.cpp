@@ -1,4 +1,4 @@
-/* $Id: VBoxStub.cpp 150548 2022-03-17 11:12:27Z andreas.loeffler@oracle.com $ */
+/* $Id: VBoxStub.cpp 150549 2022-03-17 11:21:40Z andreas.loeffler@oracle.com $ */
 /** @file
  * VBoxStub - VirtualBox's Windows installer stub.
  */
@@ -97,6 +97,7 @@ typedef struct STUBCLEANUPREC
 } STUBCLEANUPREC;
 /** Pointer to a cleanup record. */
 typedef STUBCLEANUPREC *PSTUBCLEANUPREC;
+
 
 /*********************************************************************************************************************************
 *   Prototypes                                                                                                                   *
