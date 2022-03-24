@@ -1,4 +1,4 @@
-/* $Id: TextScript.cpp 150653 2022-03-24 08:13:03Z serkan.bayraktar@oracle.com $ */
+/* $Id: TextScript.cpp 150655 2022-03-24 08:29:57Z serkan.bayraktar@oracle.com $ */
 /** @file
  * Classes for reading/parsing/saving text scripts (unattended installation, ++).
  */
@@ -375,5 +375,4 @@ HRESULT GeneralTextScript::appendLine(const Utf8Str &rStrLineToAppend)
         return E_OUTOFMEMORY;
     }
     return S_OK;
-
 }
