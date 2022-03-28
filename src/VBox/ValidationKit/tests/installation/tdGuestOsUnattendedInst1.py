@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# $Id: tdGuestOsUnattendedInst1.py 149166 2022-01-09 01:50:16Z knut.osmundsen@oracle.com $
+# $Id: tdGuestOsUnattendedInst1.py 150690 2022-03-28 13:27:24Z serkan.bayraktar@oracle.com $
 
 """
 VirtualBox Validation Kit - Guest OS unattended installation tests.
@@ -27,7 +27,7 @@ CDDL are applicable instead of those of the GPL.
 You may elect to license modified versions of this file under the
 terms and conditions of either the GPL or the CDDL or both.
 """
-__version__ = "$Revision: 149166 $"
+__version__ = "$Revision: 150690 $"
 
 
 # Standard Python imports.
@@ -517,6 +517,8 @@ class tdGuestOsInstTest1(vbox.TestDriver):
             #             UnattendedVm.kfNoGAs),
             UnattendedVm(oSet, 'tst-ubuntu-19.04-64',   'Ubuntu_64', '6.0/uaisos/ubuntu-19.04-desktop-amd64.iso',    # >=6GiB
                          UnattendedVm.kfNoGAs),
+            UnattendedVm(oSet, 'tst-debian-9.3-64',     'Debian_64', '6.0/uaisos/debian-9.3.0-amd64-netinst.iso'),    # >=6GiB
+
             #
             # OS/2.
             #
@@ -525,7 +527,7 @@ class tdGuestOsInstTest1(vbox.TestDriver):
         ]);
         # pylint: enable=line-too-long
         self.oTestVmSet = oSet;
-
+ka
         # For option parsing:
         self.aoSelectedVms = oSet.aoTestVms # type: list(UnattendedVm)
 
@@ -742,4 +744,3 @@ class tdGuestOsInstTest1(vbox.TestDriver):
 
 if __name__ == '__main__':
     sys.exit(tdGuestOsInstTest1().main(sys.argv))
-
