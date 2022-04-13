@@ -1,4 +1,4 @@
-/* $Id: UINameAndSystemEditor.h 150775 2022-04-01 17:19:37Z sergey.dubov@oracle.com $ */
+/* $Id: UINameAndSystemEditor.h 150954 2022-04-13 17:33:39Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UINameAndSystemEditor class declaration.
  */
@@ -110,6 +110,8 @@ public:
 
     /** Returns image string selected by the user. */
     QString ISOImagePath() const;
+    /** Sets image path. */
+    void setISOImagePath(const QString &strPath);
 
     /** Defines the VM OS @a strTypeId and @a strFamilyId if passed. */
     void setTypeId(QString strTypeId, QString strFamilyId = QString());

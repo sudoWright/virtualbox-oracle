@@ -1,4 +1,4 @@
-/* $Id: UIWizardNewVMNameOSTypePage.h 150318 2022-03-03 16:24:56Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIWizardNewVMNameOSTypePage.h 150954 2022-04-13 17:33:39Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardNewVMNameOSTypePage class declaration.
  */
@@ -55,7 +55,7 @@ public:
 
     /** Constructor. */
     UIWizardNewVMNameOSTypePage();
-
+    void setISOFilePath(const QString &strISOFilePath);
 
 protected:
 
