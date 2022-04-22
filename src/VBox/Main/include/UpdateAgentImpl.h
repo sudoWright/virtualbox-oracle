@@ -1,4 +1,4 @@
-/* $Id: UpdateAgentImpl.h 151035 2022-04-21 16:07:53Z andreas.loeffler@oracle.com $ */
+/* $Id: UpdateAgentImpl.h 151052 2022-04-22 10:16:24Z andreas.loeffler@oracle.com $ */
 /** @file
  * Update agent COM class implementation - Header
  */
@@ -127,7 +127,14 @@ public:
     /** @}  */
 
 protected:
-    /** @name Wrapped IUpdateAgent attributes and methods
+
+    /** @name Internal helper methods.
+     * @{ */
+    HRESULT i_commitSettings(AutoWriteLock &aLock);
+    /** @}  */
+
+protected:
+    /** @name Wrapped IUpdateAgent attributes and methods.
      * @{ */
     HRESULT checkFor(ComPtr<IProgress> &aProgress);
     HRESULT download(ComPtr<IProgress> &aProgress);
