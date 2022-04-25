@@ -1,4 +1,4 @@
-/* $Id: UpdateAgentImpl.h 151052 2022-04-22 10:16:24Z andreas.loeffler@oracle.com $ */
+/* $Id: UpdateAgentImpl.h 151073 2022-04-25 07:53:34Z andreas.loeffler@oracle.com $ */
 /** @file
  * Update agent COM class implementation - Header
  */
@@ -164,6 +164,7 @@ protected:
     HRESULT getProxyURL(com::Utf8Str &aAddress);
     HRESULT setProxyURL(const com::Utf8Str &aAddress);
     HRESULT getLastCheckDate(com::Utf8Str &aData);
+    HRESULT getIsCheckNeeded(BOOL *aCheckNeeded);
     /** @} */
 };
 
