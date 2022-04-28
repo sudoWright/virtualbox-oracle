@@ -1,4 +1,4 @@
-/* $Id: UIUpdateSettingsEditor.h 151113 2022-04-28 12:24:47Z sergey.dubov@oracle.com $ */
+/* $Id: UIUpdateSettingsEditor.h 151132 2022-04-28 19:11:26Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIUpdateSettingsEditor class declaration.
  */
@@ -71,6 +71,8 @@ private:
     /** Prepares connections. */
     void prepareConnections();
 
+    /** Returns whether check is enabled. */
+    bool isCheckEnabled() const;
     /** Returns update period. */
     UpdatePeriodType updatePeriod() const;
     /** Returns update channel. */
