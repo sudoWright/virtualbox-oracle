@@ -1,4 +1,4 @@
-/* $Id: QIToolBar.h 150220 2022-02-28 15:34:57Z knut.osmundsen@oracle.com $ */
+/* $Id: QIToolBar.h 151410 2022-05-11 18:34:06Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - QIToolBar class declaration.
  */
@@ -84,7 +84,7 @@ private:
     QMainWindow *m_pMainWindow;
 
 #ifdef VBOX_WS_MAC
-    /** Holds whether unified tool-bar should be emulated. */
+    /** Mac OS X: Holds whether unified tool-bar should be emulated. */
     bool  m_fEmulateUnifiedToolbar;
 #endif
 };
