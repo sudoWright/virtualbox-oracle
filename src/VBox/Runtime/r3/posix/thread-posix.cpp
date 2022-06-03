@@ -1,4 +1,4 @@
-/* $Id: thread-posix.cpp 149129 2022-01-01 11:31:46Z knut.osmundsen@oracle.com $ */
+/* $Id: thread-posix.cpp 151690 2022-06-03 15:11:16Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Threads, POSIX.
  */
@@ -56,6 +56,9 @@
 #endif
 #if defined(RT_OS_HAIKU)
 # include <OS.h>
+#endif
+#if defined(RT_OS_DARWIN)
+# define sigprocmask pthread_sigmask /* On xnu sigprocmask works on the process, not the calling thread as elsewhere. */
 #endif
 
 #include <iprt/thread.h>
