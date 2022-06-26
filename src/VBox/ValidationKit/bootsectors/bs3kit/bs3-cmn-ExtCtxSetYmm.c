@@ -1,4 +1,4 @@
-/* $Id: bs3-cmn-ExtCtxSetYmm.c 151966 2022-06-26 00:27:49Z knut.osmundsen@oracle.com $ */
+/* $Id: bs3-cmn-ExtCtxSetYmm.c 151968 2022-06-26 01:26:50Z knut.osmundsen@oracle.com $ */
 /** @file
  * BS3Kit - Bs3ExtCtxSetYmm
  */
@@ -56,5 +56,4 @@ BS3_CMN_DEF(bool, Bs3ExtCtxSetYmm,(PBS3EXTCTX pExtCtx, uint8_t iReg, PCRTUINT256
     }
     return false;
 }
-
 
