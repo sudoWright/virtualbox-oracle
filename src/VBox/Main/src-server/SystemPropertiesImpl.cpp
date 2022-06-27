@@ -1,4 +1,4 @@
-/* $Id: SystemPropertiesImpl.cpp 151958 2022-06-24 16:51:21Z andreas.loeffler@oracle.com $ */
+/* $Id: SystemPropertiesImpl.cpp 151992 2022-06-27 15:49:05Z klaus.espenlaub@oracle.com $ */
 /** @file
  * VirtualBox COM class implementation
  */
@@ -1510,6 +1510,7 @@ HRESULT SystemProperties::getSupportedPointingHIDTypes(std::vector<PointingHIDTy
         PointingHIDType_ComboMouse,
 #endif
         PointingHIDType_USBMultiTouch,
+        PointingHIDType_USBMultiTouchScreenPlusPad,
     };
     aSupportedPointingHIDTypes.assign(aPointingHIDTypes,
                                       aPointingHIDTypes + RT_ELEMENTS(aPointingHIDTypes));
