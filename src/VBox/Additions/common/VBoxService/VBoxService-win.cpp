@@ -1,4 +1,4 @@
-/* $Id: VBoxService-win.cpp 149129 2022-01-01 11:31:46Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxService-win.cpp 152580 2022-07-26 23:40:40Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxService - Guest Additions Service Skeleton, Windows Specific Parts.
  */
@@ -31,7 +31,6 @@
 #undef WIN32_NO_STATUS
 #include <iprt/nt/nt-and-windows.h>
 #include <iprt/win/iphlpapi.h>
-#include <process.h>
 #include <aclapi.h>
 #include <tlhelp32.h>
 #define _NTDEF_
