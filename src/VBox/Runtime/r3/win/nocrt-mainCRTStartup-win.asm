@@ -1,6 +1,6 @@
-; $Id: nocrt-atexit.asm 152540 2022-07-25 14:48:00Z knut.osmundsen@oracle.com $
+; $Id: nocrt-mainCRTStartup-win.asm 152553 2022-07-26 11:44:36Z knut.osmundsen@oracle.com $
 ;; @file
-; IPRT - Alias atexit to rtnocrt_atexit in nocrt-startup-exe-win.cpp.
+; IPRT - Alias mainCRTStartup to CustomMainEntrypoint in nocrt-startup-exe-win.cpp.
 ;
 
 ;
@@ -27,8 +27,8 @@
 
 %include "iprt/asmdefs.mac"
 
-extern  rtnocrt_atexit
-BEGINPROC atexit
-        jmp     rtnocrt_atexit
-ENDPROC   atexit
+extern  CustomMainEntrypoint
+BEGINPROC mainCRTStartup
+        jmp     CustomMainEntrypoint
+ENDPROC   mainCRTStartup
 
