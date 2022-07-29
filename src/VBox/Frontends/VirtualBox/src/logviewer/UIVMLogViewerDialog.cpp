@@ -1,4 +1,4 @@
-/* $Id: UIVMLogViewerDialog.cpp 149129 2022-01-01 11:31:46Z knut.osmundsen@oracle.com $ */
+/* $Id: UIVMLogViewerDialog.cpp 152706 2022-07-29 15:52:10Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVMLogViewerDialog class implementation.
  */
@@ -97,7 +97,7 @@ void UIVMLogViewerDialog::retranslateUi()
 {
     /* Translate window title: */
     if (!m_strMachineName.isEmpty())
-        setWindowTitle(tr("%1 - Log Viewer").arg(m_strMachineName));
+        setWindowTitle(UIVMLogViewerWidget::tr("%1 - Log Viewer").arg(m_strMachineName));
     else
         setWindowTitle(UIVMLogViewerWidget::tr("Log Viewer"));
 
