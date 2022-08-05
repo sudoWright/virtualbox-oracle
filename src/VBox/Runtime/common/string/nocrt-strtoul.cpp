@@ -1,4 +1,4 @@
-/* $Id: nocrt-strtoul.cpp 152856 2022-08-05 11:07:45Z knut.osmundsen@oracle.com $ */
+/* $Id: nocrt-strtoul.cpp 152858 2022-08-05 11:27:49Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - No-CRT - strtoul.
  */
@@ -59,4 +59,5 @@ unsigned long RT_NOCRT(strtoul)(const char *psz, char **ppszNext, int iBase)
     errno = EINVAL;
     return 0;
 }
+RT_ALIAS_AND_EXPORT_NOCRT_SYMBOL(strtoul);
 

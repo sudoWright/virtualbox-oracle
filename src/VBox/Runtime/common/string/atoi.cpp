@@ -1,6 +1,6 @@
-/* $Id: nocrt-strtoull.cpp 152858 2022-08-05 11:27:49Z knut.osmundsen@oracle.com $ */
+/* $Id: atoi.cpp 152858 2022-08-05 11:27:49Z knut.osmundsen@oracle.com $ */
 /** @file
- * IPRT - No-CRT - strtoull.
+ * IPRT - No-CRT - atoi.
  */
 
 /*
@@ -32,29 +32,23 @@
 #include "internal/nocrt.h"
 #include <iprt/nocrt/stdlib.h>
 #include <iprt/nocrt/limits.h>
-#include <iprt/nocrt/errno.h>
-#include <iprt/err.h>
 #include <iprt/string.h>
 
 
-#undef strtoull
-unsigned long long RT_NOCRT(strtoull)(const char *psz, char **ppszNext, int iBase)
+#undef atoi
+int RT_NOCRT(atoi)(const char *psz)
 {
-#if LLONG_BIT == 64
-    uint64_t uValue = 0;
-    int rc = RTStrToUInt64Ex(psz, ppszNext, (unsigned)iBase, &uValue);
+#if INT_MAX == INT32_MAX
+    int32_t iValue = 0;
+    int rc = RTStrToInt32Ex(psz, NULL, 10, &iValue);
 #else
-# error "Unsupported LLONG_BIT value"
+# error "Unsupported integer size"
 #endif
-    if (rc == VINF_SUCCESS || rc == VWRN_TRAILING_CHARS || rc == VWRN_TRAILING_SPACES || rc == VWRN_NEGATIVE_UNSIGNED)
-        return uValue;
+    if (rc == VINF_SUCCESS || rc == VWRN_TRAILING_CHARS || rc == VWRN_TRAILING_SPACES)
+        return iValue;
     if (rc == VWRN_NUMBER_TOO_BIG)
-    {
-        errno = ERANGE;
-        return ULONG_MAX;
-    }
-    errno = EINVAL;
+        return iValue < 0 ? INT_MIN : INT_MAX;
     return 0;
 }
-RT_ALIAS_AND_EXPORT_NOCRT_SYMBOL(strtoull);
+RT_ALIAS_AND_EXPORT_NOCRT_SYMBOL(atoi);
 
