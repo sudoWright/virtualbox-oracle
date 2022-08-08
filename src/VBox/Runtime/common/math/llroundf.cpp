@@ -1,4 +1,4 @@
-/* $Id: llroundf.cpp 152921 2022-08-08 22:15:00Z knut.osmundsen@oracle.com $ */
+/* $Id: llroundf.cpp 152928 2022-08-08 23:17:09Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - No-CRT - llroundf().
  */
@@ -42,12 +42,11 @@ long long RT_NOCRT(llroundf)(float r32)
         r32 = RT_NOCRT(roundf)(r32);
         if (r32 >= (float)LLONG_MIN && r32 <= (float)LLONG_MAX)
             return (long)r32;
-        // @todo RT_NOCRT(feraiseexcept)(FE_INVALID);
+        /** @todo RT_NOCRT(feraiseexcept)(FE_INVALID); */
         return r32 > 0 ? LLONG_MAX : LLONG_MIN;
     }
-    // @todo RT_NOCRT(feraiseexcept)(FE_INVALID);
+    /** @todo RT_NOCRT(feraiseexcept)(FE_INVALID); */
     return LLONG_MAX;
 }
 RT_ALIAS_AND_EXPORT_NOCRT_SYMBOL(llroundf);
-
 
