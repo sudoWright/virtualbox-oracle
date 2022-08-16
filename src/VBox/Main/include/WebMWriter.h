@@ -1,4 +1,4 @@
-/* $Id: WebMWriter.h 153040 2022-08-16 15:41:39Z andreas.loeffler@oracle.com $ */
+/* $Id: WebMWriter.h 153041 2022-08-16 15:44:23Z andreas.loeffler@oracle.com $ */
 /** @file
  * WebMWriter.h - WebM container handling.
  */
@@ -428,7 +428,7 @@ public:
         /**
          * Initializes a segment.
          *
-         * @returns IPRT status code.
+         * @returns VBox status code.
          */
         int init(void)
         {
