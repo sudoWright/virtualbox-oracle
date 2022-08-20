@@ -1,4 +1,4 @@
-/* $Id: RegCleanup.cpp 153204 2022-08-20 23:06:28Z knut.osmundsen@oracle.com $ */
+/* $Id: RegCleanup.cpp 153206 2022-08-20 23:09:14Z knut.osmundsen@oracle.com $ */
 /** @file
  * RegCleanup - Remove "InvalidDisplay" and "NewDisplay" keys on NT4,
  *              run via HKLM/.../Windows/CurrentVersion/RunOnce.
@@ -30,6 +30,7 @@
 *********************************************************************************************************************************/
 #include <iprt/win/windows.h>
 #include <iprt/cdefs.h> /* RT_STR_TUPLE */
+#include <iprt/types.h> /* RTEXITCODE_FAILURE */
 
 
 static bool IsNt4(void)
