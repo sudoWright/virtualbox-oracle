@@ -1,6 +1,6 @@
-/* $Id: stacksup-vcc.cpp 153224 2022-08-22 17:43:14Z klaus.espenlaub@oracle.com $ */
+/* $Id: stacksup-vcc.cpp 153242 2022-08-23 02:14:54Z knut.osmundsen@oracle.com $ */
 /** @file
- * IPRT - No-CRT - Basic allocators, Windows.
+ * IPRT - Visual C++ Compiler - Stack Checking C/C++ Support.
  */
 
 /*
