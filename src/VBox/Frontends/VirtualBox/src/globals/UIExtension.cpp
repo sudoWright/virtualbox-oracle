@@ -1,4 +1,4 @@
-/* $Id: UIExtension.cpp 153224 2022-08-22 17:43:14Z klaus.espenlaub@oracle.com $ */
+/* $Id: UIExtension.cpp 153331 2022-08-25 10:50:04Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIExtension namespace implementation.
  */
@@ -62,7 +62,7 @@ void UIExtension::install(QString const &strFilePath,
 
     if (!comExtPackFile.GetUsable())
     {
-        UINotificationMessage::cannotOpenExtPackFile(comExtPackFile, strFilePath);
+        UINotificationMessage::cannotReadExtPack(comExtPackFile, strFilePath);
         return;
     }
 
