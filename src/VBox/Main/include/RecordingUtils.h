@@ -1,4 +1,4 @@
-/* $Id: RecordingUtils.h 153327 2022-08-25 06:57:49Z andreas.loeffler@oracle.com $ */
+/* $Id: RecordingUtils.h 153328 2022-08-25 07:02:55Z andreas.loeffler@oracle.com $ */
 /** @file
  * Recording utility header.
  */
@@ -30,6 +30,8 @@
 #ifndef RT_WITHOUT_PRAGMA_ONCE
 # pragma once
 #endif
+
+#include "RecordingInternals.h"
 
 
 /**
