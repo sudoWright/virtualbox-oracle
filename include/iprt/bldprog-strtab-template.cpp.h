@@ -1,4 +1,4 @@
-/* $Id: bldprog-strtab-template.cpp.h 153418 2022-08-30 01:04:57Z knut.osmundsen@oracle.com $ */
+/* $Id: bldprog-strtab-template.cpp.h 153419 2022-08-30 01:09:00Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Build Program - String Table Generator.
  */
@@ -627,6 +627,7 @@ struct SortedDictionaryEntry
 {
     size_t      m_cchGain;
     size_t      m_cchString;
+    RT_FLEXIBLE_ARRAY_EXTENSION
     char        m_szString[RT_FLEXIBLE_ARRAY];
 
     /** Allocates and initializes a new entry. */
