@@ -1,4 +1,4 @@
-/* $Id: vkatCmdGeneric.cpp 153484 2022-09-05 22:30:23Z knut.osmundsen@oracle.com $ */
+/* $Id: vkatCmdGeneric.cpp 153485 2022-09-05 22:44:36Z knut.osmundsen@oracle.com $ */
 /** @file
  * Validation Kit Audio Test (VKAT) utility for testing and validating the audio stack.
  */
@@ -47,7 +47,7 @@
 
 
 /*********************************************************************************************************************************
-*   Command: backends                                                                                                                *
+*   Command: backends                                                                                                            *
 *********************************************************************************************************************************/
 
 /**
