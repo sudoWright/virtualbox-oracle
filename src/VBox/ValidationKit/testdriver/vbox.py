@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# $Id: vbox.py 153426 2022-08-30 18:26:47Z knut.osmundsen@oracle.com $
+# $Id: vbox.py 153510 2022-09-07 13:00:03Z andreas.loeffler@oracle.com $
 # pylint: disable=too-many-lines
 
 """
@@ -37,7 +37,7 @@ terms and conditions of either the GPL or the CDDL or both.
 
 SPDX-License-Identifier: GPL-3.0-only OR CDDL-1.0
 """
-__version__ = "$Revision: 153426 $"
+__version__ = "$Revision: 153510 $"
 
 # pylint: disable=unnecessary-semicolon
 
@@ -3477,7 +3477,9 @@ class TestDriver(base.TestDriver):                                              
 
         # Upload the screen video recordings if appropriate.
         if self.fAlwaysUploadRecordings or reporter.testErrorCount() > 0:
+            reporter.log2('Uploading %d screen recordings ...' % (self.adRecordingFile,));
             for dRecFile in self.adRecordingFiles:
+                reporter.log2('Uploading screen recording "%s" (screen %d)' % (dRecFile['file'], dRecFile['id']));
                 reporter.addLogFile(dRecFile['file'],
                                     'screenrecording/failure' if reporter.testErrorCount() > 0 else 'screenrecording/success',
                                     'Recording of screen #%d' % (dRecFile['id'],));
