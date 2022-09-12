@@ -1,4 +1,4 @@
-; $Id: VBoxGuestAdditionsNT4.nsh 153570 2022-09-11 00:34:46Z knut.osmundsen@oracle.com $
+; $Id: VBoxGuestAdditionsNT4.nsh 153576 2022-09-12 08:40:05Z knut.osmundsen@oracle.com $
 ;; @file
 ; VBoxGuestAdditionsNT4.nsh - Guest Additions installation for NT4.
 ;
@@ -234,7 +234,7 @@ Function ${un}NT4_UninstallInstDir
 
 FunctionEnd
 !macroend
-!insertmacro NT4_UninstallInstDir ""
+;!insertmacro NT4_UninstallInstDir "" - only .un version used
 !insertmacro NT4_UninstallInstDir "un."
 
 !macro NT4_Uninstall un
