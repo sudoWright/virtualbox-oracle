@@ -1,4 +1,4 @@
-/* $Id: UISettingsDialogSpecific.h 153224 2022-08-22 17:43:14Z klaus.espenlaub@oracle.com $ */
+/* $Id: UISettingsDialogSpecific.h 154107 2022-10-13 14:29:18Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UISettingsDialogSpecific class declaration.
  */
@@ -152,9 +152,6 @@ private:
 
     /** Returns whether page with certain @a iPageId is available. */
     bool isPageAvailable(int iPageId) const;
-
-    /** Returns whether settings were changed. */
-    bool isSettingsChanged();
 
     /** Recalculates configuration access level. */
     void updateConfigurationAccessLevel();
