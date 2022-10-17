@@ -1,4 +1,4 @@
-/* $Id: NEMR3.cpp 153224 2022-08-22 17:43:14Z klaus.espenlaub@oracle.com $ */
+/* $Id: NEMR3.cpp 154150 2022-10-17 17:47:19Z alexander.eichner@oracle.com $ */
 /** @file
  * NEM - Native execution manager.
  */
@@ -100,6 +100,7 @@ VMMR3_INT_DECL(int) NEMR3InitConfig(PVM pVM)
                                   "|VmxPleGap"
                                   "|VmxPleWindow"
                                   "|VmxLbr"
+                                  "|CatalinaWxWorkaround"
 #endif
                                   ,
                                   "" /* pszValidNodes */, "NEM" /* pszWho */, 0 /* uInstance */);
