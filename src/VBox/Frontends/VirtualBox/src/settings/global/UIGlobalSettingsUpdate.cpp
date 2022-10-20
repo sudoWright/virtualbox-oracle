@@ -1,4 +1,4 @@
-/* $Id: UIGlobalSettingsUpdate.cpp 153224 2022-08-22 17:43:14Z klaus.espenlaub@oracle.com $ */
+/* $Id: UIGlobalSettingsUpdate.cpp 154224 2022-10-20 08:44:32Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIGlobalSettingsUpdate class implementation.
  */
@@ -74,6 +74,11 @@ UIGlobalSettingsUpdate::UIGlobalSettingsUpdate()
 UIGlobalSettingsUpdate::~UIGlobalSettingsUpdate()
 {
     cleanup();
+}
+
+bool UIGlobalSettingsUpdate::changed() const
+{
+    return m_pCache ? m_pCache->wasChanged() : false;
 }
 
 void UIGlobalSettingsUpdate::loadToCacheFrom(QVariant &data)
