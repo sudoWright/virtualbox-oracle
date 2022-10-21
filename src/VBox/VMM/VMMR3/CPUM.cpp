@@ -1,4 +1,4 @@
-/* $Id: CPUM.cpp 154250 2022-10-21 12:08:51Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: CPUM.cpp 154251 2022-10-21 12:27:59Z ramshankar.venkataraman@oracle.com $ */
 /** @file
  * CPUM - CPU Monitor / Manager.
  */
@@ -1772,6 +1772,8 @@ void cpumR3InitVmxGuestFeaturesAndMsrs(PVM pVM, PCFGMNODE pCpumCfg, PCVMXMSRS pH
          */
         rc = CFGMR3QueryBoolDef(pCpumCfg, "NestedVmxUnrestrictedGuest", &fVmxUnrestrictedGuest, fVmxEpt);
         AssertLogRelRCReturnVoid(rc);
+#else
+        fVmxEpt = fVmxUnrestrictedGuest = false;
 #endif
     }
 
