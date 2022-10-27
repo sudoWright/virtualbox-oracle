@@ -1,7 +1,7 @@
 #! /bin/sh
-# $Id: vboxadd.sh 154316 2022-10-27 15:00:51Z vadim.galitsyn@oracle.com $
+# $Id: vboxadd.sh 154317 2022-10-27 15:22:59Z vadim.galitsyn@oracle.com $
 ## @file
-# Linux Additions kernel module init script ($Revision: 154316 $)
+# Linux Additions kernel module init script ($Revision: 154317 $)
 #
 
 #
@@ -630,7 +630,7 @@ module_signed()
     [ -n "$printf_tool"     ] || return
 
     # Make sure openssl can handle hash algorithm.
-    sig_hashalgo=$(modinfo -F sig_hashalgo vboxdrv 2>/dev/null)
+    sig_hashalgo=$(modinfo -F sig_hashalgo "$mod" 2>/dev/null)
     [ "$(module_sig_hash_supported $sig_hashalgo)" = "1" ] || return
 
     # Generate file names for temporary stuff.
