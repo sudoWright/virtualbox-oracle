@@ -1,4 +1,4 @@
-/* $Id: UnattendedImpl.cpp 154358 2022-11-01 01:33:46Z brian.le.lee@oracle.com $ */
+/* $Id: UnattendedImpl.cpp 154360 2022-11-01 07:21:31Z andreas.loeffler@oracle.com $ */
 /** @file
  * Unattended class implementation
  */
@@ -4218,7 +4218,7 @@ HRESULT Unattended::i_attachImage(UnattendedInstallationDisk const *pImage, ComP
     {
         if (pImage->fAuxiliary && pImage->strImagePath.endsWith(".viso"))
         {
-            rc = ptrMedium->SetProperty(L"UnattendedInstall", L"1");
+            rc = ptrMedium->SetProperty(Bstr(L"UnattendedInstall").raw(), Bstr(L"1").raw());
             LogRelFlowFunc(("Medium::SetProperty -> %Rhrc\n", rc));
         }
 
