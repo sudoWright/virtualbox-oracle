@@ -1,4 +1,4 @@
-/* $Id: UINetworkFeaturesEditor.cpp 153224 2022-08-22 17:43:14Z klaus.espenlaub@oracle.com $ */
+/* $Id: UINetworkFeaturesEditor.cpp 154366 2022-11-01 12:39:06Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UINetworkFeaturesEditor class implementation.
  */
@@ -210,7 +210,7 @@ void UINetworkFeaturesEditor::setCableOptionsAvailable(bool fAvailable)
 
 void UINetworkFeaturesEditor::setForwardingOptionsAvailable(bool fAvailable)
 {
-    m_pButtonPortForwarding->setEnabled(fAvailable);
+    m_pButtonPortForwarding->setVisible(fAvailable);
 }
 
 int UINetworkFeaturesEditor::minimumLabelHorizontalHint() const
