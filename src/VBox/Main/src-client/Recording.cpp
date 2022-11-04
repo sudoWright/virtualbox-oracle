@@ -1,4 +1,4 @@
-/* $Id: Recording.cpp 153224 2022-08-22 17:43:14Z klaus.espenlaub@oracle.com $ */
+/* $Id: Recording.cpp 154406 2022-11-04 16:22:59Z andreas.loeffler@oracle.com $ */
 /** @file
  * Recording context code.
  *
@@ -836,11 +836,13 @@ bool RecordingContext::NeedsUpdate( uint32_t uScreen, uint64_t msTimestamp)
 
     if (m_enmState == RECORDINGSTS_STARTED)
     {
+#ifdef VBOX_WITH_AUDIO_RECORDING
         if (   recordingCodecIsInitialized(&m_CodecAudio)
             && recordingCodecGetWritable(&m_CodecAudio, msTimestamp) > 0)
         {
             fNeedsUpdate = true;
         }
+#endif /* VBOX_WITH_AUDIO_RECORDING */
 
         if (!fNeedsUpdate)
         {
