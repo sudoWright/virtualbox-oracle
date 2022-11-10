@@ -1,4 +1,4 @@
-/* $Id: UIVMLogViewerTextEdit.h 153224 2022-08-22 17:43:14Z klaus.espenlaub@oracle.com $ */
+/* $Id: UIVMLogViewerTextEdit.h 154519 2022-11-10 15:30:07Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVMLogViewer class declaration.
  */
@@ -78,6 +78,8 @@ public:
     int  currentVerticalScrollBarValue() const;
     void setCurrentVerticalScrollBarValue(int value);
     void setCurrentFont(QFont font);
+    void saveScrollBarPosition();
+    void restoreScrollBarPosition();
 
 protected:
 
@@ -123,6 +125,7 @@ private:
     QString      m_strBackgroungText;
     friend class UILineNumberArea;
     bool         m_bHasContextMenu;
+    int          m_iVerticalScrollBarValue;
  };
 
 
