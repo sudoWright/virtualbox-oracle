@@ -1,4 +1,4 @@
-/* $Id: UIMachineLogic.h 154535 2022-11-11 12:25:24Z sergey.dubov@oracle.com $ */
+/* $Id: UIMachineLogic.h 154537 2022-11-11 12:46:18Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIMachineLogic class declaration.
  */
@@ -201,7 +201,7 @@ protected:
 
     /* Protected getters/setters: */
     bool isMachineWindowsCreated() const { return m_fIsWindowsCreated; }
-    void setMachineWindowsCreated(bool fIsWindowsCreated);
+    void setMachineWindowsCreated(bool fIsWindowsCreated) { m_fIsWindowsCreated = fIsWindowsCreated; }
 
     /* Protected members: */
     void setKeyboardHandler(UIKeyboardHandler *pKeyboardHandler);
