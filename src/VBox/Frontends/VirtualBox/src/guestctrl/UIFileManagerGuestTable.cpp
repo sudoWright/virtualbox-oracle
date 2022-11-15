@@ -1,4 +1,4 @@
-/* $Id: UIFileManagerGuestTable.cpp 154518 2022-11-10 15:06:32Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIFileManagerGuestTable.cpp 154585 2022-11-15 16:39:20Z andreas.loeffler@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIFileManagerGuestTable class implementation.
  */
@@ -688,7 +688,7 @@ void UIFileManagerGuestTable::copyHostToGuest(const QStringList &hostSourcePathL
         return;
     }
     QString strDirectoryFlags("CopyIntoExisting,Recursive,FollowLinks");
-    QString strFileFlags;
+    QString strFileFlags("FollowLinks");
     foreach (const QString &strSource, sourcePaths)
     {
         KFsObjType enmFileType = UIFileManagerHostTable::fileType(strSource);
