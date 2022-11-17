@@ -1,4 +1,4 @@
-/* $Id: UITranslator.h 154349 2022-10-31 16:58:43Z sergey.dubov@oracle.com $ */
+/* $Id: UITranslator.h 154628 2022-11-17 10:51:14Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UITranslator class declaration.
  */
@@ -128,6 +128,11 @@ public:
 
     /** Returns whether we are performing translation currently. */
     static bool isTranslationInProgress();
+
+    /* Converts bytes string to megabytes string. */
+    static QString byteStringToMegaByteString(const QString &strByteString);
+    /* Converts megabytes string to bytes string. */
+    static QString megabyteStringToByteString(const QString &strMegaByteString);
 
 private:
 
