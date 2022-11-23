@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# $Id: virtual_test_sheriff.py 154687 2022-11-21 17:00:17Z andreas.loeffler@oracle.com $
+# $Id: virtual_test_sheriff.py 154714 2022-11-23 07:36:43Z andreas.loeffler@oracle.com $
 # pylint: disable=line-too-long
 
 """
@@ -45,7 +45,7 @@ terms and conditions of either the GPL or the CDDL or both.
 
 SPDX-License-Identifier: GPL-3.0-only OR CDDL-1.0
 """
-__version__ = "$Revision: 154687 $"
+__version__ = "$Revision: 154714 $"
 
 
 # Standard python imports
@@ -350,7 +350,7 @@ class VirtualTestSheriff(object): # pylint: disable=too-few-public-methods
 
         if self.oConfig.sLogFile:
             self.oLogFile = open(self.oConfig.sLogFile, "a");   # pylint: disable=consider-using-with
-            self.oLogFile.write('VirtualTestSheriff: $Revision: 154687 $ \n');
+            self.oLogFile.write('VirtualTestSheriff: $Revision: 154714 $ \n');
 
 
     def eprint(self, sText):
@@ -758,7 +758,7 @@ class VirtualTestSheriff(object): # pylint: disable=too-few-public-methods
         for idTestResult, tReason in dReasonForResultId.items():
             oFailureReason = self.getFailureReason(tReason);
             if oFailureReason is not None:
-                sComment = 'Set by $Revision: 154687 $' # Handy for reverting later.
+                sComment = 'Set by $Revision: 154714 $' # Handy for reverting later.
                 if idTestResult in dCommentForResultId:
                     sComment += ': ' + dCommentForResultId[idTestResult];
 
@@ -1473,10 +1473,10 @@ class VirtualTestSheriff(object): # pylint: disable=too-few-public-methods
         # ( Whether to stop on hit, reason tuple, needle text. )
         ( False, ktReason_Unknown_VM_Crash,      re.compile(r'Reaper.* exited normally: -1073741819 \(0xc0000005\)') ),
         ( False, ktReason_Unknown_VM_Crash,      re.compile(r'Reaper.* was signalled: 11 \(0xb\)') ), # For VBox <= 6.1.
-        ( False, ktReason_Unknown_VM_Crash,      re.compile(r'Reaper.* was signalled: SIGABRT') ),    # Since VBox 7.0.
-        ( False, ktReason_Unknown_VM_Crash,      re.compile(r'Reaper.* was signalled: SIGSEGV') ),
-        ( False, ktReason_Unknown_VM_Terminated, re.compile(r'Reaper.* was signalled: SIGTERM') ),
-        ( False, ktReason_Unknown_VM_Terminated, re.compile(r'Reaper.* was signalled: SIGKILL') ),
+        ( False, ktReason_Unknown_VM_Crash,      re.compile(r'Reaper.* was signalled: SIGABRT .*') ),    # Since VBox 7.0.
+        ( False, ktReason_Unknown_VM_Crash,      re.compile(r'Reaper.* was signalled: SIGSEGV .*') ),
+        ( False, ktReason_Unknown_VM_Terminated, re.compile(r'Reaper.* was signalled: SIGTERM .*') ),
+        ( False, ktReason_Unknown_VM_Terminated, re.compile(r'Reaper.* was signalled: SIGKILL .*') ),
     ];
 
     def investigateSvcLogForVMRun(self, oCaseFile, sSvcLog):
