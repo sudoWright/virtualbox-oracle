@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# $Id: wuigraphwiz.py 153224 2022-08-22 17:43:14Z klaus.espenlaub@oracle.com $
+# $Id: wuigraphwiz.py 154728 2022-11-24 11:46:15Z andreas.loeffler@oracle.com $
 
 """
 Test Manager WUI - Graph Wizard
@@ -36,7 +36,7 @@ terms and conditions of either the GPL or the CDDL or both.
 
 SPDX-License-Identifier: GPL-3.0-only OR CDDL-1.0
 """
-__version__ = "$Revision: 153224 $"
+__version__ = "$Revision: 154728 $"
 
 # Python imports.
 import functools;
@@ -219,7 +219,7 @@ class WuiGraphWiz(WuiReportBase):
             return [aoSeries,];
 
         # Split on unit.
-        dUnitSeries = dict();
+        dUnitSeries = {};
         for oSeries in aoSeries:
             if oSeries.iUnit not in dUnitSeries:
                 dUnitSeries[oSeries.iUnit] = [];

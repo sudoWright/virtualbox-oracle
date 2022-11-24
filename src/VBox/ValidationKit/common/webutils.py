@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# $Id: webutils.py 153224 2022-08-22 17:43:14Z klaus.espenlaub@oracle.com $
+# $Id: webutils.py 154728 2022-11-24 11:46:15Z andreas.loeffler@oracle.com $
 
 """
 Common Web Utility Functions.
@@ -36,7 +36,7 @@ terms and conditions of either the GPL or the CDDL or both.
 
 SPDX-License-Identifier: GPL-3.0-only OR CDDL-1.0
 """
-__version__ = "$Revision: 153224 $"
+__version__ = "$Revision: 154728 $"
 
 # Standard Python imports.
 import os;
@@ -172,7 +172,7 @@ def downloadFile(sUrlFile, sDstFile, sLocalPrefix, fnLog, fnError = None, fNoPro
             if not fNoProxies:
                 oOpener = urllib_build_opener();
             else:
-                oOpener = urllib_build_opener(urllib_ProxyHandler(proxies = dict()));
+                oOpener = urllib_build_opener(urllib_ProxyHandler(proxies = {} ));
             oSrc = oOpener.open(sUrlFile);
             oDst = utils.openNoInherit(sDstFile, 'wb');
             oDst.write(oSrc.read());

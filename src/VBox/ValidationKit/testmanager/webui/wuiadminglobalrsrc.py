@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# $Id: wuiadminglobalrsrc.py 153224 2022-08-22 17:43:14Z klaus.espenlaub@oracle.com $
+# $Id: wuiadminglobalrsrc.py 154728 2022-11-24 11:46:15Z andreas.loeffler@oracle.com $
 
 """
 Test Manager WUI - Global resources.
@@ -36,7 +36,7 @@ terms and conditions of either the GPL or the CDDL or both.
 
 SPDX-License-Identifier: GPL-3.0-only OR CDDL-1.0
 """
-__version__ = "$Revision: 153224 $"
+__version__ = "$Revision: 154728 $"
 
 # Validation Kit imports.
 from testmanager.webui.wuibase          import WuiException
@@ -76,7 +76,7 @@ class WuiGlobalResource(WuiContentBase):
 
         oForm = WuiHlpForm('globalresourceform',
                            sFormActionUrl,
-                           dErrors if dErrors is not None else dict())
+                           dErrors if dErrors is not None else {})
 
         if sAction == WuiAdmin.ksActionGlobalRsrcAdd:
             oForm.addIntRO  (GlobalResourceData.ksParam_idGlobalRsrc,    self._oData.idGlobalRsrc,   'Global Resource ID')

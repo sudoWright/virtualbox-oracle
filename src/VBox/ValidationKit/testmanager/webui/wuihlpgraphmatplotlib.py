@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# $Id: wuihlpgraphmatplotlib.py 153224 2022-08-22 17:43:14Z klaus.espenlaub@oracle.com $
+# $Id: wuihlpgraphmatplotlib.py 154728 2022-11-24 11:46:15Z andreas.loeffler@oracle.com $
 
 """
 Test Manager Web-UI - Graph Helpers - Implemented using matplotlib.
@@ -36,7 +36,7 @@ terms and conditions of either the GPL or the CDDL or both.
 
 SPDX-License-Identifier: GPL-3.0-only OR CDDL-1.0
 """
-__version__ = "$Revision: 153224 $"
+__version__ = "$Revision: 154728 $"
 
 # Standard Python Import and extensions installed on the system.
 import re;
@@ -126,10 +126,10 @@ class WuiHlpBarGraph(WuiHlpGraphMatplotlibBase):
         #
         # Extract/structure the required data.
         #
-        aoSeries = list();
+        aoSeries = [];
         for j in range(len(aoTable[1].aoValues)):
-            aoSeries.append(list());
-        asNames  = list();
+            aoSeries.append([]);
+        asNames  = [];
         oXRange  = numpy_arange(self._oData.getGroupCount());
         fpMin = self.fpMin;
         fpMax = self.fpMax;
@@ -155,7 +155,7 @@ class WuiHlpBarGraph(WuiHlpGraphMatplotlibBase):
         oFigure = self._createFigure();
         oSubPlot = oFigure.add_subplot(1, 1, 1);
 
-        aoBars = list();
+        aoBars = [];
         for i, _ in enumerate(aoSeries):
             sColor = self.calcSeriesColor(i);
             aoBars.append(oSubPlot.bar(oXRange + self.cxBarWidth * i,
