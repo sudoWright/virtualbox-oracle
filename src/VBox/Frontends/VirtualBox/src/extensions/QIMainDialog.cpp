@@ -1,4 +1,4 @@
-/* $Id: QIMainDialog.cpp 154104 2022-10-13 14:17:55Z sergey.dubov@oracle.com $ */
+/* $Id: QIMainDialog.cpp 154737 2022-11-25 12:57:28Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - Qt extensions: QIMainDialog class implementation.
  */
@@ -244,7 +244,7 @@ void QIMainDialog::polishEvent(QShowEvent *)
 {
     /* Explicit centering according to our parent: */
     if (m_fIsAutoCentering)
-        UIDesktopWidgetWatchdog::centerWidget(this, parentWidget(), false);
+        gpDesktop->centerWidget(this, parentWidget(), false);
 }
 
 void QIMainDialog::resizeEvent(QResizeEvent *pEvent)
