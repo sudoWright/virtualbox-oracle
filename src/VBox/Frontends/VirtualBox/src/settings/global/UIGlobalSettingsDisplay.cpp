@@ -1,4 +1,4 @@
-/* $Id: UIGlobalSettingsDisplay.cpp 154298 2022-10-26 15:28:31Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIGlobalSettingsDisplay.cpp 154736 2022-11-25 12:30:39Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIGlobalSettingsDisplay class implementation.
  */
@@ -142,7 +142,7 @@ void UIGlobalSettingsDisplay::getFromCache()
     if (m_pEditorScaleFactor)
     {
         m_pEditorScaleFactor->setScaleFactors(oldData.m_scaleFactors);
-        m_pEditorScaleFactor->setMonitorCount(gpDesktop->screenCount());
+        m_pEditorScaleFactor->setMonitorCount(UIDesktopWidgetWatchdog::screenCount());
     }
     if (m_pEditorGlobalDisplayFeatures)
     {
