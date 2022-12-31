@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# $Id: tdCloneMedium1.py 155025 2022-12-31 21:58:24Z jack.doherty@oracle.com $
+# $Id: tdCloneMedium1.py 155026 2022-12-31 22:10:24Z jack.doherty@oracle.com $
 
 """
 VirtualBox Validation Kit - Clone Medium Test #1
@@ -37,7 +37,7 @@ terms and conditions of either the GPL or the CDDL or both.
 
 SPDX-License-Identifier: GPL-3.0-only OR CDDL-1.0
 """
-__version__ = "$Revision: 155025 $"
+__version__ = "$Revision: 155026 $"
 
 
 # Standard Python imports.
