@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# $Id: setup.sh 154926 2022-12-20 11:39:29Z alexander.eichner@oracle.com $
+# $Id: setup.sh 155040 2023-01-03 13:19:53Z ksenia.s.stepanova@oracle.com $
 ## @file
 # VirtualBox Validation Kit - TestBoxScript Service Setup on Unixy platforms.
 #
@@ -148,7 +148,7 @@ get_host_arch() {
         hppa64|parisc64)
             RETVAL='hppa64'
             ;;
-        arm|armv4l|armv5tel|armv5tejl)
+        arm|arm64|armv4l|armv5tel|armv5tejl)
             RETVAL='arm'
             ;;
         arm64|aarch64)
@@ -624,7 +624,7 @@ do
             exit 0;
             ;;
         -V|--version)
-            echo '$Revision: 154926 $'
+            echo '$Revision: 155040 $'
             exit 0;
             ;;
 
