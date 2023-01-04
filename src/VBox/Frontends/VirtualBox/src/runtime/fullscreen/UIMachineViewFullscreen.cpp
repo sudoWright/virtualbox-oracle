@@ -1,4 +1,4 @@
-/* $Id: UIMachineViewFullscreen.cpp 155066 2023-01-04 11:28:02Z sergey.dubov@oracle.com $ */
+/* $Id: UIMachineViewFullscreen.cpp 155067 2023-01-04 11:56:32Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIMachineViewFullscreen class implementation.
  */
@@ -76,8 +76,8 @@ bool UIMachineViewFullscreen::eventFilter(QObject *pWatched, QEvent *pEvent)
                 if (pResizeEvent->size() != workingArea().size())
                     break;
 
-                /* Recalculate max guest size: */
-                setMaxGuestSize();
+                /* Recalculate maximum guest size: */
+                setMaximumGuestSize();
 
                 break;
             }
