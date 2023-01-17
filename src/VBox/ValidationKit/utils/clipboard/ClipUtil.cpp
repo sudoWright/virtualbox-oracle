@@ -1,10 +1,10 @@
-/* $Id: ClipUtil.cpp 153224 2022-08-22 17:43:14Z klaus.espenlaub@oracle.com $ */
+/* $Id: ClipUtil.cpp 155244 2023-01-17 14:15:46Z knut.osmundsen@oracle.com $ */
 /** @file
  * ClipUtil - Clipboard Utility
  */
 
 /*
- * Copyright (C) 2021-2022 Oracle and/or its affiliates.
+ * Copyright (C) 2021-2023 Oracle and/or its affiliates.
  *
  * This file is part of VirtualBox base platform packages, as
  * available from https://www.virtualbox.org.
@@ -1761,7 +1761,7 @@ int main(int argc, char *argv[])
 
             case 'V':
             {
-                char szRev[] = "$Revision: 153224 $";
+                char szRev[] = "$Revision: 155244 $";
                 szRev[RT_ELEMENTS(szRev) - 2] = '\0';
                 RTPrintf(RTStrStrip(strchr(szRev, ':') + 1));
                 return RTEXITCODE_SUCCESS;

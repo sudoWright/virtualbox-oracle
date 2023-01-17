@@ -1,10 +1,10 @@
-/* $Id: DBGFMem.cpp 153851 2022-09-30 00:07:38Z knut.osmundsen@oracle.com $ */
+/* $Id: DBGFMem.cpp 155244 2023-01-17 14:15:46Z knut.osmundsen@oracle.com $ */
 /** @file
  * DBGF - Debugger Facility, Memory Methods.
  */
 
 /*
- * Copyright (C) 2007-2022 Oracle and/or its affiliates.
+ * Copyright (C) 2007-2023 Oracle and/or its affiliates.
  *
  * This file is part of VirtualBox base platform packages, as
  * available from https://www.virtualbox.org.

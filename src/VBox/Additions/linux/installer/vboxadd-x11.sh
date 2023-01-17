@@ -1,11 +1,11 @@
 #! /bin/sh
-# $Id: vboxadd-x11.sh 153224 2022-08-22 17:43:14Z klaus.espenlaub@oracle.com $
+# $Id: vboxadd-x11.sh 155244 2023-01-17 14:15:46Z knut.osmundsen@oracle.com $
 ## @file
-# Linux Additions X11 setup init script ($Revision: 153224 $)
+# Linux Additions X11 setup init script ($Revision: 155244 $)
 #
 
 #
-# Copyright (C) 2006-2022 Oracle and/or its affiliates.
+# Copyright (C) 2006-2023 Oracle and/or its affiliates.
 #
 # This file is part of VirtualBox base platform packages, as
 # available from https://www.virtualbox.org.

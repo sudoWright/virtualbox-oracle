@@ -1,10 +1,10 @@
-﻿/* $Id: ntBldSymDb.cpp 153229 2022-08-22 19:52:30Z klaus.espenlaub@oracle.com $ */
+﻿/* $Id: ntBldSymDb.cpp 155244 2023-01-17 14:15:46Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - RTDirCreateUniqueNumbered, generic implementation.
  */
 
 /*
- * Copyright (C) 2013-2022 Oracle and/or its affiliates.
+ * Copyright (C) 2013-2023 Oracle and/or its affiliates.
  *
  * This file is part of VirtualBox base platform packages, as
  * available from https://www.virtualbox.org.
@@ -1175,7 +1175,7 @@ int main(int argc, char **argv)
                 break;
 
             case 'V':
-                RTPrintf("$Revision: 153229 $");
+                RTPrintf("$Revision: 155244 $");
                 break;
 
             case 'h':

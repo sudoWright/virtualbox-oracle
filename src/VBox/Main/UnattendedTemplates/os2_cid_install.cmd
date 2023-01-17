@@ -1,11 +1,11 @@
 @ECHO OFF
-REM $Id: os2_cid_install.cmd 153224 2022-08-22 17:43:14Z klaus.espenlaub@oracle.com $
+REM $Id: os2_cid_install.cmd 155244 2023-01-17 14:15:46Z knut.osmundsen@oracle.com $
 REM REM @fileREM
 REM VirtualBox CID Installation - main driver script for boot CD/floppy.
 REM
 
 REM
-REM Copyright (C) 2004-2022 Oracle and/or its affiliates.
+REM Copyright (C) 2004-2023 Oracle and/or its affiliates.
 REM
 REM This file is part of VirtualBox base platform packages, as
 REM available from https://www.virtualbox.org.

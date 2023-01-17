@@ -1,10 +1,10 @@
-/* $Id: RTTraceLogTool.cpp 153224 2022-08-22 17:43:14Z klaus.espenlaub@oracle.com $ */
+/* $Id: RTTraceLogTool.cpp 155244 2023-01-17 14:15:46Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Utility for reading/receiving and dissecting trace logs.
  */
 
 /*
- * Copyright (C) 2018-2022 Oracle and/or its affiliates.
+ * Copyright (C) 2018-2023 Oracle and/or its affiliates.
  *
  * This file is part of VirtualBox base platform packages, as
  * available from https://www.virtualbox.org.
@@ -216,7 +216,7 @@ int main(int argc, char **argv)
                          , RTPathFilename(argv[0]));
                 return RTEXITCODE_SUCCESS;
             case 'V':
-                RTPrintf("$Revision: 153224 $\n");
+                RTPrintf("$Revision: 155244 $\n");
                 return RTEXITCODE_SUCCESS;
 
             case 'i':
