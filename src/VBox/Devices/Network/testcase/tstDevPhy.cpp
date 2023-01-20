@@ -1,4 +1,4 @@
-/* $Id: tstDevPhy.cpp 155244 2023-01-17 14:15:46Z knut.osmundsen@oracle.com $ */
+/* $Id: tstDevPhy.cpp 155355 2023-01-20 20:48:14Z knut.osmundsen@oracle.com $ */
 /** @file
  * PHY MDIO unit tests.
  */
@@ -165,7 +165,7 @@ void PhyTest::writeTo(uint16_t addr, uint32_t value)
 }
 
 // Create text test runner and run all tests.
-int main( int argc, char **argv)
+int main()
 {
     CppUnit::TextUi::TestRunner runner;
     runner.addTest( PhyTest::suite() );
