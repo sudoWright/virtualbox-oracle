@@ -1,4 +1,4 @@
-/* $Id: ConsoleImpl.cpp 155463 2023-01-24 01:52:49Z knut.osmundsen@oracle.com $ */
+/* $Id: ConsoleImpl.cpp 155467 2023-01-24 09:12:26Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Console COM Class implementation
  */
@@ -6259,8 +6259,7 @@ HRESULT Console::i_onUSBDeviceDetach(IN_BSTR aId,
         AutoVMCallerQuiet autoVMCaller(this);
         if (FAILED(autoVMCaller.hrc()))
         {
-            LogFlowThisFunc(("Detach request ignored (mMachineState=%d).\n",
-                              mMachineState));
+            LogFlowThisFunc(("Detach request ignored (mMachineState=%d).\n", mMachineState));
             return autoVMCaller.hrc();
         }
 
