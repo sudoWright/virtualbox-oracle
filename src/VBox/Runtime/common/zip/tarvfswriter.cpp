@@ -1,4 +1,4 @@
-/* $Id: tarvfswriter.cpp 155244 2023-01-17 14:15:46Z knut.osmundsen@oracle.com $ */
+/* $Id: tarvfswriter.cpp 155541 2023-01-26 15:59:04Z alexander.eichner@oracle.com $ */
 /** @file
  * IPRT - TAR Virtual Filesystem, Writer.
  */
@@ -52,7 +52,7 @@
 #include <iprt/vfslowlevel.h>
 #include <iprt/zero.h>
 
-#include "tar.h"
+#include <iprt/formats/tar.h>
 
 #include "tarvfsreader.h"
 
