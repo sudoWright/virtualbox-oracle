@@ -1,4 +1,4 @@
-/* $Id: UISession.h 155700 2023-02-02 17:10:37Z sergey.dubov@oracle.com $ */
+/* $Id: UISession.h 155748 2023-02-07 10:26:50Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UISession class declaration.
  */
@@ -257,6 +257,12 @@ public:
         const QVector<UIFrameBuffer*> &frameBuffers() const { return m_frameBufferVector; }
         /** Returns frame-buffer size for screen with index @a uScreenId. */
         QSize frameBufferSize(ulong uScreenId) const;
+    /** @} */
+
+    /** @name Status-bar stuff.
+     ** @{ */
+        /** Acquires device activity composing a vector of current @a states for device with @a deviceTypes specified. */
+        void acquireDeviceActivity(const QVector<KDeviceType> &deviceTypes, QVector<KDeviceActivity> &states);
     /** @} */
 
     /** @name Close stuff.
