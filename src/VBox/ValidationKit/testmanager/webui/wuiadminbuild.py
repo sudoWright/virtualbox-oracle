@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# $Id: wuiadminbuild.py 155244 2023-01-17 14:15:46Z knut.osmundsen@oracle.com $
+# $Id: wuiadminbuild.py 155817 2023-02-10 18:22:43Z knut.osmundsen@oracle.com $
 
 """
 Test Manager WUI - Builds.
@@ -36,7 +36,7 @@ terms and conditions of either the GPL or the CDDL or both.
 
 SPDX-License-Identifier: GPL-3.0-only OR CDDL-1.0
 """
-__version__ = "$Revision: 155244 $"
+__version__ = "$Revision: 155817 $"
 
 
 # Validation Kit imports.
@@ -87,7 +87,6 @@ class WuiAdminBuildList(WuiListContentBase):
     WUI Admin Build List Content Generator.
     """
 
-    ksResultsSortByOs_Darwin = ''
     def __init__(self, aoEntries, iPage, cItemsPerPage, tsEffective, fnDPrint, oDisp, aiSelectedSortColumns = None):
         WuiListContentBase.__init__(self, aoEntries, iPage, cItemsPerPage, tsEffective,
                                     sTitle = 'Builds', sId = 'builds', fnDPrint = fnDPrint, oDisp = oDisp,
