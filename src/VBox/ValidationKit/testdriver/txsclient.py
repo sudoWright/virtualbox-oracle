@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# $Id: txsclient.py 155244 2023-01-17 14:15:46Z knut.osmundsen@oracle.com $
+# $Id: txsclient.py 155869 2023-02-15 12:44:55Z knut.osmundsen@oracle.com $
 # pylint: disable=too-many-lines
 
 """
@@ -36,7 +36,7 @@ terms and conditions of either the GPL or the CDDL or both.
 
 SPDX-License-Identifier: GPL-3.0-only OR CDDL-1.0
 """
-__version__ = "$Revision: 155244 $"
+__version__ = "$Revision: 155869 $"
 
 # Standard Python imports.
 import array;
@@ -874,8 +874,9 @@ class Session(TdTaskBase):
                     uStreamCrc32 = getU32(abPayload, 0);
                     oOut.uTxsClientCrc32 = zlib.crc32(abPayload[4:], oOut.uTxsClientCrc32);
                     if uStreamCrc32 != (oOut.uTxsClientCrc32 & 0xffffffff):
-                        sFailure = 'crc error - mine=%#x their=%#x (%s, %u bytes)' \
-                            % (oOut.uTxsClientCrc32 & 0xffffffff, uStreamCrc32, sOpcode, cbMsg);
+                        sFailure = 'crc error - mine=%#x their=%#x (%s, %u bytes: %s)' \
+                            % (oOut.uTxsClientCrc32 & 0xffffffff, uStreamCrc32, sOpcode, cbMsg,
+                               ' '.join(['%02x' % (b,) for b in abPayload]),);
                         reporter.maybeErr(self.fErr, 'taskExecEx: %s' % (sFailure));
                         rc = None;
                         break;
