@@ -1,4 +1,4 @@
-/* $Id: UISession.h 155917 2023-02-17 15:21:52Z sergey.dubov@oracle.com $ */
+/* $Id: UISession.h 155953 2023-02-20 13:36:19Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UISession class declaration.
  */
@@ -229,6 +229,8 @@ public:
         bool isGuestScreenUnDrawable() const { return    machineState() == KMachineState_Stopping
                                                       || machineState() == KMachineState_Saving; }
 
+        /** Resets VM. */
+        bool reset();
         /** Performes VM pausing. */
         bool pause() { return setPause(true); }
         /** Performes VM resuming. */
