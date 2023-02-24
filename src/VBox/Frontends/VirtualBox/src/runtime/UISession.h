@@ -1,4 +1,4 @@
-/* $Id: UISession.h 156022 2023-02-24 13:24:27Z sergey.dubov@oracle.com $ */
+/* $Id: UISession.h 156024 2023-02-24 14:10:32Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UISession class declaration.
  */
@@ -242,6 +242,12 @@ public:
         bool unpause() { return setPause(false); }
         /** Performes VM pausing/resuming depending on @a fPause state. */
         bool setPause(bool fPause);
+    /** @} */
+
+    /** @name Machine-data stuff.
+     ** @{ */
+        /** Saves machine data. */
+        bool saveSettings();
     /** @} */
 
     /** @name Snapshot stuff.
