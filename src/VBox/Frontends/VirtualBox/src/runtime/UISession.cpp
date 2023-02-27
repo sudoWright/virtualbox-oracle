@@ -1,4 +1,4 @@
-/* $Id: UISession.cpp 156051 2023-02-27 10:46:03Z sergey.dubov@oracle.com $ */
+/* $Id: UISession.cpp 156052 2023-02-27 10:55:42Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UISession class implementation.
  */
@@ -27,6 +27,7 @@
 
 /* Qt includes: */
 #include <QApplication>
+#include <QRegExp>
 #include <QWidget>
 #ifdef VBOX_WS_WIN
 # include <iprt/win/windows.h> /* Workaround for compile errors if included directly by QtWin. */
