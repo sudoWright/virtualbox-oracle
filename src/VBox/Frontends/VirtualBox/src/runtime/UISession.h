@@ -1,4 +1,4 @@
-/* $Id: UISession.h 156050 2023-02-27 10:36:45Z sergey.dubov@oracle.com $ */
+/* $Id: UISession.h 156051 2023-02-27 10:46:03Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UISession class declaration.
  */
@@ -246,6 +246,9 @@ public:
 
     /** @name Machine-data stuff.
      ** @{ */
+        /** Acquires settings file path. */
+        bool acquireSettingsFilePath(QString &strPath);
+
         /** Saves machine data. */
         bool saveSettings();
     /** @} */
