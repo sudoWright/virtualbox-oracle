@@ -1,4 +1,4 @@
-/* $Id: UIVMInformationDialog.cpp 156072 2023-02-28 07:56:36Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIVMInformationDialog.cpp 156075 2023-02-28 09:24:54Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVMInformationDialog class implementation.
  */
@@ -211,8 +211,7 @@ void UIVMInformationDialog::prepareTabWidget()
         m_pTabWidget->setTabIcon(Tabs_RuntimeInformation, UIIconPool::iconSet(":/session_info_runtime_16px.png"));
 
         /* Create Configuration Details tab: */
-        UIInformationConfiguration *pInformationConfigurationWidget =
-            new UIInformationConfiguration(this, m_pMachine->uisession()->console());
+        UIInformationConfiguration *pInformationConfigurationWidget = new UIInformationConfiguration(this);
         if (pInformationConfigurationWidget)
         {
             m_tabs.insert(Tabs_ConfigurationDetails, pInformationConfigurationWidget);
