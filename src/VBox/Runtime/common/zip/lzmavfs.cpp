@@ -1,4 +1,4 @@
-/* $Id: lzmavfs.cpp 156055 2023-02-27 14:45:01Z alexander.eichner@oracle.com $ */
+/* $Id: lzmavfs.cpp 156073 2023-02-28 08:56:51Z alexander.eichner@oracle.com $ */
 /** @file
  * IPRT - XZ/LZMA Compressor and Decompressor I/O Stream.
  */
@@ -41,6 +41,7 @@
 #include "internal/iprt.h"
 #include <iprt/zip.h>
 
+#include <iprt/asm.h>
 #include <iprt/assert.h>
 #include <iprt/crc.h>
 #include <iprt/ctype.h>
