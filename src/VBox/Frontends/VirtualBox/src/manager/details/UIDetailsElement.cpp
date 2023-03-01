@@ -1,4 +1,4 @@
-/* $Id: UIDetailsElement.cpp 155244 2023-01-17 14:15:46Z knut.osmundsen@oracle.com $ */
+/* $Id: UIDetailsElement.cpp 156127 2023-03-01 16:57:31Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIDetailsElement class implementation.
  */
@@ -1076,7 +1076,7 @@ void UIDetailsElement::popupStorageEditor(const QString &strValue)
     StorageSlot storageSlot = gpConverter->fromString<StorageSlot>(strValue.section(',', 1));
 
     /* Fill storage-menu: */
-    uiCommon().prepareStorageMenu(menu, this, SLOT(sltMountStorageMedium()),
+    uiCommon().prepareStorageMenu(&menu, this, SLOT(sltMountStorageMedium()),
                                   machine(), strControllerName, storageSlot);
 
     /* Exec menu: */
