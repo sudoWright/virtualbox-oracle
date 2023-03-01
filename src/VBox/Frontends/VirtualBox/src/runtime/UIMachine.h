@@ -1,4 +1,4 @@
-/* $Id: UIMachine.h 156128 2023-03-01 17:01:11Z sergey.dubov@oracle.com $ */
+/* $Id: UIMachine.h 156130 2023-03-01 17:20:14Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIMachine class declaration.
  */
@@ -515,6 +515,9 @@ public:
 
     /** @name Storage stuff.
      ** @{ */
+        /** Enumerates amount of storage devices. */
+        bool acquireAmountOfStorageDevices(ulong &cHardDisks, ulong &cOpticalDrives, ulong &cFloppyDrives);
+
         /** Returns a list of storage devices. */
         bool storageDevices(KDeviceType enmDeviceType, QList<StorageDeviceInfo> &guiStorageDevices);
 
