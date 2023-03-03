@@ -1,4 +1,4 @@
-/* $Id: AudioAdapterImpl.cpp 155493 2023-01-24 15:32:43Z knut.osmundsen@oracle.com $ */
+/* $Id: AudioAdapterImpl.cpp 156145 2023-03-03 10:24:48Z brent.paulson@oracle.com $ */
 /** @file
  * VirtualBox COM class implementation
  */
@@ -203,6 +203,8 @@ void AudioAdapter::uninit(void)
     AutoUninitSpan autoUninitSpan(this);
     if (autoUninitSpan.uninitDone())
         return;
+
+    m->bd.free();
 
     unconst(m->pPeer) = NULL;
     unconst(m->pParent) = NULL;
