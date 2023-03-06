@@ -1,4 +1,4 @@
-/* $Id: UIMachineViewSeamless.cpp 155840 2023-02-14 11:18:01Z sergey.dubov@oracle.com $ */
+/* $Id: UIMachineViewSeamless.cpp 156163 2023-03-06 15:13:04Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIMachineViewSeamless class implementation.
  */
@@ -71,7 +71,7 @@ void UIMachineViewSeamless::sltAdditionsStateChanged()
 void UIMachineViewSeamless::sltHandleSetVisibleRegion(QRegion region)
 {
     /* Apply new seamless-region: */
-    m_pFrameBuffer->handleSetVisibleRegion(region);
+    frameBuffer()->handleSetVisibleRegion(region);
 }
 
 bool UIMachineViewSeamless::eventFilter(QObject *pWatched, QEvent *pEvent)
