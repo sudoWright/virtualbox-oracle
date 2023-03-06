@@ -1,4 +1,4 @@
-/* $Id: UIVMLogViewerBookmarksPanel.cpp 155244 2023-01-17 14:15:46Z knut.osmundsen@oracle.com $ */
+/* $Id: UIVMLogViewerBookmarksPanel.cpp 156167 2023-03-06 17:21:13Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVMLogViewer class implementation.
  */
@@ -28,7 +28,6 @@
 /* Qt includes: */
 #include <QComboBox>
 #include <QHBoxLayout>
-#include <QLabel>
 #include <QStyle>
 #ifdef RT_OS_SOLARIS
 # include <QFontDatabase>
