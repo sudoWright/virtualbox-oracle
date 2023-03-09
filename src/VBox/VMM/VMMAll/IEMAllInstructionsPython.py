@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# $Id: IEMAllInstructionsPython.py 156210 2023-03-09 01:23:15Z knut.osmundsen@oracle.com $
+# $Id: IEMAllInstructionsPython.py 156211 2023-03-09 01:25:44Z knut.osmundsen@oracle.com $
 
 """
 IEM instruction extractor.
@@ -43,7 +43,7 @@ terms and conditions of either the GPL or the CDDL or both.
 
 SPDX-License-Identifier: GPL-3.0-only OR CDDL-1.0
 """
-__version__ = "$Revision: 156210 $"
+__version__ = "$Revision: 156211 $"
 
 # pylint: disable=anomalous-backslash-in-string,too-many-lines
 
@@ -1751,7 +1751,7 @@ class McStmt(object):
 
     def renderCode(self, cchIndent = 0):
         """
-        Renders the code for the statement. 
+        Renders the code for the statement.
         """
         return ' ' * cchIndent + self.sName + '(' + ', '.join(self.asParams) + ');';
 
