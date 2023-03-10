@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# $Id: IEMAllInstructionsPython.py 156240 2023-03-10 15:47:07Z knut.osmundsen@oracle.com $
+# $Id: IEMAllInstructionsPython.py 156241 2023-03-10 15:54:49Z knut.osmundsen@oracle.com $
 
 """
 IEM instruction extractor.
@@ -43,7 +43,7 @@ terms and conditions of either the GPL or the CDDL or both.
 
 SPDX-License-Identifier: GPL-3.0-only OR CDDL-1.0
 """
-__version__ = "$Revision: 156240 $"
+__version__ = "$Revision: 156241 $"
 
 # pylint: disable=anomalous-backslash-in-string,too-many-lines
 
@@ -1844,7 +1844,7 @@ class McCppCond(McStmtCond):
 
 class McCppPreProc(McCppGeneric):
     """
-    C++/C Preprocessor directive. 
+    C++/C Preprocessor directive.
     """
 
     def __init__(self, sCode):
