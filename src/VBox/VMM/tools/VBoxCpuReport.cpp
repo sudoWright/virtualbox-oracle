@@ -1,4 +1,4 @@
-/* $Id: VBoxCpuReport.cpp 155249 2023-01-17 22:43:07Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxCpuReport.cpp 156388 2023-03-17 19:52:44Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxCpuReport - Produces the basis for a CPU DB entry.
  */
@@ -4603,6 +4603,7 @@ static const char *cpuVendorToString(CPUMCPUVENDOR enmCpuVendor)
         case CPUMCPUVENDOR_CYRIX:       return "Cyrix";
         case CPUMCPUVENDOR_SHANGHAI:    return "Shanghai";
         case CPUMCPUVENDOR_HYGON:       return "Hygon";
+        case CPUMCPUVENDOR_APPLE:       return "Apple";
         case CPUMCPUVENDOR_INVALID:
         case CPUMCPUVENDOR_UNKNOWN:
         case CPUMCPUVENDOR_32BIT_HACK:
