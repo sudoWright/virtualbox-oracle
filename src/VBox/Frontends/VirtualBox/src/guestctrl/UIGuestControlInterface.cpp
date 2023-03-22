@@ -1,4 +1,4 @@
-/* $Id: UIGuestControlInterface.cpp 155244 2023-01-17 14:15:46Z knut.osmundsen@oracle.com $ */
+/* $Id: UIGuestControlInterface.cpp 156486 2023-03-22 17:35:53Z andreas.loeffler@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIGuestControlInterface class implementation.
  */
@@ -557,6 +557,7 @@ bool UIGuestControlInterface::startProcess(const CommandData &commandData, CGues
     QVector<KProcessCreateFlag>  createFlags;
     createFlags.push_back(KProcessCreateFlag_WaitForProcessStartOnly);
     CGuestProcess process = guestSession.ProcessCreate(commandData.m_strExePath,
+                                                       NULL /* CWD */,
                                                        commandData.m_arguments,
                                                        commandData.m_environmentChanges,
                                                        createFlags,
