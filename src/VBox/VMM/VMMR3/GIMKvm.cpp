@@ -1,4 +1,4 @@
-/* $Id: GIMKvm.cpp 155244 2023-01-17 14:15:46Z knut.osmundsen@oracle.com $ */
+/* $Id: GIMKvm.cpp 156593 2023-03-30 12:40:46Z alexander.eichner@oracle.com $ */
 /** @file
  * GIM - Guest Interface Manager, KVM implementation.
  */
@@ -39,7 +39,7 @@
 #include "GIMInternal.h"
 #include <VBox/vmm/vm.h>
 
-#include <VBox/disopcode.h>
+#include <VBox/disopcode-x86-amd64.h>
 #include <VBox/err.h>
 #include <VBox/version.h>
 

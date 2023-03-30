@@ -1,4 +1,4 @@
-/* $Id: PGMAllPool.cpp 156581 2023-03-29 14:13:56Z alexander.eichner@oracle.com $ */
+/* $Id: PGMAllPool.cpp 156593 2023-03-30 12:40:46Z alexander.eichner@oracle.com $ */
 /** @file
  * PGM Shadow Page Pool.
  */
@@ -38,7 +38,6 @@
 #include "PGMInternal.h"
 #include <VBox/vmm/vmcc.h>
 #include "PGMInline.h"
-#include <VBox/disopcode.h>
 #include <VBox/vmm/hm_vmx.h>
 
 #include <VBox/log.h>
