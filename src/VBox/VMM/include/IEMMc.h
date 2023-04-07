@@ -1,4 +1,4 @@
-/* $Id: IEMMc.h 156744 2023-04-07 12:43:12Z knut.osmundsen@oracle.com $ */
+/* $Id: IEMMc.h 156745 2023-04-07 12:44:56Z knut.osmundsen@oracle.com $ */
 /** @file
  * IEM - Interpreted Execution Manager - IEM_MC_XXX.
  */
@@ -149,14 +149,6 @@
         if (pVCpu->cpum.GstCtx.cr4 & X86_CR4_OSXMMEEXCPT)\
             return iemRaiseSimdFpException(pVCpu); \
         return iemRaiseUndefinedOpcode(pVCpu); \
-    } while (0)
-#define IEM_MC_MAYBE_RAISE_PCLMUL_RELATED_XCPT() \
-    do { \
-        if (   (pVCpu->cpum.GstCtx.cr0 & X86_CR0_EM) \
-            || !(pVCpu->cpum.GstCtx.cr4 & X86_CR4_OSFXSR)) \
-            return iemRaiseUndefinedOpcode(pVCpu); \
-        if (pVCpu->cpum.GstCtx.cr0 & X86_CR0_TS) \
-            return iemRaiseDeviceNotAvailable(pVCpu); \
     } while (0)
 
 
