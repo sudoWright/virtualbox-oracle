@@ -1,4 +1,4 @@
-/* $Id: UIMediumManager.cpp 156822 2023-04-13 12:43:24Z sergey.dubov@oracle.com $ */
+/* $Id: UIMediumManager.cpp 156827 2023-04-13 15:46:10Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIMediumManager class implementation.
  */
@@ -471,7 +471,14 @@ void UIMediumManagerWidget::sltAddMedium()
 
 void UIMediumManagerWidget::sltCreateMedium()
 {
-    uiCommon().openMediumCreatorDialog(m_pActionPool, this, currentMediumType());
+    /* What's with current medium type? */
+    const UIMediumDeviceType enmMediumType = currentMediumType();
+
+    /* Ask listener to start hard-disk creation: */
+    if (enmMediumType == UIMediumDeviceType_HardDisk)
+        emit sigCreateMedium();
+    else
+        uiCommon().openMediumCreatorDialog(m_pActionPool, this, currentMediumType());
 }
 
 void UIMediumManagerWidget::sltCopyMedium()
