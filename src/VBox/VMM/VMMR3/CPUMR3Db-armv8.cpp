@@ -1,4 +1,4 @@
-/* $Id: CPUMR3Db-armv8.cpp 156816 2023-04-13 11:02:06Z alexander.eichner@oracle.com $ */
+/* $Id: CPUMR3Db-armv8.cpp 156819 2023-04-13 11:07:34Z alexander.eichner@oracle.com $ */
 /** @file
  * CPUM - CPU database part - ARMv8 specifics.
  */
@@ -35,7 +35,7 @@
 #include <VBox/vmm/vm.h>
 #include <VBox/vmm/mm.h>
 
-#include <VBox/err.h>
+#include <iprt/errcore.h>
 #include <iprt/armv8.h>
 #include <iprt/mem.h>
 #include <iprt/string.h>
