@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# $Id: vboxtestvms.py 156467 2023-03-22 06:54:16Z alexander.rudnev@oracle.com $
+# $Id: vboxtestvms.py 156898 2023-04-18 09:45:15Z andreas.loeffler@oracle.com $
 
 """
 VirtualBox Test VMs
@@ -36,7 +36,7 @@ terms and conditions of either the GPL or the CDDL or both.
 
 SPDX-License-Identifier: GPL-3.0-only OR CDDL-1.0
 """
-__version__ = "$Revision: 156467 $"
+__version__ = "$Revision: 156898 $"
 
 # Standard Python imports.
 import copy;
@@ -465,7 +465,7 @@ class BaseTestVm(object):
 
     def getResourceSet(self):
         """
-        Resturns a list of reosurces that the VM needs.
+        Returns a list of resources that the VM needs.
         """
         return [];
 
