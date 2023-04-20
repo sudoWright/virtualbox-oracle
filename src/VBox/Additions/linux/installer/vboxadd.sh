@@ -1,7 +1,7 @@
 #! /bin/sh
-# $Id: vboxadd.sh 156008 2023-02-23 21:26:32Z vadim.galitsyn@oracle.com $
+# $Id: vboxadd.sh 156981 2023-04-20 14:51:11Z vadim.galitsyn@oracle.com $
 ## @file
-# Linux Additions kernel module init script ($Revision: 156008 $)
+# Linux Additions kernel module init script ($Revision: 156981 $)
 #
 
 #
@@ -187,9 +187,11 @@ running_module_version()
     version_string_path="/sys/module/"$mod"/version"
 
     [ -n "$mod" ] || return
-    [ -r "$version_string_path" ] || return
-
-    cat "$version_string_path"
+    if [ -r "$version_string_path" ]; then
+        cat "$version_string_path"
+    else
+        echo "UNKNOWN"
+    fi
 }
 
 # Check if currently loaded kernel module version matches to
