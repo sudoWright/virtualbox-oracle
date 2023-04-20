@@ -1,4 +1,4 @@
-/* $Id: VBoxUtils-x11.cpp 156971 2023-04-20 08:22:45Z serkan.bayraktar@oracle.com $ */
+/* $Id: VBoxUtils-nix.cpp 156974 2023-04-20 08:37:30Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - Declarations of utility classes and functions for handling X11 specific tasks.
  */
@@ -40,7 +40,7 @@
 #endif
 
 /* GUI includes: */
-#include "VBoxUtils-x11.h"
+#include "VBoxUtils-nix.h"
 
 /* Other VBox includes: */
 #include <iprt/assert.h>
