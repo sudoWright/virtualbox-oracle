@@ -1,4 +1,4 @@
-/* $Id: UIKeyboardHandler.cpp 156900 2023-04-18 12:04:47Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIKeyboardHandler.cpp 156972 2023-04-20 08:25:26Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIKeyboardHandler class implementation.
  */
@@ -70,7 +70,7 @@
 #endif
 #ifdef VBOX_WS_X11
 # include "XKeyboard.h"
-# include "VBoxUtils-x11.h"
+# include "VBoxUtils-nix.h"
 #endif
 
 /* Other VBox includes: */
