@@ -1,7 +1,7 @@
 #! /bin/sh
-# $Id: vboxadd.sh 157008 2023-04-21 18:12:13Z vadim.galitsyn@oracle.com $
+# $Id: vboxadd.sh 157009 2023-04-21 19:07:50Z vadim.galitsyn@oracle.com $
 ## @file
-# Linux Additions kernel module init script ($Revision: 157008 $)
+# Linux Additions kernel module init script ($Revision: 157009 $)
 #
 
 #
@@ -1116,7 +1116,7 @@ reload()
         [ $? -eq 0 ] && modprobe vboxguest >/dev/null 2>&1
         [ $? -eq 0 ] && modprobe vboxsf >/dev/null 2>&1
 
-        # Start VBoxService and VBoxDRMClient (systemctl start vboxadd-service.service).
+        # Start VBoxService and VBoxDRMClient.
         [ $? -eq 0 ] && $VBOX_SERVICE_SCRIPT start >/dev/null 2>&1
 
         # Reload VBoxClient processes.
