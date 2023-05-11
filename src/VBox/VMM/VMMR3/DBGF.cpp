@@ -1,4 +1,4 @@
-/* $Id: DBGF.cpp 155244 2023-01-17 14:15:46Z knut.osmundsen@oracle.com $ */
+/* $Id: DBGF.cpp 157315 2023-05-11 01:01:08Z knut.osmundsen@oracle.com $ */
 /** @file
  * DBGF - Debugger Facility.
  */
@@ -228,7 +228,6 @@ VMMR3_INT_DECL(int) DBGFR3Term(PVM pVM)
 /**
  * This is for tstCFGM and others to avoid trigger leak detection.
  *
- * @returns VBox status code.
  * @param   pUVM    The user mode VM structure.
  */
 VMMR3DECL(void) DBGFR3TermUVM(PUVM pUVM)

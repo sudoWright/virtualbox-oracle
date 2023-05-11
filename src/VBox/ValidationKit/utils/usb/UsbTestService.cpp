@@ -1,4 +1,4 @@
-/* $Id: UsbTestService.cpp 155244 2023-01-17 14:15:46Z knut.osmundsen@oracle.com $ */
+/* $Id: UsbTestService.cpp 157315 2023-05-11 01:01:08Z knut.osmundsen@oracle.com $ */
 /** @file
  * UsbTestService - Remote USB test configuration and execution server.
  */
@@ -1069,7 +1069,6 @@ static int utsClientReqProcess(PUTSCLIENT pClient)
 /**
  * Destroys a client instance.
  *
- * @returns nothing.
  * @param   pClient             The UTS client structure.
  */
 static void utsClientDestroy(PUTSCLIENT pClient)
@@ -1561,7 +1560,7 @@ static RTEXITCODE utsParseArgv(int argc, char **argv, bool *pfExit)
             }
 
             case 'V':
-                RTPrintf("$Revision: 155244 $\n");
+                RTPrintf("$Revision: 157315 $\n");
                 *pfExit = true;
                 return RTEXITCODE_SUCCESS;
 

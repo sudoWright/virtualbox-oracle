@@ -1,4 +1,4 @@
-/* $Id: PGMAllHandler.cpp 156765 2023-04-10 05:44:28Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: PGMAllHandler.cpp 157315 2023-05-11 01:01:08Z knut.osmundsen@oracle.com $ */
 /** @file
  * PGM - Page Manager / Monitor, Access Handlers.
  */
@@ -986,8 +986,6 @@ void pgmHandlerPhysicalResetAliasedPage(PVMCC pVM, PPGMPAGE pPage, RTGCPHYS GCPh
 /**
  * Resets ram range flags.
  *
- * @returns VBox status code.
- * @retval  VINF_SUCCESS when shadow PTs was successfully updated.
  * @param   pVM     The cross context VM structure.
  * @param   pCur    The physical handler.
  *
