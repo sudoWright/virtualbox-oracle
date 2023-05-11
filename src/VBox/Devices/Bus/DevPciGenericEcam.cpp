@@ -1,4 +1,4 @@
-/* $Id: DevPciGenericEcam.cpp 157332 2023-05-11 13:37:24Z alexander.eichner@oracle.com $ */
+/* $Id: DevPciGenericEcam.cpp 157334 2023-05-11 13:43:32Z alexander.eichner@oracle.com $ */
 /** @file
  * DevPciGeneric - Generic host to PCIe bridge emulation.
  */
@@ -61,6 +61,7 @@
 *********************************************************************************************************************************/
 /** Saved state version of the generic ECAM PCI bus device. */
 #define VBOX_PCIGENECAM_SAVED_STATE_VERSION             1
+
 
 /*********************************************************************************************************************************
 *   Internal Functions                                                                                                           *
