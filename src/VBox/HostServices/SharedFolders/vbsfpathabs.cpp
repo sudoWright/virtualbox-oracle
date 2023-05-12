@@ -1,4 +1,4 @@
-/* $Id: vbsfpathabs.cpp 155244 2023-01-17 14:15:46Z knut.osmundsen@oracle.com $ */
+/* $Id: vbsfpathabs.cpp 157370 2023-05-12 12:21:58Z alexander.eichner@oracle.com $ */
 /** @file
  * Shared Folders Service - guest/host path convertion and verification.
  */
@@ -34,6 +34,7 @@
 #include <iprt/path.h>
 #include <iprt/string.h>
 
+#include "vbsfpath.h"
 
 #if defined(RT_OS_WINDOWS)
 static void vbsfPathResolveRelative(char *pszPathBegin)

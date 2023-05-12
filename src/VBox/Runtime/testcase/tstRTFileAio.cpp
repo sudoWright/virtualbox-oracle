@@ -1,4 +1,4 @@
-/* $Id: tstRTFileAio.cpp 155244 2023-01-17 14:15:46Z knut.osmundsen@oracle.com $ */
+/* $Id: tstRTFileAio.cpp 157370 2023-05-12 12:21:58Z alexander.eichner@oracle.com $ */
 /** @file
  * IPRT Testcase - File Async I/O.
  */
@@ -61,8 +61,8 @@
 static RTTEST g_hTest = NIL_RTTEST;
 
 
-void tstFileAioTestReadWriteBasic(RTFILE File, bool fWrite, void *pvTestBuf,
-                                  size_t cbTestBuf, size_t cbTestFile, uint32_t cMaxReqsInFlight)
+static void tstFileAioTestReadWriteBasic(RTFILE File, bool fWrite, void *pvTestBuf,
+                                         size_t cbTestBuf, size_t cbTestFile, uint32_t cMaxReqsInFlight)
 {
     /* Allocate request array. */
     RTFILEAIOREQ *paReqs;
