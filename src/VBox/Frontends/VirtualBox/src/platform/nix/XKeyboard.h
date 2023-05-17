@@ -1,4 +1,4 @@
-/* $Id: XKeyboard.h 155244 2023-01-17 14:15:46Z knut.osmundsen@oracle.com $ */
+/* $Id: XKeyboard.h 157466 2023-05-17 14:03:55Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - Declarations of Linux-specific keyboard functions.
  */

@@ -1,4 +1,4 @@
-/* $Id: VBoxUtils-nix.cpp 157450 2023-05-16 18:17:34Z serkan.bayraktar@oracle.com $ */
+/* $Id: VBoxUtils-nix.cpp 157466 2023-05-17 14:03:55Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - Declarations of utility classes and functions for handling X11 specific tasks.
  */

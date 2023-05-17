@@ -1,4 +1,4 @@
-/* $Id: UIDesktopServices_nix.cpp 156972 2023-04-20 08:25:26Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIDesktopServices_nix.cpp 157466 2023-05-17 14:03:55Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - Qt GUI - Utility Classes and Functions specific to X11..
  */
