@@ -1,4 +1,4 @@
-/* $Id: VBoxTray.h 157464 2023-05-17 13:48:57Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxTray.h 157465 2023-05-17 13:51:57Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxTray - Guest Additions Tray, Internal Header.
  */
@@ -165,7 +165,7 @@ typedef struct VBOXSERVICEINFO
     bool             fEnabled;
 } VBOXSERVICEINFO, *PVBOXSERVICEINFO;
 
-/** 
+/**
  * Globally unique (system wide) message registration.
  */
 typedef struct VBOXGLOBALMESSAGE
