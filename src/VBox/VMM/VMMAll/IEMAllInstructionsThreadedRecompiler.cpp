@@ -1,4 +1,4 @@
-/* $Id: IEMAllInstructionsThreadedRecompiler.cpp 157468 2023-05-18 01:18:57Z knut.osmundsen@oracle.com $ */
+/* $Id: IEMAllInstructionsThreadedRecompiler.cpp 157504 2023-05-19 17:34:53Z ksenia.s.stepanova@oracle.com $ */
 /** @file
  * IEM - Instruction Decoding and Emulation.
  */
@@ -150,7 +150,7 @@ typedef struct IEMTB
     /** @} */
 
     /** Number of bytes of opcodes covered by this block.
-     * @todo Support discontiguous chunks of opcodes in same block, though maybe 
+     * @todo Support discontiguous chunks of opcodes in same block, though maybe
      *       restrict to the initial page or smth. */
     uint32_t    cbPC;
 
