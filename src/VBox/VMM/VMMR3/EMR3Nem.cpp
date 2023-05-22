@@ -1,4 +1,4 @@
-/* $Id: EMR3Nem.cpp 156593 2023-03-30 12:40:46Z alexander.eichner@oracle.com $ */
+/* $Id: EMR3Nem.cpp 157540 2023-05-22 11:43:38Z knut.osmundsen@oracle.com $ */
 /** @file
  * EM - Execution Monitor / Manager - NEM interface.
  */
@@ -56,6 +56,8 @@
 #include "VMMTracing.h"
 
 #include <iprt/asm.h>
+
+#include "EMInline.h"
 
 
 /*********************************************************************************************************************************
