@@ -1,4 +1,4 @@
-/* $Id: EMInline.h 157541 2023-05-22 12:05:07Z knut.osmundsen@oracle.com $ */
+/* $Id: EMInline.h 157563 2023-05-22 20:52:26Z knut.osmundsen@oracle.com $ */
 /** @file
  * EM - Internal header file, inline functions.
  */
@@ -55,5 +55,4 @@ DECLINLINE(bool) emR3IsExecutionAllowed(PVM pVM, PVMCPU pVCpu)
 /** @} */
 
 #endif /* !VMM_INCLUDED_SRC_include_EMInline_h */
-
 
