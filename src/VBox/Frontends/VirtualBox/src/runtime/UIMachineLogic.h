@@ -1,4 +1,4 @@
-/* $Id: UIMachineLogic.h 157075 2023-05-02 10:19:01Z sergey.dubov@oracle.com $ */
+/* $Id: UIMachineLogic.h 157603 2023-05-24 06:53:04Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIMachineLogic class declaration.
  */
@@ -158,6 +158,8 @@ protected slots:
     virtual void sltHostScreenGeometryChange();
     /** Handles host-screen available-area change. */
     virtual void sltHostScreenAvailableAreaChange();
+    /* Handles Help Request. */
+    virtual void sltHandleHelpRequest();
 
 protected:
 

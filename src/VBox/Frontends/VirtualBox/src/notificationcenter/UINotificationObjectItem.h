@@ -1,4 +1,4 @@
-/* $Id: UINotificationObjectItem.h 155244 2023-01-17 14:15:46Z knut.osmundsen@oracle.com $ */
+/* $Id: UINotificationObjectItem.h 157603 2023-05-24 06:53:04Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UINotificationObjectItem class declaration.
  */
@@ -91,6 +91,11 @@ protected:
     bool  m_fHovered;
     /** Holds whether item is toggled. */
     bool  m_fToggled;
+
+private slots:
+
+    /** Handles help request. */
+    void sltHandleHelpRequest();
 };
 
 /** UINotificationObjectItem extension for notification-progress. */
