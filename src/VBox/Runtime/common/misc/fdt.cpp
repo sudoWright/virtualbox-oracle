@@ -1,4 +1,4 @@
-/* $Id: fdt.cpp 157698 2023-05-31 08:50:11Z alexander.eichner@oracle.com $ */
+/* $Id: fdt.cpp 157699 2023-05-31 08:54:11Z alexander.eichner@oracle.com $ */
 /** @file
  * IPRT - Flattened Devicetree parser and generator API.
  */
@@ -543,7 +543,6 @@ static int rtFdtStructsQueryString(PRTFDTDTBDUMP pDump, char *pszString, size_t 
     }
 
     /* Not reached */
-    return VERR_INTERNAL_ERROR;
 }
 
 
