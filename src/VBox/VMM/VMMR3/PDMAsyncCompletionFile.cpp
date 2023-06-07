@@ -1,4 +1,4 @@
-/* $Id: PDMAsyncCompletionFile.cpp 157370 2023-05-12 12:21:58Z alexander.eichner@oracle.com $ */
+/* $Id: PDMAsyncCompletionFile.cpp 157801 2023-06-07 20:05:13Z alexander.eichner@oracle.com $ */
 /** @file
  * PDM Async I/O - Transport data asynchronous in R3 using EMT.
  */
@@ -419,7 +419,11 @@ static int pdmacFileEpTaskInitiate(PPDMASYNCCOMPLETIONTASK pTask,
         /* Send it off to the I/O manager. */
         pdmacFileEpAddTask(pEpFile, pIoTask);
         off        += paSegments[i].cbSeg;
+#ifdef RT_STRICT
         cbTransfer -= paSegments[i].cbSeg;
+#else
+        RT_NOREF(cbTransfer);
+#endif
     }
 
     AssertMsg(!cbTransfer, ("Incomplete transfer %u bytes left\n", cbTransfer));
