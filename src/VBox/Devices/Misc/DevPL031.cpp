@@ -1,4 +1,4 @@
-/* $Id: DevPL031.cpp 157801 2023-06-07 20:05:13Z alexander.eichner@oracle.com $ */
+/* $Id: DevPL031.cpp 157830 2023-06-09 10:12:29Z alexander.eichner@oracle.com $ */
 /** @file
  * DevPL031 - ARM PL011 PrimeCell RTC.
  *
@@ -339,7 +339,7 @@ static DECLCALLBACK(VBOXSTRICTRC) pl031MmioWrite(PPDMDEVINS pDevIns, void *pvUse
                 if (fRtcStart)
                 {
                     PDMDevHlpTimerLockClock(pDevIns, pThis->hTimerSecond, VERR_IGNORED);
-                    rcStrict = PDMDevHlpTimerSet(pDevIns, pThis->hTimerSecond, RT_MS_1SEC);
+                    rcStrict = PDMDevHlpTimerSetMillies(pDevIns, pThis->hTimerSecond, RT_MS_1SEC);
                     PDMDevHlpTimerUnlockClock(pDevIns, pThis->hTimerSecond);
                 }
                 else
