@@ -1,5 +1,5 @@
 @echo off
-rem $Id: Single-3-Repack.cmd 157175 2023-05-05 16:42:17Z alexander.rudnev@oracle.com $
+rem $Id: Single-3-Repack.cmd 157847 2023-06-12 10:28:42Z alexander.rudnev@oracle.com $
 rem rem @file
 rem Windows NT batch script for repacking signed amd64 or x86 drivers.
 rem
@@ -289,5 +289,3 @@ goto end
 @cd /d "%_MY_SAVED_CD%"
 @endlocal
 @endlocal
-
-
