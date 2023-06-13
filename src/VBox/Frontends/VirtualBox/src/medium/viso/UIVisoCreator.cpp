@@ -1,4 +1,4 @@
-/* $Id: UIVisoCreator.cpp 157860 2023-06-13 10:19:03Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIVisoCreator.cpp 157861 2023-06-13 10:19:21Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVisoCreator classes implementation.
  */
@@ -209,6 +209,7 @@ void UIVisoSettingWidget::sltButtonBoxCancel()
 {
     emit sigClosed(false);
 }
+
 
 /*********************************************************************************************************************************
 *   UIVisoCreatorWidget implementation.                                                                                          *
