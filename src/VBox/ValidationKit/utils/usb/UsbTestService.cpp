@@ -1,4 +1,4 @@
-/* $Id: UsbTestService.cpp 157315 2023-05-11 01:01:08Z knut.osmundsen@oracle.com $ */
+/* $Id: UsbTestService.cpp 157914 2023-06-19 14:20:27Z alexander.eichner@oracle.com $ */
 /** @file
  * UsbTestService - Remote USB test configuration and execution server.
  */
@@ -1193,7 +1193,8 @@ static DECLCALLBACK(int) utsClientWorker(RTTHREAD hThread, void *pvUser)
     }
 
     RTPollSetDestroy(hPollSet);
-
+    if (papClients)
+        RTMemFree(papClients);
     return rc;
 }
 
@@ -1560,7 +1561,7 @@ static RTEXITCODE utsParseArgv(int argc, char **argv, bool *pfExit)
             }
 
             case 'V':
-                RTPrintf("$Revision: 157315 $\n");
+                RTPrintf("$Revision: 157914 $\n");
                 *pfExit = true;
                 return RTEXITCODE_SUCCESS;
 
