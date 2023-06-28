@@ -1,4 +1,4 @@
-/* $Id: combined-agnostic2.c 155244 2023-01-17 14:15:46Z knut.osmundsen@oracle.com $ */
+/* $Id: combined-agnostic2.c 158022 2023-06-28 10:17:34Z alexander.eichner@oracle.com $ */
 /** @file
  * SUPDrv - Combine a bunch of OS agnostic sources into one compile unit.
  */
@@ -102,6 +102,8 @@
 #include "generic/errvars-generic.c"
 #undef LOG_GROUP
 #include "generic/mppresent-generic.c"
+#undef LOG_GROUP
+#include "generic/system-page-size-generic.c"
 #undef LOG_GROUP
 #include "generic/uuid-generic.c"
 #undef LOG_GROUP
