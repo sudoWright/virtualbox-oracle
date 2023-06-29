@@ -1,4 +1,4 @@
-/* $Id: UIVisoHostBrowser.cpp 158044 2023-06-29 10:04:42Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIVisoHostBrowser.cpp 158047 2023-06-29 12:18:55Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVisoHostBrowser class implementation.
  */
@@ -37,6 +37,9 @@
 #include "QIToolBar.h"
 #include "UIActionPool.h"
 #include "UIVisoHostBrowser.h"
+
+/* Other VBox includes: */
+#include <iprt/assert.h>
 
 
 /*********************************************************************************************************************************
