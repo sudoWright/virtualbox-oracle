@@ -1,4 +1,4 @@
-/* $Id: VBoxSharedClipboardSvc-x11.cpp 158113 2023-07-05 08:45:12Z andreas.loeffler@oracle.com $ */
+/* $Id: VBoxSharedClipboardSvc-x11.cpp 158114 2023-07-05 09:03:11Z andreas.loeffler@oracle.com $ */
 /** @file
  * Shared Clipboard Service - Linux host.
  */
@@ -96,6 +96,9 @@ static DECLCALLBACK(int) shClSvcX11TransferIfaceHGRootListRead(PSHCLTXPROVIDERCT
 #endif
 
 
+/*********************************************************************************************************************************
+*   Backend implementation                                                                                                       *
+*********************************************************************************************************************************/
 int ShClBackendInit(PSHCLBACKEND pBackend, VBOXHGCMSVCFNTABLE *pTable)
 {
     RT_NOREF(pBackend);
