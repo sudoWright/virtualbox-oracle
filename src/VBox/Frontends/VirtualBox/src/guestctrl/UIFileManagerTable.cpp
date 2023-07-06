@@ -1,4 +1,4 @@
-/* $Id: UIFileManagerTable.cpp 158148 2023-07-06 12:44:14Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIFileManagerTable.cpp 158150 2023-07-06 13:28:02Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIFileManagerTable class implementation.
  */
@@ -892,8 +892,8 @@ void UIFileManagerTable::sltSearchTextChanged(const QString &strText)
     performSelectionSearch(strText);
 }
 
-void UIFileManagerTable::sltHandleItemRenameAttempt(UICustomFileSystemItem *pItem, QString strOldPath,
-                                                    QString strOldName, QString strNewName)
+void UIFileManagerTable::sltHandleItemRenameAttempt(UICustomFileSystemItem *pItem, const QString &strOldPath,
+                                                    const QString &strOldName, const QString &strNewName)
 {
     Q_UNUSED(strNewName);
     if (!pItem)
