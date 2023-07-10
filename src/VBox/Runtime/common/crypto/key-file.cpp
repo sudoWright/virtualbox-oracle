@@ -1,4 +1,4 @@
-/* $Id: key-file.cpp 158267 2023-07-10 23:17:15Z knut.osmundsen@oracle.com $ */
+/* $Id: key-file.cpp 158269 2023-07-10 23:20:32Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Crypto - Cryptographic Keys, File I/O.
  */
@@ -479,8 +479,8 @@ RTDECL(int) RTCrKeyCreateFromPemSection(PRTCRKEY phKey, PCRTCRPEMSECTION pSectio
                                                     pszErrorTag ? pszErrorTag : "PrivateKeyInfo");
             if (RT_SUCCESS(rc))
             {
-                /* 
-                 * Load the private key according to it's algorithm. 
+                /*
+                 * Load the private key according to it's algorithm.
                  * We currently only support RSA (pkcs1-RsaEncryption).
                  */
                 if (RTAsn1ObjId_CompareWithString(&PrivateKeyInfo.PrivateKeyAlgorithm.Algorithm,
