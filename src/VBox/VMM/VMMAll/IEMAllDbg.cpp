@@ -1,4 +1,4 @@
-/* $Id: IEMAllDbg.cpp 158512 2023-07-21 00:28:54Z knut.osmundsen@oracle.com $ */
+/* $Id: IEMAllDbg.cpp 158513 2023-07-21 07:50:33Z knut.osmundsen@oracle.com $ */
 /** @file
  * IEM - Debug and Logging.
  */
@@ -37,7 +37,7 @@
 #include "IEMInternal.h"
 #include <VBox/vmm/vmcc.h>
 #include <VBox/log.h>
-#include <VBox/errcore.h>
+#include <iprt/errcore.h>
 
 
 /*********************************************************************************************************************************
