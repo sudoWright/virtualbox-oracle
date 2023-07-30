@@ -1,4 +1,4 @@
-/* $Id: UIMainEventListener.h 158593 2023-07-28 15:08:35Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIMainEventListener.h 158607 2023-07-30 09:48:13Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIMainEventListener class declaration.
  */
@@ -124,6 +124,8 @@ signals:
         void sigCloudProfileChanged(const QUuid &uProviderId, const QString &strName);
         /** Notifies about ext.pack installation @a strname is the name of the installed ext. pack. */
         void sigExtensionPackInstalled(const QString &strName);
+        /** Notifies about ext.pack uninstallation @a strname is the name of the installed ext. pack. */
+        void sigExtensionPackUninstalled(const QString &strName);
     /** @} */
 
     /** @name VirtualBox Extra-data related signals
