@@ -1,4 +1,4 @@
-/* $Id: UINetworkReply.h 155244 2023-01-17 14:15:46Z knut.osmundsen@oracle.com $ */
+/* $Id: UINetworkReply.h 158713 2023-08-07 22:28:09Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UINetworkReply stuff declaration.
  */
@@ -32,6 +32,7 @@
 #endif
 
 /* Qt includes: */
+#include <QObject>
 #include <QPointer>
 #include <QUrl>
 
