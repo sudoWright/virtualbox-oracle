@@ -1,4 +1,4 @@
-/* $Id: QIToolBar.cpp 155244 2023-01-17 14:15:46Z knut.osmundsen@oracle.com $ */
+/* $Id: QIToolBar.cpp 158815 2023-08-16 15:43:51Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - QIToolBar class implementation.
  */
@@ -252,7 +252,7 @@ void QIToolBar::prepare()
         layout()->setContentsMargins(0, 0, 0, 0);
 
     /* Configure tool-bar' context-menu policy: */
-    setContextMenuPolicy(Qt::NoContextMenu);
+    setContextMenuPolicy(Qt::PreventContextMenu);
 }
 
 #ifdef VBOX_WS_MAC
