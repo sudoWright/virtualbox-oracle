@@ -1,4 +1,4 @@
-/* $Id: parseshell.h 158839 2023-08-18 00:35:10Z knut.osmundsen@oracle.com $ */
+/* $Id: parseshell.h 158840 2023-08-18 07:55:29Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Parser, Bourne-like Shell.
  */
@@ -40,7 +40,7 @@
 # pragma once
 #endif
 
-#include <iprt/types.h>
+#include <iprt/list.h>
 
 RT_C_DECLS_BEGIN
 
