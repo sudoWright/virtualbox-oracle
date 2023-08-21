@@ -1,4 +1,4 @@
-/* $Id: dbgmodcodeview.cpp 158869 2023-08-21 23:11:01Z knut.osmundsen@oracle.com $ */
+/* $Id: dbgmodcodeview.cpp 158870 2023-08-21 23:12:04Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Debug Module Reader For Microsoft CodeView and COFF.
  *
@@ -3791,5 +3791,4 @@ DECL_HIDDEN_CONST(RTDBGMODVTDBG) const g_rtDbgModVtDbgPdb =
 
     /*.u32EndMagic = */         RTDBGMODVTDBG_MAGIC
 };
-
 
