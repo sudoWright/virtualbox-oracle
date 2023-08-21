@@ -1,4 +1,4 @@
-/* $Id: UIVMLogViewerPanel.h 158856 2023-08-21 12:29:25Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIVMLogViewerPanel.h 158857 2023-08-21 12:40:34Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVMLogViewer class declaration.
  */
@@ -72,7 +72,7 @@ public:
         ;
 protected:
 
-    virtual bool eventFilter(QObject *pObject, QEvent *pEvent) RT_OVERRIDE;
+    virtual bool eventFilter(QObject *pObject, QEvent *pEvent) override;
 
 private:
 
