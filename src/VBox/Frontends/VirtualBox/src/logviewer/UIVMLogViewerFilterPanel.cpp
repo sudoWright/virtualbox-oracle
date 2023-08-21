@@ -1,4 +1,4 @@
-/* $Id: UIVMLogViewerFilterPanel.cpp 158852 2023-08-21 05:17:31Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIVMLogViewerFilterPanel.cpp 158854 2023-08-21 05:59:51Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVMLogViewer class implementation.
  */
@@ -48,6 +48,9 @@
 #ifdef VBOX_WS_MAC
 # include "VBoxUtils-darwin.h"
 #endif
+
+/* Other VBox includes: */
+#include <iprt/assert.h>
 
 
 /*********************************************************************************************************************************
