@@ -1,4 +1,4 @@
-/* $Id: dbgmoddeferred.cpp 155244 2023-01-17 14:15:46Z knut.osmundsen@oracle.com $ */
+/* $Id: dbgmoddeferred.cpp 158869 2023-08-21 23:11:01Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Debug Module Deferred Loading Stub.
  */
@@ -431,9 +431,9 @@ static DECLCALLBACK(int) rtDbgModDeferredDbg_Close(PRTDBGMODINT pMod)
 
 
 /** @interface_method_impl{RTDBGMODVTDBG,pfnTryOpen} */
-static DECLCALLBACK(int) rtDbgModDeferredDbg_TryOpen(PRTDBGMODINT pMod, RTLDRARCH enmArch)
+static DECLCALLBACK(int) rtDbgModDeferredDbg_TryOpen(PRTDBGMODINT pMod, RTLDRARCH enmArch, RTDBGCFG hDbgCfg)
 {
-    NOREF(enmArch);
+    NOREF(enmArch); RT_NOREF_PV(hDbgCfg);
     return rtDbgModDeferredDoIt(pMod, true /*fForceRetry*/);
 }
 
