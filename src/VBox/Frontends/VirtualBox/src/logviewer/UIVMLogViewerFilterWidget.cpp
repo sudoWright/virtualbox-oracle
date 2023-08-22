@@ -1,4 +1,4 @@
-/* $Id: UIVMLogViewerFilterWidget.cpp 158874 2023-08-22 13:01:35Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIVMLogViewerFilterWidget.cpp 158875 2023-08-22 13:02:13Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVMLogViewer class implementation.
  */
@@ -257,7 +257,7 @@ void UIVMFilterLineEdit::createButtons()
 
 
 /*********************************************************************************************************************************
-*   UIVMLogViewerFilterWidget implementation.                                                                                     *
+*   UIVMLogViewerFilterWidget implementation.                                                                                    *
 *********************************************************************************************************************************/
 
 UIVMLogViewerFilterWidget::UIVMLogViewerFilterWidget(QWidget *pParent, UIVMLogViewerWidget *pViewer)
