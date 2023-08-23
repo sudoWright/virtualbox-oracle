@@ -1,4 +1,4 @@
-/* $Id: UIFileManagerPanel.cpp 158844 2023-08-18 17:01:06Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIFileManagerPanel.cpp 158893 2023-08-23 11:19:15Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVMLogViewer class implementation.
  */
@@ -368,7 +368,7 @@ void UIFileManagerLogViewer::sltClear()
 *********************************************************************************************************************************/
 
 UIFileManagerPanel::UIFileManagerPanel(QWidget *pParent, UIFileManagerOptions *pFileManagerOptions)
-    : QIWithRetranslateUI<UIDialogPanelBase>(pParent)
+    : UIDialogPanelBase(pParent)
     , m_pListDirectoriesOnTopCheckBox(0)
     , m_pDeleteConfirmationCheckBox(0)
     , m_pHumanReabableSizesCheckBox(0)
