@@ -37,7 +37,7 @@ terms and conditions of either the GPL or the CDDL or both.
 
 SPDX-License-Identifier: GPL-3.0-only OR CDDL-1.0
 """
-__version__ = "$Revision: 158501 $"
+__version__ = "$Revision: 158916 $"
 
 # Standard Python imports.
 import errno
@@ -5172,7 +5172,7 @@ class SubTstDrvAddGuestCtrl(base.SubTestDriverBase):
         else:
             sScratchHstInvalid  = None;
 
-        sScratchDotDotDirGst = oTestVm.pathJoin(self.oTstDrv.getGuestTempDir(oTestVm), '..');
+        sScratchDotDotDirGst = oTestVm.pathJoin(oEmptyDirGst.sPath, '..');
 
         if os.path.exists(sScratchHst):
             if base.wipeDirectory(sScratchHst) != 0:
