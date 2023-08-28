@@ -1,4 +1,4 @@
-/* $Id: UIAdvancedSettingsDialogSpecific.h 158926 2023-08-28 13:54:21Z sergey.dubov@oracle.com $ */
+/* $Id: UIAdvancedSettingsDialogSpecific.h 158928 2023-08-28 14:37:09Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UISettingsDialogSpecific class declaration.
  */
@@ -182,4 +182,4 @@ private:
 typedef QPointer<UIAdvancedSettingsDialogMachine> UISafePointerSettingsDialogMachine;
 
 
-#endif /* !FEQT_INCLUDED_SRC_settings_UISettingsDialogSpecific_h */
+#endif /* !FEQT_INCLUDED_SRC_settings_UIAdvancedSettingsDialogSpecific_h */
