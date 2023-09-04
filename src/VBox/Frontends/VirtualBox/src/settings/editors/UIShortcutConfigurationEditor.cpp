@@ -1,4 +1,4 @@
-/* $Id: UIShortcutConfigurationEditor.cpp 158064 2023-07-03 11:22:58Z sergey.dubov@oracle.com $ */
+/* $Id: UIShortcutConfigurationEditor.cpp 158967 2023-09-04 18:09:24Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIShortcutConfigurationEditor class implementation.
  */
@@ -819,7 +819,7 @@ void UIShortcutConfigurationTable::cleanup()
 *********************************************************************************************************************************/
 
 UIShortcutConfigurationEditor::UIShortcutConfigurationEditor(QWidget *pParent /* = 0 */)
-    : QIWithRetranslateUI<QWidget>(pParent)
+    : UIEditor(pParent)
     , m_pModelManager(0)
     , m_pModelRuntime(0)
     , m_pTabWidget(0)

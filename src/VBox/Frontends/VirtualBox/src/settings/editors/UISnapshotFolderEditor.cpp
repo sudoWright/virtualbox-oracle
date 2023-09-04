@@ -1,4 +1,4 @@
-/* $Id: UISnapshotFolderEditor.cpp 155244 2023-01-17 14:15:46Z knut.osmundsen@oracle.com $ */
+/* $Id: UISnapshotFolderEditor.cpp 158967 2023-09-04 18:09:24Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UISnapshotFolderEditor class implementation.
  */
@@ -36,7 +36,7 @@
 
 
 UISnapshotFolderEditor::UISnapshotFolderEditor(QWidget *pParent /* = 0 */)
-    : QIWithRetranslateUI<QWidget>(pParent)
+    : UIEditor(pParent)
     , m_pLabel(0)
     , m_pSelector(0)
 {

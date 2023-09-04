@@ -1,4 +1,4 @@
-/* $Id: UIBaseMemoryEditor.cpp 155244 2023-01-17 14:15:46Z knut.osmundsen@oracle.com $ */
+/* $Id: UIBaseMemoryEditor.cpp 158967 2023-09-04 18:09:24Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIBaseMemoryEditor class implementation.
  */
@@ -248,7 +248,7 @@ int UIBaseMemorySlider::calcPageStep(int iMaximum) const
 *********************************************************************************************************************************/
 
 UIBaseMemoryEditor::UIBaseMemoryEditor(QWidget *pParent /* = 0 */)
-    : QIWithRetranslateUI<QWidget>(pParent)
+    : UIEditor(pParent)
     , m_iValue(0)
     , m_pLayout(0)
     , m_pLabelMemory(0)
