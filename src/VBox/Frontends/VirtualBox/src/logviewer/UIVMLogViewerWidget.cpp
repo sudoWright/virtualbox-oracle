@@ -1,4 +1,4 @@
-/* $Id: UIVMLogViewerWidget.cpp 158900 2023-08-23 18:54:29Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIVMLogViewerWidget.cpp 158956 2023-09-04 15:31:13Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVMLogViewerWidget class implementation.
  */
@@ -812,6 +812,17 @@ void UIVMLogViewerWidget::prepareWidgets()
             this, &UIVMLogViewerWidget::gotoBookmark);
     connect(m_pPanel, &UIVMLogViewerPaneContainer::sigHidden,
             this, &UIVMLogViewerWidget::sltPanelContainerHidden);
+
+    connect(m_pPanel, &UIVMLogViewerPaneContainer::sigShowLineNumbers,
+            this, &UIVMLogViewerWidget::sltShowLineNumbers);
+    connect(m_pPanel, &UIVMLogViewerPaneContainer::sigWrapLines,
+            this, &UIVMLogViewerWidget::sltWrapLines);
+    connect(m_pPanel, &UIVMLogViewerPaneContainer::sigChangeFontSizeInPoints,
+            this, &UIVMLogViewerWidget::sltFontSizeChanged);
+    connect(m_pPanel, &UIVMLogViewerPaneContainer::sigChangeFont,
+            this, &UIVMLogViewerWidget::sltChangeFont);
+    connect(m_pPanel, &UIVMLogViewerPaneContainer::sigResetToDefaults,
+            this, &UIVMLogViewerWidget::sltResetOptionsToDefault);
 
     m_pMainLayout->addWidget(m_pPanel);
 }
