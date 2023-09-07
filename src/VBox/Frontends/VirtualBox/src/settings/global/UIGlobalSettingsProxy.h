@@ -1,4 +1,4 @@
-/* $Id: UIGlobalSettingsProxy.h 155244 2023-01-17 14:15:46Z knut.osmundsen@oracle.com $ */
+/* $Id: UIGlobalSettingsProxy.h 159012 2023-09-07 13:50:15Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIGlobalSettingsProxy class declaration.
  */
@@ -96,7 +96,7 @@ private:
 
     /** @name Widgets
      * @{ */
-        /** Holds the proxy features editor instance. */
+        /** Holds the 'proxy features' editor instance. */
         UIProxyFeaturesEditor *m_pEditorProxyFeatures;
     /** @} */
 };
