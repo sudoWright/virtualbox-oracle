@@ -1,4 +1,4 @@
-/* $Id: PlatformBase.cpp 158992 2023-09-07 08:59:15Z andreas.loeffler@oracle.com $ */
+/* $Id: PlatformBase.cpp 159004 2023-09-07 10:29:55Z andreas.loeffler@oracle.com $ */
 /** @file
  * VirtualBox COM class implementation - Base platform implementation.
  */
@@ -35,7 +35,4 @@
 #include <iprt/cpp/utils.h>
 
 #include <VBox/settings.h>
-
-
-
 
