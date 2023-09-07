@@ -1,4 +1,4 @@
-/* $Id: ApplianceImplImport.cpp 158992 2023-09-07 08:59:15Z andreas.loeffler@oracle.com $ */
+/* $Id: ApplianceImplImport.cpp 159016 2023-09-07 17:12:48Z andreas.loeffler@oracle.com $ */
 /** @file
  * IAppliance and IVirtualSystem COM class implementations.
  */
@@ -4419,7 +4419,7 @@ HRESULT Appliance::i_verifyStorageControllerPortValid(const StorageControllerTyp
     mVirtualBox->GetPlatformProperties(PlatformArchitecture_x86, platformProperties.asOutParam()); /// @todo BUGBUG Only x86 for now!
 
     StorageBus_T enmStorageBus = StorageBus_Null;
-    HRESULT hrc = platformProperties->GetStorageBusForStorageControllerType(aStorageControllerType, &enmStorageBus);
+    HRESULT hrc = platformProperties->GetStorageBusForControllerType(aStorageControllerType, &enmStorageBus);
     if (FAILED(hrc))
         return hrc;
 
