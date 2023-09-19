@@ -1,4 +1,4 @@
-/* $Id: PlatformImpl.h 159022 2023-09-08 12:41:13Z andreas.loeffler@oracle.com $ */
+/* $Id: PlatformImpl.h 159147 2023-09-19 15:50:22Z andreas.loeffler@oracle.com $ */
 /** @file
  * VirtualBox COM class implementation - Platform settings.
  */
@@ -73,7 +73,7 @@ public:
 public:
 
     // static public helper functions
-    const char *s_platformArchitectureToStr(PlatformArchitecture_T enmArchitecture);
+    static const char *s_platformArchitectureToStr(PlatformArchitecture_T enmArchitecture);
 
 public:
 
