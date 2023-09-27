@@ -1,4 +1,4 @@
-/* $Id: VBoxVgaMiniPortDxe.c 156925 2023-04-19 11:12:20Z alexander.eichner@oracle.com $ */
+/* $Id: VBoxVgaMiniPortDxe.c 159283 2023-09-27 15:18:48Z alexander.eichner@oracle.com $ */
 /** @file
  * VBoxVgaMiniPortDxe.c - VgaMiniPort Protocol Implementation.
  */

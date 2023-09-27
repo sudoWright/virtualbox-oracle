@@ -1,4 +1,4 @@
-/* $Id: VBoxMimicry.h 156925 2023-04-19 11:12:20Z alexander.eichner@oracle.com $ */
+/* $Id: VBoxMimicry.h 159283 2023-09-27 15:18:48Z alexander.eichner@oracle.com $ */
 /** @file
  * VBoxMimicry.h - Debug and logging routines implemented by VBoxDebugLib.
  */
