@@ -1,4 +1,4 @@
-/* $Id: VirtualBoxImpl.h 159153 2023-09-19 17:18:37Z brent.paulson@oracle.com $ */
+/* $Id: VirtualBoxImpl.h 159265 2023-09-27 08:21:09Z andreas.loeffler@oracle.com $ */
 /** @file
  * VirtualBox COM class implementation
  */
@@ -321,8 +321,7 @@ public:
     HRESULT i_retainCryptoIf(PCVBOXCRYPTOIF *ppCryptoIf);
     HRESULT i_releaseCryptoIf(PCVBOXCRYPTOIF pCryptoIf);
     HRESULT i_unloadCryptoIfModule(void);
-
-
+    HRESULT i_getSupportedGuestOSTypes(std::vector<PlatformArchitecture_T> aArchitectures, std::vector<ComPtr<IGuestOSType>> &aGuestOSTypes);
 
 private:
     class ClientWatcher;
