@@ -1,4 +1,4 @@
-/* $Id: UICommon.h 159316 2023-09-29 13:40:05Z serkan.bayraktar@oracle.com $ */
+/* $Id: UICommon.h 159387 2023-10-06 12:06:37Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UICommon class declaration.
  */
@@ -45,7 +45,6 @@
 #endif
 
 /* COM includes: */
-#include "CGuestOSType.h"
 #include "CHost.h"
 #include "CMedium.h"
 #include "CSession.h"

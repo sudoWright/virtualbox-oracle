@@ -1,4 +1,4 @@
-/* $Id: UIVirtualBoxManager.cpp 158836 2023-08-17 15:43:53Z sergey.dubov@oracle.com $ */
+/* $Id: UIVirtualBoxManager.cpp 159387 2023-10-06 12:06:37Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVirtualBoxManager class implementation.
  */
@@ -101,6 +101,7 @@
 
 /* COM includes: */
 #include "CHostUSBDevice.h"
+#include "CGuestOSType.h"
 #include "CSystemProperties.h"
 #include "CUnattended.h"
 #include "CVirtualBoxErrorInfo.h"
