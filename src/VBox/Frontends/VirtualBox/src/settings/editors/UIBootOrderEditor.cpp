@@ -1,4 +1,4 @@
-/* $Id: UIBootOrderEditor.cpp 158992 2023-09-07 08:59:15Z andreas.loeffler@oracle.com $ */
+/* $Id: UIBootOrderEditor.cpp 159570 2023-10-18 12:21:42Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIBootListWidget class implementation.
  */
@@ -443,7 +443,7 @@ UIBootItemDataList UIBootDataTools::bootItemsFromSerializedString(const QString 
 *********************************************************************************************************************************/
 
 UIBootOrderEditor::UIBootOrderEditor(QWidget *pParent /* = 0 */)
-    : UIEditor(pParent)
+    : UIEditor(pParent, true /* show in basic mode? */)
     , m_pLayout(0)
     , m_pLabel(0)
     , m_pTable(0)
