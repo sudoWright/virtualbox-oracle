@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# $Id: IEMAllN8vePython.py 159407 2023-10-07 23:34:54Z knut.osmundsen@oracle.com $
+# $Id: IEMAllN8vePython.py 159556 2023-10-18 01:32:17Z knut.osmundsen@oracle.com $
 # pylint: disable=invalid-name
 
 """
@@ -34,7 +34,7 @@ along with this program; if not, see <https://www.gnu.org/licenses>.
 
 SPDX-License-Identifier: GPL-3.0-only
 """
-__version__ = "$Revision: 159407 $"
+__version__ = "$Revision: 159556 $"
 
 # Standard python imports:
 #import sys;
@@ -51,7 +51,7 @@ g_dMcStmtThreaded = {
     'IEM_MC_DEFER_TO_CIMPL_3_RET_THREADED':                      (None, True,  True,  ),
 
     'IEM_MC_ADVANCE_RIP_AND_FINISH_THREADED_PC16':               (None, True,  False, ),
-    'IEM_MC_ADVANCE_RIP_AND_FINISH_THREADED_PC32':               (None, True,  False, ), # True ),
+    'IEM_MC_ADVANCE_RIP_AND_FINISH_THREADED_PC32':               (None, True,  True,  ),
     'IEM_MC_ADVANCE_RIP_AND_FINISH_THREADED_PC64':               (None, True,  False, ),
 
     'IEM_MC_ADVANCE_RIP_AND_FINISH_THREADED_PC16_WITH_FLAGS':    (None, True,  False, ),
