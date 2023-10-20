@@ -1,4 +1,4 @@
-; $Id: HMR0A.asm 155244 2023-01-17 14:15:46Z knut.osmundsen@oracle.com $
+; $Id: HMR0A.asm 159598 2023-10-20 14:29:27Z klaus.espenlaub@oracle.com $
 ;; @file
 ; HM - Ring-0 VMX, SVM world-switch and helper routines.
 ;
@@ -438,8 +438,8 @@ BEGINPROC VMXRestoreHostState
 
 ALIGNCODE(8)
 .gdt_readonly_or_need_writable:
-        test    edi, VMX_RESTORE_HOST_GDT_NEED_WRITABLE
-        jnz     .gdt_readonly_need_writable
+        test    edi, VMX_RESTORE_HOST_GDT_READ_ONLY
+        jz      .gdt_readonly_need_writable
 .gdt_readonly:
         mov     rcx, cr0
         mov     r9, rcx
