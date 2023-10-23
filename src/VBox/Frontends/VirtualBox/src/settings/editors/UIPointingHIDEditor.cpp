@@ -1,4 +1,4 @@
-/* $Id: UIPointingHIDEditor.cpp 159570 2023-10-18 12:21:42Z sergey.dubov@oracle.com $ */
+/* $Id: UIPointingHIDEditor.cpp 159644 2023-10-23 23:36:38Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIPointingHIDEditor class implementation.
  */
@@ -120,7 +120,7 @@ void UIPointingHIDEditor::prepare()
                 m_pCombo->setSizeAdjustPolicy(QComboBox::AdjustToContents);
                 if (m_pLabel)
                     m_pLabel->setBuddy(m_pCombo);
-                connect(m_pCombo, static_cast<void(QComboBox::*)(int)>(&QComboBox::currentIndexChanged),
+                connect(m_pCombo, &QComboBox::currentIndexChanged,
                         this, &UIPointingHIDEditor::sigValueChanged);
                 pComboLayout->addWidget(m_pCombo);
             }

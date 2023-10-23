@@ -1,4 +1,4 @@
-/* $Id: UIExecutionCapEditor.cpp 158967 2023-09-04 18:09:24Z sergey.dubov@oracle.com $ */
+/* $Id: UIExecutionCapEditor.cpp 159644 2023-10-23 23:36:38Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIExecutionCapEditor class implementation.
  */
@@ -210,7 +210,7 @@ void UIExecutionCapEditor::prepare()
             m_pSpinBox->setMinimum(m_uMinExecCap);
             m_pSpinBox->setMaximum(m_uMaxExecCap);
             uiCommon().setMinimumWidthAccordingSymbolCount(m_pSpinBox, 4);
-            connect(m_pSpinBox, static_cast<void(QSpinBox::*)(int)>(&QSpinBox::valueChanged),
+            connect(m_pSpinBox, &QSpinBox::valueChanged,
                     this, &UIExecutionCapEditor::sltHandleSpinBoxChange);
             m_pLayout->addWidget(m_pSpinBox, 0, 2);
         }
