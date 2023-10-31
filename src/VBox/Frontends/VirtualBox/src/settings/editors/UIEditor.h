@@ -1,4 +1,4 @@
-/* $Id: UIEditor.h 159513 2023-10-16 12:49:20Z sergey.dubov@oracle.com $ */
+/* $Id: UIEditor.h 159785 2023-10-31 16:46:47Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIEditor class declaration.
  */
@@ -41,6 +41,11 @@ class QTabWidget;
 class SHARED_LIBRARY_STUFF UIEditor : public QIWithRetranslateUI<QWidget>
 {
     Q_OBJECT;
+
+signals:
+
+    /** Notifies listeners about visibility changes. */
+    void sigVisibilityChange(bool fVisible);
 
 public:
 
