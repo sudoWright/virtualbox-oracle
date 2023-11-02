@@ -1,4 +1,4 @@
-/* $Id: UIEditor.cpp 159785 2023-10-31 16:46:47Z sergey.dubov@oracle.com $ */
+/* $Id: UIEditor.cpp 159811 2023-11-02 12:22:25Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIEditor class implementation.
  */
@@ -115,6 +115,9 @@ void UIEditor::filterOut(bool fExpertMode, const QString &strFilter)
      * activated after visibility changes: */
     foreach (QLayout *pLayout, findChildren<QLayout*>())
         pLayout->activate();
+
+    /* Call for filter change handler finally: */
+    handleFilterChange();
 }
 
 QStringList UIEditor::description() const
