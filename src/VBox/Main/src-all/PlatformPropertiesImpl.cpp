@@ -1,4 +1,4 @@
-/* $Id: PlatformPropertiesImpl.cpp 159833 2023-11-03 14:55:39Z andreas.loeffler@oracle.com $ */
+/* $Id: PlatformPropertiesImpl.cpp 159837 2023-11-03 15:05:07Z andreas.loeffler@oracle.com $ */
 /** @file
  * VirtualBox COM class implementation - Platform properties.
  */
@@ -738,7 +738,7 @@ HRESULT PlatformProperties::getSupportedNetworkAdapterPromiscModePolicies(std::v
     };
 
     aSupportedNetworkAdapterPromiscModePolicies.assign(aNetworkAdapterPromiscModePolicies,
-                                                       aNetworkAdapterPromiscModePolicies + RT_ELEMENTS(aSupportedNetworkAdapterPromiscModePolicies));
+                                                       aNetworkAdapterPromiscModePolicies + RT_ELEMENTS(aNetworkAdapterPromiscModePolicies));
     return S_OK;
 }
 
