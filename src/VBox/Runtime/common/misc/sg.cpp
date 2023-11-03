@@ -1,6 +1,6 @@
-/* $Id: sg.cpp 158845 2023-08-19 02:57:05Z knut.osmundsen@oracle.com $ */
+/* $Id: sg.cpp 159849 2023-11-03 15:57:39Z ksenia.s.stepanova@oracle.com $ */
 /** @file
- * IPRT - S/G buffer handling.
+ * IPRT - Scatter / Gather buffer handling.
  */
 
 /*
