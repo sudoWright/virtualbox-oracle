@@ -1,4 +1,4 @@
-/* $Id: UIVMActivityToolWidget.cpp 155244 2023-01-17 14:15:46Z knut.osmundsen@oracle.com $ */
+/* $Id: UIVMActivityToolWidget.cpp 160272 2023-11-20 06:35:00Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVMActivityToolWidget class implementation.
  */
@@ -194,7 +194,7 @@ void UIVMActivityToolWidget::addTabs(const QVector<QUuid> &machineIdsToAdd)
         CMachine comMachine = uiCommon().virtualBox().FindMachine(id.toString());
         if (comMachine.isNull())
             continue;
-        addTab(new UIVMActivityMonitor(m_enmEmbedding, this, comMachine), comMachine.GetName());
+        addTab(new UIVMActivityMonitorLocal(m_enmEmbedding, this, comMachine), comMachine.GetName());
     }
 }
 
