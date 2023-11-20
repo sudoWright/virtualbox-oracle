@@ -1,6 +1,6 @@
-/* $Id: bs3-cpu-basic-3-cmn-template.c 160282 2023-11-20 16:16:55Z knut.osmundsen@oracle.com $ */
+/* $Id: bs3-cmn-SlabAllocFixed.c 160282 2023-11-20 16:16:55Z knut.osmundsen@oracle.com $ */
 /** @file
- * BS3Kit - bs3-cpu-basic-3, C code template, common code (CMN).
+ * BS3Kit - Bs3SlabAllocEx
  */
 
 /*
@@ -36,38 +36,37 @@
 
 
 /*********************************************************************************************************************************
-*   Assembly Symbols                                                                                                             *
+*   Header Files                                                                                                                 *
 *********************************************************************************************************************************/
-#if ARCH_BITS != 64
-extern BS3_DECL_FAR(void) BS3_CMN_FAR_NM(bs3CpuBasic3_lea_16)(void);
-extern BS3_DECL_FAR(void) BS3_CMN_FAR_NM(bs3CpuBasic3_lea_32)(void);
-#else
-extern BS3_DECL_FAR(void) BS3_CMN_FAR_NM(bs3CpuBasic3_lea_64)(void);
-#endif
+#include "bs3kit-template-header.h"
+#include <iprt/asm.h>
 
 
-
-BS3_DECL_FAR(uint8_t) BS3_CMN_NM(bs3CpuBasic3_Lea)(uint8_t bMode)
+#undef Bs3SlabAllocFixed
+BS3_CMN_DEF(uint16_t, Bs3SlabAllocFixed,(PBS3SLABCTL pSlabCtl, uint32_t uFlatAddr, uint16_t cChunks))
 {
-    /* Repeat the test so the native recompiler get a chance to kick in...  */
-    unsigned i;
-    RT_NOREF(bMode);
+    uint32_t iBit32 = (uFlatAddr - BS3_XPTR_GET_FLAT(void, pSlabCtl->pbStart)) >> pSlabCtl->cChunkShift;
+    if (iBit32 < pSlabCtl->cChunks)
+    {
+        uint16_t iBit = (uint16_t)iBit32;
+        uint16_t i;
 
-#if ARCH_BITS != 64
-    {
-        FPFNBS3FAR pfnWorker16 = Bs3SelLnkCodePtrToCurPtr(BS3_CMN_FAR_NM(bs3CpuBasic3_lea_16));
-        for (i = 0; i < 64; i++)
-            pfnWorker16();
+        /* If the slab doesn't cover the entire area requested, reduce it.
+           Caller can then move on to the next slab in the list to get the rest. */
+        if (pSlabCtl->cChunks - iBit < cChunks)
+            cChunks = pSlabCtl->cChunks - iBit;
+
+        /* Check that all the chunks are free. */
+        for (i = 0; i < cChunks; i++)
+            if (ASMBitTest(&pSlabCtl->bmAllocated, iBit + i))
+                return UINT16_MAX;
+
+        /* Complete the allocation. */
+        for (i = 0; i < cChunks; i++)
+            ASMBitSet(&pSlabCtl->bmAllocated, iBit + i);
+        pSlabCtl->cFreeChunks  -= cChunks;
+        return cChunks;
     }
-    {
-        FPFNBS3FAR pfnWorker32 = Bs3SelLnkCodePtrToCurPtr(BS3_CMN_FAR_NM(bs3CpuBasic3_lea_32));
-        for (i = 0; i < 64; i++)
-            pfnWorker32();
-    }
-#else
-    for (i = 0; i < 64; i++)
-        BS3_CMN_FAR_NM(bs3CpuBasic3_lea_64)();
-#endif
     return 0;
 }
 

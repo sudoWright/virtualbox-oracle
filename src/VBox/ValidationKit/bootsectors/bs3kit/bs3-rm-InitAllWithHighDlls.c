@@ -1,6 +1,6 @@
-/* $Id: bs3-cpu-basic-3-cmn-template.c 160282 2023-11-20 16:16:55Z knut.osmundsen@oracle.com $ */
+/* $Id: bs3-rm-InitAllWithHighDlls.c 160282 2023-11-20 16:16:55Z knut.osmundsen@oracle.com $ */
 /** @file
- * BS3Kit - bs3-cpu-basic-3, C code template, common code (CMN).
+ * BS3Kit - Initialize all components and high DLLs, real mode.
  */
 
 /*
@@ -36,38 +36,9 @@
 
 
 /*********************************************************************************************************************************
-*   Assembly Symbols                                                                                                             *
+*   Header Files                                                                                                                 *
 *********************************************************************************************************************************/
-#if ARCH_BITS != 64
-extern BS3_DECL_FAR(void) BS3_CMN_FAR_NM(bs3CpuBasic3_lea_16)(void);
-extern BS3_DECL_FAR(void) BS3_CMN_FAR_NM(bs3CpuBasic3_lea_32)(void);
-#else
-extern BS3_DECL_FAR(void) BS3_CMN_FAR_NM(bs3CpuBasic3_lea_64)(void);
-#endif
-
-
-
-BS3_DECL_FAR(uint8_t) BS3_CMN_NM(bs3CpuBasic3_Lea)(uint8_t bMode)
-{
-    /* Repeat the test so the native recompiler get a chance to kick in...  */
-    unsigned i;
-    RT_NOREF(bMode);
-
-#if ARCH_BITS != 64
-    {
-        FPFNBS3FAR pfnWorker16 = Bs3SelLnkCodePtrToCurPtr(BS3_CMN_FAR_NM(bs3CpuBasic3_lea_16));
-        for (i = 0; i < 64; i++)
-            pfnWorker16();
-    }
-    {
-        FPFNBS3FAR pfnWorker32 = Bs3SelLnkCodePtrToCurPtr(BS3_CMN_FAR_NM(bs3CpuBasic3_lea_32));
-        for (i = 0; i < 64; i++)
-            pfnWorker32();
-    }
-#else
-    for (i = 0; i < 64; i++)
-        BS3_CMN_FAR_NM(bs3CpuBasic3_lea_64)();
-#endif
-    return 0;
-}
+#define BS3_INIT_ALL_WITH_HIGH_DLLS
+#define Bs3InitAll_rm Bs3InitAllWithHighDlls_rm
+#include "bs3-rm-InitAll.c"
 

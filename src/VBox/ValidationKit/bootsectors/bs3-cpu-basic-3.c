@@ -1,4 +1,4 @@
-/* $Id: bs3-cpu-basic-3.c 160254 2023-11-16 23:51:25Z knut.osmundsen@oracle.com $ */
+/* $Id: bs3-cpu-basic-3.c 160282 2023-11-20 16:16:55Z knut.osmundsen@oracle.com $ */
 /** @file
  * BS3Kit - bs3-cpu-basic-3, 16-bit C code.
  */
@@ -63,7 +63,7 @@ static const BS3TESTMODEENTRY g_aModeTest[] =
 
 BS3_DECL(void) Main_rm()
 {
-    Bs3InitAll_rm();
+    Bs3InitAllWithHighDlls_rm();
     Bs3TestInit("bs3-cpu-basic-3");
     Bs3TestPrintf("g_uBs3CpuDetected=%#x\n", g_uBs3CpuDetected);
 
