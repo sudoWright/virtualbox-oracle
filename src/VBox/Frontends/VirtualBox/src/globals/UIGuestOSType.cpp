@@ -1,4 +1,4 @@
-/* $Id: UIGuestOSType.cpp 160223 2023-11-15 13:35:02Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIGuestOSType.cpp 160277 2023-11-20 14:58:48Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIGuestOSType class implementation.
  */
@@ -67,7 +67,7 @@ void UIGuestOSTypeManager::addGuestOSType(const CGuestOSType &comType)
         m_guestOSFamilies << family;
 }
 
-const UIGuestOSTypeManager::UIGuestOSTypeFamilyInfo &UIGuestOSTypeManager::getFamilies() const
+const UIGuestOSTypeManager::UIGuestOSFamilyInfo &UIGuestOSTypeManager::getFamilies() const
 {
     return m_guestOSFamilies;
 }
