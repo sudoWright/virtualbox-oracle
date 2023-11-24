@@ -1,4 +1,4 @@
-/* $Id: RTMkPasswd.cpp 160430 2023-11-24 15:49:29Z andreas.loeffler@oracle.com $ */
+/* $Id: RTMkPasswd.cpp 160431 2023-11-24 16:32:03Z andreas.loeffler@oracle.com $ */
 /** @file
  * IPRT - Makes passwords.
  */
@@ -176,7 +176,7 @@ int main(int argc, char **argv)
                               RT_SHACRYPT_MAX_SALT_LEN);
 
     uint8_t abDigest[RTSHA512_HASH_SIZE];
-    char    szResult[RTSHA512_DIGEST_LEN];
+    char    szResult[RTSHA512_DIGEST_LEN + 1];
 
     switch (enmMethod)
     {

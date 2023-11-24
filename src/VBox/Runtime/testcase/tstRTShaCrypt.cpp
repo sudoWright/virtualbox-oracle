@@ -1,4 +1,4 @@
-/* $Id: tstRTShaCrypt.cpp 160430 2023-11-24 15:49:29Z andreas.loeffler@oracle.com $ */
+/* $Id: tstRTShaCrypt.cpp 160431 2023-11-24 16:32:03Z andreas.loeffler@oracle.com $ */
 /** @file
  * IPRT Testcase - SHA-crypt 256 / 512.
  */
@@ -226,7 +226,7 @@ int main()
         if (   RT_SUCCESS(rc)
             && g_aTests[i].pszResultStr)
         {
-            char szResult[RTSHA512_DIGEST_LEN];
+            char szResult[RTSHA512_DIGEST_LEN + 1];
 
             switch (enmType)
             {
