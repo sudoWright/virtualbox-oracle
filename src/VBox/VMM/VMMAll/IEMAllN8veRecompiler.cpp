@@ -1,4 +1,4 @@
-/* $Id: IEMAllN8veRecompiler.cpp 160552 2023-11-30 23:57:01Z knut.osmundsen@oracle.com $ */
+/* $Id: IEMAllN8veRecompiler.cpp 160577 2023-12-02 03:32:44Z knut.osmundsen@oracle.com $ */
 /** @file
  * IEM - Native Recompiler
  *
@@ -7763,7 +7763,7 @@ iemNativeEmitMemFetchStoreDataCommon(PIEMRECOMPILERSTATE pReNative, uint32_t off
         }
     }
 #endif
-
+    RT_NOREF(cbMem);
 
 #ifdef VBOX_STRICT
     /*
