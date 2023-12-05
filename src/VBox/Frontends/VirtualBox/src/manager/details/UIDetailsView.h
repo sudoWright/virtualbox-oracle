@@ -1,4 +1,4 @@
-/* $Id: UIDetailsView.h 155244 2023-01-17 14:15:46Z knut.osmundsen@oracle.com $ */
+/* $Id: UIDetailsView.h 160618 2023-12-05 13:17:26Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIDetailsView class declaration.
  */
@@ -74,6 +74,10 @@ private:
 
     /** Prepares all. */
     void prepare();
+    /** Prepares this. */
+    void prepareThis();
+    /** Prepares palette. */
+    void preparePalette();
 
     /** Updates scene rectangle. */
     void updateSceneRect();
