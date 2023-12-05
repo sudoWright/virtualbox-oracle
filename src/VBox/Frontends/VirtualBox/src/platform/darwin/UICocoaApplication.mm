@@ -1,4 +1,4 @@
-/* $Id: UICocoaApplication.mm 155244 2023-01-17 14:15:46Z knut.osmundsen@oracle.com $ */
+/* $Id: UICocoaApplication.mm 160619 2023-12-05 13:44:42Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UICocoaApplication class implementation.
  */
@@ -326,6 +326,12 @@ UICocoaApplication::~UICocoaApplication()
 bool UICocoaApplication::isActive() const
 {
     return [m_pNative isActive];
+}
+
+bool UICocoaApplication::isDarkMode() const
+{
+    NativeNSStringRef pstrInterfaceMode = [[NSUserDefaults standardUserDefaults] stringForKey:@"AppleInterfaceStyle"];
+    return [pstrInterfaceMode isEqualToString :@"Dark"];
 }
 
 void UICocoaApplication::hide()
