@@ -1,4 +1,4 @@
-/* $Id: UIVisoContentBrowser.h 160639 2023-12-06 10:17:43Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIVisoContentBrowser.h 160640 2023-12-06 10:20:18Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVisoContentBrowser class declaration.
  */
@@ -36,6 +36,7 @@
 
 /* Qt includes: */
 #include <QItemSelection>
+#include <QPointer>
 #include <QWidget>
 
 /* COM includes: */
