@@ -1,4 +1,4 @@
-/* $Id: UICommon.h 160662 2023-12-07 11:42:19Z knut.osmundsen@oracle.com $ */
+/* $Id: UICommon.h 160668 2023-12-07 15:04:57Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UICommon class declaration.
  */
@@ -234,6 +234,11 @@ public:
 #endif
         /** Returns the name of the host OS by using IHost::getOperatingSystem. */
         QString hostOperatingSystem() const;
+
+#ifdef VBOX_WS_WIN
+        /** Returns whether Windows host is in Dark mode. */
+        bool isWindowsInDarkMode() const;
+#endif
 
         /** Loads the color theme. */
         void loadColorTheme();
