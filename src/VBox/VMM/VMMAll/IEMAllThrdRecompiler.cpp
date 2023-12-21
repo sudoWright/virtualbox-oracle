@@ -1,4 +1,4 @@
-/* $Id: IEMAllThrdRecompiler.cpp 160825 2023-12-21 01:55:07Z knut.osmundsen@oracle.com $ */
+/* $Id: IEMAllThrdRecompiler.cpp 160851 2023-12-21 21:36:01Z knut.osmundsen@oracle.com $ */
 /** @file
  * IEM - Instruction Decoding and Threaded Recompilation.
  *
@@ -2363,7 +2363,7 @@ static VBOXSTRICTRC iemThreadedCompile(PVMCC pVM, PVMCPUCC pVCpu, RTGCPHYS GCPhy
                 break;
 
 #if defined(LOG_ENABLED) && 0 /* for debugging */
-            iemThreadedCompileEmitNop(pTb);
+            //iemThreadedCompileEmitNop(pTb);
             iemThreadedCompileEmitLogCpuState(pTb);
 #endif
         }
