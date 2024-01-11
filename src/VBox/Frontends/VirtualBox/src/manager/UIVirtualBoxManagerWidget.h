@@ -1,4 +1,4 @@
-/* $Id: UIVirtualBoxManagerWidget.h 161002 2024-01-10 13:10:55Z sergey.dubov@oracle.com $ */
+/* $Id: UIVirtualBoxManagerWidget.h 161037 2024-01-11 12:27:44Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVirtualBoxManagerWidget class declaration.
  */
@@ -373,6 +373,9 @@ private:
         void updateToolsMenuGlobal();
         /** Updates Machine tools menu for @a pItem specified. */
         void updateToolsMenuMachine(UIVirtualMachineItem *pItem);
+
+        /** Handles current tool @a enmType change. */
+        void handleCurrentToolTypeChange(UIToolType enmType);
     /** @} */
 
     /** Holds the action-pool instance. */
