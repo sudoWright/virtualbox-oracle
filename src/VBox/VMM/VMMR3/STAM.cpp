@@ -1,4 +1,4 @@
-/* $Id: STAM.cpp 161041 2024-01-11 13:48:36Z knut.osmundsen@oracle.com $ */
+/* $Id: STAM.cpp 161054 2024-01-12 10:04:27Z knut.osmundsen@oracle.com $ */
 /** @file
  * STAM - The Statistics Manager.
  */
@@ -1885,7 +1885,7 @@ static PSTAMDESC stamR3LookupFindByPrefixRange(PSTAMLOOKUP pRoot, const char *pc
                     {
                         iDiff = memcmp(pCur->szName, pchPrefix, pCur->cch);
                         if (!iDiff)
-                            iDiff = 1;
+                            iDiff = -1;
                     }
                     if (iDiff > 0)
                     {
