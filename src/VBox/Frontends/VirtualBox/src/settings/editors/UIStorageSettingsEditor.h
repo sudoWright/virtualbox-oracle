@@ -1,4 +1,4 @@
-/* $Id: UIStorageSettingsEditor.h 159964 2023-11-06 13:08:45Z sergey.dubov@oracle.com $ */
+/* $Id: UIStorageSettingsEditor.h 161186 2024-01-18 18:43:05Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIStorageSettingsEditor class declaration.
  */
@@ -223,6 +223,9 @@ protected:
     /** Handles show @a pEvent. */
     virtual void showEvent(QShowEvent *pEvent) RT_OVERRIDE;
 
+    /** Handles filter change. */
+    virtual void handleFilterChange() RT_OVERRIDE;
+
 private slots:
 
     /** Handles enumeration of medium with @a uMediumId. */
@@ -342,6 +345,9 @@ private:
 
     /** Cleanups all. */
     void cleanup();
+
+    /** Updates root and current index most suitable for this editor. */
+    void updateRootAndCurrentIndexes();
 
     /** Adds controller with @a strName, @a enmBus and @a enmType. */
     void addControllerWrapper(const QString &strName, KStorageBus enmBus, KStorageControllerType enmType);
