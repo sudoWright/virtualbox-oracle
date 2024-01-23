@@ -1,4 +1,4 @@
-/* $Id: fatvfs.cpp 161121 2024-01-16 14:24:57Z alexander.eichner@oracle.com $ */
+/* $Id: fatvfs.cpp 161239 2024-01-23 23:55:58Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - FAT Virtual Filesystem.
  */
@@ -43,6 +43,7 @@
 #include <iprt/fsvfs.h>
 
 #include <iprt/asm.h>
+#include <iprt/asm-mem.h>
 #include <iprt/assert.h>
 #include <iprt/ctype.h>
 #include <iprt/file.h>

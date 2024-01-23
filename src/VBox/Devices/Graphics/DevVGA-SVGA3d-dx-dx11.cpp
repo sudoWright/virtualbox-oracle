@@ -1,4 +1,4 @@
-/* $Id: DevVGA-SVGA3d-dx-dx11.cpp 160996 2024-01-10 08:16:30Z vitali.pelenjow@oracle.com $ */
+/* $Id: DevVGA-SVGA3d-dx-dx11.cpp 161239 2024-01-23 23:55:58Z knut.osmundsen@oracle.com $ */
 /** @file
  * DevVMWare - VMWare SVGA device
  */
@@ -35,6 +35,7 @@
 #include <VBox/vmm/pdmdev.h>
 #include <VBox/vmm/pgm.h>
 
+#include <iprt/asm-mem.h>
 #include <iprt/assert.h>
 #include <iprt/avl.h>
 #include <iprt/errcore.h>

@@ -1,4 +1,4 @@
-/* $Id: tstRTMemPool.cpp 155244 2023-01-17 14:15:46Z knut.osmundsen@oracle.com $ */
+/* $Id: tstRTMemPool.cpp 161239 2024-01-23 23:55:58Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT Testcase - MemPool.
  */
@@ -40,6 +40,7 @@
 *********************************************************************************************************************************/
 #include <iprt/mempool.h>
 
+#include <iprt/asm-mem.h>
 #include <iprt/asm.h>
 #include <iprt/errcore.h>
 #include <iprt/initterm.h>
