@@ -1,4 +1,4 @@
-/* $Id: darwin-pasteboard.cpp 161391 2024-01-31 15:04:39Z alexander.eichner@oracle.com $ */
+/* $Id: darwin-pasteboard.cpp 161397 2024-01-31 15:26:12Z alexander.eichner@oracle.com $ */
 /** @file
  * Shared Clipboard Service - Mac OS X host implementation.
  */
@@ -45,6 +45,7 @@
 #include <VBox/GuestHost/clipboard-helper.h>
 
 #include "darwin-pasteboard.h"
+
 
 /*********************************************************************************************************************************
 *   Defined Constants And Macros                                                                                                 *
