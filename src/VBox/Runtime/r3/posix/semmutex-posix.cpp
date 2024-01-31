@@ -1,4 +1,4 @@
-/* $Id: semmutex-posix.cpp 155244 2023-01-17 14:15:46Z knut.osmundsen@oracle.com $ */
+/* $Id: semmutex-posix.cpp 161389 2024-01-31 15:03:29Z alexander.eichner@oracle.com $ */
 /** @file
  * IPRT - Mutex Semaphore, POSIX.
  */
@@ -80,7 +80,7 @@ struct RTSEMMUTEXINTERNAL
 /**
  * This function is a crude approximation of pthread_mutex_timedlock.
  */
-int rtSemFallbackPthreadMutexTimedlock(pthread_mutex_t *mutex, RTMSINTERVAL cMillies)
+static int rtSemFallbackPthreadMutexTimedlock(pthread_mutex_t *mutex, RTMSINTERVAL cMillies)
 {
     struct timespec ts;
     int rc;
