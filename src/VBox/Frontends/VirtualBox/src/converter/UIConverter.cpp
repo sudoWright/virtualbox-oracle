@@ -1,4 +1,4 @@
-/* $Id: UIConverter.cpp 155244 2023-01-17 14:15:46Z knut.osmundsen@oracle.com $ */
+/* $Id: UIConverter.cpp 161424 2024-02-01 17:22:35Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIConverter implementation.
  */
@@ -27,6 +27,9 @@
 
 /* GUI includes: */
 #include "UIConverter.h"
+
+/* Other VBox includes: */
+#include "iprt/assert.h"
 
 
 /* static */
