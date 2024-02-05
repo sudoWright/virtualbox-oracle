@@ -1,4 +1,4 @@
-/* $Id: IEMAllInstOneByte.cpp.h 161456 2024-02-04 23:41:47Z knut.osmundsen@oracle.com $ */
+/* $Id: IEMAllInstOneByte.cpp.h 161457 2024-02-05 05:42:19Z alexander.rudnev@oracle.com $ */
 /** @file
  * IEM - Instruction Decoding and Emulation.
  */
@@ -8449,6 +8449,7 @@ FNIEMOP_DEF(iemOp_Grp2_Ev_Ib)
         {
             IEMOP_MNEMONIC2(MI, SHL, shl, Ev, Ib, DISOPTYPE_HARMLESS, 0);
             GRP2_BODY_Ev_Ib(IEMTARGETCPU_EFL_BEHAVIOR_SELECT(g_iemAImpl_shl_eflags));
+            break;
         }
         /**
          * @opdone
