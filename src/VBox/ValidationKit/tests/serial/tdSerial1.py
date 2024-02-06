@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# $Id: tdSerial1.py 155951 2023-02-20 13:10:54Z knut.osmundsen@oracle.com $
+# $Id: tdSerial1.py 161495 2024-02-06 12:53:48Z alexander.eichner@oracle.com $
 
 """
 VirtualBox Validation Kit - Serial port testing #1.
@@ -37,7 +37,7 @@ terms and conditions of either the GPL or the CDDL or both.
 
 SPDX-License-Identifier: GPL-3.0-only OR CDDL-1.0
 """
-__version__ = "$Revision: 155951 $"
+__version__ = "$Revision: 161495 $"
 
 
 # Standard Python imports.
@@ -120,7 +120,7 @@ class tdSerial1(vbox.TestDriver):
             for s in self.asSerialTests:
                 if s not in self.asSerialTestsDef:
                     reporter.log('warning: The "--serial-tests" value "%s" is not a valid serial port test.' % (s));
-        elif asArgs[iArg] == '--aurts':
+        elif asArgs[iArg] == '--uarts':
             iArg += 1;
             if iArg >= len(asArgs):
                 raise base.InvalidOption('The "--uarts" takes a colon separated list of uarts to test');
