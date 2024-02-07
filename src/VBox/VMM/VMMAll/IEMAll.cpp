@@ -1,4 +1,4 @@
-/* $Id: IEMAll.cpp 161459 2024-02-05 07:23:40Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: IEMAll.cpp 161536 2024-02-07 13:14:00Z andreas.loeffler@oracle.com $ */
 /** @file
  * IEM - Interpreted Execution Manager - All Contexts.
  */
@@ -3196,6 +3196,7 @@ iemRaiseXcptOrIntInProtMode(PVMCPUCC    pVCpu,
 
         case X86_SEL_TYPE_SYS_286_TRAP_GATE:
             f32BitGate = false;
+            break;
         case X86_SEL_TYPE_SYS_386_TRAP_GATE:
             break;
 
