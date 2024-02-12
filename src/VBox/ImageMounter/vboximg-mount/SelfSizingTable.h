@@ -1,4 +1,4 @@
-/* $Id: SelfSizingTable.h 157801 2023-06-07 20:05:13Z alexander.eichner@oracle.com $ $Revision: 157801 $ */
+/* $Id: SelfSizingTable.h 161607 2024-02-12 12:33:46Z andreas.loeffler@oracle.com $ $Revision: 161607 $ */
 /** @file
  * vboxraw header file
  */
@@ -238,6 +238,8 @@ void SELFSIZINGTABLE::setCell(void *row, void *col, ...)
         }
         pColData = pColData->next;
     }
+
+    va_end(ap);
 }
 
 void SELFSIZINGTABLE::displayTable()
