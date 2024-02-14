@@ -1,4 +1,4 @@
-/* $Id: VBoxCAPI.cpp 155994 2023-02-22 23:08:43Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxCAPI.cpp 161671 2024-02-14 14:13:23Z knut.osmundsen@oracle.com $ */
 /** @file VBoxCAPI.cpp
  * Utility functions to use with the C API binding.
  */
@@ -422,7 +422,7 @@ VBoxComInitialize(const char *pszVirtualBoxIID, IVirtualBox **ppVirtualBox,
 #endif /* VBOX_WITH_XPCOM */
 
 #ifdef VBOX_WITH_XPCOM
-    nsIComponentManager *pManager;
+    nsIComponentManager *pManager = NULL;
     hrc = NS_GetComponentManager(&pManager);
     if (FAILED(hrc))
     {
@@ -694,7 +694,7 @@ VBoxClientInitialize(const char *pszVirtualBoxClientIID, IVirtualBoxClient **ppV
 #endif /* VBOX_WITH_XPCOM */
 
 #ifdef VBOX_WITH_XPCOM
-    nsIComponentManager *pManager;
+    nsIComponentManager *pManager = NULL;
     hrc = NS_GetComponentManager(&pManager);
     if (FAILED(hrc))
     {
