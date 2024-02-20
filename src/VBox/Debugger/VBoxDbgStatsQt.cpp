@@ -1,4 +1,4 @@
-/* $Id: VBoxDbgStatsQt.cpp 161799 2024-02-20 02:36:59Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxDbgStatsQt.cpp 161800 2024-02-20 04:25:57Z alexander.rudnev@oracle.com $ */
 /** @file
  * VBox Debugger GUI - Statistics.
  */
@@ -110,7 +110,7 @@ typedef enum DBGGUISTATSNODESTATE
 
 /**
  * Filtering data.
- */ 
+ */
 typedef struct VBoxGuiStatsFilterData
 {
     /** Number of instances. */
