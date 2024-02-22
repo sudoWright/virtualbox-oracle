@@ -1,4 +1,4 @@
-/* $Id: UICommon.cpp 161883 2024-02-22 15:58:21Z sergey.dubov@oracle.com $ */
+/* $Id: UICommon.cpp 161884 2024-02-22 17:06:26Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UICommon class implementation.
  */
@@ -67,6 +67,7 @@
 #include "UIExtraDataManager.h"
 #include "UIFDCreationDialog.h"
 #include "UIIconPool.h"
+#include "UILoggingDefs.h"
 #include "UIMedium.h"
 #include "UIMediumEnumerator.h"
 #include "UIMediumSelector.h"
