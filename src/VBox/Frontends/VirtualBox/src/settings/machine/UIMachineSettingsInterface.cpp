@@ -1,4 +1,4 @@
-/* $Id: UIMachineSettingsInterface.cpp 159811 2023-11-02 12:22:25Z sergey.dubov@oracle.com $ */
+/* $Id: UIMachineSettingsInterface.cpp 161902 2024-02-23 16:31:29Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIMachineSettingsInterface class implementation.
  */
@@ -357,7 +357,7 @@ void UIMachineSettingsInterface::polishPage()
 void UIMachineSettingsInterface::prepare()
 {
     /* Prepare action-pool: */
-    m_pActionPool = UIActionPool::create(UIActionPoolType_Runtime);
+    m_pActionPool = UIActionPool::create(UIType_RuntimeUI);
 
     /* Prepare cache: */
     m_pCache = new UISettingsCacheMachineInterface;
