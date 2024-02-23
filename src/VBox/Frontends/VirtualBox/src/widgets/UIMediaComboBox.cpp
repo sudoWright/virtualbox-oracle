@@ -1,4 +1,4 @@
-/* $Id: UIMediaComboBox.cpp 159644 2023-10-23 23:36:38Z sergey.dubov@oracle.com $ */
+/* $Id: UIMediaComboBox.cpp 161896 2024-02-23 15:21:15Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIMediaComboBox class implementation.
  */
@@ -31,6 +31,7 @@
 #include <QFileInfo>
 
 /* GUI includes: */
+#include "UICommon.h"
 #include "UIMediaComboBox.h"
 #include "UIMedium.h"
 
