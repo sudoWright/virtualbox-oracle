@@ -1,4 +1,4 @@
-/* $Id: UISnapshotPane.h 157128 2023-05-04 14:18:46Z sergey.dubov@oracle.com $ */
+/* $Id: UISnapshotPane.h 161900 2024-02-23 15:45:33Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UISnapshotPane class declaration.
  */
@@ -36,7 +36,6 @@
 
 /* GUI includes: */
 #include "QIWithRetranslateUI.h"
-#include "UICommon.h"
 
 /* COM includes: */
 #include "COMEnums.h"
