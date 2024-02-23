@@ -1,4 +1,4 @@
-﻿/* $Id: UIMouseHandler.cpp 161884 2024-02-22 17:06:26Z sergey.dubov@oracle.com $ */
+﻿/* $Id: UIMouseHandler.cpp 161899 2024-02-23 15:42:38Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIMouseHandler class implementation.
  */
@@ -32,6 +32,7 @@
 #include <QTouchEvent>
 
 /* GUI includes: */
+#include "UICommon.h"
 #include "UICursor.h"
 #include "UIDesktopWidgetWatchdog.h"
 #include "UIExtraDataManager.h"
