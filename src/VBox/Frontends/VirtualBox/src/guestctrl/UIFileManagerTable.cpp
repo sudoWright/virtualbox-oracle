@@ -1,4 +1,4 @@
-/* $Id: UIFileManagerTable.cpp 162011 2024-03-03 09:55:18Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIFileManagerTable.cpp 162012 2024-03-03 09:55:44Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIFileManagerTable class implementation.
  */
@@ -249,6 +249,7 @@ void UIGuestControlFileView::mouseDoubleClickEvent(QMouseEvent *event)
     }
     QTableView::mouseDoubleClickEvent(event);
 }
+
 
 /*********************************************************************************************************************************
 *   UIFileStringInputDialog implementation.                                                                                      *
