@@ -1,4 +1,4 @@
-/* $Id: UINotificationObjectItem.h 157603 2023-05-24 06:53:04Z serkan.bayraktar@oracle.com $ */
+/* $Id: UINotificationObjectItem.h 162071 2024-03-06 15:15:36Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UINotificationObjectItem class declaration.
  */
@@ -35,7 +35,7 @@
 #include <QWidget>
 
 /* VBox includes: */
-#include <iprt/cdefs.h>
+#include <iprt/cdefs.h> // for RT_OVERRIDE stuff
 
 /* Forward declarations: */
 class QHBoxLayout;

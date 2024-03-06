@@ -1,4 +1,4 @@
-/* $Id: DarwinKeyboard.h 155244 2023-01-17 14:15:46Z knut.osmundsen@oracle.com $ */
+/* $Id: DarwinKeyboard.h 162071 2024-03-06 15:15:36Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - Declarations of utility functions for handling Darwin Keyboard specific tasks.
  */
@@ -33,9 +33,6 @@
 
 /* GUI includes: */
 #include "UILibraryDefs.h"
-
-/* Other VBox includes: */
-#include <iprt/cdefs.h>
 
 /* External includes: */
 #include <CoreFoundation/CFBase.h>
