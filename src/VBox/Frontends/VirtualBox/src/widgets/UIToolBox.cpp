@@ -1,4 +1,4 @@
-/* $Id: UIToolBox.cpp 161368 2024-01-30 12:29:34Z sergey.dubov@oracle.com $ */
+/* $Id: UIToolBox.cpp 162077 2024-03-06 16:53:27Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIToolBox class implementation.
  */
@@ -35,7 +35,6 @@
 /* GUI includes: */
 #include "QIRichTextLabel.h"
 #include "QIToolButton.h"
-#include "UICommon.h"
 #include "UIDesktopWidgetWatchdog.h"
 #include "UIIconPool.h"
 #include "UIToolBox.h"
