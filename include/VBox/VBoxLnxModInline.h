@@ -1,4 +1,4 @@
-/* $Id: VBoxLnxModInline.h 162154 2024-03-11 17:42:43Z vadim.galitsyn@oracle.com $ */
+/* $Id: VBoxLnxModInline.h 162160 2024-03-11 18:02:22Z vadim.galitsyn@oracle.com $ */
 /** @file
  * A common code for VirtualBox Linux kernel modules.
  */
@@ -30,7 +30,6 @@
 
 #ifndef VBOX_INCLUDED_VBoxLnxModInline_h
 #define VBOX_INCLUDED_VBoxLnxModInline_h
-
 #ifndef RT_WITHOUT_PRAGMA_ONCE
 # pragma once
 #endif
