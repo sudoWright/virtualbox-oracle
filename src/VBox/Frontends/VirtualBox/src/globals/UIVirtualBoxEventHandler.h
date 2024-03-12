@@ -1,4 +1,4 @@
-/* $Id: UIVirtualBoxEventHandler.h 158607 2023-07-30 09:48:13Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIVirtualBoxEventHandler.h 162172 2024-03-12 11:15:18Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVirtualBoxEventHandler class declaration.
  */
@@ -38,9 +38,10 @@
 #include "UILibraryDefs.h"
 
 /* COM includes: */
-#include "COMEnums.h"
 #include "CMedium.h"
 #include "CMediumAttachment.h"
+#include "KMachineState.h"
+#include "KSessionState.h"
 
 /* Forward declarations: */
 class UIVirtualBoxEventHandlerProxy;

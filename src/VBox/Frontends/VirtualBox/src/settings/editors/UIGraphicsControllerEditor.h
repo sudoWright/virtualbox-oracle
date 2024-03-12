@@ -1,4 +1,4 @@
-/* $Id: UIGraphicsControllerEditor.h 159821 2023-11-03 13:13:47Z sergey.dubov@oracle.com $ */
+/* $Id: UIGraphicsControllerEditor.h 162172 2024-03-12 11:15:18Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIGraphicsControllerEditor class declaration.
  */
@@ -35,7 +35,7 @@
 #include "UIEditor.h"
 
 /* COM includes: */
-#include "COMEnums.h"
+#include "KGraphicsControllerType.h"
 
 /* Forward declarations: */
 class QComboBox;

@@ -1,4 +1,4 @@
-/* $Id: UIParavirtProviderEditor.h 159961 2023-11-06 12:28:34Z sergey.dubov@oracle.com $ */
+/* $Id: UIParavirtProviderEditor.h 162172 2024-03-12 11:15:18Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIParavirtProviderEditor class declaration.
  */
@@ -35,7 +35,7 @@
 #include "UIEditor.h"
 
 /* COM includes: */
-#include "COMEnums.h"
+#include "KParavirtProvider.h"
 
 /* Forward declarations: */
 class QComboBox;

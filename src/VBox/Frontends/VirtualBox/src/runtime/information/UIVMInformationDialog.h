@@ -1,4 +1,4 @@
-/* $Id: UIVMInformationDialog.h 161621 2024-02-12 16:40:52Z sergey.dubov@oracle.com $ */
+/* $Id: UIVMInformationDialog.h 162172 2024-03-12 11:15:18Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVMInformationDialog class declaration.
  */
@@ -40,8 +40,7 @@
 #include "QIWithRetranslateUI.h"
 
 /* COM includes: */
-#include "COMEnums.h"
-
+#include "KMachineState.h"
 
 /* Forward declarations: */
 class QITabWidget;

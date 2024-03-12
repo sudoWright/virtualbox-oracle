@@ -1,4 +1,4 @@
-/* $Id: UIVRDESettingsEditor.h 158967 2023-09-04 18:09:24Z sergey.dubov@oracle.com $ */
+/* $Id: UIVRDESettingsEditor.h 162172 2024-03-12 11:15:18Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVRDESettingsEditor class declaration.
  */
@@ -35,7 +35,7 @@
 #include "UIEditor.h"
 
 /* COM includes: */
-#include "COMEnums.h"
+#include "KAuthType.h"
 
 /* Forward declarations: */
 class QCheckBox;

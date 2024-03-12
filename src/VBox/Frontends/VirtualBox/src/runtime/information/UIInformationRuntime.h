@@ -1,4 +1,4 @@
-/* $Id: UIInformationRuntime.h 161621 2024-02-12 16:40:52Z sergey.dubov@oracle.com $ */
+/* $Id: UIInformationRuntime.h 162172 2024-03-12 11:15:18Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIInformationRuntime class declaration.
  */
@@ -38,7 +38,9 @@
 #include "QIWithRetranslateUI.h"
 
 /* COM includes: */
-#include "COMEnums.h"
+#include "KClipboardMode.h"
+#include "KDnDMode.h"
+#include "KGuestMonitorChangedEventType.h"
 
 /* Forward declarations: */
 class QAction;

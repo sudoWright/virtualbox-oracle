@@ -1,4 +1,4 @@
-/* $Id: UIWizardImportApp.h 155244 2023-01-17 14:15:46Z knut.osmundsen@oracle.com $ */
+/* $Id: UIWizardImportApp.h 162172 2024-03-12 11:15:18Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardImportApp class declaration.
  */
@@ -35,7 +35,6 @@
 #include "UINativeWizard.h"
 
 /* COM includes: */
-#include "COMEnums.h"
 #include "CAppliance.h"
 #include "CVirtualSystemDescriptionForm.h"
 

@@ -1,4 +1,4 @@
-/* $Id: UICloudNetworkingStuff.h 158770 2023-08-11 15:38:01Z sergey.dubov@oracle.com $ */
+/* $Id: UICloudNetworkingStuff.h 162172 2024-03-12 11:15:18Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UICloudNetworkingStuff namespace declaration.
  */
@@ -36,7 +36,6 @@
 #include "UINotificationCenter.h"
 
 /* COM includes: */
-#include "COMEnums.h"
 #include "CCloudClient.h"
 #include "CCloudMachine.h"
 #include "CCloudProfile.h"

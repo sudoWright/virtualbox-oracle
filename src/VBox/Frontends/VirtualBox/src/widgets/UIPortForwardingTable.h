@@ -1,4 +1,4 @@
-/* $Id: UIPortForwardingTable.h 155244 2023-01-17 14:15:46Z knut.osmundsen@oracle.com $ */
+/* $Id: UIPortForwardingTable.h 162172 2024-03-12 11:15:18Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIPortForwardingTable class declaration.
  */
@@ -40,7 +40,7 @@
 #include "UILibraryDefs.h"
 
 /* COM includes: */
-#include "COMEnums.h"
+#include "KNATProtocol.h"
 
 /* Forward declarations: */
 class QAction;

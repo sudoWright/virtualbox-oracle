@@ -1,4 +1,4 @@
-/* $Id: UITaskCloudGetSettingsForm.h 155244 2023-01-17 14:15:46Z knut.osmundsen@oracle.com $ */
+/* $Id: UITaskCloudGetSettingsForm.h 162172 2024-03-12 11:15:18Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UITaskCloudGetSettingsForm class declaration.
  */
@@ -38,7 +38,6 @@
 #include "UITask.h"
 
 /* COM includes: */
-#include "COMEnums.h"
 #include "CCloudMachine.h"
 #include "CForm.h"
 

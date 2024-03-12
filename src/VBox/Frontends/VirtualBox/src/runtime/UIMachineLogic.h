@@ -1,4 +1,4 @@
-/* $Id: UIMachineLogic.h 160698 2023-12-08 16:41:52Z sergey.dubov@oracle.com $ */
+/* $Id: UIMachineLogic.h 162172 2024-03-12 11:15:18Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIMachineLogic class declaration.
  */
@@ -35,6 +35,9 @@
 #include "QIWithRetranslateUI.h"
 #include "UIExtraDataDefs.h"
 #include "UIAdvancedSettingsDialog.h"
+
+/* COM includes: */
+#include "KGuestMonitorChangedEventType.h"
 
 /* Forward declarations: */
 class QAction;

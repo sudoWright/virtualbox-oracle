@@ -1,4 +1,4 @@
-/* $Id: UIWizardExportAppPageSettings.h 155244 2023-01-17 14:15:46Z knut.osmundsen@oracle.com $ */
+/* $Id: UIWizardExportAppPageSettings.h 162172 2024-03-12 11:15:18Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardExportAppPageSettings class declaration.
  */
@@ -38,7 +38,6 @@
 #include "UINativeWizardPage.h"
 
 /* COM includes: */
-#include "COMEnums.h"
 #include "CAppliance.h"
 
 /* Forward declarations: */

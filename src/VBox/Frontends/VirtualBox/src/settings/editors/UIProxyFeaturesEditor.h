@@ -1,4 +1,4 @@
-/* $Id: UIProxyFeaturesEditor.h 158967 2023-09-04 18:09:24Z sergey.dubov@oracle.com $ */
+/* $Id: UIProxyFeaturesEditor.h 162172 2024-03-12 11:15:18Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIProxyFeaturesEditor class declaration.
  */
@@ -31,11 +31,12 @@
 # pragma once
 #endif
 
+/* COM includes: */
+#include "KProxyMode.h"
+
 /* GUI includes: */
 #include "UIEditor.h"
 
-/* COM includes: */
-#include "COMEnums.h"
 
 /* Forward declarations: */
 class QButtonGroup;

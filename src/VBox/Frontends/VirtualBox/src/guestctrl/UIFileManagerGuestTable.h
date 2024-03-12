@@ -1,4 +1,4 @@
-/* $Id: UIFileManagerGuestTable.h 160651 2023-12-06 15:39:31Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIFileManagerGuestTable.h 162172 2024-03-12 11:15:18Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIFileManagerGuestTable class declaration.
  */
@@ -35,7 +35,6 @@
 # include <QUuid>
 
 /* COM includes: */
-#include "COMEnums.h"
 #include "CEventListener.h"
 #include "CEventSource.h"
 #include "CGuest.h"
