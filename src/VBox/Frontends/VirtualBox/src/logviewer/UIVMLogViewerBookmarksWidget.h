@@ -1,4 +1,4 @@
-/* $Id: UIVMLogViewerBookmarksWidget.h 158901 2023-08-23 19:03:59Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIVMLogViewerBookmarksWidget.h 162297 2024-03-19 17:01:11Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVMLogViewer class declaration.
  */
@@ -71,9 +71,6 @@ protected:
     virtual void prepareWidgets() RT_OVERRIDE;
     virtual void prepareConnections() RT_OVERRIDE;
 
-    /** Handles the translation event. */
-    void retranslateUi();
-
 private slots:
 
     void sltDeleteCurrentBookmark();
@@ -81,6 +78,8 @@ private slots:
     void sltGotoNextBookmark();
     void sltGotoPreviousBookmark();
     void sltGotoSelectedBookmark();
+    /** Handles the translation event. */
+    void sltRetranslateUI();
 
 private:
 
