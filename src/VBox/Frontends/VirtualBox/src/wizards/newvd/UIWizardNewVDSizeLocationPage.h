@@ -1,4 +1,4 @@
-/* $Id: UIWizardNewVDSizeLocationPage.h 155244 2023-01-17 14:15:46Z knut.osmundsen@oracle.com $ */
+/* $Id: UIWizardNewVDSizeLocationPage.h 162334 2024-03-20 13:41:59Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardNewVDSizeLocationPage class declaration.
  */
@@ -50,10 +50,10 @@ private slots:
     void sltSelectLocationButtonClicked();
     void sltMediumSizeChanged(qulonglong uSize);
     void sltMediumPathChanged(const QString &strPath);
+    virtual void sltRetranslateUI() override final;
 
 private:
 
-    void retranslateUi();
     void initializePage();
     bool isComplete() const;
     bool validatePage();
