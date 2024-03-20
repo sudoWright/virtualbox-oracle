@@ -1,4 +1,4 @@
-/* $Id: UIWizardDiskEditors.h 162324 2024-03-20 11:18:23Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIWizardDiskEditors.h 162326 2024-03-20 11:41:04Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardDiskEditors class declaration.
  */
@@ -38,8 +38,6 @@
 
 /* Local includes: */
 #include "QIComboBox.h"
-#include "QIWithRetranslateUI.h"
-
 
 /* Forward declarations: */
 class CMediumFormat;
