@@ -1,4 +1,4 @@
-/* $Id: UIWizardImportApp.h 162172 2024-03-12 11:15:18Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIWizardImportApp.h 162338 2024-03-20 14:34:36Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardImportApp class declaration.
  */
@@ -112,11 +112,13 @@ protected:
     /** @name Inherited stuff.
       * @{ */
         /** Populates pages. */
-        virtual void populatePages() /* override final */;
-
-        /** Handles translation event. */
-        virtual void retranslateUi() /* override final */;
+        virtual void populatePages() override final;
     /** @} */
+
+private slots:
+
+    /** Handles translation event. */
+    virtual void sltRetranslateUI() override final;
 
 private:
 

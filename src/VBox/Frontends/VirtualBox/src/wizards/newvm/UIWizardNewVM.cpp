@@ -1,4 +1,4 @@
-/* $Id: UIWizardNewVM.cpp 162140 2024-03-11 15:16:04Z sergey.dubov@oracle.com $ */
+/* $Id: UIWizardNewVM.cpp 162338 2024-03-20 14:34:36Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardNewVM class implementation.
  */
@@ -365,9 +365,9 @@ void UIWizardNewVM::sltHandleWizardCancel()
     cleanWizard();
 }
 
-void UIWizardNewVM::retranslateUi()
+void UIWizardNewVM::sltRetranslateUI()
 {
-    UINativeWizard::retranslateUi();
+    UINativeWizard::sltRetranslateUI();
     setWindowTitle(tr("Create Virtual Machine"));
 }
 

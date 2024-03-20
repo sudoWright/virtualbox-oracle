@@ -1,4 +1,4 @@
-/* $Id: UIWizardCloneVM.h 155244 2023-01-17 14:15:46Z knut.osmundsen@oracle.com $ */
+/* $Id: UIWizardCloneVM.h 162338 2024-03-20 14:34:36Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardCloneVM class declaration.
  */
@@ -82,9 +82,12 @@ protected:
 
     virtual void populatePages() /* final override */;
 
+private slots:
+
+    virtual void sltRetranslateUI() override final;
+
 private:
 
-    void retranslateUi();
     void prepare();
 
     CMachine  m_machine;
