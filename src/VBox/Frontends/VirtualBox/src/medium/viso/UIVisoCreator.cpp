@@ -1,4 +1,4 @@
-/* $Id: UIVisoCreator.cpp 162011 2024-03-03 09:55:18Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIVisoCreator.cpp 162357 2024-03-21 02:04:52Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVisoCreator classes implementation.
  */
@@ -85,7 +85,7 @@ private slots:
 
 private:
 
-    void prepare();
+    void prepare() RT_OVERRIDE;
     void prepareConnections();
 
     QILabel      *m_pVisoNameLabel;

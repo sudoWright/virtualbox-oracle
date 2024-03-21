@@ -1,4 +1,4 @@
-/* $Id: UIVMCloseDialog.h 155975 2023-02-21 15:12:32Z sergey.dubov@oracle.com $ */
+/* $Id: UIVMCloseDialog.h 162357 2024-03-21 02:04:52Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVMCloseDialog class declaration.
  */
@@ -88,7 +88,7 @@ private slots:
     void sltUpdateWidgetAvailability();
 
     /** Accepts the dialog. */
-    void accept();
+    void accept() RT_OVERRIDE;
 
 private:
 

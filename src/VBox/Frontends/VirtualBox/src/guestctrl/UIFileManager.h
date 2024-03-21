@@ -1,4 +1,4 @@
-/* $Id: UIFileManager.h 158977 2023-09-05 12:10:22Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIFileManager.h 162357 2024-03-21 02:04:52Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIFileManager class declaration.
  */
@@ -111,7 +111,7 @@ public:
 
 protected:
 
-    void retranslateUi();
+    virtual void retranslateUi() RT_OVERRIDE;
 
 private slots:
 

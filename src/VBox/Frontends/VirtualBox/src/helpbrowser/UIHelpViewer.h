@@ -1,4 +1,4 @@
-/* $Id: UIHelpViewer.h 159652 2023-10-24 00:48:20Z sergey.dubov@oracle.com $ */
+/* $Id: UIHelpViewer.h 162357 2024-03-21 02:04:52Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIHelpViewer class declaration.
  */
@@ -92,7 +92,7 @@ public slots:
 
     void sltSelectPreviousMatch();
     void sltSelectNextMatch();
-    virtual void reload() /* overload */;
+    virtual void reload() RT_OVERRIDE;
 
 protected:
 
@@ -129,7 +129,7 @@ private:
         QString m_strName;
     };
 
-    void retranslateUi();
+    virtual void retranslateUi() RT_OVERRIDE;
     bool isRectInside(const QRect &rect, int iMargin) const;
     void moveFindWidgetIn(int iMargin);
     void findAllMatches(const QString &searchString);
