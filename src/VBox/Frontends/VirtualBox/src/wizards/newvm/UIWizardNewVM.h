@@ -1,4 +1,4 @@
-/* $Id: UIWizardNewVM.h 162348 2024-03-20 16:36:20Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIWizardNewVM.h 162367 2024-03-21 11:43:53Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardNewVM class declaration.
  */
@@ -173,14 +173,14 @@ public:
 protected:
 
     /** Populates pages. */
-    virtual void populatePages() final override;
-    virtual void cleanWizard() final override;
+    virtual void populatePages() RT_OVERRIDE RT_FINAL;
+    virtual void cleanWizard() RT_OVERRIDE RT_FINAL;
     bool attachDefaultDevices();
 
 private slots:
 
     void sltHandleWizardCancel();
-    virtual void sltRetranslateUI() override final;
+    virtual void sltRetranslateUI() RT_OVERRIDE RT_FINAL;
 
 private:
 
