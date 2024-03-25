@@ -1,4 +1,4 @@
-/* $Id: UIWizardNewVMNameOSTypePage.h 162367 2024-03-21 11:43:53Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIWizardNewVMNameOSTypePage.h 162426 2024-03-25 13:28:11Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardNewVMNameOSTypePage class declaration.
  */
@@ -31,7 +31,10 @@
 # pragma once
 #endif
 
-/* Local includes: */
+/* Qt includes: */
+#include <QSet>
+
+/* GUI includes: */
 #include "UINativeWizardPage.h"
 
 /* Forward declarations: */
