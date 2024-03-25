@@ -1,4 +1,4 @@
-/* $Id: QILineEdit.cpp 161368 2024-01-30 12:29:34Z sergey.dubov@oracle.com $ */
+/* $Id: QILineEdit.cpp 162430 2024-03-25 14:24:04Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - Qt extensions: QILineEdit class implementation.
  */
@@ -211,6 +211,12 @@ void UIMarkableLineEdit::setText(const QString &strText)
 {
     if (m_pLineEdit)
         m_pLineEdit->setText(strText);
+}
+
+void UIMarkableLineEdit::setToolTip(const QString &strText)
+{
+    if (m_pLineEdit)
+        m_pLineEdit->setToolTip(strText);
 }
 
 QString UIMarkableLineEdit::text() const
