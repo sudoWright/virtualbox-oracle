@@ -1,6 +1,6 @@
-; $Id: bs3-cmn-TestQueryCfgU8.asm 162465 2024-03-26 20:20:34Z knut.osmundsen@oracle.com $
+; $Id: bs3-cmn-TestQueryCfgU16.asm 162465 2024-03-26 20:20:34Z knut.osmundsen@oracle.com $
 ;; @file
-; BS3Kit - Bs3TestQueryCfgU8, Bs3TestQueryCfgBool.
+; BS3Kit - Bs3TestQueryCfgU16.
 ;
 
 ;
@@ -41,11 +41,9 @@ BS3_EXTERN_DATA16 g_fbBs3VMMDevTesting
 TMPL_BEGIN_TEXT
 
 ;;
-; @cproto   BS3_DECL(uint8_t) Bs3TestQueryCfgU8(uint16_t uCfg, uint8_t bDefault);
-; @cproto   BS3_DECL(bool)    Bs3TestQueryCfgBool(uint16_t uCfg, bool fDefault);
+; @cproto   BS3_DECL(uint16_t) Bs3TestQueryCfgU16(uint16_t uCfg, uint16_t uDefault);
 ;
-BS3_GLOBAL_NAME_EX BS3_CMN_NM(Bs3TestQueryCfgBool), function, 3
-BS3_PROC_BEGIN_CMN Bs3TestQueryCfgU8, BS3_PBC_HYBRID
+BS3_PROC_BEGIN_CMN Bs3TestQueryCfgU16, BS3_PBC_HYBRID
         BS3_CALL_CONV_PROLOG 2
         push    xBP
         mov     xBP, xSP
@@ -71,16 +69,15 @@ BS3_PROC_BEGIN_CMN Bs3TestQueryCfgU8, BS3_PBC_HYBRID
         out     dx, ax
 
         ; Read back the result.
-        in      al, dx
+        in      ax, dx
 %if TMPL_BITS == 16
-        mov     cl, al
-        in      ax, dx                      ; check the 'okay'
+        mov     cx, ax
+        in      ax, dx                      ; read okay magic.
         cmp     ax, VMMDEV_TESTING_QUERY_CFG_OKAY_TAIL & 0xffff
-        mov     al, cl
-        mov     ah, 0
+        mov     ax, cx
 %else
-        movzx   ecx, al
-        in      eax, dx                     ; check the 'okay'
+        movzx   ecx, ax
+        in      eax, dx                     ; read okay magic.
         cmp     eax, VMMDEV_TESTING_QUERY_CFG_OKAY_TAIL
         mov     eax, ecx
 %endif
@@ -95,14 +92,10 @@ BS3_PROC_BEGIN_CMN Bs3TestQueryCfgU8, BS3_PBC_HYBRID
 
 .no_vmmdev:
 %if TMPL_BITS == 16
-        mov     al, [xBP + xCB + cbCurRetAddr + xCB]
+        mov     ax, [xBP + xCB + cbCurRetAddr + xCB]
 %else
-        movzx   eax, byte [xBP + xCB + cbCurRetAddr + xCB]
+        movzx   eax, word [xBP + xCB + cbCurRetAddr + xCB]
 %endif
         jmp     .return
-BS3_PROC_END_CMN   Bs3TestQueryCfgU8
+BS3_PROC_END_CMN   Bs3TestQueryCfgU16
 
-%if TMPL_BITS == 16
-BS3_GLOBAL_NAME_EX BS3_CMN_NM_FAR(Bs3TestQueryCfgBool), function, 3
-        jmp     BS3_CMN_NM_FAR(Bs3TestQueryCfgU8)
-%endif
