@@ -1,4 +1,4 @@
-/* $Id: UIWizardCloneVM.cpp 162338 2024-03-20 14:34:36Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIWizardCloneVM.cpp 162767 2024-04-11 12:50:44Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardCloneVM class implementation.
  */
@@ -24,6 +24,9 @@
  *
  * SPDX-License-Identifier: GPL-3.0-only
  */
+
+/* Qt includes: */
+#include <QVariant>
 
 /* GUI includes: */
 #include "UICommon.h"
