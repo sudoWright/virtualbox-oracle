@@ -1,4 +1,4 @@
-/* $Id: UIAutoCaptureKeyboardEditor.cpp 158967 2023-09-04 18:09:24Z sergey.dubov@oracle.com $ */
+/* $Id: UIAutoCaptureKeyboardEditor.cpp 162790 2024-04-12 13:10:30Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIAutoCaptureKeyboardEditor class implementation.
  */
@@ -60,7 +60,7 @@ bool UIAutoCaptureKeyboardEditor::value() const
     return m_pCheckBox ? m_pCheckBox->checkState() == Qt::Checked : m_fValue;
 }
 
-void UIAutoCaptureKeyboardEditor::retranslateUi()
+void UIAutoCaptureKeyboardEditor::sltRetranslateUI()
 {
     if (m_pLabel)
         m_pLabel->setText(tr("Extended Features:"));
@@ -93,5 +93,5 @@ void UIAutoCaptureKeyboardEditor::prepare()
     }
 
     /* Apply language settings: */
-    retranslateUi();
+    sltRetranslateUI();
 }

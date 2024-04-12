@@ -1,4 +1,4 @@
-/* $Id: UISerialSettingsEditor.h 162172 2024-03-12 11:15:18Z serkan.bayraktar@oracle.com $ */
+/* $Id: UISerialSettingsEditor.h 162790 2024-04-12 13:10:30Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UISerialSettingsEditor class declaration.
  */
@@ -114,12 +114,10 @@ public:
     /** Returns path. */
     QString path() const;
 
-protected:
+private slots:
 
     /** Handles translation event. */
-    virtual void retranslateUi() RT_OVERRIDE;
-
-private slots:
+    virtual void sltRetranslateUI() RT_OVERRIDE RT_FINAL;
 
     /** Handles port availability being toggled to @a fOn. */
     void sltHandlePortAvailabilityToggled(bool fOn);

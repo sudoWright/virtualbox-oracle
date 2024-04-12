@@ -1,4 +1,4 @@
-/* $Id: UIShortcutConfigurationEditor.h 158967 2023-09-04 18:09:24Z sergey.dubov@oracle.com $ */
+/* $Id: UIShortcutConfigurationEditor.h 162790 2024-04-12 13:10:30Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIShortcutConfigurationEditor class declaration.
  */
@@ -184,10 +184,10 @@ public:
     /** Returns runtime tab name. */
     QString tabNameRuntime() const;
 
-protected:
+private slots:
 
     /** Handles translation event. */
-    virtual void retranslateUi() RT_OVERRIDE;
+    virtual void sltRetranslateUI() RT_OVERRIDE RT_FINAL;
 
 private:
 
