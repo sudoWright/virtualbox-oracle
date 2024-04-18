@@ -1,4 +1,4 @@
-/* $Id: UIPaneContainer.cpp 162297 2024-03-19 17:01:11Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIPaneContainer.cpp 162846 2024-04-18 05:33:40Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVMLogViewer class implementation.
  */
@@ -26,6 +26,7 @@
  */
 
 /* Qt includes: */
+#include <QApplication>
 #include <QAbstractButton>
 #include <QComboBox>
 #include <QLabel>

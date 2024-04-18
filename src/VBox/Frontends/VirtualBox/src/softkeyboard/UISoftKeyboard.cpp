@@ -1,4 +1,4 @@
-/* $Id: UISoftKeyboard.cpp 162367 2024-03-21 11:43:53Z serkan.bayraktar@oracle.com $ */
+/* $Id: UISoftKeyboard.cpp 162846 2024-04-18 05:33:40Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UISoftKeyboard class implementation.
  */
@@ -39,6 +39,7 @@
 #include <QLineEdit>
 #include <QListWidget>
 #include <QPainter>
+#include <QPainterPath>
 #include <QPicture>
 #include <QPushButton>
 #include <QSplitter>

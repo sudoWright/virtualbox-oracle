@@ -1,4 +1,4 @@
-/* $Id: UIMediumDetailsWidget.cpp 162672 2024-04-08 12:07:43Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIMediumDetailsWidget.cpp 162846 2024-04-18 05:33:40Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIMediumDetailsWidget class implementation.
  */
@@ -26,6 +26,7 @@
  */
 
 /* Qt includes: */
+#include <QApplication>
 #include <QComboBox>
 #include <QLabel>
 #include <QPushButton>

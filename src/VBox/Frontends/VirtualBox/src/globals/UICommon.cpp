@@ -1,4 +1,4 @@
-/* $Id: UICommon.cpp 162582 2024-04-04 15:09:29Z sergey.dubov@oracle.com $ */
+/* $Id: UICommon.cpp 162846 2024-04-18 05:33:40Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UICommon class implementation.
  */
@@ -26,6 +26,7 @@
  */
 
 /* Qt includes: */
+#include <QApplication>
 #include <QDesktopServices>
 #include <QDir>
 #include <QFileDialog>
