@@ -1,4 +1,4 @@
-/* $Id: UIMediumSelector.cpp 162672 2024-04-08 12:07:43Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIMediumSelector.cpp 162884 2024-04-22 13:02:56Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIMediumSelector class implementation.
  */
@@ -27,6 +27,7 @@
 
 /* Qt includes: */
 #include <QAction>
+#include <QApplication>
 #include <QHeaderView>
 #include <QMenuBar>
 #include <QVBoxLayout>

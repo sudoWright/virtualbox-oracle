@@ -1,4 +1,4 @@
-/* $Id: UIVirtualBoxManager.cpp 162707 2024-04-09 12:36:47Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIVirtualBoxManager.cpp 162884 2024-04-22 13:02:56Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVirtualBoxManager class implementation.
  */
@@ -27,6 +27,7 @@
 
 /* Qt includes: */
 #include <QActionGroup>
+#include <QApplication>
 #include <QClipboard>
 #include <QFile>
 #include <QFontDatabase>

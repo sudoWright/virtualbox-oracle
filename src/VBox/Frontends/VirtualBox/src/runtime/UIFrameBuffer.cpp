@@ -1,4 +1,4 @@
-/* $Id: UIFrameBuffer.cpp 162357 2024-03-21 02:04:52Z knut.osmundsen@oracle.com $ */
+/* $Id: UIFrameBuffer.cpp 162884 2024-04-22 13:02:56Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIFrameBuffer class implementation.
  */
@@ -29,6 +29,7 @@
 #include <QImage>
 #include <QRegion>
 #include <QPainter>
+#include <QPaintEvent>
 #include <QTransform>
 
 /* GUI includes: */

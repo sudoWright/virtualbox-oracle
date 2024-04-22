@@ -1,4 +1,4 @@
-/* $Id: UIVMLogViewerWidget.cpp 162372 2024-03-21 12:33:33Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIVMLogViewerWidget.cpp 162884 2024-04-22 13:02:56Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVMLogViewerWidget class implementation.
  */
@@ -26,6 +26,7 @@
  */
 
 /* Qt includes: */
+#include <QApplication>
 #include <QCheckBox>
 #include <QDateTime>
 #include <QDir>

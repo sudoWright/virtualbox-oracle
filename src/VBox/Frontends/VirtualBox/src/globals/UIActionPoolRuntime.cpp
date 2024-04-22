@@ -1,4 +1,4 @@
-/* $Id: UIActionPoolRuntime.cpp 162140 2024-03-11 15:16:04Z sergey.dubov@oracle.com $ */
+/* $Id: UIActionPoolRuntime.cpp 162884 2024-04-22 13:02:56Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIActionPoolRuntime class implementation.
  */
@@ -27,6 +27,7 @@
 
 /* Qt includes: */
 #include <QActionGroup>
+#include <QApplication>
 
 /* GUI includes: */
 #include "UICommon.h"
