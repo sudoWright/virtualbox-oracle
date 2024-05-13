@@ -1,4 +1,4 @@
-/* $Id: main.cpp 162535 2024-03-30 23:59:46Z sergey.dubov@oracle.com $ */
+/* $Id: main.cpp 163140 2024-05-13 14:25:49Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - The main() function.
  */
@@ -248,11 +248,9 @@ static void QtMessageOutput(QtMsgType enmType, const QMessageLogContext &context
             RTStrmPrintf(g_pStdErr, "Qt FATAL: %s\n", strMessage.toUtf8().constData());
 # endif
             break;
-# if QT_VERSION >= QT_VERSION_CHECK(5, 5, 0)
         case QtInfoMsg:
             /** @todo ignore? */
             break;
-# endif
     }
 }
 
