@@ -1,4 +1,4 @@
-/* $Id: RecordingScreenSettingsImpl.cpp 155461 2023-01-24 01:42:14Z knut.osmundsen@oracle.com $ */
+/* $Id: RecordingScreenSettingsImpl.cpp 163181 2024-05-15 09:29:32Z andreas.loeffler@oracle.com $ */
 /** @file
  *
  * VirtualBox COM class implementation - Recording settings of one virtual screen.
@@ -52,6 +52,7 @@ struct RecordingScreenSettings::Data
 {
     Data()
         : pParent(NULL)
+        , uScreenId(0)
         , cRefs(0)
     { }
 
