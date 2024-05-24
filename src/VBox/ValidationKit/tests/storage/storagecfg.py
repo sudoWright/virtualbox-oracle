@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# $Id: storagecfg.py 162175 2024-03-12 12:16:04Z ksenia.s.stepanova@oracle.com $
+# $Id: storagecfg.py 163338 2024-05-24 09:34:48Z ksenia.s.stepanova@oracle.com $
 
 """
 VirtualBox Validation Kit - Storage test configuration API.
@@ -36,7 +36,7 @@ terms and conditions of either the GPL or the CDDL or both.
 
 SPDX-License-Identifier: GPL-3.0-only OR CDDL-1.0
 """
-__version__ = "$Revision: 162175 $"
+__version__ = "$Revision: 163338 $"
 
 # Standard Python imports.
 import os;
@@ -344,7 +344,7 @@ class StorageConfigOsLinux(StorageConfigOs):
                 sFdiskScript = ';\n'; # Single partition filling everything
                 if cbVol is not None:
                     sFdiskScript = ',' + str(cbVol // 512) + '\n'; # Get number of sectors
-                fRc = oExec.execBinaryNoStdOut('sfdisk', ('--no-reread', '--wipe', 'always', '-q', '-f', sDiskPath), \
+                fRc = oExec.execBinary('sfdisk', ('--no-reread', '--wipe', 'always', '-q', '-f', sDiskPath), \
                                                sFdiskScript);
                 if fRc:
                     if sDiskPath.find('nvme') != -1:
