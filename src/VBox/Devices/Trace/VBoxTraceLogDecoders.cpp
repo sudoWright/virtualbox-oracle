@@ -1,4 +1,4 @@
-/* $Id: VBoxTraceLogDecoders.cpp 163500 2024-06-12 14:27:22Z alexander.eichner@oracle.com $ */
+/* $Id: VBoxTraceLogDecoders.cpp 163502 2024-06-12 14:47:17Z alexander.eichner@oracle.com $ */
 /** @file
  * RTTraceLogDecoders - Implement decoders for the tracing driver.
  */
@@ -37,6 +37,7 @@
 #include <iprt/tracelog-decoder-plugin.h>
 
 #include <iprt/formats/tpm.h>
+
 
 /*********************************************************************************************************************************
 *   Structures and Typedefs                                                                                                      *
