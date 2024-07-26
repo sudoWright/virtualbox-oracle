@@ -1,4 +1,4 @@
-/* $Id: UINameAndSystemEditor.h 163176 2024-05-14 14:05:33Z serkan.bayraktar@oracle.com $ */
+/* $Id: UINameAndSystemEditor.h 164189 2024-07-26 15:23:34Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UINameAndSystemEditor class declaration.
  */
@@ -183,6 +183,9 @@ private:
     void selectPreferredDistribution();
     /** Selects preferred type. */
     void selectPreferredType();
+
+    /** Defines whether @a pWidget @a fEnabled by reason @a uReason. */
+    static void setEnabledByReason(QWidget *pWidget, uint uReason, bool fEnabled);
 
     /** @name Arguments
      * @{ */
