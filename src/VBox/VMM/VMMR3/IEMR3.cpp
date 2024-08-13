@@ -1,4 +1,4 @@
-/* $Id: IEMR3.cpp 164296 2024-08-07 20:22:21Z knut.osmundsen@oracle.com $ */
+/* $Id: IEMR3.cpp 164357 2024-08-13 23:35:12Z knut.osmundsen@oracle.com $ */
 /** @file
  * IEM - Interpreted Execution Manager.
  */
@@ -290,8 +290,9 @@ VMMR3DECL(int)      IEMR3Init(PVM pVM)
 
 #ifdef VBOX_WITH_IEM_RECOMPILER
         /*
-         * Distribute recompiler configuration.
+         * Recompiler state and configuration distribution.
          */
+        pVCpu->iem.s.uRegFpCtrl                    = IEMNATIVE_SIMD_FP_CTRL_REG_NOT_MODIFIED;
         pVCpu->iem.s.uTbNativeRecompileAtUsedCount = uTbNativeRecompileAtUsedCount;
 #endif
 
