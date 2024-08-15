@@ -1,4 +1,4 @@
-# $Id: VBoxPkg.dsc 159490 2023-10-13 09:44:05Z alexander.eichner@oracle.com $
+# $Id: VBoxPkg.dsc 164380 2024-08-15 07:27:48Z alexander.eichner@oracle.com $
 ## @file
 # VBoxPkg.dsc - VirtualBox Package description.
 #

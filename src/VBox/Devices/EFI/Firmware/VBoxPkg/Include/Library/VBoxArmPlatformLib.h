@@ -1,4 +1,4 @@
-/* $Id: VBoxArmPlatformLib.h 160658 2023-12-07 09:02:42Z alexander.eichner@oracle.com $ */
+/* $Id: VBoxArmPlatformLib.h 164380 2024-08-15 07:27:48Z alexander.eichner@oracle.com $ */
 /** @file
  * VBoxArmPlatformLib.h - Helpers for the virtual ARM platform of VirtualBox.
  */
