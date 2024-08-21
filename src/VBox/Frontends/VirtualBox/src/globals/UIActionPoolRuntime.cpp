@@ -1,4 +1,4 @@
-/* $Id: UIActionPoolRuntime.cpp 162884 2024-04-22 13:02:56Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIActionPoolRuntime.cpp 164489 2024-08-21 15:38:52Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIActionPoolRuntime class implementation.
  */
@@ -2833,7 +2833,7 @@ protected:
     virtual void retranslateUi() RT_OVERRIDE
     {
         setName(QApplication::translate("UIActionPool", "&Upgrade Guest Additions..."));
-        setStatusTip(QApplication::translate("UIActionPool", "Upgrade Guest Additions"));
+        setStatusTip(QApplication::translate("UIActionPool", "Upgrade guest additions"));
     }
 };
 

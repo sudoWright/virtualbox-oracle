@@ -1,4 +1,4 @@
-/* $Id: UIActionPoolManager.cpp 164483 2024-08-21 14:52:13Z sergey.dubov@oracle.com $ */
+/* $Id: UIActionPoolManager.cpp 164489 2024-08-21 15:38:52Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIActionPoolManager class implementation.
  */
@@ -1619,7 +1619,7 @@ protected:
     /** Handles translation event. */
     virtual void retranslateUi() RT_OVERRIDE
     {
-        setName(QApplication::translate("UIActionPool", "&Stop"));
+        setName(QApplication::translate("UIActionPool", "Stop"));
     }
 };
 
