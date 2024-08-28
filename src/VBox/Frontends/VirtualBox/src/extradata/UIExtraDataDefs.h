@@ -1,4 +1,4 @@
-/* $Id: UIExtraDataDefs.h 164016 2024-07-16 18:12:00Z sergey.dubov@oracle.com $ */
+/* $Id: UIExtraDataDefs.h 164607 2024-08-28 11:04:18Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - Extra-data related definitions.
  */
@@ -887,7 +887,6 @@ enum MachineSettingsPageType
     MachineSettingsPageType_Storage,
     MachineSettingsPageType_Audio,
     MachineSettingsPageType_Network,
-    MachineSettingsPageType_Ports,
     MachineSettingsPageType_Serial,
     MachineSettingsPageType_USB,
     MachineSettingsPageType_SF,
