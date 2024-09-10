@@ -1,4 +1,4 @@
-/* $Id: DevVirtioNet.cpp 162932 2024-04-25 14:04:47Z aleksey.ilyushin@oracle.com $ $Revision: 162932 $ $Date: 2024-04-25 16:04:47 +0200 (Thu, 25 Apr 2024) $ $Author: aleksey.ilyushin@oracle.com $ */
+/* $Id: DevVirtioNet.cpp 164747 2024-09-10 11:15:32Z brent.paulson@oracle.com $ $Revision: 164747 $ $Date: 2024-09-10 13:15:32 +0200 (Tue, 10 Sep 2024) $ $Author: brent.paulson@oracle.com $ */
 
 /** @file
  * VBox storage devices - Virtio NET Driver
@@ -478,13 +478,13 @@ typedef struct VIRTIONET
     /** All unicast mode -- RX filter accepts all unicast packets. */
     uint8_t                 fAllUnicast;
 
-    /** No multicast mode - Supresses multicast receive */
+    /** No multicast mode - Suppresses multicast receive */
     uint8_t                 fNoMulticast;
 
     /** No unicast mode - Suppresses unicast receive */
     uint8_t                 fNoUnicast;
 
-    /** No broadcast mode - Supresses broadcast receive */
+    /** No broadcast mode - Suppresses broadcast receive */
     uint8_t                 fNoBroadcast;
 
     /** Type of network pkt header based on guest driver version/features */
