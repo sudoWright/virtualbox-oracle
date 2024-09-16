@@ -1,4 +1,4 @@
-/* $Id: oiddb2c.cpp 162398 2024-03-23 01:24:05Z knut.osmundsen@oracle.com $ */
+/* $Id: oiddb2c.cpp 164827 2024-09-16 14:03:52Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - OID text database to C converter.
  *
@@ -6,7 +6,7 @@
  */
 
 /*
- * Copyright (C) 2006-2023 Oracle and/or its affiliates.
+ * Copyright (C) 2006-2024 Oracle and/or its affiliates.
  *
  * This file is part of VirtualBox base platform packages, as
  * available from https://www.virtualbox.org.

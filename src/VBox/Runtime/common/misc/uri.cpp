@@ -1,10 +1,10 @@
-/* $Id: uri.cpp 159746 2023-10-30 13:17:13Z alexander.eichner@oracle.com $ */
+/* $Id: uri.cpp 164827 2024-09-16 14:03:52Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Uniform Resource Identifier handling.
  */
 
 /*
- * Copyright (C) 2011-2023 Oracle and/or its affiliates.
+ * Copyright (C) 2011-2024 Oracle and/or its affiliates.
  *
  * This file is part of VirtualBox base platform packages, as
  * available from https://www.virtualbox.org.

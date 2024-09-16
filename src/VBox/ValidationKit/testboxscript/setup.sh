@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
-# $Id: setup.sh 161568 2024-02-08 12:08:47Z alex.hasani@oracle.com $
+# $Id: setup.sh 164827 2024-09-16 14:03:52Z knut.osmundsen@oracle.com $
 ## @file
 # VirtualBox Validation Kit - TestBoxScript Service Setup on Unixy platforms.
 #
 
 #
-# Copyright (C) 2006-2023 Oracle and/or its affiliates.
+# Copyright (C) 2006-2024 Oracle and/or its affiliates.
 #
 # This file is part of VirtualBox base platform packages, as
 # available from https://www.virtualbox.org.
@@ -624,7 +624,7 @@ do
             exit 0;
             ;;
         -V|--version)
-            echo '$Revision: 161568 $'
+            echo '$Revision: 164827 $'
             exit 0;
             ;;
 

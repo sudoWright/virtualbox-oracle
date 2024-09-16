@@ -1,10 +1,10 @@
-/* $Id: VBoxServiceUtils.h 156009 2023-02-24 08:49:40Z andreas.loeffler@oracle.com $ */
+/* $Id: VBoxServiceUtils.h 164827 2024-09-16 14:03:52Z knut.osmundsen@oracle.com $ */
 /** @file
  * VBoxServiceUtils - Guest Additions Services (Utilities).
  */
 
 /*
- * Copyright (C) 2009-2023 Oracle and/or its affiliates.
+ * Copyright (C) 2009-2024 Oracle and/or its affiliates.
  *
  * This file is part of VirtualBox base platform packages, as
  * available from https://www.virtualbox.org.

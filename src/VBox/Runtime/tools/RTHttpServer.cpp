@@ -1,4 +1,4 @@
-/* $Id: RTHttpServer.cpp 157594 2023-05-23 15:38:52Z andreas.loeffler@oracle.com $ */
+/* $Id: RTHttpServer.cpp 164827 2024-09-16 14:03:52Z knut.osmundsen@oracle.com $ */
 /** @file
  * IPRT - Utility for running a (simple) HTTP server.
  *
@@ -10,7 +10,7 @@
  */
 
 /*
- * Copyright (C) 2020-2023 Oracle and/or its affiliates.
+ * Copyright (C) 2020-2024 Oracle and/or its affiliates.
  *
  * This file is part of VirtualBox base platform packages, as
  * available from https://www.virtualbox.org.
@@ -813,7 +813,7 @@ int main(int argc, char **argv)
                 return RTEXITCODE_SUCCESS;
 
             case 'V':
-                RTPrintf("$Revision: 157594 $\n");
+                RTPrintf("$Revision: 164827 $\n");
                 return RTEXITCODE_SUCCESS;
 
             default:

@@ -1,10 +1,10 @@
-/* $Id: VBoxExtPackHelperApp.cpp 155484 2023-01-24 12:15:49Z knut.osmundsen@oracle.com $ */
+/* $Id: VBoxExtPackHelperApp.cpp 164827 2024-09-16 14:03:52Z knut.osmundsen@oracle.com $ */
 /** @file
  * VirtualBox Main - Extension Pack Helper Application, usually set-uid-to-root.
  */
 
 /*
- * Copyright (C) 2010-2023 Oracle and/or its affiliates.
+ * Copyright (C) 2010-2024 Oracle and/or its affiliates.
  *
  * This file is part of VirtualBox base platform packages, as
  * available from https://www.virtualbox.org.
