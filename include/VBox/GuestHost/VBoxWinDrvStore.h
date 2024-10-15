@@ -1,4 +1,4 @@
-/* $Id: VBoxWinDrvStore.h 165131 2024-10-15 13:06:30Z andreas.loeffler@oracle.com $ */
+/* $Id: VBoxWinDrvStore.h 165132 2024-10-15 13:10:43Z andreas.loeffler@oracle.com $ */
 /** @file
  * VBoxWinDrvInst - Header for Windows driver store handling.
  */
@@ -41,6 +41,7 @@
 #endif
 
 #include <iprt/list.h>
+#include <iprt/path.h>
 #include <iprt/utf16.h>
 
 /** Maximum model PnP ID length (in characters). */
