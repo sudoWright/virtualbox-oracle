@@ -1,4 +1,4 @@
-/* $Id: ConsoleImplConfigArmV8.cpp 165173 2024-10-16 12:58:46Z alexander.eichner@oracle.com $ */
+/* $Id: ConsoleImplConfigArmV8.cpp 165174 2024-10-16 13:01:54Z alexander.eichner@oracle.com $ */
 /** @file
  * VBox Console COM Class implementation - VM Configuration Bits for ARMv8.
  */
@@ -638,7 +638,7 @@ int Console::i_configConstructorArmV8(PUVM pUVM, PVM pVM, PCVMMR3VTABLE pVMM, Au
 
         if (pSysTblsBldAcpi)
         {
-            vrc = pSysTblsBldAcpi->addMmioDevice("arm-pl061-gpio", 0, GCPhysMmioStart, _4K, iIrq); 
+            vrc = pSysTblsBldAcpi->addMmioDevice("arm-pl061-gpio", 0, GCPhysMmioStart, _4K, iIrq);
             VRC();
         }
 
