@@ -1,4 +1,4 @@
-﻿/* $Id: UIAdvancedSettingsDialog.cpp 165036 2024-10-08 17:24:14Z sergey.dubov@oracle.com $ */
+﻿/* $Id: UIAdvancedSettingsDialog.cpp 165282 2024-10-17 16:10:46Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIAdvancedSettingsDialog class implementation.
  */
@@ -573,6 +573,7 @@ void UIFilterEditor::prepare()
                                     margin: 3px 0px 3px 10px;\
                                     }");
 #endif
+        m_pLineEdit->installEventFilter(this);
         connect(m_pLineEdit, &QILineEdit::textChanged,
                 this, &UIFilterEditor::sltHandleEditorTextChanged);
     }
