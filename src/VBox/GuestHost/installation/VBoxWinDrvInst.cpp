@@ -1,4 +1,4 @@
-/* $Id: VBoxWinDrvInst.cpp 165320 2024-10-18 19:16:23Z andreas.loeffler@oracle.com $ */
+/* $Id: VBoxWinDrvInst.cpp 165321 2024-10-18 19:17:53Z andreas.loeffler@oracle.com $ */
 /** @file
  * VBoxWinDrvInst - Windows driver installation handling.
  */
@@ -658,6 +658,9 @@ static void vboxWinDrvInstParmsDestroy(PVBOXWINDRVINSTPARMS pParms)
             pParms->u.ExecuteInf.pwszSection = NULL;
             break;
         }
+
+        case VBOXWINDRVINSTMODE_INVALID:
+            break;
 
         default:
             AssertFailed();
