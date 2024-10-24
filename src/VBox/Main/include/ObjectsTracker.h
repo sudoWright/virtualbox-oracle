@@ -1,6 +1,5 @@
-/* $Id: ObjectsTracker.h 165466 2024-10-23 15:37:20Z valery.portnyagin@oracle.com $ */
+/* $Id: ObjectsTracker.h 165483 2024-10-24 00:37:00Z knut.osmundsen@oracle.com $ */
 /** @file
- *
  * VirtualBox Object tracker definitions
  */
 
