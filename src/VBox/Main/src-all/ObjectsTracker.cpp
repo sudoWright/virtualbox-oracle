@@ -1,6 +1,5 @@
-/* $Id: ObjectsTracker.cpp 165466 2024-10-23 15:37:20Z valery.portnyagin@oracle.com $ */
+/* $Id: ObjectsTracker.cpp 165484 2024-10-24 00:37:06Z knut.osmundsen@oracle.com $ */
 /** @file
- *
  * VirtualBox Object tracker implementation
  */
 
