@@ -1,4 +1,4 @@
-/* $Id: UIVideoMemoryEditor.h 164827 2024-09-16 14:03:52Z knut.osmundsen@oracle.com $ */
+/* $Id: UIVideoMemoryEditor.h 165723 2024-11-04 13:57:33Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVideoMemoryEditor class declaration.
  */
@@ -113,7 +113,7 @@ private:
     /** @name Options
      * @{ */
         /** Holds the guest OS type Id. */
-        QString                 m_strGuestOSTypeId;
+        QString                  m_strGuestOSTypeId;
         /** Holds the guest screen count. */
         int                      m_cGuestScreenCount;
         /** Holds the graphics controller type. */
@@ -125,14 +125,8 @@ private:
         bool                     m_f3DAccelerationEnabled;
 #endif
 
-        /** Holds the minimum lower limit of VRAM (MiB). */
-        int  m_iMinVRAM;
         /** Holds the maximum upper limit of VRAM (MiB). */
         int  m_iMaxVRAM;
-        /** Holds the upper limit of VRAM (MiB) for this dialog.
-          * @note This value is lower than m_iMaxVRAM to save
-          *       careless users from setting useless big values. */
-        int  m_iMaxVRAMVisible;
     /** @} */
 
     /** @name Widgets
