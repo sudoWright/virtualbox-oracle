@@ -1,4 +1,4 @@
-/* $Id: ObjectsTracker.h 165826 2024-11-09 00:38:48Z knut.osmundsen@oracle.com $ */
+/* $Id: ObjectsTracker.h 165830 2024-11-09 01:43:54Z knut.osmundsen@oracle.com $ */
 /** @file
  * VirtualBox Object tracker definitions
  */
@@ -152,7 +152,7 @@ private:
 
 /////////////////////////////////////////////////////////////////////////////
 // TrackedObjectsCollector
-///////////////////////////////////////////////////////////////////////////// 
+/////////////////////////////////////////////////////////////////////////////
 class TrackedObjectsCollector
 {
     /** Critical section protecting the data in TrackedObjectsCollector */
