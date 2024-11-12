@@ -1,4 +1,4 @@
-/* $Id: ResourceAssignmentManager.cpp 165884 2024-11-12 12:09:04Z alexander.eichner@oracle.com $ */
+/* $Id: ResourceAssignmentManager.cpp 165896 2024-11-12 15:40:31Z alexander.eichner@oracle.com $ */
 /** @file
  * VirtualBox bus slots assignment manager
  */
@@ -333,6 +333,7 @@ void ResourceAssignmentManager::State::dumpToReleaseLog(void)
                 m_paRegions[iRegion].GCPhysStart,
                 m_paRegions[iRegion].GCPhysEnd,
                 m_paRegions[iRegion].GCPhysEnd - m_paRegions[iRegion].GCPhysStart + 1,
+                resourceManagerRegionType2Str(m_paRegions[iRegion].enmType),
                 m_paRegions[iRegion].szName));
     }
 }
