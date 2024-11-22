@@ -1,4 +1,4 @@
-/* $Id: ResourceAssignmentManager.h 165884 2024-11-12 12:09:04Z alexander.eichner@oracle.com $ */
+/* $Id: ResourceAssignmentManager.h 166092 2024-11-22 15:46:26Z alexander.eichner@oracle.com $ */
 /** @file
  * VirtualBox resource assignment (Address ranges, interrupts) manager.
  */
@@ -63,6 +63,7 @@ public:
                                     bool fOnly32Bit);
     HRESULT assignMmioRegion(const char *pszName, RTGCPHYS cbRegion, PRTGCPHYS pGCPhysStart, PRTGCPHYS pcbRegion);
     HRESULT assignMmio32Region(const char *pszName, RTGCPHYS cbRegion, PRTGCPHYS pGCPhysStart, PRTGCPHYS pcbRegion);
+    HRESULT assignMmio64Region(const char *pszName, RTGCPHYS cbRegion, PRTGCPHYS pGCPhysStart, PRTGCPHYS pcbRegion);
 
     HRESULT assignInterrupts(const char *pszName, uint32_t cInterrupts, uint32_t *piInterruptFirst);
     HRESULT assignSingleInterrupt(const char *pszName, uint32_t *piInterrupt);
