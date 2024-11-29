@@ -1,4 +1,4 @@
-/* $Id: ApplianceImplImport.cpp 164827 2024-09-16 14:03:52Z knut.osmundsen@oracle.com $ */
+/* $Id: ApplianceImplImport.cpp 166201 2024-11-29 19:10:14Z brent.paulson@oracle.com $ */
 /** @file
  * IAppliance and IVirtualSystem COM class implementations.
  */
@@ -4080,6 +4080,12 @@ void Appliance::i_convertDiskAttachmentValues(const ovf::HardDiskController &hdc
             lDevice         = 0;
             break;
 
+        case ovf::HardDiskController::NVMe:
+            controllerName  = "NVMe";
+            lControllerPort = (int32_t)ulAddressOnParent;
+            lDevice         = 0;
+            break;
+
         default: break;
     }
 
@@ -5258,6 +5264,9 @@ l_skipped:
                         }
                         case ovf::HardDiskController::VIRTIOSCSI:
                             hdStorageControllerType = StorageControllerType_VirtioSCSI;
+                            break;
+                        case ovf::HardDiskController::NVMe:
+                            hdStorageControllerType = StorageControllerType_NVMe;
                             break;
                         default:
                             throw setError(E_FAIL,
