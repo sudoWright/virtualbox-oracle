@@ -1,4 +1,4 @@
-/* $Id: UIChooser.h 166284 2024-12-09 16:05:53Z sergey.dubov@oracle.com $ */
+/* $Id: UIChooser.h 166315 2024-12-11 13:01:28Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIChooser class declaration.
  */
@@ -36,6 +36,7 @@
 
 /* GUI includes: */
 #include "UIExtraDataDefs.h"
+#include "UIManagerDefs.h"
 
 /* Forward declarations: */
 class UIActionPool;
