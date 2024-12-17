@@ -1,4 +1,4 @@
-/* $Id: UIMachineManagerWidget.h 166369 2024-12-16 17:38:41Z sergey.dubov@oracle.com $ */
+/* $Id: UIMachineManagerWidget.h 166372 2024-12-17 10:11:13Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIMachineManagerWidget class declaration.
  */
@@ -275,8 +275,6 @@ private:
 
         /** Cleanups connections. */
         void cleanupConnections();
-        /** Cleanups widgets. */
-        void cleanupWidgets();
         /** Cleanups all. */
         void cleanup();
     /** @} */
