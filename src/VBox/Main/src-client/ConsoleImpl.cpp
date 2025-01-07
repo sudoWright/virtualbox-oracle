@@ -1,4 +1,4 @@
-/* $Id: ConsoleImpl.cpp 166519 2025-01-07 12:26:31Z alexander.eichner@oracle.com $ */
+/* $Id: ConsoleImpl.cpp 166520 2025-01-07 12:32:38Z alexander.eichner@oracle.com $ */
 /** @file
  * VBox Console COM Class implementation
  */
@@ -616,6 +616,7 @@ HRESULT Console::initWithMachine(IMachine *aMachine, IInternalMachineControl *aC
 
         ULONG cCpus = 1;
         hrc = mMachine->COMGETTER(CPUCount)(&cCpus);
+        AssertComRCReturnRC(hrc);
         mGuest->i_setCpuCount(cCpus);
 
         unconst(mKeyboard).createObject();
