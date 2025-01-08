@@ -1,4 +1,4 @@
-/* $Id: UnattendedImpl.cpp 164828 2024-09-16 15:48:55Z serkan.bayraktar@oracle.com $ */
+/* $Id: UnattendedImpl.cpp 166598 2025-01-08 16:06:12Z andreas.loeffler@oracle.com $ */
 /** @file
  * Unattended class implementation
  */
@@ -256,7 +256,10 @@ const Utf8Str &WIMImage::formatName(Utf8Str &r_strName) const
 
 Unattended::Unattended()
     : mhThreadReconfigureVM(NIL_RTNATIVETHREAD), mfRtcUseUtc(false), mfGuestOs64Bit(false)
-    , mpInstaller(NULL), mpTimeZoneInfo(NULL), mfIsDefaultAuxiliaryBasePath(true), mfDoneDetectIsoOS(false)
+    , menmFirmwareType(FirmwareType_BIOS), mpInstaller(NULL)
+    , mfInstallGuestAdditions(false), mfInstallTestExecService(false), mfInstallUserPayload(false)
+    , mpTimeZoneInfo(NULL), mfIsDefaultAuxiliaryBasePath(true), midxImage(0), mfDoneDetectIsoOS(false)
+    , mEnmOsType(VBOXOSTYPE_Unknown)
     , mfAvoidUpdatesOverNetwork(false), mfDoneSupportedGuestOSList(false)
 { }
 
