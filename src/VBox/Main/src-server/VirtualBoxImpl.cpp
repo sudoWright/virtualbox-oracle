@@ -1,4 +1,4 @@
-/* $Id: VirtualBoxImpl.cpp 166253 2024-12-06 09:55:20Z valery.portnyagin@oracle.com $ */
+/* $Id: VirtualBoxImpl.cpp 166608 2025-01-08 16:26:57Z andreas.loeffler@oracle.com $ */
 /** @file
  * Implementation of IVirtualBox in VBoxSVC.
  */
@@ -3248,6 +3248,9 @@ public:
         m_strTaskName = "SVCHelper";
         threadVoidData = NULL;
         initialized = false;
+        privileged = false;
+        func = NULL;
+        user = NULL;
     }
 
     virtual ~StartSVCHelperClientData()
