@@ -1,4 +1,4 @@
-/* $Id: HostImpl.cpp 166326 2024-12-12 11:07:22Z andreas.loeffler@oracle.com $ */
+/* $Id: HostImpl.cpp 166586 2025-01-08 14:57:59Z andreas.loeffler@oracle.com $ */
 /** @file
  * VirtualBox COM class implementation: Host
  */
@@ -203,10 +203,21 @@ struct Host::Data
     Data()
         :
           pParent(NULL),
+#ifdef VBOX_WITH_USB
+          pUSBProxyService(NULL),
+#endif
           fDVDDrivesListBuilt(false),
           fFloppyDrivesListBuilt(false),
-          fPersistentConfigUpToDate(false)
-    {};
+          fVTSupported(false),
+          fLongModeSupported(false),
+          fPAESupported(false),
+          fNestedPagingSupported(false),
+          fUnrestrictedGuestSupported(false),
+          fNestedHWVirtSupported(false),
+          fVirtVmsaveVmload(false),
+          fRecheckVTSupported(false),
+          pHostPowerService(NULL),
+          fPersistentConfigUpToDate(false) {};
 
     VirtualBox              *pParent;
 
