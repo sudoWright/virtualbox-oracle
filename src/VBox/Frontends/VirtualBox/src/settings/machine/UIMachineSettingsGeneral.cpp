@@ -1,4 +1,4 @@
-/* $Id: UIMachineSettingsGeneral.cpp 164827 2024-09-16 14:03:52Z knut.osmundsen@oracle.com $ */
+/* $Id: UIMachineSettingsGeneral.cpp 166536 2025-01-08 05:14:33Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIMachineSettingsGeneral class implementation.
  */
@@ -936,7 +936,7 @@ bool UIMachineSettingsGeneral::saveEncryptionData()
 
                 /* Get attachment type for further activities: */
                 KDeviceType enmType = KDeviceType_Null;
-                if (fSuccess)
+                // if (fSuccess)
                 {
                     enmType = comAttachment.GetType();
                     fSuccess = comAttachment.isOk();
