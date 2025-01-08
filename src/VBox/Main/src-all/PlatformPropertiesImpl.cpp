@@ -1,4 +1,4 @@
-/* $Id: PlatformPropertiesImpl.cpp 166288 2024-12-10 07:37:35Z aleksey.ilyushin@oracle.com $ */
+/* $Id: PlatformPropertiesImpl.cpp 166572 2025-01-08 13:52:06Z andreas.loeffler@oracle.com $ */
 /** @file
  * VirtualBox COM class implementation - Platform properties.
  */
@@ -51,6 +51,7 @@ PlatformProperties::PlatformProperties()
     : mParent(NULL)
     , mPlatformArchitecture(PlatformArchitecture_None)
     , mfIsHost(false)
+    , m(NULL)
 {
 }
 
