@@ -1,4 +1,4 @@
-/* $Id: vboximgMedia.cpp 164827 2024-09-16 14:03:52Z knut.osmundsen@oracle.com $ $Revision: 164827 $ */
+/* $Id: vboximgMedia.cpp 166567 2025-01-08 13:14:48Z alexander.eichner@oracle.com $ $Revision: 166567 $ */
 /** @file
  * vboximgMedia.cpp - Disk Image Flattening FUSE Program.
  */
@@ -380,7 +380,7 @@ int vboximgListVMs(IVirtualBox *pVirtualBox)
                     }
                     else
                     {
-                        if (g_vboximgOpts.fWide & !g_vboximgOpts.fVerbose)
+                        if (g_vboximgOpts.fWide)
                         {
                             RTPrintf("-----------------------------------------------------------------  "
                                  "------------------------------------\n");
