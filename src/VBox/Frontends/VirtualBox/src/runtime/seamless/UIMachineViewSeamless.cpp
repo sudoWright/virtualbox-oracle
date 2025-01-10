@@ -1,4 +1,4 @@
-/* $Id: UIMachineViewSeamless.cpp 164827 2024-09-16 14:03:52Z knut.osmundsen@oracle.com $ */
+/* $Id: UIMachineViewSeamless.cpp 166721 2025-01-10 10:58:41Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIMachineViewSeamless class implementation.
  */
@@ -143,6 +143,14 @@ void UIMachineViewSeamless::cleanupSeamless()
 
 void UIMachineViewSeamless::adjustGuestScreenSize()
 {
+    /* Step 0: Is machine running or paused? */
+    if (!uimachine()->isRunning() && !uimachine()->isPaused())
+    {
+        LogRel(("GUI: UIMachineViewSeamless::adjustGuestScreenSize: "
+                "Guest-screen #%d display is not initialized, adjustment is not possible.\n",
+                screenId()));
+        return;
+    }
     /* Step 1: Is guest-screen visible? */
     if (!uimachine()->isScreenVisible(screenId()))
     {

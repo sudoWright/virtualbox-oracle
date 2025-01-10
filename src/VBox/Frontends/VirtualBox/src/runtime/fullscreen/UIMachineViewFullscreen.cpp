@@ -1,4 +1,4 @@
-/* $Id: UIMachineViewFullscreen.cpp 164827 2024-09-16 14:03:52Z knut.osmundsen@oracle.com $ */
+/* $Id: UIMachineViewFullscreen.cpp 166721 2025-01-10 10:58:41Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIMachineViewFullscreen class implementation.
  */
@@ -132,6 +132,14 @@ void UIMachineViewFullscreen::setGuestAutoresizeEnabled(bool fEnabled)
 
 void UIMachineViewFullscreen::adjustGuestScreenSize()
 {
+    /* Step 0: Is machine running or paused? */
+    if (!uimachine()->isRunning() && !uimachine()->isPaused())
+    {
+        LogRel(("GUI: UIMachineViewFullscreen::adjustGuestScreenSize: "
+                "Guest-screen #%d display is not initialized, adjustment is not possible.\n",
+                screenId()));
+        return;
+    }
     /* Step 1: Is guest-screen visible? */
     if (!uimachine()->isScreenVisible(screenId()))
     {
