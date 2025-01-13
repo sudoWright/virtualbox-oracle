@@ -1,4 +1,4 @@
-/* $Id: Settings.cpp 166694 2025-01-10 09:39:15Z alexander.eichner@oracle.com $ */
+/* $Id: Settings.cpp 166810 2025-01-13 16:41:52Z alexander.eichner@oracle.com $ */
 /** @file
  * Settings File Manipulation API.
  *
@@ -3126,8 +3126,7 @@ bool RecordingScreen::areDefaultSettings(void) const
 {
     return    (   fEnabled                                    == false
                /* Screen 0 is special: There we ALWAYS enable recording by default. */
-               || (   idScreen                                == 0
-                   && fEnabled                                == true)
+               || idScreen                                    == 0
               )
            && enmDest                                         == RecordingDestination_File
            && ulMaxTimeS                                      == 0
