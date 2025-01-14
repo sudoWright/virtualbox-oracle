@@ -1,4 +1,4 @@
-/* $Id: VBoxManageInfo.cpp 166848 2025-01-14 09:48:26Z andreas.loeffler@oracle.com $ */
+/* $Id: VBoxManageInfo.cpp 166855 2025-01-14 10:11:28Z andreas.loeffler@oracle.com $ */
 /** @file
  * VBoxManage - The 'showvminfo' command and helper routines.
  */
@@ -1147,9 +1147,9 @@ HRESULT showVMInfo(ComPtr<IVirtualBox> pVirtualBox,
                 RTPrintf("UUID:            %s\n", Utf8Str(uuid).c_str());
             if (details != VMINFO_MACHINEREADABLE)
             {
-                Bstr settingsFilePath;
+                Bstr settingsFilePath("<Error>");
                 CHECK_ERROR(machine, COMGETTER(SettingsFilePath)(settingsFilePath.asOutParam()));
-                RTPrintf(Info::tr("Config file:     %ls\n"), SUCCEEDED(hrc) ? settingsFilePath.raw() : L"<Error>");
+                RTPrintf(Info::tr("Config file:     %ls\n"), settingsFilePath.raw());
 
                 Bstr strCipher;
                 Bstr strPasswordId;
