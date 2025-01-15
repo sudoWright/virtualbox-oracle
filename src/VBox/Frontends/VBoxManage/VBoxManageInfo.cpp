@@ -1,4 +1,4 @@
-/* $Id: VBoxManageInfo.cpp 164993 2024-10-02 21:05:12Z klaus.espenlaub@oracle.com $ */
+/* $Id: VBoxManageInfo.cpp 166941 2025-01-15 23:24:57Z brent.paulson@oracle.com $ */
 /** @file
  * VBoxManage - The 'showvminfo' command and helper routines.
  */
@@ -1520,6 +1520,13 @@ HRESULT showVMInfo(ComPtr<IVirtualBox> pVirtualBox,
                 else
                     pszCtrl = "VBoxSVGA";
                 break;
+            case GraphicsControllerType_QemuRamFB:
+                if (details == VMINFO_MACHINEREADABLE)
+                    pszCtrl = "qemuramfb";
+                else
+                    pszCtrl = "QemuRamFB";
+                break;
+
             default:
                 if (details == VMINFO_MACHINEREADABLE)
                     pszCtrl = "unknown";
