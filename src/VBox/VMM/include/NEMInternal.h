@@ -1,4 +1,4 @@
-/* $Id: NEMInternal.h 164827 2024-09-16 14:03:52Z knut.osmundsen@oracle.com $ */
+/* $Id: NEMInternal.h 166947 2025-01-16 00:33:11Z knut.osmundsen@oracle.com $ */
 /** @file
  * NEM - Internal header file.
  */
@@ -415,6 +415,20 @@ typedef struct NEMCPU
     bool                        fUsingHyperDR7 : 1;
     /** Whether \#DE needs to be intercepted for GIM. */
     bool                        fGCMTrapXcptDE : 1;
+#if defined(RT_ARCH_AMD64) || defined(RT_ARCH_X86)
+    /** Set if indirect branch prediction barrier on VM exit. */
+    bool                        fIbpbOnVmExit : 1;
+    /** Set if indirect branch prediction barrier on VM entry. */
+    bool                        fIbpbOnVmEntry : 1;
+    /** Set if level 1 data cache should be flushed on VM entry. */
+    bool                        fL1dFlushOnVmEntry : 1;
+    /** Set if level 1 data cache should be flushed on EMT scheduling. */
+    bool                        fL1dFlushOnSched : 1;
+    /** Set if MDS related buffers should be cleared on VM entry. */
+    bool                        fMdsClearOnVmEntry : 1;
+    /** Set if MDS related buffers should be cleared on EMT scheduling. */
+    bool                        fMdsClearOnSched : 1;
+#endif
 
 #if defined(RT_OS_LINUX)
     uint8_t                     abPadding[3];
