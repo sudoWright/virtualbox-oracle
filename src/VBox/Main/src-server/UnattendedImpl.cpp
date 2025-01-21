@@ -1,4 +1,4 @@
-/* $Id: UnattendedImpl.cpp 164828 2024-09-16 15:48:55Z serkan.bayraktar@oracle.com $ */
+/* $Id: UnattendedImpl.cpp 167085 2025-01-21 13:54:00Z serkan.bayraktar@oracle.com $ */
 /** @file
  * Unattended class implementation
  */
@@ -314,7 +314,7 @@ HRESULT Unattended::initUnattended(VirtualBox *aParent)
     try
     {
         mStrUser                    = "vboxuser";
-        mStrUserPassword            = "changeme";
+        mStrUserPassword            = "";
         /* Note: For mStrAdminPassword see Unattended::i_getAdminPassword(). */
         mfInstallGuestAdditions     = false;
         mfInstallTestExecService    = false;
