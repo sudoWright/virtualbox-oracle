@@ -1,4 +1,4 @@
-/* $Id: VBoxManageList.cpp 166712 2025-01-10 10:13:33Z alexander.eichner@oracle.com $ */
+/* $Id: VBoxManageList.cpp 167097 2025-01-22 10:39:34Z andreas.loeffler@oracle.com $ */
 /** @file
  * VBoxManage - The 'list' command.
  */
@@ -1280,7 +1280,7 @@ static HRESULT showDhcpConfig(ComPtr<IDHCPConfig> ptrConfig)
             }
         }
 
-    return S_OK;
+    return hrc;
 }
 
 
@@ -2712,7 +2712,6 @@ RTEXITCODE handleList(HandlerArg *a)
                 fOptMultiple = true;
                 if (enmOptCommand == kListNotSpecified)
                     break;
-                ch = enmOptCommand;
                 RT_FALL_THRU();
 
             case 'p':  /* --platform[-arch] */
