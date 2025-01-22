@@ -1,4 +1,4 @@
-/* $Id: UIWizardNewVMNameOSTypePage.h 165939 2024-11-14 13:56:24Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIWizardNewVMNameOSTypePage.h 167103 2025-01-22 11:31:39Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardNewVMNameOSTypePage class declaration.
  */
@@ -106,7 +106,7 @@ private:
      * @{ */
         QGridLayout           *m_pNameAndSystemLayout;
         UINameAndSystemEditor *m_pNameAndSystemEditor;
-        QCheckBox             *m_pSkipUnattendedCheckBox;
+        QCheckBox             *m_pUnattendedCheckBox;
         QIRichTextLabel       *m_pNameOSTypeLabel;
         QIRichTextLabel       *m_pInfoLabel;
     /** @} */
