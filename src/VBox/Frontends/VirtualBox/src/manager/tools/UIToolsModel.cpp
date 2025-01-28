@@ -1,4 +1,4 @@
-/* $Id: UIToolsModel.cpp 167190 2025-01-27 15:59:36Z sergey.dubov@oracle.com $ */
+/* $Id: UIToolsModel.cpp 167212 2025-01-28 12:04:06Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIToolsModel class implementation.
  */
@@ -396,7 +396,7 @@ bool UIToolsModel::eventFilter(QObject *pWatched, QEvent *pEvent)
     switch (pEvent->type())
     {
         /* Mouse handler: */
-        case QEvent::GraphicsSceneMousePress:
+        case QEvent::GraphicsSceneMouseRelease:
         {
             /* Acquire event: */
             QGraphicsSceneMouseEvent *pMouseEvent = static_cast<QGraphicsSceneMouseEvent*>(pEvent);
