@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# $Id: utils.py 167158 2025-01-23 19:04:53Z alexander.eichner@oracle.com $
+# $Id: utils.py 167305 2025-02-03 17:10:51Z ksenia.s.stepanova@oracle.com $
 # pylint: disable=too-many-lines
 
 """
@@ -39,7 +39,7 @@ terms and conditions of either the GPL or the CDDL or both.
 
 SPDX-License-Identifier: GPL-3.0-only OR CDDL-1.0
 """
-__version__ = "$Revision: 167158 $"
+__version__ = "$Revision: 167305 $"
 
 
 # Standard Python imports.
@@ -259,16 +259,16 @@ def getHostOsVersion():
                 [ '/etc/gentoo-release', '' ],
                 [ '/etc/oracle-release', '' ],
                 [ '/etc/redhat-release', '' ],
-                [ '/etc/SuSE-release', '' ],
+                [ '/etc/SUSE-brand', '' ],
             ];
             for sFile, sPrefix in asFiles:
                 if os.path.isfile(sFile):
                     try:
                         with open(sFile) as oFile: # pylint: disable=unspecified-encoding
-                            sLine = oFile.readline();
+                            sLine = ''.join(oFile.readlines());
                     except:
                         continue;
-                    sLine = sLine.strip()
+                    sLine = sLine.strip().replace("VERSION =", "") # suse tweek
                     if sLine:
                         sVersion += ' / ' + sPrefix + sLine;
                     break;
