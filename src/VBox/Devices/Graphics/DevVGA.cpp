@@ -1,4 +1,4 @@
-/* $Id: DevVGA.cpp 166524 2025-01-07 14:44:53Z alexander.eichner@oracle.com $ */
+/* $Id: DevVGA.cpp 167324 2025-02-04 05:27:29Z alexander.eichner@oracle.com $ */
 /** @file
  * DevVGA - VBox VGA/VESA device.
  */
@@ -7429,7 +7429,7 @@ static DECLCALLBACK(int) vgaRZConstruct(PPDMDEVINS pDevIns)
         AssertRCReturn(rc, rc);
     }
     else
-        AssertReturn(!pThis->fVMSVGAEnabled, VERR_INVALID_STATE);
+        AssertReturn(!pThis->fVMSVGAEnabled || pThis->fVmSvga3, VERR_INVALID_STATE);
 
     if (pThis->hMmioSvga3 != NIL_IOMMMIOHANDLE)
     {
