@@ -1,4 +1,4 @@
-/* $Id: UIAdvancedSettingsDialogSpecific.cpp 166131 2024-11-26 14:00:36Z sergey.dubov@oracle.com $ */
+/* $Id: UIAdvancedSettingsDialogSpecific.cpp 167374 2025-02-05 17:22:27Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIAdvancedSettingsDialogSpecific class implementation.
  */
@@ -579,8 +579,11 @@ void UIAdvancedSettingsDialogMachine::sltMachineDataChanged(const QUuid &uMachin
         return;
 
     /* Check if user had changed something and warn him about he will loose settings on reloading: */
-    if (isSettingsChanged() && !msgCenter().confirmSettingsReloading(this))
+    if (isSerializationClean() && isSettingsChanged() && !msgCenter().confirmSettingsReloading(this))
         return;
+
+    /* Make sure serialization reseted: */
+    resetSerializationClean();
 
     /* Reload data: */
     load();
