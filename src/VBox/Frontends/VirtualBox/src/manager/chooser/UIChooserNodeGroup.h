@@ -1,4 +1,4 @@
-/* $Id: UIChooserNodeGroup.h 164827 2024-09-16 14:03:52Z knut.osmundsen@oracle.com $ */
+/* $Id: UIChooserNodeGroup.h 167471 2025-02-11 13:45:15Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIChooserNodeGroup class declaration.
  */
@@ -143,8 +143,6 @@ private:
 
     /** Holds group children. */
     QList<UIChooserNode*>  m_nodesGroup;
-    /** Holds global children. */
-    QList<UIChooserNode*>  m_nodesGlobal;
     /** Holds machine children. */
     QList<UIChooserNode*>  m_nodesMachine;
 };
