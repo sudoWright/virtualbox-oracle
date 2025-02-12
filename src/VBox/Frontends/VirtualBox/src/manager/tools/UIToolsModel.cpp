@@ -1,4 +1,4 @@
-/* $Id: UIToolsModel.cpp 167439 2025-02-10 13:08:20Z sergey.dubov@oracle.com $ */
+/* $Id: UIToolsModel.cpp 167499 2025-02-12 14:45:24Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIToolsModel class implementation.
  */
@@ -503,7 +503,7 @@ void UIToolsModel::sltRetranslateUI()
     {
         switch (pItem->itemType())
         {
-            case UIToolType_Toggle:      pItem->setName(QString()); break;
+            case UIToolType_Toggle:      pItem->setName(tr("Show text")); break;
             case UIToolType_Home:        pItem->setName(tr("Home")); break;
             case UIToolType_Machines:    pItem->setName(tr("Machines")); break;
             case UIToolType_Extensions:  pItem->setName(tr("Extensions")); break;
