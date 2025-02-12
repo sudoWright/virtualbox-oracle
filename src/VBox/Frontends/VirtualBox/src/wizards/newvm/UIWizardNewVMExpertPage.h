@@ -1,4 +1,4 @@
-/* $Id: UIWizardNewVMExpertPage.h 167211 2025-01-28 10:59:04Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIWizardNewVMExpertPage.h 167495 2025-02-12 13:40:15Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardNewVMExpertPage class declaration.
  */
@@ -131,7 +131,6 @@ private:
     void updateDiskWidgetsAfterMediumFormatChange();
     void updateHostnameDomainNameFromMachineName();
     void setEnableNewDiskWidgets(bool fEnable);
-    void setUnattendedCheckBoxEnable();
     bool isUnattendedEnabled() const;
     bool isUnattendedInstallSupported() const;
     void setEnableDiskSelectionWidgets(bool fEnabled);
