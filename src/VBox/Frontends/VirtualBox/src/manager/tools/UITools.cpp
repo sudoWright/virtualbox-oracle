@@ -1,4 +1,4 @@
-/* $Id: UITools.cpp 167530 2025-02-13 16:55:05Z sergey.dubov@oracle.com $ */
+/* $Id: UITools.cpp 167531 2025-02-13 17:02:55Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UITools class implementation.
  */
@@ -117,7 +117,7 @@ void UITools::prepareContents()
 void UITools::prepareModel()
 {
     /* Prepare model: */
-    m_pToolsModel = new UIToolsModel(m_enmClass, this);
+    m_pToolsModel = new UIToolsModel(m_enmClass, this, isPopup());
     if (m_pToolsModel)
         prepareView();
 }
