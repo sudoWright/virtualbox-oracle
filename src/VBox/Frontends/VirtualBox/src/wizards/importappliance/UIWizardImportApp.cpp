@@ -1,4 +1,4 @@
-/* $Id: UIWizardImportApp.cpp 164827 2024-09-16 14:03:52Z knut.osmundsen@oracle.com $ */
+/* $Id: UIWizardImportApp.cpp 167510 2025-02-13 14:26:13Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIWizardImportApp class implementation.
  */
@@ -234,9 +234,9 @@ bool UIWizardImportApp::importAppliance()
         QList < QPair <QString, QString> > licAgreements = licenseAgreements();
         if (!licAgreements.isEmpty())
         {
-            UIImportLicenseViewer ilv(this);
             for (int i = 0; i < licAgreements.size(); ++i)
             {
+                UIImportLicenseViewer ilv(this);
                 const QPair<QString, QString> &lic = licAgreements.at(i);
                 ilv.setContents(lic.first, lic.second);
                 if (ilv.exec() == QDialog::Rejected)
