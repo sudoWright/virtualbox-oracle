@@ -1,6 +1,6 @@
-/* $Id: IEMAllCImplStrInstr.cpp.h 164827 2024-09-16 14:03:52Z knut.osmundsen@oracle.com $ */
+/* $Id: IEMAllCImplStrInstr-x86.cpp.h 167514 2025-02-13 15:18:18Z knut.osmundsen@oracle.com $ */
 /** @file
- * IEM - String Instruction Implementation Code Template.
+ * IEM - String Instruction Implementation Code Template, x86 target.
  */
 
 /*
