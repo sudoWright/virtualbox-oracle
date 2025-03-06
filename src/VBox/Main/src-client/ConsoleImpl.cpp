@@ -1,4 +1,4 @@
-/* $Id: ConsoleImpl.cpp 164843 2024-09-17 19:36:17Z knut.osmundsen@oracle.com $ */
+/* $Id: ConsoleImpl.cpp 167841 2025-03-06 11:15:45Z alexander.eichner@oracle.com $ */
 /** @file
  * VBox Console COM Class implementation
  */
@@ -6589,7 +6589,7 @@ HRESULT Console::i_onBandwidthGroupChange(IBandwidthGroup *aBandwidthGroup)
                         int vrc = VINF_SUCCESS;
                         if (enmType == BandwidthGroupType_Disk)
                             vrc = ptrVM.vtable()->pfnPDMR3AsyncCompletionBwMgrSetMaxForFile(ptrVM.rawUVM(), strName.c_str(),
-                                                                                            (uint32_t)cMax);
+                                                                                            (uint64_t)cMax);
 #ifdef VBOX_WITH_NETSHAPER
                         else if (enmType == BandwidthGroupType_Network)
                             vrc = ptrVM.vtable()->pfnPDMR3NsBwGroupSetLimit(ptrVM.rawUVM(), strName.c_str(), cMax);
