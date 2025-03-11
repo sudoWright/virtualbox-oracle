@@ -1,4 +1,4 @@
-/* $Id: GICAll.cpp 167902 2025-03-11 06:22:17Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: GICAll.cpp 167904 2025-03-11 08:53:03Z ramshankar.venkataraman@oracle.com $ */
 /** @file
  * GIC - Generic Interrupt Controller Architecture (GIC) - All Contexts.
  */
@@ -29,7 +29,7 @@
 /*********************************************************************************************************************************
 *   Header Files                                                                                                                 *
 *********************************************************************************************************************************/
-#define LOG_GROUP LOG_GROUP_DEV_APIC
+#define LOG_GROUP LOG_GROUP_DEV_GIC
 #include "GICInternal.h"
 #include <VBox/vmm/pdmgic.h>
 #include <VBox/vmm/pdmdev.h>
