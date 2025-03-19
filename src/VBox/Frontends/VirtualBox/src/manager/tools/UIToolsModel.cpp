@@ -1,4 +1,4 @@
-﻿/* $Id: UIToolsModel.cpp 168027 2025-03-19 16:44:53Z sergey.dubov@oracle.com $ */
+﻿/* $Id: UIToolsModel.cpp 168028 2025-03-19 16:48:44Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIToolsModel class implementation.
  */
@@ -684,6 +684,8 @@ void UIToolsModel::updateLayout()
 
                 break;
             }
+            default:
+                break;
         }
     }
 
