@@ -1,4 +1,4 @@
-/* $Id: UIVirtualBoxWidget.h 167960 2025-03-14 12:30:47Z sergey.dubov@oracle.com $ */
+/* $Id: UIVirtualBoxWidget.h 168051 2025-03-20 12:20:04Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVirtualBoxWidget class declaration.
  */
@@ -186,8 +186,8 @@ public:
 
     /** @name Tools pane stuff.
       * @{ */
-        /** Defines Global tools @a enmType and @a fMakeSureItsVisible if requested. */
-        void setToolsTypeGlobal(UIToolType enmType, bool fMakeSureItsVisible = false);
+        /** Defines Global tools @a enmType. */
+        void setToolsTypeGlobal(UIToolType enmType);
         /** Returns Global tools type. */
         UIToolType toolsTypeGlobal() const;
 

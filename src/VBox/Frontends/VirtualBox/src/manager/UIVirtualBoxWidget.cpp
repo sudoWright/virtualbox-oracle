@@ -1,4 +1,4 @@
-/* $Id: UIVirtualBoxWidget.cpp 167961 2025-03-14 12:33:48Z sergey.dubov@oracle.com $ */
+/* $Id: UIVirtualBoxWidget.cpp 168051 2025-03-20 12:20:04Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVirtualBoxWidget class implementation.
  */
@@ -216,7 +216,7 @@ void UIVirtualBoxWidget::setMachineSearchWidgetVisibility(bool fVisible)
     chooser()->setMachineSearchWidgetVisibility(fVisible);
 }
 
-void UIVirtualBoxWidget::setToolsTypeGlobal(UIToolType enmType, bool)
+void UIVirtualBoxWidget::setToolsTypeGlobal(UIToolType enmType)
 {
     AssertPtrReturnVoid(globalToolsWidget());
     globalToolsWidget()->setMenuToolType(enmType);
