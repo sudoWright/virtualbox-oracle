@@ -1,4 +1,4 @@
-/* $Id: UIFrameBuffer.cpp 167778 2025-02-27 11:14:17Z sergey.dubov@oracle.com $ */
+/* $Id: UIFrameBuffer.cpp 168187 2025-03-26 17:11:47Z sergey.dubov@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIFrameBuffer class implementation.
  */
@@ -1401,7 +1401,7 @@ void UIFrameBufferPrivate::paintDefault(QPaintEvent *pEvent)
         cursorPixmap.setDevicePixelRatio(devicePixelRatio());
 
         /* Draw sub-pixmap: */
-        painter.drawPixmap(m_cursorRectangle.topLeft(), cursorPixmap);
+        painter.drawPixmap(m_cursorRectangle, cursorPixmap);
     }
 }
 
