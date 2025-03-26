@@ -1,4 +1,4 @@
-/* $Id: GICAll.cpp 168168 2025-03-26 07:14:51Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: GICAll.cpp 168169 2025-03-26 07:27:30Z ramshankar.venkataraman@oracle.com $ */
 /** @file
  * GIC - Generic Interrupt Controller Architecture (GIC) - All Contexts.
  */
@@ -2066,7 +2066,9 @@ DECLINLINE(VBOXSTRICTRC) gicDistReadRegister(PPDMDEVINS pDevIns, PVMCPUCC pVCpu,
             *puValue = 0;
             break;
         default:
+            AssertReleaseMsgFailed(("offReg=%#x\n", offReg));
             *puValue = 0;
+            break;
     }
     return VINF_SUCCESS;
 }
