@@ -1,4 +1,4 @@
-/* $Id: vboxwl.cpp 164827 2024-09-16 14:03:52Z knut.osmundsen@oracle.com $ */
+/* $Id: vboxwl.cpp 168392 2025-04-09 11:16:52Z vadim.galitsyn@oracle.com $ */
 /** @file
  * Guest Additions - Helper tool for grabbing input focus and perform
  * drag-n-drop and clipboard sharing in Wayland.
@@ -668,7 +668,9 @@ static void vboxwl_check(void)
 
         /* Try to detect Plasma. */
         const char *pcszDesktopSession = RTEnvGet(VBGH_ENV_DESKTOP_SESSION);
-        if (RT_VALID_PTR(pcszDesktopSession) && RTStrIStr(pcszDesktopSession, "plasmawayland"))
+        if (   RT_VALID_PTR(pcszDesktopSession)
+            && (   RTStrIStr(pcszDesktopSession, "plasmawayland")
+                || RTStrIStr(pcszDesktopSession, "plasma")))
             fWayland = true;
     }
 
