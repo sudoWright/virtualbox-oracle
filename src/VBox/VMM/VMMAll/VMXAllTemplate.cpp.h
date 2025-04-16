@@ -1,4 +1,4 @@
-/* $Id: VMXAllTemplate.cpp.h 168518 2025-04-16 06:35:42Z ramshankar.venkataraman@oracle.com $ */
+/* $Id: VMXAllTemplate.cpp.h 168519 2025-04-16 06:47:47Z ramshankar.venkataraman@oracle.com $ */
 /** @file
  * HM VMX (Intel VT-x) - Code template for our own hypervisor and the NEM darwin backend using Apple's Hypervisor.framework.
  */
@@ -4489,7 +4489,7 @@ static void vmxHCTrpmTrapToPendingEvent(PVMCPUCC pVCpu)
     u32IntInfo  = uVector | VMX_IDT_VECTORING_INFO_VALID;
     u32IntInfo |= HMTrpmEventTypeToVmxEventType(uVector, enmTrpmEvent, fIcebp);
 
-    rc = TRPMResetTrap(pVCpu);
+    int const rc = TRPMResetTrap(pVCpu);
     AssertRC(rc);
     Log4(("TRPM->HM event: u32IntInfo=%#RX32 enmTrpmEvent=%d cbInstr=%u uErrCode=%#RX32 GCPtrFaultAddress=%#RGv\n",
           u32IntInfo, enmTrpmEvent, cbInstr, uErrCode, GCPtrFaultAddress));
