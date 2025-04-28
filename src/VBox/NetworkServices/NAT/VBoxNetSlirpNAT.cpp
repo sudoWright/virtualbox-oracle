@@ -1,4 +1,4 @@
-/* $Id: VBoxNetSlirpNAT.cpp 168643 2025-04-28 17:35:27Z alexander.eichner@oracle.com $ */
+/* $Id: VBoxNetSlirpNAT.cpp 168644 2025-04-28 17:39:45Z alexander.eichner@oracle.com $ */
 /** @file
  * VBoxNetNAT - NAT Service for connecting to IntNet.
  */
@@ -718,7 +718,7 @@ int VBoxNetSlirpNAT::initIPv4()
 }
 
 
-#if 0 /** @todo */ 
+#if 0 /** @todo */
 /**
  * Create raw IPv4 socket for sending and snooping ICMP.
  */
