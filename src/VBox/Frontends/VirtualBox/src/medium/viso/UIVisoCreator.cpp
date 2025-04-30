@@ -1,4 +1,4 @@
-/* $Id: UIVisoCreator.cpp 168435 2025-04-10 10:09:44Z serkan.bayraktar@oracle.com $ */
+/* $Id: UIVisoCreator.cpp 168668 2025-04-30 11:23:42Z serkan.bayraktar@oracle.com $ */
 /** @file
  * VBox Qt GUI - UIVisoCreator classes implementation.
  */
@@ -658,12 +658,6 @@ void UIVisoCreatorWidget::populateMenuMainToolbar()
             m_pMainMenu->addAction(m_pOpenAction);
         if (m_pSaveAsAction)
             m_pMainMenu->addAction(m_pSaveAsAction);
-        if (m_pAddAction)
-            m_pMainMenu->addAction(m_pAddAction);
-        if (m_pImportISOAction)
-            m_pMainMenu->addAction(m_pImportISOAction);
-        if (m_pRemoveISOAction)
-            m_pMainMenu->addAction(m_pRemoveISOAction);
     }
 
     if (m_pHostFileBrowser)
