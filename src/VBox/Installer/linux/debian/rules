@@ -1,5 +1,5 @@
 #!/usr/bin/make -f
-# $Id: rules 164827 2024-09-16 14:03:52Z knut.osmundsen@oracle.com $
+# $Id: rules 168808 2025-05-12 12:30:04Z vadim.galitsyn@oracle.com $
 ## @file
 # VirtualBox rules.
 #
@@ -140,7 +140,7 @@ cfg_flags := $(if $(NOQT),--disable-qt,) \
     $(if $(NOWINE),,--setup-wine) \
     $(if $(VNC),--enable-vnc,) \
     $(if $(PATH_OUT_BASE),--out-base-dir=$(PATH_OUT_BASE),) \
-    --disable-extpack
+    --disable-extpack --disable-vmmraw --build-libssl --disable-java
 
 bld_flags := LOCALCFG=$(debroot)/debian/LocalConfig.kmk \
     PATH_OUT=$(builddir) \
