@@ -1,7 +1,7 @@
 #! /bin/sh
-# $Id: vboxadd.sh 168583 2025-04-22 10:49:38Z vadim.galitsyn@oracle.com $
+# $Id: vboxadd.sh 168848 2025-05-14 11:57:45Z vadim.galitsyn@oracle.com $
 ## @file
-# Linux Additions kernel module init script ($Revision: 168583 $)
+# Linux Additions kernel module init script ($Revision: 168848 $)
 #
 
 #
@@ -1042,6 +1042,8 @@ check_status_kernel()
             # Do not spoil $?.
             true
         fi
+    else
+        false
     fi
 
     # Module vboxvideo is optional and expected to be loaded only when VM is
