@@ -1,5 +1,4 @@
-/* $Id: DevVirtioNet.cpp 168753 2025-05-07 08:16:10Z aleksey.ilyushin@oracle.com $ $Revision: 168753 $ $Date: 2025-05-07 10:16:10 +0200 (Wed, 07 May 2025) $ $Author: aleksey.ilyushin@oracle.com $ */
-
+/* $Id: DevVirtioNet.cpp 169005 2025-05-26 19:56:17Z klaus.espenlaub@oracle.com $ */
 /** @file
  * VBox storage devices - Virtio NET Driver
  *
