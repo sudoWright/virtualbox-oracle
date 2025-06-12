@@ -1,4 +1,4 @@
-/* $Id: VMDK.cpp 169180 2025-06-12 04:53:32Z jack.doherty@oracle.com $ */
+/* $Id: VMDK.cpp 169181 2025-06-12 05:01:50Z jack.doherty@oracle.com $ */
 /** @file
  * VMDK disk image, core code.
  */
@@ -8693,6 +8693,9 @@ static int vmdkResizeSparseMeta(PVMDKIMAGE pImage, PVMDKEXTENT pExtent, uint64_t
                 }
             }
         }
+
+        if (paGTDataTmp)
+            RTMemFree(paGTDataTmp);
     }
 
     // rewrite the redundant grain table
@@ -8749,6 +8752,9 @@ static int vmdkResizeSparseMeta(PVMDKIMAGE pImage, PVMDKEXTENT pExtent, uint64_t
                 }
             } while (i-- > 0);
         }
+
+        if (pTmpGT1)
+            RTMemFree(pTmpGT1);
     }
 
     // rewrite redundant grain directory
@@ -8816,6 +8822,9 @@ static int vmdkResizeSparseMeta(PVMDKIMAGE pImage, PVMDKEXTENT pExtent, uint64_t
             pExtent->uSectorGD = RT_MAX(pExtent->uDescriptorSector + pExtent->cDescriptorSectors, 1) + VMDK_BYTE2SECTOR(cbNewGDRounded + cbNewGTRounded);
             pExtent->cGDEntries = (cSectorsNew + pExtent->cSectorsPerGDE - 1) / pExtent->cSectorsPerGDE;
         }
+
+        if (paGTDataTmp)
+            RTMemFree(paGTDataTmp);
     }
 
     return rc;
